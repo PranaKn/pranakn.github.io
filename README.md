@@ -1,6 +1,6 @@
 # 🛡️ Cybersecurity Knowledge Hub  
 
-🚀 **Welcome to my cybersecurity learning journey!** This is where I document my research, practical labs, and insights on topics like networking, Linux security, malware analysis, penetration testing, and incident response.  
+🚀 **Welcome to my cybersecurity learning journey!** This is where I document my research, practical labs, and insights on topics like networking, Linux security, malware analysis, threat hunting, and incident response.  
 
 > _"The best way to learn is to teach."_ – Richard Feynman  
 
