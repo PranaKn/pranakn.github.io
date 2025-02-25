@@ -13,6 +13,15 @@
 📌 **Defensive Security & Blue Teaming** – SIEM, SOC monitoring, log forensics, threat hunting and so on.
 
 🔗 **Follow my journey:** [Twitter/X](https://twitter.com/PranaK1) | [LinkedIn](https://linkedin.com/in/filipe-grahl ) | [TryHackMe](https://tryhackme.com/p/Prana)  
+---
+## 📄 **Topic Pages**
+[MALWARE](https://pranakn.github.io/post/malware/malware.html)
+[INCIDENT RESPONSE](https://pranakn.github.io/post/ir/incidentresponse.html)
+[THREAT HUNTING](https://pranakn.github.io/post/hunting/hunting.html)
+[BLUE TEAM](https://pranakn.github.io/post/blueteam/blueteam.html)
+[CISO](https://pranakn.github.io/post/ciso/ciso.html)
+[BOOKS](https://pranakn.github.io/post/books/books.html)
+[NEWSFEEDS](https://pranakn.github.io/post/news/news.html)
 
 ---
 
