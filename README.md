@@ -12,8 +12,8 @@
 📌 **Malware Analysis & Threat Intelligence** – Static & dynamic analysis, reverse engineering  
 📌 **Defensive Security & Blue Teaming** – SIEM, SOC monitoring, log forensics, threat hunting and so on.
 
-🔗 **Follow my journey:** [Twitter/X](https://twitter.com/PranaK1) | [LinkedIn](https://linkedin.com/in/filipe-grahl ) | [TryHackMe](https://tryhackme.com/p/Prana)  
 ---
+
 ## 📄 **Topic Pages**
 📓 [MALWARE](https://pranakn.github.io/post/malware/malware.html)  
 📓 [THREAT HUNTING](https://pranakn.github.io/post/hunting/hunting.html)  
@@ -21,6 +21,7 @@
 📓 [CISO](https://pranakn.github.io/post/ciso/ciso.html)  
 📓 [BOOKS](https://pranakn.github.io/post/books/books.html)  
 📓 [NEWSFEEDS](https://pranakn.github.io/post/news/news.html)  
+📓 [FOUNDATION](https://pranakn.github.io/post/fundamentals/fundamentals.html)  
 
 ---
 
@@ -49,6 +50,7 @@
 
 🔗 **Email:** [pranak@protonmail.com](mailto:pranak@protonmail.com)  
 🔗 **GitHub:** [github.com/PranaKn](https://github.com/pranakn)  
+🔗 **Follow my journey:** [Twitter/X](https://twitter.com/PranaK1) | [LinkedIn](https://linkedin.com/in/filipe-grahl ) | [TryHackMe](https://tryhackme.com/p/Prana)
 
 ---
 
