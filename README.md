@@ -16,7 +16,6 @@
 ---
 ## 📄 **Topic Pages**
 📓 [MALWARE](https://pranakn.github.io/post/malware/malware.html)  
-📓 [INCIDENT RESPONSE](https://pranakn.github.io/post/ir/incidentresponse.html)  
 📓 [THREAT HUNTING](https://pranakn.github.io/post/hunting/hunting.html)  
 📓 [BLUE TEAM](https://pranakn.github.io/post/blueteam/blueteam.html)  
 📓 [CISO](https://pranakn.github.io/post/ciso/ciso.html)  
