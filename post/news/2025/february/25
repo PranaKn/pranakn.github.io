@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Newsfeed - 26/02/25</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #121212; color: #b5e853; padding: 20px; }
+        h1, h2 { color: #ffcc00; text-align: center; }
+        p { line-height: 1.6; }
+        a { color: #ffcc00; text-decoration: none; }
+        a:hover { color: #ff6600; }
+        .news-item { margin-bottom: 25px; border-left: 4px solid #ffcc00; padding-left: 15px; }
+    </style>
+</head>
+<body>
+
+    <h1>📰 Cybersecurity Newsfeed</h1>
+    <h2>📅 26/02/25</h2>
+
+    <!-- Vulnerabilities Section -->
+    <div class="news-item">
+        <h2>🔥 Vulnerabilities</h2>
+
+        <p>🔴 <b>CISA Adds Two More Vulnerabilities to KEV Catalog</b><br>
+        CISA has added <b>CVE-2024-49035</b> (Microsoft Partner Center) and <b>CVE-2023-34192</b> (Synacor Zimbra Collaboration Suite) to its <b>Known Exploited Vulnerabilities (KEV) Catalog</b> due to active exploitation.</p>
+        <p>🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/02/25/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
+
+        <p>⚠️ <b>MITRE Caldera RCE - CVE-2025-27364</b><br>
+        A <b>critical RCE vulnerability</b> affects <b>all versions</b> of MITRE Caldera, allowing attackers to execute commands via <b>Sandcat and Manx agents</b>. A <b>Metasploit module</b> is expected soon.</p>
+        <p>🔗 <a href="https://www.darkreading.com/application-security/max-severity-rce-vuln-all-versions-mitre-caldera" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Adversaries Section -->
+    <div class="news-item">
+        <h2>🕵️ Adversaries & Attacks</h2>
+
+        <p>🚨 <b>TSforge: New Windows Activation Exploit</b><br>
+        Hackers released <b>TSforge</b>, a tool that bypasses Microsoft’s Software Protection Platform (SPP), unlocking <b>Windows and Office activations</b>.</p>
+        <p>🔗 <a href="https://www.cysecurity.news/2025/02/hackers-release-powerful-tool-to-unlock.html" target="_blank">Read more</a></p>
+
+        <p>🎭 <b>Fake DeepSeek AI Websites Spreading Vidar Malware</b><br>
+        Cybercriminals are using fake <b>DeepSeek AI chatbot websites</b> to distribute <b>Vidar infostealer malware</b>.</p>
+        <p>🔗 <a href="https://www.darkreading.com/threat-intelligence/ai-tricksters-spin-up-fake-deepseek-sites-steal-crypto" target="_blank">Read more</a></p>
+
+        <p>🏥 <b>Silver Fox APT Distributing ValleyRAT via Medical Software</b><br>
+        The Chinese **APT group Silver Fox** is using **trojanized Philips DICOM medical software** to deploy **ValleyRAT malware** in healthcare systems.</p>
+        <p>🔗 <a href="https://hackread.com/silver-fox-apt-valleyrat-trojanized-medical-imaging-software/" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Trends Section -->
+    <div class="news-item">
+        <h2>📈 Cybersecurity Trends</h2>
+
+        <p>🔹 <b>86% of Cyberattacks Now Cause Business Disruptions</b><br>
+        A report by <b>Palo Alto’s Unit 42</b> reveals that attackers increasingly <b>destroy data and harass victims</b> to force ransom payments.</p>
+        <p>🔗 <a href="https://cyberscoop.com/cyberattacks-business-disruption-2025-unit-42-palo-alto-networks/" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Breach & Leaks Section -->
+    <div class="news-item">
+        <h2>🔓 Breach & Leaks</h2>
+
+        <p>🔴 <b>Orange Group Confirms Data Breach</b><br>
+        A hacker known as <b>Rey</b> leaked **380,000+ customer and employee records** stolen from **Orange Romania**.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/orange-group-confirms-breach-after-hacker-leaks-company-documents/" target="_blank">Read more</a></p>
+
+        <p>🛑 <b>284M Stolen Credentials Added to Have I Been Pwned</b><br>
+        The **ALIEN TXTBASE** Telegram channel has leaked **284 million stolen accounts** from **infostealer malware**.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/have-i-been-pwned-adds-284m-accounts-stolen-by-infostealer-malware/" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Other Security Updates -->
+    <div class="news-item">
+        <h2>🛠 Other Security Updates</h2>
+
+        <p>🌐 <b>Firefox Continues Support for Manifest V2</b><br>
+        Mozilla announced that **Firefox will continue supporting Manifest V2**, unlike Chrome, which is enforcing Manifest V3.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/firefox-continues-manifest-v2-support-as-chrome-disables-mv2-ad-blockers/" target="_blank">Read more</a></p>
+
+        <p>🔧 <b>Microsoft Fixes Entra ID Authentication Failure</b><br>
+        A **DNS change** caused **Entra ID authentication failures**, affecting **Seamless SSO and Entra Connect Sync**.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-entra-id-authentication-issue-caused-by-dns-change/" target="_blank">Read more</a></p>
+    </div>
+
+    <p style="text-align:center;">
+        <a href="../index.html">⬅ Back to Home</a>
+    </p>
+
+</body>
+</html>
