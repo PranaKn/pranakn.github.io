@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Newsfeed - 27/02/25</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #121212; color: #00ffcc; padding: 20px; }
+        h1, h2 { color: #c9a227; text-align: center; } /* Softer gold instead of bright yellow */
+        p { line-height: 1.6; }
+        a { color: #c9a227; text-decoration: none; } /* Softer yellow for links */
+        a:hover { color: #b3541e; } /* Muted dark orange for hover */
+        .news-item { margin-bottom: 25px; border-left: 4px solid #c9a227; padding-left: 15px; }
+    </style>
+</head>
+<body>
+
+    <h1>📰 Cybersecurity Newsfeed</h1>
+    <h2>📅 27/02/25</h2>
+
+    <!-- Vulnerabilities Section -->
+    <div class="news-item">
+        <h2>🔥 Vulnerabilities</h2>
+        <p>⚠️ <b>360XSS Campaign Exploits Krpano Framework to Inject Malicious Scripts</b><br>
+        A **cross-site scripting (XSS) vulnerability** in the *Krpano* virtual tour framework has been exploited in over **350 websites**, including **government portals, universities, and Fortune 500 companies**. The attack, dubbed *360XSS*, manipulates search results using **SEO poisoning**.  
+        <b>Vulnerable version:</b> *Krpano 1.22.4* (**CVE-2020-24901**). Users should update immediately.</p>
+        <p>🔗 <a href="https://thehackernews.com/2025/02/hackers-exploited-krpano-framework-flaw.html" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Adversaries Section -->
+    <div class="news-item">
+        <h2>🕵️ Adversaries & Attacks</h2>
+
+        <p>🚨 <b>Anubis Ransomware Group Emerges with Unique Data Ransom Model</b><br>
+        A new **ransomware-as-a-service (RaaS) group**, *Anubis*, surfaced in late **2024**, offering affiliates **multiple extortion models**.  
+        <b>Key targets:</b> Healthcare sector, including **Pound Road Medical Centre (PRMC)** in Australia.</p>
+        <p>🔗 <a href="https://www.securityweek.com/new-ransomware-anubis-could-pose-major-threat-to-organizations/" target="_blank">Read more</a></p>
+
+        <p>🎭 <b>Fake PyPI Package *automslc* Exploited for Music Piracy</b><br>
+        A **malicious PyPI package** with over **100,000 downloads** has been **stealing Deezer API credentials** since 2019.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/pypi-package-with-100k-installs-pirated-music-from-deezer-for-years/" target="_blank">Read more</a></p>
+
+        <p>📱 <b>New *LightSpy* Spyware Targets Social Media Data</b><br>
+        *LightSpy* has expanded its capabilities, now stealing **Facebook & Instagram data** and supporting **Windows keylogging & audio recording**.</p>
+        <p>🔗 <a href="https://securityaffairs.com/174674/malware/new-lightspy-spyware-variant-data-collection-targets-social-media-platforms.html" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Trends Section -->
+    <div class="news-item">
+        <h2>📈 Cybersecurity Trends</h2>
+
+        <p>🔹 <b>Hackers Use Invisible Unicode to Evade JavaScript Detection</b><br>
+        Attackers are embedding **invisible Unicode characters** in **JavaScript phishing attacks**, targeting **U.S. political groups**.</p>
+        <p>🔗 <a href="https://www.cysecurity.news/2025/02/hackers-use-invisible-unicode-trick-to.html" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Breach & Leaks Section -->
+    <div class="news-item">
+        <h2>🔓 Breach & Leaks</h2>
+
+        <p>🔴 <b>Australian IVF Clinic Genea Confirms Data Breach</b><br>
+        A cyberattack may have compromised **medical records and insurance details** of thousands of patients.</p>
+        <p>🔗 <a href="https://www.cysecurity.news/2025/02/australian-ivf-giant-genea-suffers-data.html" target="_blank">Read more</a></p>
+
+        <p>🛑 <b>ALIEN TXTBASE Leak Adds 1.5TB of Stolen Credentials to HIBP</b><br>
+        Over **284 million unique emails and 244 million new passwords** added to *Have I Been Pwned*.</p>
+        <p>🔗 <a href="https://hackread.com/have-i-been-pwned-alien-txtbase-data-emails-passwords/" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Other Security Updates -->
+    <div class="news-item">
+        <h2>🛠 Other Security Updates</h2>
+
+        <p>🌐 <b>Microsoft Releases Windows 11 KB5052093 Update</b><br>
+        The **February 2025 update** fixes **33 bugs**, including **SSH connection issues and volume glitches**.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5052093-update-released-with-33-changes-and-fixes/" target="_blank">Read more</a></p>
+
+        <p>🤖 <b>GPT-4.5 Spotted in OpenAI's Android Beta</b><br>
+        *GPT-4.5* is expected to launch soon, likely for **Pro subscribers first**.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openais-gpt-45-spotted-in-android-beta-launch-imminent/" target="_blank">Read more</a></p>
+    </div>
+
+    <p style="text-align:center;">
+        <a href="../index.html">⬅ Back to Home</a>
+    </p>
+
+</body>
+</html>
