@@ -23,16 +23,21 @@
         <h2>🔥 Vulnerabilities</h2>
 
         <p>⚠️ <b>CISA Adds Four Actively Exploited Vulnerabilities</b><br>
-        CISA confirmed active exploitation of **Linux Kernel (CVE-2024-50302)**, **VMware ESXi arbitrary write flaw (CVE-2025-22225)**, **VMware privilege escalation bug (CVE-2025-22224)**, and **VMware information disclosure issue (CVE-2025-22226)**.</p>
+        CISA has added **CVE-2024-50302 (Linux Kernel memory leak)**, **CVE-2025-22225 (VMware ESXi arbitrary write)**, **CVE-2025-22224 (VMware TOCTOU race condition for privilege escalation)**, and **CVE-2025-22226 (VMware information disclosure flaw)** to its Known Exploited Vulnerabilities Catalog.</p>
         <p>🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/03/04/cisa-adds-four-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
 
         <p>🔴 <b>Cisco Warns of Webex for BroadWorks Vulnerability</b><br>
-        A flaw in **Webex for BroadWorks** exposes credentials **via SIP logs**, affecting **Cisco BroadWorks (on-premises) and hybrid Webex deployments**.</p>
+        A security flaw in **Webex for BroadWorks** allows **unauthenticated credential leaks** if **SIP communication is misconfigured**. Cisco recommends **secure SIP transport, credential rotation, and app updates**.</p>
         <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/cisco-warns-of-webex-for-broadworks-flaw-exposing-credentials/" target="_blank">Read more</a></p>
 
         <p>🛑 <b>Broadcom Patches Three VMware Zero-Days</b><br>
-        **VMware ESXi, Workstation, and Fusion** were patched against **heap overflow, arbitrary kernel writes, and memory leak vulnerabilities**.</p>
+        **CVE-2025-22224 (VCMI heap overflow), CVE-2025-22225 (arbitrary kernel write), and CVE-2025-22226 (memory leaks)** allow attackers to escape **VMware ESXi, Workstation, Fusion, and Cloud Foundation** virtual machine sandboxes.</p>
         <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/broadcom-fixes-three-vmware-zero-days-exploited-in-attacks/" target="_blank">Read more</a></p>
+
+        <p>📄 <b>LibreOffice Fixes CVE-2025-0514 Exploitable via Document Links</b><br>
+        The vulnerability **lets attackers execute malicious files on Windows** via **deceptive hyperlinks** inside documents.</p>
+        <p>🔗 <a href="https://www.cysecurity.news/2025/03/libreoffice-fixes-security-flaw-that.html" target="_blank">Read more</a></p>
+        
     </div>
 
     <!-- Adversaries Section -->
@@ -43,30 +48,46 @@
         A **DDoS botnet targeting security cameras and NVRs** has been **linked to Iranian hackers**, mainly affecting **the U.S., U.K., Mexico, and Canada**.</p>
         <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/new-eleven11bot-botnet-infects-86-000-devices-for-ddos-attacks/" target="_blank">Read more</a></p>
 
-        <p>🎭 <b>Black Basta & Cactus Ransomware Linked by Shared Tools</b><br>
+        <p>🎭 <b>Black Basta & Cactus Ransomware Connected</b><br>
         Researchers discovered **both groups using the BackConnect proxy**, previously associated with **Qbot malware**.</p>
         <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/microsoft-teams-tactics-malware-connect-black-basta-cactus-ransomware/" target="_blank">Read more</a></p>
 
-        <p>🛑 <b>Lotus Blossom Espionage Campaign Targets Government and Telecom</b><br>
-        The **Lotus Blossom APT** uses **Sagerunex malware and Chrome cookie stealers**, leveraging **Dropbox and Twitter for C2 communications**.</p>
+        <p>🛑 <b>Lotus Blossom APT Targets Southeast Asian Governments</b><br>
+        The **Chinese-backed Lotus Blossom APT** is using **Sagerunex backdoors with Dropbox, Twitter, and Zimbra for C2 communication**.</p>
         <p>🔗 <a href="https://www.cysecurity.news/2025/03/cisco-talos-uncovers-lotus-blossoms.html" target="_blank">Read more</a></p>
+
+        <p>📦 <b>Fake BianLian Ransom Notes Mailed to U.S. CEOs</b><br>
+        Scammers impersonating the **BianLian ransomware gang** are mailing **fake ransom demands ($250,000-$500,000 in Bitcoin)** to company executives.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/fake-bianlian-ransom-notes-mailed-to-us-ceos-in-postal-mail-scam/" target="_blank">Read more</a></p>
+
+        <p>📡 <b>Vo1d Malware Botnet Infects 1.59M Android TV Devices</b><br>
+        The **Vo1d malware** turns **Android TVs into anonymous proxy servers**, peaking at **800,000 active bots** for **cybercriminal activities and ad fraud**.</p>
+        <p>🔗 <a href="https://www.cysecurity.news/2025/03/android-tv-users-watch-out-dangerous.html" target="_blank">Read more</a></p>
+
+        <p>💰 <b>Zhong Stealer Malware Spreading via Customer Support Chats</b><br>
+        **Hackers are impersonating customers in fintech support chats** to trick agents into downloading **Zhong Stealer malware** that steals **credentials and browser data**.</p>
+        <p>🔗 <a href="https://hackread.com/chinese-zhong-stealer-infects-fintech-customer-support/" target="_blank">Read more</a></p>
+
+        <p>✈️ <b>Suspected Iranian Hackers Target UAE Aviation Industry</b><br>
+        Attackers **used compromised email accounts** to deliver the **Sosano backdoor malware**, focusing on **satellite communications and aviation firms**.</p>
+        <p>🔗 <a href="https://thehackernews.com/2025/03/suspected-iranian-hackers-used.html" target="_blank">Read more</a></p>
     </div>
 
     <!-- Breach & Leaks Section -->
     <div class="news-item">
         <h2>🔓 Breach & Leaks</h2>
 
-        <p>🔴 <b>Polish Space Agency (POLSA) Goes Offline After Cyberattack</b><br>
-        A cyberattack **forced POLSA to disconnect its systems**, disrupting **operations and email services**.</p>
+        <p>🔴 <b>Polish Space Agency Goes Offline After Cyberattack</b><br>
+        **POLSA disconnected its systems** following a cyberattack, affecting **operations, email servers, and satellite projects**.</p>
         <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/polish-space-agency-offline-as-it-recovers-from-cyberattack/" target="_blank">Read more</a></p>
 
         <p>🛑 <b>Hacker Leaks Stolen Orange Group Data</b><br>
-        **HellCat-affiliated hacker "Rey"** leaked **confidential Orange Romania customer and employee data** after **failed extortion attempts**.</p>
+        **Rey, a hacker linked to HellCat, leaked Orange Romania's confidential customer and employee data** after failed extortion attempts.</p>
         <p>🔗 <a href="https://www.cysecurity.news/2025/03/hacker-leaks-stolen-data-after.html" target="_blank">Read more</a></p>
     </div>
 
     <p style="text-align:center;">
-        <a href="https://pranakn.github.io">⬅ Back to Home</a>
+        <a href="../index.html">⬅ Back to Home</a>
     </p>
 
 </body>
