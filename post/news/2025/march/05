@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Newsfeed - 05/03/25</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+        h1, h2 { color: #c9a227; text-align: center; } /* Softer gold instead of bright yellow */
+        p { line-height: 1.6; }
+        a { color: #c9a227; text-decoration: none; } /* Softer yellow for links */
+        a:hover { color: #b3541e; } /* Muted dark orange for hover */
+        .news-item { margin-bottom: 25px; border-left: 4px solid #c9a227; padding-left: 15px; }
+    </style>
+</head>
+<body>
+
+    <h1>📰 Cybersecurity Newsfeed</h1>
+    <h2>📅 05/03/25</h2>
+
+    <!-- Vulnerabilities Section -->
+    <div class="news-item">
+        <h2>🔥 Vulnerabilities</h2>
+
+        <p>⚠️ <b>CISA Adds Four Actively Exploited Vulnerabilities</b><br>
+        CISA confirmed active exploitation of **Linux Kernel (CVE-2024-50302)**, **VMware ESXi arbitrary write flaw (CVE-2025-22225)**, **VMware privilege escalation bug (CVE-2025-22224)**, and **VMware information disclosure issue (CVE-2025-22226)**.</p>
+        <p>🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/03/04/cisa-adds-four-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
+
+        <p>🔴 <b>Cisco Warns of Webex for BroadWorks Vulnerability</b><br>
+        A flaw in **Webex for BroadWorks** exposes credentials **via SIP logs**, affecting **Cisco BroadWorks (on-premises) and hybrid Webex deployments**.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/cisco-warns-of-webex-for-broadworks-flaw-exposing-credentials/" target="_blank">Read more</a></p>
+
+        <p>🛑 <b>Broadcom Patches Three VMware Zero-Days</b><br>
+        **VMware ESXi, Workstation, and Fusion** were patched against **heap overflow, arbitrary kernel writes, and memory leak vulnerabilities**.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/broadcom-fixes-three-vmware-zero-days-exploited-in-attacks/" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Adversaries Section -->
+    <div class="news-item">
+        <h2>🕵️ Adversaries & Attacks</h2>
+
+        <p>🚨 <b>New Eleven11bot Botnet Infects 86,000 IoT Devices</b><br>
+        A **DDoS botnet targeting security cameras and NVRs** has been **linked to Iranian hackers**, mainly affecting **the U.S., U.K., Mexico, and Canada**.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/new-eleven11bot-botnet-infects-86-000-devices-for-ddos-attacks/" target="_blank">Read more</a></p>
+
+        <p>🎭 <b>Black Basta & Cactus Ransomware Linked by Shared Tools</b><br>
+        Researchers discovered **both groups using the BackConnect proxy**, previously associated with **Qbot malware**.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/microsoft-teams-tactics-malware-connect-black-basta-cactus-ransomware/" target="_blank">Read more</a></p>
+
+        <p>🛑 <b>Lotus Blossom Espionage Campaign Targets Government and Telecom</b><br>
+        The **Lotus Blossom APT** uses **Sagerunex malware and Chrome cookie stealers**, leveraging **Dropbox and Twitter for C2 communications**.</p>
+        <p>🔗 <a href="https://www.cysecurity.news/2025/03/cisco-talos-uncovers-lotus-blossoms.html" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Breach & Leaks Section -->
+    <div class="news-item">
+        <h2>🔓 Breach & Leaks</h2>
+
+        <p>🔴 <b>Polish Space Agency (POLSA) Goes Offline After Cyberattack</b><br>
+        A cyberattack **forced POLSA to disconnect its systems**, disrupting **operations and email services**.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/polish-space-agency-offline-as-it-recovers-from-cyberattack/" target="_blank">Read more</a></p>
+
+        <p>🛑 <b>Hacker Leaks Stolen Orange Group Data</b><br>
+        **HellCat-affiliated hacker "Rey"** leaked **confidential Orange Romania customer and employee data** after **failed extortion attempts**.</p>
+        <p>🔗 <a href="https://www.cysecurity.news/2025/03/hacker-leaks-stolen-data-after.html" target="_blank">Read more</a></p>
+    </div>
+
+    <p style="text-align:center;">
+        <a href="../index.html">⬅ Back to Home</a>
+    </p>
+
+</body>
+</html>
