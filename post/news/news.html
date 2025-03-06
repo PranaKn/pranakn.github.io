@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cybersecurity Newsfeed - 05/03/25</title>
+    <title>Cybersecurity Newsfeed - 06/03/25</title>
     <style>
         body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
         h1, h2 { color: #c9a227; text-align: center; } /* Softer gold instead of bright yellow */
@@ -16,74 +16,96 @@
 <body>
 
     <h1>📰 Cybersecurity Newsfeed</h1>
-    <h2>📅 05/03/25</h2>
+    <h2>📅 06/03/25</h2>
 
     <!-- Vulnerabilities Section -->
     <div class="news-item">
         <h2>🔥 Vulnerabilities</h2>
 
-        <p>⚠️ <b>CISA Adds Four Actively Exploited Vulnerabilities</b><br>
-        CISA has added **CVE-2024-50302 (Linux Kernel memory leak)**, **CVE-2025-22225 (VMware ESXi arbitrary write)**, **CVE-2025-22224 (VMware TOCTOU race condition for privilege escalation)**, and **CVE-2025-22226 (VMware information disclosure flaw)** to its Known Exploited Vulnerabilities Catalog.</p>
-        <p>🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/03/04/cisa-adds-four-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
-
-        <p>🔴 <b>Cisco Warns of Webex for BroadWorks Vulnerability</b><br>
-        A security flaw in **Webex for BroadWorks** allows **unauthenticated credential leaks** if **SIP communication is misconfigured**. Cisco recommends **secure SIP transport, credential rotation, and app updates**.</p>
-        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/cisco-warns-of-webex-for-broadworks-flaw-exposing-credentials/" target="_blank">Read more</a></p>
-
-        <p>🛑 <b>Broadcom Patches Three VMware Zero-Days</b><br>
-        **CVE-2025-22224 (VCMI heap overflow), CVE-2025-22225 (arbitrary kernel write), and CVE-2025-22226 (memory leaks)** allow attackers to escape **VMware ESXi, Workstation, Fusion, and Cloud Foundation** virtual machine sandboxes.</p>
-        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/broadcom-fixes-three-vmware-zero-days-exploited-in-attacks/" target="_blank">Read more</a></p>
-
-        <p>📄 <b>LibreOffice Fixes CVE-2025-0514 Exploitable via Document Links</b><br>
-        The vulnerability **lets attackers execute malicious files on Windows** via **deceptive hyperlinks** inside documents.</p>
-        <p>🔗 <a href="https://www.cysecurity.news/2025/03/libreoffice-fixes-security-flaw-that.html" target="_blank">Read more</a></p>
-        
+        <p>⚠️ <b>Google & Mozilla Patch High-Severity Flaws in Chrome 134 & Firefox 136</b><br>
+        *Chrome 134* and *Firefox 136* fix **dozens of vulnerabilities**, including **sandbox escapes, permission abuses, and arbitrary code execution**.</p>
+        <p>🔗 <a href="https://www.securityweek.com/chrome-134-firefox-136-patch-high-severity-vulnerabilities/" target="_blank">Read more</a></p>
     </div>
 
     <!-- Adversaries Section -->
     <div class="news-item">
         <h2>🕵️ Adversaries & Attacks</h2>
 
-        <p>🚨 <b>New Eleven11bot Botnet Infects 86,000 IoT Devices</b><br>
-        A **DDoS botnet targeting security cameras and NVRs** has been **linked to Iranian hackers**, mainly affecting **the U.S., U.K., Mexico, and Canada**.</p>
-        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/new-eleven11bot-botnet-infects-86-000-devices-for-ddos-attacks/" target="_blank">Read more</a></p>
+        <p>🚨 <b>Dark Caracal APT Uses Poco RAT in Latin America</b><br>
+        The **Lebanese APT Dark Caracal** is deploying **Poco RAT** to **target businesses in Venezuela, Chile, Colombia, Ecuador, and the Dominican Republic**.</p>
+        <p>🔗 <a href="https://thehackernews.com/2025/03/dark-caracal-uses-poco-rat-to-target.html" target="_blank">Read more</a></p>
 
-        <p>🎭 <b>Black Basta & Cactus Ransomware Connected</b><br>
-        Researchers discovered **both groups using the BackConnect proxy**, previously associated with **Qbot malware**.</p>
-        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/microsoft-teams-tactics-malware-connect-black-basta-cactus-ransomware/" target="_blank">Read more</a></p>
+        <p>⚖️ <b>U.S. Charges APT27 & i-Soon Hackers for 13 Years of Cyberattacks</b><br>
+        The DOJ **indicts Chinese state-backed hackers** for espionage **against U.S. infrastructure, dissidents, and foreign governments**.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/us-charges-chinese-hackers-linked-to-critical-infrastructure-breaches/" target="_blank">Read more</a></p>
 
-        <p>🛑 <b>Lotus Blossom APT Targets Southeast Asian Governments</b><br>
-        The **Chinese-backed Lotus Blossom APT** is using **Sagerunex backdoors with Dropbox, Twitter, and Zimbra for C2 communication**.</p>
-        <p>🔗 <a href="https://www.cysecurity.news/2025/03/cisco-talos-uncovers-lotus-blossoms.html" target="_blank">Read more</a></p>
+        <p>📱 <b>Google & Security Firms Disrupt BadBox Android Malware Botnet</b><br>
+        Over **500,000 Android devices** infected with **BadBox malware** have been **sinkholed**, but **non-Play Protect devices remain vulnerable**.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/badbox-malware-disrupted-on-500k-infected-android-devices/" target="_blank">Read more</a></p>
 
-        <p>📦 <b>Fake BianLian Ransom Notes Mailed to U.S. CEOs</b><br>
-        Scammers impersonating the **BianLian ransomware gang** are mailing **fake ransom demands ($250,000-$500,000 in Bitcoin)** to company executives.</p>
-        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/fake-bianlian-ransom-notes-mailed-to-us-ceos-in-postal-mail-scam/" target="_blank">Read more</a></p>
+        <p>📧 <b>Fake LinkedIn InMail Used to Distribute ConnectWise RAT</b><br>
+        **Phishing emails disguised as LinkedIn job inquiries** are delivering **malware that steals credentials and financial data**.</p>
+        <p>🔗 <a href="https://hackread.com/scammers-fake-linkedin-inmail-deliver-connectwise-trojan/" target="_blank">Read more</a></p>
 
-        <p>📡 <b>Vo1d Malware Botnet Infects 1.59M Android TV Devices</b><br>
-        The **Vo1d malware** turns **Android TVs into anonymous proxy servers**, peaking at **800,000 active bots** for **cybercriminal activities and ad fraud**.</p>
-        <p>🔗 <a href="https://www.cysecurity.news/2025/03/android-tv-users-watch-out-dangerous.html" target="_blank">Read more</a></p>
+        <p>🌐 <b>Eleven11bot Botnet Expands to 86,000 Infected IoT Devices</b><br>
+        **Iran-linked Eleven11bot malware** has hijacked **security cameras and NVRs** to launch **DDoS attacks at massive scale**.</p>
+        <p>🔗 <a href="https://securityaffairs.com/174941/malware/new-eleven11bot-botnet-infected-86k-iot-devices.html" target="_blank">Read more</a></p>
 
-        <p>💰 <b>Zhong Stealer Malware Spreading via Customer Support Chats</b><br>
-        **Hackers are impersonating customers in fintech support chats** to trick agents into downloading **Zhong Stealer malware** that steals **credentials and browser data**.</p>
-        <p>🔗 <a href="https://hackread.com/chinese-zhong-stealer-infects-fintech-customer-support/" target="_blank">Read more</a></p>
+        <p>🐼 <b>Lotus Panda APT Uses Advanced Sagerunex Backdoor</b><br>
+        The **Chinese APT Lotus Panda** is using **Dropbox, X, and Zimbra** for **C2 communications targeting telecom and government agencies**.</p>
+        <p>🔗 <a href="https://thehackernews.com/2025/03/chinese-apt-lotus-panda-targets.html" target="_blank">Read more</a></p>
+    </div>
 
-        <p>✈️ <b>Suspected Iranian Hackers Target UAE Aviation Industry</b><br>
-        Attackers **used compromised email accounts** to deliver the **Sosano backdoor malware**, focusing on **satellite communications and aviation firms**.</p>
-        <p>🔗 <a href="https://thehackernews.com/2025/03/suspected-iranian-hackers-used.html" target="_blank">Read more</a></p>
+    <!-- Trends Section -->
+    <div class="news-item">
+        <h2>📈 Cybersecurity Trends</h2>
+
+        <p>🎭 <b>AI-Generated Deepfake of YouTube CEO Used in Phishing Scam</b><br>
+        **Attackers are impersonating YouTube CEO Neal Mohan** to steal credentials from content creators via fake monetization policy updates.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/youtube-warns-of-ai-generated-video-of-its-ceo-used-in-phishing-attacks/" target="_blank">Read more</a></p>
+
+        <p>🌍 <b>Google Report Warns Cybercrime Poses a National Security Threat</b><br>
+        **Financially motivated attacks are increasingly mirroring state-sponsored cyber warfare**, impacting **critical infrastructure and national security**.</p>
+        <p>🔗 <a href="https://www.cysecurity.news/2025/03/google-report-warns-cybercrime-poses.html" target="_blank">Read more</a></p>
     </div>
 
     <!-- Breach & Leaks Section -->
     <div class="news-item">
         <h2>🔓 Breach & Leaks</h2>
 
-        <p>🔴 <b>Polish Space Agency Goes Offline After Cyberattack</b><br>
-        **POLSA disconnected its systems** following a cyberattack, affecting **operations, email servers, and satellite projects**.</p>
-        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/polish-space-agency-offline-as-it-recovers-from-cyberattack/" target="_blank">Read more</a></p>
+        <p>🔴 <b>Hunters International Ransomware Group Breaches Tata Technologies</b><br>
+        **1.4 TB of sensitive data stolen**, affecting **Tata Technologies, a subsidiary of Tata Motors**.</p>
+        <p>🔗 <a href="https://securityaffairs.com/174953/data-breach/ransomware-group-hunters-international-claims-to-have-hacked-tata-technologies.html" target="_blank">Read more</a></p>
 
-        <p>🛑 <b>Hacker Leaks Stolen Orange Group Data</b><br>
-        **Rey, a hacker linked to HellCat, leaked Orange Romania's confidential customer and employee data** after failed extortion attempts.</p>
-        <p>🔗 <a href="https://www.cysecurity.news/2025/03/hacker-leaks-stolen-data-after.html" target="_blank">Read more</a></p>
+        <p>⚽ <b>Leeds United Hit by Card-Skimming Cyberattack</b><br>
+        **Hackers stole customer payment card data** from Leeds United’s **retail store website** between **February 19-24**.</p>
+        <p>🔗 <a href="https://www.theregister.com/2025/03/05/leeds_united_card_swipers/" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Tools Section -->
+    <div class="news-item">
+        <h2>🛠 Tools</h2>
+
+        <p>📡 <b>EFF Launches Rayhunter to Detect Stingray Surveillance</b><br>
+        **Rayhunter, an open-source tool**, helps detect **cell-site simulators (CSS) used for spying on mobile devices**.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/open-source-tool-rayhunter-helps-users-detect-stingray-attacks/" target="_blank">Read more</a></p>
+    </div>
+
+     <div class="news-item">
+        <h2>🛰️ Others</h2>
+
+        <p>📡 <b>Mystery Drones Over New England Raise Cybersecurity & Surveillance Concerns</b><br>
+        **FAA confirms drone presence in restricted airspace**, sparking **national security fears over potential surveillance threats**.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/look-up-the-new-frontier-of-cyberthreats-is-in-the-sky/" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Hunting Opportunities Section -->
+    <div class="news-item">
+        <h2>🎯 Hunting Opportunities</h2>
+
+        <p>🛡️ <b>Microsoft Warns of Silk Typhoon’s Expanding Espionage Tactics</b><br>
+        **Chinese espionage group Silk Typhoon is leveraging stolen API keys, unpatched VPNs, and OAuth abuse to infiltrate IT supply chains**.</p>
+        <p>🔗 <a href="https://www.microsoft.com/en-us/security/blog/2025/03/05/silk-typhoon-targeting-it-supply-chain" target="_blank">Read more</a></p>
     </div>
 
     <p style="text-align:center;">
