@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Newsfeed - 07/03/25</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+        h1, h2 { color: #c9a227; text-align: center; } /* Softer gold instead of bright yellow */
+        p { line-height: 1.6; }
+        a { color: #c9a227; text-decoration: none; } /* Softer yellow for links */
+        a:hover { color: #b3541e; } /* Muted dark orange for hover */
+        .news-item { margin-bottom: 25px; border-left: 4px solid #c9a227; padding-left: 15px; }
+    </style>
+</head>
+<body>
+
+    <h1>📰 Cybersecurity Newsfeed</h1>
+    <h2>📅 07/03/25</h2>
+
+    <!-- Vulnerabilities Section -->
+    <div class="news-item">
+        <h2>🔥 Vulnerabilities</h2>
+
+        <p>⚠️ <b>Weak Passwords on Solar Panels Pose Cybersecurity Risks</b><br>
+        Hackers can **easily take control of solar installations** due to **factory-default and weak passwords**, threatening **grid security**.</p>
+        <p>🔗 <a href="https://www.cysecurity.news/2025/03/hackers-can-attack-your-rooftop-solar.html" target="_blank">Read more</a></p>
+
+        <p>🛑 <b>Elastic Patches Critical Kibana Prototype Pollution Vulnerability (CVE-2025-25012)</b><br>
+        The flaw could enable **remote code execution** in **Kibana 8.15.0 - 8.17.3**. Immediate update recommended.</p>
+        <p>🔗 <a href="https://securityaffairs.com/174999/security/elastic-kibana-critical-flaw.html" target="_blank">Read more</a></p>
+
+        <p>📌 <b>Over 1,000 WordPress Sites Infected With JavaScript-Based Attack</b><br>
+        Attackers inject **multiple backdoors**, modify wp-config.php, and add **malicious SSH keys** to maintain persistence.</p>
+        <p>🔗 <a href="https://thehackernews.com/2025/03/over-1000-wordpress-sites-infected-with.html" target="_blank">Read more</a></p>
+
+        <p>🔴 <b>EncryptHub Deploys New Malware & Ransomware via Phishing</b><br>
+        The **EncryptRAT** malware enables **remote command execution, data theft, and system takeover**.</p>
+        <p>🔗 <a href="https://thehackernews.com/2025/03/encrypthub-deploys-ransomware-and.html" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Adversaries Section -->
+    <div class="news-item">
+        <h2>🕵️ Adversaries & Attacks</h2>
+
+        <p>📡 <b>Akira Ransomware Uses Unsecured Webcam to Bypass EDR & Encrypt Network</b><br>
+        Attackers **gained access via IoT webcam**, mounted SMB shares, and launched ransomware.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/akira-ransomware-encrypted-network-from-a-webcam-to-bypass-edr/" target="_blank">Read more</a></p>
+
+        <p>💰 <b>Python Malware on PyPI Steals Ethereum Wallets</b><br>
+        The **set-utils** package intercepted **private keys** using the **Polygon blockchain** for exfiltration.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/ethereum-private-key-stealer-on-pypi-downloaded-over-1-000-times/" target="_blank">Read more</a></p>
+
+        <p>🔍 <b>Typosquatting Malware Targets Linux & macOS Go Developers</b><br>
+        Attackers **published deceptive Go libraries** with **remote execution functions** targeting **finance sector developers**.</p>
+        <p>🔗 <a href="https://hackread.com/malware-infects-linux-macos-typosquatted-go-packages/" target="_blank">Read more</a></p>
+
+        <p>📊 <b>Cisco Talos Uncovers Large-Scale Attack on Japanese Organizations</b><br>
+        Attackers exploited **CVE-2024-4577** and deployed **TaoWu plugins, Mimikatz, and Alibaba Cloud-based payloads**.</p>
+        <p>🔗 <a href="https://www.infosecurity-magazine.com/news/attackers-japan-cobalt-strike/" target="_blank">Read more</a></p>
+
+        <p>💻 <b>New Browser Extension Malware Spoofs Password Managers</b><br>
+        Polymorphic extensions **mimic trusted security tools**, tricking users into exposing credentials.</p>
+        <p>🔗 <a href="https://hackread.com/squarex-unveils-polymorphic-extensions-that-morph-infostealers-into-any-browser-extension-password-managers-wallets-at-risk/" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Trends Section -->
+    <div class="news-item">
+        <h2>📈 Cybersecurity Trends</h2>
+
+        <p>🎭 <b>Fake DeepSeek & Grok AI Websites Distribute Malware</b><br>
+        Attackers use **fake AI download links** to distribute **SSH backdoors & infostealers**.</p>
+        <p>🔗 <a href="https://www.kaspersky.com/blog/trojans-disguised-as-deepseek-grok-clients/53116/" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Others Section -->
+    <div class="news-item">
+        <h2>🛰️ Others</h2>
+
+        <p>📡 <b>FBI Warns of Fake BianLian Ransom Notes Sent via Mail</b><br>
+        The scam **demands $250K - $500K in Bitcoin**, falsely claiming **network breaches**.</p>
+        <p>🔗 <a href="https://www.ic3.gov/PSA/2025/PSA250306-2" target="_blank">Read more</a></p>
+
+        <p>🚨 <b>US Seizes Domain of Russian Crypto Exchange Garantex</b><br>
+        The **Russian exchange was shut down** after laundering **$100M+ in cybercrime funds**.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/us-seizes-domain-of-garantex-crypto-exchange-used-by-ransomware-gangs/" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Hunting Opportunities Section -->
+    <div class="news-item">
+        <h2>🎯 Hunting Opportunities</h2>
+
+        <p>🛡️ <b>Microsoft Identifies Large-Scale Malvertising Attack Using GitHub & Dropbox</b><br>
+        The attack delivered **info stealers via illegal streaming sites & ads**.</p>
+        <p>🔗 <a href="https://www.microsoft.com/en-us/security/blog/2025/03/06/malvertising-campaign-leads-to-info-stealers-hosted-on-github/" target="_blank">Read more</a></p>
+
+        <p>⚔️ <b>Cisco Talos Uncovers New Persistent Attacks in Japan</b><br>
+        Attackers exploited **CVE-2024-4577**, using **Cobalt Strike, Mimikatz, and PHP-CGI vulnerabilities**.</p>
+        <p>🔗 <a href="https://blog.talosintelligence.com/new-persistent-attacks-japan/" target="_blank">Read more</a></p>
+    </div>
+
+    <p style="text-align:center;">
+        <a href="../index.html">⬅ Back to Home</a>
+    </p>
+
+</body>
+</html>
