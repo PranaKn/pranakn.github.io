@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Newsfeed - 11/03/25</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #121212; color: #00ffcc; padding: 20px; }
+        h1, h2 { color: #c9a227; text-align: center; } /* Soft gold */
+        p { line-height: 1.6; }
+        a { color: #c9a227; text-decoration: none; } /* Gold links */
+        a:hover { color: #b3541e; } /* Muted dark orange hover */
+        .news-item { margin-bottom: 25px; border-left: 4px solid #c9a227; padding-left: 15px; }
+    </style>
+</head>
+<body>
+
+    <h1>📰 Cybersecurity Newsfeed</h1>
+    <h2>📅 11/03/25</h2>
+
+    <!-- Vulnerabilities Section -->
+    <div class="news-item">
+        <h2>🔥 Vulnerabilities</h2>
+
+        <p>🛑 <b>Thousands of WordPress Sites Infected with Malware Backdoors</b><br>
+        Attackers are using **four persistent backdoors** to gain unauthorized access, execute commands, modify SSH keys, and inject malicious JavaScript.</p>
+        <p>🔗 <a href="https://www.schneier.com/blog/archives/2025/03/thousands-of-wordpress-websites-infected-with-malware.html" target="_blank">Read more</a></p>
+
+        <p>⚠️ <b>CISA Adds Five Actively Exploited Vulnerabilities</b><br>
+        Newly added exploits include **Advantive VeraCore SQL Injection, unrestricted file uploads**, and **Ivanti EPM absolute path traversal flaws**.</p>
+        <p>🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/03/10/cisa-adds-five-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
+
+        <p>⚡ <b>ICONICS SCADA Vulnerabilities Threaten Critical Infrastructure</b><br>
+        **Five security flaws** in SCADA software could lead to **privilege escalation, file tampering, and system compromise** in military, energy, and government sectors.</p>
+        <p>🔗 <a href="https://cyberscoop.com/iconics-scada-vulnerabilities-2025-palo-alto/" target="_blank">Read more</a></p>
+
+        <p>💻 <b>Hackers Exploit Microsoft’s BioNTdrv.sys Driver in BYOVD Attacks</b><br>
+        Cybercriminals **deploy Paragon Partition Manager’s flawed driver** to **disable security software** and **gain SYSTEM privileges**.</p>
+        <p>🔗 <a href="https://www.cysecurity.news/2025/03/hackers-exploit-flaw-in-microsoft.html" target="_blank">Read more</a></p>
+
+        <p>📦 <b>1,000+ Malicious Software Packages Targeting Open-Source Platforms</b><br>
+        Attackers use **stealth techniques, obfuscated URLs, and Discord webhooks** to **steal data and establish C2 connections**.</p>
+        <p>🔗 <a href="https://hackread.com/malicious-packages-exploiting-open-source-platforms/" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Adversaries Section -->
+    <div class="news-item">
+        <h2>🕵️ Adversaries & Attacks</h2>
+
+        <p>🚢 <b>SideWinder Expands Attacks on Maritime and Nuclear Sectors</b><br>
+        The **India-linked APT** exploits **Microsoft Office flaws** to deploy **StealerBot malware** targeting logistics and energy entities.</p>
+        <p>🔗 <a href="https://www.darkreading.com/cyberattacks-data-breaches/sidewinder-intensifies-attacks-maritime-sector" target="_blank">Read more</a></p>
+
+        <p>🇨🇴 <b>APT Blind Eagle Hits Colombian Government with Phishing Attacks</b><br>
+        The **South American threat actor** exploits **Windows NTLMv2 vulnerabilities** to spread **NjRAT, AsyncRAT, and Remcos RAT**.</p>
+        <p>🔗 <a href="https://www.darkreading.com/cyberattacks-data-breaches/apt-blind-eagle-targets-colombian-government" target="_blank">Read more</a></p>
+
+        <p>📱 <b>SIM Swapping Surge in the Middle East</b><br>
+        Cybercriminals use **fake banking sites** to steal credentials, enabling **unauthorized transfers up to $160,000** per victim.</p>
+        <p>🔗 <a href="https://www.infosecurity-magazine.com/news/sim-swapping-fraud-surges-middle/" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Trends Section -->
+    <div class="news-item">
+        <h2>📈 Cybersecurity Trends</h2>
+
+        <p>🛠 <b>Mass Exploitation of Critical PHP Vulnerability CVE-2024-4577</b><br>
+        Attackers use **PHP-CGI command injection** to deploy **Gh0st RAT, RedTail cryptominers, and XMRig malware**.</p>
+        <p>🔗 <a href="https://securityaffairs.com/175198/hacking/experts-warn-of-mass-exploitation-of-critical-php-flaw-cve-2024-4577.html" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Breach Section -->
+    <div class="news-item">
+        <h2>🔓 Data Breaches</h2>
+
+        <p>🌀 <b>Dark Storm Hacktivists Claim DDoS Attack on X (Twitter)</b><br>
+        The **pro-Palestinian group** caused **global outages**, prompting **Cloudflare’s emergency mitigation measures**.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/x-hit-by-massive-cyberattack-amid-dark-storms-ddos-claims/" target="_blank">Read more</a></p>
+
+        <p>🏥 <b>RansomHouse Claims Hack of Loretto Hospital, Leaking 1.5TB of Data</b><br>
+        The **extortion group** focuses on **data theft over ransomware**, coercing victims by **threatening leaks**.</p>
+        <p>🔗 <a href="https://securityaffairs.com/175187/cyber-crime/ransomhouse-gang-claims-the-hack-of-the-loretto-hospital-in-chicago.html" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Other Section -->
+    <div class="news-item">
+        <h2>🛠 Other Cybersecurity News</h2>
+
+        <p>🔑 <b>Post-Quantum Cryptography Standards Finalized by NIST</b><br>
+        The new **ML-KEM, ML-DSA, and SLH-DSA** encryption standards aim to **protect against quantum-based cyber threats**.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/quantum-leap-passwords-in-the-new-era-of-computing-security/" target="_blank">Read more</a></p>
+
+        <p>💰 <b>FTC Issues $25.5M in Refunds for Tech Support Scams</b><br>
+        Consumers misled by **Restoro & Reimage’s fake security alerts** will receive **736,375 PayPal refunds** starting March 13.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/ftc-will-send-255-million-to-victims-of-tech-support-scams/" target="_blank">Read more</a></p>
+
+        <p>🛡 <b>Fortra and Microsoft Reduce Cobalt Strike Abuse by 80%</b><br>
+        Cybercriminals’ **access to cracked Cobalt Strike versions** has been **drastically limited** through **seizures & takedowns**.</p>
+        <p>🔗 <a href="https://www.infosecurity-magazine.com/news/number-unauthorized-cobalt-strike/" target="_blank">Read more</a></p>
+    </div>
+
+    <p style="text-align:center;">
+        <a href="../index.html">⬅ Back to Home</a>
+    </p>
+
+</body>
+</html>
