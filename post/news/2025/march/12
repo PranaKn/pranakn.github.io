@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Newsfeed - 12/03/25</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+        h1, h2 { color: #c9a227; text-align: center; } /* Soft gold */
+        p { line-height: 1.6; }
+        a { color: #c9a227; text-decoration: none; } /* Gold links */
+        a:hover { color: #b3541e; } /* Muted dark orange hover */
+        .news-item { margin-bottom: 25px; border-left: 4px solid #c9a227; padding-left: 15px; }
+    </style>
+</head>
+<body>
+
+    <h1>📰 Cybersecurity Newsfeed</h1>
+    <h2>📅 12/03/25</h2>
+
+    <!-- Vulnerabilities Section -->
+    <div class="news-item">
+        <h2>🔥 Vulnerabilities</h2>
+
+        <p>🛑 <b>Microsoft’s March Patch Tuesday Fixes 7 Zero-Days & 57 Flaws</b><br>
+        Critical fixes for **NTFS, Win32 Kernel, and Microsoft Management Console vulnerabilities**, plus patches from **Google, Cisco, and Broadcom**.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-march-2025-patch-tuesday-fixes-7-zero-days-57-flaws/" target="_blank">Read more</a></p>
+
+        <p>⚠️ <b>CISA Warns Federal Agencies to Patch Ivanti EPM Flaws</b><br>
+        **Three critical path traversal vulnerabilities** allow **unauthenticated remote access**, with exploits already in the wild.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/cisa-tags-critical-ivanti-epm-flaws-as-actively-exploited-in-attacks/" target="_blank">Read more</a></p>
+
+        <p>🍏 <b>Apple Patches WebKit Zero-Day Exploited in “Sophisticated Attacks”</b><br>
+        Affects **iPhones, iPads, Macs, and Apple Vision Pro**, with **sandbox escape exploits** detected in the wild.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/apple/apple-fixes-webkit-zero-day-exploited-in-extremely-sophisticated-attacks/" target="_blank">Read more</a></p>
+
+        <p>🐍 <b>Critical Python asteval Vulnerability Enables Arbitrary Code Execution</b><br>
+        Attackers can use **NumPy’s ctypes** to bypass asteval’s sandbox, with **proof-of-concept (PoC) exploit available**.</p>
+        <p>🔗 <a href="https://seclists.org/fulldisclosure/2025/Mar/0" target="_blank">Read more</a></p>
+
+        <p>💻 <b>New XCSSET macOS Malware Variant Infects Xcode Projects</b><br>
+        Uses **Git hooks, fake Launchpad apps, and obfuscation** to persist and steal browser, system, and crypto data.</p>
+        <p>🔗 <a href="https://www.microsoft.com/en-us/security/blog/2025/03/11/new-xcsset-malware-adds-new-obfuscation-persistence-techniques-to-infect-xcode-projects/" target="_blank">Read more</a></p>
+
+        <p>🏢 <b>SAP Patches High-Severity Vulnerabilities in Commerce & NetWeaver</b><br>
+        Includes **XSS in Swagger UI and missing authorization checks**, plus **Apache Tomcat fixes for Commerce Cloud**.</p>
+        <p>🔗 <a href="https://www.securityweek.com/sap-patches-high-severity-vulnerabilities-in-commerce-netweaver/" target="_blank">Read more</a></p>
+
+        <p>🔓 <b>Moxa Issues Fix for Critical Authentication Bypass Flaw</b><br>
+        Affects **PT switches**, allowing **attackers to brute-force authentication or exploit MD5 hash collisions**.</p>
+        <p>🔗 <a href="https://thehackernews.com/2025/03/moxa-issues-fix-for-critical.html" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Adversaries Section -->
+    <div class="news-item">
+        <h2>🕵️ Adversaries & Attacks</h2>
+
+        <p>👾 <b>North Korean Lazarus Group Spreads Malware via npm Packages</b><br>
+        Uses **typosquatting to infect developers**, deploying **BeaverTail and InvisibleFerret malware**.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/north-korean-lazarus-hackers-infect-hundreds-via-npm-packages/" target="_blank">Read more</a></p>
+
+        <p>⚡ <b>Elon Musk Scam Uses SMS to Sell Fake Energy Devices</b><br>
+        Fraudsters **exploit data leaks to personalize scams**, tricking victims with **fake energy-saving promises**.</p>
+        <p>🔗 <a href="https://hackread.com/sms-scam-elon-musks-sell-fake-energy-devices-usa/" target="_blank">Read more</a></p>
+
+        <p>📢 <b>DCRat Malware Surges in 2025 with YouTube-Based Distribution</b><br>
+        **Malware-as-a-Service (MaaS)** model **uses fake game cheats** to spread the RAT.</p>
+        <p>🔗 <a href="https://securelist.com/new-wave-of-attacks-with-dcrat-backdoor-distributed-by-maas/115850/" target="_blank">Read more</a></p>
+
+        <p>📡 <b>Ballista Botnet Exploits TP-Link Router Vulnerability</b><br>
+        **Targets Brazil, Poland, UK, and Turkey**, evolving with **TOR network persistence**.</p>
+        <p>🔗 <a href="https://thehackernews.com/2025/03/ballista-botnet-exploits-unpatched-tp.html" target="_blank">Read more</a></p>
+
+        <p>💰 <b>MassJacker Clipboard Hijacking Steals Cryptocurrency</b><br>
+        Replaces copied wallet addresses, stealing **$300,000 in Solana transactions**.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/massjacker-malware-uses-778-000-wallets-to-steal-cryptocurrency/" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Trends Section -->
+    <div class="news-item">
+        <h2>📈 Cybersecurity Trends</h2>
+
+        <p>⚠️ <b>Fake GitHub Repositories Distribute Lumma Stealer</b><br>
+        **AI-generated content** hides malware **inside ZIP files**, using GitHub’s reputation for evasion.</p>
+        <p>🔗 <a href="https://www.trendmicro.com/en_us/research/25/c/ai-assisted-fake-github-repositories.html" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Tools Section -->
+    <div class="news-item">
+        <h2>🛠 Security Tools</h2>
+
+        <p>🤖 <b>CYFOX OmniSec vCISO Automates Compliance with AI</b><br>
+        **Streamlines risk identification, compliance tracking, and security operations.**</p>
+        <p>🔗 <a href="https://www.cysecurity.news/2025/03/cyfox-launches-omnisec-vciso-harnessing.html" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Hunting Opportunities Section -->
+    <div class="news-item">
+        <h2>🔎 Threat Hunting</h2>
+
+        <p>🖼 <b>XWorm Malware Uses Steganography to Hide Inside Images</b><br>
+        **Phishing PDFs trigger multi-stage infections, injecting malware via encoded images.**</p>
+        <p>🔗 <a href="https://thehackernews.com/2025/03/steganography-explained-how-xworm-hides.html" target="_blank">Read more</a></p>
+    </div>
+
+    <p style="text-align:center;">
+        <a href="../index.html">⬅ Back to Home</a>
+    </p>
+
+</body>
+</html>
