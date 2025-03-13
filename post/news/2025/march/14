@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Newsfeed - 14/03/25</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+        h1, h2 { color: #c9a227; text-align: center; } /* Soft gold */
+        p { line-height: 1.6; }
+        a { color: #c9a227; text-decoration: none; } /* Gold links */
+        a:hover { color: #b3541e; } /* Muted dark orange hover */
+        .news-item { margin-bottom: 25px; border-left: 4px solid #c9a227; padding-left: 15px; }
+    </style>
+</head>
+<body>
+
+    <h1>📰 Cybersecurity Newsfeed</h1>
+    <h2>📅 14/03/25</h2>
+
+    <!-- Vulnerabilities Section -->
+    <div class="news-item">
+        <h2>🔥 Vulnerabilities</h2>
+
+        <p>🛑 <b>CISA Adds Two New Exploited Vulnerabilities</b><br>
+        **CVE-2025-24201 (Apple WebKit) & CVE-2025-21590 (Juniper Junos OS)** actively exploited.</p>
+        <p>🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/03/13/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
+
+        <p>🔐 <b>GitLab Patches Critical Authentication Bypass Flaws</b><br>
+        **CVE-2025-25291 & CVE-2025-25292** allow SAML impersonation. Update now.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/gitlab-patches-critical-authentication-bypass-vulnerabilities/" target="_blank">Read more</a></p>
+
+        <p>📄 <b>Cisco Talos Discloses Miniaudio & Adobe Acrobat Vulnerabilities</b><br>
+        **Out-of-bounds writes & memory corruption flaws** in **FLAC & PDF font parsing**.</p>
+        <p>🔗 <a href="https://blog.talosintelligence.com/miniaudio-and-adobe-acrobat-reader-vulnerabilities/" target="_blank">Read more</a></p>
+
+        <p>💻 <b>New Ruby-SAML Vulnerabilities Allow Signature Wrapping Attacks</b><br>
+        **CVE-2025-25291 & CVE-2025-25292** impact authentication security.</p>
+        <p>🔗 <a href="https://thehackernews.com/2025/03/github-uncovers-new-ruby-saml.html" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Adversaries Section -->
+    <div class="news-item">
+        <h2>🕵️ Adversaries & Attacks</h2>
+
+        <p>📱 <b>ScarCruft (APT37) Deploys New Android Spyware: KoSpy</b><br>
+        **Steals SMS, calls, GPS, files, audio, & screenshots** via fake apps.</p>
+        <p>🔗 <a href="https://securityaffairs.com/175357/malware/scarcruft-used-a-new-android-spyware-dubbed-kospy.html" target="_blank">Read more</a></p>
+
+        <p>💀 <b>New Ransomware ‘SuperBlack’ Exploits Fortinet Flaws</b><br>
+        **Mora_001 gang uses CVE-2024-55591 & CVE-2025-24472 for admin access.**</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/new-superblack-ransomware-exploits-fortinet-auth-bypass-flaws/" target="_blank">Read more</a></p>
+
+        <p>🎨 <b>Attackers Use CSS for Phishing Evasion & User Tracking</b><br>
+        **Obfuscation via text-indent, opacity, and media queries.**</p>
+        <p>🔗 <a href="https://blog.talosintelligence.com/css-abuse-for-evasion-and-tracking/" target="_blank">Read more</a></p>
+
+        <p>🕵️ <b>Phantom Goblin Malware Steals Browser Credentials</b><br>
+        **Disguised as ‘updater.exe’ & exfiltrates data via Telegram.**</p>
+        <p>🔗 <a href="https://www.cysecurity.news/2025/03/phantom-goblin-emerging-menace-in.html" target="_blank">Read more</a></p>
+
+        <p>🔍 <b>Volt Typhoon Maintained US Electric Grid Access for 300 Days</b><br>
+        **Chinese hackers mapped OT systems & exfiltrated GIS data.**</p>
+        <p>🔗 <a href="https://www.infosecurity-magazine.com/news/volt-typhoon-threatens-us-ot/" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Trends Section -->
+    <div class="news-item">
+        <h2>📈 Cybersecurity Trends</h2>
+
+        <p>🎣 <b>ClickFix Phishing Campaign Targets Hospitality Industry</b><br>
+        **Fake Booking.com emails deliver malware via CAPTCHA dialogs.**</p>
+        <p>🔗 <a href="https://www.infosecurity-magazine.com/news/clickfix-phishing-scam-booking/" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Others Section -->
+    <div class="news-item">
+        <h2>📌 Other Cybersecurity News</h2>
+
+        <p>🤖 <b>Generative AI Red Teaming: OWASP’s New Security Guide</b><br>
+        **Focuses on prompt injection, bias, & supply chain attacks.**</p>
+        <p>🔗 <a href="https://levelblue.com/blogs/security-essentials/red-teaming-for-generative-ai-a-practical-approach-to-ai-security" target="_blank">Read more</a></p>
+
+        <p>💻 <b>Microsoft Researchers Demonstrate AI Jailbreak with Context Injection</b><br>
+        **‘Context Compliance Attack’ tricks AI into restricted responses.**</p>
+        <p>🔗 <a href="https://msrc.microsoft.com/blog/2025/03/jailbreaking-is-mostly-simpler-than-you-think/" target="_blank">Read more</a></p>
+
+        <p>🦊 <b>Mozilla Warns Firefox Users to Update Before March 14</b><br>
+        **Expiring root certificate may break add-ons & DRM playback.**</p>
+        <p>🔗 <a href="https://thehackernews.com/2025/03/warning-expiring-root-certificate-may.html" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Hunting Opportunities Section -->
+    <div class="news-item">
+        <h2>🎯 Hunting Opportunities</h2>
+
+        <p>🕵️ <b>Head Mare & Twelve Hacktivists Linked in Russian Cyberattacks</b><br>
+        **C2 overlaps, shared tools (CobInt, PhantomJitter), & malware reuse.**</p>
+        <p>🔗 <a href="https://securelist.com/head-mare-twelve-collaboration/115887/" target="_blank">Read more</a></p>
+    </div>
+
+    <p style="text-align:center;">
+        <a href="../index.html">⬅ Back to Home</a>
+    </p>
+
+</body>
+</html>
