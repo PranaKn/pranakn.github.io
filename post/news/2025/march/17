@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Newsfeed - 17/03/25</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+        h1, h2 { color: #c9a227; text-align: center; } /* Soft gold */
+        p { line-height: 1.6; }
+        a { color: #c9a227; text-decoration: none; } /* Gold links */
+        a:hover { color: #b3541e; } /* Muted dark orange hover */
+        .news-item { margin-bottom: 25px; border-left: 4px solid #c9a227; padding-left: 15px; }
+    </style>
+</head>
+<body>
+
+    <h1>📰 Cybersecurity Newsfeed</h1>
+    <h2>📅 17/03/25</h2>
+
+    <!-- Vulnerabilities Section -->
+    <div class="news-item">
+        <h2>🔥 Vulnerabilities</h2>
+
+        <p>🛑 <b>Cisco Patches High-Severity DoS Vulnerability in IOS XR Routers</b><br>
+        **CVE-2025-20115** allows attackers to crash **BGP process** with a crafted message.</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/cisco-vulnerability-lets-attackers-crash-bgp-on-ios-xr-routers/" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Adversaries Section -->
+    <div class="news-item">
+        <h2>🕵️ Adversaries & Attacks</h2>
+
+        <p>🔐 <b>Massive Phishing Attack Hijacks 12,000 GitHub Repositories</b><br>
+        **Fake security alerts** trick users into granting access to a **malicious OAuth app.**</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/fake-security-alert-issues-on-github-use-oauth-app-to-hijack-accounts/" target="_blank">Read more</a></p>
+
+        <p>🛡 <b>Black Basta Develops 'BRUTED' Tool to Breach Firewalls & VPNs</b><br>
+        **Targets SonicWall, Palo Alto, Cisco, Fortinet, Citrix, Microsoft RDWeb, WatchGuard.**</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/black-basta-ransomware-creates-automated-tool-to-brute-force-vpns/" target="_blank">Read more</a></p>
+
+        <p>☎️ <b>New Microsoft 365 Phishing Scam Uses Fake Support Numbers</b><br>
+        **Emails originate from Microsoft’s servers, bypassing security checks.**</p>
+        <p>🔗 <a href="https://hackread.com/new-microsoft-365-phishing-scam-calling-fake-support/" target="_blank">Read more</a></p>
+
+        <p>💰 <b>Fraudsters Impersonate Clop Ransomware to Extort Businesses</b><br>
+        **No actual data theft, just empty extortion threats based on past Clop attacks.**</p>
+        <p>🔗 <a href="https://www.infosecurity-magazine.com/news/fraudsters-clop-ransomware-extort/" target="_blank">Read more</a></p>
+
+        <p>💳 <b>MassJacker Clipper Malware Targets Cryptocurrency Users</b><br>
+        **Replaces copied wallet addresses, stealing funds from victims.**</p>
+        <p>🔗 <a href="https://securityaffairs.com/175433/malware/new-massjacker-clipper-targets-pirated-software-seekers.html" target="_blank">Read more</a></p>
+
+        <p>🐍 <b>20 Malicious PyPI Packages Steal Cloud Access Tokens</b><br>
+        **Targeted AWS, Alibaba Cloud, and Tencent Cloud developers.**</p>
+        <p>🔗 <a href="https://thehackernews.com/2025/03/malicious-pypi-packages-stole-cloud.html" target="_blank">Read more</a></p>
+
+        <p>💻 <b>Palo Alto Networks Identifies Three Unusual Malware Samples</b><br>
+        **C++/CLI IIS Backdoor, Dixie-Playing Bootkit, ProjectGeass Framework.**</p>
+        <p>🔗 <a href="https://unit42.paloaltonetworks.com/unusual-malware/" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Trends Section -->
+    <div class="news-item">
+        <h2>📈 Cybersecurity Trends</h2>
+
+        <p>⚠️ <b>Malicious Adobe & DocuSign OAuth Apps Target Microsoft 365 Accounts</b><br>
+        **Exploit OAuth permissions to steal credentials & distribute malware.**</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/malicious-adobe-docusign-oauth-apps-target-microsoft-365-accounts/" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Others Section -->
+    <div class="news-item">
+        <h2>📌 Other Cybersecurity News</h2>
+
+        <p>🎮 <b>GPU-Powered Decryptor for Akira Ransomware Released</b><br>
+        **Uses RTX 4090 GPUs to brute-force encryption keys.**</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/gpu-powered-akira-ransomware-decryptor-released-on-github/" target="_blank">Read more</a></p>
+
+        <p>📩 <b>Microsoft Exchange Online Faces Week-Long Outage</b><br>
+        **Email delays & failures due to service update bug.**</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/week-long-exchange-online-outage-causes-email-failures-delays/" target="_blank">Read more</a></p>
+
+        <p>⚖️ <b>LockBit Developer Rostislav Panev Extradited to the US</b><br>
+        **Key member of ransomware group responsible for $500M+ in ransom payments.**</p>
+        <p>🔗 <a href="https://hackread.com/lockbit-developer-rostislav-panev-extradited-israel-us/" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Hunting Opportunities Section -->
+    <div class="news-item">
+        <h2>🎯 Hunting Opportunities</h2>
+
+        <p>🔍 <b>Water Scylla Intrusion Set Deploys SocGholish to Distribute RansomHub</b><br>
+        **Uses rogue Keitaro TDS to spread malware via fake browser updates.**</p>
+        <p>🔗 <a href="https://www.trendmicro.com/en_us/research/25/c/socgholishs-intrusion-techniques-facilitate-distribution-of-rans.html/" target="_blank">Read more</a></p>
+    </div>
+
+    <p style="text-align:center;">
+        <a href="https://pranakn.github.io">⬅ Back to Home</a>
+    </p>
+
+</body>
+</html>
