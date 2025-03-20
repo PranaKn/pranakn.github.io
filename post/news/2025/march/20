@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Newsfeed - 20/03/25</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+        h1, h2 { color: #c9a227; text-align: center; } /* Soft gold */
+        p { line-height: 1.6; }
+        a { color: #c9a227; text-decoration: none; } /* Gold links */
+        a:hover { color: #b3541e; } /* Muted dark orange hover */
+        .news-item { margin-bottom: 25px; border-left: 4px solid #c9a227; padding-left: 15px; }
+    </style>
+</head>
+<body>
+
+    <h1>📰 Cybersecurity Newsfeed</h1>
+    <h2>📅 20/03/25</h2>
+
+    <!-- Vulnerabilities Section -->
+    <div class="news-item">
+        <h2>🔥 Vulnerabilities</h2>
+
+        <p>🛑 <b>CISA Adds Three Exploited Vulnerabilities to KEV Catalog</b><br>
+        **CVE-2025-1316** in **Edimax IP Cameras**, **CVE-2024-48248** in **NAKIVO Backup**, and **CVE-2017-12637** in **SAP NetWeaver** are under active exploitation.</p>
+        <p>🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/03/19/cisa-adds-three-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
+
+        <p>📱 <b>WhatsApp Patched Zero-Click Vulnerability Exploited by Paragon Spyware</b><br>
+        **Paragon’s Graphite spyware** was deployed via **malicious PDFs in WhatsApp groups** to **target journalists & civil society members.**</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/whatsapp-patched-zero-day-flaw-used-in-paragon-spyware-attacks/" target="_blank">Read more</a></p>
+
+        <p>🤖 <b>AI Jailbreak “Immersive World” Bypasses LLM Security to Generate Malware</b><br>
+        **ChatGPT, Copilot, and DeepSeek were tricked into creating a Chrome infostealer.**</p>
+        <p>🔗 <a href="https://hackread.com/ai-jailbreak-on-top-llms-to-create-chrome-infostealer/" target="_blank">Read more</a></p>
+
+        <p>🔧 <b>Rules File Backdoor Exploits AI Code Editors Like GitHub Copilot</b><br>
+        **Attackers manipulate AI-generated code via hidden Unicode characters.**</p>
+        <p>🔗 <a href="https://securityaffairs.com/175593/hacking/rules-file-backdoor-ai-code-editors-silent-supply-chain-attacks.html" target="_blank">Read more</a></p>
+
+        <p>💻 <b>Hackers Exploiting Critical PHP Flaw (CVE-2024-4577) for Crypto Miners & RATs</b><br>
+        **Targeting Windows CGI mode, mainly in Taiwan, Hong Kong, and Brazil.**</p>
+        <p>🔗 <a href="https://thehackernews.com/2025/03/hackers-exploit-severe-php-flaw-to.html" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Adversaries Section -->
+    <div class="news-item">
+        <h2>🕵️ Adversaries & Attacks</h2>
+
+        <p>🎮 <b>New Arcane Infostealer Targets Gamers on YouTube & Discord</b><br>
+        **Promoted via fake game cheats, it steals credentials & disables Windows Defender.**</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/new-arcane-infostealer-infects-youtube-discord-users-via-game-cheats/" target="_blank">Read more</a></p>
+
+        <p>🖥 <b>DollyWay Malware Hijacks 20,000 WordPress Sites for Ad Fraud</b><br>
+        **Uses n-day plugin vulnerabilities to generate 10 million fraudulent impressions monthly.**</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/malware-campaign-dollyway-breached-20-000-wordpress-sites/" target="_blank">Read more</a></p>
+
+        <p>📱 <b>SIM Swapping Scams Surge in the Middle East, Stealing Up to $160,000</b><br>
+        **Fraudsters trick mobile providers into issuing new SIMs to hijack accounts.**</p>
+        <p>🔗 <a href="https://www.cysecurity.news/2025/03/sim-swap-scams-growing-in-middle-east.html" target="_blank">Read more</a></p>
+
+        <p>🖥 <b>VenomRAT Malware Hides in Virtual Hard Disk (.VHD) Files</b><br>
+        **Delivered via phishing emails, using PowerShell for persistence.**</p>
+        <p>🔗 <a href="https://hackread.com/hackers-hide-venomrat-malware-virtual-hard-disk-files/" target="_blank">Read more</a></p>
+
+        <p>🌍 <b>China-Linked MirrorFace APT Expands to Target European Diplomats</b><br>
+        **First European attack using Anel & AsyncRAT malware.**</p>
+        <p>🔗 <a href="https://www.securityweek.com/chinese-hacking-group-mirrorface-targeting-europe/" target="_blank">Read more</a></p>
+
+        <p>🔎 <b>ClearFake Uses Fake CAPTCHAs to Spread Lumma & Vidar Stealers</b><br>
+        **9,300 WordPress sites infected, leveraging Web3 for persistence.**</p>
+        <p>🔗 <a href="https://thehackernews.com/2025/03/clearfake-infects-9300-sites-uses-fake.html" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Trends Section -->
+    <div class="news-item">
+        <h2>📈 Cybersecurity Trends</h2>
+
+        <p>⚠️ <b>Phishing-as-a-Service (PhaaS) Hits 1 Million Attacks in 2025</b><br>
+        **New Sneaky 2FA phishing kit joins Tycoon 2FA & EvilProxy.**</p>
+        <p>🔗 <a href="https://www.infosecurity-magazine.com/news/sneaky-2fa-joins-tycoon-2fa/" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Others Section -->
+    <div class="news-item">
+        <h2>📌 Other Cybersecurity News</h2>
+
+        <p>🕵️ <b>Citizen Lab Identifies 6 More Countries Using Paragon Spyware</b><br>
+        **Australia, Canada, Cyprus, Denmark, Israel & Singapore suspected of purchasing Graphite.**</p>
+        <p>🔗 <a href="https://cyberscoop.com/six-countries-suspected-paragon-spyware-customers/" target="_blank">Read more</a></p>
+
+        <p>📩 <b>Ukraine Warns of Spear-Phishing via Compromised Signal Accounts</b><br>
+        **DarkTortilla cryptor deploying Dark Crystal RAT (DCRAT) in military-focused attacks.**</p>
+        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/ukrainian-military-targeted-in-new-signal-spear-phishing-attacks/" target="_blank">Read more</a></p>
+    </div>
+
+    <!-- Hunting Opportunities Section -->
+    <div class="news-item">
+        <h2>🎯 Hunting Opportunities</h2>
+
+        <p>🔍 <b>Threat Actors Abusing Remote Monitoring & Management (RMM) Software</b><br>
+        **AnyDesk, TeamViewer & ScreenConnect increasingly used for stealthy cyberattacks.**</p>
+        <p>🔗 <a href="https://intel471.com/blog/threat-hunting-case-study-rmm-software" target="_blank">Read more</a></p>
+    </div>
+
+    <p style="text-align:center;">
+        <a href="../index.html">⬅ Back to Home</a>
+    </p>
+
+</body>
+</html>
