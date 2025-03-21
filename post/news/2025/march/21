@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 21/03/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #b3541e; }
+    .news-item { margin-bottom: 25px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 21/03/25</h2>
+
+  <!-- Vulnerabilities Section -->
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>🛑 <b>Three Actively Exploited Flaws Added to CISA KEV Catalog</b><br>
+    **Affects Edimax IP Cameras (CVE-2025-1316), NAKIVO Backup (CVE-2024-48248), and SAP NetWeaver (CVE-2017-12637).**</p>
+    <p>🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/03/19/cisa-adds-three-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
+
+    <p>🔐 <b>WordPress WP Ghost Plugin RCE Vulnerability Affects 200K+ Sites</b><br>
+    **Unauthenticated attackers can execute arbitrary code (CVE-2025-26909).**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/wordpress-security-plugin-wp-ghost-vulnerable-to-remote-code-execution-bug/" target="_blank">Read more</a></p>
+
+    <p>🖥 <b>Veeam RCE Vulnerability Lets Domain Users Hijack Backup Servers</b><br>
+    **CVE-2025-23120 exploited via .NET deserialization flaw.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/veeam-rce-bug-lets-domain-users-hack-backup-servers-patch-now/" target="_blank">Read more</a></p>
+
+    <p>📱 <b>Zero-Click WhatsApp Exploit Delivered Israeli Spyware “Graphite”</b><br>
+    **Used against journalists and activists globally.**</p>
+    <p>🔗 <a href="https://hackread.com/israeli-spyware-graphite-hit-whatsapp-0-click-exploit/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Adversaries Section -->
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>🌐 <b>Hackers Target Unpatched Cisco Smart Licensing Utility</b><br>
+    **CVE-2024-20439 and CVE-2024-20440 exploited via hardcoded backdoor.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/critical-cisco-smart-licensing-utility-flaws-now-exploited-in-attacks/" target="_blank">Read more</a></p>
+
+    <p>🧠 <b>RansomHub Ransomware Deploys Custom “Betruger” Backdoor</b><br>
+    **Used for credential dumping, exfiltration, and privilege escalation.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/ransomhub-ransomware-uses-new-betruger-multi-function-backdoor/" target="_blank">Read more</a></p>
+
+    <p>🛰 <b>UAT-5918 APT Targets Taiwan’s Critical Infrastructure</b><br>
+    **Links to Volt Typhoon & other PRC-aligned APTs confirmed.**</p>
+    <p>🔗 <a href="https://blog.talosintelligence.com/uat-5918-targets-critical-infra-in-taiwan/" target="_blank">Read more</a></p>
+
+    <p>🔓 <b>SuperBlack Ransomware Exploits Fortinet Firewall Bugs</b><br>
+    **CVE-2024-55591 and CVE-2025-24472 used for access and lateral movement.**</p>
+    <p>🔗 <a href="https://www.cysecurity.news/2025/03/new-ransomware-superblack-abuses.html" target="_blank">Read more</a></p>
+
+    <p>🚗 <b>Supply Chain CAPTCHA Attack Hits 100+ Car Dealerships</b><br>
+    **Victims infected with SectopRAT via fake “ClickFix” instructions.**</p>
+    <p>🔗 <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/supply-chain-captcha-attack-hits-over-100-car-dealerships" target="_blank">Read more</a></p>
+
+    <p>🐟 <b>FishMonger APT (linked to I-SOON) Targets Global Diplomats</b><br>
+    **Exploits included ShadowPad, Spyder, and stolen credentials.**</p>
+    <p>🔗 <a href="https://www.infosecurity-magazine.com/news/fishmonger-apt-group-linked-isoon/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Trends Section -->
+  <div class="news-item">
+    <h2>📈 Cybersecurity Trends</h2>
+
+    <p>💼 <b>Phishing Ads Impersonating Semrush Steal Google Account Credentials</b><br>
+    **Campaign abused Google Ads to trick marketing professionals.**</p>
+    <p>🔗 <a href="https://www.malwarebytes.com/blog/news/2025/03/semrush-impersonation-scam-hits-google-ads" target="_blank">Read more</a></p>
+
+    <p>💣 <b>VSCode Marketplace Compromised by Malicious Extensions</b><br>
+    **Ransomware distributed via “ahban.shiba” and “ahban.cychelloworld.”**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/vscode-extensions-found-downloading-early-stage-ransomware/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Breach/Leaks Section -->
+  <div class="news-item">
+    <h2>📂 Breaches & Leaks</h2>
+
+    <p>💥 <b>HellCat Hackers Breach Swiss Telco Ascom via Jira Exploit</b><br>
+    **44GB of data exfiltrated; similar attacks hit Jaguar, Telefónica, and more.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/hellcat-hackers-go-on-a-worldwide-jira-hacking-spree/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Other News Section -->
+  <div class="news-item">
+    <h2>📌 Other Cybersecurity News</h2>
+
+    <p>🚓 <b>UK's Operation Henhouse IV Nets 422 Arrests in Fraud Crackdown</b><br>
+    **£7.5M in assets seized; fraud now makes up 41% of UK crime.**</p>
+    <p>🔗 <a href="https://www.infosecurity-magazine.com/news/uk-police-arrest-422-major-fraud/" target="_blank">Read more</a></p>
+
+    <p>🔐 <b>UK’s NCSC Outlines Post-Quantum Migration Strategy</b><br>
+    **Full PQC adoption required by 2035 for critical infrastructure.**</p>
+    <p>🔗 <a href="https://www.infosecurity-magazine.com/news/ncsc-post-quantum-cryptography/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Hunting Opportunities Section -->
+  <div class="news-item">
+    <h2>🎯 Hunting Opportunities</h2>
+
+    <p>🐍 <b>FIN7 Deploys “AnubisBackdoor” via Phishing Campaigns</b><br>
+    **Python-based malware with AES encryption and Registry-stored configs.**</p>
+    <p>🔗 <a href="https://www.gdatasoftware.com/blog/2025/03/38161-analysis-fin7-anubis-backdoor" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="../index.html">⬅ Back to Home</a>
+  </p>
+
+</body>
+</html>
