@@ -1,111 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cybersecurity Newsfeed - 20/03/25</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
-        h1, h2 { color: #c9a227; text-align: center; } /* Soft gold */
-        p { line-height: 1.6; }
-        a { color: #c9a227; text-decoration: none; } /* Gold links */
-        a:hover { color: #b3541e; } /* Muted dark orange hover */
-        .news-item { margin-bottom: 25px; border-left: 4px solid #c9a227; padding-left: 15px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 21/03/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #b3541e; }
+    .news-item { margin-bottom: 25px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
 </head>
 <body>
 
-    <h1>📰 Cybersecurity Newsfeed</h1>
-    <h2>📅 20/03/25</h2>
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 21/03/25</h2>
 
-    <!-- Vulnerabilities Section -->
-    <div class="news-item">
-        <h2>🔥 Vulnerabilities</h2>
+  <!-- Vulnerabilities Section -->
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
 
-        <p>🛑 <b>CISA Adds Three Exploited Vulnerabilities to KEV Catalog</b><br>
-        **CVE-2025-1316** in **Edimax IP Cameras**, **CVE-2024-48248** in **NAKIVO Backup**, and **CVE-2017-12637** in **SAP NetWeaver** are under active exploitation.</p>
-        <p>🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/03/19/cisa-adds-three-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
+    <p>🛑 <b>Three Actively Exploited Flaws Added to CISA KEV Catalog</b><br>
+    **Affects Edimax IP Cameras (CVE-2025-1316), NAKIVO Backup (CVE-2024-48248), and SAP NetWeaver (CVE-2017-12637).**</p>
+    <p>🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/03/19/cisa-adds-three-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
 
-        <p>📱 <b>WhatsApp Patched Zero-Click Vulnerability Exploited by Paragon Spyware</b><br>
-        **Paragon’s Graphite spyware** was deployed via **malicious PDFs in WhatsApp groups** to **target journalists & civil society members.**</p>
-        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/whatsapp-patched-zero-day-flaw-used-in-paragon-spyware-attacks/" target="_blank">Read more</a></p>
+    <p>🔐 <b>WordPress WP Ghost Plugin RCE Vulnerability Affects 200K+ Sites</b><br>
+    **Unauthenticated attackers can execute arbitrary code (CVE-2025-26909).**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/wordpress-security-plugin-wp-ghost-vulnerable-to-remote-code-execution-bug/" target="_blank">Read more</a></p>
 
-        <p>🤖 <b>AI Jailbreak “Immersive World” Bypasses LLM Security to Generate Malware</b><br>
-        **ChatGPT, Copilot, and DeepSeek were tricked into creating a Chrome infostealer.**</p>
-        <p>🔗 <a href="https://hackread.com/ai-jailbreak-on-top-llms-to-create-chrome-infostealer/" target="_blank">Read more</a></p>
+    <p>🖥 <b>Veeam RCE Vulnerability Lets Domain Users Hijack Backup Servers</b><br>
+    **CVE-2025-23120 exploited via .NET deserialization flaw.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/veeam-rce-bug-lets-domain-users-hack-backup-servers-patch-now/" target="_blank">Read more</a></p>
 
-        <p>🔧 <b>Rules File Backdoor Exploits AI Code Editors Like GitHub Copilot</b><br>
-        **Attackers manipulate AI-generated code via hidden Unicode characters.**</p>
-        <p>🔗 <a href="https://securityaffairs.com/175593/hacking/rules-file-backdoor-ai-code-editors-silent-supply-chain-attacks.html" target="_blank">Read more</a></p>
+    <p>📱 <b>Zero-Click WhatsApp Exploit Delivered Israeli Spyware “Graphite”</b><br>
+    **Used against journalists and activists globally.**</p>
+    <p>🔗 <a href="https://hackread.com/israeli-spyware-graphite-hit-whatsapp-0-click-exploit/" target="_blank">Read more</a></p>
+  </div>
 
-        <p>💻 <b>Hackers Exploiting Critical PHP Flaw (CVE-2024-4577) for Crypto Miners & RATs</b><br>
-        **Targeting Windows CGI mode, mainly in Taiwan, Hong Kong, and Brazil.**</p>
-        <p>🔗 <a href="https://thehackernews.com/2025/03/hackers-exploit-severe-php-flaw-to.html" target="_blank">Read more</a></p>
-    </div>
+  <!-- Adversaries Section -->
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
 
-    <!-- Adversaries Section -->
-    <div class="news-item">
-        <h2>🕵️ Adversaries & Attacks</h2>
+    <p>🌐 <b>Hackers Target Unpatched Cisco Smart Licensing Utility</b><br>
+    **CVE-2024-20439 and CVE-2024-20440 exploited via hardcoded backdoor.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/critical-cisco-smart-licensing-utility-flaws-now-exploited-in-attacks/" target="_blank">Read more</a></p>
 
-        <p>🎮 <b>New Arcane Infostealer Targets Gamers on YouTube & Discord</b><br>
-        **Promoted via fake game cheats, it steals credentials & disables Windows Defender.**</p>
-        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/new-arcane-infostealer-infects-youtube-discord-users-via-game-cheats/" target="_blank">Read more</a></p>
+    <p>🧠 <b>RansomHub Ransomware Deploys Custom “Betruger” Backdoor</b><br>
+    **Used for credential dumping, exfiltration, and privilege escalation.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/ransomhub-ransomware-uses-new-betruger-multi-function-backdoor/" target="_blank">Read more</a></p>
 
-        <p>🖥 <b>DollyWay Malware Hijacks 20,000 WordPress Sites for Ad Fraud</b><br>
-        **Uses n-day plugin vulnerabilities to generate 10 million fraudulent impressions monthly.**</p>
-        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/malware-campaign-dollyway-breached-20-000-wordpress-sites/" target="_blank">Read more</a></p>
+    <p>🛰 <b>UAT-5918 APT Targets Taiwan’s Critical Infrastructure</b><br>
+    **Links to Volt Typhoon & other PRC-aligned APTs confirmed.**</p>
+    <p>🔗 <a href="https://blog.talosintelligence.com/uat-5918-targets-critical-infra-in-taiwan/" target="_blank">Read more</a></p>
 
-        <p>📱 <b>SIM Swapping Scams Surge in the Middle East, Stealing Up to $160,000</b><br>
-        **Fraudsters trick mobile providers into issuing new SIMs to hijack accounts.**</p>
-        <p>🔗 <a href="https://www.cysecurity.news/2025/03/sim-swap-scams-growing-in-middle-east.html" target="_blank">Read more</a></p>
+    <p>🔓 <b>SuperBlack Ransomware Exploits Fortinet Firewall Bugs</b><br>
+    **CVE-2024-55591 and CVE-2025-24472 used for access and lateral movement.**</p>
+    <p>🔗 <a href="https://www.cysecurity.news/2025/03/new-ransomware-superblack-abuses.html" target="_blank">Read more</a></p>
 
-        <p>🖥 <b>VenomRAT Malware Hides in Virtual Hard Disk (.VHD) Files</b><br>
-        **Delivered via phishing emails, using PowerShell for persistence.**</p>
-        <p>🔗 <a href="https://hackread.com/hackers-hide-venomrat-malware-virtual-hard-disk-files/" target="_blank">Read more</a></p>
+    <p>🚗 <b>Supply Chain CAPTCHA Attack Hits 100+ Car Dealerships</b><br>
+    **Victims infected with SectopRAT via fake “ClickFix” instructions.**</p>
+    <p>🔗 <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/supply-chain-captcha-attack-hits-over-100-car-dealerships" target="_blank">Read more</a></p>
 
-        <p>🌍 <b>China-Linked MirrorFace APT Expands to Target European Diplomats</b><br>
-        **First European attack using Anel & AsyncRAT malware.**</p>
-        <p>🔗 <a href="https://www.securityweek.com/chinese-hacking-group-mirrorface-targeting-europe/" target="_blank">Read more</a></p>
+    <p>🐟 <b>FishMonger APT (linked to I-SOON) Targets Global Diplomats</b><br>
+    **Exploits included ShadowPad, Spyder, and stolen credentials.**</p>
+    <p>🔗 <a href="https://www.infosecurity-magazine.com/news/fishmonger-apt-group-linked-isoon/" target="_blank">Read more</a></p>
+  </div>
 
-        <p>🔎 <b>ClearFake Uses Fake CAPTCHAs to Spread Lumma & Vidar Stealers</b><br>
-        **9,300 WordPress sites infected, leveraging Web3 for persistence.**</p>
-        <p>🔗 <a href="https://thehackernews.com/2025/03/clearfake-infects-9300-sites-uses-fake.html" target="_blank">Read more</a></p>
-    </div>
+  <!-- Trends Section -->
+  <div class="news-item">
+    <h2>📈 Cybersecurity Trends</h2>
 
-    <!-- Trends Section -->
-    <div class="news-item">
-        <h2>📈 Cybersecurity Trends</h2>
+    <p>💼 <b>Phishing Ads Impersonating Semrush Steal Google Account Credentials</b><br>
+    **Campaign abused Google Ads to trick marketing professionals.**</p>
+    <p>🔗 <a href="https://www.malwarebytes.com/blog/news/2025/03/semrush-impersonation-scam-hits-google-ads" target="_blank">Read more</a></p>
 
-        <p>⚠️ <b>Phishing-as-a-Service (PhaaS) Hits 1 Million Attacks in 2025</b><br>
-        **New Sneaky 2FA phishing kit joins Tycoon 2FA & EvilProxy.**</p>
-        <p>🔗 <a href="https://www.infosecurity-magazine.com/news/sneaky-2fa-joins-tycoon-2fa/" target="_blank">Read more</a></p>
-    </div>
+    <p>💣 <b>VSCode Marketplace Compromised by Malicious Extensions</b><br>
+    **Ransomware distributed via “ahban.shiba” and “ahban.cychelloworld.”**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/vscode-extensions-found-downloading-early-stage-ransomware/" target="_blank">Read more</a></p>
+  </div>
 
-    <!-- Others Section -->
-    <div class="news-item">
-        <h2>📌 Other Cybersecurity News</h2>
+  <!-- Breach/Leaks Section -->
+  <div class="news-item">
+    <h2>📂 Breaches & Leaks</h2>
 
-        <p>🕵️ <b>Citizen Lab Identifies 6 More Countries Using Paragon Spyware</b><br>
-        **Australia, Canada, Cyprus, Denmark, Israel & Singapore suspected of purchasing Graphite.**</p>
-        <p>🔗 <a href="https://cyberscoop.com/six-countries-suspected-paragon-spyware-customers/" target="_blank">Read more</a></p>
+    <p>💥 <b>HellCat Hackers Breach Swiss Telco Ascom via Jira Exploit</b><br>
+    **44GB of data exfiltrated; similar attacks hit Jaguar, Telefónica, and more.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/hellcat-hackers-go-on-a-worldwide-jira-hacking-spree/" target="_blank">Read more</a></p>
+  </div>
 
-        <p>📩 <b>Ukraine Warns of Spear-Phishing via Compromised Signal Accounts</b><br>
-        **DarkTortilla cryptor deploying Dark Crystal RAT (DCRAT) in military-focused attacks.**</p>
-        <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/ukrainian-military-targeted-in-new-signal-spear-phishing-attacks/" target="_blank">Read more</a></p>
-    </div>
+  <!-- Other News Section -->
+  <div class="news-item">
+    <h2>📌 Other Cybersecurity News</h2>
 
-    <!-- Hunting Opportunities Section -->
-    <div class="news-item">
-        <h2>🎯 Hunting Opportunities</h2>
+    <p>🚓 <b>UK's Operation Henhouse IV Nets 422 Arrests in Fraud Crackdown</b><br>
+    **£7.5M in assets seized; fraud now makes up 41% of UK crime.**</p>
+    <p>🔗 <a href="https://www.infosecurity-magazine.com/news/uk-police-arrest-422-major-fraud/" target="_blank">Read more</a></p>
 
-        <p>🔍 <b>Threat Actors Abusing Remote Monitoring & Management (RMM) Software</b><br>
-        **AnyDesk, TeamViewer & ScreenConnect increasingly used for stealthy cyberattacks.**</p>
-        <p>🔗 <a href="https://intel471.com/blog/threat-hunting-case-study-rmm-software" target="_blank">Read more</a></p>
-    </div>
+    <p>🔐 <b>UK’s NCSC Outlines Post-Quantum Migration Strategy</b><br>
+    **Full PQC adoption required by 2035 for critical infrastructure.**</p>
+    <p>🔗 <a href="https://www.infosecurity-magazine.com/news/ncsc-post-quantum-cryptography/" target="_blank">Read more</a></p>
+  </div>
 
-    <p style="text-align:center;">
-        <a href="https://pranakn.github.io">⬅ Back to Home</a>
-    </p>
+  <!-- Hunting Opportunities Section -->
+  <div class="news-item">
+    <h2>🎯 Hunting Opportunities</h2>
+
+    <p>🐍 <b>FIN7 Deploys “AnubisBackdoor” via Phishing Campaigns</b><br>
+    **Python-based malware with AES encryption and Registry-stored configs.**</p>
+    <p>🔗 <a href="https://www.gdatasoftware.com/blog/2025/03/38161-analysis-fin7-anubis-backdoor" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Home</a>
+  </p>
 
 </body>
 </html>
