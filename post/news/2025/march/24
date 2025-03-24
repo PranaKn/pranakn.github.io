@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 24/03/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #00ffcc; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #b3541e; }
+    .news-item { margin-bottom: 25px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 24/03/25</h2>
+
+  <!-- Vulnerabilities Section -->
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>🛑 <b>Google Chrome Update Fixes Critical “Use After Free” Flaw</b><br>
+    **CVE-2025-2476 in Google Lens could allow remote code execution via crafted HTML.**</p>
+    <p>🔗 <a href="https://www.zdnet.com/article/its-time-to-update-google-chrome-again-asap-heres-why/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Adversaries Section -->
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>🔐 <b>Microsoft Trusted Signing Abused to Sign Malware</b><br>
+    **Three-day certs abused to legitimize malware like Lumma Stealer & Crazy Evil Traffers.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/microsoft-trust-signing-service-abused-to-code-sign-malware/" target="_blank">Read more</a></p>
+
+    <p>🎮 <b>Steam Game Delisted for Installing Info-Stealing Malware</b><br>
+    **Sniper: Phantom’s Resolution used GitHub to spread malware disguised as a game demo.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/steam-pulls-game-demo-infecting-windows-with-info-stealing-malware/" target="_blank">Read more</a></p>
+
+    <p>🌐 <b>Lazarus Group Targets South Korean IIS Servers</b><br>
+    **Deploys advanced ASP-based web shells and LazarLoader for stealthy C2 access.**</p>
+    <p>🔗 <a href="https://www.cysecurity.news/2025/03/lazarus-group-intensifies-attacks-on.html" target="_blank">Read more</a></p>
+
+    <p>📱 <b>Instagram Business Accounts Targeted by Fake Meta Chatbots</b><br>
+    **Phishing campaign uses Salesforce and video guides to hijack accounts.**</p>
+    <p>🔗 <a href="https://hackread.com/phishing-scam-fake-instagram-chatbots-hijack-accounts/" target="_blank">Read more</a></p>
+
+    <p>🛠 <b>Attackers Exploiting Unpatched ServiceNow Vulnerabilities</b><br>
+    **CVE-2024-4879, CVE-2024-5217, CVE-2024-5178 abused in targeted campaigns.**</p>
+    <p>🔗 <a href="https://hackread.com/attacks-exploit-servicenow-flaws-israel-hit-hardest/" target="_blank">Read more</a></p>
+
+    <p>🦠 <b>Albabat Ransomware Evolves with Rust & Cross-Platform Support</b><br>
+    **Targets Windows, Linux & macOS with PostgreSQL tracking and selective encryption.**</p>
+    <p>🔗 <a href="https://www.infosecurity-magazine.com/news/albabat-ransomware-linux-macos/" target="_blank">Read more</a></p>
+
+    <p>🛰 <b>Chinese APT UAT-5918 Targets Taiwan’s Critical Sectors</b><br>
+    **Uses Mimikatz, Impacket, LaZagne & web shells for stealthy lateral movement.**</p>
+    <p>🔗 <a href="https://securityaffairs.com/175728/hacking/uat-5918-atp-group-targets-critical-taiwan.html" target="_blank">Read more</a></p>
+
+    <p>💣 <b>Medusa Ransomware Uses Malicious “ABYSSWORKER” Driver</b><br>
+    **BYOVD attack disables EDR via fake CrowdStrike driver with revoked certs.**</p>
+    <p>🔗 <a href="https://thehackernews.com/2025/03/medusa-ransomware-uses-malicious-driver.html" target="_blank">Read more</a></p>
+
+    <p>🐼 <b>Aquatic Panda Linked to Operation FishMedley</b><br>
+    **Targeted NGOs and governments in 7 countries using malware like RPipeCommander.**</p>
+    <p>🔗 <a href="https://thehackernews.com/2025/03/china-linked-apt-aquatic-panda-10-month.html" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Trends Section -->
+  <div class="news-item">
+    <h2>📈 Cybersecurity Trends</h2>
+
+    <p>📡 <b>94% of OT and IoT Wi-Fi Networks Vulnerable to Deauth Attacks</b><br>
+    **Lack of management frame protection leaves critical infrastructure at risk.**</p>
+    <p>🔗 <a href="https://www.cysecurity.news/2025/03/deauthentication-attacks-leave-wi-fi.html" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Breach/Leaks Section -->
+  <div class="news-item">
+    <h2>📂 Breaches & Leaks</h2>
+
+    <p>💾 <b>Oracle Denies Data Breach Despite 6M Record Theft Claim</b><br>
+    **Threat actor “rose87168” leaks LDAP data and encrypted credentials on BreachForums.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/oracle-denies-data-breach-after-hacker-claims-theft-of-6-million-data-records/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Other News Section -->
+  <div class="news-item">
+    <h2>📌 Other Cybersecurity News</h2>
+
+    <p>⚖️ <b>US Treasury Lifts Sanctions on Tornado Cash After Court Ruling</b><br>
+    **OFAC found to have overreached; $7B in laundering still linked to the mixer.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/us-removes-sanctions-against-tornado-cash-crypto-mixer/" target="_blank">Read more</a></p>
+
+    <p>🔑 <b>RBAC Isn’t Dead—But FGA Is the Future of Access Control</b><br>
+    **Attribute-based and relationship-based access expand RBAC with dynamic context.**</p>
+    <p>🔗 <a href="https://www.permit.blog/blog/so-long-rbac-and-thanks-for-all-the-roles?utm_source=feedly&utm_medium=cpc&utm_campaign=march&utm_content=rbac_goodbye" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="../index.html">⬅ Back to Home</a>
+  </p>
+
+</body>
+</html>
