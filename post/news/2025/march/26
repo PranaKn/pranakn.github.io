@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 26/03/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #b3541e; }
+    .news-item { margin-bottom: 25px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 26/03/25</h2>
+
+  <!-- Vulnerabilities Section -->
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>🔐 <b>Broadcom Patches VMware Tools Privilege Escalation Flaw (CVE-2025-22230)</b><br>
+    **Impacts Windows VMs, enables local privilege escalation—update urgently.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/broadcom-warns-of-authentication-bypass-in-vmware-windows-tools/" target="_blank">Read more</a></p>
+
+    <p>🪟 <b>New Windows Zero-Day Leaks NTLM Hashes via SCF Files</b><br>
+    **0patch releases fix while Microsoft investigates—impacts Windows 7–11 and Server editions.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/new-windows-zero-day-leaks-ntlm-hashes-gets-unofficial-patch/" target="_blank">Read more</a></p>
+
+    <p>📁 <b>CrushFTP Urges Patching Critical Unauthenticated Access Vulnerability</b><br>
+    **Over 3,400 servers exposed—fixed in version 11.3.1.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/crushftp-warns-users-to-patch-unauthenticated-access-flaw-immediately/" target="_blank">Read more</a></p>
+
+    <p>🐳 <b>IngressNightmare: Critical NGINX Kubernetes Flaws Allow Cluster Takeover</b><br>
+    **Five CVEs impact 6,500+ clusters, including Fortune 500 firms.**</p>
+    <p>🔗 <a href="https://www.helpnetsecurity.com/2025/03/25/ingressnightmare-ingress-nginx-vulnerabilities-kubernetes-cluster-takeover/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Adversaries Section -->
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>📱 <b>New Android Malware Uses Microsoft’s .NET MAUI to Evade Detection</b><br>
+    **Disguised as banking/social apps—targets users in China and India.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/new-android-malware-uses-microsofts-net-maui-to-evade-detection/" target="_blank">Read more</a></p>
+
+    <p>🎮 <b>Fake Steam Login via BitB Attacks Target CS2 Players</b><br>
+    **Lures via YouTube & phishing pages to steal Steam credentials.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/browser-in-the-browser-attacks-target-cs2-players-steam-accounts/" target="_blank">Read more</a></p>
+
+    <p>🧨 <b>Mora_001 Exploits Fortinet Bugs to Deploy SuperBlack Ransomware</b><br>
+    **Linked to LockBit 3.0 builder—targets unpatched firewalls.**</p>
+    <p>🔗 <a href="https://www.cysecurity.news/2025/03/hackers-exploit-fortinet-firewall-bugs.html" target="_blank">Read more</a></p>
+
+    <p>🐍 <b>Raspberry Robin Evolves into Full Access Broker for Russian APTs</b><br>
+    **Supports espionage and ransomware ops—blends into attack chains.**</p>
+    <p>🔗 <a href="https://www.darkreading.com/cyberattacks-data-breaches/access-broker-russian-state-cybercrime" target="_blank">Read more</a></p>
+
+    <p>🛡️ <b>MEDUSA Ransomware Uses Signed Drivers to Disable EDR</b><br>
+    **AbyssWorker driver mimics CrowdStrike—kernel-level stealth tactics.**</p>
+    <p>🔗 <a href="https://hackread.com/medusa-ransomware-anti-malware-tools-stolen-certificates/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Trends Section -->
+  <div class="news-item">
+    <h2>📈 Cybersecurity Trends</h2>
+
+    <p>🛰️ <b>Global Agencies Warn of GNSS Jamming and Spoofing Risks</b><br>
+    **Threatens aviation, maritime, telecom—calls for urgent global action.**</p>
+    <p>🔗 <a href="https://hackread.com/satellite-navigation-systems-jamming-spoofing-attacks/" target="_blank">Read more</a></p>
+
+    <p>🔑 <b>Atlantis AIO Credential-Stuffing Tool Targets 140+ Services</b><br>
+    **Automates email, shopping, and crypto takeovers—sold on dark web.**</p>
+    <p>🔗 <a href="https://www.infosecurity-magazine.com/news/cyber-criminals-atlantis-aio-140/" target="_blank">Read more</a></p>
+
+    <p>🧠 <b>KELA: Dark Web Sees 219% Surge in Malicious AI Tool Mentions</b><br>
+    **AI-as-a-Service drives phishing, fraud, and malware creation.**</p>
+    <p>🔗 <a href="https://www.infosecurity-magazine.com/news/dark-web-mentions-malicious-ai/" target="_blank">Read more</a></p>
+
+    <p>🏭 <b>Ontinue Report: Malware Shifts, AI Vishing Soars, IoT/OT at Risk</b><br>
+    **Vishing up 1,633%—browser extensions, critical infrastructure in the crosshairs.**</p>
+    <p>🔗 <a href="https://www.securityweek.com/ransomware-shifts-tactics-as-payouts-drop-critical-infrastructure-in-the-crosshairs/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Others Section -->
+  <div class="news-item">
+    <h2>📌 Other Cybersecurity News</h2>
+
+    <p>📦 <b>Cloudflare R2 Global Outage Caused by Credential Misdeployment</b><br>
+    **Auth tokens deployed to dev instead of prod—1hr service downtime.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/cloudflare-r2-service-outage-caused-by-password-rotation-error/" target="_blank">Read more</a></p>
+
+    <p>📧 <b>Troy Hunt Phished, Mailchimp Mailing List Stolen</b><br>
+    **Login + OTP entered on fake domain—over 16,000 emails exfiltrated.**</p>
+    <p>🔗 <a href="https://www.troyhunt.com/a-sneaky-phish-just-grabbed-my-mailchimp-mailing-list/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Hunting Opportunities Section -->
+  <div class="news-item">
+    <h2>🎯 Hunting Opportunities</h2>
+
+    <p>🔍 <b>Water Gamayun Exploits MMC Zero-Day (CVE-2025-26633)</b><br>
+    **"MSC EvilTwin" loads Rhadamanthys via malicious .msc files—patch now!**</p>
+    <p>🔗 <a href="https://www.trendmicro.com/en_us/research/25/c/cve-2025-26633-water-gamayun.html" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Home</a>
+  </p>
+
+</body>
+</html>
