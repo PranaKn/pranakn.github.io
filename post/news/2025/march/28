@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 28/03/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #b3541e; }
+    .news-item { margin-bottom: 25px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 28/03/25</h2>
+
+  <!-- Vulnerabilities Section -->
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>🧨 <b>CISA Adds Chrome Sandbox Escape (CVE-2025-2783) to KEV</b><br>
+    **Used in Operation ForumTroll to target Russian institutions—update Chrome now.**</p>
+    <p>🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/03/27/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">Read more</a></p>
+
+    <p>🦊 <b>Firefox Critical Sandbox Escape Patched (CVE-2025-2857)</b><br>
+    **Impacts Firefox on Windows—IPC handle issue; similar to Chrome flaw.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/mozilla-warns-windows-users-of-critical-firefox-sandbox-escape-flaw/" target="_blank">Read more</a></p>
+
+    <p>🖥️ <b>Windows 11 KB5053656 Update Adds Translation, Fixes 38 Issues</b><br>
+    **Introduces Copilot+ support, fixes BSODs and Kerberos auth bugs.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5053656-update-released-with-38-changes-and-fixes/" target="_blank">Read more</a></p>
+
+    <p>📊 <b>Splunk Patches RCE, Token Leak in Secure Gateway</b><br>
+    **CVE-2025-20229 allows file upload-based RCE—update Splunk now.**</p>
+    <p>🔗 <a href="https://www.securityweek.com/splunk-patches-dozens-of-vulnerabilities/" target="_blank">Read more</a></p>
+
+    <p>⚡ <b>46 Solar Inverter Flaws Could Disrupt Power Grids</b><br>
+    **Affects SMA, Growatt, Sungrow—includes RCE, XSS, IDOR.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/dozens-of-solar-inverter-flaws-could-be-exploited-to-attack-power-grids/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Adversaries Section -->
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>☕ <b>CoffeeLoader: Stealthy GPU-Packed Malware Deploys SmokeLoader</b><br>
+    **Evasive loader uses call stack spoofing, certificate pinning, and fibers.**</p>
+    <p>🔗 <a href="https://www.infosecurity-magazine.com/news/coffeeloader-linked-smokeloader/" target="_blank">Read more</a></p>
+
+    <p>📱 <b>PJobRAT Targets Taiwan via Fake Messaging Apps</b><br>
+    **Disguised as “CChat” & “SangaalLite”—exfiltrates data using Firebase.**</p>
+    <p>🔗 <a href="https://www.infosecurity-magazine.com/news/pjobrat-malware-targets-taiwan-via/" target="_blank">Read more</a></p>
+
+    <p>📦 <b>APT36 Spoofs India Post to Hit Android & Windows Devices</b><br>
+    **Uses ClickFix, fake apps, and PowerShell payloads to steal data.**</p>
+    <p>🔗 <a href="https://thehackernews.com/2025/03/apt36-spoofs-india-post-website-to.html" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Trends Section -->
+  <div class="news-item">
+    <h2>📈 Cybersecurity Trends</h2>
+
+    <p>🔌 <b>Top 4 WordPress Plugin Flaws Exploited in Q1 2025</b><br>
+    **Includes SQLi, RCE, file upload—millions of unpatched sites still vulnerable.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/the-four-wordpress-flaws-hackers-targeted-the-most-in-q1-2025/" target="_blank">Read more</a></p>
+
+    <p>🧩 <b>Chrome Extensions Pose Silent Threat—Exploit via Update Push</b><br>
+    **Researcher shows $55 purchase lets attackers redirect traffic silently.**</p>
+    <p>🔗 <a href="https://cyberscoop.com/browser-extension-sales-permissions-hidden-threat/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Breaches Section -->
+  <div class="news-item">
+    <h2>🔓 Breach / Leak</h2>
+
+    <p>🇦🇺 <b>Vroom (YouX) Data Leak Exposes 27K Sensitive Records</b><br>
+    **S3 misconfiguration exposed IDs, credit card data, and medical docs.**</p>
+    <p>🔗 <a href="https://hackread.com/aussie-fintech-vroom-pii-records-aws-misconfiguration/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Others Section -->
+  <div class="news-item">
+    <h2>📌 Other Cybersecurity News</h2>
+
+    <p>🔐 <b>Chrome Root Program Mandates MPIC & Linting for CAs</b><br>
+    **New CA/B Forum rules combat BGP hijack abuse and cert misissuance.**</p>
+    <p>🔗 <a href="https://security.googleblog.com/2025/03/new-security-requirements-adopted-by.html" target="_blank">Read more</a></p>
+
+    <p>💰 <b>OpenAI Ups Bug Bounties to $100K, Adds Security Research Grants</b><br>
+    **Partners with Bugcrowd, SpecterOps, rolls out AI threat detection.**</p>
+    <p>🔗 <a href="https://hackread.com/openai-bug-bounty-program-increases-top-reward/" target="_blank">Read more</a></p>
+
+    <p>⚠️ <b>NCA Warns of Sadistic Teen Cybercrime "Com" Networks</b><br>
+    **Linked to SIM swapping, phishing, and graphic abuse—UK reports spike.**</p>
+    <p>🔗 <a href="https://www.infosecurity-magazine.com/news/nca-warns-of-sadistic-online-com/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Tools Section -->
+  <div class="news-item">
+    <h2>🛠️ Tools</h2>
+
+    <p>🧪 <b>March’s Hot Open-Source Tools</b><br>
+    • <a href="https://github.com/dstotijn/hetty" target="_blank">Hetty</a> – HTTP toolkit like Burp Suite<br>
+    • <a href="https://github.com/someengineering/fixinventory" target="_blank">Fix Inventory</a> – Cloud infra compliance checker<br>
+    • <a href="https://github.com/commixproject/commix" target="_blank">Commix</a> – OS command injection exploit tool<br>
+    • <a href="https://github.com/netbirdio/netbird" target="_blank">NetBird</a> – Secure peer-to-peer network manager</p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="../index.html">⬅ Back to Home</a>
+  </p>
+
+</body>
+</html>
