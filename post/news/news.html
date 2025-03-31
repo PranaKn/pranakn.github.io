@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cybersecurity Newsfeed - 28/03/25</title>
+  <title>Cybersecurity Newsfeed - 31/03/25</title>
   <style>
-    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #00ffcc; padding: 20px; }
     h1, h2 { color: #c9a227; text-align: center; }
     p { line-height: 1.6; }
     a { color: #c9a227; text-decoration: none; }
@@ -16,98 +16,103 @@
 <body>
 
   <h1>📰 Cybersecurity Newsfeed</h1>
-  <h2>📅 28/03/25</h2>
+  <h2>📅 31/03/25</h2>
 
   <!-- Vulnerabilities Section -->
   <div class="news-item">
     <h2>🔥 Vulnerabilities</h2>
 
-    <p>🧨 <b>CISA Adds Chrome Sandbox Escape (CVE-2025-2783) to KEV</b><br>
-    **Used in Operation ForumTroll to target Russian institutions—update Chrome now.**</p>
-    <p>🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/03/27/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">Read more</a></p>
-
-    <p>🦊 <b>Firefox Critical Sandbox Escape Patched (CVE-2025-2857)</b><br>
-    **Impacts Firefox on Windows—IPC handle issue; similar to Chrome flaw.**</p>
-    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/mozilla-warns-windows-users-of-critical-firefox-sandbox-escape-flaw/" target="_blank">Read more</a></p>
-
-    <p>🖥️ <b>Windows 11 KB5053656 Update Adds Translation, Fixes 38 Issues</b><br>
-    **Introduces Copilot+ support, fixes BSODs and Kerberos auth bugs.**</p>
-    <p>🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5053656-update-released-with-38-changes-and-fixes/" target="_blank">Read more</a></p>
-
-    <p>📊 <b>Splunk Patches RCE, Token Leak in Secure Gateway</b><br>
-    **CVE-2025-20229 allows file upload-based RCE—update Splunk now.**</p>
-    <p>🔗 <a href="https://www.securityweek.com/splunk-patches-dozens-of-vulnerabilities/" target="_blank">Read more</a></p>
-
-    <p>⚡ <b>46 Solar Inverter Flaws Could Disrupt Power Grids</b><br>
-    **Affects SMA, Growatt, Sungrow—includes RCE, XSS, IDOR.**</p>
-    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/dozens-of-solar-inverter-flaws-could-be-exploited-to-attack-power-grids/" target="_blank">Read more</a></p>
+    <p>🦊 <b>Firefox Sandbox Escape Patched (CVE-2025-2857)</b><br>
+    **Bug mirrors Chrome’s CVE-2025-2783—update Firefox, ESR, and Tor Browser now.**</p>
+    <p>🔗 <a href="https://thehackernews.com/2025/03/mozilla-patches-critical-firefox-bug.html" target="_blank">Read more</a></p>
   </div>
 
   <!-- Adversaries Section -->
   <div class="news-item">
     <h2>🕵️ Adversaries & Attacks</h2>
 
-    <p>☕ <b>CoffeeLoader: Stealthy GPU-Packed Malware Deploys SmokeLoader</b><br>
-    **Evasive loader uses call stack spoofing, certificate pinning, and fibers.**</p>
-    <p>🔗 <a href="https://www.infosecurity-magazine.com/news/coffeeloader-linked-smokeloader/" target="_blank">Read more</a></p>
+    <p>🔧 <b>RESURGE Malware Hits Ivanti via CVE-2025-0282</b><br>
+    **Alters boot image, plants web shells—CISA urges factory reset + credential rotation.**</p>
+    <p>🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/03/28/cisa-releases-malware-analysis-report-resurge-malware-associated-ivanti-connect-secure" target="_blank">Read more</a></p>
 
-    <p>📱 <b>PJobRAT Targets Taiwan via Fake Messaging Apps</b><br>
-    **Disguised as “CChat” & “SangaalLite”—exfiltrates data using Firebase.**</p>
-    <p>🔗 <a href="https://www.infosecurity-magazine.com/news/pjobrat-malware-targets-taiwan-via/" target="_blank">Read more</a></p>
+    <p>🐊 <b>Crocodilus Android RAT Steals Crypto Wallet Keys</b><br>
+    **Fakes backup prompt, abuses Accessibility Services to steal seed phrases.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/new-crocodilus-malware-steals-android-users-crypto-wallet-keys/" target="_blank">Read more</a></p>
 
-    <p>📦 <b>APT36 Spoofs India Post to Hit Android & Windows Devices</b><br>
-    **Uses ClickFix, fake apps, and PowerShell payloads to steal data.**</p>
-    <p>🔗 <a href="https://thehackernews.com/2025/03/apt36-spoofs-india-post-website-to.html" target="_blank">Read more</a></p>
+    <p>🧬 <b>Morphing Meerkat Phishing-as-a-Service Uses DNS over HTTPS</b><br>
+    **Spoofs 114+ brands, bypasses detection with DoH, redirects, and auto-filled emails.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/phishing-as-a-service-operation-uses-dns-over-https-for-evasion/" target="_blank">Read more</a></p>
+
+    <p>💣 <b>Gamaredon Phishes Ukraine with LNK Files & Remcos Backdoor</b><br>
+    **Delivers payloads via TiVoDiag DLL sideloading + PowerShell.**</p>
+    <p>🔗 <a href="https://blog.talosintelligence.com/gamaredon-campaign-distribute-remcos/" target="_blank">Read more</a></p>
+
+    <p>🎭 <b>Evilginx Still Defeats MFA via AitM Tactics</b><br>
+    **Spoofs Microsoft 365 login and steals session tokens—passkeys recommended.**</p>
+    <p>🔗 <a href="https://www.darkreading.com/endpoint-security/evilginx-bypasses-mfa" target="_blank">Read more</a></p>
+
+    <p>🕵️‍♂️ <b>APT34 Targets Iraq & Yemen With Espionage Tools</b><br>
+    **Deploys Veaty, Spearal, and Power Service—uses DNS/SSH tunneling & hijacked emails.**</p>
+    <p>🔗 <a href="https://www.darkreading.com/cyberattacks-data-breaches/irans-mois-linked-apt34-spies-allies-iraq-yemen" target="_blank">Read more</a></p>
+
+    <p>🎯 <b>Russian Intel Targets Anti-War Activists with CIA Spoof Sites</b><br>
+    **Collects personal data via fake Liberty Legion and Hochuzhit pages.**</p>
+    <p>🔗 <a href="https://hackread.com/russia-phishing-fake-cia-sites-anti-war-ukraine-supporters/" target="_blank">Read more</a></p>
+
+    <p>🌐 <b>SquareX Warns of Browser-Native Ransomware</b><br>
+    **Locks cloud accounts using stolen browser session tokens—EDR bypassed entirely.**</p>
+    <p>🔗 <a href="https://hackread.com/squarex-discloses-browser-native-ransomware-that-puts-millions-at-risk/" target="_blank">Read more</a></p>
+
+    <p>🔁 <b>Grandoreiro Banking Trojan Resurfaces in Latin America</b><br>
+    **Delphi-based malware uses tax-themed lures + custom C2 protocol.**</p>
+    <p>🔗 <a href="https://securityaffairs.com/175964/malware/crooks-are-reviving-the-grandoreiro-banking-trojan.html" target="_blank">Read more</a></p>
+
+    <p>🧬 <b>Malware Authors Shift to Obscure Languages</b><br>
+    **Delphi, Haskell, Lisp make analysis harder—used by APT29, Akira, Hive.**</p>
+    <p>🔗 <a href="https://www.theregister.com/2025/03/29/malware_obscure_languages/" target="_blank">Read more</a></p>
   </div>
 
   <!-- Trends Section -->
   <div class="news-item">
     <h2>📈 Cybersecurity Trends</h2>
 
-    <p>🔌 <b>Top 4 WordPress Plugin Flaws Exploited in Q1 2025</b><br>
-    **Includes SQLi, RCE, file upload—millions of unpatched sites still vulnerable.**</p>
-    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/the-four-wordpress-flaws-hackers-targeted-the-most-in-q1-2025/" target="_blank">Read more</a></p>
-
-    <p>🧩 <b>Chrome Extensions Pose Silent Threat—Exploit via Update Push</b><br>
-    **Researcher shows $55 purchase lets attackers redirect traffic silently.**</p>
-    <p>🔗 <a href="https://cyberscoop.com/browser-extension-sales-permissions-hidden-threat/" target="_blank">Read more</a></p>
+    <p>❄️ <b>Fake “Snow White” Torrent Drops Malware via SEO Poisoning</b><br>
+    **Uses fake codec “xmph_codec.exe” to disable Defender and connect to the Dark Web.**</p>
+    <p>🔗 <a href="https://hackread.com/fake-snow-white-movie-torrent-infects-device-malware/" target="_blank">Read more</a></p>
   </div>
 
   <!-- Breaches Section -->
   <div class="news-item">
     <h2>🔓 Breach / Leak</h2>
 
-    <p>🇦🇺 <b>Vroom (YouX) Data Leak Exposes 27K Sensitive Records</b><br>
-    **S3 misconfiguration exposed IDs, credit card data, and medical docs.**</p>
-    <p>🔗 <a href="https://hackread.com/aussie-fintech-vroom-pii-records-aws-misconfiguration/" target="_blank">Read more</a></p>
+    <p>🏥 <b>Oracle Health Breach Exposes Patient Data</b><br>
+    **Legacy Cerner systems targeted—extortion campaign ongoing.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/oracle-health-breach-compromises-patient-data-at-us-hospitals/" target="_blank">Read more</a></p>
+
+    <p>🎴 <b>Collectibles.com Data Leak Affects Nearly 1 Million Users</b><br>
+    **300GB exposed on open server—includes names, emails, and sales records.**</p>
+    <p>🔗 <a href="https://www.cysecurity.news/2025/03/massive-data-leak-exposes-nearly.html" target="_blank">Read more</a></p>
+
+    <p>🛒 <b>Sam’s Club Probes Alleged Cl0p Breach via Cleo Vulnerability</b><br>
+    **Cl0p claims breach, no proof leaked yet—CISA already listed the CVE.**</p>
+    <p>🔗 <a href="https://securityaffairs.com/175999/cyber-crime/sams-club-investigates-alleged-cl0p-ransomware-breach.html" target="_blank">Read more</a></p>
   </div>
 
   <!-- Others Section -->
   <div class="news-item">
     <h2>📌 Other Cybersecurity News</h2>
 
-    <p>🔐 <b>Chrome Root Program Mandates MPIC & Linting for CAs</b><br>
-    **New CA/B Forum rules combat BGP hijack abuse and cert misissuance.**</p>
-    <p>🔗 <a href="https://security.googleblog.com/2025/03/new-security-requirements-adopted-by.html" target="_blank">Read more</a></p>
+    <p>💻 <b>Microsoft Disables BypassNRO.cmd in Insider Builds</b><br>
+    **Signals end of local account setup—Microsoft Account becoming mandatory.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/microsofts-killing-script-used-to-avoid-microsoft-account-in-windows-11/" target="_blank">Read more</a></p>
 
-    <p>💰 <b>OpenAI Ups Bug Bounties to $100K, Adds Security Research Grants</b><br>
-    **Partners with Bugcrowd, SpecterOps, rolls out AI threat detection.**</p>
-    <p>🔗 <a href="https://hackread.com/openai-bug-bounty-program-increases-top-reward/" target="_blank">Read more</a></p>
+    <p>🔧 <b>Microsoft Tests “Quick Machine Recovery” Tool for Windows 11</b><br>
+    **Automates boot issue recovery via Windows RE + remote fix deployment.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-quick-machine-recovery-tool-to-fix-boot-crashes/" target="_blank">Read more</a></p>
 
-    <p>⚠️ <b>NCA Warns of Sadistic Teen Cybercrime "Com" Networks</b><br>
-    **Linked to SIM swapping, phishing, and graphic abuse—UK reports spike.**</p>
-    <p>🔗 <a href="https://www.infosecurity-magazine.com/news/nca-warns-of-sadistic-online-com/" target="_blank">Read more</a></p>
-  </div>
-
-  <!-- Tools Section -->
-  <div class="news-item">
-    <h2>🛠️ Tools</h2>
-
-    <p>🧪 <b>March’s Hot Open-Source Tools</b><br>
-    • <a href="https://github.com/dstotijn/hetty" target="_blank">Hetty</a> – HTTP toolkit like Burp Suite<br>
-    • <a href="https://github.com/someengineering/fixinventory" target="_blank">Fix Inventory</a> – Cloud infra compliance checker<br>
-    • <a href="https://github.com/commixproject/commix" target="_blank">Commix</a> – OS command injection exploit tool<br>
-    • <a href="https://github.com/netbirdio/netbird" target="_blank">NetBird</a> – Secure peer-to-peer network manager</p>
+    <p>🎓 <b>Student-Powered SOCs Transform Cybersecurity Education</b><br>
+    **LSU, UNLV, UC use students to triage incidents, cut costs, build pipeline.**</p>
+    <p>🔗 <a href="https://www.darkreading.com/cybersecurity-operations/student-powered-socs-train-security-next-generation" target="_blank">Read more</a></p>
   </div>
 
   <p style="text-align:center;">
