@@ -21,7 +21,7 @@
 📓 [CISO](https://pranakn.github.io/post/ciso/ciso.html)  
 📓 [BOOKS](https://pranakn.github.io/post/books/books.html)  
 📓 [NEWSFEEDS](https://pranakn.github.io/post/news/news.html)  
-📓 [FUNDAMENTALS](https://pranakn.github.io/post/fundamentals/fundamentals.html)
+📓 [FUNDAMENTALS](https://pranakn.github.io/post/fundamentals/fundamentals.html)  
 📓 [CERTIFICATIONS](https://pranakn.github.io/post/certs/certs.html)
 
 ---
