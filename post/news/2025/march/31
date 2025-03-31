@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 31/03/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #b3541e; }
+    .news-item { margin-bottom: 25px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 31/03/25</h2>
+
+  <!-- Vulnerabilities Section -->
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>🦊 <b>Firefox Sandbox Escape Patched (CVE-2025-2857)</b><br>
+    **Bug mirrors Chrome’s CVE-2025-2783—update Firefox, ESR, and Tor Browser now.**</p>
+    <p>🔗 <a href="https://thehackernews.com/2025/03/mozilla-patches-critical-firefox-bug.html" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Adversaries Section -->
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>🔧 <b>RESURGE Malware Hits Ivanti via CVE-2025-0282</b><br>
+    **Alters boot image, plants web shells—CISA urges factory reset + credential rotation.**</p>
+    <p>🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/03/28/cisa-releases-malware-analysis-report-resurge-malware-associated-ivanti-connect-secure" target="_blank">Read more</a></p>
+
+    <p>🐊 <b>Crocodilus Android RAT Steals Crypto Wallet Keys</b><br>
+    **Fakes backup prompt, abuses Accessibility Services to steal seed phrases.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/new-crocodilus-malware-steals-android-users-crypto-wallet-keys/" target="_blank">Read more</a></p>
+
+    <p>🧬 <b>Morphing Meerkat Phishing-as-a-Service Uses DNS over HTTPS</b><br>
+    **Spoofs 114+ brands, bypasses detection with DoH, redirects, and auto-filled emails.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/phishing-as-a-service-operation-uses-dns-over-https-for-evasion/" target="_blank">Read more</a></p>
+
+    <p>💣 <b>Gamaredon Phishes Ukraine with LNK Files & Remcos Backdoor</b><br>
+    **Delivers payloads via TiVoDiag DLL sideloading + PowerShell.**</p>
+    <p>🔗 <a href="https://blog.talosintelligence.com/gamaredon-campaign-distribute-remcos/" target="_blank">Read more</a></p>
+
+    <p>🎭 <b>Evilginx Still Defeats MFA via AitM Tactics</b><br>
+    **Spoofs Microsoft 365 login and steals session tokens—passkeys recommended.**</p>
+    <p>🔗 <a href="https://www.darkreading.com/endpoint-security/evilginx-bypasses-mfa" target="_blank">Read more</a></p>
+
+    <p>🕵️‍♂️ <b>APT34 Targets Iraq & Yemen With Espionage Tools</b><br>
+    **Deploys Veaty, Spearal, and Power Service—uses DNS/SSH tunneling & hijacked emails.**</p>
+    <p>🔗 <a href="https://www.darkreading.com/cyberattacks-data-breaches/irans-mois-linked-apt34-spies-allies-iraq-yemen" target="_blank">Read more</a></p>
+
+    <p>🎯 <b>Russian Intel Targets Anti-War Activists with CIA Spoof Sites</b><br>
+    **Collects personal data via fake Liberty Legion and Hochuzhit pages.**</p>
+    <p>🔗 <a href="https://hackread.com/russia-phishing-fake-cia-sites-anti-war-ukraine-supporters/" target="_blank">Read more</a></p>
+
+    <p>🌐 <b>SquareX Warns of Browser-Native Ransomware</b><br>
+    **Locks cloud accounts using stolen browser session tokens—EDR bypassed entirely.**</p>
+    <p>🔗 <a href="https://hackread.com/squarex-discloses-browser-native-ransomware-that-puts-millions-at-risk/" target="_blank">Read more</a></p>
+
+    <p>🔁 <b>Grandoreiro Banking Trojan Resurfaces in Latin America</b><br>
+    **Delphi-based malware uses tax-themed lures + custom C2 protocol.**</p>
+    <p>🔗 <a href="https://securityaffairs.com/175964/malware/crooks-are-reviving-the-grandoreiro-banking-trojan.html" target="_blank">Read more</a></p>
+
+    <p>🧬 <b>Malware Authors Shift to Obscure Languages</b><br>
+    **Delphi, Haskell, Lisp make analysis harder—used by APT29, Akira, Hive.**</p>
+    <p>🔗 <a href="https://www.theregister.com/2025/03/29/malware_obscure_languages/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Trends Section -->
+  <div class="news-item">
+    <h2>📈 Cybersecurity Trends</h2>
+
+    <p>❄️ <b>Fake “Snow White” Torrent Drops Malware via SEO Poisoning</b><br>
+    **Uses fake codec “xmph_codec.exe” to disable Defender and connect to the Dark Web.**</p>
+    <p>🔗 <a href="https://hackread.com/fake-snow-white-movie-torrent-infects-device-malware/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Breaches Section -->
+  <div class="news-item">
+    <h2>🔓 Breach / Leak</h2>
+
+    <p>🏥 <b>Oracle Health Breach Exposes Patient Data</b><br>
+    **Legacy Cerner systems targeted—extortion campaign ongoing.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/oracle-health-breach-compromises-patient-data-at-us-hospitals/" target="_blank">Read more</a></p>
+
+    <p>🎴 <b>Collectibles.com Data Leak Affects Nearly 1 Million Users</b><br>
+    **300GB exposed on open server—includes names, emails, and sales records.**</p>
+    <p>🔗 <a href="https://www.cysecurity.news/2025/03/massive-data-leak-exposes-nearly.html" target="_blank">Read more</a></p>
+
+    <p>🛒 <b>Sam’s Club Probes Alleged Cl0p Breach via Cleo Vulnerability</b><br>
+    **Cl0p claims breach, no proof leaked yet—CISA already listed the CVE.**</p>
+    <p>🔗 <a href="https://securityaffairs.com/175999/cyber-crime/sams-club-investigates-alleged-cl0p-ransomware-breach.html" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Others Section -->
+  <div class="news-item">
+    <h2>📌 Other Cybersecurity News</h2>
+
+    <p>💻 <b>Microsoft Disables BypassNRO.cmd in Insider Builds</b><br>
+    **Signals end of local account setup—Microsoft Account becoming mandatory.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/microsofts-killing-script-used-to-avoid-microsoft-account-in-windows-11/" target="_blank">Read more</a></p>
+
+    <p>🔧 <b>Microsoft Tests “Quick Machine Recovery” Tool for Windows 11</b><br>
+    **Automates boot issue recovery via Windows RE + remote fix deployment.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-quick-machine-recovery-tool-to-fix-boot-crashes/" target="_blank">Read more</a></p>
+
+    <p>🎓 <b>Student-Powered SOCs Transform Cybersecurity Education</b><br>
+    **LSU, UNLV, UC use students to triage incidents, cut costs, build pipeline.**</p>
+    <p>🔗 <a href="https://www.darkreading.com/cybersecurity-operations/student-powered-socs-train-security-next-generation" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="../index.html">⬅ Back to Home</a>
+  </p>
+
+</body>
+</html>
