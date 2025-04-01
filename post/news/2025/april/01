@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 01/04/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #00ffcc; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #b3541e; }
+    .news-item { margin-bottom: 25px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 01/04/25</h2>
+
+  <!-- Vulnerabilities Section -->
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>🔐 <b>Cisco CVE-2024-20439 Added to KEV</b><br>
+    **Hardcoded credentials in Smart Licensing Utility grant full system access. Patch now.**</p>
+    <p>🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/03/31/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">Read more</a></p>
+
+    <p>🤖 <b>Microsoft AI Finds 20 Flaws in GRUB2, U-Boot, Barebox</b><br>
+    **Secure Boot bypass risks—bootloader patches released February 2025.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/microsoft-uses-ai-to-find-flaws-in-grub2-u-boot-barebox-bootloaders/" target="_blank">Read more</a></p>
+
+    <p>🪝 <b>WordPress Sites Abused via 'mu-plugins'</b><br>
+    **Redirects, web shells, and defacements hidden in always-loaded plugin directory.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/hackers-abuse-wordpress-mu-plugins-to-hide-malicious-code/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Adversaries Section -->
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>💼 <b>Lazarus ClickFix Targets Crypto Job Seekers</b><br>
+    **Fake job sites drop PowerShell backdoors like GolangGhost—new twist on "Contagious Interview".**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/north-korean-hackers-adopt-clickfix-attacks-to-target-crypto-firms/" target="_blank">Read more</a></p>
+
+    <p>📱 <b>Lucid PhaaS Enables 100k+ SMS Attacks/Day</b><br>
+    **iMessage + RCS phishing bypasses filters—scaling fast across 88+ countries.**</p>
+    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/phishing-platform-lucid-behind-wave-of-ios-android-sms-attacks/" target="_blank">Read more</a></p>
+
+    <p>👨‍💻 <b>Fake GitHub Challenges Drop 'FogDoor' Backdoor</b><br>
+    **Geofenced malware abuses webhooks + social profiles for stealth C2.**</p>
+    <p>🔗 <a href="https://www.cysecurity.news/2025/03/developers-face-challenge-with-fake.html" target="_blank">Read more</a></p>
+
+    <p>🎮 <b>Steam Game Demo Drops Malware</b><br>
+    **Sniper: Phantom's Resolution used Node.js + persistence—Steam removes it.**</p>
+    <p>🔗 <a href="https://www.cysecurity.news/2025/03/malware-laden-game-removed-from-steam.html" target="_blank">Read more</a></p>
+
+    <p>🪝 <b>Qakbot Returns via ClickFix CAPTCHAs</b><br>
+    **Fake prompts on LinkedIn trick users into PowerShell-based infections.**</p>
+    <p>🔗 <a href="https://www.darkreading.com/endpoint-security/qakbot-resurfaces-fresh-wave-clickfix-attacks" target="_blank">Read more</a></p>
+
+    <p>🏦 <b>Ukraine's PUMB Targeted by Emmenthal Loader</b><br>
+    **HTA via PowerShell leads to SmokeLoader, CryptBot, and Lumma.**</p>
+    <p>🔗 <a href="https://www.gdatasoftware.com/blog/2025/03/38160-emmenhtal-smokeloader-malware" target="_blank">Read more</a></p>
+
+    <p>🪖 <b>Gamaredon Phishes Ukraine with Remcos RAT</b><br>
+    **Military-themed LNK lures, DLL sideloading, and geo-fenced infrastructure.**</p>
+    <p>🔗 <a href="https://securityaffairs.com/176057/cyber-warfare-2/russia-linked-gamaredon-targets-ukraine-with-remcos-rat.html" target="_blank">Read more</a></p>
+
+    <p>🧬 <b>Water Gamayun Exploits MMC to Deploy SilentPrism & DarkWisp</b><br>
+    **Stealthy malware drops via fake installers + AnyDesk + LOLBins.**</p>
+    <p>🔗 <a href="https://thehackernews.com/2025/03/russian-hackers-exploit-cve-2025-26633.html" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Breaches Section -->
+  <div class="news-item">
+    <h2>🔓 Breach / Leak</h2>
+
+    <p>🏢 <b>Check Point Allegedly Breached by “CoreInjection”</b><br>
+    **Source code, network maps offered for 5 BTC—firm denies new incident.**</p>
+    <p>🔗 <a href="https://hackread.com/hacker-breach-check-point-cybersecurity-firm-access/" target="_blank">Read more</a></p>
+
+    <p>📦 <b>Samsung Germany Data Leak via Old Infostealer Credential</b><br>
+    **270K customer records leaked—Spectos login stolen back in 2021.**</p>
+    <p>🔗 <a href="https://www.securityweek.com/hacker-leaks-samsung-customer-data/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Tools Section -->
+  <div class="news-item">
+    <h2>🧰 Tools</h2>
+
+    <p>🛡️ <b>Canada Launches Privacy Breach Risk Assessment Tool</b><br>
+    **Evaluates impact & helps meet federal notification requirements.**</p>
+    <p>🔗 <a href="https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/privacy/privacy-policies-guidance/breach-management/phase-2/complete-risk-assessment-privacy-breach.html" target="_blank">Read more</a></p>
+
+    <p>🐧 <b>Exegol: Modular Offensive Hacking Environment</b><br>
+    **Docker-based, CTF-friendly, supports GUI, offline use, and key red team tools.**</p>
+    <p>🔗 <a href="https://www.helpnetsecurity.com/2025/03/31/exegol-open-source-hacking-environment/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Hunting Section -->
+  <div class="news-item">
+    <h2>🎯 Threat Hunting Opportunity</h2>
+
+    <p>🎯 <b>Earth Alux APT Uses GODZILLA, VARGEIT, COBEACON</b><br>
+    **Targeting APAC + LATAM—fileless backdoors, timestomping, LOLBins, encrypted loaders.**</p>
+    <p>🔗 <a href="https://www.trendmicro.com/en_us/research/25/c/the-espionage-toolkit-of-earth-alux.html" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="../index.html">⬅ Back to Home</a>
+  </p>
+
+</body>
+</html>
