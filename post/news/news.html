@@ -3,112 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cybersecurity Newsfeed - 01/04/25</title>
+  <title>Cybersecurity Newsfeed - 02/04/25</title>
   <style>
     body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
     h1, h2 { color: #c9a227; text-align: center; }
     p { line-height: 1.6; }
     a { color: #c9a227; text-decoration: none; }
-    a:hover { color: #b3541e; }
-    .news-item { margin-bottom: 25px; border-left: 4px solid #c9a227; padding-left: 15px; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
   </style>
 </head>
 <body>
 
   <h1>📰 Cybersecurity Newsfeed</h1>
-  <h2>📅 01/04/25</h2>
+  <h2>📅 02/04/25</h2>
 
-  <!-- Vulnerabilities Section -->
+  <!-- Vulnerabilities -->
   <div class="news-item">
     <h2>🔥 Vulnerabilities</h2>
 
-    <p>🔐 <b>Cisco CVE-2024-20439 Added to KEV</b><br>
-    **Hardcoded credentials in Smart Licensing Utility grant full system access. Patch now.**</p>
-    <p>🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/03/31/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">Read more</a></p>
+    <p>🧱 <b>CrushFTP CVE-2025-2825 Under Active Exploitation</b><br>
+    Over 1,500 unpatched servers exposed; attackers use public PoC to gain unauthenticated remote access.<br>
+    🔗 <i>(No public link available at time of posting)</i></p>
 
-    <p>🤖 <b>Microsoft AI Finds 20 Flaws in GRUB2, U-Boot, Barebox</b><br>
-    **Secure Boot bypass risks—bootloader patches released February 2025.**</p>
-    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/microsoft-uses-ai-to-find-flaws-in-grub2-u-boot-barebox-bootloaders/" target="_blank">Read more</a></p>
+    <p>🍎 <b>Apple Patches 200+ Vulnerabilities Across iOS, macOS, Safari</b><br>
+    Includes two zero-days (CVE-2025-24200/24201) affecting WebKit and USB Restricted Mode. Update now.<br>
+    🔗 <a href="https://cyberscoop.com/apple-security-update-march-2025/" target="_blank">Read more</a></p>
 
-    <p>🪝 <b>WordPress Sites Abused via 'mu-plugins'</b><br>
-    **Redirects, web shells, and defacements hidden in always-loaded plugin directory.**</p>
-    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/hackers-abuse-wordpress-mu-plugins-to-hide-malicious-code/" target="_blank">Read more</a></p>
+    <p>☁️ <b>Google Cloud Run ‘ImageRunner’ Bug Enabled Privilege Escalation</b><br>
+    Cloud Run services could pull private containers with insufficient permissions. Patched Jan 28.<br>
+    🔗 <a href="https://www.darkreading.com/cloud-security/google-imagerunner-bug-enabled-privilege-escalation" target="_blank">Read more</a></p>
+
+    <p>🪟 <b>Canon Printer Drivers Contain Critical RCE Flaw (CVE-2025-1268)</b><br>
+    Microsoft warns attackers can exploit malicious print jobs for code execution. Patch now.<br>
+    🔗 <a href="https://securityaffairs.com/176104/security/microsoft-warns-of-critical-flaw-in-canon-printer-drivers.html" target="_blank">Read more</a></p>
+
+    <p>🔌 <b>WP Ultimate CSV Importer Plugin Vulnerabilities Patched</b><br>
+    CVE-2025-2007/2008 allow file deletion & RCE in 20k+ WordPress sites. Update to 7.19.1.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/wp-ultimate-csv-importer-flaws/" target="_blank">Read more</a></p>
   </div>
 
-  <!-- Adversaries Section -->
+  <!-- Adversaries -->
   <div class="news-item">
     <h2>🕵️ Adversaries & Attacks</h2>
 
-    <p>💼 <b>Lazarus ClickFix Targets Crypto Job Seekers</b><br>
-    **Fake job sites drop PowerShell backdoors like GolangGhost—new twist on "Contagious Interview".**</p>
-    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/north-korean-hackers-adopt-clickfix-attacks-to-target-crypto-firms/" target="_blank">Read more</a></p>
+    <p>🔍 <b>24,000 IPs Behind Surge in GlobalProtect Scans</b><br>
+    Wave of suspicious scanning may signal coming PAN-OS exploit. Monitor logs + block offenders.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/nearly-24-000-ips-behind-wave-of-palo-alto-global-protect-scans/" target="_blank">Read more</a></p>
 
-    <p>📱 <b>Lucid PhaaS Enables 100k+ SMS Attacks/Day</b><br>
-    **iMessage + RCS phishing bypasses filters—scaling fast across 88+ countries.**</p>
-    <p>🔗 <a href="https://www.bleepingcomputer.com/news/security/phishing-platform-lucid-behind-wave-of-ios-android-sms-attacks/" target="_blank">Read more</a></p>
+    <p>🎭 <b>DCRat & Rhadamanthys Delivered via Nietzsche-Laced PowerShell</b><br>
+    Sophisticated multi-stage phishing chain packs deep obfuscation and philosophical bait.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/we-smell-a-dcrat-revealing-a-sophisticated-malware-delivery-chain/" target="_blank">Read more</a></p>
 
-    <p>👨‍💻 <b>Fake GitHub Challenges Drop 'FogDoor' Backdoor</b><br>
-    **Geofenced malware abuses webhooks + social profiles for stealth C2.**</p>
-    <p>🔗 <a href="https://www.cysecurity.news/2025/03/developers-face-challenge-with-fake.html" target="_blank">Read more</a></p>
+    <p>💻 <b>North Korean Freelancers Infiltrating EU Tech Companies</b><br>
+    Fake devs funnel crypto + data back to DPRK; targets include AI and defense sectors.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/north-korean-it-worker-army-expands-operations-in-europe/" target="_blank">Read more</a></p>
 
-    <p>🎮 <b>Steam Game Demo Drops Malware</b><br>
-    **Sniper: Phantom's Resolution used Node.js + persistence—Steam removes it.**</p>
-    <p>🔗 <a href="https://www.cysecurity.news/2025/03/malware-laden-game-removed-from-steam.html" target="_blank">Read more</a></p>
+    <p>🌎 <b>Cyber Command Uncovers Chinese Malware in Latin America</b><br>
+    Hunt-forward ops offer early warnings + network hardening for allies.<br>
+    🔗 <a href="https://defensescoop.com/2025/04/01/cybercom-chinese-malware-south-america-dan-caine-joint-chiefs-trump/" target="_blank">Read more</a></p>
 
-    <p>🪝 <b>Qakbot Returns via ClickFix CAPTCHAs</b><br>
-    **Fake prompts on LinkedIn trick users into PowerShell-based infections.**</p>
-    <p>🔗 <a href="https://www.darkreading.com/endpoint-security/qakbot-resurfaces-fresh-wave-clickfix-attacks" target="_blank">Read more</a></p>
+    <p>🏦 <b>Africa’s BFSI Sector Faces Rising Cyberattacks</b><br>
+    Bank of Uganda lost $16.8M; IBM urges zero trust and AI-based defense.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/cyber-threats-surge-across-africas.html" target="_blank">Read more</a></p>
 
-    <p>🏦 <b>Ukraine's PUMB Targeted by Emmenthal Loader</b><br>
-    **HTA via PowerShell leads to SmokeLoader, CryptBot, and Lumma.**</p>
-    <p>🔗 <a href="https://www.gdatasoftware.com/blog/2025/03/38160-emmenhtal-smokeloader-malware" target="_blank">Read more</a></p>
+    <p>💰 <b>Sanctioned Crypto Exchange Garantex Returns as ‘Grinex’</b><br>
+    Blockchain links show over $40M processed since relaunch. Same wallets, new name.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/sanctioned-russian-crypto-exchange.html" target="_blank">Read more</a></p>
 
-    <p>🪖 <b>Gamaredon Phishes Ukraine with Remcos RAT</b><br>
-    **Military-themed LNK lures, DLL sideloading, and geo-fenced infrastructure.**</p>
-    <p>🔗 <a href="https://securityaffairs.com/176057/cyber-warfare-2/russia-linked-gamaredon-targets-ukraine-with-remcos-rat.html" target="_blank">Read more</a></p>
+    <p>🎮 <b>CS2 Players Targeted in Steam Login Phishing (BitB)</b><br>
+    Fake pop-up windows trick users into entering credentials. Highly realistic UI.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/hackers-target-counter-strike-2-players.html" target="_blank">Read more</a></p>
 
-    <p>🧬 <b>Water Gamayun Exploits MMC to Deploy SilentPrism & DarkWisp</b><br>
-    **Stealthy malware drops via fake installers + AnyDesk + LOLBins.**</p>
-    <p>🔗 <a href="https://thehackernews.com/2025/03/russian-hackers-exploit-cve-2025-26633.html" target="_blank">Read more</a></p>
+    <p>📞 <b>Vishing + Teams + Quick Assist Used in Multi-Vector Attack</b><br>
+    Threat actors combine social engineering, DLL sideloading, and AI voice cloning.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/phishing-attack-combines-vishing/" target="_blank">Read more</a></p>
+
+    <p>🐉 <b>Earth Alux APT Expands from APAC to LATAM</b><br>
+    Uses VARGEIT and COBEACON with sophisticated loaders and obfuscation layers.<br>
+    🔗 <a href="https://thehackernews.com/2025/04/china-linked-earth-alux-uses-vargeit.html" target="_blank">Read more</a></p>
+
+    <p>💸 <b>JINX-0126 Campaign Targets PostgreSQL Servers with Cryptominers</b><br>
+    Over 1,500 systems infected using fileless XMRig via `COPY FROM PROGRAM` abuse.<br>
+    🔗 <a href="https://thehackernews.com/2025/04/over-1500-postgresql-servers.html" target="_blank">Read more</a></p>
   </div>
 
-  <!-- Breaches Section -->
+  <!-- Other -->
   <div class="news-item">
-    <h2>🔓 Breach / Leak</h2>
+    <h2>🧭 Other Highlights</h2>
 
-    <p>🏢 <b>Check Point Allegedly Breached by “CoreInjection”</b><br>
-    **Source code, network maps offered for 5 BTC—firm denies new incident.**</p>
-    <p>🔗 <a href="https://hackread.com/hacker-breach-check-point-cybersecurity-firm-access/" target="_blank">Read more</a></p>
+    <p>🇫🇷 <b>Apple Fined €150M by France Over App Tracking Transparency (ATT)</b><br>
+    Regulator says implementation was non-neutral, favoring Apple’s own apps.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/apple/apple-fined-150-million-over-app-tracking-transparency-issues/" target="_blank">Read more</a></p>
 
-    <p>📦 <b>Samsung Germany Data Leak via Old Infostealer Credential</b><br>
-    **270K customer records leaked—Spectos login stolen back in 2021.**</p>
-    <p>🔗 <a href="https://www.securityweek.com/hacker-leaks-samsung-customer-data/" target="_blank">Read more</a></p>
-  </div>
-
-  <!-- Tools Section -->
-  <div class="news-item">
-    <h2>🧰 Tools</h2>
-
-    <p>🛡️ <b>Canada Launches Privacy Breach Risk Assessment Tool</b><br>
-    **Evaluates impact & helps meet federal notification requirements.**</p>
-    <p>🔗 <a href="https://www.canada.ca/en/treasury-board-secretariat/services/access-information-privacy/privacy/privacy-policies-guidance/breach-management/phase-2/complete-risk-assessment-privacy-breach.html" target="_blank">Read more</a></p>
-
-    <p>🐧 <b>Exegol: Modular Offensive Hacking Environment</b><br>
-    **Docker-based, CTF-friendly, supports GUI, offline use, and key red team tools.**</p>
-    <p>🔗 <a href="https://www.helpnetsecurity.com/2025/03/31/exegol-open-source-hacking-environment/" target="_blank">Read more</a></p>
-  </div>
-
-  <!-- Hunting Section -->
-  <div class="news-item">
-    <h2>🎯 Threat Hunting Opportunity</h2>
-
-    <p>🎯 <b>Earth Alux APT Uses GODZILLA, VARGEIT, COBEACON</b><br>
-    **Targeting APAC + LATAM—fileless backdoors, timestomping, LOLBins, encrypted loaders.**</p>
-    <p>🔗 <a href="https://www.trendmicro.com/en_us/research/25/c/the-espionage-toolkit-of-earth-alux.html" target="_blank">Read more</a></p>
+    <p>🇯🇵 <b>Japan’s New Cyber Defense Bill Allows Preemptive Strikes</b><br>
+    Military may disrupt live attacks without prior authorization. Privacy concerns raised.<br>
+    🔗 <a href="https://www.tripwire.com/state-of-security/japan-passes-active-cyber-defense-bill" target="_blank">Read more</a></p>
   </div>
 
   <p style="text-align:center;">
-    <a href="https://pranakn.github.io">⬅ Back to Home</a>
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
   </p>
 
 </body>
