@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 02/04/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 02/04/25</h2>
+
+  <!-- Vulnerabilities -->
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>🧱 <b>CrushFTP CVE-2025-2825 Under Active Exploitation</b><br>
+    Over 1,500 unpatched servers exposed; attackers use public PoC to gain unauthenticated remote access.<br>
+    🔗 <i>(No public link available at time of posting)</i></p>
+
+    <p>🍎 <b>Apple Patches 200+ Vulnerabilities Across iOS, macOS, Safari</b><br>
+    Includes two zero-days (CVE-2025-24200/24201) affecting WebKit and USB Restricted Mode. Update now.<br>
+    🔗 <a href="https://cyberscoop.com/apple-security-update-march-2025/" target="_blank">Read more</a></p>
+
+    <p>☁️ <b>Google Cloud Run ‘ImageRunner’ Bug Enabled Privilege Escalation</b><br>
+    Cloud Run services could pull private containers with insufficient permissions. Patched Jan 28.<br>
+    🔗 <a href="https://www.darkreading.com/cloud-security/google-imagerunner-bug-enabled-privilege-escalation" target="_blank">Read more</a></p>
+
+    <p>🪟 <b>Canon Printer Drivers Contain Critical RCE Flaw (CVE-2025-1268)</b><br>
+    Microsoft warns attackers can exploit malicious print jobs for code execution. Patch now.<br>
+    🔗 <a href="https://securityaffairs.com/176104/security/microsoft-warns-of-critical-flaw-in-canon-printer-drivers.html" target="_blank">Read more</a></p>
+
+    <p>🔌 <b>WP Ultimate CSV Importer Plugin Vulnerabilities Patched</b><br>
+    CVE-2025-2007/2008 allow file deletion & RCE in 20k+ WordPress sites. Update to 7.19.1.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/wp-ultimate-csv-importer-flaws/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Adversaries -->
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>🔍 <b>24,000 IPs Behind Surge in GlobalProtect Scans</b><br>
+    Wave of suspicious scanning may signal coming PAN-OS exploit. Monitor logs + block offenders.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/nearly-24-000-ips-behind-wave-of-palo-alto-global-protect-scans/" target="_blank">Read more</a></p>
+
+    <p>🎭 <b>DCRat & Rhadamanthys Delivered via Nietzsche-Laced PowerShell</b><br>
+    Sophisticated multi-stage phishing chain packs deep obfuscation and philosophical bait.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/we-smell-a-dcrat-revealing-a-sophisticated-malware-delivery-chain/" target="_blank">Read more</a></p>
+
+    <p>💻 <b>North Korean Freelancers Infiltrating EU Tech Companies</b><br>
+    Fake devs funnel crypto + data back to DPRK; targets include AI and defense sectors.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/north-korean-it-worker-army-expands-operations-in-europe/" target="_blank">Read more</a></p>
+
+    <p>🌎 <b>Cyber Command Uncovers Chinese Malware in Latin America</b><br>
+    Hunt-forward ops offer early warnings + network hardening for allies.<br>
+    🔗 <a href="https://defensescoop.com/2025/04/01/cybercom-chinese-malware-south-america-dan-caine-joint-chiefs-trump/" target="_blank">Read more</a></p>
+
+    <p>🏦 <b>Africa’s BFSI Sector Faces Rising Cyberattacks</b><br>
+    Bank of Uganda lost $16.8M; IBM urges zero trust and AI-based defense.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/cyber-threats-surge-across-africas.html" target="_blank">Read more</a></p>
+
+    <p>💰 <b>Sanctioned Crypto Exchange Garantex Returns as ‘Grinex’</b><br>
+    Blockchain links show over $40M processed since relaunch. Same wallets, new name.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/sanctioned-russian-crypto-exchange.html" target="_blank">Read more</a></p>
+
+    <p>🎮 <b>CS2 Players Targeted in Steam Login Phishing (BitB)</b><br>
+    Fake pop-up windows trick users into entering credentials. Highly realistic UI.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/hackers-target-counter-strike-2-players.html" target="_blank">Read more</a></p>
+
+    <p>📞 <b>Vishing + Teams + Quick Assist Used in Multi-Vector Attack</b><br>
+    Threat actors combine social engineering, DLL sideloading, and AI voice cloning.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/phishing-attack-combines-vishing/" target="_blank">Read more</a></p>
+
+    <p>🐉 <b>Earth Alux APT Expands from APAC to LATAM</b><br>
+    Uses VARGEIT and COBEACON with sophisticated loaders and obfuscation layers.<br>
+    🔗 <a href="https://thehackernews.com/2025/04/china-linked-earth-alux-uses-vargeit.html" target="_blank">Read more</a></p>
+
+    <p>💸 <b>JINX-0126 Campaign Targets PostgreSQL Servers with Cryptominers</b><br>
+    Over 1,500 systems infected using fileless XMRig via `COPY FROM PROGRAM` abuse.<br>
+    🔗 <a href="https://thehackernews.com/2025/04/over-1500-postgresql-servers.html" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Other -->
+  <div class="news-item">
+    <h2>🧭 Other Highlights</h2>
+
+    <p>🇫🇷 <b>Apple Fined €150M by France Over App Tracking Transparency (ATT)</b><br>
+    Regulator says implementation was non-neutral, favoring Apple’s own apps.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/apple/apple-fined-150-million-over-app-tracking-transparency-issues/" target="_blank">Read more</a></p>
+
+    <p>🇯🇵 <b>Japan’s New Cyber Defense Bill Allows Preemptive Strikes</b><br>
+    Military may disrupt live attacks without prior authorization. Privacy concerns raised.<br>
+    🔗 <a href="https://www.tripwire.com/state-of-security/japan-passes-active-cyber-defense-bill" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="../index.html">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
