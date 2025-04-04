@@ -3,175 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cybersecurity Newsfeed - 03/04/25</title>
+  <title>Cybersecurity Newsfeed - 04/04/25</title>
   <style>
-    body { font-family: Arial, sans-serif; background-color: #111; color: #ffffff; padding: 20px; }
-    h1, h2 { color: #f0c000; text-align: center; }
-    a { color: #f0c000; text-decoration: none; }
-    a:hover { color: #ff8800; }
-    .section { margin-bottom: 40px; }
-    .item { margin-bottom: 20px; padding-left: 10px; border-left: 3px solid #f0c000; }
-    .footer { text-align: center; margin-top: 50px; color: #888; }
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #b3541e; }
+    .news-item { margin-bottom: 25px; border-left: 4px solid #c9a227; padding-left: 15px; }
   </style>
 </head>
 <body>
+  <h1>🛡️ Cybersecurity Newsfeed — April 4, 2025</h1>
 
-  <h1>🛡️ Cybersecurity Newsfeed</h1>
-  <h2>📅 April 3, 2025</h2>
+  <h2>🔥 VULNERABILITIES</h2>
 
-  <!-- Vulnerabilities -->
-  <div class="section">
-    <h2>🚨 Vulnerabilities</h2>
-
-    <div class="item">
-      <b>🔥 Apache Tomcat Path Equivalence (CVE-2025-24813)</b><br>
-      RCE possible via non-default servlet config. Active exploitation confirmed.<br>
-      🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/04/01/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">CISA Alert</a>
-    </div>
-
-    <div class="item">
-      <b>🔓 Cisco CSLU Admin Backdoor Exploited (CVE-2024-20439)</b><br>
-      Hardcoded admin creds now abused in the wild. Patch by April 21.<br>
-      🔗 <a href="https://www.bleepingcomputer.com/news/security/cisco-warns-of-cslu-backdoor-admin-account-used-in-attacks/" target="_blank">Read more</a>
-    </div>
-
-    <div class="item">
-      <b>📱 Verizon Call Filter API Leaked Call Logs</b><br>
-      Unvalidated JWT allowed access to others’ call metadata. Patched quietly.<br>
-      🔗 <a href="https://www.bleepingcomputer.com/news/security/verizon-call-filter-api-flaw-exposed-customers-incoming-call-history/" target="_blank">Read more</a>
-    </div>
-
-    <div class="item">
-      <b>☁️ Google Cloud Run ImageRunner Flaw</b><br>
-      Low-perm users could pull private images across projects. Fixed in Jan '25.<br>
-      🔗 <a href="https://www.securityweek.com/imagerunner-flaw-exposed-sensitive-information-in-google-cloud/" target="_blank">Read more</a>
-    </div>
-
-    <div class="item">
-      <b>🧪 Chrome 135 & Firefox 137 Patch High-Severity Bugs</b><br>
-      CVE-2025-3066 (use-after-free in Chrome Navigations) most critical.<br>
-      🔗 <a href="https://www.securityweek.com/chrome-135-firefox-137-patch-high-severity-vulnerabilities/" target="_blank">Read more</a>
-    </div>
+  <div class="news-item">
+    <p><strong>CVE-2025-30065:</strong> <a href="https://www.bleepingcomputer.com/news/security/max-severity-rce-flaw-discovered-in-widely-used-apache-parquet/">Apache Parquet RCE flaw</a> (CVSS 10.0) affects versions ≤1.15.0. Exploitable via crafted Parquet files in <code>parquet-avro</code>. Upgrade to 1.15.1 immediately.</p>
   </div>
 
-  <!-- Adversaries -->
-  <div class="section">
-    <h2>🕵️ Threat Actors & Campaigns</h2>
-
-    <div class="item">
-      <b>📄 Gootloader Uses Google Ads to Target Legal Templates</b><br>
-      Payload delivered via fake legal docs on lawliner[.]com.<br>
-      🔗 <a href="https://www.darkreading.com/cyberattacks-data-breaches/gootloader-malware-google-ads-legal-docs" target="_blank">Read more</a>
-    </div>
-
-    <div class="item">
-      <b>👨‍💻 DPRK Freelancers Target European Tech</b><br>
-      North Korean IT workers expanding into EU job markets with fake profiles.<br>
-      🔗 <a href="https://www.darkreading.com/threat-intelligence/dprk-it-workers-europe-employment" target="_blank">Read more</a>
-    </div>
-
-    <div class="item">
-      <b>💳 Stripe API Abused in Checkout Skimming Campaign</b><br>
-      Skimmers steal payment info using real Stripe API calls. 49+ sites hit.<br>
-      🔗 <a href="https://www.infosecurity-magazine.com/news/stripe-api-skimming-campaign-new/" target="_blank">Read more</a>
-    </div>
-
-    <div class="item">
-      <b>🔗 Polyglot Malware Hides in Fake PDFs (Head Mare)</b><br>
-      .zip files are actually EXEs with embedded shortcuts that trigger PowerShell.<br>
-      🔗 <a href="https://www.kaspersky.com/blog/polyglot-malware-masking-technique/53263/" target="_blank">Read more</a>
-    </div>
-
-    <div class="item">
-      <b>🐍 FIN7 Deploys Python-Based Anubis Backdoor</b><br>
-      Targets U.S. hospitality with SharePoint-hosted phishing kits.<br>
-      🔗 <a href="https://securityaffairs.com/176134/malware/new-advanced-fin7s-anubis-backdoor-allows-to-gain-full-system-control-on-windows.html" target="_blank">Read more</a>
-    </div>
-
-    <div class="item">
-      <b>🖥️ Outlaw Botnet Targets Linux Servers via SSH</b><br>
-      Deploys XMRig miners, SHELLBOT, and spreads via BLITZ worm module.<br>
-      🔗 <a href="https://thehackernews.com/2025/04/outlaw-group-uses-ssh-brute-force-to.html" target="_blank">Read more</a>
-    </div>
-
-    <div class="item">
-      <b>🦠 New Hijack Loader & SHELBY Malware Emerge</b><br>
-      Features include call stack spoofing, Heaven's Gate, GitHub-based C2.<br>
-      🔗 <a href="https://thehackernews.com/2025/04/new-malware-loaders-use-call-stack.html" target="_blank">Read more</a>
-    </div>
-
-    <div class="item">
-      <b>📱 Triada Malware Found in Counterfeit Android Phones</b><br>
-      2,600+ infections in Russia. Preloaded in firmware; steals crypto, controls calls.<br>
-      🔗 <a href="https://www.bleepingcomputer.com/news/security/counterfeit-android-devices-found-preloaded-with-triada-malware/" target="_blank">Read more</a>
-    </div>
+  <div class="news-item">
+    <p><strong>CVE-2025-22457:</strong> <a href="https://www.bleepingcomputer.com/news/security/ivanti-patches-connect-secure-zero-day-exploited-since-mid-march/">Ivanti Connect Secure zero-day</a> exploited by China-linked UNC5221. Patches for some products still pending. Apply February patch (22.7R2.6) and monitor for compromise.</p>
   </div>
 
-  <!-- Trends -->
-  <div class="section">
-    <h2>📈 Trends</h2>
-
-    <div class="item">
-      <b>🤖 Surge in AI Scraper Bots Like ClaudeBot & ByteSpider</b><br>
-      Sites hit with millions of requests; scraping driving up cloud costs.<br>
-      🔗 <a href="https://www.infosecurity-magazine.com/news/gray-bots-generative-ai-scraper/" target="_blank">Read more</a>
-    </div>
-
-    <div class="item">
-      <b>🎮 Steam Becomes Top Phished Brand in Q1 2025</b><br>
-      Toll scams also surge. Meta & Microsoft also high on spoof list.<br>
-      🔗 <a href="https://www.infosecurity-magazine.com/news/steam-surges-top-most-spoofed/" target="_blank">Read more</a>
-    </div>
+  <div class="news-item">
+    <p><strong>PyTorch Lightning:</strong> <a href="https://kb.cert.org/vuls/id/252619">Multiple deserialization flaws</a> in versions ≤2.4.0 could lead to RCE via <code>torch.load()</code>. Use trusted models and sandboxing until patched.</p>
   </div>
 
-  <!-- Breaches -->
-  <div class="section">
-    <h2>📁 Breaches & Leaks</h2>
-
-    <div class="item">
-      <b>🔑 39M Secrets Leaked via GitHub in 2024</b><br>
-      GitHub expands secret detection with Copilot + org-wide protection tools.<br>
-      🔗 <a href="https://www.bleepingcomputer.com/news/security/github-expands-security-tools-after-39-million-secrets-leaked-in-2024/" target="_blank">Read more</a>
-    </div>
-
-    <div class="item">
-      <b>📬 Royal Mail Data Breach Linked to Spectos Supplier</b><br>
-      144GB leak includes SQL DBs, Zoom videos, customer PII. Posted to Breach Forums.<br>
-      🔗 <a href="https://hackread.com/hacker-leaks-royal-mail-group-data-supplier-spectos/" target="_blank">Read more</a>
-    </div>
+  <div class="news-item">
+    <p><strong>CVE-2024-38272/38271:</strong> <a href="https://www.darkreading.com/application-security/google-quick-share-bug-bypasses-zero-click-file-transfer">Google Quick Share bugs</a> enable zero-click malware delivery on Windows. Demo at Black Hat Asia bypasses previous patches.</p>
   </div>
 
-  <!-- Other -->
-  <div class="section">
-    <h2>🧭 Other Highlights</h2>
-
-    <div class="item">
-      <b>💥 ChatGPT Suffers Global Outage (Resolved)</b><br>
-      "Something went wrong" errors globally. Resolved by OpenAI.<br>
-      🔗 <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/chatgpt-is-down-worldwide-with-something-went-wrong-error/" target="_blank">Read more</a>
-    </div>
-
-    <div class="item">
-      <b>🚨 Kidflix CSAM Dark Web Platform Dismantled</b><br>
-      1.8M users, 91k videos. 79 arrests during Operation Stream.<br>
-      🔗 <a href="https://www.bleepingcomputer.com/news/security/police-shuts-down-kidflix-child-sexual-exploitation-platform/" target="_blank">Read more</a>
-    </div>
+  <div class="news-item">
+    <p><strong>Cisco:</strong> <a href="https://www.securityweek.com/vulnerabilities-expose-cisco-meraki-and-ece-products-to-dos-attacks/">DoS vulnerabilities</a> in Meraki MX/Z and ECE products patched. SLU backdoor flaws are now actively exploited (CVE-2024-20439, -20440).</p>
   </div>
 
-  <!-- Tools -->
-  <div class="section">
-    <h2>🧰 Tools</h2>
+  <h2>🎯 ADVERSARIES</h2>
 
-    <div class="item">
-      <b>🔧 BlueToolkit Expands Bluetooth Exploit Coverage</b><br>
-      Now includes 43 exploits. Found 64 vulns across 22 car brands.<br>
-      🔗 <a href="https://github.com/sgxgsx/BlueToolkit" target="_blank">GitHub Repo</a>
-    </div>
+  <div class="news-item">
+    <p><strong>GitHub Supply Chain Attack:</strong> <a href="https://www.bleepingcomputer.com/news/security/recent-github-supply-chain-attack-traced-to-leaked-spotbugs-token/">Traced to leaked token</a> in SpotBugs. Cascade affected 218 repos, including Coinbase. Reinforces importance of pinning commit hashes and rotating secrets.</p>
+  </div>
+
+  <div class="news-item">
+    <p><strong>Hunters International ➝ World Leaks:</strong> <a href="https://www.bleepingcomputer.com/news/security/hunters-international-rebrands-as-world-leaks-in-shift-to-data-extortion/">Ransomware gang pivots</a> to pure data theft/extortion with automated exfiltration tooling.</p>
+  </div>
+
+  <div class="news-item">
+    <p><strong>HellCat RaaS:</strong> <a href="https://www.tripwire.com/state-of-security/hellcat-ransomware-what-you-need-know">Emerging group</a> led by a teen figure “Pryx.” Notable for bizarre ransom demands (e.g., baguettes).</p>
+  </div>
+
+  <div class="news-item">
+    <p><strong>FamousSparrow:</strong> <a href="https://www.cysecurity.news/2025/04/chinas-famoussparrow-apt-hits-united.html">Resurfaces</a> with modular SparrowDoor targeting Latin American and U.S. orgs. Overlaps with ShadowPad and Salt Typhoon.</p>
+  </div>
+
+  <div class="news-item">
+    <p><strong>“Coquettte”:</strong> <a href="https://www.infosecurity-magazine.com/news/coquettte-hacker-malware-bph/">Teen cybercriminal</a> distributes Rugmi loader via fake AV site. Linked to hacking crew “Horrid.”</p>
+  </div>
+
+  <div class="news-item">
+    <p><strong>Microsoft Tax Phishing Alert:</strong> <a href="https://thehackernews.com/2025/04/microsoft-warns-of-tax-themed-email.html">Multiple malware payloads</a> spread via QR-laced tax-themed PDFs. Linked to Storm-0249 and RaccoonO365 platform.</p>
+  </div>
+
+  <h2>📉 TRENDS</h2>
+
+  <div class="news-item">
+    <p><strong>Fast Flux DNS:</strong> <a href="https://www.cisa.gov/news-events/alerts/2025/04/03/nsa-cisa-fbi-and-international-partners-release-cybersecurity-advisory-fast-flux-national-security">CISA-led advisory</a> flags it as a national security risk. Used to obscure botnets and phishing domains.</p>
+  </div>
+
+  <h2>🕳️ BREACH / LEAK</h2>
+
+  <div class="news-item">
+    <p><strong>Oracle:</strong> <a href="https://www.bleepingcomputer.com/news/security/oracle-privately-confirms-cloud-breach-to-customers/">Legacy Cloud Classic breached</a>. Data includes IDM database info. Separate Oracle Health breach also under investigation.</p>
+  </div>
+
+  <div class="news-item">
+    <p><strong>StreamElements:</strong> <a href="https://www.cysecurity.news/2025/04/streamelements-confirms-data-exposure.html">Third-party breach</a> leaks legacy user data (2020–2024). Data includes names, emails, addresses, phone numbers.</p>
+  </div>
+
+  <div class="news-item">
+    <p><strong>T-Mobile:</strong> <a href="https://gizmodo.com/t-mobile-bug-reveals-names-images-and-locations-of-random-children-2000584451">SyncUP GPS glitch</a> shows other people’s children instead of your own. Root cause: system update error.</p>
+  </div>
+
+  <h2>🛠 TOOLS</h2>
+
+  <div class="news-item">
+    <p><a href="https://hackread.com/best-data-anonymization-tools-in-2025/">Top data anonymization tools</a> for 2025: K2View, Privitar, ARX, DataVeil, Anonos, Tonic.ai—covering real-time masking to synthetic data generation.</p>
   </div>
 
   <p style="text-align:center;">
     <a href="https://pranakn.github.io">⬅ Back to Archive</a>
   </p>
-
 </body>
 </html>
