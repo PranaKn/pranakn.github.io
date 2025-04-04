@@ -14,84 +14,134 @@
   </style>
 </head>
 <body>
-  <h1>🛡️ Cybersecurity Newsfeed — April 4, 2025</h1>
 
-  <h2>🔥 VULNERABILITIES</h2>
+  <h1>🛡️ Cybersecurity Newsfeed</h1>
+  <h2>📅 April 4, 2025</h2>
 
-  <div class="news-item">
-    <p><strong>CVE-2025-30065:</strong> <a href="https://www.bleepingcomputer.com/news/security/max-severity-rce-flaw-discovered-in-widely-used-apache-parquet/">Apache Parquet RCE flaw</a> (CVSS 10.0) affects versions ≤1.15.0. Exploitable via crafted Parquet files in <code>parquet-avro</code>. Upgrade to 1.15.1 immediately.</p>
+  <!-- Vulnerabilities -->
+  <div class="section">
+    <h2>🚨 Vulnerabilities</h2>
+
+    <div class="news-item">
+      <b>🔥 Apache Parquet RCE Vulnerability (CVE-2025-30065)</b><br>
+      A critical remote code execution vulnerability with a CVSS score of 10.0 has been discovered in Apache Parquet versions up to 1.15.0. Attackers can exploit deserialization in the parquet-avro module by tricking systems into importing specially crafted Parquet files. Administrators are urged to upgrade to version 1.15.1 immediately and avoid untrusted Parquet files in the meantime.<br>
+      🔗 <a href="https://www.bleepingcomputer.com/news/security/max-severity-rce-flaw-discovered-in-widely-used-apache-parquet/" target="_blank">Read more</a>
+    </div>
+
+    <div class="news-item">
+      <b>🔓 Ivanti Connect Secure RCE Vulnerability (CVE-2025-22457)</b><br>
+      Ivanti has patched a critical remote code execution vulnerability in Connect Secure, exploited by the China-linked espionage group UNC5221 since at least mid-March 2025. Administrators should upgrade immediately, monitor with Ivanti's ICT, and audit for compromise, especially among unpatched appliances.<br>
+      🔗 <a href="https://www.bleepingcomputer.com/news/security/ivanti-patches-connect-secure-zero-day-exploited-since-mid-march/" target="_blank">Read more</a>
+    </div>
+
+    <div class="news-item">
+      <b>🧪 PyTorch Lightning Deserialization Vulnerabilities</b><br>
+      PyTorch Lightning versions 2.4.0 and earlier contain multiple high-risk deserialization vulnerabilities due to unsafe use of torch.load() and Python’s pickle, potentially allowing arbitrary code execution when loading model files. Users are urged to only load models from trusted sources, enforce safe loading practices, and monitor for updates from Lightning AI.<br>
+      🔗 <a href="https://kb.cert.org/vuls/id/252619" target="_blank">Read more</a>
+    </div>
+
+    <div class="news-item">
+      <b>📱 Google Quick Share Vulnerabilities Bypassed</b><br>
+      SafeBreach researchers revealed they had bypassed patches for two critical Google Quick Share vulnerabilities (CVE-2024-38272, CVE-2024-38271) that were part of an earlier disclosed 10-bug exploit chain dubbed “QuickShell.” The findings highlight how combining minor vulnerabilities can create critical threats.<br>
+      🔗 <a href="https://www.darkreading.com/application-security/google-quick-share-bug-bypasses-zero-click-file-transfer" target="_blank">Read more</a>
+    </div>
+
+    <div class="news-item">
+      <b>🖥️ Cisco Meraki and ECE DoS Vulnerabilities</b><br>
+      Cisco has patched two high-severity denial-of-service vulnerabilities: CVE-2025-20212, affecting Meraki MX/Z devices via a flaw in the AnyConnect VPN server, and CVE-2025-20139, impacting Cisco’s Enterprise Chat and Email (ECE) through unauthenticated malicious chat requests. Patching is strongly advised.<br>
+      🔗 <a href="https://www.securityweek.com/vulnerabilities-expose-cisco-meraki-and-ece-products-to-dos-attacks/" target="_blank">Read more</a>
+    </div>
   </div>
 
-  <div class="news-item">
-    <p><strong>CVE-2025-22457:</strong> <a href="https://www.bleepingcomputer.com/news/security/ivanti-patches-connect-secure-zero-day-exploited-since-mid-march/">Ivanti Connect Secure zero-day</a> exploited by China-linked UNC5221. Patches for some products still pending. Apply February patch (22.7R2.6) and monitor for compromise.</p>
+  <!-- Adversaries -->
+  <div class="section">
+    <h2>🕵️ Threat Actors & Campaigns</h2>
+
+    <div class="news-item">
+      <b>📄 GitHub Supply Chain Attack Traced to Leaked Token</b><br>
+      A sophisticated supply chain attack on GitHub that ultimately targeted Coinbase has been traced back to a single Personal Access Token (PAT) leaked in a SpotBugs workflow in November 2024. Security teams are advised to rotate secrets and use commit hashes over tags for workflows.<br>
+      🔗 <a href="https://www.bleepingcomputer.com/news/security/recent-github-supply-chain-attack-traced-to-leaked-spotbugs-token/" target="_blank">Read more</a>
+    </div>
+
+    <div class="news-item">
+      <b>👨‍💻 Hunters International Rebrands as 'World Leaks'</b><br>
+      Hunters International, a notorious Ransomware-as-a-Service group suspected to be a rebrand of Hive, is shutting down its encryption operations and rebranding as "World Leaks," shifting to pure data theft and extortion. The group is now pivoting away from ransomware due to profitability and risk concerns.<br>
+      🔗 <a href="https://www.bleepingcomputer.com/news/security/hunters-international-rebrands-as-world-leaks-in-shift-to-data-extortion/" target="_blank">Read more</a>
+    </div>
+
+    <div class="news-item">
+      <b>🐱 HellCat Ransomware Group Emerges</b><br>
+      HellCat is a relatively new ransomware-as-a-service (RaaS) group that emerged in mid-to-late 2024, known for double extortion attacks—encrypting systems and stealing data to demand ransom. There's currently no public decryptor, and security experts recommend standard ransomware defenses.<br>
+      🔗 <a href="https://www.tripwire.com/state-of-security/hellcat-ransomware-what-you-need-know" target="_blank">Read more</a>
+    </div>
+
+    <div class="news-item">
+      <b>🦅 FamousSparrow APT Resurfaces with SparrowDoor Upgrade</b><br>
+      China-linked cyberespionage group FamousSparrow has resurfaced with a sophisticated modular upgrade of its SparrowDoor backdoor, targeting organizations in the Americas. The new SparrowDoor variants introduce plugin-based architecture and parallel command execution for stealth and flexibility.<br>
+      🔗 <a href="https://www.cysecurity.news/2025/04/chinas-famoussparrow-apt-hits-united.html" target="_blank">Read more</a>
+    </div>
+
+    <div class="news-item">
+      <b>🎭 Coquettte’s Rugmi Malware via Fake Antivirus Site</b><br>
+      DomainTools exposed an amateur cybercriminal distributing the Rugmi loader under the guise of "CyberSecure Pro" using bulletproof hosting and misleading websites.<br>
+      🔗 <a href="https://www.infosecurity-magazine.com/news/coquettte-hacker-malware-bph/" target="_blank">Read more</a>
+    </div>
+
+    <div class="news-item">
+      <b>💸 Microsoft Warns of Tax-Themed Phishing Surge</b><br>
+      PDF attachments, QR codes, and fake login portals are being used to steal Microsoft 365 credentials and deliver malware like Remcos and Latrodectus.<br>
+      🔗 <a href="https://thehackernews.com/2025/04/microsoft-warns-of-tax-themed-email.html" target="_blank">Read more</a>
+    </div>
   </div>
 
-  <div class="news-item">
-    <p><strong>PyTorch Lightning:</strong> <a href="https://kb.cert.org/vuls/id/252619">Multiple deserialization flaws</a> in versions ≤2.4.0 could lead to RCE via <code>torch.load()</code>. Use trusted models and sandboxing until patched.</p>
+  <!-- Trends -->
+  <div class="section">
+    <h2>📈 Trends</h2>
+
+    <div class="news-item">
+      <b>🌐 CISA & Allies Warn of Fast Flux DNS Tactic</b><br>
+      Fast-changing DNS records help attackers hide infrastructure. Global agencies urge defenders to adopt layered defenses.<br>
+      🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/04/03/nsa-cisa-fbi-and-international-partners-release-cybersecurity-advisory-fast-flux-national-security" target="_blank">Read more</a>
+    </div>
   </div>
 
-  <div class="news-item">
-    <p><strong>CVE-2024-38272/38271:</strong> <a href="https://www.darkreading.com/application-security/google-quick-share-bug-bypasses-zero-click-file-transfer">Google Quick Share bugs</a> enable zero-click malware delivery on Windows. Demo at Black Hat Asia bypasses previous patches.</p>
+  <!-- Breaches -->
+  <div class="section">
+    <h2>📁 Breaches & Leaks</h2>
+
+    <div class="news-item">
+      <b>☁️ Oracle Legacy Cloud Breached</b><br>
+      Client credentials stolen and newer data leaked, contradicting Oracle’s claims. CrowdStrike and FBI are investigating.<br>
+      🔗 <a href="https://www.bleepingcomputer.com/news/security/oracle-privately-confirms-cloud-breach-to-customers/" target="_blank">Read more</a>
+    </div>
+
+    <div class="news-item">
+      <b>📺 StreamElements Breach Linked to Third-Party</b><br>
+      210,000 users’ info leaked via legacy vendor; malware suspected on employee system.<br>
+      🔗 <a href="https://www.cysecurity.news/2025/04/streamelements-confirms-data-exposure.html" target="_blank">Read more</a>
+    </div>
+
+    <div class="news-item">
+      <b>📍 T-Mobile GPS Tracker Bug Reveals Kids' Locations</b><br>
+      A glitch in SyncUP showed users other families’ children in real time. Fix has been deployed, but concerns persist.<br>
+      🔗 <a href="https://gizmodo.com/t-mobile-bug-reveals-names-images-and-locations-of-random-children-2000584451" target="_blank">Read more</a>
+    </div>
   </div>
 
-  <div class="news-item">
-    <p><strong>Cisco:</strong> <a href="https://www.securityweek.com/vulnerabilities-expose-cisco-meraki-and-ece-products-to-dos-attacks/">DoS vulnerabilities</a> in Meraki MX/Z and ECE products patched. SLU backdoor flaws are now actively exploited (CVE-2024-20439, -20440).</p>
-  </div>
+  <!-- Tools -->
+  <div class="section">
+    <h2>🧰 Tools</h2>
 
-  <h2>🎯 ADVERSARIES</h2>
-
-  <div class="news-item">
-    <p><strong>GitHub Supply Chain Attack:</strong> <a href="https://www.bleepingcomputer.com/news/security/recent-github-supply-chain-attack-traced-to-leaked-spotbugs-token/">Traced to leaked token</a> in SpotBugs. Cascade affected 218 repos, including Coinbase. Reinforces importance of pinning commit hashes and rotating secrets.</p>
-  </div>
-
-  <div class="news-item">
-    <p><strong>Hunters International ➝ World Leaks:</strong> <a href="https://www.bleepingcomputer.com/news/security/hunters-international-rebrands-as-world-leaks-in-shift-to-data-extortion/">Ransomware gang pivots</a> to pure data theft/extortion with automated exfiltration tooling.</p>
-  </div>
-
-  <div class="news-item">
-    <p><strong>HellCat RaaS:</strong> <a href="https://www.tripwire.com/state-of-security/hellcat-ransomware-what-you-need-know">Emerging group</a> led by a teen figure “Pryx.” Notable for bizarre ransom demands (e.g., baguettes).</p>
-  </div>
-
-  <div class="news-item">
-    <p><strong>FamousSparrow:</strong> <a href="https://www.cysecurity.news/2025/04/chinas-famoussparrow-apt-hits-united.html">Resurfaces</a> with modular SparrowDoor targeting Latin American and U.S. orgs. Overlaps with ShadowPad and Salt Typhoon.</p>
-  </div>
-
-  <div class="news-item">
-    <p><strong>“Coquettte”:</strong> <a href="https://www.infosecurity-magazine.com/news/coquettte-hacker-malware-bph/">Teen cybercriminal</a> distributes Rugmi loader via fake AV site. Linked to hacking crew “Horrid.”</p>
-  </div>
-
-  <div class="news-item">
-    <p><strong>Microsoft Tax Phishing Alert:</strong> <a href="https://thehackernews.com/2025/04/microsoft-warns-of-tax-themed-email.html">Multiple malware payloads</a> spread via QR-laced tax-themed PDFs. Linked to Storm-0249 and RaccoonO365 platform.</p>
-  </div>
-
-  <h2>📉 TRENDS</h2>
-
-  <div class="news-item">
-    <p><strong>Fast Flux DNS:</strong> <a href="https://www.cisa.gov/news-events/alerts/2025/04/03/nsa-cisa-fbi-and-international-partners-release-cybersecurity-advisory-fast-flux-national-security">CISA-led advisory</a> flags it as a national security risk. Used to obscure botnets and phishing domains.</p>
-  </div>
-
-  <h2>🕳️ BREACH / LEAK</h2>
-
-  <div class="news-item">
-    <p><strong>Oracle:</strong> <a href="https://www.bleepingcomputer.com/news/security/oracle-privately-confirms-cloud-breach-to-customers/">Legacy Cloud Classic breached</a>. Data includes IDM database info. Separate Oracle Health breach also under investigation.</p>
-  </div>
-
-  <div class="news-item">
-    <p><strong>StreamElements:</strong> <a href="https://www.cysecurity.news/2025/04/streamelements-confirms-data-exposure.html">Third-party breach</a> leaks legacy user data (2020–2024). Data includes names, emails, addresses, phone numbers.</p>
-  </div>
-
-  <div class="news-item">
-    <p><strong>T-Mobile:</strong> <a href="https://gizmodo.com/t-mobile-bug-reveals-names-images-and-locations-of-random-children-2000584451">SyncUP GPS glitch</a> shows other people’s children instead of your own. Root cause: system update error.</p>
-  </div>
-
-  <h2>🛠 TOOLS</h2>
-
-  <div class="news-item">
-    <p><a href="https://hackread.com/best-data-anonymization-tools-in-2025/">Top data anonymization tools</a> for 2025: K2View, Privitar, ARX, DataVeil, Anonos, Tonic.ai—covering real-time masking to synthetic data generation.</p>
+    <div class="news-item">
+      <b>🔐 Top Data Anonymization Tools in 2025</b><br>
+      From K2View and Privitar to Tonic.ai and ARX—these tools lead privacy-preserving innovation under global laws like GDPR.<br>
+      🔗 <a href="https://hackread.com/best-data-anonymization-tools-in-2025/" target="_blank">Read more</a>
+    </div>
   </div>
 
   <p style="text-align:center;">
     <a href="https://pranakn.github.io">⬅ Back to Archive</a>
   </p>
+
 </body>
 </html>
