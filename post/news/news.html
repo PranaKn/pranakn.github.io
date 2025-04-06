@@ -3,53 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cybersecurity Newsfeed - 04/04/25</title>
+  <title>Cybersecurity Newsfeed - 06/04/25</title>
   <style>
-    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
-    h1, h2 { color: #c9a227; text-align: center; }
-    p { line-height: 1.6; }
-    a { color: #c9a227; text-decoration: none; }
-    a:hover { color: #b3541e; }
-    .news-item { margin-bottom: 25px; border-left: 4px solid #c9a227; padding-left: 15px; }
+    body { font-family: Arial, sans-serif; background-color: #111; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #f0c000; text-align: center; }
+    a { color: #f0c000; text-decoration: none; }
+    a:hover { color: #ff8800; }
+    .section { margin-bottom: 40px; }
+    .item { margin-bottom: 20px; padding-left: 10px; border-left: 3px solid #f0c000; }
+    .footer { text-align: center; margin-top: 50px; color: #888; }
   </style>
 </head>
 <body>
 
   <h1>🛡️ Cybersecurity Newsfeed</h1>
-  <h2>📅 April 4, 2025</h2>
+  <h2>📅 April 6, 2025</h2>
 
   <!-- Vulnerabilities -->
   <div class="section">
     <h2>🚨 Vulnerabilities</h2>
 
-    <div class="news-item">
-      <b>🔥 Apache Parquet RCE Vulnerability (CVE-2025-30065)</b><br>
-      A critical remote code execution vulnerability with a CVSS score of 10.0 has been discovered in Apache Parquet versions up to 1.15.0. Attackers can exploit deserialization in the parquet-avro module by tricking systems into importing specially crafted Parquet files. Administrators are urged to upgrade to version 1.15.1 immediately and avoid untrusted Parquet files in the meantime.<br>
-      🔗 <a href="https://www.bleepingcomputer.com/news/security/max-severity-rce-flaw-discovered-in-widely-used-apache-parquet/" target="_blank">Read more</a>
+    <div class="item">
+      <b>🔥 Ivanti Patches Critical RCE Vulnerability (CVE-2025-22457)</b><br>
+      Ivanti has released patches for a critical vulnerability in Connect Secure, Policy Secure, and ZTA Gateways that allows unauthenticated remote code execution. Active exploitation by a China-nexus threat actor has been confirmed. Users are urged to update to version 22.7R2.6 or apply upcoming patches. CISA recommends threat hunting, factory resets, revoking credentials, and isolating compromised devices. Affected systems not updated by February 28 may already be compromised.<br>
+      🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/04/04/ivanti-releases-security-updates-connect-secure-policy-secure-zta-gateways-vulnerability-cve-2025" target="_blank">CISA Alert</a>
     </div>
 
-    <div class="news-item">
-      <b>🔓 Ivanti Connect Secure RCE Vulnerability (CVE-2025-22457)</b><br>
-      Ivanti has patched a critical remote code execution vulnerability in Connect Secure, exploited by the China-linked espionage group UNC5221 since at least mid-March 2025. Administrators should upgrade immediately, monitor with Ivanti's ICT, and audit for compromise, especially among unpatched appliances.<br>
-      🔗 <a href="https://www.bleepingcomputer.com/news/security/ivanti-patches-connect-secure-zero-day-exploited-since-mid-march/" target="_blank">Read more</a>
+    <div class="item">
+      <b>🐍 Malicious PyPI Package 'disgrasya' Targets WooCommerce</b><br>
+      A malicious PyPI package named 'disgrasya' was downloaded over 34,000 times before removal. It was used for credit card validation via WooCommerce stores using the CyberSource gateway. The script emulates shoppers, stealing checkout tokens and routing stolen card data to a fake CyberSource server controlled by the attacker. Mitigation strategies include blocking low-value orders, monitoring anomalies, applying CAPTCHAs, and rate-limiting sensitive endpoints.<br>
+      🔗 <a href="https://www.bleepingcomputer.com/news/security/carding-tool-abusing-woocommerce-api-downloaded-34k-times-on-pypi/" target="_blank">Read more</a>
     </div>
 
-    <div class="news-item">
-      <b>🧪 PyTorch Lightning Deserialization Vulnerabilities</b><br>
-      PyTorch Lightning versions 2.4.0 and earlier contain multiple high-risk deserialization vulnerabilities due to unsafe use of torch.load() and Python’s pickle, potentially allowing arbitrary code execution when loading model files. Users are urged to only load models from trusted sources, enforce safe loading practices, and monitor for updates from Lightning AI.<br>
-      🔗 <a href="https://kb.cert.org/vuls/id/252619" target="_blank">Read more</a>
+    <div class="item">
+      <b>🧩 WinRAR Flaw Bypasses Windows Mark of the Web (CVE-2025-31334)</b><br>
+      CVE-2025-31334 is a medium-severity vulnerability in WinRAR (prior to version 7.11) that allows attackers to bypass Windows’ Mark of the Web (MotW) security warnings using specially crafted symlinks pointing to executable files. If exploited, it enables arbitrary code execution without triggering MotW alerts. The flaw has been fixed in version 7.11.<br>
+      🔗 <a href="https://www.bleepingcomputer.com/news/security/winrar-flaw-bypasses-windows-mark-of-the-web-security-alerts/" target="_blank">Read more</a>
     </div>
 
-    <div class="news-item">
-      <b>📱 Google Quick Share Vulnerabilities Bypassed</b><br>
-      SafeBreach researchers revealed they had bypassed patches for two critical Google Quick Share vulnerabilities (CVE-2024-38272, CVE-2024-38271) that were part of an earlier disclosed 10-bug exploit chain dubbed “QuickShell.” The findings highlight how combining minor vulnerabilities can create critical threats.<br>
-      🔗 <a href="https://www.darkreading.com/application-security/google-quick-share-bug-bypasses-zero-click-file-transfer" target="_blank">Read more</a>
+    <div class="item">
+      <b>🔓 Apache Parquet Critical RCE Vulnerability (CVE-2025-30065)</b><br>
+      A critical vulnerability (CVE-2025-30065, CVSS 10.0) has been disclosed in Apache Parquet’s Java library, allowing remote attackers to execute arbitrary code by tricking systems into loading crafted Parquet files. The flaw affects versions up to 1.15.0 and has been fixed in 1.15.1. It poses serious risks to data pipelines and analytics platforms handling untrusted files.<br>
+      🔗 <a href="https://thehackernews.com/2025/04/critical-flaw-in-apache-parquet-allows.html" target="_blank">Read more</a>
     </div>
 
-    <div class="news-item">
-      <b>🖥️ Cisco Meraki and ECE DoS Vulnerabilities</b><br>
-      Cisco has patched two high-severity denial-of-service vulnerabilities: CVE-2025-20212, affecting Meraki MX/Z devices via a flaw in the AnyConnect VPN server, and CVE-2025-20139, impacting Cisco’s Enterprise Chat and Email (ECE) through unauthenticated malicious chat requests. Patching is strongly advised.<br>
-      🔗 <a href="https://www.securityweek.com/vulnerabilities-expose-cisco-meraki-and-ece-products-to-dos-attacks/" target="_blank">Read more</a>
+    <div class="item">
+      <b>🔑 OIDC Misconfigurations in CI/CD Environments</b><br>
+      Unit 42 researchers have uncovered critical security risks in how OpenID Connect (OIDC) is used within CI/CD environments, with specific issues found in CircleCI’s OIDC implementation. Misconfigurations can allow attackers to gain unauthorized access to protected resources. Organizations are urged to implement strict claim validation, avoid broad access patterns, and regularly audit their OIDC configurations.<br>
+      🔗 <a href="https://unit42.paloaltonetworks.com/oidc-misconfigurations-in-ci-cd/" target="_blank">Read more</a>
     </div>
   </div>
 
@@ -57,40 +58,34 @@
   <div class="section">
     <h2>🕵️ Threat Actors & Campaigns</h2>
 
-    <div class="news-item">
-      <b>📄 GitHub Supply Chain Attack Traced to Leaked Token</b><br>
-      A sophisticated supply chain attack on GitHub that ultimately targeted Coinbase has been traced back to a single Personal Access Token (PAT) leaked in a SpotBugs workflow in November 2024. Security teams are advised to rotate secrets and use commit hashes over tags for workflows.<br>
-      🔗 <a href="https://www.bleepingcomputer.com/news/security/recent-github-supply-chain-attack-traced-to-leaked-spotbugs-token/" target="_blank">Read more</a>
+    <div class="item">
+      <b>📱 E-ZPass Phishing Campaign Surges</b><br>
+      A phishing campaign targeting E-ZPass and other toll agencies is surging, using iMessage and SMS texts to trick victims into visiting fake websites and stealing personal and credit card details. These messages often use urgency to prompt action and bypass anti-spam filters by originating from random email addresses. Victims are urged not to reply and to verify toll balances directly with official websites.<br>
+      🔗 <a href="https://www.bleepingcomputer.com/news/security/toll-payment-text-scam-returns-in-massive-phishing-wave/" target="_blank">Read more</a>
     </div>
 
-    <div class="news-item">
-      <b>👨‍💻 Hunters International Rebrands as 'World Leaks'</b><br>
-      Hunters International, a notorious Ransomware-as-a-Service group suspected to be a rebrand of Hive, is shutting down its encryption operations and rebranding as "World Leaks," shifting to pure data theft and extortion. The group is now pivoting away from ransomware due to profitability and risk concerns.<br>
-      🔗 <a href="https://www.bleepingcomputer.com/news/security/hunters-international-rebrands-as-world-leaks-in-shift-to-data-extortion/" target="_blank">Read more</a>
+    <div class="item">
+      <b>🛡️ WordPress 'mu-plugins' Directory Abused for Malware</b><br>
+      Threat actors are increasingly abusing WordPress’s 'mu-plugins' directory to execute persistent malicious code that evades detection. Sucuri researchers identified common payloads including redirectors to malicious sites, webshells for remote control, and spam injectors for SEO scams or fraud. These stealthy implants can persist unnoticed, making them a favored tactic for long-term WordPress site compromise.<br>
+      🔗 <a href="https://blog.sucuri.net/2025/03/hidden-malware-strikes-again-mu-plugins-under-attack.html" target="_blank">Read more</a>
     </div>
 
-    <div class="news-item">
-      <b>🐱 HellCat Ransomware Group Emerges</b><br>
-      HellCat is a relatively new ransomware-as-a-service (RaaS) group that emerged in mid-to-late 2024, known for double extortion attacks—encrypting systems and stealing data to demand ransom. There's currently no public decryptor, and security experts recommend standard ransomware defenses.<br>
-      🔗 <a href="https://www.tripwire.com/state-of-security/hellcat-ransomware-what-you-need-know" target="_blank">Read more</a>
+    <div class="item">
+      <b>🧑‍💻 North Korean Hackers Deploy BeaverTail Malware via npm Supply Chain</b><br>
+      North Korean actors behind the “Contagious Interview” campaign have escalated npm-based attacks, distributing malicious packages like BeaverTail and others. These use obfuscation and C2 links to Lazarus infrastructure to infect developer systems under the guise of job interviews.<br>
+      🔗 <a href="https://www.cysecurity.news/2025/04/north-korean-hackers-use-11-malicious.html" target="_blank">Read more</a>
     </div>
 
-    <div class="news-item">
-      <b>🦅 FamousSparrow APT Resurfaces with SparrowDoor Upgrade</b><br>
-      China-linked cyberespionage group FamousSparrow has resurfaced with a sophisticated modular upgrade of its SparrowDoor backdoor, targeting organizations in the Americas. The new SparrowDoor variants introduce plugin-based architecture and parallel command execution for stealth and flexibility.<br>
-      🔗 <a href="https://www.cysecurity.news/2025/04/chinas-famoussparrow-apt-hits-united.html" target="_blank">Read more</a>
+    <div class="item">
+      <b>🔐 PoisonSeed Targets Crypto Users via Compromised Mail Platforms</b><br>
+      A phishing campaign named PoisonSeed hijacks email marketing platforms like Mailchimp and HubSpot to send scam messages to Coinbase and Ledger users. Victims are tricked into entering seed phrases into fake wallets controlled by attackers.<br>
+      🔗 <a href="https://www.bleepingcomputer.com/news/security/poisonseed-phishing-campaign-behind-emails-with-wallet-seed-phrases/" target="_blank">Read more</a>
     </div>
 
-    <div class="news-item">
-      <b>🎭 Coquettte’s Rugmi Malware via Fake Antivirus Site</b><br>
-      DomainTools exposed an amateur cybercriminal distributing the Rugmi loader under the guise of "CyberSecure Pro" using bulletproof hosting and misleading websites.<br>
-      🔗 <a href="https://www.infosecurity-magazine.com/news/coquettte-hacker-malware-bph/" target="_blank">Read more</a>
-    </div>
-
-    <div class="news-item">
-      <b>💸 Microsoft Warns of Tax-Themed Phishing Surge</b><br>
-      PDF attachments, QR codes, and fake login portals are being used to steal Microsoft 365 credentials and deliver malware like Remcos and Latrodectus.<br>
-      🔗 <a href="https://thehackernews.com/2025/04/microsoft-warns-of-tax-themed-email.html" target="_blank">Read more</a>
+    <div class="item">
+      <b>💥 KoiLoader Evolves with Stronger Evasion</b><br>
+      KoiLoader is back with updated PowerShell infection chains, anti-analysis checks, and stealthy credential-stealing modules like KoiStealer. Spread via phishing emails disguised as Chase bank statements.<br>
+      🔗 <a href="https://www.cysecurity.news/2025/04/new-koiloader-malware-variant-uses-lnk.html" target="_blank">Read more</a>
     </div>
   </div>
 
@@ -98,10 +93,10 @@
   <div class="section">
     <h2>📈 Trends</h2>
 
-    <div class="news-item">
-      <b>🌐 CISA & Allies Warn of Fast Flux DNS Tactic</b><br>
-      Fast-changing DNS records help attackers hide infrastructure. Global agencies urge defenders to adopt layered defenses.<br>
-      🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/04/03/nsa-cisa-fbi-and-international-partners-release-cybersecurity-advisory-fast-flux-national-security" target="_blank">Read more</a>
+    <div class="item">
+      <b>🔓 85M Leaked Credentials Fuel New Attacks</b><br>
+      A new tool called Atlantis AIO is enabling mass credential-stuffing across 140+ services. Infostealers continue to bypass MFA with session cookies, showing passwords are no longer enough.<br>
+      🔗 <a href="https://www.cysecurity.news/2025/04/massive-password-breach-fuels-rise-of.html" target="_blank">Read more</a>
     </div>
   </div>
 
@@ -109,39 +104,42 @@
   <div class="section">
     <h2>📁 Breaches & Leaks</h2>
 
-    <div class="news-item">
-      <b>☁️ Oracle Legacy Cloud Breached</b><br>
-      Client credentials stolen and newer data leaked, contradicting Oracle’s claims. CrowdStrike and FBI are investigating.<br>
-      🔗 <a href="https://www.bleepingcomputer.com/news/security/oracle-privately-confirms-cloud-breach-to-customers/" target="_blank">Read more</a>
+    <div class="item">
+      <b>📦 Port of Seattle Ransomware Breach Impacts 90,000</b><br>
+      Rhysida ransomware disrupted airport systems and leaked sensitive data including SSNs, IDs, and medical info. The port refused to pay.<br>
+      🔗 <a href="https://www.bleepingcomputer.com/news/security/port-of-seattle-says-ransomware-breach-impacts-90-000-people/" target="_blank">Read more</a>
     </div>
 
-    <div class="news-item">
-      <b>📺 StreamElements Breach Linked to Third-Party</b><br>
-      210,000 users’ info leaked via legacy vendor; malware suspected on employee system.<br>
-      🔗 <a href="https://www.cysecurity.news/2025/04/streamelements-confirms-data-exposure.html" target="_blank">Read more</a>
+    <div class="item">
+      <b>🧠 Check Point Minimizes Hacker Claims</b><br>
+      Hacker “CoreInjection” claims to have stolen internal data. Check Point says the breach involved limited legacy access. Investigation ongoing.<br>
+      🔗 <a href="https://www.cysecurity.news/2025/04/check-point-downplays-hackers-claims.html" target="_blank">Read more</a>
     </div>
 
-    <div class="news-item">
-      <b>📍 T-Mobile GPS Tracker Bug Reveals Kids' Locations</b><br>
-      A glitch in SyncUP showed users other families’ children in real time. Fix has been deployed, but concerns persist.<br>
-      🔗 <a href="https://gizmodo.com/t-mobile-bug-reveals-names-images-and-locations-of-random-children-2000584451" target="_blank">Read more</a>
+    <div class="item">
+      <b>📱 Verizon iOS App Leaked Call Logs</b><br>
+      A flaw in Verizon’s Call Filter app exposed call metadata to anyone. Patched in March 2025 after a researcher report.<br>
+      🔗 <a href="https://www.malwarebytes.com/blog/news/2025/04/flaw-in-verizon-call-record-requests-put-millions-of-americans-at-risk" target="_blank">Read more</a>
     </div>
   </div>
 
   <!-- Tools -->
   <div class="section">
-    <h2>🧰 Tools</h2>
+    <h2>🛠️ Tools</h2>
 
-    <div class="news-item">
-      <b>🔐 Top Data Anonymization Tools in 2025</b><br>
-      From K2View and Privitar to Tonic.ai and ARX—these tools lead privacy-preserving innovation under global laws like GDPR.<br>
+    <div class="item">
+      <b>🔒 Best Data Anonymization Tools of 2025</b><br>
+      K2view, Privitar, ARX, DataVeil, Anonos, and Tonic.ai lead the field in privacy-centric data masking and synthetic generation.<br>
       🔗 <a href="https://hackread.com/best-data-anonymization-tools-in-2025/" target="_blank">Read more</a>
     </div>
   </div>
 
-  <p style="text-align:center;">
-    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
-  </p>
+  <!-- Footer -->
+  <div class="footer">
+    <p>
+      <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+    </p>
+  </div>
 
 </body>
 </html>
