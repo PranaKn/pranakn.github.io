@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cybersecurity Newsfeed - 09/04/25</title>
   <style>
-    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #00ffcc; padding: 20px; }
     h1, h2 { color: #c9a227; text-align: center; }
     p { line-height: 1.6; }
     a { color: #c9a227; text-decoration: none; }
@@ -22,107 +22,109 @@
   <div class="news-item">
     <h2>🔥 Vulnerabilities</h2>
 
-    <p>🔐 <b>CrushFTP CVE-2025-31161 Added to KEV</b><br>
-    Auth bypass lets attackers impersonate admins. Patch to 10.8.4 / 11.3.1 or use DMZ proxy.<br>
-    🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/04/07/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">Read more</a></p>
+    <p>🧩 <b>Gladinet CentreStack RCE (CVE-2025-30406)</b><br>
+    Hardcoded machineKey enables unauthenticated remote code execution. Patch and key removal urged.<br>
+    🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/04/08/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">CISA Alert</a></p>
 
-    <p>📱 <b>Android April Update Fixes Cellebrite-Used Zero-Days</b><br>
-    CVE-2024-53197 and 53150 exploited in targeted spyware attacks. Amnesty warns of risks.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/google-fixes-android-zero-days-exploited-in-attacks-60-other-flaws/" target="_blank">Read more</a></p>
+    <p>🪟 <b>Windows CLFS Zero-Day Exploited by RansomEXX (CVE-2025-29824)</b><br>
+    Patched in April’s Patch Tuesday. Enables SYSTEM-level privilege escalation.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-april-2025-patch-tuesday-fixes-exploited-zero-day-134-flaws/" target="_blank">Read more</a></p>
+
+    <p>📦 <b>WhatsApp Spoofing Bug (CVE-2025-30401)</b><br>
+    MIME/file extension mismatch could trick users into running malicious files.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/whatsapp-flaw-can-let-attackers-run-malicious-code-on-windows-pcs/" target="_blank">Read more</a></p>
+
+    <p>📱 <b>Android Zero-Days Patched (CVE-2024-53150, CVE-2024-53197)</b><br>
+    Kernel-level exploits used in Cellebrite spyware chain. Pixel devices updated first.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/android-update-address-two-zero/" target="_blank">Read more</a></p>
+
+    <p>🧾 <b>SAP April Patch Day: Code Injection & Auth Bypass</b><br>
+    CVEs 2025-27429, 31330, and 30016 fixed in S/4HANA, Financial Consolidation, and more.<br>
+    🔗 <a href="https://www.securityweek.com/sap-patches-critical-code-injection-vulnerabilities/" target="_blank">Read more</a></p>
+
+    <p>🔐 <b>Fortinet FortiSwitch Admin Bypass (CVE-2024-48887)</b><br>
+    Unauthenticated attackers could reset passwords via GUI. Fix now available.<br>
+    🔗 <a href="https://thehackernews.com/2025/04/fortinet-urges-fortiswitch-upgrades-to.html" target="_blank">Read more</a></p>
   </div>
 
   <!-- Adversaries -->
   <div class="news-item">
     <h2>🕵️ Adversaries & Attacks</h2>
 
-    <p>🧩 <b>Malicious VSCode Extensions Install XMRig</b><br>
-    9 extensions w/ 300k+ installs mine crypto + persist via PowerShell. Still online as of report.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/malicious-vscode-extensions-infect-windows-with-cryptominers/" target="_blank">Read more</a></p>
+    <p>📦 <b>Fake Office Add-ins on SourceForge Deliver Malware</b><br>
+    Crypto miner + clipper hidden in bloated MSI; 4,600+ impacted. Telegram exfiltration used.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/fake-microsoft-office-add-in-tools-push-malware-via-sourceforge/" target="_blank">Read more</a></p>
 
-    <p>🕳️ <b>Everest Ransomware Leak Site Defaced</b><br>
-    Mocked w/ “CRIME IS BAD” message from Prague. Site offline; WordPress flaw suspected.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/everest-ransomwares-dark-web-leak-site-defaced-now-offline/" target="_blank">Read more</a></p>
+    <p>🪟 <b>RansomEXX Uses CLFS Zero-Day via PipeMagic Backdoor</b><br>
+    SYSTEM access gained; attacks hit U.S., Spain, Saudi Arabia. Patch now.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/microsoft-windows-clfs-zero-day-exploited-by-ransomware-gang/" target="_blank">Read more</a></p>
 
-    <p>🐱 <b>ToddyCat Exploits ESET DLL Hijack to Deploy TCESB</b><br>
-    Uses version.dll + Dell BYOVD for stealthy execution and alert suppression.<br>
-    🔗 <a href="https://www.darkreading.com/vulnerabilities-threats/toddycat-apt-eset-bug-silent-malware" target="_blank">Read more</a></p>
+    <p>🕳️ <b>Fake CAPTCHAs Deliver Legion Loader Malware</b><br>
+    Targets finance & tech via browser extensions and sideloading. Turnstile CAPTCHAs abused.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/malware-campaign-uses-fake-captchas.html" target="_blank">Read more</a></p>
 
-    <p>📂 <b>Tampered BGInfo Used to Deploy Vidar Stealer</b><br>
-    Spoofed Sysinternals tool drops credential-stealing malware via `VirtualAlloc`.<br>
-    🔗 <a href="https://www.gdatasoftware.com/blog/2025/04/38169-vidar-stealer" target="_blank">Read more</a></p>
+    <p>🇷🇴 <b>Russian Disinfo Surge on Romanian TikTok</b><br>
+    Bots amplify pro-Putin & anti-EU sentiment. TikTok removes covert ops accounts.<br>
+    🔗 <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/russian-bots-hard-at-work-spreading-political-unrest-on-romanias-internet" target="_blank">Read more</a></p>
 
-    <p>🧑‍⚖️ <b>Scattered Spider Member Pleads Guilty to SIM Swaps + Crypto Theft</b><br>
-    "King Bob" stole $800k and leaked unreleased music; owes $13M in restitution.<br>
-    🔗 <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/king-bob-pleads-guilty-to-scattered-spider-linked-cryptocurrency-thefts-from-investors" target="_blank">Read more</a></p>
+    <p>🧩 <b>HellCat Exploits Jira Credentials Stolen by InfoStealers</b><br>
+    Attacks hit LeoVegas, Asseco Poland, others. StealC and Lumma were used.<br>
+    🔗 <a href="https://hackread.com/hellcat-ransomware-firms-infostealer-stolen-jira-credentials/" target="_blank">Read more</a></p>
 
-    <p>👾 <b>Neptune RAT Variant Spreads via YouTube, Telegram</b><br>
-    Disguised as legit tools, installs ransomware + keyloggers. Evades via emojis and Arabic text.<br>
-    🔗 <a href="https://hackread.com/neptune-rat-variant-youtube-steal-windows-passwords/" target="_blank">Read more</a></p>
+    <p>🏁 <b>Medusa Ransomware Hits NASCAR, Demands $4M</b><br>
+    Leaked maps and credentials raise risk of broader compromise.<br>
+    🔗 <a href="https://hackread.com/medusa-ransomware-claims-nascar-breach-latest-attack/" target="_blank">Read more</a></p>
 
-    <p>📮 <b>“EDR-as-a-Service” Market Emerges on Dark Web</b><br>
-    Crooks forge emergency data requests via hijacked law enforcement accounts.<br>
-    🔗 <a href="https://securityaffairs.com/176266/cyber-crime/edr-as-a-service-edr-cybercrime.html" target="_blank">Read more</a></p>
+    <p>🧪 <b>OfficePackage Campaign on SourceForge Spreads ClipBanker</b><br>
+    Complex AutoIt-based infection delivers crypto hijacker + miner.<br>
+    🔗 <a href="https://securelist.com/miner-clipbanker-sourceforge-campaign/116088/" target="_blank">Read more</a></p>
+
+    <p>🇺🇦 <b>UAC-0226 Phishing Hits Ukraine with GIFTEDCROOK</b><br>
+    Targets military & gov. via Excel macros. Powershell reverse shell + infostealer.<br>
+    🔗 <a href="https://thehackernews.com/2025/04/uac-0226-deploys-giftedcrook-stealer.html" target="_blank">Read more</a></p>
+
+    <p>☁️ <b>Amazon SSM Agent Path Traversal Fixed</b><br>
+    Bug allowed root via crafted plugin paths. Fixed in v3.3.1957.0.<br>
+    🔗 <a href="https://thehackernews.com/2025/04/amazon-ec2-ssm-agent-flaw-patched-after.html" target="_blank">Read more</a></p>
   </div>
 
   <!-- Trends -->
   <div class="news-item">
     <h2>📈 Trends</h2>
 
-    <p>🤖 <b>Xanthorox AI Toolkit Powers Full-Spectrum Cybercrime</b><br>
-    Private LLM stack enables code gen, scraping, vuln exploits, and malware automation.<br>
-    🔗 <a href="https://hackread.com/xanthorox-ai-dark-web-full-spectrum-hacking-assistant/" target="_blank">Read more</a></p>
+    <p>🚰 <b>62% of Utilities Hit by Cyberattacks in Past Year</b><br>
+    Volt Typhoon and others target infrastructure. EPA urges security action.<br>
+    🔗 <a href="https://www.helpnetsecurity.com/2025/04/08/state-of-critical-infrastructure-resilience/" target="_blank">Read more</a></p>
+
+    <p>📹 <b>TVT DVRs Targeted by New Mirai Botnet</b><br>
+    2,500+ IPs scan for 2024 auth bypass. Last firmware was in 2018.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/new-mirai-botnet-behind-surge-in-tvt-dvr-exploitation/" target="_blank">Read more</a></p>
   </div>
 
   <!-- Breaches -->
   <div class="news-item">
     <h2>📁 Breaches & Leaks</h2>
 
-    <p>🥣 <b>WK Kellogg Confirms Employee Data Breach via Cleo Supply Chain Hack</b><br>
-    CVE-2024-50623 used by Clop to steal SSNs and HR data. Identity protection offered.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/food-giant-wk-kellogg-discloses-data-breach-linked-to-clop-ransomware/" target="_blank">Read more</a></p>
+    <p>🗃️ <b>Yoojo Exposed 14.5M Sensitive Files via Misconfigured Cloud</b><br>
+    Passport data, IDs, messages left publicly accessible. Now secured.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/yoojo-exposes-millions-of-sensitive.html" target="_blank">Read more</a></p>
 
-    <p>🐦 <b>Hacker Leaks 201M Accounts from Elon Musk’s X</b><br>
-    Data includes emails + metadata. Part of 400GB dump. No response from X yet.<br>
-    🔗 <a href="https://www.cysecurity.news/2025/04/massive-data-breach-hits-elon-musks-x.html" target="_blank">Read more</a></p>
+    <p>🌐 <b>Everest Ransomware Site Defaced</b><br>
+    “Crime is bad” message posted before Tor leak site vanished.<br>
+    🔗 <a href="https://securityaffairs.com/176345/cyber-crime/everest-ransomware-groups-tor-leak-site-offline-after-a-defacement.html" target="_blank">Read more</a></p>
   </div>
 
   <!-- Other -->
   <div class="news-item">
     <h2>🧭 Other Highlights</h2>
 
-    <p>🪟 <b>Microsoft Delays WSUS Driver Sync Removal</b><br>
-    Backtracks on April 18 cutoff after enterprise pushback. Legacy still supported for now.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-delays-wsus-driver-sync-deprecation-indefinitely/" target="_blank">Read more</a></p>
-
-    <p>🔍 <b>Apple & Google Host Qihoo-Linked VPN Apps in App Stores</b><br>
-    FT probe finds U.S.-blacklisted firm still harvesting data via VPN apps.<br>
-    🔗 <a href="https://www.cysecurity.news/2025/04/apple-and-google-app-stores-host-vpn.html" target="_blank">Read more</a></p>
-
-    <p>🇬🇧 <b>Vodafone: UK SMEs Lost £3.4B to Cybercrime in 2024</b><br>
-    Report urges Cyber Essentials overhaul + security tax incentives.<br>
-    🔗 <a href="https://www.infosecurity-magazine.com/news/vodafone-urges-uk-cybersecurity/" target="_blank">Read more</a></p>
-  </div>
-
-  <!-- Tools -->
-  <div class="news-item">
-    <h2>🧰 Tools</h2>
-
-    <p>🔧 <b>YES3 Scanner Released for S3 Ransomware Protection</b><br>
-    Open-source tool audits S3 ACLs, encryption, Object Lock, and policy gaps.<br>
-    🔗 <a href="https://github.com/FogSecurity/yes3-scanner" target="_blank">GitHub Repo</a></p>
-  </div>
-
-  <!-- Hunting -->
-  <div class="news-item">
-    <h2>🔍 Hunting Opportunities</h2>
-
-    <p>🐾 <b>TCESB Malware Bypasses AV via ESET DLL Proxying</b><br>
-    Uses BYOVD + kernel alert suppression; payloads AES-encrypted and stealth triggered.<br>
-    🔗 <a href="https://securelist.com/toddycat-apt-exploits-vulnerability-in-eset-software-for-dll-proxying/116086/" target="_blank">Read more</a></p>
+    <p>🇬🇧 <b>UK Orgs Delay Digital Projects Over Cyberwarfare Fears</b><br>
+    88% of IT leaders fear nation-state attacks. 73% expect AI-powered threats.<br>
+    🔗 <a href="https://www.darkreading.com/threat-intelligence/uk-orgs-pull-back-digital-projects-cyberwarfare" target="_blank">Read more</a></p>
   </div>
 
   <p style="text-align:center;">
-    <a href="pranakn.github.io">⬅ Back to Archive</a>
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
   </p>
 
 </body>
