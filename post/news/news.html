@@ -14,132 +14,130 @@
     .footer { text-align: center; margin-top: 50px; color: #888; }
   </style>
 </head>
-<body>
-
   <h1>🛡️ Cybersecurity Newsfeed</h1>
-  <h2>📅 April 6, 2025</h2>
+  <h2>📅 April 8, 2025</h2>
+<body>
+    <h1>08/04/25</h1>
 
-  <!-- Vulnerabilities -->
-  <div class="section">
-    <h2>🚨 Vulnerabilities</h2>
+    <h2>🚨 VULNERABILITIES</h2>
 
-    <div class="item">
-      <b>🔥 Ivanti Patches Critical RCE Vulnerability (CVE-2025-22457)</b><br>
-      Ivanti has released patches for a critical vulnerability in Connect Secure, Policy Secure, and ZTA Gateways that allows unauthenticated remote code execution. Active exploitation by a China-nexus threat actor has been confirmed. Users are urged to update to version 22.7R2.6 or apply upcoming patches. CISA recommends threat hunting, factory resets, revoking credentials, and isolating compromised devices. Affected systems not updated by February 28 may already be compromised.<br>
-      🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/04/04/ivanti-releases-security-updates-connect-secure-policy-secure-zta-gateways-vulnerability-cve-2025" target="_blank">CISA Alert</a>
-    </div>
+    <p>The Cybersecurity and Infrastructure Security Agency (CISA) has added CVE-2025-31161, a critical authentication bypass vulnerability in CrushFTP versions 10.0.0 to 10.8.3 and 11.0.0 to 11.3.0, to its Known Exploited Vulnerabilities Catalog. This flaw allows unauthenticated attackers to impersonate users, including administrators, potentially leading to full system compromise. Exploitation has been observed in the wild since March 2025. CrushFTP has released patches; users should upgrade to versions 10.8.4 or 11.3.1 or later immediately. If immediate patching isn't possible, enabling the DMZ proxy can serve as a temporary mitigation.</p>
 
-    <div class="item">
-      <b>🐍 Malicious PyPI Package 'disgrasya' Targets WooCommerce</b><br>
-      A malicious PyPI package named 'disgrasya' was downloaded over 34,000 times before removal. It was used for credit card validation via WooCommerce stores using the CyberSource gateway. The script emulates shoppers, stealing checkout tokens and routing stolen card data to a fake CyberSource server controlled by the attacker. Mitigation strategies include blocking low-value orders, monitoring anomalies, applying CAPTCHAs, and rate-limiting sensitive endpoints.<br>
-      🔗 <a href="https://www.bleepingcomputer.com/news/security/carding-tool-abusing-woocommerce-api-downloaded-34k-times-on-pypi/" target="_blank">Read more</a>
-    </div>
+    <ul>
+        <li><a href="https://www.cisa.gov/news-events/alerts/2025/04/07/cisa-adds-one-known-exploited-vulnerability-catalog">CISA Adds One Known Exploited Vulnerability to Catalog</a></li>
+    </ul>
 
-    <div class="item">
-      <b>🧩 WinRAR Flaw Bypasses Windows Mark of the Web (CVE-2025-31334)</b><br>
-      CVE-2025-31334 is a medium-severity vulnerability in WinRAR (prior to version 7.11) that allows attackers to bypass Windows’ Mark of the Web (MotW) security warnings using specially crafted symlinks pointing to executable files. If exploited, it enables arbitrary code execution without triggering MotW alerts. The flaw has been fixed in version 7.11.<br>
-      🔗 <a href="https://www.bleepingcomputer.com/news/security/winrar-flaw-bypasses-windows-mark-of-the-web-security-alerts/" target="_blank">Read more</a>
-    </div>
+    <p>Google's April 2025 Android update patches 62 vulnerabilities, including two zero-days exploited in targeted attacks. One, CVE-2024-53197, is a high-severity privilege escalation flaw in the Linux kernel's USB-audio driver, reportedly used by Serbian authorities via Cellebrite's zero-day exploit chain to unlock Android devices. This chain also included zero-days CVE-2024-53104 and CVE-2024-50302. The second zero-day, CVE-2024-53150, involves an Android kernel information disclosure bug. Amnesty International uncovered the exploit in 2024. Fixes were shared with OEMs in January. Google Pixel devices received updates immediately; others may face delays. This follows a similar NoviSpy spyware exploit fixed in November 2024.</p>
 
-    <div class="item">
-      <b>🔓 Apache Parquet Critical RCE Vulnerability (CVE-2025-30065)</b><br>
-      A critical vulnerability (CVE-2025-30065, CVSS 10.0) has been disclosed in Apache Parquet’s Java library, allowing remote attackers to execute arbitrary code by tricking systems into loading crafted Parquet files. The flaw affects versions up to 1.15.0 and has been fixed in 1.15.1. It poses serious risks to data pipelines and analytics platforms handling untrusted files.<br>
-      🔗 <a href="https://thehackernews.com/2025/04/critical-flaw-in-apache-parquet-allows.html" target="_blank">Read more</a>
-    </div>
+    <ul>
+        <li><a href="https://www.bleepingcomputer.com/news/security/google-fixes-android-zero-days-exploited-in-attacks-60-other-flaws/">Google fixes Android zero-days exploited in attacks, 60 other flaws</a></li>
+    </ul>
 
-    <div class="item">
-      <b>🔑 OIDC Misconfigurations in CI/CD Environments</b><br>
-      Unit 42 researchers have uncovered critical security risks in how OpenID Connect (OIDC) is used within CI/CD environments, with specific issues found in CircleCI’s OIDC implementation. Misconfigurations can allow attackers to gain unauthorized access to protected resources. Organizations are urged to implement strict claim validation, avoid broad access patterns, and regularly audit their OIDC configurations.<br>
-      🔗 <a href="https://unit42.paloaltonetworks.com/oidc-misconfigurations-in-ci-cd/" target="_blank">Read more</a>
-    </div>
-  </div>
+    <h2>🕵️ ADVERSARIES</h2>
 
-  <!-- Adversaries -->
-  <div class="section">
-    <h2>🕵️ Threat Actors & Campaigns</h2>
+    <p>Researchers have uncovered nine malicious VSCode extensions on Microsoft's Marketplace that infect users with the XMRig cryptominer to mine Ethereum and Monero. Disguised as legitimate tools like "Discord Rich Presence" and "Solidity Compiler," these extensions—published April 4, 2025—have over 300,000 installs, likely inflated to appear credible. Upon installation, they execute a PowerShell script that disables security features, establishes persistence, and downloads XMRig from a remote server. The malware also mimics system binaries for privilege escalation. Despite reports to Microsoft, the extensions remain online. Users are urged to uninstall them and remove associated malware components immediately.</p>
 
-    <div class="item">
-      <b>📱 E-ZPass Phishing Campaign Surges</b><br>
-      A phishing campaign targeting E-ZPass and other toll agencies is surging, using iMessage and SMS texts to trick victims into visiting fake websites and stealing personal and credit card details. These messages often use urgency to prompt action and bypass anti-spam filters by originating from random email addresses. Victims are urged not to reply and to verify toll balances directly with official websites.<br>
-      🔗 <a href="https://www.bleepingcomputer.com/news/security/toll-payment-text-scam-returns-in-massive-phishing-wave/" target="_blank">Read more</a>
-    </div>
+    <ul>
+        <li><a href="https://www.bleepingcomputer.com/news/security/malicious-vscode-extensions-infect-windows-with-cryptominers/">Malicious VSCode extensions infect Windows with cryptominers</a></li>
+    </ul>
 
-    <div class="item">
-      <b>🛡️ WordPress 'mu-plugins' Directory Abused for Malware</b><br>
-      Threat actors are increasingly abusing WordPress’s 'mu-plugins' directory to execute persistent malicious code that evades detection. Sucuri researchers identified common payloads including redirectors to malicious sites, webshells for remote control, and spam injectors for SEO scams or fraud. These stealthy implants can persist unnoticed, making them a favored tactic for long-term WordPress site compromise.<br>
-      🔗 <a href="https://blog.sucuri.net/2025/03/hidden-malware-strikes-again-mu-plugins-under-attack.html" target="_blank">Read more</a>
-    </div>
+    <p>The Everest ransomware gang's dark web leak site was hacked over the weekend by an unknown attacker who defaced it with a message mocking cybercrime. The site, now offline, showed "Don't do crime CRIME IS BAD xoxo from Prague" before disappearing entirely. Experts suspect a WordPress vulnerability may have enabled the breach. Everest, active since 2020, has targeted over 230 victims using double-extortion tactics and has also acted as an initial access broker. Its recent victims include cannabis brand STIIIZY and several U.S. healthcare organizations, prompting warnings from the Department of Health and Human Services.</p>
 
-    <div class="item">
-      <b>🧑‍💻 North Korean Hackers Deploy BeaverTail Malware via npm Supply Chain</b><br>
-      North Korean actors behind the “Contagious Interview” campaign have escalated npm-based attacks, distributing malicious packages like BeaverTail and others. These use obfuscation and C2 links to Lazarus infrastructure to infect developer systems under the guise of job interviews.<br>
-      🔗 <a href="https://www.cysecurity.news/2025/04/north-korean-hackers-use-11-malicious.html" target="_blank">Read more</a>
-    </div>
+    <ul>
+        <li><a href="https://www.bleepingcomputer.com/news/security/everest-ransomwares-dark-web-leak-site-defaced-now-offline/">Everest ransomware's dark web leak site defaced, now offline</a></li>
+    </ul>
 
-    <div class="item">
-      <b>🔐 PoisonSeed Targets Crypto Users via Compromised Mail Platforms</b><br>
-      A phishing campaign named PoisonSeed hijacks email marketing platforms like Mailchimp and HubSpot to send scam messages to Coinbase and Ledger users. Victims are tricked into entering seed phrases into fake wallets controlled by attackers.<br>
-      🔗 <a href="https://www.bleepingcomputer.com/news/security/poisonseed-phishing-campaign-behind-emails-with-wallet-seed-phrases/" target="_blank">Read more</a>
-    </div>
+    <p>The Chinese-linked APT group ToddyCat is exploiting CVE-2024-11859, a DLL search order hijacking flaw in ESET antivirus software, to execute stealthy malware dubbed TCESB. Discovered by Kaspersky, the malicious <code>version.dll</code> mimics the legitimate Windows library to silently run in the background, bypassing detection and disabling security alerts at the kernel level. Despite ESET patching the flaw in January 2025, ToddyCat continues targeting systems using unpatched versions. The group also abuses CVE-2021-36276 in a Dell driver to escalate privileges. Experts recommend monitoring vulnerable driver installs and suspicious kernel debug activity to detect and prevent such sophisticated threats.</p>
 
-    <div class="item">
-      <b>💥 KoiLoader Evolves with Stronger Evasion</b><br>
-      KoiLoader is back with updated PowerShell infection chains, anti-analysis checks, and stealthy credential-stealing modules like KoiStealer. Spread via phishing emails disguised as Chase bank statements.<br>
-      🔗 <a href="https://www.cysecurity.news/2025/04/new-koiloader-malware-variant-uses-lnk.html" target="_blank">Read more</a>
-    </div>
-  </div>
+    <ul>
+        <li><a href="https://www.darkreading.com/vulnerabilities-threats/toddycat-apt-eset-bug-silent-malware">ToddyCat APT Targets ESET Bug to Load Silent Malware</a></li>
+    </ul>
 
-  <!-- Trends -->
-  <div class="section">
-    <h2>📈 Trends</h2>
+    <p>A tampered version of Sysinternals' BGInfo.exe has been weaponized to deploy the Vidar Stealer malware. Though it mirrors the legitimate file in metadata and versioning (4.33), the malicious version differs in size (2.1 MiB vs. 10.2 MiB) and hash, and fails to update the desktop wallpaper—a key BGInfo function. The malware modifies BGInfo’s heap initialization to hijack execution, allocating memory for further stages via <code>VirtualAlloc</code>, ultimately loading and running Vidar. The stealer’s payload, extracted as <code>vidardump.bin</code>, targets credentials, wallets, and session tokens from apps like FileZilla, Telegram, and Brave, and hijacks thread execution via <code>RtlUserThreadStart</code>.</p>
 
-    <div class="item">
-      <b>🔓 85M Leaked Credentials Fuel New Attacks</b><br>
-      A new tool called Atlantis AIO is enabling mass credential-stuffing across 140+ services. Infostealers continue to bypass MFA with session cookies, showing passwords are no longer enough.<br>
-      🔗 <a href="https://www.cysecurity.news/2025/04/massive-password-breach-fuels-rise-of.html" target="_blank">Read more</a>
-    </div>
-  </div>
+    <ul>
+        <li><a href="https://www.gdatasoftware.com/blog/2025/04/38169-vidar-stealer">Vidar Stealer: Revealing A New Deception Strategy</a></li>
+    </ul>
 
-  <!-- Breaches -->
-  <div class="section">
-    <h2>📁 Breaches & Leaks</h2>
+    <p>Noah Michael Urban, a 20-year-old from Florida and member of the Scattered Spider hacking gang, has pleaded guilty to SIM swap fraud, identity theft, and stealing $800,000 in cryptocurrency from five investors. Known online as "King Bob," Urban also leaked unreleased music by artists like Ariana Grande and Playboi Carti after breaching music executives’ accounts. Scattered Spider is infamous for high-profile hacks, including MGM Resorts, using social engineering and impersonation tactics. Urban was arrested in January 2024 and attempted to erase evidence during the raid. He faces sentencing within 75 days and owes $13 million in restitution to 59 victims.</p>
 
-    <div class="item">
-      <b>📦 Port of Seattle Ransomware Breach Impacts 90,000</b><br>
-      Rhysida ransomware disrupted airport systems and leaked sensitive data including SSNs, IDs, and medical info. The port refused to pay.<br>
-      🔗 <a href="https://www.bleepingcomputer.com/news/security/port-of-seattle-says-ransomware-breach-impacts-90-000-people/" target="_blank">Read more</a>
-    </div>
+    <ul>
+        <li><a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/king-bob-pleads-guilty-to-scattered-spider-linked-cryptocurrency-thefts-from-investors">King Bob pleads guilty to Scattered Spider-linked thefts</a></li>
+    </ul>
 
-    <div class="item">
-      <b>🧠 Check Point Minimizes Hacker Claims</b><br>
-      Hacker “CoreInjection” claims to have stolen internal data. Check Point says the breach involved limited legacy access. Investigation ongoing.<br>
-      🔗 <a href="https://www.cysecurity.news/2025/04/check-point-downplays-hackers-claims.html" target="_blank">Read more</a>
-    </div>
+    <p>A new Neptune RAT variant is spreading through YouTube and Telegram, targeting Windows users with capabilities to steal credentials, hijack cryptocurrency wallets, and deploy ransomware. Promoted as the “Most Advanced RAT,” the malware is disguised as a legitimate tool but enables attackers to encrypt files, corrupt system components, and maintain persistence. It uses obfuscation techniques, such as Arabic characters and emojis, to evade detection and includes modules for clipboard monitoring, task scheduling, and screen viewing. Distributed via platforms like GitHub and catbox.moe, Neptune RAT highlights the growing threat of malware shared freely under false ethical pretenses.</p>
 
-    <div class="item">
-      <b>📱 Verizon iOS App Leaked Call Logs</b><br>
-      A flaw in Verizon’s Call Filter app exposed call metadata to anyone. Patched in March 2025 after a researcher report.<br>
-      🔗 <a href="https://www.malwarebytes.com/blog/news/2025/04/flaw-in-verizon-call-record-requests-put-millions-of-americans-at-risk" target="_blank">Read more</a>
-    </div>
-  </div>
+    <ul>
+        <li><a href="https://hackread.com/neptune-rat-variant-youtube-steal-windows-passwords/">Neptune RAT variant spreads via YouTube, Telegram</a></li>
+    </ul>
 
-  <!-- Tools -->
-  <div class="section">
-    <h2>🛠️ Tools</h2>
+    <p>Meridian Group has exposed the rise of “EDR-as-a-Service,” where cybercriminals exploit compromised law enforcement accounts to submit fraudulent Emergency Data Requests (EDRs) to major platforms, gaining sensitive user data. This turnkey black-market service now includes submitting fake EDRs and delivering stolen data. Transactions are arranged via dark web forums and encrypted apps, with payments in crypto and escrow systems for trust. Manuals help even low-skilled actors exploit this method, posing serious risks to journalists, politicians, and the public. Meridian urges tech firms to overhaul EDR verification to safeguard privacy and prevent systemic abuse.</p>
 
-    <div class="item">
-      <b>🔒 Best Data Anonymization Tools of 2025</b><br>
-      K2view, Privitar, ARX, DataVeil, Anonos, and Tonic.ai lead the field in privacy-centric data masking and synthetic generation.<br>
-      🔗 <a href="https://hackread.com/best-data-anonymization-tools-in-2025/" target="_blank">Read more</a>
-    </div>
-  </div>
+    <ul>
+        <li><a href="https://securityaffairs.com/176266/cyber-crime/edr-as-a-service-edr-cybercrime.html">EDR-as-a-Service exposes serious privacy loopholes</a></li>
+    </ul>
 
-  <!-- Footer -->
-  <div class="footer">
-    <p>
-      <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+    <h2>📈 TRENDS</h2>
+
+    <p>Cybersecurity firm SlashNext has uncovered a sophisticated new AI toolkit named <b>Xanthorox AI</b>, circulating in cybercrime forums since Q1 2025. Unlike prior malicious tools like WormGPT, Xanthorox is built on five proprietary AI models hosted on private infrastructure. It offers modular capabilities, including code generation, visual analysis, voice control, vulnerability exploitation, and live internet scraping. Experts warn it marks a leap in AI-driven cybercrime, underscoring the need for AI-based behavioral detection and advanced threat monitoring systems.</p>
+
+    <ul>
+        <li><a href="https://hackread.com/xanthorox-ai-dark-web-full-spectrum-hacking-assistant/">Dark Web’s Xanthorox AI fuels automated cybercrime</a></li>
+    </ul>
+
+    <h2>🔓 BREACH/LEAKS</h2>
+
+    <p><b>WK Kellogg Co</b> confirmed that employee data, including names and Social Security numbers, was stolen during Cleo file transfer software breaches attributed to the Clop ransomware gang. The breach occurred in December 2024 but was only discovered in February 2025. Affected individuals were notified and offered free identity monitoring.</p>
+
+    <ul>
+        <li><a href="https://www.bleepingcomputer.com/news/security/food-giant-wk-kellogg-discloses-data-breach-linked-to-clop-ransomware/">WK Kellogg discloses Clop-linked data breach</a></li>
+    </ul>
+
+    <p>A massive breach reportedly hit Elon Musk’s platform <b>X</b>, with a hacker named “ThinkingOne” leaking a 34GB file containing data of over 201 million accounts on BreachForums. The leak includes emails, metadata, and other sensitive data—possibly linked to a 2023 breach. X has yet to respond publicly.</p>
+
+    <ul>
+        <li><a href="https://www.cysecurity.news/2025/04/massive-data-breach-hits-elon-musks-x.html">201M X accounts leaked in major data breach</a></li>
+    </ul>
+
+    <h2>🧭 OTHERS</h2>
+
+    <p><b>Microsoft</b> has indefinitely delayed the April 18, 2025, removal of driver synchronization in WSUS (Windows Server Update Services). This change came after enterprise backlash regarding cloud-only alternatives. Microsoft still plans to deprecate WSUS but will maintain its current capabilities for now.</p>
+
+    <ul>
+        <li><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-delays-wsus-driver-sync-deprecation-indefinitely/">Microsoft delays WSUS driver sync deprecation</a></li>
+    </ul>
+
+    <p><b>Google and Apple</b> face backlash for allowing VPN apps linked to Chinese firm Qihoo 360, which is under U.S. sanctions, to operate on their app stores. The apps reportedly collect extensive user data and may comply with Chinese intelligence laws. Apple removed some apps; others remain live.</p>
+
+    <ul>
+        <li><a href="https://www.cysecurity.news/2025/04/apple-and-google-app-stores-host-vpn.html">Controversial VPN apps linked to Qihoo still live on app stores</a></li>
+    </ul>
+
+    <p><b>Vodafone Business</b> is urging the UK government to strengthen support for SMEs after reporting that small businesses lose £3.4bn annually to cyberattacks. Vodafone calls for an overhaul of Cyber Essentials, more public-private partnerships, and stronger compliance incentives.</p>
+
+    <ul>
+        <li><a href="https://www.infosecurity-magazine.com/news/vodafone-urges-uk-cybersecurity/">Vodafone pushes UK to bolster SME cyber defenses</a></li>
+    </ul>
+
+    <h2>🛠️ TOOLS</h2>
+
+    <p><b>Fog Security</b> released <b>YES3 Scanner</b>, a new auditing tool for Amazon S3 security. It helps uncover misconfigurations in ACLs, encryption, Object Lock, and lifecycle settings. The tool improves over AWS’s default tools by offering more accurate analysis and broader contextual insights.</p>
+
+    <ul>
+        <li><a href="https://github.com/FogSecurity/yes3-scanner">YES3 Scanner GitHub Repo</a></li>
+    </ul>
+
+    <h2>🎯 HUNTING OPPORTUNITIES</h2>
+
+    <p><b>Kaspersky</b> discovered a stealthy tool called <b>TCESB</b>, used by the ToddyCat APT to bypass detection by hijacking ESET’s command-line scanner. It leverages DLL proxying (CVE-2024-11859) and the BYOVD technique using a Dell driver (CVE-2021-36276). It disables kernel monitoring and encrypts payloads with AES-128, only activating after validating execution stability.</p>
+
+    <ul>
+        <li><a href="https://securelist.com/toddycat-apt-exploits-vulnerability-in-eset-software-for-dll-proxying/116086/">ToddyCat uses ESET bug to deploy stealth malware</a></li>
+    </ul>
+
+    <p style="text-align:center;">
+        <a href="https://pranakn.github.io">⬅ Back to Archive</a>
     </p>
-  </div>
-
 </body>
 </html>
+ 
