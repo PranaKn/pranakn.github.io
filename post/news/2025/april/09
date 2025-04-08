@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 09/04/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 09/04/25</h2>
+
+  <!-- Vulnerabilities -->
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>🔐 <b>CrushFTP CVE-2025-31161 Added to KEV</b><br>
+    Auth bypass lets attackers impersonate admins. Patch to 10.8.4 / 11.3.1 or use DMZ proxy.<br>
+    🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/04/07/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">Read more</a></p>
+
+    <p>📱 <b>Android April Update Fixes Cellebrite-Used Zero-Days</b><br>
+    CVE-2024-53197 and 53150 exploited in targeted spyware attacks. Amnesty warns of risks.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/google-fixes-android-zero-days-exploited-in-attacks-60-other-flaws/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Adversaries -->
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>🧩 <b>Malicious VSCode Extensions Install XMRig</b><br>
+    9 extensions w/ 300k+ installs mine crypto + persist via PowerShell. Still online as of report.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/malicious-vscode-extensions-infect-windows-with-cryptominers/" target="_blank">Read more</a></p>
+
+    <p>🕳️ <b>Everest Ransomware Leak Site Defaced</b><br>
+    Mocked w/ “CRIME IS BAD” message from Prague. Site offline; WordPress flaw suspected.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/everest-ransomwares-dark-web-leak-site-defaced-now-offline/" target="_blank">Read more</a></p>
+
+    <p>🐱 <b>ToddyCat Exploits ESET DLL Hijack to Deploy TCESB</b><br>
+    Uses version.dll + Dell BYOVD for stealthy execution and alert suppression.<br>
+    🔗 <a href="https://www.darkreading.com/vulnerabilities-threats/toddycat-apt-eset-bug-silent-malware" target="_blank">Read more</a></p>
+
+    <p>📂 <b>Tampered BGInfo Used to Deploy Vidar Stealer</b><br>
+    Spoofed Sysinternals tool drops credential-stealing malware via `VirtualAlloc`.<br>
+    🔗 <a href="https://www.gdatasoftware.com/blog/2025/04/38169-vidar-stealer" target="_blank">Read more</a></p>
+
+    <p>🧑‍⚖️ <b>Scattered Spider Member Pleads Guilty to SIM Swaps + Crypto Theft</b><br>
+    "King Bob" stole $800k and leaked unreleased music; owes $13M in restitution.<br>
+    🔗 <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/king-bob-pleads-guilty-to-scattered-spider-linked-cryptocurrency-thefts-from-investors" target="_blank">Read more</a></p>
+
+    <p>👾 <b>Neptune RAT Variant Spreads via YouTube, Telegram</b><br>
+    Disguised as legit tools, installs ransomware + keyloggers. Evades via emojis and Arabic text.<br>
+    🔗 <a href="https://hackread.com/neptune-rat-variant-youtube-steal-windows-passwords/" target="_blank">Read more</a></p>
+
+    <p>📮 <b>“EDR-as-a-Service” Market Emerges on Dark Web</b><br>
+    Crooks forge emergency data requests via hijacked law enforcement accounts.<br>
+    🔗 <a href="https://securityaffairs.com/176266/cyber-crime/edr-as-a-service-edr-cybercrime.html" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Trends -->
+  <div class="news-item">
+    <h2>📈 Trends</h2>
+
+    <p>🤖 <b>Xanthorox AI Toolkit Powers Full-Spectrum Cybercrime</b><br>
+    Private LLM stack enables code gen, scraping, vuln exploits, and malware automation.<br>
+    🔗 <a href="https://hackread.com/xanthorox-ai-dark-web-full-spectrum-hacking-assistant/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Breaches -->
+  <div class="news-item">
+    <h2>📁 Breaches & Leaks</h2>
+
+    <p>🥣 <b>WK Kellogg Confirms Employee Data Breach via Cleo Supply Chain Hack</b><br>
+    CVE-2024-50623 used by Clop to steal SSNs and HR data. Identity protection offered.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/food-giant-wk-kellogg-discloses-data-breach-linked-to-clop-ransomware/" target="_blank">Read more</a></p>
+
+    <p>🐦 <b>Hacker Leaks 201M Accounts from Elon Musk’s X</b><br>
+    Data includes emails + metadata. Part of 400GB dump. No response from X yet.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/massive-data-breach-hits-elon-musks-x.html" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Other -->
+  <div class="news-item">
+    <h2>🧭 Other Highlights</h2>
+
+    <p>🪟 <b>Microsoft Delays WSUS Driver Sync Removal</b><br>
+    Backtracks on April 18 cutoff after enterprise pushback. Legacy still supported for now.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-delays-wsus-driver-sync-deprecation-indefinitely/" target="_blank">Read more</a></p>
+
+    <p>🔍 <b>Apple & Google Host Qihoo-Linked VPN Apps in App Stores</b><br>
+    FT probe finds U.S.-blacklisted firm still harvesting data via VPN apps.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/apple-and-google-app-stores-host-vpn.html" target="_blank">Read more</a></p>
+
+    <p>🇬🇧 <b>Vodafone: UK SMEs Lost £3.4B to Cybercrime in 2024</b><br>
+    Report urges Cyber Essentials overhaul + security tax incentives.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/vodafone-urges-uk-cybersecurity/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Tools -->
+  <div class="news-item">
+    <h2>🧰 Tools</h2>
+
+    <p>🔧 <b>YES3 Scanner Released for S3 Ransomware Protection</b><br>
+    Open-source tool audits S3 ACLs, encryption, Object Lock, and policy gaps.<br>
+    🔗 <a href="https://github.com/FogSecurity/yes3-scanner" target="_blank">GitHub Repo</a></p>
+  </div>
+
+  <!-- Hunting -->
+  <div class="news-item">
+    <h2>🔍 Hunting Opportunities</h2>
+
+    <p>🐾 <b>TCESB Malware Bypasses AV via ESET DLL Proxying</b><br>
+    Uses BYOVD + kernel alert suppression; payloads AES-encrypted and stealth triggered.<br>
+    🔗 <a href="https://securelist.com/toddycat-apt-exploits-vulnerability-in-eset-software-for-dll-proxying/116086/" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="../index.html">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
