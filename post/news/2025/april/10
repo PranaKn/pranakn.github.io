@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 10/05/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 10/05/25</h2>
+
+  <!-- Vulnerabilities -->
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>🐧 <b>Linux Kernel ALSA USB-Audio Flaws (CVE-2024-53197, CVE-2024-53150)</b><br>
+    Out-of-bounds memory access issues enable data leakage and attacks via malicious USBs. CISA urges patching.<br>
+    🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/04/09/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">CISA Alert</a></p>
+
+    <p>☁️ <b>AWS EC2 SSRF Attacks via IMDSv1</b><br>
+    IMDSv1 exploited to steal IAM credentials from EC2-hosted apps. France & Romania IPs used. Upgrade to IMDSv2.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/hackers-target-ssrf-bugs-in-ec2-hosted-sites-to-steal-aws-credentials/" target="_blank">Read more</a></p>
+
+    <p>📡 <b>Cisco CSLU Backdoor Access (CVE-2024-20439, CVE-2024-20440)</b><br>
+    Hardcoded creds allow unauthenticated access. Sensitive data leak risk from crafted HTTP requests.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/cisco-cve-2024-20439-exploitation.html" target="_blank">Read more</a></p>
+
+    <p>🧩 <b>Gladinet CentreStack RCE (CVE-2025-30406)</b><br>
+    Exploited ASP.NET ViewState flaw enables unauthenticated RCE. Patch or rotate machineKey.<br>
+    🔗 <a href="https://www.helpnetsecurity.com/2025/04/09/rce-gladinet-centrestack-file-sharing-exploited-cve-2025-30406/" target="_blank">Read more</a></p>
+
+    <p>🎭 <b>Lovable AI Enables Phishing via Prompt Injection</b><br>
+    “VibeScamming” abuse lets attackers build fake Microsoft login pages. Lovable scores worst in AI safety tests.<br>
+    🔗 <a href="https://thehackernews.com/2025/04/lovable-ai-found-most-vulnerable-to.html" target="_blank">Read more</a></p>
+
+    <p>🪟 <b>Windows CLFS Zero-Day Used by PipeMagic Trojan (CVE-2025-29824)</b><br>
+    Storm-2460 group used MSBuild delivery + LSASS dumping to deploy RansomEXX. Patch now.<br>
+    🔗 <a href="https://thehackernews.com/2025/04/pipemagic-trojan-exploits-windows-clfs.html" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Adversaries -->
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>🎯 <b>BADBAZAAR & MOONSHINE Spyware Targets Uyghurs, Tibetans, and Taiwanese</b><br>
+    Trojanized apps exfiltrate data, activate cameras and mics. Embedded in religious tools.<br>
+    🔗 <a href="https://cyberscoop.com/badbazzar-and-moonshine-malware-targets-taiwanese-tibetan-and-uyghur-groups-u-k-warns/" target="_blank">Read more</a></p>
+
+    <p>🤖 <b>AkiraBot Uses GPT-4o-mini for AI-Powered Spam</b><br>
+    Spams 80K+ sites with fake SEO promos. Uses CAPTCHA bypass + proxies.<br>
+    🔗 <a href="https://hackread.com/akirabot-abuses-openai-api-spam-website-contact-forms/" target="_blank">Read more</a></p>
+
+    <p>📬 <b>Grandoreiro Phishing Campaign in LATAM</b><br>
+    Geofenced delivery with Google DNS evasion. Delivered via PDF lures.<br>
+    🔗 <a href="https://hackread.com/grandoreiro-strikes-geofenced-phishing-attacks-latam/" target="_blank">Read more</a></p>
+
+    <p>🎯 <b>Precision-Validated Phishing Avoids Detection</b><br>
+    Only shows login pages to verified email addresses. Blocks sandboxes.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/precision-validated-phishing/" target="_blank">Read more</a></p>
+
+    <p>📦 <b>GetShared Abused to Spread Phishing Payloads</b><br>
+    File-sharing tool used to send disguised malware in .rar files.<br>
+    🔗 <a href="https://www.kaspersky.com/blog/getshared-scam-emails/53288/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Trends -->
+  <div class="news-item">
+    <h2>📈 Trends</h2>
+
+    <p>🕵️ <b>Precision-Validated Phishing Gains Momentum</b><br>
+    Real-time validation + API filtering thwarts researchers. Inbox code validation now emerging.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/phishing-kits-now-vet-victims-in-real-time-before-stealing-credentials/" target="_blank">Read more</a></p>
+
+    <p>🛒 <b>Magento CRM Leak Affects 700K+ Users</b><br>
+    “Satanic” claims third-party exploit leaked emails, job titles, and firm data.<br>
+    🔗 <a href="https://hackread.com/hackers-magento-breach-3rd-party-crm-data-leak/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Breaches -->
+  <div class="news-item">
+    <h2>📁 Breaches & Leaks</h2>
+
+    <p>🏛️ <b>OCC Email Hack Exposes 150K+ Messages</b><br>
+    Sensitive bank oversight data stolen in admin compromise. CISA and Treasury involved.<br>
+    🔗 <a href="https://cyberscoop.com/treasury-bureau-notifies-congress-that-email-hack-was-a-major-cybersecurity-incident/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Other -->
+  <div class="news-item">
+    <h2>🧭 Other Highlights</h2>
+
+    <p>📁 <b>Windows Update Creates inetpub Folder Without IIS</b><br>
+    Patch KB5055523 adds new folder by mistake. No harm, but odd behavior.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/windows-11-april-update-unexpectedly-creates-new-inetpub-folder/" target="_blank">Read more</a></p>
+
+    <p>🌐 <b>Exchange Admin Center Outage Disrupts Admin Access</b><br>
+    HTTP 500 errors prompt URL redirect workaround. Microsoft investigates root cause.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-investigates-global-exchange-admin-center-outage/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Hunting -->
+  <div class="news-item">
+    <h2>🔍 Hunting Opportunities</h2>
+
+    <p>🧪 <b>Black Basta Ransomware & WMIC Abuse</b><br>
+    Uses LOLbins like WMIC for stealthy recon. Monitor for unusual WMIC usage.<br>
+    🔗 <a href="https://intel471.com/blog/threat-hunting-case-study-windows-management-instrumentation-abuse" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
