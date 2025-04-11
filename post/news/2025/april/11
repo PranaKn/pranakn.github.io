@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 11/04/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 11/04/25</h2>
+
+  <!-- Vulnerabilities -->
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>📡 <b>Juniper Networks Patches Dozens of Junos Flaws</b><br>
+    Includes 11 high-severity bugs affecting EX, MX, SRX series. Junos Space and CVE-2025-21590 updated.<br>
+    🔗 <a href="https://www.securityweek.com/juniper-networks-patches-dozens-of-junos-vulnerabilities/" target="_blank">Read more</a></p>
+
+    <p>🎮 <b>NVIDIA Container Toolkit Escape Flaw Still Exploitable (CVE-2025-23359)</b><br>
+    September patch incomplete; TOCTOU bug persists. Update to 1.17.4.<br>
+    🔗 <a href="https://thehackernews.com/2025/04/incomplete-patch-in-nvidia-toolkit.html" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Adversaries -->
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>🛠️ <b>OttoKit Plugin Auth Bypass Exploited (CVE-2025-3102)</b><br>
+    Admin account creation via missing API key check. Update to 1.0.79.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-wordpress-plugin-auth-bypass-hours-after-disclosure/" target="_blank">Read more</a></p>
+
+    <p>💾 <b>Gamaredon Uses Removable Drives to Target Military</b><br>
+    GammaSteel deployed via `.LNK` files. Stealthy exfiltration via PowerShell and Tor.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/russian-hackers-attack-western-military-mission-using-malicious-drive/" target="_blank">Read more</a></p>
+
+    <p>📱 <b>Smishing Scam Imitates U.S. Toll Road Systems</b><br>
+    Chinese dev-made kits phish 8+ states with fake E-ZPass alerts.<br>
+    🔗 <a href="https://blog.talosintelligence.com/unraveling-the-us-toll-road-smishing-scams/" target="_blank">Read more</a></p>
+
+    <p>☁️ <b>UNC5221 Exploits Ivanti VPN (CVE-2025-22457)</b><br>
+    Spawn, Trailblaze, Brushfire malware deployed. Legacy Ivanti versions hit.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/chinese-cyber-espionage-suspected-in.html" target="_blank">Read more</a></p>
+
+    <p>🧬 <b>ToddyCat Exploits ESET Tool to Deploy TCESB</b><br>
+    Uses BYOVD via Dell flaw for stealth. ESET patched CVE-2024-11859 in January.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/toddycat-hackers-exploit-eset.html" target="_blank">Read more</a></p>
+
+    <p>🦊 <b>DogeQuest Targets Tesla Owners with ParkMobile Leak</b><br>
+    Publishes personal data, incites vandalism. FBI & DOJ investigating.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/dark-web-site-dogequest-targets-tesla.html" target="_blank">Read more</a></p>
+
+    <p>📨 <b>Spam Bombing Campaign Leads to Phishing</b><br>
+    Mandrill used to flood inboxes, followed by fake IT support via Teams.<br>
+    🔗 <a href="https://www.darkreading.com/cyberattacks-data-breaches/threat-actors-spam-bombing-malicious-motives" target="_blank">Read more</a></p>
+
+    <p>💸 <b>Malware in Fake npm Package Targets Wallets</b><br>
+    “pdf-to-office” npm module hijacks crypto from Atomic and Exodus.<br>
+    🔗 <a href="https://hackread.com/npm-malware-atomic-exodus-wallets-hijack-crypto/" target="_blank">Read more</a></p>
+
+    <p>🕵️ <b>Smokeloader Buyers Arrested in Operation Endgame</b><br>
+    Europol targets ransomware customers using logs from takedown.<br>
+    🔗 <a href="https://hackread.com/smokeloader-users-identified-arrested-operation-endgame/" target="_blank">Read more</a></p>
+
+    <p>📱 <b>SpyNote RAT Spreads via Fake Google Play Sites</b><br>
+    Uses JavaScript dropper + second APK for deep surveillance.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/spynote-malware-targets-android/" target="_blank">Read more</a></p>
+
+    <p>🪓 <b>GOFFEE APT Targets Russian Orgs with Stealthy Implants</b><br>
+    Uses Mythic agents in patched system binaries. Focused on media, gov, energy.<br>
+    🔗 <a href="https://securelist.com/goffee-apt-new-attacks/116139/" target="_blank">Read more</a></p>
+
+    <p>🌍 <b>PlayPraetor Reloaded: 16K URLs Hosting New Malware</b><br>
+    New variants Phish, RAT, PWA, Phantom, Veil mimic Google Play. Regional focus.<br>
+    🔗 <a href="https://thehackernews.com/2025/04/playpraetor-reloaded-ctm360-uncovers.html" target="_blank">Read more</a></p>
+
+    <p>🐟 <b>Operation FishMedley Links I‑SOON to Global Espionage</b><br>
+    DOJ unseals indictment of Chinese hackers tied to APT FishMonger.<br>
+    🔗 <a href="https://www.welivesecurity.com/en/eset-research/operation-fishmedley/" target="_blank">Read more</a></p>
+
+    <p>🎌 <b>Operation AkaiRyū Targets European Diplomats</b><br>
+    MirrorFace APT abuses Visual Studio tunnels and Sandbox for stealth.<br>
+    🔗 <a href="https://www.welivesecurity.com/en/eset-research/operation-akairyu-mirrorface-invites-europe-expo-2025-revives-anel-backdoor/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Breaches -->
+  <div class="news-item">
+    <h2>📁 Breaches & Leaks</h2>
+
+    <p>🏭 <b>Sensata Hit by Ransomware, Operations Disrupted</b><br>
+    SEC filing confirms data exfiltration. Recovery ongoing; impact still unknown.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/sensata-technologies-hit-by-ransomware-attack-impacting-operations/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Other -->
+  <div class="news-item">
+    <h2>🧭 Other Highlights</h2>
+
+    <p>📄 <b>Microsoft Issues Emergency Fix for Office 2016 Crashes</b><br>
+    Out-of-band patch KB5002623 resolves KB5002700-related Word/Outlook crashes.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-emergency-update-to-fix-office-2016-crashes/" target="_blank">Read more</a></p>
+
+    <p>🧠 <b>OpenAI Expands ChatGPT Memory for Lifelong Use</b><br>
+    Remembers full history for Pro users. Wider rollout planned.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-wants-chatgpt-to-know-you-over-your-life-with-new-memory-update/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Tools -->
+  <div class="news-item">
+    <h2>🛠️ Tools & Innovation</h2>
+
+    <p>🧩 <b>CyberArk Launches Secure AI Agents Solution</b><br>
+    Protects AI agents as privileged identities. Open-source tools + real-time detection.<br>
+    🔗 <a href="https://www.helpnetsecurity.com/2025/04/10/cyberark-secure-ai-agents-solution/" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
 
