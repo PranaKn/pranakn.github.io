@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cybersecurity Newsfeed - 15/04/25</title>
+  <title>Cybersecurity Newsfeed - 16/04/25</title>
   <style>
     body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
     h1, h2 { color: #c9a227; text-align: center; }
@@ -16,88 +16,107 @@
 <body>
 
   <h1>📰 Cybersecurity Newsfeed</h1>
-  <h2>📅 15/04/25</h2>
+  <h2>📅 16/04/25</h2>
 
   <!-- Vulnerabilities -->
   <div class="news-item">
     <h2>🔥 Vulnerabilities</h2>
 
-    <p>🔓 <b>SureTriggers Plugin Flaw Enables Admin Account Creation</b><br>
-    Improper validation of ST-Authorization lets attackers exploit API. Patch immediately.<br>
-    🔗 <a href="https://www.infosecurity-magazine.com/news/wordpress-plugin-flaw-exploited-4/" target="_blank">Read more</a></p>
+    <p>📱 <b>Android Auto-Reboot Enhances Forensic Defense</b><br>
+    Auto-reboots locked devices after 72 hours to return to full encryption. Rollout via Play services v25.14.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/google-adds-android-auto-reboot-to-block-forensic-data-extractions/" target="_blank">Read more</a></p>
 
-    <p>🕵️‍♀️ <b>Chrome 136 Fixes 20-Year History Leak Flaw</b><br>
-    Partitions `:visited` links to block cross-site tracking. Feature available via flags in earlier builds.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/chrome-136-fixes-20-year-browser-history-privacy-risk/" target="_blank">Read more</a></p>
+    <p>💬 <b>WhatsApp Windows Flaw Allows EXE Disguise (CVE-2025-30401)</b><br>
+    Malicious files can masquerade as images. Fixed in version 2.2450.6.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/whatsapp-windows-vulnerability-cve-2025.html" target="_blank">Read more</a></p>
+
+    <p>📊 <b>Nagios Log Server Flaws Enable XSS and RCE</b><br>
+    Stored XSS + API token theft patched in 2024R1.3.2 and 2024R2. PoCs exist.<br>
+    🔗 <a href="https://www.helpnetsecurity.com/2025/04/15/critical-flaws-fixed-in-nagios-log-server/" target="_blank">Read more</a></p>
+
+    <p>🐘 <b>Apache CVSS 10 Flaws in Roller and Parquet</b><br>
+    Session invalidation and Java deserialization bugs fixed in 6.1.5 and 1.15.1.<br>
+    🔗 <a href="https://securityaffairs.com/176577/security/critical-apache-roller-flaw-allows-to-retain-unauthorized-access-even-after-a-password-change.html" target="_blank">Read more</a></p>
   </div>
 
   <!-- Adversaries -->
   <div class="news-item">
     <h2>🕵️ Adversaries & Attacks</h2>
 
-    <p>📱 <b>Malware Found in Preloaded Apps on Fake Phones</b><br>
-    Spyware on cheap Androids steals wallets, scans recovery phrases. Over $1M stolen.<br>
-    🔗 <a href="https://hackread.com/pre-installed-malware-cheap-android-phones-crypto-fake-whatsapp/" target="_blank">Read more</a></p>
+    <p>🐉 <b>UNC5174 Uses Open-Source Tools to Mask Activity</b><br>
+    Leverages VShell, WebSockets, SNOWLIGHT malware for Linux targets. Linked to Ivanti zero-day.<br>
+    🔗 <a href="https://cyberscoop.com/chinese-espionage-group-unc5174-open-source-tools/" target="_blank">Read more</a></p>
 
-    <p>🦠 <b>ResolverRAT Targets Healthcare and Pharma Firms</b><br>
-    Uses AES encryption, DLL hijack, IP rotation. Detected in six countries.<br>
-    🔗 <a href="https://securityaffairs.com/176537/malware/new-malware-resolverrat-targets-healthcare-pharmaceutical-firms.html" target="_blank">Read more</a></p>
+    <p>📦 <b>SourceForge Add-in Scam Distributes Miner + Clipper</b><br>
+    Fake “officepackage” lures users. Booby-trapped MSI file in large ZIP evades AV.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/fake-microsoft-office-add-ins-targeting.html" target="_blank">Read more</a></p>
 
-    <p>📦 <b>Malicious NPM Packages Steal PayPal & Crypto Credentials</b><br>
-    “tommyboy_h1/h2” used install hooks to exfiltrate credentials. Fortinet urges cleanup.<br>
-    🔗 <a href="https://securityaffairs.com/176530/security/malicious-npm-packages-to-steal-paypal-credentials.html" target="_blank">Read more</a></p>
+    <p>🐍 <b>*disgrasya* PyPI Package Automates Credit Card Fraud</b><br>
+    Used to test stolen cards on WooCommerce sites via CyberSource gateway.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/malicious-pypi-package-disgrasya.html" target="_blank">Read more</a></p>
 
-    <p>🧧 <b>Earth Bluecrow Deploys BPFDoor Linux Backdoor</b><br>
-    Uses BPF filters to evade detection. Controller supports stealthy reverse shell access.<br>
-    🔗 <a href="https://www.trendmicro.com/en_us/research/25/d/bpfdoor-hidden-controller.html" target="_blank">Read more</a></p>
+    <p>📄 <b>Fake PDFCandy Sites Spread ArechClient2 Malware</b><br>
+    Uses Google Ads + typosquatting to trick users into executing PowerShell payload.<br>
+    🔗 <a href="https://hackread.com/fake-pdfcandy-websites-spread-malware/" target="_blank">Read more</a></p>
 
-    <p>🇵🇰 <b>SideCopy Expands to Target Indian Critical Ministries</b><br>
-    New CurlBack RAT and Spark RAT used with advanced evasion tactics.<br>
-    🔗 <a href="https://thehackernews.com/2025/04/pakistan-linked-hackers-expand-targets.html" target="_blank">Read more</a></p>
+    <p>🎣 <b>Slow Pisces Targets Crypto Devs via LinkedIn Jobs</b><br>
+    Malware in GitHub coding challenges. Steals credentials, SSH keys, macOS data.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/north-korea-hackers-linkedin/" target="_blank">Read more</a></p>
+
+    <p>🧩 <b>CentreStack RCE (CVE-2025-30406) Exploited In-the-Wild</b><br>
+    Huntress confirms active attacks. ASP.NET ViewState abuse. Patch or rotate key.<br>
+    🔗 <a href="https://securityaffairs.com/176552/hacking/gladinet-flaw-cve-2025-30406-actively-exploited-in-the-wild.html" target="_blank">Read more</a></p>
+
+    <p>🍷 <b>APT29 Uses GrapeLoader + WineLoader in Phishing Campaign</b><br>
+    Fake invites carry DLL sideloads. Obfuscated payloads target embassies.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/midnight-blizzard-deploys-new-grapeloader-malware-in-embassy-phishing/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Trends -->
+  <div class="news-item">
+    <h2>📈 Trends</h2>
+
+    <p>🖥️ <b>RMM Tools Like AnyDesk Misused in Malware Campaigns</b><br>
+    Blends with IT workflows. Intel 471 + CERT-UA advise behavior-based hunting.<br>
+    🔗 <a href="https://intel471.com/blog/understanding-and-threat-hunting-for-rmm-software-misuse" target="_blank">Read more</a></p>
   </div>
 
   <!-- Breaches -->
   <div class="news-item">
     <h2>📁 Breaches & Leaks</h2>
 
-    <p>🚗 <b>Clop Breach Hits Hertz, Thrifty, Dollar Brands</b><br>
-    Cleo zero-days used. SSNs and medical claims exposed. 3,400+ affected.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/hertz-confirms-customer-info-drivers-licenses-stolen-in-data-breach/" target="_blank">Read more</a></p>
+    <p>📣 <b>4chan Hacked, Admin Tools and Code Leaked</b><br>
+    Soyjak.party claims attack. Kiwi Farms hosts 4chan source code.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/infamous-message-board-4chan-taken-down-following-major-hack/" target="_blank">Read more</a></p>
+
+    <p>📊 <b>Landmark Admin Breach Now Affects 1.6 Million</b><br>
+    Doubled estimate. SSNs, financial and health data exposed.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/landmark-admin-data-breach-impact-now-reaches-16-million-people/" target="_blank">Read more</a></p>
   </div>
 
   <!-- Other -->
   <div class="news-item">
     <h2>🧭 Other Highlights</h2>
 
-    <p>🔒 <b>SSL/TLS Certificate Lifespan to Drop to 47 Days</b><br>
-    Change starts 2026. Admins urged to prepare for automation.<br>
-    🔗 <a href="https://www.theregister.com/2025/04/14/ssl_tls_certificates/" target="_blank">Read more</a></p>
+    <p>📅 <b>Exchange Server 2016/2019 Reach EoS in October</b><br>
+    No extended support or ESUs. Migrate to SE or Online now.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-2016-and-2019-reach-end-of-support-in-six-months/" target="_blank">Read more</a></p>
 
-    <p>🕵️ <b>Prodaft Buys Hacker Forum Accounts to Spy</b><br>
-    “Sell your Source” aims to collect intel via old clean accounts. Paid in crypto.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/cybersecurity-firm-buying-hacker-forum-accounts-to-spy-on-cybercriminals/" target="_blank">Read more</a></p>
-  </div>
+    <p>⚠️ <b>ActiveX Controls to Be Blocked in Microsoft 365/Office 2024</b><br>
+    Blocked by default. Legacy exploit vector phased out.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-blocks-activex-by-default-in-microsoft-365-office-2024/" target="_blank">Read more</a></p>
 
-  <!-- Tools -->
-  <div class="news-item">
-    <h2>🛠️ Tools & Innovation</h2>
+    <p>🚔 <b>Operation BULUT: 232 Arrested, €300M Seized</b><br>
+    Joint EU-Türkiye anti-drug op uses Sky ECC and ANOM intel.<br>
+    🔗 <a href="https://hackread.com/operation-bulut-encrypted-chats-sky-ecc-anom-arrests/" target="_blank">Read more</a></p>
 
-    <p>🧪 <b>Tirreno Open-Source Tool Protects Apps from Fraud</b><br>
-    Defends against bots, account takeovers, and abuse. Easy to deploy.<br>
-    🔗 <a href="https://github.com/TirrenoTechnologies/tirreno" target="_blank">Read more</a></p>
-  </div>
-
-  <!-- Hunting -->
-  <div class="news-item">
-    <h2>🔍 Hunting Opportunities</h2>
-
-    <p>🎣 <b>Slow Pisces Uses GitHub Code Challenges to Infect Crypto Devs</b><br>
-    North Korean APT delivers malware via fake job offers. RN Loader, YAML deserialization used.<br>
-    🔗 <a href="https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/" target="_blank">Read more</a></p>
+    <p>🌍 <b>Meta Resumes EU AI Training Using Public User Data</b><br>
+    Users can opt-out. Data excludes minors and private messages.<br>
+    🔗 <a href="https://securityaffairs.com/176569/digital-id/meta-will-use-public-eu-user-data-to-train-its-ai-models.html" target="_blank">Read more</a></p>
   </div>
 
   <p style="text-align:center;">
-    <a href="pranakn.github.io">⬅ Back to Archive</a>
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
   </p>
 
 </body>
