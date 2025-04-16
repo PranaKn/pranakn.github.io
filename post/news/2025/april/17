@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 17/04/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 17/04/25</h2>
+
+  <!-- Vulnerabilities -->
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>🌐 <b>Chrome 135 and Firefox 137 Fix Critical Flaws</b><br>
+    Heap overflows and race conditions patched. Updates prevent RCE and info leaks.<br>
+    🔗 <a href="https://www.securityweek.com/chrome-135-firefox-137-updates-patch-severe-vulnerabilities/" target="_blank">Read more</a></p>
+
+    <p>🔐 <b>CISA Adds CVE-2021-20035 to KEV Catalog</b><br>
+    SonicWall SMA100 OS command injection flaw actively exploited. Patch by May 7.<br>
+    🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/04/16/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">Read more</a></p>
+
+    <p>🛡️ <b>16,000+ Fortinet Devices Compromised by Symlink Backdoor</b><br>
+    SSL-VPN link abuse grants config access. Reset credentials and follow Fortinet’s guide.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/over-16-000-fortinet-devices-compromised-with-symlink-backdoor/" target="_blank">Read more</a></p>
+
+    <p>📦 <b>Cisco Talos Details 7 New DoS and RCE Flaws</b><br>
+    Affects Eclipse ThreadX and STMicroelectronics. Snort rules and patches available.<br>
+    🔗 <a href="https://blog.talosintelligence.com/eclipse-and-stmicroelectronics-vulnerabilities/" target="_blank">Read more</a></p>
+
+    <p>📱 <b>Enterprise Mobile Apps Found Lacking in Cloud & Crypto Security</b><br>
+    54K apps analyzed show misconfigurations, weak crypto, exposed AWS keys.<br>
+    🔗 <a href="https://www.darkreading.com/endpoint-security/cloud-cryptography-flaws-mobile-apps-expose-enterprise-data" target="_blank">Read more</a></p>
+
+    <p>🍎 <b>Apple Patches iOS Zero-Days in CoreAudio and RPAC</b><br>
+    Remote audio-based RCE and Pointer Auth bypass. Update to 18.4.1 now.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/apple-fixes-two-zero-days-exploited-in-targeted-iphone-attacks/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Adversaries -->
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>🇨🇳 <b>BRICKSTORM Backdoor Evolves to Target Windows</b><br>
+    DNS-over-HTTPS + scheduled tasks used in C2. Focused on European orgs.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/china-hackers-brickstorm-backdoor/" target="_blank">Read more</a></p>
+
+    <p>🐍 <b>Malicious PyPI Package Steals MEXC Crypto Tokens</b><br>
+    *ccxt-mexc-futures* mimicked legit library. Rerouted API keys to attacker server.<br>
+    🔗 <a href="https://thehackernews.com/2025/04/malicious-pypi-package-targets-mexc.html" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Trends -->
+  <div class="news-item">
+    <h2>📈 Trends</h2>
+
+    <p>🧪 <b>41% of Attacks Bypass Defenses: AEV Can Help</b><br>
+    Picus promotes BAS + automated pentesting to reduce risk. Visibility + ROI focused.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/41-percent-of-attacks-bypass-defenses-adversarial-exposure-validation-fixes-that/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Breaches -->
+  <div class="news-item">
+    <h2>📁 Breaches & Leaks</h2>
+
+    <p>🧲 <b>“Data Splicing Attacks” Bypass DLP Solutions</b><br>
+    SquareX to demo browser-based exfiltration at BSides SF. Tool: Angry Magpie.<br>
+    🔗 <a href="https://hackread.com/squarex-to-uncover-data-splicing-attacks-at-bsides-san-francisco-a-major-dlp-flaw-that-compromises-data-security-of-millions/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Other -->
+  <div class="news-item">
+    <h2>🧭 Other Highlights</h2>
+
+    <p>💰 <b>CISA Extends MITRE’s CVE Program Funding</b><br>
+    CVE Foundation launched for future independence. EU creates EUVD.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/cisa-extends-funding-to-ensure-no-lapse-in-critical-cve-services/" target="_blank">Read more</a></p>
+
+    <p>📉 <b>Jira Outage Impacts Global Teams</b><br>
+    Dashboards broken since April 16 morning. Root cause found; fix underway.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/jira-down-atlassian-users-experiencing-degraded-performance/" target="_blank">Read more</a></p>
+
+    <p>🚨 <b>Smokeloader Clients Arrested in Operation Endgame</b><br>
+    Botnet buyer logs used for takedowns. Focus now on demand chain.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/smokeloader-malware-clients-detained-as.html" target="_blank">Read more</a></p>
+
+    <p>🧩 <b>Browser Extensions Pose Growing Enterprise Risk</b><br>
+    Half have critical permissions, many outdated. Sideloading bypasses store control.<br>
+    🔗 <a href="https://www.helpnetsecurity.com/2025/04/16/browser-extensions-threat/" target="_blank">Read more</a></p>
+
+    <p>🔑 <b>Passwordless Auth Gains Traction in Enterprises</b><br>
+    FIDO2 and passkeys favored. 87% planning deployments. Metrics prove ROI.<br>
+    🔗 <a href="https://www.helpnetsecurity.com/2025/04/16/passwordless-authentication-security/" target="_blank">Read more</a></p>
+
+    <p>📉 <b>Zoom Outage Hits 60K+ Users Globally</b><br>
+    DNS resolution issues cause downtime. Services slowly recovering.<br>
+    🔗 <a href="https://www.zdnet.com/article/zoom-goes-down-across-the-globe-what-we-know-about-the-outage-so-far/" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
