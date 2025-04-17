@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 18/04/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 18/04/25</h2>
+
+  <!-- Vulnerabilities -->
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>🍎 <b>CISA Adds Apple and Windows Flaws to KEV Catalog</b><br>
+    Apple CVEs 2025-31200 & 31201 and Windows CVE-2025-24054 now actively exploited. Patch by May 8.<br>
+    🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/04/17/cisa-adds-three-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
+
+    <p>📁 <b>CentreStack RCE (CVE-2025-30406) Actively Exploited</b><br>
+    Multi-tenant MSP risk confirmed by Gladinet. Patch by April 29 per CISA.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/serious-flaw-found-in-popular-file.html" target="_blank">Read more</a></p>
+
+    <p>🔓 <b>Erlang/OTP SSH RCE Flaw (CVE-2025-32433) Rated CVSS 10</b><br>
+    Crafty pre-auth SSH messages enable root code execution. Patch ASAP.<br>
+    🔗 <a href="https://hackread.com/researchers-cvss-severity-rce-vulnerability-erlang-otp-ssh/" target="_blank">Read more</a></p>
+
+    <p>📱 <b>Apple iOS 18.4.1 Patches CarPlay Bug and Zero-Days</b><br>
+    CoreAudio + RPAC flaws used in targeted attacks. Update all Apple devices.<br>
+    🔗 <a href="https://www.zdnet.com/article/update-your-iphone-now-to-patch-a-carplay-glitch-and-two-serious-security-flaws/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Adversaries -->
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>🐧 <b>XorDDoS Malware Expands with New VIP Infrastructure</b><br>
+    70% of attacks hit U.S. Linux systems. Commercial-style scaling observed.<br>
+    🔗 <a href="https://blog.talosintelligence.com/unmasking-the-new-xorddos-controller-and-infrastructure/" target="_blank">Read more</a></p>
+
+    <p>🧩 <b>6M Users Affected by Malicious Chrome Extensions</b><br>
+    Extensions use obfuscation and remote scripts. Remove immediately and reset credentials.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/chrome-extensions-with-6-million-installs-have-hidden-tracking-code/" target="_blank">Read more</a></p>
+
+    <p>☁️ <b>Mass S3 Ransomware Campaign via Leaked AWS Keys</b><br>
+    1,200+ credentials used. SSE-C encryption hides activity. Rotate IAM credentials.<br>
+    🔗 <a href="https://hackread.com/mass-ransomware-campaign-s3-buckets-stolen-aws-keys/" target="_blank">Read more</a></p>
+
+    <p>🏒 <b>965 Gbps DDoS Attack Hits Betting Platform During NHL Game</b><br>
+    UDP, SYN, and TCP floods linked to Ovechkin record goal. Live events at risk.<br>
+    🔗 <a href="https://hackread.com/qrator-labs-mitigating-largest-ddos-attack-to-date/" target="_blank">Read more</a></p>
+
+    <p>🐌 <b>MysterySnail RAT Returns with Modular Enhancements</b><br>
+    DLL sideloading used. New MysteryMonoSnail version includes WebSocket C2.<br>
+    🔗 <a href="https://securelist.com/mysterysnail-new-version/116226/" target="_blank">Read more</a></p>
+
+    <p>🐼 <b>Mustang Panda Expands Arsenal with New Malware Tools</b><br>
+    Updated ToneShell, StarProxy, and SplatCloak used in Myanmar attack.<br>
+    🔗 <a href="https://www.securityweek.com/chinese-apt-mustang-panda-updates-expands-arsenal/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Trends -->
+  <div class="news-item">
+    <h2>📈 Trends</h2>
+
+    <p>📲 <b>PointyPhish & TollShark Use SMS to Spread Phishing Globally</b><br>
+    Powered by Darcula Suite. Over 5,000 domains involved. Spoofed reward + toll pages.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/ctm360-tracks-global-surge-in-sms-based-reward-and-toll-scams/" target="_blank">Read more</a></p>
+
+    <p>📤 <b>NTLMv2 Hash Disclosure Actively Exploited in Europe</b><br>
+    CVE-2025-24054 used by APT28. No need to open the file—just preview.<br>
+    🔗 <a href="https://www.helpnetsecurity.com/2025/04/17/windows-ntlm-vulnerability-exploited-in-multiple-attack-campaigns-cve-2025-24054/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Breaches -->
+  <div class="news-item">
+    <h2>📁 Breaches & Leaks</h2>
+
+    <p>🛒 <b>Ahold Delhaize Confirms Data Theft in U.S. Cyberattack</b><br>
+    INC Ransom leaks samples. Investigation ongoing. Brands include Food Lion & Hannaford.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/ahold-delhaize-confirms-data-theft-after-inc-ransomware-claims-attack/" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
