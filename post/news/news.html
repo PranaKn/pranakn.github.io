@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cybersecurity Newsfeed - 18/04/25</title>
+  <title>Cybersecurity Newsfeed - 21/04/25</title>
   <style>
     body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
     h1, h2 { color: #c9a227; text-align: center; }
@@ -16,78 +16,87 @@
 <body>
 
   <h1>📰 Cybersecurity Newsfeed</h1>
-  <h2>📅 18/04/25</h2>
+  <h2>📅 21/04/25</h2>
 
   <!-- Vulnerabilities -->
   <div class="news-item">
     <h2>🔥 Vulnerabilities</h2>
 
-    <p>🍎 <b>CISA Adds Apple and Windows Flaws to KEV Catalog</b><br>
-    Apple CVEs 2025-31200 & 31201 and Windows CVE-2025-24054 now actively exploited. Patch by May 8.<br>
-    🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/04/17/cisa-adds-three-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
+    <p>🎥 <b>Cisco Webex RCE via Meeting Links (CVE-2025-20236)</b><br>
+    No auth required. Also patched: CVE-2025-20178 and 20150. Patch urgently.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/cisco-webex-bug-lets-hackers-gain-code-execution-via-meeting-links/" target="_blank">Read more</a></p>
 
-    <p>📁 <b>CentreStack RCE (CVE-2025-30406) Actively Exploited</b><br>
-    Multi-tenant MSP risk confirmed by Gladinet. Patch by April 29 per CISA.<br>
-    🔗 <a href="https://www.cysecurity.news/2025/04/serious-flaw-found-in-popular-file.html" target="_blank">Read more</a></p>
+    <p>📶 <b>ASUS AiCloud Routers Vulnerable to Auth Bypass (CVE-2025-2492)</b><br>
+    CVSS 9.2 flaw enables remote access. Update firmware or disable AiCloud.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-auth-bypass-flaw-in-routers-using-aicloud/" target="_blank">Read more</a></p>
 
-    <p>🔓 <b>Erlang/OTP SSH RCE Flaw (CVE-2025-32433) Rated CVSS 10</b><br>
-    Crafty pre-auth SSH messages enable root code execution. Patch ASAP.<br>
-    🔗 <a href="https://hackread.com/researchers-cvss-severity-rce-vulnerability-erlang-otp-ssh/" target="_blank">Read more</a></p>
-
-    <p>📱 <b>Apple iOS 18.4.1 Patches CarPlay Bug and Zero-Days</b><br>
-    CoreAudio + RPAC flaws used in targeted attacks. Update all Apple devices.<br>
-    🔗 <a href="https://www.zdnet.com/article/update-your-iphone-now-to-patch-a-carplay-glitch-and-two-serious-security-flaws/" target="_blank">Read more</a></p>
+    <p>🔓 <b>Erlang/OTP SSH RCE Exploits Now Public (CVE-2025-32433)</b><br>
+    Critical bug now exploited in the wild. Affects telecom and CouchDB systems.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/public-exploits-released-for-critical-erlang-otp-ssh-flaw-patch-now/" target="_blank">Read more</a></p>
   </div>
 
   <!-- Adversaries -->
   <div class="news-item">
     <h2>🕵️ Adversaries & Attacks</h2>
 
-    <p>🐧 <b>XorDDoS Malware Expands with New VIP Infrastructure</b><br>
-    70% of attacks hit U.S. Linux systems. Commercial-style scaling observed.<br>
-    🔗 <a href="https://blog.talosintelligence.com/unmasking-the-new-xorddos-controller-and-infrastructure/" target="_blank">Read more</a></p>
+    <p>🖱️ <b>ClickFix: Interlock Ransomware Installs via Fake IT Tools</b><br>
+    Spoofed Microsoft pages lead to PyInstaller payloads and data theft.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/interlock-ransomware-gang-pushes-fake-it-tools-in-clickfix-attacks/" target="_blank">Read more</a></p>
 
-    <p>🧩 <b>6M Users Affected by Malicious Chrome Extensions</b><br>
-    Extensions use obfuscation and remote scripts. Remove immediately and reset credentials.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/chrome-extensions-with-6-million-installs-have-hidden-tracking-code/" target="_blank">Read more</a></p>
+    <p>📱 <b>SuperCard X Enables Android NFC Relay Fraud</b><br>
+    Mimics card data for ATM/POS use. Active in Italy via social engineering.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/supercard-x-android-malware-use-stolen-cards-in-nfc-relay-attacks/" target="_blank">Read more</a></p>
 
-    <p>☁️ <b>Mass S3 Ransomware Campaign via Leaked AWS Keys</b><br>
-    1,200+ credentials used. SSE-C encryption hides activity. Rotate IAM credentials.<br>
-    🔗 <a href="https://hackread.com/mass-ransomware-campaign-s3-buckets-stolen-aws-keys/" target="_blank">Read more</a></p>
+    <p>🔁 <b>SpyNote Malware Delivered via Fake Play Store Pages</b><br>
+    JavaScript triggers malware APK. Grants full device control + GPS tracking.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/spynote-malware-targets-android-users.html" target="_blank">Read more</a></p>
 
-    <p>🏒 <b>965 Gbps DDoS Attack Hits Betting Platform During NHL Game</b><br>
-    UDP, SYN, and TCP floods linked to Ovechkin record goal. Live events at risk.<br>
-    🔗 <a href="https://hackread.com/qrator-labs-mitigating-largest-ddos-attack-to-date/" target="_blank">Read more</a></p>
+    <p>🐌 <b>MysterySnail RAT Resurfaces with Modular Redesign</b><br>
+    Targets Mongolian and Russian agencies. IronHusky APT likely responsible.<br>
+    🔗 <a href="https://hackread.com/chinese-apt-ironhusky-mysterysnail-rat-russia/" target="_blank">Read more</a></p>
 
-    <p>🐌 <b>MysterySnail RAT Returns with Modular Enhancements</b><br>
-    DLL sideloading used. New MysteryMonoSnail version includes WebSocket C2.<br>
-    🔗 <a href="https://securelist.com/mysterysnail-new-version/116226/" target="_blank">Read more</a></p>
+    <p>🎙️ <b>ELUSIVE COMET Uses Zoom Remote Control in Phishing Attacks</b><br>
+    Poses as podcast hosts. Zoom impersonation leads to malware install.<br>
+    🔗 <a href="https://www.helpnetsecurity.com/2025/04/18/zoom-remote-control-attack/" target="_blank">Read more</a></p>
 
-    <p>🐼 <b>Mustang Panda Expands Arsenal with New Malware Tools</b><br>
-    Updated ToneShell, StarProxy, and SplatCloak used in Myanmar attack.<br>
-    🔗 <a href="https://www.securityweek.com/chinese-apt-mustang-panda-updates-expands-arsenal/" target="_blank">Read more</a></p>
+    <p>💻 <b>Malicious npm Packages Install SSH Backdoors</b><br>
+    node-telegram-* clones drop persistent access keys. Use of starjacking noted.<br>
+    🔗 <a href="https://thehackernews.com/2025/04/rogue-npm-packages-mimic-telegram-bot.html" target="_blank">Read more</a></p>
   </div>
 
   <!-- Trends -->
   <div class="news-item">
     <h2>📈 Trends</h2>
 
-    <p>📲 <b>PointyPhish & TollShark Use SMS to Spread Phishing Globally</b><br>
-    Powered by Darcula Suite. Over 5,000 domains involved. Spoofed reward + toll pages.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/ctm360-tracks-global-surge-in-sms-based-reward-and-toll-scams/" target="_blank">Read more</a></p>
+    <p>🎭 <b>FBI: IC3 Impersonation Scams on the Rise</b><br>
+    Fake recovery ops defraud prior scam victims. Never pay IC3 imposters.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/fbi-scammers-pose-as-fbi-ic3-employees-to-help-recover-lost-funds/" target="_blank">Read more</a></p>
 
-    <p>📤 <b>NTLMv2 Hash Disclosure Actively Exploited in Europe</b><br>
-    CVE-2025-24054 used by APT28. No need to open the file—just preview.<br>
-    🔗 <a href="https://www.helpnetsecurity.com/2025/04/17/windows-ntlm-vulnerability-exploited-in-multiple-attack-campaigns-cve-2025-24054/" target="_blank">Read more</a></p>
+    <p>📨 <b>Phishing Scam Abuses Google OAuth and Sites</b><br>
+    DKIM-signed messages from no-reply@google.com trick users into fake logins.<br>
+    🔗 <a href="https://www.zdnet.com/article/that-google-email-look-real-dont-click-it-might-be-scam-heres-how-to-tell/" target="_blank">Read more</a></p>
+
+    <p>🧠 <b>Fake CapCut/Canva Sites Spread Remote Control Malware</b><br>
+    AI bait + TeamViewer/AnyDesk used to hijack devices. Watch for imposter domains.<br>
+    🔗 <a href="https://www.welivesecurity.com/en/scams/capcut-copycats-prowl/" target="_blank">Read more</a></p>
   </div>
 
   <!-- Breaches -->
   <div class="news-item">
     <h2>📁 Breaches & Leaks</h2>
 
-    <p>🛒 <b>Ahold Delhaize Confirms Data Theft in U.S. Cyberattack</b><br>
-    INC Ransom leaks samples. Investigation ongoing. Brands include Food Lion & Hannaford.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/ahold-delhaize-confirms-data-theft-after-inc-ransomware-claims-attack/" target="_blank">Read more</a></p>
+    <p>🇹🇭 <b>Bangchak Data Breach Exposes 6.5M Customer Records</b><br>
+    PDPC investigates feedback platform exposure. No sensitive data confirmed yet.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/pdpc-probes-bangchak-data-breach.html" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Other -->
+  <div class="news-item">
+    <h2>🧭 Other Highlights</h2>
+
+    <p>🔒 <b>Microsoft Entra Lockouts Triggered by MACE Misconfig</b><br>
+    False leaked credentials alerts tied to new security app rollout.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/widespread-microsoft-entra-lockouts-tied-to-new-security-feature-rollout/" target="_blank">Read more</a></p>
   </div>
 
   <p style="text-align:center;">
