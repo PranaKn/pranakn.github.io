@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 22/04/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 22/04/25</h2>
+
+  <!-- Vulnerabilities -->
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>🐍 <b>Critical PyTorch RCE Vulnerability (CVE-2025-32434)</b><br>
+    PyTorch's `torch.load()` function, even with `weights_only=True`, allows remote code execution via malicious models due to unsafe deserialization. Users must update to version 2.6.0 immediately. The flaw highlights the risks of unverified pretrained model sharing.<br>
+    🔗 <a href="https://www.kaspersky.com/blog/vulnerability-in-pytorch-framework/53311/" target="_blank">Read more</a></p>
+
+    <p>🔧 <b>Lantronix XPort Lacks Authentication on Critical Devices</b><br>
+    Widely used in critical infrastructure, the XPort has a flaw that lets attackers change configs without credentials. With 1,400+ devices exposed, especially in fuel systems, CISA urges migration to the XPort Edge as no patch exists.<br>
+    🔗 <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-25-105-05" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Adversaries -->
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>🌀 <b>'Scallywag' Ad Fraud Operation Hits 1.4B Requests Daily</b><br>
+    Exploiting WordPress plugins, pirate content, and ad redirects, this operation abused monetization platforms to commit ad fraud. HUMAN's takedown cut it by 95%, but its return in new forms is likely.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/scallywag-ad-fraud-operation-generated-14-billion-ad-requests-per-day/" target="_blank">Read more</a></p>
+
+    <p>📜 <b>ClickFix Tactic Adopted by Nation-State Hackers</b><br>
+    Groups like APT28, Kimsuky, and MuddyWater trick users into copying PowerShell from fake error pages, deploying tools like QuasarRAT and Empire. Simple but powerful social engineering method.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/state-sponsored-hackers-embrace-clickfix-social-engineering-tactic/" target="_blank">Read more</a></p>
+
+    <p>💉 <b>ResolverRAT Targets Healthcare via Native-Language Phishing</b><br>
+    Morphisec observed this sophisticated RAT use DLL side-loading, registry persistence, and .NET hijacking to steal data and evade detection. Suggests links to Lumma and Rhadamanthys toolchains.<br>
+    🔗 <a href="https://hackread.com/native-language-phishing-resolverrat-healthcare/" target="_blank">Read more</a></p>
+
+    <p>🎭 <b>Lumma Stealer Evolves with Fake CAPTCHA Delivery</b><br>
+    Delivered via PowerShell and JavaScript disguised as CAPTCHA checks, Lumma exfiltrates 2FA, credentials, cookies, and crypto info. Over 1,000 subscribers and growing sophistication.<br>
+    🔗 <a href="https://securelist.com/lumma-fake-captcha-attacks-analysis/116274/" target="_blank">Read more</a></p>
+
+    <p>🖼️ <b>SVG Files Used in Credential Phishing Campaigns</b><br>
+    Emails with disguised SVGs trigger phishing portals mimicking services like Microsoft and Google. Over 2,800 such phishing emails were seen in early 2025.<br>
+    🔗 <a href="https://securelist.com/svg-phishing/116256/" target="_blank">Read more</a></p>
+
+    <p>🐶 <b>FOG Ransomware Campaign Uses Fake Government Lures</b><br>
+    “Pay Adjustment.zip” delivers LNKs triggering PowerShell to run ransomware. Tactics include sandbox evasion, privilege escalation, and DOGE-themed ransom notes.<br>
+    🔗 <a href="https://www.trendmicro.com/en_us/research/25/d/fog-ransomware-concealed-within-binary-loaders-linking-themselve.html" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Breaches -->
+  <div class="news-item">
+    <h2>📁 Breaches & Leaks</h2>
+
+    <p>🏥 <b>DaVita Inc. Suffers Ransomware Incident</b><br>
+    Systems were isolated to prevent spread. Patient care remains unaffected, but risks of data loss and treatment delays loom. Law enforcement is involved.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/davita-faces-ransomware-attack.html" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Other -->
+  <div class="news-item">
+    <h2>🧭 Other Highlights</h2>
+
+    <p>🚦 <b>AI-Voiced Prank Hijacks Silicon Valley Crosswalk Buttons</b><br>
+    Voices of "Zuck" and "Elon" used to hack urban infrastructure. Highlights AI misuse and the vulnerability of public audio systems.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/silicon-valley-crosswalk-buttons-hacked.html" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Tools -->
+  <div class="news-item">
+    <h2>🧰 Tools</h2>
+
+    <p>🛠️ <b>Hawk Eye: On-Premise Sensitive Data Scanner</b><br>
+    CLI-based tool scans 350+ file types (images, PDFs, DBs, etc.) for secrets using OCR and will support LLM-based detection. Works across cloud & local storage without data leaving your systems.<br>
+    🔗 <a href="https://github.com/rohitcoder/hawk-eye" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
