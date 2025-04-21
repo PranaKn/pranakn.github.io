@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cybersecurity Newsfeed - 21/04/25</title>
+  <title>Cybersecurity Newsfeed - 22/04/25</title>
   <style>
     body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
     h1, h2 { color: #c9a227; text-align: center; }
@@ -16,87 +16,75 @@
 <body>
 
   <h1>📰 Cybersecurity Newsfeed</h1>
-  <h2>📅 21/04/25</h2>
+  <h2>📅 22/04/25</h2>
 
   <!-- Vulnerabilities -->
   <div class="news-item">
     <h2>🔥 Vulnerabilities</h2>
 
-    <p>🎥 <b>Cisco Webex RCE via Meeting Links (CVE-2025-20236)</b><br>
-    No auth required. Also patched: CVE-2025-20178 and 20150. Patch urgently.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/cisco-webex-bug-lets-hackers-gain-code-execution-via-meeting-links/" target="_blank">Read more</a></p>
+    <p>🐍 <b>Critical PyTorch RCE Vulnerability (CVE-2025-32434)</b><br>
+    PyTorch's `torch.load()` function, even with `weights_only=True`, allows remote code execution via malicious models due to unsafe deserialization. Users must update to version 2.6.0 immediately. The flaw highlights the risks of unverified pretrained model sharing.<br>
+    🔗 <a href="https://www.kaspersky.com/blog/vulnerability-in-pytorch-framework/53311/" target="_blank">Read more</a></p>
 
-    <p>📶 <b>ASUS AiCloud Routers Vulnerable to Auth Bypass (CVE-2025-2492)</b><br>
-    CVSS 9.2 flaw enables remote access. Update firmware or disable AiCloud.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-auth-bypass-flaw-in-routers-using-aicloud/" target="_blank">Read more</a></p>
-
-    <p>🔓 <b>Erlang/OTP SSH RCE Exploits Now Public (CVE-2025-32433)</b><br>
-    Critical bug now exploited in the wild. Affects telecom and CouchDB systems.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/public-exploits-released-for-critical-erlang-otp-ssh-flaw-patch-now/" target="_blank">Read more</a></p>
+    <p>🔧 <b>Lantronix XPort Lacks Authentication on Critical Devices</b><br>
+    Widely used in critical infrastructure, the XPort has a flaw that lets attackers change configs without credentials. With 1,400+ devices exposed, especially in fuel systems, CISA urges migration to the XPort Edge as no patch exists.<br>
+    🔗 <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-25-105-05" target="_blank">Read more</a></p>
   </div>
 
   <!-- Adversaries -->
   <div class="news-item">
     <h2>🕵️ Adversaries & Attacks</h2>
 
-    <p>🖱️ <b>ClickFix: Interlock Ransomware Installs via Fake IT Tools</b><br>
-    Spoofed Microsoft pages lead to PyInstaller payloads and data theft.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/interlock-ransomware-gang-pushes-fake-it-tools-in-clickfix-attacks/" target="_blank">Read more</a></p>
+    <p>🌀 <b>'Scallywag' Ad Fraud Operation Hits 1.4B Requests Daily</b><br>
+    Exploiting WordPress plugins, pirate content, and ad redirects, this operation abused monetization platforms to commit ad fraud. HUMAN's takedown cut it by 95%, but its return in new forms is likely.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/scallywag-ad-fraud-operation-generated-14-billion-ad-requests-per-day/" target="_blank">Read more</a></p>
 
-    <p>📱 <b>SuperCard X Enables Android NFC Relay Fraud</b><br>
-    Mimics card data for ATM/POS use. Active in Italy via social engineering.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/supercard-x-android-malware-use-stolen-cards-in-nfc-relay-attacks/" target="_blank">Read more</a></p>
+    <p>📜 <b>ClickFix Tactic Adopted by Nation-State Hackers</b><br>
+    Groups like APT28, Kimsuky, and MuddyWater trick users into copying PowerShell from fake error pages, deploying tools like QuasarRAT and Empire. Simple but powerful social engineering method.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/state-sponsored-hackers-embrace-clickfix-social-engineering-tactic/" target="_blank">Read more</a></p>
 
-    <p>🔁 <b>SpyNote Malware Delivered via Fake Play Store Pages</b><br>
-    JavaScript triggers malware APK. Grants full device control + GPS tracking.<br>
-    🔗 <a href="https://www.cysecurity.news/2025/04/spynote-malware-targets-android-users.html" target="_blank">Read more</a></p>
+    <p>💉 <b>ResolverRAT Targets Healthcare via Native-Language Phishing</b><br>
+    Morphisec observed this sophisticated RAT use DLL side-loading, registry persistence, and .NET hijacking to steal data and evade detection. Suggests links to Lumma and Rhadamanthys toolchains.<br>
+    🔗 <a href="https://hackread.com/native-language-phishing-resolverrat-healthcare/" target="_blank">Read more</a></p>
 
-    <p>🐌 <b>MysterySnail RAT Resurfaces with Modular Redesign</b><br>
-    Targets Mongolian and Russian agencies. IronHusky APT likely responsible.<br>
-    🔗 <a href="https://hackread.com/chinese-apt-ironhusky-mysterysnail-rat-russia/" target="_blank">Read more</a></p>
+    <p>🎭 <b>Lumma Stealer Evolves with Fake CAPTCHA Delivery</b><br>
+    Delivered via PowerShell and JavaScript disguised as CAPTCHA checks, Lumma exfiltrates 2FA, credentials, cookies, and crypto info. Over 1,000 subscribers and growing sophistication.<br>
+    🔗 <a href="https://securelist.com/lumma-fake-captcha-attacks-analysis/116274/" target="_blank">Read more</a></p>
 
-    <p>🎙️ <b>ELUSIVE COMET Uses Zoom Remote Control in Phishing Attacks</b><br>
-    Poses as podcast hosts. Zoom impersonation leads to malware install.<br>
-    🔗 <a href="https://www.helpnetsecurity.com/2025/04/18/zoom-remote-control-attack/" target="_blank">Read more</a></p>
+    <p>🖼️ <b>SVG Files Used in Credential Phishing Campaigns</b><br>
+    Emails with disguised SVGs trigger phishing portals mimicking services like Microsoft and Google. Over 2,800 such phishing emails were seen in early 2025.<br>
+    🔗 <a href="https://securelist.com/svg-phishing/116256/" target="_blank">Read more</a></p>
 
-    <p>💻 <b>Malicious npm Packages Install SSH Backdoors</b><br>
-    node-telegram-* clones drop persistent access keys. Use of starjacking noted.<br>
-    🔗 <a href="https://thehackernews.com/2025/04/rogue-npm-packages-mimic-telegram-bot.html" target="_blank">Read more</a></p>
-  </div>
-
-  <!-- Trends -->
-  <div class="news-item">
-    <h2>📈 Trends</h2>
-
-    <p>🎭 <b>FBI: IC3 Impersonation Scams on the Rise</b><br>
-    Fake recovery ops defraud prior scam victims. Never pay IC3 imposters.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/fbi-scammers-pose-as-fbi-ic3-employees-to-help-recover-lost-funds/" target="_blank">Read more</a></p>
-
-    <p>📨 <b>Phishing Scam Abuses Google OAuth and Sites</b><br>
-    DKIM-signed messages from no-reply@google.com trick users into fake logins.<br>
-    🔗 <a href="https://www.zdnet.com/article/that-google-email-look-real-dont-click-it-might-be-scam-heres-how-to-tell/" target="_blank">Read more</a></p>
-
-    <p>🧠 <b>Fake CapCut/Canva Sites Spread Remote Control Malware</b><br>
-    AI bait + TeamViewer/AnyDesk used to hijack devices. Watch for imposter domains.<br>
-    🔗 <a href="https://www.welivesecurity.com/en/scams/capcut-copycats-prowl/" target="_blank">Read more</a></p>
+    <p>🐶 <b>FOG Ransomware Campaign Uses Fake Government Lures</b><br>
+    “Pay Adjustment.zip” delivers LNKs triggering PowerShell to run ransomware. Tactics include sandbox evasion, privilege escalation, and DOGE-themed ransom notes.<br>
+    🔗 <a href="https://www.trendmicro.com/en_us/research/25/d/fog-ransomware-concealed-within-binary-loaders-linking-themselve.html" target="_blank">Read more</a></p>
   </div>
 
   <!-- Breaches -->
   <div class="news-item">
     <h2>📁 Breaches & Leaks</h2>
 
-    <p>🇹🇭 <b>Bangchak Data Breach Exposes 6.5M Customer Records</b><br>
-    PDPC investigates feedback platform exposure. No sensitive data confirmed yet.<br>
-    🔗 <a href="https://www.cysecurity.news/2025/04/pdpc-probes-bangchak-data-breach.html" target="_blank">Read more</a></p>
+    <p>🏥 <b>DaVita Inc. Suffers Ransomware Incident</b><br>
+    Systems were isolated to prevent spread. Patient care remains unaffected, but risks of data loss and treatment delays loom. Law enforcement is involved.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/davita-faces-ransomware-attack.html" target="_blank">Read more</a></p>
   </div>
 
   <!-- Other -->
   <div class="news-item">
     <h2>🧭 Other Highlights</h2>
 
-    <p>🔒 <b>Microsoft Entra Lockouts Triggered by MACE Misconfig</b><br>
-    False leaked credentials alerts tied to new security app rollout.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/widespread-microsoft-entra-lockouts-tied-to-new-security-feature-rollout/" target="_blank">Read more</a></p>
+    <p>🚦 <b>AI-Voiced Prank Hijacks Silicon Valley Crosswalk Buttons</b><br>
+    Voices of "Zuck" and "Elon" used to hack urban infrastructure. Highlights AI misuse and the vulnerability of public audio systems.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/silicon-valley-crosswalk-buttons-hacked.html" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Tools -->
+  <div class="news-item">
+    <h2>🧰 Tools</h2>
+
+    <p>🛠️ <b>Hawk Eye: On-Premise Sensitive Data Scanner</b><br>
+    CLI-based tool scans 350+ file types (images, PDFs, DBs, etc.) for secrets using OCR and will support LLM-based detection. Works across cloud & local storage without data leaving your systems.<br>
+    🔗 <a href="https://github.com/rohitcoder/hawk-eye" target="_blank">Read more</a></p>
   </div>
 
   <p style="text-align:center;">
