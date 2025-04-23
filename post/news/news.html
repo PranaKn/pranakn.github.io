@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cybersecurity Newsfeed - 22/04/25</title>
+  <title>Cybersecurity Newsfeed - 23/04/25</title>
   <style>
     body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
     h1, h2 { color: #c9a227; text-align: center; }
@@ -16,75 +16,70 @@
 <body>
 
   <h1>📰 Cybersecurity Newsfeed</h1>
-  <h2>📅 22/04/25</h2>
+  <h2>📅 23/04/25</h2>
 
-  <!-- Vulnerabilities -->
   <div class="news-item">
     <h2>🔥 Vulnerabilities</h2>
 
-    <p>🐍 <b>Critical PyTorch RCE Vulnerability (CVE-2025-32434)</b><br>
-    PyTorch's `torch.load()` function, even with `weights_only=True`, allows remote code execution via malicious models due to unsafe deserialization. Users must update to version 2.6.0 immediately. The flaw highlights the risks of unverified pretrained model sharing.<br>
-    🔗 <a href="https://www.kaspersky.com/blog/vulnerability-in-pytorch-framework/53311/" target="_blank">Read more</a></p>
+    <p>🪟 <b>Windows 10 KB5055612 Fixes WSL2 GPU Bug</b><br>
+    Microsoft rolled out a preview update addressing GPU paravirtualization bugs in WSL2 and updated the BYOVD blocklist. Known issues affect Citrix SRA and log entries for SgrmBroker.exe.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/windows-10-kb5055612-preview-update-fixes-a-gpu-bug-in-wsl2/" target="_blank">Read more</a></p>
 
-    <p>🔧 <b>Lantronix XPort Lacks Authentication on Critical Devices</b><br>
-    Widely used in critical infrastructure, the XPort has a flaw that lets attackers change configs without credentials. With 1,400+ devices exposed, especially in fuel systems, CISA urges migration to the XPort Edge as no patch exists.<br>
-    🔗 <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-25-105-05" target="_blank">Read more</a></p>
+    <p>🍪 <b>Cookie-Bite Chrome Extension Steals Microsoft Tokens</b><br>
+    Varonis researchers showed how a malicious Chrome extension can hijack Azure Entra ID cookies, bypassing MFA for Microsoft services. Sessions last up to 90 days.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/cookie-bite-attack-poc-uses-chrome-extension-to-steal-session-tokens/" target="_blank">Read more</a></p>
+
+    <p>🔏 <b>SSL.com Email Validation Flaw Enables Certificate Theft</b><br>
+    Attackers exploited a DCV flaw to issue TLS certs using email-to-TXT logic. SSL.com revoked 11 certs and patched the method after a researcher issued one for a high-value domain.<br>
+    🔗 <a href="https://hackread.com/ssl-com-vulnerability-fraud-ssl-certificates-domains/" target="_blank">Read more</a></p>
   </div>
 
-  <!-- Adversaries -->
   <div class="news-item">
     <h2>🕵️ Adversaries & Attacks</h2>
 
-    <p>🌀 <b>'Scallywag' Ad Fraud Operation Hits 1.4B Requests Daily</b><br>
-    Exploiting WordPress plugins, pirate content, and ad redirects, this operation abused monetization platforms to commit ad fraud. HUMAN's takedown cut it by 95%, but its return in new forms is likely.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/scallywag-ad-fraud-operation-generated-14-billion-ad-requests-per-day/" target="_blank">Read more</a></p>
+    <p>💰 <b>Ripple's XRPL.js Compromised to Steal Wallet Keys</b><br>
+    Ripple’s `xrpl.js` library was backdoored in a supply chain attack. Malicious code sent wallet secrets to a C2 disguised as an ad endpoint. Users should update to v4.2.5.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/ripples-recommended-xrp-library-xrpljs-hacked-to-steal-wallets/" target="_blank">Read more</a></p>
 
-    <p>📜 <b>ClickFix Tactic Adopted by Nation-State Hackers</b><br>
-    Groups like APT28, Kimsuky, and MuddyWater trick users into copying PowerShell from fake error pages, deploying tools like QuasarRAT and Empire. Simple but powerful social engineering method.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/state-sponsored-hackers-embrace-clickfix-social-engineering-tactic/" target="_blank">Read more</a></p>
+    <p>💥 <b>Proton66 Hosting Aids Malware Surge</b><br>
+    The Russian provider hosts SuperBlack ransomware, spyware, and stealer tools. Ties to a Hong Kong company suggest rebranding. Targets include Fortinet and D-Link devices.<br>
+    🔗 <a href="https://hackread.com/russian-host-proton66-superblack-weaxor-ransomware/" target="_blank">Read more</a></p>
 
-    <p>💉 <b>ResolverRAT Targets Healthcare via Native-Language Phishing</b><br>
-    Morphisec observed this sophisticated RAT use DLL side-loading, registry persistence, and .NET hijacking to steal data and evade detection. Suggests links to Lumma and Rhadamanthys toolchains.<br>
-    🔗 <a href="https://hackread.com/native-language-phishing-resolverrat-healthcare/" target="_blank">Read more</a></p>
+    <p>🎯 <b>Fake Alpine Quest App Spies on Russian Forces</b><br>
+    A trojanized Alpine Quest app collected military personnel data, including GPS and documents from Telegram. Possibly linked to Ukrainian hacktivists.<br>
+    🔗 <a href="https://hackread.com/fake-alpine-quest-mapping-app-spying-russian-military/" target="_blank">Read more</a></p>
 
-    <p>🎭 <b>Lumma Stealer Evolves with Fake CAPTCHA Delivery</b><br>
-    Delivered via PowerShell and JavaScript disguised as CAPTCHA checks, Lumma exfiltrates 2FA, credentials, cookies, and crypto info. Over 1,000 subscribers and growing sophistication.<br>
-    🔗 <a href="https://securelist.com/lumma-fake-captcha-attacks-analysis/116274/" target="_blank">Read more</a></p>
+    <p>📡 <b>Billbug (Lotus Panda) Uses Custom Tools in SEA Attacks</b><br>
+    Southeast Asian infrastructure was hit with tools like ChromeKatz and Sagerunex. Campaigns abused antivirus DLLs for stealth and persistence.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/billbug-espionage-group-new-tools/" target="_blank">Read more</a></p>
 
-    <p>🖼️ <b>SVG Files Used in Credential Phishing Campaigns</b><br>
-    Emails with disguised SVGs trigger phishing portals mimicking services like Microsoft and Google. Over 2,800 such phishing emails were seen in early 2025.<br>
-    🔗 <a href="https://securelist.com/svg-phishing/116256/" target="_blank">Read more</a></p>
+    <p>🪙 <b>Docker-Based Cryptojacking Mines Web3 Tokens</b><br>
+    A new strain abuses Docker Hub containers to earn Teneo tokens via idle pings, rather than mining. Obfuscation makes detection difficult.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/cryptojacking-malware-docker-novel/" target="_blank">Read more</a></p>
 
-    <p>🐶 <b>FOG Ransomware Campaign Uses Fake Government Lures</b><br>
-    “Pay Adjustment.zip” delivers LNKs triggering PowerShell to run ransomware. Tactics include sandbox evasion, privilege escalation, and DOGE-themed ransom notes.<br>
-    🔗 <a href="https://www.trendmicro.com/en_us/research/25/d/fog-ransomware-concealed-within-binary-loaders-linking-themselve.html" target="_blank">Read more</a></p>
+    <p>💹 <b>¥95B in Unauthorized Japanese Trades Tied to Phishing</b><br>
+    The FSA reported 3,300 account breaches resulting in illicit stock trades. Attackers used phishing to harvest brokerage credentials.<br>
+    🔗 <a href="https://securityaffairs.com/176776/hacking/japan-s-financial-services-agency-warns-of-unauthorized-trades.html" target="_blank">Read more</a></p>
+
+    <p>🌩️ <b>GCP ConfusedComposer Bug Exposed Cloud Resources</b><br>
+    Tenable discovered that attackers could hijack Cloud Build via Composer and gain access to storage, registries, and CI/CD flows. Google patched the issue April 13.<br>
+    🔗 <a href="https://thehackernews.com/2025/04/gcp-cloud-composer-bug-let-attackers.html" target="_blank">Read more</a></p>
   </div>
 
-  <!-- Breaches -->
   <div class="news-item">
     <h2>📁 Breaches & Leaks</h2>
 
-    <p>🏥 <b>DaVita Inc. Suffers Ransomware Incident</b><br>
-    Systems were isolated to prevent spread. Patient care remains unaffected, but risks of data loss and treatment delays loom. Law enforcement is involved.<br>
-    🔗 <a href="https://www.cysecurity.news/2025/04/davita-faces-ransomware-attack.html" target="_blank">Read more</a></p>
-  </div>
+    <p>📶 <b>SK Telecom Malware Breach Leaks SIM Credentials</b><br>
+    Malware exposed SIM data like IMSI and keys, risking SIM-swaps and surveillance. 34 million customers were potentially affected. No abuse has been confirmed.<br>
+    🔗 <a href="https://securityaffairs.com/176802/data-breach/sk-telecom-data-breach.html" target="_blank">Read more</a></p>
 
-  <!-- Other -->
-  <div class="news-item">
-    <h2>🧭 Other Highlights</h2>
+    <p>🛍️ <b>Marks & Spencer Confirms Cyberattack Disruption</b><br>
+    M&S Click and Collect service disrupted after suspected ransomware attack. Authorities are investigating, with customer notices sent.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/marks-and-spencer-confirms-a-cyberattack-as-customers-face-delayed-orders/" target="_blank">Read more</a></p>
 
-    <p>🚦 <b>AI-Voiced Prank Hijacks Silicon Valley Crosswalk Buttons</b><br>
-    Voices of "Zuck" and "Elon" used to hack urban infrastructure. Highlights AI misuse and the vulnerability of public audio systems.<br>
-    🔗 <a href="https://www.cysecurity.news/2025/04/silicon-valley-crosswalk-buttons-hacked.html" target="_blank">Read more</a></p>
-  </div>
-
-  <!-- Tools -->
-  <div class="news-item">
-    <h2>🧰 Tools</h2>
-
-    <p>🛠️ <b>Hawk Eye: On-Premise Sensitive Data Scanner</b><br>
-    CLI-based tool scans 350+ file types (images, PDFs, DBs, etc.) for secrets using OCR and will support LLM-based detection. Works across cloud & local storage without data leaving your systems.<br>
-    🔗 <a href="https://github.com/rohitcoder/hawk-eye" target="_blank">Read more</a></p>
+    <p>🗃️ <b>Landmark Admin Says 1.6M Impacted in Health Breach</b><br>
+    The 2024 attack on Landmark Admin doubled in scale. PII, health, and financial info may be affected. Victims offered credit monitoring.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/landmark-admin-hack-massive-data-leak.html" target="_blank">Read more</a></p>
   </div>
 
   <p style="text-align:center;">
