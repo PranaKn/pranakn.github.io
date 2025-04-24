@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 25/04/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 25/04/25</h2>
+
+  <!-- Vulnerabilities -->
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+    <p>🛠️ <b>ASUS Patches Critical AMI BMC Vulnerability (CVE-2024-54085)</b><br>
+    A severe bug in MegaRAC BMC firmware allows remote attackers to hijack servers and cause physical damage. ASUS released patches for four motherboards. Redfish exploitation possible—update immediately via BMC web interface with “Full Flash” enabled.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/asus-releases-fix-for-ami-bug-that-lets-hackers-brick-servers/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Adversaries -->
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+    <p>🐳 <b>Cryptojacking via Docker Containers Abuses Teneo Network</b><br>
+    Darktrace/Cado report malware using Docker image <code>kazutod/tene:ten</code> to fake compute activity and earn Teneo points. Uses heavily obfuscated Python, highlighting decentralized monetization shifts.<br>
+    🔗 <a href="https://securityaffairs.com/176877/malware/crypto-mining-campaign-targets-docker-environments-with-new-evasion-technique.html" target="_blank">Read more</a></p>
+
+    <p>💳 <b>Chinese Gangs Exploit NFC Wallets for Large-Scale Fraud</b><br>
+    Resecurity reveals misuse of Host Card Emulation to conduct Tap & Go fraud and Soft POS app abuse, impacting US banks. Tools like Z-NFC mimic smartcards and process stolen card data on NFC-enabled phones.<br>
+    🔗 <a href="https://securityaffairs.com/176829/cyber-crime/chinese-cybercriminals-released-z-nfc-tool-for-payment-fraud.html" target="_blank">Read more</a></p>
+
+    <p>🎯 <b>Iranian UNC2428 Impersonates Rafael to Deliver Backdoor</b><br>
+    Mandiant links phishing using “RafaelConnect.exe” to LONEFLEET installer and MURKYTOUR backdoor. Malware used RMM tools and cloud payload delivery. Over 20 malware strains linked to Iranian espionage ops in 2024.<br>
+    🔗 <a href="https://thehackernews.com/2025/04/iran-linked-hackers-target-israel-with.html" target="_blank">Read more</a></p>
+
+    <p>🏴 <b>DPRK's $137M Crypto Theft & IT Worker Espionage</b><br>
+    Mandiant details UNC4736 and UNC1069 stealing from Tron-based wallets via job-themed social engineering and trojanized trading apps. North Korean IT workers secure jobs using deepfakes, funneling access and funds to Pyongyang.<br>
+    🔗 <a href="https://thehackernews.com/2025/04/dprk-hackers-steal-137m-from-tron-users.html" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Trends -->
+  <div class="news-item">
+    <h2>📈 Trends</h2>
+    <p>📊 <b>Ransomware Drives 44% of Breaches in Verizon DBIR 2025</b><br>
+    SMBs hardest hit. 34% rise in vulnerability exploits. Median payout fell to $115K. Patch delays and third-party compromise noted as top risk areas.<br>
+    🔗 <a href="https://cyberscoop.com/verizon-data-breach-investigations-report-2025/" target="_blank">Read more</a></p>
+
+    <p>🇷🇺 <b>Dutch Intel Warns of “Whole-of-Society” Russian Cyber Threat</b><br>
+    Disruptive ops in critical sectors and elections. China also flagged for Coathanger malware via Fortinet flaws. NATO urged to reinforce defenses.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/dutch-warn-whole-society-russia/" target="_blank">Read more</a></p>
+
+    <p>🐳 <b>Kubernetes Threats: Microsoft’s Updated Matrix Flags Misuse</b><br>
+    Attackers abuse misconfigured identities and APIs. Defender for Cloud now alerts on pod abuse, cluster-admin role abuse, and CI/CD risk indicators.<br>
+    🔗 <a href="https://www.microsoft.com/en-us/security/blog/2025/04/23/understanding-the-threat-landscape-for-kubernetes-and-containerized-assets/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Breaches -->
+  <div class="news-item">
+    <h2>📁 Breaches & Leaks</h2>
+    <p>📉 <b>FBI: $16.6B in Cybercrime Losses in 2024, Elderly Most Affected</b><br>
+    859K complaints, $4.8B stolen from seniors. Ransomware up 9%, critical infrastructure still primary target. IC3 warns of fake FBI impersonators post-breach.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/fbi-us-lost-record-166-billion-to-cybercrime-in-2024/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Others -->
+  <div class="news-item">
+    <h2>🧭 Other Highlights</h2>
+    <p>🌍 <b>Smart Africa Launches ANCA Cybersecurity Initiative</b><br>
+    Plan includes regional CERTs, training, law harmonization. Morocco to host CERT hub. Goal: Digital Market by 2030 and continental cyber resilience.<br>
+    🔗 <a href="https://www.tripwire.com/state-of-security/smart-africa-unveils-5-year-cybersecurity-plan-strengthen-digital-resilience" target="_blank">Read more</a></p>
+
+    <p>🧠 <b>SBI Warns Against Deepfake Investment Scams</b><br>
+    Fake AI videos link SBI and Indian gov’t to get-rich-quick platforms. Public urged to verify claims via official sources.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/sbi-issues-urgent-warning-against.html" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Tools -->
+  <div class="news-item">
+    <h2>🧰 Tools</h2>
+    <p>🔍 <b>MITRE ATT&CK v17 Adds ESXi Matrix & New Detection Rules</b><br>
+    34 adapted techniques, 4 new ESXi-specific TTPs added. New coverage includes email bombing, click-fix, and hypervisor abuse. CTI and mobile matrices updated.<br>
+    🔗 <a href="https://www.helpnetsecurity.com/2025/04/23/released-mitre-attck-v17-0-now-with-esxi-attack-ttps/" target="_blank">Read more</a></p>
+  </div>
+
+  <!-- Hunting -->
+  <div class="news-item">
+    <h2>🔍 Hunting Opportunities</h2>
+    <p>🎯 <b>Cactus Ransomware Delivered via ToyMaker Access Broker</b><br>
+    Talos reveals how LAGTOY backdoor gave Cactus access to critical infra. Credential theft, SSH pivoting, and ransomware extortion followed in a coordinated multi-stage attack.<br>
+    🔗 <a href="https://blog.talosintelligence.com/introducing-toymaker-an-initial-access-broker/" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
