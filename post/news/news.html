@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cybersecurity Newsfeed - 25/04/25</title>
+  <title>Cybersecurity Newsfeed - 28/04/25</title>
   <style>
     body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
     h1, h2 { color: #c9a227; text-align: center; }
@@ -16,92 +16,86 @@
 <body>
 
   <h1>📰 Cybersecurity Newsfeed</h1>
-  <h2>📅 25/04/25</h2>
+  <h2>📅 28/04/25</h2>
 
   <div class="news-item">
     <h2>🔥 Vulnerabilities</h2>
 
-    <p>🐧 <b>Linux io_uring Rootkit Bypass Exposes Runtime Blindspot</b><br>
-    ARMO discovered a stealthy vulnerability in the Linux `io_uring` interface allowing rootkits to bypass common runtime defenses like Falco and Tetragon. The issue arises because `io_uring` operations evade syscall-based monitoring. Google disables `io_uring` by default in Android/ChromeOS. ARMO proposes KRSI with eBPF and released a PoC rootkit “Curing.”<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/linux-io-uring-security-blindspot-allows-stealthy-rootkit-attacks/" target="_blank">Read more</a></p>
+    <p>🪟 <b>Windows inetpub Fix Can Block Future Updates</b><br>
+    Abuse of the newly created `inetpub` folder in Windows can block future updates, causing a 0x800F081F error. Microsoft acknowledged the issue but rated it "Moderate."<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/windows-inetpub-security-fix-can-be-abused-to-block-future-updates/" target="_blank">Read more</a></p>
 
-    <p>🔐 <b>XRP Ledger SDK Backdoor in NPM Package Steals Wallet Keys</b><br>
-    Aikido Intel flagged malicious versions of `xrpl` NPM packages (4.2.1–4.2.4, 2.14.2) used to steal private keys. Attackers evolved from JS tampering to hiding code in TS. Affected users must update to 4.2.5/2.14.3 and move assets to new wallets.<br>
-    🔗 <a href="https://hackread.com/backdoor-found-in-official-xrp-ledger-npm-package/" target="_blank">Read more</a></p>
+    <p>🤖 <b>Inception Jailbreak Weakens Major AI Guardrails</b><br>
+    Researchers found systemic jailbreaks like “Inception” affecting ChatGPT, Claude, Gemini, and others, tricking AIs into bypassing content restrictions.<br>
+    🔗 <a href="https://kb.cert.org/vuls/id/667211" target="_blank">Read more</a></p>
 
-    <p>🖥️ <b>CVE-2025-34028: Commvault RCE Bug Affects Innovation Releases</b><br>
-    A path traversal and SSRF flaw in Commvault Command Center (v11.38.0–11.38.19) allows unauthenticated RCE. Patched in v11.38.20+. Users should patch or isolate affected servers immediately.<br>
-    🔗 <a href="https://www.helpnetsecurity.com/2025/04/24/critical-commvault-rce-vulnerability-fixed-poc-available-cve-2025-34028/" target="_blank">Read more</a></p>
+    <p>💥 <b>CVE-2025-31324: SAP NetWeaver Zero-Day Under Exploitation</b><br>
+    A critical SAP NetWeaver flaw (CVSS 10) allows unauthenticated attackers to upload files and deploy web shells. Emergency patches are available.<br>
+    🔗 <a href="https://cyberscoop.com/sap-netweaver-zero-day-exploit-cve-2025-31324/" target="_blank">Read more</a></p>
+
+    <p>🔌 <b>Planet Technology Industrial Switch Flaws Allow Full Takeover</b><br>
+    Critical flaws in Planet switches expose industrial networks to remote control, credential leaks, and authentication bypasses. Patches are now available.<br>
+    🔗 <a href="https://hackread.com/planet-technology-industrial-switch-flaws-full-takeover/" target="_blank">Read more</a></p>
+
+    <p>💻 <b>Rack Ruby Vulnerability CVE-2025-27610 Could Leak Secrets</b><br>
+    A path traversal flaw in Rack’s server interface for Rails and Sinatra apps could expose sensitive files. Updates to versions 2.2.13, 3.0.14, or 3.1.12 are advised.<br>
+    🔗 <a href="https://www.helpnetsecurity.com/2025/04/25/rack-ruby-vulnerability-could-reveal-secrets-to-attackers-cve-2025-27610/" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>🕵️ Adversaries & Attacks</h2>
 
-    <p>📲 <b>SuperCard X Malware Turns Phones Into NFC Skimmers</b><br>
-    Smishing campaigns spread SuperCard X, a malware that reads credit/debit card data via NFC. Based on NGate and NFCGate, it hides through minimal permissions. Cleafy reports wide spread in Italy.<br>
-    🔗 <a href="https://www.malwarebytes.com/blog/news/2025/04/android-malware-turns-phones-into-malicious-tap-to-pay-machines" target="_blank">Read more</a></p>
+    <p>🐉 <b>FBI Seeks Help Identifying Salt Typhoon Hackers</b><br>
+    Salt Typhoon breached U.S. telecoms like AT&T and Verizon. A $10 million reward is offered for information about the Chinese-linked hacking group.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/fbi-seeks-help-to-unmask-salt-typhoon-hackers-behind-telecom-breaches/" target="_blank">Read more</a></p>
 
-    <p>🔐 <b>OAuth 2.0 Abuse Targets Microsoft 365 Accounts</b><br>
-    UTA0352/UTA0355 use social engineering and OAuth token phishing to hijack Entra ID accounts. Phishing links exploit `client_id` for persistent access. Volexity recommends domain blocking and conditional access.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/hackers-abuse-oauth-20-workflows-to-hijack-microsoft-365-accounts/" target="_blank">Read more</a></p>
+    <p>🌫️ <b>Fog Ransomware Campaign Spreads via Phishing LNK Files</b><br>
+    Fog ransomware used complex phishing chains and BYOVD exploits. Odd political messages and YouTube links were found in payloads.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/fog-attackers-mock-victims-with-doge.html" target="_blank">Read more</a></p>
 
-    <p>🌐 <b>Operation SyncHole: Lazarus Targets South Korea</b><br>
-    Lazarus Group used watering hole tactics and zero-days in Cross EX and Innorix Agent to target software, finance, and telecom sectors. Kaspersky links the campaign to malware like ThreatNeedle and SIGNBT.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/lazarus-hackers-breach-six-companies-in-watering-hole-attacks/" target="_blank">Read more</a></p>
+    <p>📱 <b>Triada Trojan Infects Counterfeit Android Devices Before Sale</b><br>
+    Triada hijacks Android's Zygote process to steal crypto and manipulate app traffic. Over 4,500 infected devices have been found worldwide.<br>
+    🔗 <a href="https://securelist.com/triada-trojan-modules-analysis/116380/" target="_blank">Read more</a></p>
 
-    <p>🏥 <b>Frederick Health Data Breach Impacts 934K Patients</b><br>
-    A ransomware attack on Frederick Health leaked sensitive patient data. No group has claimed the breach yet, fueling ransom payment speculation.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/frederick-health-data-breach-impacts-nearly-1-million-patients/" target="_blank">Read more</a></p>
+    <p>☁️ <b>Storm-1977 Breaches Education Sector for Cloud Cryptomining</b><br>
+    Storm-1977 exploited weak Azure credentials to create 200+ cryptomining containers. Microsoft stresses hardening container environments.<br>
+    🔗 <a href="https://securityaffairs.com/177067/hacking/storm-1977-targets-education-sector-with-password-spraying-microsoft-warns.html" target="_blank">Read more</a></p>
 
-    <p>🧬 <b>Interlock Ransomware Hits DaVita, Leaks 1.5TB</b><br>
-    Interlock gang claims responsibility for stealing 1.5TB of data from DaVita. Files leaked after ransom talks failed. The group uses tools like ClickFix for initial compromise.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/interlock-ransomware-claims-davita-attack-leaks-stolen-data/" target="_blank">Read more</a></p>
+    <p>🖥️ <b>DslogdRAT Malware Deployed via Ivanti Connect Secure Exploit</b><br>
+    Attackers exploited CVE-2025-0282 to drop DslogdRAT and Perl CGI shells on Japanese targets. Patches and monitoring are critical.<br>
+    🔗 <a href="https://securityaffairs.com/177002/malware/jpcert-warns-of-dslogdrat-malware-deployed-in-ivanti-connect-secure.html" target="_blank">Read more</a></p>
 
-    <p>🕷️ <b>Betruger Backdoor Used in RansomHub Campaigns</b><br>
-    Symantec exposed “Betruger,” a custom tool with keylogging, credential theft, and exfiltration capabilities used by RansomHub. Designed to evade detection and replace multiple tools like Mimikatz.<br>
-    🔗 <a href="https://www.cysecurity.news/2025/04/symantec-links-betruger-backdoor.html" target="_blank">Read more</a></p>
-
-    <p>🦈 <b>SessionShark PhaaS Kit Bypasses MFA in Microsoft 365</b><br>
-    SessionShark uses AiTM phishing to steal tokens and bypass MFA. Sold as a service, it includes stealth features and Cloudflare integration. Mirrors ransomware's shift to RaaS model.<br>
-    🔗 <a href="https://www.darkreading.com/remote-workforce/sessionshark-toolkit-microsoft-365-steal-tokens" target="_blank">Read more</a></p>
-
-    <p>📹 <b>Elusive Comet Campaign Targets Crypto Pros via Zoom</b><br>
-    Attackers posing as media trick users into granting Zoom remote control to steal crypto. One victim lost over $100K. Lazarus Group may be involved.<br>
-    🔗 <a href="https://hackread.com/elusive-comet-hackers-zoom-remote-control-steal-crypto/" target="_blank">Read more</a></p>
-
-    <p>📰 <b>Pope’s Death Exploited in Opportunistic Cyber Campaigns</b><br>
-    Scammers exploit Pope Francis' passing via fake news and AI-generated content. Campaigns include SEO poisoning and malware-laden fake news sites.<br>
-    🔗 <a href="https://securityaffairs.com/176917/cyber-crime/crooks-exploit-the-death-of-pope-francis.html" target="_blank">Read more</a></p>
-
-    <p>📨 <b>Darcula PhaaS Adds GenAI for Sophisticated Phishing</b><br>
-    The Darcula platform now features GenAI tools for phishing page creation, brand cloning, and language support. 90,000+ domains linked since March 2024.<br>
-    🔗 <a href="https://thehackernews.com/2025/04/darcula-adds-genai-to-phishing-toolkit.html" target="_blank">Read more</a></p>
-  </div>
-
-  <div class="news-item">
-    <h2>📁 Breaches & Leaks</h2>
-
-    <!-- Already included above in Adversaries section: Frederick Health and DaVita breaches -->
+    <p>🔍 <b>ToyMaker Sells Initial Access Using LAGTOY Malware</b><br>
+    The ToyMaker broker exploits known vulnerabilities, deploys LAGTOY malware, and hands off access to CACTUS ransomware groups.<br>
+    🔗 <a href="https://thehackernews.com/2025/04/toymaker-uses-lagtoy-to-sell-access-to.html" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>📊 Trends</h2>
 
-    <p>📉 <b>Ransomware Drops 32% in March but Year-on-Year Surges</b><br>
-    NCC Group reports a 32% drop in ransomware in March, but a 46% rise YoY. Babuk2, Akira, and RansomHub were top players, with Clop dominating Q1 via Cleo software exploits.<br>
-    🔗 <a href="https://www.infosecurity-magazine.com/news/ransomware-fall-sharply-march/" target="_blank">Read more</a></p>
-
-    <p>🧠 <b>Identity-Based Attacks Soar with MFA Bypass and Infostealers</b><br>
-    Credential theft rose 180% in early 2025. Infostealers and AiTM kits dominate, with attacks focusing on critical infrastructure. IBM urges proactive security and modern auth.<br>
-    🔗 <a href="https://www.helpnetsecurity.com/2025/04/23/cybercriminals-credential-theft-tactics/" target="_blank">Read more</a></p>
+    <p>📈 <b>Cybercriminals Shift from Ransomware to Credential Theft</b><br>
+    IBM reports a surge in infostealer use (84% rise), with cybercriminals now favoring stealthy identity attacks over ransomware.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/cybercriminals-are-now-focusing-more-on.html" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
-    <h2>🎯 Hunting Opportunities</h2>
+    <h2>📁 Breaches & Leaks</h2>
 
-    <p>🔎 <b>Deep Dive: Lazarus Group’s Operation SyncHole</b><br>
-    This campaign reveals modular malware like ThreatNeedle and SIGNBT deployed via zero-days and watering hole attacks. Targets include finance and telecom sectors in South Korea. Lazarus operated during local work hours, showcasing advanced targeting.<br>
-    🔗 <a href="https://securelist.com/operation-synchole-watering-hole-attacks-by-lazarus/116326/" target="_blank">Read more</a></p>
+    <p>📶 <b>SK Telecom Malware Breach Risks SIM-Swap Attacks</b><br>
+    SK Telecom confirmed malware accessed sensitive SIM card data for millions. No financial information leaked yet, but SIM-swapping risks remain.<br>
+    🔗 <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/hackers-access-sensitive-sim-card-data-at-south-koreas-largest-telecoms-company" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🛠️ Tools</h2>
+
+    <p>🛠️ <b>DataSurgeon: Fast Forensic Data Recovery Tool Released</b><br>
+    DataSurgeon enables high-speed forensic recovery, file carving, and deleted data extraction for Linux systems.<br>
+    🔗 <a href="https://github.com/Drew-Alleman/DataSurgeon/releases/tag/1.2.7" target="_blank">Read more</a></p>
+
+    <p>🛡️ <b>Tyton: New Linux Rootkit Detection Tool Launched</b><br>
+    Tyton detects hidden rootkits and syscall table hooks with journald monitoring and DKMS support for automatic updates.<br>
+    🔗 <a href="https://github.com/nbulischeck/tyton/releases/tag/v1.2" target="_blank">Read more</a></p>
   </div>
 
   <p style="text-align:center;">
