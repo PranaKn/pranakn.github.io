@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 01/05/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 01/05/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>🛡️ <b>Fortinet CVE-2024-55591 Exploited, Firewalls and VPNs Under Siege</b><br>
+    Fortinet flaw exploited since Dec 2023 amid growing VPN/firewall targeting by Brutus botnet and ArcaneDoor campaign. Organizations urged to adopt modern defense strategies.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/firewalls-and-vpns-under-siege-as.html" target="_blank">Read more</a></p>
+
+    <p>📡 <b>AirBorne Flaws Could Fully Hijack Apple Devices</b><br>
+    Oligo Security reports 23 AirPlay flaws affecting over 2B devices. Two allow wormable RCE; Apple has issued patches. Users should restrict or disable AirPlay.<br>
+    🔗 <a href="https://securityaffairs.com/177225/hacking/airborne-flaws-can-lead-to-fully-hijack-apple-devices.html" target="_blank">Read more</a></p>
+
+    <p>🌐 <b>Chrome 136 and Firefox 138 Fix High-Severity Flaws</b><br>
+    Google and Mozilla release updates addressing heap buffer overflows and privilege escalation bugs. Users advised to update immediately.<br>
+    🔗 <a href="https://www.securityweek.com/chrome-136-firefox-138-patch-high-severity-vulnerabilities/" target="_blank">Read more</a></p>
+
+    <p>🔧 <b>SonicWall VPN Flaws Actively Exploited in Attacks</b><br>
+    CVE-2023-44221 and CVE-2024-38475 exploited in the wild. SonicWall urges patching SMA appliances and reviewing logs for abuse.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/sonicwall-sma100-vpn-vulnerabilities-now-exploited-in-attacks/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>🧙 <b>TheWizards Abuse IPv6 to Hijack Software Updates</b><br>
+    China-linked APT exploits SLAAC to redirect update traffic and deliver WizardNet malware. ESET recommends disabling unused IPv6 features.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/hackers-abuse-ipv6-networking-feature-to-hijack-software-updates/" target="_blank">Read more</a></p>
+
+    <p>🧠 <b>WhatsApp Unveils Private Processing for Cloud AI Features</b><br>
+    Meta introduces encrypted TEEs and relay servers for opt-in AI summarization. Privacy concerns remain over cloud-based processing.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/whatsapp-unveils-private-processing-for-cloud-based-ai-features/" target="_blank">Read more</a></p>
+
+    <p>📡 <b>Billbug APT Targets Southeast Asian Governments</b><br>
+    Lotus Panda group uses old security binaries to load backdoors like Sagerunex and abuse Dropbox for C2 operations.<br>
+    🔗 <a href="https://www.darkreading.com/threat-intelligence/billbug-cyber-espionage-campaign-southeast-asia" target="_blank">Read more</a></p>
+
+    <p>🕵️‍♂️ <b>Uyghur Activists Targeted by Trojanized Language Tool</b><br>
+    Trojanized UyghurEditPP installs spyware via phishing lures. Infrastructure linked to China-aligned threat clusters.<br>
+    🔗 <a href="https://hackread.com/china-hackers-trojan-uyghureditpp-app-uyghur-activists/" target="_blank">Read more</a></p>
+
+    <p>📬 <b>Phishing Lures Victims to Install ScreenConnect</b><br>
+    Emails impersonating SSA trick users into installing remote access software. Malwarebytes blocks RiskWare.ConnectWise.CST abuse.<br>
+    🔗 <a href="https://www.malwarebytes.com/blog/news/2025/04/fake-social-security-statement-emails-trick-users-into-installing-remote-tool" target="_blank">Read more</a></p>
+
+    <p>🏛️ <b>Nebulous Mantis Targets NATO-Linked Infrastructure</b><br>
+    RomCom RAT deployed against defense sectors using spear-phishing, IPFS, and ransomware payloads. Operations suggest high resourcing or state backing.<br>
+    🔗 <a href="https://securityaffairs.com/177255/intelligence/nebulous-mantis-targets-nato-related-defense-organizations.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📁 Breaches & Leaks</h2>
+
+    <p>🛒 <b>Co-op Retailer Shuts IT Systems After Hack Attempt</b><br>
+    UK retailer suffers intrusion affecting back office and call centers. No public ransomware claims yet.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/uk-retailer-co-op-shuts-down-some-it-systems-after-hack-attempt/" target="_blank">Read more</a></p>
+
+    <p>🏥 <b>Ascension Reports Third-Party Data Breach Linked to Clop</b><br>
+    Healthcare data stolen from former partner via Cleo exploit. Affected individuals offered ID protection.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/ascension-discloses-new-data-breach-after-third-party-hacking-incident/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🌍 Others</h2>
+
+    <p>🕸️ <b>FBI Publishes 42,000 Domains from LabHost Phishing Platform</b><br>
+    The takedown aids threat hunting and phishing awareness. Teams encouraged to block or analyze listed domains.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/fbi-shares-massive-list-of-42-000-labhost-phishing-domains/" target="_blank">Read more</a></p>
+
+    <p>🐻 <b>France Condemns Russia’s APT28 for Ongoing Espionage</b><br>
+    GRU-linked group accused of attacking defense, finance, and elections since 2004. Includes 2015 TV5Monde impersonation of ISIS.<br>
+    🔗 <a href="https://hackread.com/tv5monde-govt-france-russia-apt28-cyberattacks/" target="_blank">Read more</a></p>
+
+    <p>📜 <b>New Framework Detects Shell Script Bugs Before Runtime</b><br>
+    Brown University researchers introduce static analysis for Bash/Zsh to boost reliability in CI/CD and infrastructure scripts.<br>
+    🔗 <a href="https://www.theregister.com/2025/04/30/shell_script_code_correctness/" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
