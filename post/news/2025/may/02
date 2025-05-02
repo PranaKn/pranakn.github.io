@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 02/05/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 02/05/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>⚠️ <b>CISA Adds SonicWall and Apache Exploits to KEV Catalog</b><br>
+    CVE-2024-38475 and CVE-2023-44221 are actively exploited flaws affecting Apache HTTP Server and SonicWall SMA100. Agencies must patch by May 22.<br>
+    🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/05/01/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>🐍 <b>Malicious PyPI & npm Packages Use Gmail & WebSockets</b><br>
+    Socket found PyPI and npm packages using Gmail SMTP and encrypted WebSocket tunnels for exfiltration and command execution.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/malicious-pypi-packages-abuse-gmail-websockets-to-hijack-systems/" target="_blank">Read more</a></p>
+
+    <p>🎭 <b>“NullBulge” Pleads Guilty to Disney Slack Hack and Leak</b><br>
+    Ryan Kramer hacked Disney’s Slack, stole 1.1TB of data, and leaked it after failed extortion attempts. Faces up to 10 years.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/hacker-nullbulge-pleads-guilty-to-stealing-disneys-slack-data/" target="_blank">Read more</a></p>
+
+    <p>💣 <b>NoName057(16) Hits Dutch Infrastructure with DDoS Barrage</b><br>
+    Russian hacktivists disrupted public Dutch services in retaliation for Ukraine support. Crowdsourced DDoSIA platform used.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/pro-russia-hacktivists-bombard-dutch-public-orgs-with-ddos-attacks/" target="_blank">Read more</a></p>
+
+    <p>🔓 <b>Advanced Phishing Kits Bypass MFA Using AiTM Proxies</b><br>
+    Cisco Talos highlights AiTM kits like Tycoon 2FA and Evilproxy bypass MFA, recommending WebAuthn as a stronger alternative.<br>
+    🔗 <a href="https://blog.talosintelligence.com/state-of-the-art-phishing-mfa-bypass/" target="_blank">Read more</a></p>
+
+    <p>🕵️‍♂️ <b>ShinyHunters Leak French Retailer Data, Escalating Retail Risk</b><br>
+    Data from Boulanger and other firms freely leaked after sale attempts, impacting millions. Experts call for better retail security.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/millions-affected-by-suspected-data.html" target="_blank">Read more</a></p>
+
+    <p>📂 <b>Free File Converter Sites Distribute RAT via Fake Tools</b><br>
+    Arechclient2 RAT delivered through ZIPs mimicking PDF-to-DOCX tools, targeting crypto wallets and Web3 APIs.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/malware-hides-in-fake-pdf-to-docx.html" target="_blank">Read more</a></p>
+
+    <p>✈️ <b>TAP Air Refund Phishing Exploits Iberian Blackout</b><br>
+    Fake refund pages target victims after Spain and Portugal outages. Phishing mimics TAP Air Portugal branding.<br>
+    🔗 <a href="https://hackread.com/spain-portugal-blackout-tap-air-refund-phishing-scam/" target="_blank">Read more</a></p>
+
+    <p>📦 <b>Subscription “Mystery Box” Scams Harvest Card Data</b><br>
+    Bitdefender tracks over 200 fake retail sites linked to scams via fake influencers and deceptive checkout flows.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/mystery-box-scams-credit-card-data/" target="_blank">Read more</a></p>
+
+    <p>📬 <b>Hive0117 Launches DarkWatchman and Sheriff Malware</b><br>
+    DarkWatchman hits Russian firms; Sheriff RAT used in Ukraine. TTPs linked to Kazuar and Prikormka malware.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/phishing-campaigns-targets-russia/" target="_blank">Read more</a></p>
+
+    <p>🛡️ <b>SentinelOne Targeted by Fake Job Applications and PurpleHaze</b><br>
+    NK-linked fake IT workers, ransomware gangs, and Chinese actors sought access via job scams and supply chain infiltration.<br>
+    🔗 <a href="https://www.securityweek.com/sentinelone-targeted-by-north-korean-it-workers-ransomware-groups-chinese-hackers/" target="_blank">Read more</a></p>
+
+    <p>🔮 <b>TheWizards Use IPv6 SLAAC Attacks to Hijack Updates</b><br>
+    Spellbinder tool redirects traffic for update hijacking. Android variant *DarkNights* also detected. Linked to UPSEC.<br>
+    🔗 <a href="https://www.welivesecurity.com/en/eset-research/thewizards-apt-group-slaac-spoofing-adversary-in-the-middle-attacks/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📊 Trends</h2>
+
+    <p>📉 <b>Google Reports Drop in Mobile and Browser Zero-Days</b><br>
+    Google sees zero-day targeting shift to enterprise systems. Mobile and Chrome exploits drop; patching remains key.<br>
+    🔗 <a href="https://www.malwarebytes.com/blog/news/2025/05/zero-day-attacks-on-browsers-and-smartphones-drop-says-google" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📁 Breaches & Leaks</h2>
+
+    <p>🛍️ <b>Harrods Becomes Third UK Retail Breach Victim</b><br>
+    Cyberattack prompts Harrods to restrict internet access after breach attempt. Social engineering suspected.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/harrods-the-next-uk-retailer-targeted-in-a-cyberattack/" target="_blank">Read more</a></p>
+
+    <p>⚡ <b>Nova Scotia Power Hit by Cyberattack, Services Affected</b><br>
+    IT systems disrupted, but electricity delivery and U.S./Caribbean ops safe. No ransomware claim yet.<br>
+    🔗 <a href="https://securityaffairs.com/177281/hacking/canadian-electric-utility-nova-scotia-power-and-parent-company-emera-suffered-a-cyberattack.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🛠️ Tools</h2>
+
+    <p>💻 <b>Shell3r Obfuscates Shellcode for Red Team Evasion</b><br>
+    Shell3r encrypts and encodes shellcode using AES/XOR for stealth delivery, aiding exploit developers and CTF players.<br>
+    🔗 <a href="https://github.com/yehia-mamdouh/Shell3er" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
