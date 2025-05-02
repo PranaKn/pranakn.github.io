@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cybersecurity Newsfeed - 01/05/25</title>
+  <title>Cybersecurity Newsfeed - 02/05/25</title>
   <style>
     body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
     h1, h2 { color: #c9a227; text-align: center; }
@@ -16,82 +16,90 @@
 <body>
 
   <h1>📰 Cybersecurity Newsfeed</h1>
-  <h2>📅 01/05/25</h2>
+  <h2>📅 02/05/25</h2>
 
   <div class="news-item">
     <h2>🔥 Vulnerabilities</h2>
 
-    <p>🛡️ <b>Fortinet CVE-2024-55591 Exploited, Firewalls and VPNs Under Siege</b><br>
-    Fortinet flaw exploited since Dec 2023 amid growing VPN/firewall targeting by Brutus botnet and ArcaneDoor campaign. Organizations urged to adopt modern defense strategies.<br>
-    🔗 <a href="https://www.cysecurity.news/2025/04/firewalls-and-vpns-under-siege-as.html" target="_blank">Read more</a></p>
-
-    <p>📡 <b>AirBorne Flaws Could Fully Hijack Apple Devices</b><br>
-    Oligo Security reports 23 AirPlay flaws affecting over 2B devices. Two allow wormable RCE; Apple has issued patches. Users should restrict or disable AirPlay.<br>
-    🔗 <a href="https://securityaffairs.com/177225/hacking/airborne-flaws-can-lead-to-fully-hijack-apple-devices.html" target="_blank">Read more</a></p>
-
-    <p>🌐 <b>Chrome 136 and Firefox 138 Fix High-Severity Flaws</b><br>
-    Google and Mozilla release updates addressing heap buffer overflows and privilege escalation bugs. Users advised to update immediately.<br>
-    🔗 <a href="https://www.securityweek.com/chrome-136-firefox-138-patch-high-severity-vulnerabilities/" target="_blank">Read more</a></p>
-
-    <p>🔧 <b>SonicWall VPN Flaws Actively Exploited in Attacks</b><br>
-    CVE-2023-44221 and CVE-2024-38475 exploited in the wild. SonicWall urges patching SMA appliances and reviewing logs for abuse.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/sonicwall-sma100-vpn-vulnerabilities-now-exploited-in-attacks/" target="_blank">Read more</a></p>
+    <p>⚠️ <b>CISA Adds SonicWall and Apache Exploits to KEV Catalog</b><br>
+    CVE-2024-38475 and CVE-2023-44221 are actively exploited flaws affecting Apache HTTP Server and SonicWall SMA100. Agencies must patch by May 22.<br>
+    🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/05/01/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>🕵️ Adversaries & Attacks</h2>
 
-    <p>🧙 <b>TheWizards Abuse IPv6 to Hijack Software Updates</b><br>
-    China-linked APT exploits SLAAC to redirect update traffic and deliver WizardNet malware. ESET recommends disabling unused IPv6 features.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/hackers-abuse-ipv6-networking-feature-to-hijack-software-updates/" target="_blank">Read more</a></p>
+    <p>🐍 <b>Malicious PyPI & npm Packages Use Gmail & WebSockets</b><br>
+    Socket found PyPI and npm packages using Gmail SMTP and encrypted WebSocket tunnels for exfiltration and command execution.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/malicious-pypi-packages-abuse-gmail-websockets-to-hijack-systems/" target="_blank">Read more</a></p>
 
-    <p>🧠 <b>WhatsApp Unveils Private Processing for Cloud AI Features</b><br>
-    Meta introduces encrypted TEEs and relay servers for opt-in AI summarization. Privacy concerns remain over cloud-based processing.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/whatsapp-unveils-private-processing-for-cloud-based-ai-features/" target="_blank">Read more</a></p>
+    <p>🎭 <b>“NullBulge” Pleads Guilty to Disney Slack Hack and Leak</b><br>
+    Ryan Kramer hacked Disney’s Slack, stole 1.1TB of data, and leaked it after failed extortion attempts. Faces up to 10 years.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/hacker-nullbulge-pleads-guilty-to-stealing-disneys-slack-data/" target="_blank">Read more</a></p>
 
-    <p>📡 <b>Billbug APT Targets Southeast Asian Governments</b><br>
-    Lotus Panda group uses old security binaries to load backdoors like Sagerunex and abuse Dropbox for C2 operations.<br>
-    🔗 <a href="https://www.darkreading.com/threat-intelligence/billbug-cyber-espionage-campaign-southeast-asia" target="_blank">Read more</a></p>
+    <p>💣 <b>NoName057(16) Hits Dutch Infrastructure with DDoS Barrage</b><br>
+    Russian hacktivists disrupted public Dutch services in retaliation for Ukraine support. Crowdsourced DDoSIA platform used.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/pro-russia-hacktivists-bombard-dutch-public-orgs-with-ddos-attacks/" target="_blank">Read more</a></p>
 
-    <p>🕵️‍♂️ <b>Uyghur Activists Targeted by Trojanized Language Tool</b><br>
-    Trojanized UyghurEditPP installs spyware via phishing lures. Infrastructure linked to China-aligned threat clusters.<br>
-    🔗 <a href="https://hackread.com/china-hackers-trojan-uyghureditpp-app-uyghur-activists/" target="_blank">Read more</a></p>
+    <p>🔓 <b>Advanced Phishing Kits Bypass MFA Using AiTM Proxies</b><br>
+    Cisco Talos highlights AiTM kits like Tycoon 2FA and Evilproxy bypass MFA, recommending WebAuthn as a stronger alternative.<br>
+    🔗 <a href="https://blog.talosintelligence.com/state-of-the-art-phishing-mfa-bypass/" target="_blank">Read more</a></p>
 
-    <p>📬 <b>Phishing Lures Victims to Install ScreenConnect</b><br>
-    Emails impersonating SSA trick users into installing remote access software. Malwarebytes blocks RiskWare.ConnectWise.CST abuse.<br>
-    🔗 <a href="https://www.malwarebytes.com/blog/news/2025/04/fake-social-security-statement-emails-trick-users-into-installing-remote-tool" target="_blank">Read more</a></p>
+    <p>🕵️‍♂️ <b>ShinyHunters Leak French Retailer Data, Escalating Retail Risk</b><br>
+    Data from Boulanger and other firms freely leaked after sale attempts, impacting millions. Experts call for better retail security.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/millions-affected-by-suspected-data.html" target="_blank">Read more</a></p>
 
-    <p>🏛️ <b>Nebulous Mantis Targets NATO-Linked Infrastructure</b><br>
-    RomCom RAT deployed against defense sectors using spear-phishing, IPFS, and ransomware payloads. Operations suggest high resourcing or state backing.<br>
-    🔗 <a href="https://securityaffairs.com/177255/intelligence/nebulous-mantis-targets-nato-related-defense-organizations.html" target="_blank">Read more</a></p>
+    <p>📂 <b>Free File Converter Sites Distribute RAT via Fake Tools</b><br>
+    Arechclient2 RAT delivered through ZIPs mimicking PDF-to-DOCX tools, targeting crypto wallets and Web3 APIs.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/malware-hides-in-fake-pdf-to-docx.html" target="_blank">Read more</a></p>
+
+    <p>✈️ <b>TAP Air Refund Phishing Exploits Iberian Blackout</b><br>
+    Fake refund pages target victims after Spain and Portugal outages. Phishing mimics TAP Air Portugal branding.<br>
+    🔗 <a href="https://hackread.com/spain-portugal-blackout-tap-air-refund-phishing-scam/" target="_blank">Read more</a></p>
+
+    <p>📦 <b>Subscription “Mystery Box” Scams Harvest Card Data</b><br>
+    Bitdefender tracks over 200 fake retail sites linked to scams via fake influencers and deceptive checkout flows.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/mystery-box-scams-credit-card-data/" target="_blank">Read more</a></p>
+
+    <p>📬 <b>Hive0117 Launches DarkWatchman and Sheriff Malware</b><br>
+    DarkWatchman hits Russian firms; Sheriff RAT used in Ukraine. TTPs linked to Kazuar and Prikormka malware.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/phishing-campaigns-targets-russia/" target="_blank">Read more</a></p>
+
+    <p>🛡️ <b>SentinelOne Targeted by Fake Job Applications and PurpleHaze</b><br>
+    NK-linked fake IT workers, ransomware gangs, and Chinese actors sought access via job scams and supply chain infiltration.<br>
+    🔗 <a href="https://www.securityweek.com/sentinelone-targeted-by-north-korean-it-workers-ransomware-groups-chinese-hackers/" target="_blank">Read more</a></p>
+
+    <p>🔮 <b>TheWizards Use IPv6 SLAAC Attacks to Hijack Updates</b><br>
+    Spellbinder tool redirects traffic for update hijacking. Android variant *DarkNights* also detected. Linked to UPSEC.<br>
+    🔗 <a href="https://www.welivesecurity.com/en/eset-research/thewizards-apt-group-slaac-spoofing-adversary-in-the-middle-attacks/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📊 Trends</h2>
+
+    <p>📉 <b>Google Reports Drop in Mobile and Browser Zero-Days</b><br>
+    Google sees zero-day targeting shift to enterprise systems. Mobile and Chrome exploits drop; patching remains key.<br>
+    🔗 <a href="https://www.malwarebytes.com/blog/news/2025/05/zero-day-attacks-on-browsers-and-smartphones-drop-says-google" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>📁 Breaches & Leaks</h2>
 
-    <p>🛒 <b>Co-op Retailer Shuts IT Systems After Hack Attempt</b><br>
-    UK retailer suffers intrusion affecting back office and call centers. No public ransomware claims yet.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/uk-retailer-co-op-shuts-down-some-it-systems-after-hack-attempt/" target="_blank">Read more</a></p>
+    <p>🛍️ <b>Harrods Becomes Third UK Retail Breach Victim</b><br>
+    Cyberattack prompts Harrods to restrict internet access after breach attempt. Social engineering suspected.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/harrods-the-next-uk-retailer-targeted-in-a-cyberattack/" target="_blank">Read more</a></p>
 
-    <p>🏥 <b>Ascension Reports Third-Party Data Breach Linked to Clop</b><br>
-    Healthcare data stolen from former partner via Cleo exploit. Affected individuals offered ID protection.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/ascension-discloses-new-data-breach-after-third-party-hacking-incident/" target="_blank">Read more</a></p>
+    <p>⚡ <b>Nova Scotia Power Hit by Cyberattack, Services Affected</b><br>
+    IT systems disrupted, but electricity delivery and U.S./Caribbean ops safe. No ransomware claim yet.<br>
+    🔗 <a href="https://securityaffairs.com/177281/hacking/canadian-electric-utility-nova-scotia-power-and-parent-company-emera-suffered-a-cyberattack.html" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
-    <h2>🌍 Others</h2>
+    <h2>🛠️ Tools</h2>
 
-    <p>🕸️ <b>FBI Publishes 42,000 Domains from LabHost Phishing Platform</b><br>
-    The takedown aids threat hunting and phishing awareness. Teams encouraged to block or analyze listed domains.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/fbi-shares-massive-list-of-42-000-labhost-phishing-domains/" target="_blank">Read more</a></p>
-
-    <p>🐻 <b>France Condemns Russia’s APT28 for Ongoing Espionage</b><br>
-    GRU-linked group accused of attacking defense, finance, and elections since 2004. Includes 2015 TV5Monde impersonation of ISIS.<br>
-    🔗 <a href="https://hackread.com/tv5monde-govt-france-russia-apt28-cyberattacks/" target="_blank">Read more</a></p>
-
-    <p>📜 <b>New Framework Detects Shell Script Bugs Before Runtime</b><br>
-    Brown University researchers introduce static analysis for Bash/Zsh to boost reliability in CI/CD and infrastructure scripts.<br>
-    🔗 <a href="https://www.theregister.com/2025/04/30/shell_script_code_correctness/" target="_blank">Read more</a></p>
+    <p>💻 <b>Shell3r Obfuscates Shellcode for Red Team Evasion</b><br>
+    Shell3r encrypts and encodes shellcode using AES/XOR for stealth delivery, aiding exploit developers and CTF players.<br>
+    🔗 <a href="https://github.com/yehia-mamdouh/Shell3er" target="_blank">Read more</a></p>
   </div>
 
   <p style="text-align:center;">
