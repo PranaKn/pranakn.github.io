@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 05/05/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 05/05/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>🛠️ <b>Commvault and Yii RCE Vulnerabilities Added to KEV</b><br>
+    CVE-2025-34028 and CVE-2024-58136 allow unauthenticated remote code execution. CISA mandates patching by May 23.<br>
+    🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/05/02/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
+
+    <p>📡 <b>AirBorne: 23 AirPlay Flaws Expose Billions of Devices</b><br>
+    Zero-click and wormable bugs affect iPhones, Macs, CarPlay, and third-party devices. Apple patches released.<br>
+    🔗 <a href="https://hackread.com/apple-devices-risk-airborne-airplay-vulnerabilities/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>💣 <b>Black Kingdom Ransomware Developer Indicted</b><br>
+    U.S. charges Yemeni developer for attacks on Microsoft Exchange servers using ProxyLogon vulnerabilities.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/us-indicts-black-kingdom-ransomware-admin-for-microsoft-exchange-attacks/" target="_blank">Read more</a></p>
+
+    <p>💸 <b>¥100 Billion Stolen in Japanese Brokerage Hacks</b><br>
+    Phishing and infostealers exploited Japan’s browser-based platforms to conduct unauthorized stock trades.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/04/surge-in-brokerage-account-hacks-in.html" target="_blank">Read more</a></p>
+
+    <p>🌐 <b>Dark Web Drug Market Pygmalion Seized by German Police</b><br>
+    Over 7,000 drug orders, 53 kg of narcotics, and customer data exposed in major bust.<br>
+    🔗 <a href="https://hackread.com/police-seize-dark-web-shop-pygmalion-user-data-orders/" target="_blank">Read more</a></p>
+
+    <p>📦 <b>NullPoint Code Leak, SIM Swaps & Forum Shutdowns</b><br>
+    SecurityWeek recaps NullPoint leak, BreachForums takedown, SIM replacement at SK Telecom, and more.<br>
+    🔗 <a href="https://www.securityweek.com/in-other-news-nullpoint-source-code-leak-17500-for-iphone-flaw-breachforums-down/" target="_blank">Read more</a></p>
+
+    <p>⚠️ <b>Go Modules Deliver Linux Disk Wiper Malware</b><br>
+    `prototransform`, `go-mcp`, and `tlsproxy` download payloads that wipe disks. npm and PyPI also affected.<br>
+    🔗 <a href="https://thehackernews.com/2025/05/malicious-go-modules-deliver-disk.html" target="_blank">Read more</a></p>
+
+    <p>🕵️ <b>Lemon Sandstorm Maintained 2-Year Access to Middle East CNI</b><br>
+    Fortinet attributes long-term access to VPN exploits, stolen credentials, and custom tools.<br>
+    🔗 <a href="https://thehackernews.com/2025/05/iranian-hackers-maintain-2-year-access.html" target="_blank">Read more</a></p>
+
+    <p>🧬 <b>MintsLoader Drops GhostWeaver via ClickFix Phishing</b><br>
+    Modular PowerShell RAT connects to encrypted C2, exfiltrates data, and can redeploy loader.<br>
+    🔗 <a href="https://thehackernews.com/2025/05/mintsloader-drops-ghostweaver-via.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📁 Breaches & Leaks</h2>
+
+    <p>💥 <b>Co-op Confirms Data Theft by DragonForce Ransomware</b><br>
+    20 million records exfiltrated, AD hashes stolen. Microsoft and KPMG assisting rebuild.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/co-op-confirms-data-theft-after-dragonforce-ransomware-claims-attack/" target="_blank">Read more</a></p>
+
+    <p>🎲 <b>1 Tbps DDoS Attack Cripples Betting Company</b><br>
+    High-volume attack reveals lack of DDoS protection in gambling sector. Cloud defenses urged.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/massive-1tbps-ddos-attack-cripples.html" target="_blank">Read more</a></p>
+
+    <p>🖥️ <b>Hitachi Vantara Shuts Down Servers After Ransomware Hit</b><br>
+    Linked to Akira group; internal disruption noted, cloud services unaffected.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/hitachi-vantara-takes-servers-offline.html" target="_blank">Read more</a></p>
+
+    <p>📧 <b>Qantas Phishing Scam Bypasses Email Security</b><br>
+    Australians tricked into giving up card data via realistic spoofed Qantas campaign.<br>
+    🔗 <a href="https://hackread.com/phishing-emails-impersonate-qantas-credit-card-info/" target="_blank">Read more</a></p>
+
+    <p>🛍️ <b>Retailers Harrods, Co-op, M&S Hit in Coordinated Attacks</b><br>
+    UK retailers face surge in breaches, prompting NCSC involvement. Supplier compromise suspected.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/harrods-uk-retailer-fall-victim-to/" target="_blank">Read more</a></p>
+
+    <p>🇵🇪 <b>Rhysida Ransomware Hits Peruvian Government Platform</b><br>
+    Gob.pe breached, five BTC ransom demanded. FBI/CISA warned of Rhysida in 2023.<br>
+    🔗 <a href="https://securityaffairs.com/177388/cyber-crime/rhysida-ransomware-gang-claims-the-hack-of-the-government-of-peru.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📌 Others</h2>
+
+    <p>📬 <b>Exchange Online Misclassified Gmail as Spam</b><br>
+    Microsoft reverted ML model after flagging legitimate messages since April 25.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-exchange-online-bug-flagging-gmail-emails-as-spam/" target="_blank">Read more</a></p>
+
+    <p>⚖️ <b>White House Threatens Cyber Retaliation Against China</b><br>
+    Alexei Bulazel compares Volt Typhoon actions to sabotage, calls for CISA reform.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/white-house-china-cyber-retaliation/" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
