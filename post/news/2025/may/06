@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 06/05/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 06/05/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>🚨 <b>Langflow RCE Vulnerability (CVE-2025-3248)</b><br>
+    Critical unauthenticated code execution bug in Langflow prior to v1.3.0 actively exploited. CISA requires patching by May 26.<br>
+    🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/05/05/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">Read more</a></p>
+
+    <p>☸️ <b>Insecure Kubernetes Helm Charts Expose Apps</b><br>
+    Microsoft warns about default Helm configurations exposing Apache Pinot, Meshery, and Selenium Grid. Urges review before deployment.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/microsoft-finds-default-kubernetes-helm-charts-can-expose-data/" target="_blank">Read more</a></p>
+
+    <p>📱 <b>Android May 2025 Update Fixes 47 Vulnerabilities</b><br>
+    Includes CVE-2025-27363 (FreeType OOB write) with confirmed exploitation. Fixes span framework, kernel, and vendor components.<br>
+    🔗 <a href="https://cyberscoop.com/android-security-update-may-2025/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>🎣 <b>Darcula PhaaS Stole 884,000 Cards via Texts</b><br>
+    Over 13M malicious clicks traced to phishing infrastructure from China using spoofed domains and AI phishing kits.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/darcula-phaas-steals-884-000-credit-cards-via-phishing-texts/" target="_blank">Read more</a></p>
+
+    <p>🔐 <b>Storm-1977 Targets Container Workloads for Cryptomining</b><br>
+    Exploiting unused Kubernetes identities, attackers created 200+ containers. Microsoft recommends RBAC lockdowns and passkey use.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/microsoft-alerts-users-about-password.html" target="_blank">Read more</a></p>
+
+    <p>📎 <b>Venom Spider Delivers More_eggs to HR via LNK Files</b><br>
+    Spear-phishing résumés contain malicious LNKs triggering backdoor installs. Training urged for HR departments.<br>
+    🔗 <a href="https://www.darkreading.com/cyber-risk/venom-spider-phishing-scheme" target="_blank">Read more</a></p>
+
+    <p>🪓 <b>Golden Chickens Deploy TerraStealerV2 and TerraLogger</b><br>
+    Two new malware strains steal credentials, browser data, and use Telegram C2. Logging variant still in testing phase.<br>
+    🔗 <a href="https://thehackernews.com/2025/05/golden-chickens-deploy-terrastealerv2.html" target="_blank">Read more</a></p>
+
+    <p>📞 <b>Luna Moth Phishing Calls Deliver RMM Tools for Extortion</b><br>
+    Victims tricked into installing AnyDesk/Zoho. 37 typosquatted domains identified in campaign targeting U.S. legal/financial sectors.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/luna-moth-extortion-hackers-pose-as-it-help-desks-to-breach-us-firms/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📈 Trends</h2>
+
+    <p>🧬 <b>Data Splicing Attacks Bypass Traditional DLP</b><br>
+    Data split/encoded inside browsers, exfiltrated via non-standard protocols. Researchers released Angry Magpie to test defenses.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/data-security-alert-as-novel.html" target="_blank">Read more</a></p>
+
+    <p>📉 <b>Ransomware Incidents Drop After RansomHub Outage</b><br>
+    April 2025 saw 479 attacks vs. 713 in March. Qilin now leads, with Akira and Play still active.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/ransomware-fall-april-ransomhub/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🧰 Tools</h2>
+
+    <p>🛠️ <b>Upload_Bypass: Automate File Upload Exploitation</b><br>
+    Python CLI tool by sAjibuu evades weak upload filters using MIME spoofing and polyglot payloads. Ideal for CTFs/pentests.<br>
+    🔗 <a href="https://github.com/sAjibuu/Upload_Bypass" target="_blank">Read more</a></p>
+
+    <p>🔍 <b>Vuls: Agentless Vulnerability Scanner for Diverse OS</b><br>
+    Supports Linux, Windows, macOS, FreeBSD. Uses CPE data to find risks in middleware, software, and libraries.<br>
+    🔗 <a href="https://github.com/future-architect/vuls" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
