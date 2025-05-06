@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 07/05/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 07/05/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>🧠 <b>Langflow RCE (CVE-2025-3248) Exploited in the Wild</b><br>
+    Unsafe code validation in exposed Langflow instances enables RCE. Patch to 1.4.0 or isolate the service.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/critical-langflow-rce-flaw-exploited-to-hack-ai-app-servers/" target="_blank">Read more</a></p>
+
+    <p>🖥️ <b>Samsung MagicINFO RCE (CVE-2024-7399) Actively Exploited</b><br>
+    Path traversal in signage software enables malware delivery including Mirai variants. Update to 21.1050 or newer.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/samsung-magicinfo-9-server-rce-flaw-now-exploited-in-attacks/" target="_blank">Read more</a></p>
+
+    <p>📦 <b>Apache Parquet Deserialization Flaw (CVE-2025-30065)</b><br>
+    Public PoC allows instantiating Java classes from Avro in Parquet. Upgrade to 1.15.1 immediately.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/apache-parquet-exploit-tool-detect-servers-vulnerable-to-critical-flaw/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>🧪 <b>Infostealer Malware Surges 500% in 2024</b><br>
+    Over 1.7B credentials leaked. Gen Z remains highly vulnerable due to password reuse.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/infostealer-malware-soars-500-as-17.html" target="_blank">Read more</a></p>
+
+    <p>🐼 <b>Smishing Triad’s Panda Shop Reaches 60M Victims Monthly</b><br>
+    Uses Telegram, RCS, and OTP capture for wide-scale phishing-as-a-service. Cross-border action remains limited.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/smishing-triad-upgrades-tools/" target="_blank">Read more</a></p>
+
+    <p>💥 <b>DieNet Hacktivists Launch Over 60 DDoS Attacks Since March</b><br>
+    U.S. and Iraqi systems targeted via DDoS-as-a-service. No unique infrastructure identified.<br>
+    🔗 <a href="https://www.netscout.com/blog/asert/profiling-dienet-new-hacktivist-threat" target="_blank">Read more</a></p>
+
+    <p>🕷️ <b>2.py Infostealer Combines Keylogger and Fake Login Server</b><br>
+    Python RAT includes phishing server for Google/Microsoft. Low AV detection and active exfiltration to Telegram.<br>
+    🔗 <a href="https://isc.sans.edu/diary/rss/31924" target="_blank">Read more</a></p>
+
+    <p>📂 <b>SAP NetWeaver CVE-2025-31324 Sees Second Wave of Attacks</b><br>
+    New wave uses previously deployed webshells and open-source RCEs. Federal patching deadline: May 20.<br>
+    🔗 <a href="https://securityaffairs.com/177522/hacking/experts-warn-of-a-second-wave-of-attacks-targeting-sap-netweaver-bug-cve-2025-31324.html" target="_blank">Read more</a></p>
+
+    <p>💳 <b>Panda Shop Smishing Kit Hits Apple Pay and Google Wallet</b><br>
+    Updated kit sends 2M SMS/day. Advanced templates target card and mobile payment data globally.<br>
+    🔗 <a href="https://securityaffairs.com/177502/cyber-crime/smishing-on-a-massive-scale-panda-shop-chinese-carding-syndicate.html" target="_blank">Read more</a></p>
+
+    <p>🐇 <b>Reckless Rabbit Scams Use Facebook Ads, Deepfake Celebrities</b><br>
+    Tied to Myanmar scam compounds and \$40B fraud economy. Cloaking, fake crypto sites, call centers used.<br>
+    🔗 <a href="https://thehackernews.com/2025/05/new-investment-scams-use-facebook-ads.html" target="_blank">Read more</a></p>
+
+    <p>🇵🇹 <b>Lampion Banking Malware Targets Portuguese Taxpayers</b><br>
+    ClickFix social engineering used to deliver multi-stage malware via phishing ZIPs. New VB loader variant detected.<br>
+    🔗 <a href="https://unit42.paloaltonetworks.com/lampion-malware-clickfix-lures/" target="_blank">Read more</a></p>
+
+    <p>💣 <b>Linux Wiper Hidden in Malicious Go Modules</b><br>
+    Modules on GitHub used `dd` to wipe `/dev/sda`. Payload triggered instantly, causing total data loss.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/linux-wiper-malware-hidden-in-malicious-go-modules-on-github/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📁 Others</h2>
+
+    <p>📛 <b>MITRE CVE Program Faces Funding Crisis</b><br>
+    With funding extended only 11 months, experts warn of potential collapse in global vulnerability tracking.<br>
+    🔗 <a href="https://www.helpnetsecurity.com/2025/05/06/cve-program-foundation/" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
