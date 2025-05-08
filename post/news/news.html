@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cybersecurity Newsfeed - 07/05/25</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cybersecurity Newsfeed - 09/05/25</title>
   <style>
     body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
     h1, h2 { color: #c9a227; text-align: center; }
@@ -16,70 +16,98 @@
 <body>
 
   <h1>📰 Cybersecurity Newsfeed</h1>
-  <h2>📅 07/05/25</h2>
+  <h2>📅 09/05/25</h2>
 
   <div class="news-item">
     <h2>🔥 Vulnerabilities</h2>
 
-    <p>🧠 <b>Langflow RCE (CVE-2025-3248) Exploited in the Wild</b><br>
-    Unsafe code validation in exposed Langflow instances enables RCE. Patch to 1.4.0 or isolate the service.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/critical-langflow-rce-flaw-exploited-to-hack-ai-app-servers/" target="_blank">Read more</a></p>
+    <p>🎯 <b>GeoVision Devices CVEs (CVE-2024-6047, CVE-2024-11120)</b><br>
+    EOL surveillance devices exploited for botnets; no patches. Isolate or replace immediately.<br>
+    🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/05/07/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
 
-    <p>🖥️ <b>Samsung MagicINFO RCE (CVE-2024-7399) Actively Exploited</b><br>
-    Path traversal in signage software enables malware delivery including Mirai variants. Update to 21.1050 or newer.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/samsung-magicinfo-9-server-rce-flaw-now-exploited-in-attacks/" target="_blank">Read more</a></p>
+    <p>🖋️ <b>FreeType OOB Write (CVE-2025-27363)</b><br>
+    Exploitable via malicious fonts in major platforms; active exploitation confirmed.<br>
+    🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/05/06/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">Read more</a></p>
 
-    <p>📦 <b>Apache Parquet Deserialization Flaw (CVE-2025-30065)</b><br>
-    Public PoC allows instantiating Java classes from Avro in Parquet. Upgrade to 1.15.1 immediately.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/apache-parquet-exploit-tool-detect-servers-vulnerable-to-critical-flaw/" target="_blank">Read more</a></p>
+    <p>🛡️ <b>SonicWall SMA Chain RCE (CVE-2025-32819/20/21)</b><br>
+    Exploited in wild; enables root RCE. Patch to 10.2.1.15-81sv now.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/sonicwall-urges-admins-to-patch-vpn-flaw-exploited-in-attacks/" target="_blank">Read more</a></p>
+
+    <p>🌐 <b>Cisco IOS XE Wireless (CVE-2025-20188)</b><br>
+    JWT bypass flaw leads to unauth RCE. Patch now or disable HTTPS AP upgrade feature.<br>
+    🔗 <a href="https://securityaffairs.com/177609/security/cisco-fixed-a-critical-flaw-in-its-ios-xe-wireless-controller.html" target="_blank">Read more</a></p>
+
+    <p>📦 <b>Apache Parquet Deserialization (CVE-2025-30065)</b><br>
+    PoC released; affects Java libraries used in Spark/Hadoop. Upgrade to 1.15.1.<br>
+    🔗 <a href="https://securityaffairs.com/177565/security/canary-exploit-tool-allows-to-find-servers-affected-by-apache-parquet-flaw.html" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>🕵️ Adversaries & Attacks</h2>
 
-    <p>🧪 <b>Infostealer Malware Surges 500% in 2024</b><br>
-    Over 1.7B credentials leaked. Gen Z remains highly vulnerable due to password reuse.<br>
-    🔗 <a href="https://www.cysecurity.news/2025/05/infostealer-malware-soars-500-as-17.html" target="_blank">Read more</a></p>
+    <p>📹 <b>Kickidler Tool Abused by Ransomware Groups</b><br>
+    Deployed post-exploit via malvertising for RVTools. Used for stealthy monitoring & credential theft.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/kickidler-employee-monitoring-software-abused-in-ransomware-attacks/" target="_blank">Read more</a></p>
 
-    <p>🐼 <b>Smishing Triad’s Panda Shop Reaches 60M Victims Monthly</b><br>
-    Uses Telegram, RCS, and OTP capture for wide-scale phishing-as-a-service. Cross-border action remains limited.<br>
-    🔗 <a href="https://www.infosecurity-magazine.com/news/smishing-triad-upgrades-tools/" target="_blank">Read more</a></p>
+    <p>🇷🇺 <b>ColdRiver (Star Blizzard) Deploys LostKeys</b><br>
+    ClickFix phishing drops malware targeting Western entities. Tracked by Google TAG.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/google-links-new-lostkeys-data-theft-malware-to-russian-cyberspies/" target="_blank">Read more</a></p>
 
-    <p>💥 <b>DieNet Hacktivists Launch Over 60 DDoS Attacks Since March</b><br>
-    U.S. and Iraqi systems targeted via DDoS-as-a-service. No unique infrastructure identified.<br>
-    🔗 <a href="https://www.netscout.com/blog/asert/profiling-dienet-new-hacktivist-threat" target="_blank">Read more</a></p>
+    <p>📦 <b>Compromised npm Package 'rand-user-agent'</b><br>
+    Injects RAT via obfuscated code. Uninstall alone won’t remove malware—scan affected systems.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/supply-chain-attack-hits-npm-package-with-45-000-weekly-downloads/" target="_blank">Read more</a></p>
 
-    <p>🕷️ <b>2.py Infostealer Combines Keylogger and Fake Login Server</b><br>
-    Python RAT includes phishing server for Google/Microsoft. Low AV detection and active exfiltration to Telegram.<br>
-    🔗 <a href="https://isc.sans.edu/diary/rss/31924" target="_blank">Read more</a></p>
+    <p>📧 <b>Brazil Spam Campaign Uses RMM Tools</b><br>
+    Dropbox installers used to install trial RMMs; delayed activation. C-suite targets confirmed.<br>
+    🔗 <a href="https://blog.talosintelligence.com/spam-campaign-targeting-brazil-abuses-rmm-tools/" target="_blank">Read more</a></p>
 
-    <p>📂 <b>SAP NetWeaver CVE-2025-31324 Sees Second Wave of Attacks</b><br>
-    New wave uses previously deployed webshells and open-source RCEs. Federal patching deadline: May 20.<br>
-    🔗 <a href="https://securityaffairs.com/177522/hacking/experts-warn-of-a-second-wave-of-attacks-targeting-sap-netweaver-bug-cve-2025-31324.html" target="_blank">Read more</a></p>
+    <p>⚔️ <b>Pakistan Cyber Force Hacks Indian Defense Sites</b><br>
+    Defacements and data leaks from MES & AVNL. Part of escalating regional cyber conflict.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/pakistan-based-hackers-launch-cyber.html" target="_blank">Read more</a></p>
 
-    <p>💳 <b>Panda Shop Smishing Kit Hits Apple Pay and Google Wallet</b><br>
-    Updated kit sends 2M SMS/day. Advanced templates target card and mobile payment data globally.<br>
-    🔗 <a href="https://securityaffairs.com/177502/cyber-crime/smishing-on-a-massive-scale-panda-shop-chinese-carding-syndicate.html" target="_blank">Read more</a></p>
+    <p>🔌 <b>WordPress Malware Uses Cron Persistence</b><br>
+    Injects hidden plugins & fake admin URLs. Look for "emergency_login" & wpconsole.php.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/harmful-wordpress-plugin-posing-as.html" target="_blank">Read more</a></p>
 
-    <p>🐇 <b>Reckless Rabbit Scams Use Facebook Ads, Deepfake Celebrities</b><br>
-    Tied to Myanmar scam compounds and \$40B fraud economy. Cloaking, fake crypto sites, call centers used.<br>
-    🔗 <a href="https://thehackernews.com/2025/05/new-investment-scams-use-facebook-ads.html" target="_blank">Read more</a></p>
+    <p>🛰️ <b>Lemon Sandstorm Targets CNI in Middle East</b><br>
+    Maintained deep IT access using VPN creds; likely sabotage prep, not data theft.<br>
+    🔗 <a href="https://www.darkreading.com/cyberattacks-data-breaches/lemon-sandstorm-risks-middle-east-infrastructure" target="_blank">Read more</a></p>
 
-    <p>🇵🇹 <b>Lampion Banking Malware Targets Portuguese Taxpayers</b><br>
-    ClickFix social engineering used to deliver multi-stage malware via phishing ZIPs. New VB loader variant detected.<br>
-    🔗 <a href="https://unit42.paloaltonetworks.com/lampion-malware-clickfix-lures/" target="_blank">Read more</a></p>
-
-    <p>💣 <b>Linux Wiper Hidden in Malicious Go Modules</b><br>
-    Modules on GitHub used `dd` to wipe `/dev/sda`. Payload triggered instantly, causing total data loss.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/linux-wiper-malware-hidden-in-malicious-go-modules-on-github/" target="_blank">Read more</a></p>
+    <p>👮 <b>DDoS-for-Hire Platform Takedown in Poland</b><br>
+    Europol busts operators of Jetstress, Neostress, Cfxapi in coordinated stresser crackdown.<br>
+    🔗 <a href="https://hackread.com/europol-poland-bust-ddos-for-hire-operation-arrest-4/" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
-    <h2>📁 Others</h2>
+    <h2>📈 Trends</h2>
 
-    <p>📛 <b>MITRE CVE Program Faces Funding Crisis</b><br>
-    With funding extended only 11 months, experts warn of potential collapse in global vulnerability tracking.<br>
-    🔗 <a href="https://www.helpnetsecurity.com/2025/05/06/cve-program-foundation/" target="_blank">Read more</a></p>
+    <p>🔁 <b>Push-Bombing Attacks Undermine MFA</b><br>
+    Overwhelming MFA prompts trick users into authorizing breaches. Adopt phishing-resistant MFA now.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/push-bombing-silent-threat-undermining.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🔓 Breaches & Leaks</h2>
+
+    <p>💰 <b>VC Giant Insight Partners Confirms Breach</b><br>
+    Social engineering attack exposed investor financial and personal data in January.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/vc-giant-insight-partners-confirms-investor-data-stolen-in-breach/" target="_blank">Read more</a></p>
+
+    <p>📚 <b>Pearson GitLab Leak Exposes Cloud Credentials</b><br>
+    Public .git/config exposed AWS, GCP, and more. Terabytes allegedly stolen.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/education-giant-pearson-hit-by-cyberattack-exposing-customer-data/" target="_blank">Read more</a></p>
+
+    <p>🏫 <b>PowerSchool Extortion Spreads to Districts</b><br>
+    Same stolen data reused despite earlier ransom payment. Supply chain risk persists.<br>
+    🔗 <a href="https://cyberscoop.com/powerschool-customers-hit-by-downstream-extortion-threats/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📌 Others</h2>
+
+    <p>🧠 <b>CrowdStrike Lays Off 5% Citing AI Restructuring</b><br>
+    Despite growth, cost-cutting and AI cited. Layoffs follow 2024 Falcon platform failures.<br>
+    🔗 <a href="https://cyberscoop.com/crowdstrike-layoffs-5-percent-george-kurtz/" target="_blank">Read more</a></p>
   </div>
 
   <p style="text-align:center;">
