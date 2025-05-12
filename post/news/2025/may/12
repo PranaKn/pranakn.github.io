@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cybersecurity Newsfeed - 12/05/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 12/05/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>🌐 <b>Cisco IOS XE Wireless RCE (CVE-2025-20188)</b><br>
+    JWT token exploit via disabled-by-default feature. Patch or disable immediately.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/cisco-fixes-max-severity-ios-xe-flaw-letting-attackers-hijack-devices/" target="_blank">Read more</a></p>
+
+    <p>📦 <b>SAP NetWeaver RCE (CVE-2025-31324)</b><br>
+    Critical JSP upload flaw used in the wild; Chaya_004 group involved.<br>
+    🔗 <a href="https://unit42.paloaltonetworks.com/threat-brief-sap-netweaver-cve-2025-31324/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>🧠 <b>Operation Moonlander Botnet Takedown</b><br>
+    FBI dismantles 20-year-old botnet used for Anyproxy/5Socks; \$46M profit from hacked routers.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/police-dismantles-botnet-selling-hacked-routers-as-residential-proxies/" target="_blank">Read more</a></p>
+
+    <p>📊 <b>SAP NetWeaver Exploited by Chaya_004</b><br>
+    Webshells and Chinese IPs observed; over 1,200 instances affected globally.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/chinese-hackers-behind-attacks-targeting-sap-netweaver-servers/" target="_blank">Read more</a></p>
+
+    <p>🔒 <b>StealC Info-Stealer Gets Upgrade</b><br>
+    Enhanced stealth, multi-monitor screenshots, and Telegram exfiltration.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/stealc-malware-gets-major-upgrade.html" target="_blank">Read more</a></p>
+
+    <p>📩 <b>PDF Invoice Phishing Delivers RATty</b><br>
+    Cross-platform JAR malware targets Italian users using Dropbox + Ngrok chain.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/multiplatform-malware-campaign-uses-pdf.html" target="_blank">Read more</a></p>
+
+    <p>🧪 <b>Blob URI Phishing</b><br>
+    New method bypasses SEG filters using local fake login pages.<br>
+    🔗 <a href="https://hackread.com/phishing-attack-blob-uri-fake-login-pages-browser/" target="_blank">Read more</a></p>
+
+    <p>🧱 <b>Malicious NPM Packages Target Cursor AI</b><br>
+    3,200+ downloads; persistent malware via trusted code editor.<br>
+    🔗 <a href="https://www.securityweek.com/malicious-npm-packages-target-cursor-ais-macos-users/" target="_blank">Read more</a></p>
+
+    <p>🇧🇷 <b>Brazil NF-e Spam Campaign</b><br>
+    RMM trials abused for initial access; finance/HR execs targeted.<br>
+    🔗 <a href="https://thehackernews.com/2025/05/initial-access-brokers-target-brazil.html" target="_blank">Read more</a></p>
+
+    <p>🖼️ <b>Obfuscated .NET Malware in Bitmaps</b><br>
+    Four-stage loader hides malware in image resources. Targets Turkey & Asia.<br>
+    🔗 <a href="https://unit42.paloaltonetworks.com/malicious-payloads-as-bitmap-resources-hide-net-malware/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📈 Trends</h2>
+
+    <p>📶 <b>FBI Warns on EoL Router Botnets</b><br>
+    TheMoon malware exploits outdated routers for proxy botnets. Replace or lock down now.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/fbi-end-of-life-routers-hacked-for-cybercrime-proxy-networks/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🔓 Breaches & Leaks</h2>
+
+    <p>🏥 <b>Ascension Patient Data Breach</b><br>
+    Over 430,000 affected; tied to third-party software flaw exploited by Clop.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/ascension-says-recent-data-breach-affects-over-430-000-patients/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🛠️ Tools</h2>
+
+    <p>🪓 <b>Bantam: Post-Exploitation Token Manager</b><br>
+    C# tool for stealth privilege ops without Mimikatz. Ideal for red teaming.<br>
+    🔗 <a href="https://github.com/gellin/bantam" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
