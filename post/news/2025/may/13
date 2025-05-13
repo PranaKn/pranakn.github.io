@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 13/05/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 13/05/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>🖥️ <b>ASUS DriverHub Flaw Enables Remote Code Execution</b><br>
+    CVE-2025-3462/3463 affect ASUS DriverHub, allowing malicious websites to execute files silently via weak Origin validation. Exploit uses spoofed domains and tampered `.ini` files. Patch released April 18. Disable DriverHub in BIOS for extra protection.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/asus-driverhub-flaw-let-malicious-sites-run-commands-with-admin-rights/" target="_blank">Read more</a></p>
+
+    <p>🔐 <b>SentinelOne EDR Exploit Enables Babuk Ransomware</b><br>
+    Using a "Bring Your Own Installer" technique, attackers bypass SentinelOne protections mid-upgrade to deploy Babuk. Affects legacy and current agents unless "Online Authorization" is enabled. SentinelOne updated defaults and warned vendors.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/sentinelone-edr-exploit-allows-babuk.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>📨 <b>Output Messenger Zero-Day Used by Marbled Dust</b><br>
+    Microsoft links exploitation of CVE-2025-27920/27921 in Output Messenger to Türkiye-backed Marbled Dust. Targets include Kurdish users in Iraq. Attack chain involves backdoors, DNS hijacking, and impersonation tactics.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/output-messenger-flaw-exploited-as-zero-day-in-espionage-attacks/" target="_blank">Read more</a><br>
+    🔗 <a href="https://www.microsoft.com/en-us/security/blog/2025/05/12/marbled-dust-leverages-zero-day-in-output-messenger-for-regional-espionage/" target="_blank">Microsoft blog</a></p>
+
+    <p>🐧 <b>APT36 Expands ClickFix Campaigns to Linux</b><br>
+    Transparent Tribe now targets Linux with fake Indian MoD sites. Linux users are prompted to run shell commands that may deliver malware in the future. Currently drops only images.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/hackers-now-testing-clickfix-attacks-against-linux-targets/" target="_blank">Read more</a></p>
+
+    <p>🔎 <b>Varonis Warns of SEO Malware and Azure Flaw</b><br>
+    SEO poisoning leads to infections with backdoors like SMOKEDHAM. Separately, a critical flaw in AZNFS-mount allows root privilege escalation. Microsoft rated it low severity. Users should update to 2.0.11.<br>
+    🔗 <a href="https://hackread.com/seo-poisoning-campaign-hit-it-admins-with-malware/" target="_blank">Read more</a></p>
+
+    <p>💸 <b>*FreeDrain* Phishing Uses SEO and Clone Wallet Sites</b><br>
+    FreeDrain campaign hijacks crypto via SEO-boosted fake wallet pages. 38,000+ subdomains used. Victims redirected to clone sites that steal seed phrases. Group active since 2022, likely from India/Sri Lanka.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/freedrain-phishing-scam-crypto/" target="_blank">Read more</a></p>
+
+    <p>🌐 <b>IoT Botnet from Turkey Turns Devices into Proxies</b><br>
+    Black Lotus Labs found a large botnet using outdated IoT devices as rentable proxies. Used for ad fraud and credential stuffing. No auth required, 1,000 active proxies across 80+ countries.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/proxy-network-infects-iot-devices/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📁 Breaches & Leaks</h2>
+
+    <p>✈️ <b>Hacktivists Leak GlobalX Deportation Flight Data</b><br>
+    Anonymous-linked actors breached U.S. contractor GlobalX Airlines. Data includes sensitive flight logs and deportee details. Used leaked token to access AWS, GitHub, and Airbus tools. Site defaced with political messages.<br>
+    🔗 <a href="https://hackread.com/anonymous-hackers-flight-data-us-deportation-airline-globalx/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📊 Trends</h2>
+
+    <p>🧩 <b>Browser Extensions Are Enterprise Data Risks</b><br>
+    LayerX report: 99% of employees use extensions, many high-risk or sideloaded. GenAI add-ons increase exposure. 54% of extensions are from anonymous publishers. Urges extension auditing and adaptive policies.<br>
+    🔗 <a href="https://go.layerxsecurity.com/enterprise-browser-extension-security-report-2025" target="_blank">Read more</a></p>
+
+    <p>💥 <b>DDoS Used as Cover for Stealthy Intrusions</b><br>
+    New hybrid attack tactics combine DDoS floods with quiet breaches. DDoS serves as smokescreen for data theft and privilege escalation. SOC teams urged to adopt layered incident response.<br>
+    🔗 <a href="https://www.tripwire.com/state-of-security/subtle-form-siege-ddos-smokescreens-cover-quiet-data-breaches" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
