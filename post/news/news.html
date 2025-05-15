@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cybersecurity Newsfeed - 14/05/25</title>
+  <title>Cybersecurity Newsfeed - 15/05/25</title>
   <style>
     body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
     h1, h2 { color: #c9a227; text-align: center; }
@@ -16,70 +16,111 @@
 <body>
 
   <h1>📰 Cybersecurity Newsfeed</h1>
-  <h2>📅 14/05/25</h2>
+  <h2>📅 15/05/25</h2>
 
   <div class="news-item">
     <h2>🔥 Vulnerabilities</h2>
 
-    <p>🪟 <b>Five Exploited Microsoft Windows Flaws Added to KEV</b><br>
-    CISA added five Windows vulnerabilities—three UAFs, a buffer overflow, and a scripting engine bug—to its KEV Catalog (CVE-2025-30400, -32701, -32709, -32706, -30397). Exploitation enables LPE or RCE. Agencies must patch by June 3, 2025.<br>
-    🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/05/13/cisa-adds-five-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
+    <p>🛡️ <b>CISA Adds Fortinet CVE-2025-32756 to KEV Catalog</b><br>
+    CISA added a critical Fortinet vulnerability (CVE-2025-32756) to its KEV list. Exploited in the wild, it affects FortiVoice, FortiMail, FortiNDR, FortiRecorder, and FortiCamera, enabling RCE via crafted HTTP requests. Fortinet urges patching or disabling admin interfaces.<br>
+    🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/05/14/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">Read more</a></p>
 
-    <p>🛠️ <b>Microsoft Patch Tuesday: 72 Bugs, 5 Exploited Zero-Days</b><br>
-    Microsoft patched 72 vulnerabilities, including five actively exploited flaws—four LPEs and one scripting engine RCE. SYSTEM-level access was a common risk. Vendors like Apple, Cisco, and Fortinet also issued major fixes.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-may-2025-patch-tuesday-fixes-5-exploited-zero-days-72-flaws/" target="_blank">Read more</a></p>
+    <p>🛠️ <b>Ivanti Zero-Days Exploited in Endpoint Manager Mobile</b><br>
+    CERT-EU discovered two Ivanti EPMM flaws (CVE-2025-4427 and CVE-2025-4428) enabling unauthenticated RCE. These stem from third-party libraries and have been exploited in targeted attacks. Portal ACLs or WAFs may mitigate risk temporarily.<br>
+    🔗 <a href="https://www.darkreading.com/endpoint-security/ivanti-epmm-zero-day-flaws-exploited" target="_blank">Read more</a></p>
 
-    <p>🔐 <b>New Intel CPU Flaw Bypasses Spectre Mitigations</b><br>
-    ETH Zurich found "Branch Privilege Injection" (CVE-2024-45332), a Spectre-like flaw in Intel CPUs 9th gen+. PoC exfiltrates hashed passwords from `/etc/shadow`. Microcode patches cause up to 8.3% performance drop.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/new-intel-cpu-flaws-leak-sensitive-data-from-privileged-memory/" target="_blank">Read more</a></p>
+    <p>🔧 <b>Juniper, VMware, Zoom Patch Dozens of Flaws</b><br>
+    Juniper addressed ~90 third-party bugs, VMware fixed XSS and file handling issues, and Zoom patched 9 Workplace App vulnerabilities including privilege escalation (CVE-2025-30663).<br>
+    🔗 <a href="https://www.securityweek.com/vulnerabilities-patched-by-juniper-vmware-and-zoom/" target="_blank">Read more</a></p>
 
-    <p>🍎 <b>Apple Fixes 30+ Vulnerabilities in iOS, macOS</b><br>
-    Apple patched critical flaws across platforms. iPhone 16e's C1 modem received its first patch for baseband RCE. Updates also fixed Finder, Core Bluetooth, and WebKit bugs. No active exploitation observed.<br>
-    🔗 <a href="https://cyberscoop.com/apple-security-update-c1-modem-privacy-fixes-may-2025/" target="_blank">Read more</a></p>
-
-    <p>🎥 <b>Zoom Fixes TOCTOU, Buffer, and Input Bugs</b><br>
-    Zoom patched CVE-2025-30663 (TOCTOU) and multiple sanitization issues. Vulnerabilities could lead to command execution or info leaks. Enterprise users urged to update immediately.<br>
-    🔗 <a href="https://hackread.com/zoom-fixes-high-risk-flaw-in-latest-update/" target="_blank">Read more</a></p>
-
-    <p>📞 <b>Fortinet Patches Exploited Zero-Day in FortiVoice</b><br>
-    CVE-2025-32756 is a stack buffer overflow allowing RCE via HTTP. Fortinet confirmed exploitation. FortiMail and FortiNDR also vulnerable. Fortinet shared IoCs and patch guidance.<br>
-    🔗 <a href="https://www.helpnetsecurity.com/2025/05/13/zero-day-exploited-to-compromise-fortinet-fortivoice-systems-cve-2025-32756/" target="_blank">Read more</a></p>
-
-    <p>🎨 <b>Adobe Fixes 39 Vulnerabilities Across Creative Suite</b><br>
-    Adobe patched 39 bugs, including seven critical ColdFusion flaws (CVSS 9.1). Photoshop, Illustrator, and Lightroom also affected. Patches coincide with Microsoft’s Patch Tuesday.
-    🔗 <a href="https://www.securityweek.com/adobe-patches-big-batch-of-critical-severity-software-flaws/" target="_blank">Read more</a></p>
-
-    <p>💼 <b>SAP NetWeaver Flaws Exploited in the Wild</b><br>
-    SAP released 16 new notes. CVE-2025-31324 (CVSS 10.0) exploited since Jan 2025 allows RCE. Related CVE-2025-42999 involves deserialization. Webshell abuse reported. Patch immediately.<br>
-    🔗 <a href="https://www.securityweek.com/sap-patches-another-critical-netweaver-vulnerability/" target="_blank">Read more</a></p>
+    <p>📡 <b>Samsung MagicINFO Flaw Used to Deploy Mirai</b><br>
+    CVE-2025-4632 allows path traversal and file writes on Samsung MagicINFO 9. Exploited to deploy Mirai, the bug bypasses CVE-2024-7399. Users should upgrade to 21.1052.0 immediately.<br>
+    🔗 <a href="https://thehackernews.com/2025/05/samsung-patches-cve-2025-4632-used-to.html" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>🕵️ Adversaries & Attacks</h2>
 
-    <p>🇰🇵 <b>Konni Targets Ukraine with Geopolitical Phishing</b><br>
-    DPRK-linked Konni group uses CHM/LNK malware hosted on MEGA to collect intel from Ukrainian government targets. Likely supports North Korea’s alliance with Russia.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/north-korea-ramps-up-cyberspying-in-ukraine-to-assess-war-risk/" target="_blank">Read more</a></p>
+    <p>👤 <b>Kosovo Extradites BlackDB Admin to U.S.</b><br>
+    Liridon Masurica (@blackdb) faces six federal charges for operating the BlackDB cybercrime marketplace since 2018. The FBI led the takedown.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/kosovo-extradites-blackdb-admin-to-face-us-cybercrime-charges/" target="_blank">Read more</a></p>
 
-    <p>🇮🇳 <b>India-Pakistan Cyber War Escalates</b><br>
-    Over 200 attacks occurred after Pahalgam terror incident. DDoS and defacements dominated. Technisanct observed 36 Pak and 14 Indian groups involved. National cyber defense strategy advised.<br>
-    🔗 <a href="https://www.cysecurity.news/2025/05/cyber-war-escalates-between-indian-and.html" target="_blank">Read more</a></p>
+    <p>🐍 <b>“Dance of the Hillary” Malware Hits India</b><br>
+    Disguised as video/doc files, this malware campaign targets Indian users via WhatsApp, Telegram, and more, stealing personal and financial data.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/pakistans-dance-of-hillary-malware.html" target="_blank">Read more</a></p>
 
-    <p>🕵️‍♂️ <b>Marbled Dust Zero-Day Campaign Recap</b><br>
-    Marbled Dust used CVE-2025-27920 in Output Messenger to spy on Kurdish users since April 2024. Dropped Go-based backdoors and impersonated users via api.wordinfos[.]com.<br>
-    🔗 <a href="https://securityaffairs.com/177758/apt/apt-group-exploited-output-messenger-zero-day-to-target-kurdish-military-operating-in-iraq.html" target="_blank">Read more</a></p>
+    <p>📦 <b>Malicious PyPI Packages Exploit Gmail as C2</b><br>
+    Socket found PyPI packages mimicking “Coffin” abusing Gmail SMTP for covert C2 and exfiltration. Over 55,000 downloads reported.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/malicious-pypi-packages-exploit-gmail.html" target="_blank">Read more</a></p>
 
-    <p>🐍 <b>Malicious PyPI Package Targets Solana Developers</b><br>
-    Package `solana-token` exfiltrated secrets via fake `register_node()` call. Reached 761 downloads before removal. Highlights risks of supply chain attacks on crypto ecosystems.<br>
-    🔗 <a href="https://thehackernews.com/2025/05/malicious-pypi-package-posing-as-solana.html" target="_blank">Read more</a></p>
+    <p>🧬 <b>Chihuahua Stealer Evades Detection, Targets Crypto</b><br>
+    This .NET infostealer uses AES-GCM encryption, obfuscated PowerShell loaders, and targets browser and wallet data.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/chihuahua-stealer-browser-crypto/" target="_blank">Read more</a></p>
+
+    <p>📱 <b>Kaleidoscope Android Ad Fraud Campaign Exposed</b><br>
+    Over 130 apps push unskippable ads, generating millions in fake installs. Google Play Protect blocks it; avoid third-party stores.<br>
+    🔗 <a href="https://www.malwarebytes.com/blog/news/2025/05/android-users-bombarded-with-unskippable-ads" target="_blank">Read more</a></p>
+
+    <p>💸 <b>Xinbi Telegram Market Launders $8.4B in Crypto</b><br>
+    Elliptic uncovered Xinbi Guarantee, a massive illicit market linked to stalking, laundering, and North Korean cybercrime.<br>
+    🔗 <a href="https://thehackernews.com/2025/05/xinbi-telegram-market-tied-to-84b-in.html" target="_blank">Read more</a></p>
+
+    <p>☁️ <b>DarkCloud Stealer Uses AutoIt to Evade Detection</b><br>
+    Targeting U.S., Brazil, and Poland, this malware uses phishing, AutoIt scripts, and file-sharing platforms to spread.<br>
+    🔗 <a href="https://unit42.paloaltonetworks.com/darkcloud-stealer-and-obfuscated-autoit-scripting/" target="_blank">Read more</a></p>
+
+    <p>🛰️ <b>Earth Ammit Linked to VENOM and TIDRONE Campaigns</b><br>
+    Targeting Taiwan and South Korea, these campaigns compromise supply chains and deploy tools like CXCLNT, REVSOCK, and Cobalt Strike.<br>
+    🔗 <a href="https://thehackernews.com/2025/05/earth-ammit-breached-drone-supply.html" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
-    <h2>📊 Others</h2>
+    <h2>📊 Trends</h2>
 
-    <p>📱 <b>Android 16 Adds Scam and Malware Defenses</b><br>
-    Google previews scam-blocking AI in Messages, suspicious call protections, and upgraded Find My Device. Privacy-focused on-device detection and sandboxing also expanded in Advanced Protection.<br>
-    🔗 <a href="https://cyberscoop.com/google-android-16-security-features-update-scam-protection-advanced/" target="_blank">Read more</a></p>
+    <p>🧨 <b>RansomEXX, BianLian Exploit SAP NetWeaver Bug</b><br>
+    CVE-2025-31324 is now being exploited by ransomware groups despite April patches. Over 580 systems already compromised.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/ransomware-gangs-join-ongoing-sap-netweaver-attacks/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📁 Breaches & Leaks</h2>
+
+    <p>🧾 <b>AHRC Data Breach Leaks Sensitive Submissions</b><br>
+    670 human rights-related documents were exposed online due to misconfiguration. AHRC has disabled forms and notified OAIC.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/australian-human-rights-commission-leaks-docs-to-search-engines/" target="_blank">Read more</a></p>
+
+    <p>🏗️ <b>Cyberattack Forces Nucor Steel Plant Shutdowns</b><br>
+    Nucor confirmed a cyber incident affecting production and IT systems. No attribution or ransomware confirmation yet.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/steel-giant-nucor-corporation-facing-disruptions-after-cyberattack/" target="_blank">Read more</a><br>
+    🔗 <a href="https://www.theregister.com/2025/05/14/nucor_steel_attack/" target="_blank">Additional coverage</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📦 Others</h2>
+
+    <p>🐧 <b>Microsoft Fixes Linux Dual-Boot Secure Boot Bug</b><br>
+    May 2025 patches resolve SBAT Secure Boot errors affecting Linux after Windows updates. Dual-boot systems should now work properly.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-linux-boot-issues-on-dual-boot-windows-systems/" target="_blank">Read more</a></p>
+
+    <p>🌐 <b>Chrome to Block Admin-Level Launches</b><br>
+    Google Chrome adopts de-elevation to block running with admin rights by default. Security boost already used in Edge.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/google/google-chrome-to-block-admin-level-browser-launches-for-better-security/" target="_blank">Read more</a></p>
+
+    <p>📛 <b>CVE Program Avoids Shutdown, Foundation Created</b><br>
+    MITRE’s CVE program nearly halted in April. In response, the CVE Foundation will launch in December to diversify support.<br>
+    🔗 <a href="https://cyberscoop.com/cve-program-funding-crisis-cve-foundation-mitre/" target="_blank">Read more</a></p>
+
+    <p>🇪🇺 <b>ENISA Launches European Vulnerability Database</b><br>
+    EUVD introduces EU-assigned vulnerability IDs and aggregates European cyber threat data. Designed for sovereignty and CVE interop.<br>
+    🔗 <a href="https://www.itsecurityguru.org/2025/05/14/enisa-launches-european-vulnerability-database-to-bolster-eu-cyber-resilience/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🎯 Hunting Opportunities</h2>
+
+    <p>🧠 <b>Intel471 Shares Medusa Ransomware Hunting Toolkit</b><br>
+    Medusa group’s tactics include COM object UAC bypass. Intel471 offers free queries compatible with EDR/SIEM to help detect indicators.<br>
+    🔗 <a href="https://intel471.com/blog/threat-hunting-case-study-medusa-ransomware" target="_blank">Read more</a></p>
   </div>
 
   <p style="text-align:center;">
