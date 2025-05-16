@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 16/05/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 16/05/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>📡 <b>CISA Adds Three Exploited CVEs to KEV Catalog</b><br>
+    CVE-2024-12987 (DrayTek routers), CVE-2025-4664 (Google Chrome), and CVE-2025-42999 (SAP NetWeaver) have been added to CISA’s KEV list. All are actively exploited. Admins must patch or apply mitigations urgently.<br>
+    🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/05/15/cisa-adds-three-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
+
+    <p>🏆 <b>Pwn2Own Berlin 2025 Awards $260K on Day 1</b><br>
+    DEVCORE and STARLabs hacked Windows 11, Red Hat Linux, and Oracle VirtualBox using zero-days. Docker escapes were also achieved. Vendors have 90 days to patch.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/windows-11-and-red-hat-linux-virtualbox-hacked-on-first-day-of-pwn2own/" target="_blank">Read more</a></p>
+
+    <p>🌐 <b>Google Patches CVE-2025-4664 in Chrome</b><br>
+    Chrome’s Loader flaw leaks cross-origin data via crafted HTML. A patch is live in 136.0.7103.113/114. Exploited in the wild, it may enable OAuth theft and account compromise.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/google-fixes-high-severity-chrome-flaw-with-public-exploit/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>🎯 <b>APT28 Exploits Webmail XSS in “RoundPress” Campaign</b><br>
+    Russian group APT28 targeted government/military bodies via XSS bugs in Roundcube, Horde, and Zimbra to steal emails and credentials without implants.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/government-webmail-hacked-via-xss-bugs-in-global-spy-campaign/" target="_blank">Read more</a></p>
+
+    <p>📬 <b>Meta Mirage Phishing Hijacks Business Accounts</b><br>
+    CTM360 exposed a phishing campaign using GitHub/Firebase-hosted fake alerts to steal Meta credentials and OTPs. Used for fraudulent ads.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/meta-mirage-phishing-campaign-poses.html" target="_blank">Read more</a></p>
+
+    <p>🍎 <b>Atomic Stealer Malware Targets macOS Users</b><br>
+    Fake “I’m not a robot” CAPTCHAs trick users into pasting malicious Terminal code, infecting them with Atomic Stealer malware.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/one-click-is-all-it-takes-new-mac.html" target="_blank">Read more</a></p>
+
+    <p>🧬 <b>Fileless Remcos RAT Delivered via PowerShell & LNK</b><br>
+    A ZIP file triggers mshta.exe to deploy Remcos stealthily using PowerShell. Uses memory execution and API tricks to evade AVs.<br>
+    🔗 <a href="https://hackread.com/fileless-remcos-rat-attack-antivirus-powershell-scripts/" target="_blank">Read more</a></p>
+
+    <p>❄️ <b>FrigidStealer Masquerades as Safari Update</b><br>
+    TA2726/TA2727 spread FrigidStealer via fake Safari DMG updates. Uses AppleScript, DNS exfiltration, and deletes itself post-infection.<br>
+    🔗 <a href="https://hackread.com/frigidstealer-malware-macos-fake-safari-browser-update/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📁 Breaches & Leaks</h2>
+
+    <p>💰 <b>Coinbase Breach Affects ~1M Users</b><br>
+    Bribed support staff helped attackers steal PII. A \$20M ransom was rejected; Coinbase offered a \$20M bounty instead.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/coinbase-discloses-breach-faces-up-to-400-million-in-losses/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📦 Others</h2>
+
+    <p>🧅 <b>Tor Releases Oniux for Linux App Anonymization</b><br>
+    Oniux uses Linux namespaces and virtual interfaces for kernel-level app isolation. Promises leak-proof Tor routing for any Linux program.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/new-tor-oniux-tool-anonymizes-any-linux-apps-network-traffic/" target="_blank">Read more</a></p>
+
+    <p>🔐 <b>Windows 10 Update Triggers BitLocker Recovery</b><br>
+    KB5058379 causes random BitLocker prompts tied to BIOS TXT/virtualization settings. Microsoft has not officially acknowledged the bug.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/windows-10-kb5058379-update-triggering-bitlocker-recovery-after-install/" target="_blank">Read more</a></p>
+
+    <p>🏥 <b>NHS Issues Voluntary Cybersecurity Charter</b><br>
+    Following Synnovis ransomware fallout, NHS urges suppliers to adopt security pledges (MFA, patching, incident reporting). A self-assessment will launch in Autumn 2025.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/endemic-ransomware-nhs-supplier/" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
