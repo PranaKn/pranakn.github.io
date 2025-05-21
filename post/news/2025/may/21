@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 21/05/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 21/05/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+    <p>📶 <b>O2 4G VoLTE Flaw Leaks Location and IDs</b><br>
+    Researcher found SIP headers leaking IMSI, IMEI, and location data even with VoLTE off. Exploitation requires minimal skills.<br>
+    🔗 <a href="https://securityaffairs.com/178114/hacking/4g-calling-volte-flaw-allowed-to-locate-any-o2-customer-with-a-phone-call.html" target="_blank">Read more</a></p>
+    <p>🔐 <b>OpenPGP.js Vulnerability Enables Message Spoofing</b><br>
+    CVE-2025-47934 allows attackers to fake signed messages in encrypted comms. Update to 5.11.3 or 6.1.1 urged.<br>
+    🔗 <a href="https://www.theregister.com/2025/05/20/openpgp_js_flaw/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+    <p>🖥️ <b>RVTools Supply Chain Attack Distributes Bumblebee</b><br>
+    Fake domains pushed malware-laced installers. Official sites unaffected but temporarily offline.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/rvtools-hit-in-supply-chain-attack-to-deliver-bumblebee-malware/" target="_blank">Read more</a></p>
+    <p>🌐 <b>Hazy Hawk Hijacks Trusted Subdomains</b><br>
+    DNS misconfigs on CDC, EY, UNICEF exploited for phishing and malware via abandoned CNAMEs.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/hazy-hawk-gang-exploits-dns-misconfigs-to-hijack-trusted-domains/" target="_blank">Read more</a></p>
+    <p>🧬 <b>VanHelsing Ransomware Source Code Leaked</b><br>
+    Code released after insider dispute. Could lead to wider cloning and usage.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/vanhelsing-ransomware-builder-leaked-on-hacking-forum/" target="_blank">Read more</a></p>
+    <p>⚔️ <b>Over 1.5M Cyberattacks Target India Post-Pahalgam</b><br>
+    Mostly mitigated, the campaign saw efforts from APT36, Pakistan Cyber Force and others.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/cyber-warfare-after-pahalgam-over-15.html" target="_blank">Read more</a></p>
+    <p>🎥 <b>Noodlophile Malware Spread via Fake AI Tools</b><br>
+    Posing as AI video generators, malware steals credentials via Telegram. Targets crypto and browsers.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/new-ai-video-tool-scam-delivers.html" target="_blank">Read more</a></p>
+    <p>📧 <b>Phishing Attack Combines AES, npm, and Microsoft 365</b><br>
+    Campaign uses .htm AES-encrypted files and fake DocuSign alerts hosted on trusted CDNs.<br>
+    🔗 <a href="https://www.darkreading.com/threat-intelligence/novel-phishing-attack-combines-aes-npm-packages" target="_blank">Read more</a></p>
+    <p>🧩 <b>RVTools Trojanized Again with Bumblebee Payload</b><br>
+    Malicious installer found from typosquatted domains. Defender detects `version.dll` loader.<br>
+    🔗 <a href="https://www.darkreading.com/cyberattacks-data-breaches/bumblebee-malware-trojanized-vmware-utility" target="_blank">Read more</a></p>
+    <p>🛍️ <b>Scattered Spider Hits Retailers with DragonForce RaaS</b><br>
+    Attacks on Dior, Harrods, and others involve phishing and IT help desk abuse.<br>
+    🔗 <a href="https://www.darkreading.com/threat-intelligence/large-retailers-scattered-spider-ransomware-web" target="_blank">Read more</a></p>
+    <p>🔑 <b>KeeLoader Trojan Steals Credentials via Fake KeePass</b><br>
+    Malware activates on database open. Used in ransomware campaigns.<br>
+    🔗 <a href="https://www.helpnetsecurity.com/2025/05/20/trojanized-keepass-keeloader-ransomware/" target="_blank">Read more</a></p>
+    <p>🌍 <b>Russia, China, NK Escalate Attacks on Ukraine & Allies</b><br>
+    ZEROLOT wiper, PteroBox, Korplug, and RomCom zero-days deployed. Crypto theft exceeds $1.5B.<br>
+    🔗 <a href="https://www.helpnetsecurity.com/2025/05/21/apt-groups-attacks-eu-ukraine/" target="_blank">Read more</a></p>
+    <p>🐍 <b>MarsSnake Backdoor Targets Middle East Org</b><br>
+    UnsolicitedBooker APT uses fake flight docs and VBA macros to deploy backdoor.<br>
+    🔗 <a href="https://securityaffairs.com/178105/malware/china-linked-unsolicitedbooker-used-new-backdoor-marssnake.html" target="_blank">Read more</a></p>
+    <p>📦 <b>Malicious Packages Abuse Social Media APIs</b><br>
+    PyPI/npm packages used for verifying stolen emails and exfil via QQ. Linked to Phoenix Hyena.<br>
+    🔗 <a href="https://thehackernews.com/2025/05/malicious-pypi-packages-exploit.html" target="_blank">Read more</a></p>
+    <p>💰 <b>RedisRaider Mines Crypto on Compromised Linux Servers</b><br>
+    Go-based malware uses Redis config to deploy XMRig miners and spread.<br>
+    🔗 <a href="https://thehackernews.com/2025/05/go-based-malware-deploys-xmrig-miner-on.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📁 Breaches & Leaks</h2>
+    <p>🌐 <b>KrebsOnSecurity Hit by 6.3 Tbps DDoS Attack</b><br>
+    Aisuru botnet likely behind record attack. Tied to “Forky,” an operator selling tools on Telegram.<br>
+    🔗 <a href="https://krebsonsecurity.com/2025/05/krebsonsecurity-hit-with-near-record-6-3-tbps-ddos/" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
