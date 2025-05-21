@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cybersecurity Newsfeed - 20/05/25</title>
+  <title>Cybersecurity Newsfeed - 21/05/25</title>
   <style>
     body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
     h1, h2 { color: #c9a227; text-align: center; }
@@ -16,118 +16,70 @@
 <body>
 
   <h1>📰 Cybersecurity Newsfeed</h1>
-  <h2>📅 20/05/25</h2>
+  <h2>📅 21/05/25</h2>
 
   <div class="news-item">
     <h2>🔥 Vulnerabilities</h2>
-
-    <p>🚨 <b>Six Exploited Vulnerabilities Added to CISA KEV</b><br>
-    Ivanti EPMM, MDaemon, Output Messenger, Zimbra, and ZKTeco BioTime are under active exploitation. Vulnerabilities include auth bypass, XSS, and path traversal flaws.<br>
-    🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/05/19/cisa-adds-six-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
-
-    <p>🛡️ <b>Defendnot PoC Tool Disables Microsoft Defender</b><br>
-    Defendnot registers a fake AV via WSC API and injects into Taskmgr.exe to disable Defender protections. Flagged as malware by Microsoft.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/new-defendnot-tool-tricks-windows-into-disabling-microsoft-defender/" target="_blank">Read more</a></p>
-
-    <p>🏆 <b>Pwn2Own Berlin Day 2: $435K in Zero-Day Exploits</b><br>
-    Exploits hit SharePoint, ESXi, VirtualBox, RHEL, Firefox. AI targets like Redis and Nvidia Triton also breached. Total prize pool now at $695K.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-vmware-esxi-microsoft-sharepoint-zero-days-at-pwn2own/" target="_blank">Read more</a></p>
-
-    <p>🌐 <b>CISA Orders Patch for Actively Exploited Chrome Bug</b><br>
-    Chrome CVE-2025-4664 is now in the KEV catalog. Exploits leverage Link header to exfiltrate tokens. Google patched it in 136.0.7103.113/114.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/cisa-tags-recently-patched-chrome-bug-as-actively-exploited-zero-day/" target="_blank">Read more</a></p>
-
-    <p>🕵️ <b>Russia’s Fancy Bear Uses XSS to Spy on Ukraine</b><br>
-    RoundPress campaign exploits Roundcube, Horde, Zimbra, and MDaemon. Injects SpyPress malware via spearphishing for persistent access.<br>
-    🔗 <a href="https://hackread.com/russia-spypress-malware-exploits-webmails-spy-ukraine/" target="_blank">Read more</a></p>
-
-    <p>📶 <b>O2 UK Patched Location-Leaking VoLTE Flaw</b><br>
-    SIP header leak exposed IMSI, IMEI, and tower data. Attackers could locate users within 100m². Present since 2017.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/o2-uk-patches-bug-leaking-mobile-user-location-from-call-metadata/" target="_blank">Read more</a></p>
-
-    <p>🧱 <b>RomethemeKit WordPress Plugin Patched for RCE</b><br>
-    CVE-2025-30911 allowed Subscribers to install arbitrary plugins. Fixed in version 1.5.5 after incomplete 1.5.4 fix.<br>
-    🔗 <a href="https://www.infosecurity-magazine.com/news/rce-vulnerability-in-romethemekit/" target="_blank">Read more</a></p>
-
-    <p>🦊 <b>Firefox Zero-Days Patched After Pwn2Own Exploits</b><br>
-    CVE-2025-4918 and CVE-2025-4919 involve out-of-bounds JS access. No sandbox escape, but Mozilla issued urgent updates.<br>
-    🔗 <a href="https://securityaffairs.com/178064/security/mozilla-fixed-zero-days-demonstrated-at-pwn2own-berlin-2025.html" target="_blank">Read more</a></p>
+    <p>📶 <b>O2 4G VoLTE Flaw Leaks Location and IDs</b><br>
+    Researcher found SIP headers leaking IMSI, IMEI, and location data even with VoLTE off. Exploitation requires minimal skills.<br>
+    🔗 <a href="https://securityaffairs.com/178114/hacking/4g-calling-volte-flaw-allowed-to-locate-any-o2-customer-with-a-phone-call.html" target="_blank">Read more</a></p>
+    <p>🔐 <b>OpenPGP.js Vulnerability Enables Message Spoofing</b><br>
+    CVE-2025-47934 allows attackers to fake signed messages in encrypted comms. Update to 5.11.3 or 6.1.1 urged.<br>
+    🔗 <a href="https://www.theregister.com/2025/05/20/openpgp_js_flaw/" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>🕵️ Adversaries & Attacks</h2>
-
-    <p>🪙 <b>Alexander Gurevich Arrested for $190M Nomad Bridge Hack</b><br>
-    Charged with laundering funds via Monero and non-KYC exchanges. Extradition to U.S. approved.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/legal/israel-arrests-new-suspect-behind-nomad-bridge-190m-crypto-hack/" target="_blank">Read more</a></p>
-
-    <p>🐍 <b>Skitnet Post-Exploitation Malware Gains Popularity</b><br>
-    Rust+Nim loader used by ransomware actors. Offers DNS C2, in-memory PowerShell, and AV evasion.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/ransomware-gangs-increasingly-use-skitnet-post-exploitation-malware/" target="_blank">Read more</a></p>
-
-    <p>⚔️ <b>Pakistan Retaliates with Cyberattacks on India</b><br>
-    Defacements, phishing, and DDoS hit critical Indian services post-Operation Sindoor. Attribution to “Mr Habib 404.”<br>
-    🔗 <a href="https://www.cysecurity.news/2025/05/india-faces-cyber-onslaught-after.html" target="_blank">Read more</a></p>
-
-    <p>💣 <b>LockBit Breached, Internal Panel Leaked</b><br>
-    Affiliates, wallets, and negotiations exposed. Defaced by rival hackers. Attribution links revealed via TOX IDs.<br>
-    🔗 <a href="https://www.cysecurity.news/2025/05/lockbit-ransomware-platform-breached.html" target="_blank">Read more</a></p>
-
-    <p>🖨️ <b>SnipVex Clipbanker Found in Procolored Downloads</b><br>
-    Bundled with XRed backdoor in 39 installer files. Replaces BTC addresses. Dev environment likely infected.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/printer-maker-procolored-offered-malware-laced-drivers-for-months/" target="_blank">Read more</a></p>
-
-    <p>🕷️ <b>HTTPBot Hits Chinese Gaming and EdTech with DDoS</b><br>
-    Windows botnet uses behavioral mimicry and HTTP-based attacks. First botnet of its kind observed on Windows-only targets.<br>
-    🔗 <a href="https://securityaffairs.com/177930/malware/new-botnet-httpbot-targets-gaming-and-tech-industries-with-surgical-attacks.html" target="_blank">Read more</a></p>
-
-    <p>🛒 <b>Scattered Spider Targets U.S. Retail After UK Hits</b><br>
-    Breaches via help desks and SIM swaps. Less than 10 U.S. retailers impacted so far. Uses RansomHub.<br>
-    🔗 <a href="https://www.securityweek.com/google-warns-uk-retailer-hackers-now-targeting-us/" target="_blank">Read more</a></p>
-
-    <p>🪤 <b>SpyPress Malware Used in Operation RoundPress</b><br>
-    Delivered via XSS into Zimbra, MDaemon, and Roundcube. Targets Eastern European governments and Ukraine-linked orgs.<br>
-    🔗 <a href="https://www.welivesecurity.com/en/eset-research/operation-roundpress/" target="_blank">Read more</a></p>
-
-    <p>🔑 <b>KeeLoader Trojan Drops Cobalt Strike via Bing Ads</b><br>
-    Fake KeePass installer leads to ESXi ransomware attacks. Signed certs, typo-squatting domains, and staged beaconing observed.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/fake-keepass-password-manager-leads-to-esxi-ransomware-attack/" target="_blank">Read more</a></p>
-
-    <p>🐍 <b>dbgpkg PyPI Package Delivers Runtime Backdoor</b><br>
-    Wraps trusted functions like `requests`. Drops Global Socket Toolkit. May be linked to Phoenix Hyena group.<br>
-    🔗 <a href="https://www.infosecurity-magazine.com/news/malware-pypi-threat-open-source/" target="_blank">Read more</a></p>
+    <p>🖥️ <b>RVTools Supply Chain Attack Distributes Bumblebee</b><br>
+    Fake domains pushed malware-laced installers. Official sites unaffected but temporarily offline.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/rvtools-hit-in-supply-chain-attack-to-deliver-bumblebee-malware/" target="_blank">Read more</a></p>
+    <p>🌐 <b>Hazy Hawk Hijacks Trusted Subdomains</b><br>
+    DNS misconfigs on CDC, EY, UNICEF exploited for phishing and malware via abandoned CNAMEs.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/hazy-hawk-gang-exploits-dns-misconfigs-to-hijack-trusted-domains/" target="_blank">Read more</a></p>
+    <p>🧬 <b>VanHelsing Ransomware Source Code Leaked</b><br>
+    Code released after insider dispute. Could lead to wider cloning and usage.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/vanhelsing-ransomware-builder-leaked-on-hacking-forum/" target="_blank">Read more</a></p>
+    <p>⚔️ <b>Over 1.5M Cyberattacks Target India Post-Pahalgam</b><br>
+    Mostly mitigated, the campaign saw efforts from APT36, Pakistan Cyber Force and others.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/cyber-warfare-after-pahalgam-over-15.html" target="_blank">Read more</a></p>
+    <p>🎥 <b>Noodlophile Malware Spread via Fake AI Tools</b><br>
+    Posing as AI video generators, malware steals credentials via Telegram. Targets crypto and browsers.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/new-ai-video-tool-scam-delivers.html" target="_blank">Read more</a></p>
+    <p>📧 <b>Phishing Attack Combines AES, npm, and Microsoft 365</b><br>
+    Campaign uses .htm AES-encrypted files and fake DocuSign alerts hosted on trusted CDNs.<br>
+    🔗 <a href="https://www.darkreading.com/threat-intelligence/novel-phishing-attack-combines-aes-npm-packages" target="_blank">Read more</a></p>
+    <p>🧩 <b>RVTools Trojanized Again with Bumblebee Payload</b><br>
+    Malicious installer found from typosquatted domains. Defender detects `version.dll` loader.<br>
+    🔗 <a href="https://www.darkreading.com/cyberattacks-data-breaches/bumblebee-malware-trojanized-vmware-utility" target="_blank">Read more</a></p>
+    <p>🛍️ <b>Scattered Spider Hits Retailers with DragonForce RaaS</b><br>
+    Attacks on Dior, Harrods, and others involve phishing and IT help desk abuse.<br>
+    🔗 <a href="https://www.darkreading.com/threat-intelligence/large-retailers-scattered-spider-ransomware-web" target="_blank">Read more</a></p>
+    <p>🔑 <b>KeeLoader Trojan Steals Credentials via Fake KeePass</b><br>
+    Malware activates on database open. Used in ransomware campaigns.<br>
+    🔗 <a href="https://www.helpnetsecurity.com/2025/05/20/trojanized-keepass-keeloader-ransomware/" target="_blank">Read more</a></p>
+    <p>🌍 <b>Russia, China, NK Escalate Attacks on Ukraine & Allies</b><br>
+    ZEROLOT wiper, PteroBox, Korplug, and RomCom zero-days deployed. Crypto theft exceeds $1.5B.<br>
+    🔗 <a href="https://www.helpnetsecurity.com/2025/05/21/apt-groups-attacks-eu-ukraine/" target="_blank">Read more</a></p>
+    <p>🐍 <b>MarsSnake Backdoor Targets Middle East Org</b><br>
+    UnsolicitedBooker APT uses fake flight docs and VBA macros to deploy backdoor.<br>
+    🔗 <a href="https://securityaffairs.com/178105/malware/china-linked-unsolicitedbooker-used-new-backdoor-marssnake.html" target="_blank">Read more</a></p>
+    <p>📦 <b>Malicious Packages Abuse Social Media APIs</b><br>
+    PyPI/npm packages used for verifying stolen emails and exfil via QQ. Linked to Phoenix Hyena.<br>
+    🔗 <a href="https://thehackernews.com/2025/05/malicious-pypi-packages-exploit.html" target="_blank">Read more</a></p>
+    <p>💰 <b>RedisRaider Mines Crypto on Compromised Linux Servers</b><br>
+    Go-based malware uses Redis config to deploy XMRig miners and spread.<br>
+    🔗 <a href="https://thehackernews.com/2025/05/go-based-malware-deploys-xmrig-miner-on.html" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
-    <h2>📊 Trends</h2>
-
-    <p>✉️ <b>Phishing Every 42 Seconds in 2024</b><br>
-    Polymorphic phishing and GenAI drive BEC surge. Construction industry saw a 1,282% rise in malicious mail.<br>
-    🔗 <a href="https://www.helpnetsecurity.com/2025/05/16/polymorphic-phishing-attacks-cofense/" target="_blank">Read more</a></p>
-
-    <p>🧠 <b>Blob URI Phishing Bypasses Email Gateways</b><br>
-    Phishing forms stored locally evade SEG scanning. Delivered via trusted redirectors like OneDrive.<br>
-    🔗 <a href="https://www.cysecurity.news/2025/05/cybercriminals-employ-display-fake.html" target="_blank">Read more</a></p>
-
-    <p>🍏 <b>Over 40,000 Malicious iOS Apps Found Using Private Entitlements</b><br>
-    Sideloaded apps bypass Apple’s security. Exploits like TrollStore and SeaShell enable privilege escalation.<br>
-    🔗 <a href="https://hackread.com/40000-ios-apps-found-exploiting-private-entitlements/" target="_blank">Read more</a></p>
-
-    <p>🧬 <b>Skitnet and TransferLoader Power New Ransomware Waves</b><br>
-    Skitnet uses Rust/Nim, while TransferLoader employs IPFS for resilient Morpheus C2 delivery.<br>
-    🔗 <a href="https://thehackernews.com/2025/05/ransomware-gangs-use-skitnet-malware.html" target="_blank">Read more</a></p>
-  </div>
-
-  <div class="news-item">
-    <h2>📦 Others</h2>
-
-    <p>⚡ <b>Chinese Solar Inverters Found with Kill Switches</b><br>
-    Devices include undocumented radios for grid manipulation. U.S. DoE reviewing risks amid calls for bans.<br>
-    🔗 <a href="https://securityaffairs.com/178005/hacking/rogue-devices-in-chinese-made-power-inverters-used-worldwide.html" target="_blank">Read more</a></p>
+    <h2>📁 Breaches & Leaks</h2>
+    <p>🌐 <b>KrebsOnSecurity Hit by 6.3 Tbps DDoS Attack</b><br>
+    Aisuru botnet likely behind record attack. Tied to “Forky,” an operator selling tools on Telegram.<br>
+    🔗 <a href="https://krebsonsecurity.com/2025/05/krebsonsecurity-hit-with-near-record-6-3-tbps-ddos/" target="_blank">Read more</a></p>
   </div>
 
   <p style="text-align:center;">
-    <a href="https://pranakn.github.iol">⬅ Back to Archive</a>
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
   </p>
 
 </body>
