@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cybersecurity Newsfeed - 21/05/25</title>
+  <title>Cybersecurity Newsfeed - 22/05/25</title>
   <style>
     body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
     h1, h2 { color: #c9a227; text-align: center; }
@@ -16,66 +16,102 @@
 <body>
 
   <h1>📰 Cybersecurity Newsfeed</h1>
-  <h2>📅 21/05/25</h2>
+  <h2>📅 22/05/25</h2>
 
   <div class="news-item">
     <h2>🔥 Vulnerabilities</h2>
-    <p>📶 <b>O2 4G VoLTE Flaw Leaks Location and IDs</b><br>
-    Researcher found SIP headers leaking IMSI, IMEI, and location data even with VoLTE off. Exploitation requires minimal skills.<br>
-    🔗 <a href="https://securityaffairs.com/178114/hacking/4g-calling-volte-flaw-allowed-to-locate-any-o2-customer-with-a-phone-call.html" target="_blank">Read more</a></p>
-    <p>🔐 <b>OpenPGP.js Vulnerability Enables Message Spoofing</b><br>
-    CVE-2025-47934 allows attackers to fake signed messages in encrypted comms. Update to 5.11.3 or 6.1.1 urged.<br>
-    🔗 <a href="https://www.theregister.com/2025/05/20/openpgp_js_flaw/" target="_blank">Read more</a></p>
+
+    <p>🛠️ <b>CVE-2025-4322: WordPress Motors Theme Admin Takeover</b><br>
+    A critical flaw in the Motors theme allows unauthenticated password resets and full admin takeover on 22,000+ WordPress sites. Fixed in version 5.6.68.<br>
+    🔗 <a href="https://www.helpnetsecurity.com/2025/05/21/wordpress-motors-theme-cve-2025-4322-admin-account-takeover/" target="_blank">Read more</a></p>
+
+    <p>🧩 <b>Malicious Chrome Extensions Mimic Trusted Tools</b><br>
+    100+ extensions disguised as VPNs, AI tools, and crypto apps steal cookies and hijack traffic. Some impersonate Fortinet and YouTube. Session hijacking risk is high.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/data-stealing-chrome-extensions-impersonate-fortinet-youtube-vpns/" target="_blank">Read more</a></p>
+
+    <p>🔐 <b>CVE-2025-47949: Samlify SSO Bypass</b><br>
+    A flaw in Samlify lets attackers inject unsigned assertions into SAML responses, bypassing authentication and escalating privileges. Fixed in version 2.10.0.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/critical-samlify-sso-flaw-lets-attackers-log-in-as-admin/" target="_blank">Read more</a></p>
+
+    <p>🪟 <b>BadSuccessor: Windows Server dMSA Privilege Escalation</b><br>
+    A flaw in dMSA delegation enables AD privilege escalation via minimal OU permissions. No patch available. Use Akamai detection tools and limit dMSA permissions.<br>
+    🔗 <a href="https://www.darkreading.com/vulnerabilities-threats/unpatched-windows-server-flaw-threatens-active-directory-users" target="_blank">Read more</a></p>
+
+    <p>🏭 <b>CVE-2025-36535: MB-Gateway RCE Risk to OT Environments</b><br>
+    Remote unauthenticated access flaw in MB-Gateway allows config tampering and Modbus disruption. No patch available. CISA advises device replacement.<br>
+    🔗 <a href="https://www.securityweek.com/critical-flaw-allows-remote-hacking-of-automationdirect-industrial-gateway/" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>🕵️ Adversaries & Attacks</h2>
-    <p>🖥️ <b>RVTools Supply Chain Attack Distributes Bumblebee</b><br>
-    Fake domains pushed malware-laced installers. Official sites unaffected but temporarily offline.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/rvtools-hit-in-supply-chain-attack-to-deliver-bumblebee-malware/" target="_blank">Read more</a></p>
-    <p>🌐 <b>Hazy Hawk Hijacks Trusted Subdomains</b><br>
-    DNS misconfigs on CDC, EY, UNICEF exploited for phishing and malware via abandoned CNAMEs.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/hazy-hawk-gang-exploits-dns-misconfigs-to-hijack-trusted-domains/" target="_blank">Read more</a></p>
-    <p>🧬 <b>VanHelsing Ransomware Source Code Leaked</b><br>
-    Code released after insider dispute. Could lead to wider cloning and usage.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/vanhelsing-ransomware-builder-leaked-on-hacking-forum/" target="_blank">Read more</a></p>
-    <p>⚔️ <b>Over 1.5M Cyberattacks Target India Post-Pahalgam</b><br>
-    Mostly mitigated, the campaign saw efforts from APT36, Pakistan Cyber Force and others.<br>
-    🔗 <a href="https://www.cysecurity.news/2025/05/cyber-warfare-after-pahalgam-over-15.html" target="_blank">Read more</a></p>
-    <p>🎥 <b>Noodlophile Malware Spread via Fake AI Tools</b><br>
-    Posing as AI video generators, malware steals credentials via Telegram. Targets crypto and browsers.<br>
-    🔗 <a href="https://www.cysecurity.news/2025/05/new-ai-video-tool-scam-delivers.html" target="_blank">Read more</a></p>
-    <p>📧 <b>Phishing Attack Combines AES, npm, and Microsoft 365</b><br>
-    Campaign uses .htm AES-encrypted files and fake DocuSign alerts hosted on trusted CDNs.<br>
-    🔗 <a href="https://www.darkreading.com/threat-intelligence/novel-phishing-attack-combines-aes-npm-packages" target="_blank">Read more</a></p>
-    <p>🧩 <b>RVTools Trojanized Again with Bumblebee Payload</b><br>
-    Malicious installer found from typosquatted domains. Defender detects `version.dll` loader.<br>
-    🔗 <a href="https://www.darkreading.com/cyberattacks-data-breaches/bumblebee-malware-trojanized-vmware-utility" target="_blank">Read more</a></p>
-    <p>🛍️ <b>Scattered Spider Hits Retailers with DragonForce RaaS</b><br>
-    Attacks on Dior, Harrods, and others involve phishing and IT help desk abuse.<br>
-    🔗 <a href="https://www.darkreading.com/threat-intelligence/large-retailers-scattered-spider-ransomware-web" target="_blank">Read more</a></p>
-    <p>🔑 <b>KeeLoader Trojan Steals Credentials via Fake KeePass</b><br>
-    Malware activates on database open. Used in ransomware campaigns.<br>
-    🔗 <a href="https://www.helpnetsecurity.com/2025/05/20/trojanized-keepass-keeloader-ransomware/" target="_blank">Read more</a></p>
-    <p>🌍 <b>Russia, China, NK Escalate Attacks on Ukraine & Allies</b><br>
-    ZEROLOT wiper, PteroBox, Korplug, and RomCom zero-days deployed. Crypto theft exceeds $1.5B.<br>
-    🔗 <a href="https://www.helpnetsecurity.com/2025/05/21/apt-groups-attacks-eu-ukraine/" target="_blank">Read more</a></p>
-    <p>🐍 <b>MarsSnake Backdoor Targets Middle East Org</b><br>
-    UnsolicitedBooker APT uses fake flight docs and VBA macros to deploy backdoor.<br>
-    🔗 <a href="https://securityaffairs.com/178105/malware/china-linked-unsolicitedbooker-used-new-backdoor-marssnake.html" target="_blank">Read more</a></p>
-    <p>📦 <b>Malicious Packages Abuse Social Media APIs</b><br>
-    PyPI/npm packages used for verifying stolen emails and exfil via QQ. Linked to Phoenix Hyena.<br>
-    🔗 <a href="https://thehackernews.com/2025/05/malicious-pypi-packages-exploit.html" target="_blank">Read more</a></p>
-    <p>💰 <b>RedisRaider Mines Crypto on Compromised Linux Servers</b><br>
-    Go-based malware uses Redis config to deploy XMRig miners and spread.<br>
-    🔗 <a href="https://thehackernews.com/2025/05/go-based-malware-deploys-xmrig-miner-on.html" target="_blank">Read more</a></p>
+
+    <p>🇷🇺 <b>APT28 Targets Western Logistics Supporting Ukraine</b><br>
+    Joint alert: Russian GRU-linked APT28 is attacking logistics and tech firms with espionage and IP camera hacks. TTPs and IOCs provided for detection.<br>
+    🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/05/21/russian-gru-cyber-actors-targeting-western-logistics-entities-and-tech-companies" target="_blank">Read more</a></p>
+
+    <p>💥 <b>LummaC2 Malware Hits U.S. Critical Infrastructure</b><br>
+    FBI and CISA warn of LummaC2 malware actively targeting vital U.S. sectors. Known since Nov 2023, it supports data exfiltration and lateral movement.<br>
+    🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/05/21/threat-actors-target-us-critical-infrastructure-lummac2-malware" target="_blank">Read more</a></p>
+
+    <p>🌐 <b>Lumma Malware Operation Disrupted Globally</b><br>
+    Over 2,300 Lumma-related domains seized. FBI/Microsoft traced 394K infections. Tools and IOCs released post-takedown.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/lumma-infostealer-malware-operation-disrupted-2-300-domains-seized/" target="_blank">Read more</a></p>
+
+    <p>📦 <b>PureRAT Malware Surges in Russian Phishing Campaigns</b><br>
+    PureRAT and PureLogs steal data, hijack clipboards, and evade detection using SSL and PureCrypter. Email is primary vector.<br>
+    🔗 <a href="https://thehackernews.com/2025/05/purerat-malware-spikes-4x-in-2025.html" target="_blank">Read more</a></p>
+
+    <p>📱 <b>PWA JavaScript Campaign Targets Mobile Users</b><br>
+    Attackers use JS injections to redirect mobile users to scam PWAs disguised as adult apps. Persistent and hard to detect.<br>
+    🔗 <a href="https://thehackernews.com/2025/05/researchers-expose-pwa-javascript.html" target="_blank">Read more</a></p>
+
+    <p>🚂 <b>Fancy Bear Espionage Targets NATO Logistics</b><br>
+    Ongoing spear phishing and credential attacks leverage CVEs to infiltrate email servers. Malware includes Headlace and Masepie.<br>
+    🔗 <a href="https://www.theregister.com/2025/05/21/russias_fancy_bear_alert/" target="_blank">Read more</a></p>
+
+    <p>📞 <b>3AM Ransomware Uses Spoofed Calls + Email Bombs</b><br>
+    Uses Quick Assist social engineering to gain access, deploy VMs, install QDoor, and exfiltrate data. Blocked attack stole 868 GB.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/3am-ransomware-uses-spoofed-it-calls-email-bombing-to-breach-networks/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📊 Trends</h2>
+
+    <p>🧠 <b>AI-Powered Malware Goes Mainstream</b><br>
+    Polymorphic code, deepfake voice attacks, and LLM-based phishing show AI’s offensive potential. FBI warns of \$37B losses in Southeast Asia.<br>
+    🔗 <a href="https://www.darknet.org.uk/2025/05/ai-powered-malware-the-next-evolution-in-cyber-threats/" target="_blank">Read more</a></p>
+
+    <p>🎯 <b>Fake Kling AI Ads Used for Malware Delivery</b><br>
+    Vietnam-based groups spread RATs via fake Facebook ads imitating Kling AI. Users download disguised executables. Check Point warns of rise in GenAI abuse.<br>
+    🔗 <a href="https://hackread.com/scammers-use-fake-kling-ai-ads-to-spread-malware/" target="_blank">Read more</a></p>
+
+    <p>👨‍💻 <b>Malicious VS Code Extensions Target Crypto Devs</b><br>
+    Three VS Code extensions infected fewer than 50 users but deployed credential-stealing malware and Quasar RAT. Linked to threat actor MUT-9332.<br>
+    🔗 <a href="https://www.helpnetsecurity.com/2025/05/21/data-stealing-vs-code-extensions-removed-from-official-marketplace/" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>📁 Breaches & Leaks</h2>
-    <p>🌐 <b>KrebsOnSecurity Hit by 6.3 Tbps DDoS Attack</b><br>
-    Aisuru botnet likely behind record attack. Tied to “Forky,” an operator selling tools on Telegram.<br>
-    🔗 <a href="https://krebsonsecurity.com/2025/05/krebsonsecurity-hit-with-near-record-6-3-tbps-ddos/" target="_blank">Read more</a></p>
+
+    <p>📘 <b>ByteBreaker Claims 1.2B Facebook Records for Sale</b><br>
+    Threat actor claims scraping via API, but sample inconsistencies and recycled data cast doubt. Meta contacted.<br>
+    🔗 <a href="https://hackread.com/threat-actor-selling-1-2-billion-facebook-records/" target="_blank">Read more</a></p>
+
+    <p>📶 <b>Cellcom Cyberattack Disrupts Services in U.S. Midwest</b><br>
+    One-week outage affects voice/text. Ransomware suspected. Company says no customer data was compromised.<br>
+    🔗 <a href="https://www.securityweek.com/cellcom-service-disruption-caused-by-cyberattack/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🗞️ Others</h2>
+
+    <p>📍 <b>Russia Mandates Surveillance App for Foreigners</b><br>
+    Moscow region requires foreigners to install tracking apps with facial, fingerprint, and location data. Noncompliance risks deportation.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/government/russia-to-enforce-location-tracking-app-on-all-foreigners-in-moscow/" target="_blank">Read more</a></p>
+
+    <p>📊 <b>2B Discord Messages Scraped for Research</b><br>
+    Brazilian university team scraped 3,167 public servers (2015–2024). Data anonymized but raises privacy and ethics concerns.<br>
+    🔗 <a href="https://www.404media.co/researchers-scrape-2-billion-discord-messages-and-publish-them-online/" target="_blank">Read more</a></p>
   </div>
 
   <p style="text-align:center;">
