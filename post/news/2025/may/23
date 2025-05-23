@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 23/05/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #00ffcc; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 23/05/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>📺 <b>CVE-2025-4632: Samsung MagicINFO 9 Exploited in the Wild</b><br>
+    Samsung patched a critical RCE flaw in MagicINFO 9 exploited to deploy Mirai variants. CVSS 9.8. CISA added it to KEV catalog. Fix in version 21.1052.<br>
+    🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/05/22/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">Read more</a></p>
+
+    <p>🌐 <b>Unpatched Zero-Days in Versa Concerto SD-WAN Platform</b><br>
+    ProjectDiscovery disclosed three critical flaws—CVE-2025-34025, 34026, and 34027—after Versa failed to patch them. Includes RCE and auth bypass (CVSS 10).<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/critical-zerodays-versa-networks/" target="_blank">Read more</a></p>
+
+    <p>🔧 <b>GitLab & Atlassian Patch High-Risk Vulnerabilities</b><br>
+    GitLab fixed 10 bugs including 2FA bypass and CVE-2025-0993 DoS flaw. Atlassian patched 6 high-severity bugs across its suite. Users urged to update.<br>
+    🔗 <a href="https://www.securityweek.com/gitlab-atlassian-patch-high-severity-vulnerabilities/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>📄 <b>SideWinder Spear-Phishing Uses StealerBot via Office Exploits</b><br>
+    South Asian governments targeted with .NET malware via forged gov docs exploiting CVE-2017-0199/11882. SideWinder’s campaign includes IP-based filtering and polymorphic payloads.<br>
+    🔗 <a href="https://www.darkreading.com/cyberattacks-data-breaches/sidewinder-apt-spying-indias-neighbor-govts" target="_blank">Read more</a></p>
+
+    <p>🏛️ <b>Chinese APT UAT-6382 Exploits Cityworks Zero-Day</b><br>
+    CVE-2025-0994 exploited to breach U.S. local govs via Rust-based loaders and Chinese web shells. Affects IIS servers. Patch released in February.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/chinese-hackers-breach-us-local-governments-using-cityworks-zero-day/" target="_blank">Read more</a></p>
+
+    <p>💰 <b>Fake Ledger Apps on macOS Phish for Crypto Seed Phrases</b><br>
+    Malware mimicking Ledger Live prompts users for seed phrases. Some variants bypass Gatekeeper and use PyInstaller to load phishing via iframe.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/hackers-use-fake-ledger-apps-to-steal-mac-users-seed-phrases/" target="_blank">Read more</a></p>
+
+    <p>🗺️ <b>Türkiye-Linked APT Marbled Dust Exploits Output Messenger Zero-Day</b><br>
+    CVE-2025-27920 used against Kurdish military users. Attack included backdoor OMServerService.exe and DNS-based exfil. Patch V2.0.63 now available.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/turkiye-linked-hackers-exploit-zero-day.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📁 Breaches & Leaks</h2>
+
+    <p>🥤 <b>Coca-Cola and Bottling Partner Breached by Everest & Gehenna</b><br>
+    Two ransomware groups claim attacks leaking passport data and Salesforce records. SaaS platforms increasingly targeted.<br>
+    🔗 <a href="https://hackread.com/coca-cola-bottling-partner-ransomware-data-breach/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🗞️ Others</h2>
+
+    <p>🕳️ <b>Operation RapTor Arrests 270 in Global Dark Web Crackdown</b><br>
+    Europol-led op seized €184M, drugs, weapons. Targets include vendors from Tor2Door, Nemesis. Major blow to dark web trust.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/police-arrests-270-dark-web-vendors-buyers-in-global-crackdown/" target="_blank">Read more</a></p>
+
+    <p>🧠 <b>Qakbot Botnet Leader Indicted by U.S. Authorities</b><br>
+    Rustam Gallyamov charged for facilitating attacks via Qakbot loader. $24M seized. Botnet linked to REvil and Conti.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/us-indicts-leader-of-qakbot-botnet-linked-to-ransomware-attacks/" target="_blank">Read more</a></p>
+
+    <p>🕸️ <b>DanaBot Takedown Reveals Espionage, Fraud, and Slip-ups</b><br>
+    FBI seizes C2 infra, charges 16 including Gazprom engineer. Variant used for spying on diplomats. Devs infected their own PCs.<br>
+    🔗 <a href="https://krebsonsecurity.com/2025/05/oops-danabot-malware-devs-infected-their-own-pcs/" target="_blank">Read more</a></p>
+
+    <p>🔐 <b>Signal Blocks Microsoft Recall from Screenshotting Chats</b><br>
+    New "screen security" blocks AI screenshot tools by default. Signal criticizes lack of developer-level privacy controls in Windows.<br>
+    🔗 <a href="https://www.helpnetsecurity.com/2025/05/22/signal-blocks-microsoft-recall-from-screenshotting-conversations/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🎯 Hunting Opportunities</h2>
+
+    <p>🔎 <b>CVE-2025-0994 Exploitation: Cityworks Intrusions by UAT-6382</b><br>
+    Talos confirms active attacks using TetraLoader, Cobalt Strike, VShell RATs. Targets include U.S. local governments’ utility systems. Detailed IOCs available.<br>
+    🔗 <a href="https://blog.talosintelligence.com/uat-6382-exploits-cityworks-vulnerability/" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="../index.html">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
