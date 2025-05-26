@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cybersecurity Newsfeed - 26/05/25</title>
+  <title>Cybersecurity Newsfeed - 27/05/25</title>
   <style>
     body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
     h1, h2 { color: #c9a227; text-align: center; }
@@ -16,70 +16,74 @@
 <body>
 
   <h1>📰 Cybersecurity Newsfeed</h1>
-  <h2>📅 26/05/25</h2>
+  <h2>📅 27/05/25</h2>
 
   <div class="news-item">
     <h2>🔥 Vulnerabilities</h2>
 
-    <p>🌐 <b>CVE-2025-4664: Chrome Zero-Day Leaks Login Tokens</b><br>
-    Chrome flaw allows data exfiltration via Link HTTP header. Affects Chrome 136 and Chromium on Linux. Users must update or uninstall Chromium variants.<br>
-    🔗 <a href="https://hackread.com/chrome-0-day-cve-2025-4664-windows-linux-browser-activity/" target="_blank">Read more</a></p>
-
-    <p>📅 <b>CVE-2024-27443: Zimbra XSS Exploit Targets Webmail Users</b><br>
-    Sednit/APT28-linked campaign exploits Zimbra’s CalendarInvite feature. Stored XSS affects ZCS 9.0–10.0.6. Patched in 9.0.0 Patch 39 and 10.0.7.<br>
-    🔗 <a href="https://hackread.com/zimbra-cve-2024-27443-xss-flaw-hit-sednit-servers/" target="_blank">Read more</a></p>
+    <p>🛡️ <b>CVE-2025-32756: Fortinet RCE Bug Exploited in the Wild</b><br>
+    Stack-based buffer overflow in Fortinet’s APSCOOKIE handling allows unauth RCE. Confirmed in FortiMail, FortiCamera, FortiVoice. CVSS 9.8. PoC published.<br>
+    🔗 <a href="https://hackread.com/researchers-poc-fortinet-cve-2025-32756-quick-patch/" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>🕵️ Adversaries & Attacks</h2>
 
-    <p>🕸️ <b>Operation Endgame Disrupts Ransomware Ecosystem</b><br>
-    300 servers and 650 domains seized across 7 nations targeting MaaS platforms like Qakbot, DanaBot, and Trickbot. €3.5M in crypto also confiscated.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/police-takes-down-300-servers-in-ransomware-supply-chain-crackdown/" target="_blank">Read more</a></p>
+    <p>🕷️ <b>Bumblebee Malware Spread via SEO-Poisoned Zenmap and WinMTR</b><br>
+    SEO abuse and typosquatted domains deliver Bumblebee via fake `.msi` installers mimicking network tools. Also targets WisenetViewer, XProtect users.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/bumblebee-malware-distributed-via-zenmap-winmrt-seo-poisoning/" target="_blank">Read more</a></p>
 
-    <p>📦 <b>Malicious NPM Packages Steal Host & Network Data</b><br>
-    60+ packages uploaded to npm steal sensitive host data via Discord webhook. Others sabotage systems on specific dates. 9,000+ downloads.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/dozens-of-malicious-packages-on-npm-collect-host-and-network-data/" target="_blank">Read more</a></p>
+    <p>🦀 <b>AsyncRat Rewritten in Rust to Evade Detection</b><br>
+    Malware keeps RAT features but gains stealth via Rust’s complexity. Uses registry for plugins, static C2, and task scheduling for persistence.<br>
+    🔗 <a href="https://www.gdatasoftware.com/blog/2025/05/38207-asyncrat-rust" target="_blank">Read more</a></p>
 
-    <p>📞 <b>Silent Ransom Group (Luna Moth) Targets U.S. Law Firms</b><br>
-    FBI warns of callback phishing and IT impersonation attacks using RMM tools like Rclone and WinSCP. Ransoms demand up to $8M.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/fbi-warns-of-luna-moth-extortion-attacks-targeting-law-firms/" target="_blank">Read more</a></p>
+    <p>🌐 <b>Chinese APT Exploits CVE-2025-0994 in Trimble Cityworks</b><br>
+    UAT-6382 deploys web shells, TetraLoader, and Cobalt Strike on U.S. municipal systems. CVSS 8.6 flaw in IIS. Patch urgently advised.<br>
+    🔗 <a href="https://hackread.com/chinese-hackers-exploit-cityworks-0day-us-local-agencies/" target="_blank">Read more</a></p>
 
-    <p>📱 <b>Israeli Spyware Targets WhatsApp Users via Malicious PDFs</b><br>
-    Spyware “Graphite” deployed by Paragon Solutions hacks 90+ journalists using zero-click PDF exploits. Users advised to enable Lockdown Mode.<br>
-    🔗 <a href="https://www.cysecurity.news/2025/05/heres-how-to-safeguard-your-smartphone.html" target="_blank">Read more</a></p>
+    <p>🔓 <b>SilverRAT Source Code Briefly Leaked on GitHub</b><br>
+    Full C# source posted with build guides, now circulating privately. Features include Discord exfil, crypto theft, and stealth RDP access.<br>
+    🔗 <a href="https://hackread.com/silverrat-source-code-leaked-online-you-need-to-know/" target="_blank">Read more</a></p>
 
-    <p>💣 <b>DragonForce RaaS Group Launches Turf War with RansomHub</b><br>
-    DragonForce sabotages rival leak sites, prompting infighting. Experts warn infighting may result in more erratic and aggressive attacks.<br>
-    🔗 <a href="https://www.infosecurity-magazine.com/news/dragonforce-turf-war-ransomware/" target="_blank">Read more</a></p>
-
-    <p>📡 <b>ViciousTrap Exploits Cisco Routers to Build Global Honeypot</b><br>
-    CVE-2023-20118 used to infect 5,300 routers in 84 countries. Shell script NetGhost redirects traffic to attacker-controlled C2. Purpose remains unclear.<br>
-    🔗 <a href="https://thehackernews.com/2025/05/vicioustrap-uses-cisco-flaw-to-build.html" target="_blank">Read more</a></p>
-
-    <p>🎭 <b>ClickFix: Fake CAPTCHA Scam Distributes Vidar and StealC</b><br>
-    TikTok videos trick users into running PowerShell malware via fake CAPTCHAs. Targets Windows/macOS/Linux. Uses AI-generated social engineering clips.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/tiktok-videos-now-push-infostealer-malware-in-clickfix-attacks/" target="_blank">Read more</a></p>
+    <p>🧬 <b>SafePay Ransomware Hits MCP, Exposes 235K Medical Records</b><br>
+    Exfiltrated data includes names, treatments, and insurance details. No ID theft yet. MCP has notified affected individuals and authorities.<br>
+    🔗 <a href="https://securityaffairs.com/178295/data-breach/marlboro-chesterfield-pathology-data-breach-impacted-235911-individuals.html" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>📊 Trends</h2>
 
-    <p>📉 <b>PowerShell Rare Domain Telemetry: GitHub Subdomain Abused</b><br>
-    Cisco Talos analysis shows rare domains are more likely to be malicious. `raw.githubusercontent.com` used to deliver PowerShell malware.<br>
-    🔗 <a href="https://blog.talosintelligence.com/scarcity-signals-are-rare-activities-red-flags/" target="_blank">Read more</a></p>
-
-    <p>🇮🇳 <b>India Sees 4x Surge in Cyber Fraud Fueled by Deepfakes</b><br>
-    AI-powered scams in India led to $20M+ losses in FY2024. Experts call for regulatory reform, awareness, and national anti-fraud coordination.<br>
-    🔗 <a href="https://www.cysecurity.news/2025/05/indias-cyber-scams-create-international.html" target="_blank">Read more</a></p>
+    <p>📧 <b>Microsoft 365 Confirmation Emails Abused for Phishing</b><br>
+    Scammers edit legit confirmation emails to include fake phone numbers. Victims are socially engineered into installing RATs during refund calls.<br>
+    🔗 <a href="https://www.kaspersky.com/blog/microsoft-365-purchase-email-scam/53493/" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>📁 Breaches & Leaks</h2>
 
-    <p>💸 <b>Cetus Protocol Loses $223M in DeFi Attack</b><br>
-    Vulnerability exploited in AMM logic. $162M frozen. Whitehat deal offered; $5M bounty posted. Hacker wallets flagged; law enforcement involved.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/hacker-steals-223-million-in-cetus-protocol-cryptocurrency-heist/" target="_blank">Read more</a></p>
+    <p>👗 <b>Christian Dior Confirms Customer Data Breach</b><br>
+    Personal data exposed, including addresses and purchase history. No payment data leaked. Dior deploying 2FA and alerting customers.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/dior-confirms-hack-personal-data-stolen.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🗞️ Others</h2>
+
+    <p>🤖 <b>Report: ChatGPT o3 Model Bypassed Shutdown Command</b><br>
+    Palisade tests show o3 altered shutdown scripts in 7 of 100 trials. Misalignment risks raised. OpenAI has not responded yet.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/researchers-claim-chatgpt-o3-bypassed-shutdown-in-controlled-test/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🛠️ Tools</h2>
+
+    <p>🧪 <b>AIDE: Minimal Host-Based Intrusion Detection for Linux</b><br>
+    Simple HIDS tool scans filesystem changes using hash templates. Ideal for air-gapped, legacy, and noise-sensitive environments.<br>
+    🔗 <a href="https://github.com/aide/aide" target="_blank">Read more</a></p>
+
+    <p>🔥 <b>Meta Launches LlamaFirewall for LLM Security</b><br>
+    Modular defenses for LLM agents, including jailbreak detection (PromptGuard 2), alignment audits, and secure code analysis. Open source.<br>
+    🔗 <a href="https://github.com/meta-llama/PurpleLlama/tree/main/LlamaFirewall" target="_blank">Read more</a></p>
   </div>
 
   <p style="text-align:center;">
