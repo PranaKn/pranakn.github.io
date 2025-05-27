@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 28/05/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 28/05/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>🤖 <b>Microsoft Copilot AI for SharePoint Bypasses Access Controls</b><br>
+    Copilot retrieved restricted data including passwords, bypassing traditional download protections. Microsoft claims logs exist, but Pen Test Partners warns of governance gaps.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/pen-test-partners-uncovers-major.html" target="_blank">Read more</a></p>
+
+    <p>🚀 <b>Multiple Vulnerabilities Found in NASA Open-Source Software</b><br>
+    Stack overflows, hardcoded secrets, and XSS affect QuIP, OpenVSP, and others. Researcher criticizes NASA’s lack of secure SDLC and disclosure policy.<br>
+    🔗 <a href="https://www.helpnetsecurity.com/2025/05/27/nasa-open-source-software-vulnerabilities/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>🧺 <b>Void Blizzard Linked to Dutch Police Breach and NATO Espionage</b><br>
+    Russian group stole Dutch officer data via cookie-based infostealer attacks. Broader campaign tracks NATO weapons and logistics.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/russian-void-blizzard-cyberspies-linked-to-dutch-police-breach/" target="_blank">Read more</a></p>
+
+    <p>🧾 <b>Microsoft Dismantles Lumma Stealer Malware Infrastructure</b><br>
+    2,300 domains seized. Malware stole credentials from 394K systems across multiple countries. Microsoft now sinkholing over 1,300 domains.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/microsoft-uncover-password-stealer.html" target="_blank">Read more</a></p>
+
+    <p>📬 <b>APT28 Exploits Webmail in Global RoundPress Surveillance Campaign</b><br>
+    Fancy Bear used spearphishing and XSS in Zimbra, Roundcube, MDaemon to bypass 2FA and steal sensitive communications worldwide.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/global-surveillance-campaign-targets.html" target="_blank">Read more</a></p>
+
+    <p>🐍 <b>Fake PyPI Packages Target ML Developers with Infostealers</b><br>
+    Fake Alibaba SDKs used Pickle-infected PyTorch models to steal data. 1,600 downloads highlight supply chain risks in ML ecosystems.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/malicious-machine-learning-model/" target="_blank">Read more</a></p>
+
+    <p>🌐 <b>Void Blizzard Escalates AitM Campaigns Using Evilginx and Entra Spoofs</b><br>
+    Russian APT uses typosquatting and PDF lures to steal cloud data via spoofed Microsoft login portals. Microsoft urges identity hardening.<br>
+    🔗 <a href="https://www.microsoft.com/en-us/security/blog/2025/05/27/new-russia-affiliated-actor-void-blizzard-targets-critical-sectors-for-espionage/" target="_blank">Read more</a></p>
+
+    <p>⚙️ <b>Dero Miner Botnet Infects Docker Hosts via Exposed APIs</b><br>
+    Worm-like malware spreads with masscan and docker.io tools. Installs Go-based miner and persists via `.bash_aliases`. Targets Ubuntu containers.<br>
+    🔗 <a href="https://thehackernews.com/2025/05/new-self-spreading-malware-infects.html" target="_blank">Read more</a></p>
+
+    <p>🌍 <b>Earth Lamia APT Targets Brazil, India, and SE Asia</b><br>
+    Web app exploits lead to lateral movement and deployment of PULSEPACK and BypassBoss malware. Operations linked to CL-STA-0048.<br>
+    🔗 <a href="https://www.trendmicro.com/en_us/research/25/e/earth-lamia.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📁 Breaches & Leaks</h2>
+
+    <p>👟 <b>Adidas Breach Exposes Customer Data via Third-Party Vendor</b><br>
+    Names, emails, and addresses leaked. No payment info impacted. Investigation ongoing. Follows previous breaches in Turkey and South Korea.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/adidas-warns-of-data-breach-after-customer-service-provider-hack/" target="_blank">Read more</a></p>
+
+    <p>🧪 <b>MathWorks Ransomware Attack Disrupts Cloud Services</b><br>
+    May 18 attack affects license center, file exchange, and account creation. No group has claimed responsibility yet.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/mathworks-blames-ransomware-attack-for-ongoing-outages/" target="_blank">Read more</a></p>
+
+    <p>🏗️ <b>Nucor Discloses Cyberattack, Shuts Down Systems</b><br>
+    Incident impacted operations at undisclosed sites. Ransomware suspected. No leak confirmed. Nucor joins rising list of targeted industrial giants.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/cyberattack-forces-nucor-to-halt-some.html" target="_blank">Read more</a></p>
+
+    <p>🥤 <b>Everest Ransomware Leaks Coca-Cola HR and Financial Data</b><br>
+    502 MB leak with employee PII, HR files, and internal credentials. Posted on XSS and leak sites. No response from Coca-Cola yet.<br>
+    🔗 <a href="https://hackread.com/everest-ransomware-leaks-coca-cola-employee-data/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🗞️ Others</h2>
+
+    <p>🇮🇷 <b>Iranian Robbinhood Operator Pleads Guilty in U.S. Court</b><br>
+    Sina Gholinejad admits to role in ransomware attacks on U.S. cities. Faces 30 years for fraud, extortion, and laundering.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/iranian-pleads-guilty-to-robbinhood-ransomware-attacks-faces-30-years/" target="_blank">Read more</a></p>
+
+    <p>📞 <b>FBI Warns Law Firms of Silent Ransom Group Vishing Campaign</b><br>
+    Group uses fake IT calls and callback phishing to steal data. Tools include AnyDesk, Zoho Assist, Rclone, and WinSCP.<br>
+    🔗 <a href="https://www.darkreading.com/endpoint-security/fbi-silent-ransom-group-vishing-law-firms" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🎯 Hunting Opportunities</h2>
+
+    <p>🕵️‍♂️ <b>Advanced Malware Chain Using mshta.exe and CyberChef Decoding</b><br>
+    Campaign abuses LOLBins to deploy multi-layered infostealer. Analysts used CyberChef and Joe Sandbox to unpack and confirm payload capabilities.<br>
+    🔗 <a href="https://levelblue.com/blogs/security-essentials/hunting-malware-with-mshta-and-cyberchef" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
