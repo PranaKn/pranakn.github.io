@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 30/05/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 30/05/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>🍏 <b>Safari BitM Vulnerability Exploited in Fullscreen Credential Theft</b><br>
+    Safari lacks clear alerts in fullscreen mode, enabling realistic BitM phishing attacks. Apple declined to fix. <br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/apple-safari-exposes-users-to-fullscreen-browser-in-the-middle-attacks/" target="_blank">Read more</a></p>
+
+    <p>🦊 <b>Firefox 139.0.1 Fixes GPU Glitches on NVIDIA Systems</b><br>
+    Emergency patch reverts DirectComposition changes to stop video flickering and corruption on dual-monitor setups.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/software/mozilla-releases-firefox-13901-update-to-fix-artifacts-on-nvidia-gpus/" target="_blank">Read more</a></p>
+
+    <p>🔌 <b>CVE-2025-47577: Critical File Upload Flaw in WooCommerce Wishlist</b><br>
+    Unauthenticated RCE risk in plugin with 100K+ installs. No patch yet. Users urged to uninstall.<br>
+    🔗 <a href="https://thehackernews.com/2025/05/over-100000-wordpress-sites-at-risk.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>🔐 <b>AyySSHush Botnet Expands, Hits 12K ASUS Routers</b><br>
+    Exploits CVE-2023-39780 and weak SSH credentials, disables protections, persists via NVRAM. Linked to ViciousTrap ORB infrastructure.<br>
+    🔗 <a href="https://www.darkreading.com/vulnerabilities-threats/botnet-persistent-backdoors-asus-routers" target="_blank">Read more</a></p>
+
+    <p>🐾 <b>PumaBot: SSH Brute-Forcing Linux Botnet Targets IoT</b><br>
+    Written in Go, pulls targets from C2 server, uses rootkits, and avoids honeypots. May mimic Redis files.<br>
+    🔗 <a href="https://www.darkreading.com/threat-intelligence/pumabot-targets-linux-devices-botnet-campaign" target="_blank">Read more</a></p>
+
+    <p>🎭 <b>Fake AI Tools Spread CyberLock, Lucky_Gh0$t Ransomware</b><br>
+    Talos finds malware hidden in fake NovaLeadsAI, ChatGPT, and InVideo installers. Targets sales, tech, and marketing sectors.<br>
+    🔗 <a href="https://hackread.com/fake-chatgpt-invideo-ai-downloads-deliver-ransomware/" target="_blank">Read more</a></p>
+
+    <p>📂 <b>Header-Corrupting RAT Evades Forensics via dllhost.exe</b><br>
+    Fortinet finds RAT with broken PE headers, TLS encryption, and XOR-obfuscation. Requires memory dump analysis.<br>
+    🔗 <a href="https://hackread.com/new-malware-corrupts-its-headers-block-analysis/" target="_blank">Read more</a></p>
+
+    <p>🌐 <b>SquareX Demos Fullscreen BitM Attack Abusing Safari’s API</b><br>
+    Enables fake login overlays with no warning. Bypasses EDRs. Webinar scheduled June 5.<br>
+    🔗 <a href="https://hackread.com/fullscreen-bitm-attack-discovered-by-squarex-exploits-browser-fullscreen-apis-to-steal-credentials-in-safari/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>💥 Breaches & Leaks</h2>
+
+    <p>🖥️ <b>ConnectWise Breached via CVE-2025-3935 Flaw in ScreenConnect</b><br>
+    Small subset of cloud users impacted. Flaw patched in April. Nation-state actor suspected. Clients demand IOCs.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/connectwise-breached-in-cyberattack-linked-to-nation-state-hackers/" target="_blank">Read more</a></p>
+
+    <p>👙 <b>Victoria’s Secret Takes Website Offline After Cyber Incident</b><br>
+    Physical stores unaffected. Incident follows a wave of attacks on Dior and Adidas, tied to DragonForce ransomware.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/victorias-secret-takes-down-website-after-security-incident/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🗞️ Others</h2>
+
+    <p>🔑 <b>Microsoft Authenticator Deprecates Password Autofill by August</b><br>
+    Users must export passwords or switch to Edge. No new saves allowed from June. Access ends in August.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/microsoft-authenticator-now-warns-to-export-passwords-before-july-cutoff/" target="_blank">Read more</a></p>
+
+    <p>🧬 <b>China Launches Commercial Quantum-Secure Communication</b><br>
+    Protects against future quantum threats using QKD and PQC. Covers 16 cities and 900+ institutions.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/china-launches-advanced-quantum.html" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
