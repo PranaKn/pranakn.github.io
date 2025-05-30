@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cybersecurity Newsfeed - 29/05/25</title>
+  <title>Cybersecurity Newsfeed - 30/05/25</title>
   <style>
     body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
     h1, h2 { color: #c9a227; text-align: center; }
@@ -16,94 +16,70 @@
 <body>
 
   <h1>📰 Cybersecurity Newsfeed</h1>
-  <h2>📅 29/05/25</h2>
+  <h2>📅 30/05/25</h2>
 
   <div class="news-item">
     <h2>🔥 Vulnerabilities</h2>
 
-    <p>📱 <b>CVE-2025-4427 & CVE-2025-4428: Ivanti EPMM RCE Exploits</b><br>
-    China-linked UNC5221 exploited zero-days in Ivanti EPMM. Minimal effort needed. Patching is critical as exploitation spreads globally.<br>
-    🔗 <a href="https://cyberscoop.com/ivanti-epmm-defects-exploited/" target="_blank">Read more</a></p>
+    <p>🍏 <b>Safari BitM Vulnerability Exploited in Fullscreen Credential Theft</b><br>
+    Safari lacks clear alerts in fullscreen mode, enabling realistic BitM phishing attacks. Apple declined to fix. <br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/apple-safari-exposes-users-to-fullscreen-browser-in-the-middle-attacks/" target="_blank">Read more</a></p>
+
+    <p>🦊 <b>Firefox 139.0.1 Fixes GPU Glitches on NVIDIA Systems</b><br>
+    Emergency patch reverts DirectComposition changes to stop video flickering and corruption on dual-monitor setups.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/software/mozilla-releases-firefox-13901-update-to-fix-artifacts-on-nvidia-gpus/" target="_blank">Read more</a></p>
+
+    <p>🔌 <b>CVE-2025-47577: Critical File Upload Flaw in WooCommerce Wishlist</b><br>
+    Unauthenticated RCE risk in plugin with 100K+ installs. No patch yet. Users urged to uninstall.<br>
+    🔗 <a href="https://thehackernews.com/2025/05/over-100000-wordpress-sites-at-risk.html" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>🕵️ Adversaries & Attacks</h2>
 
-    <p>📡 <b>AyySSHush Botnet Backdoors 9,000+ ASUS Routers</b><br>
-    Exploits CVE-2023-39780 to install stealthy SSH backdoor. Logging and protections disabled. Factory reset needed for removal.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/botnet-hacks-9-000-plus-asus-routers-to-add-persistent-ssh-backdoor/" target="_blank">Read more</a></p>
+    <p>🔐 <b>AyySSHush Botnet Expands, Hits 12K ASUS Routers</b><br>
+    Exploits CVE-2023-39780 and weak SSH credentials, disables protections, persists via NVRAM. Linked to ViciousTrap ORB infrastructure.<br>
+    🔗 <a href="https://www.darkreading.com/vulnerabilities-threats/botnet-persistent-backdoors-asus-routers" target="_blank">Read more</a></p>
 
-    <p>💳 <b>Zanubis Android Trojan Evolves, Targets Banks</b><br>
-    Uses accessibility abuse, fake updates, and obfuscation. Originating in Peru, it now focuses on financial institutions.<br>
-    🔗 <a href="https://securelist.com/evolution-of-zanubis-banking-trojan-for-android/116588/" target="_blank">Read more</a></p>
+    <p>🐾 <b>PumaBot: SSH Brute-Forcing Linux Botnet Targets IoT</b><br>
+    Written in Go, pulls targets from C2 server, uses rootkits, and avoids honeypots. May mimic Redis files.<br>
+    🔗 <a href="https://www.darkreading.com/threat-intelligence/pumabot-targets-linux-devices-botnet-campaign" target="_blank">Read more</a></p>
 
-    <p>🍎 <b>Apple Blocks $9B+ in App Store Fraud Since 2020</b><br>
-    2024 alone saw $2B blocked, 143M fake reviews removed, and 146K dev accounts banned. Stronger protections for 813M weekly users.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/apple/apple-blocked-over-9-billion-in-apap-store-fraud-since-2020/" target="_blank">Read more</a></p>
+    <p>🎭 <b>Fake AI Tools Spread CyberLock, Lucky_Gh0$t Ransomware</b><br>
+    Talos finds malware hidden in fake NovaLeadsAI, ChatGPT, and InVideo installers. Targets sales, tech, and marketing sectors.<br>
+    🔗 <a href="https://hackread.com/fake-chatgpt-invideo-ai-downloads-deliver-ransomware/" target="_blank">Read more</a></p>
 
-    <p>🇨🇳 <b>APT31 Blamed for Czech Ministry Hack</b><br>
-    Czech officials and allies blame China-backed APT31 for attacks on foreign affairs systems and critical infrastructure (2022–2023).<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/czechia-blames-china-for-ministry-of-foreign-affairs-cyberattack/" target="_blank">Read more</a></p>
+    <p>📂 <b>Header-Corrupting RAT Evades Forensics via dllhost.exe</b><br>
+    Fortinet finds RAT with broken PE headers, TLS encryption, and XOR-obfuscation. Requires memory dump analysis.<br>
+    🔗 <a href="https://hackread.com/new-malware-corrupts-its-headers-block-analysis/" target="_blank">Read more</a></p>
 
-    <p>🔎 <b>251 Amazon IPs Used in Coordinated Vulnerability Scans</b><br>
-    Targets included ColdFusion, Elasticsearch, and Struts. Likely a one-off recon campaign from ephemeral Japanese cloud infra.<br>
-    🔗 <a href="https://thehackernews.com/2025/05/251-amazon-hosted-ips-used-in-exploit.html" target="_blank">Read more</a></p>
-
-    <p>🎓 <b>NodeSnake RAT Used in UK University Attacks</b><br>
-    Interlock ransomware uses new NodeJS-based backdoor. Evades detection with XOR, registry persistence, and Cloudflare C2.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/interlock-ransomware-gang-deploys-new-nodesnake-rat-on-universities/" target="_blank">Read more</a></p>
-
-    <p>📅 <b>APT41 Abuses Google Calendar as C2 in Stealth Espionage</b><br>
-    Malware used compromised gov site to deliver decoys and control Google Calendar entries. Google disabled C2 calendars.<br>
-    🔗 <a href="https://cyberscoop.com/google-calendar-apt-41-c2-winnti/" target="_blank">Read more</a></p>
-
-    <p>🎞️ <b>UNC6032 Exploits AI Video Generator Hype for Malware</b><br>
-    Fake Luma AI and Kling ads lure victims to malware downloads. Targets small businesses via Facebook and LinkedIn.<br>
-    🔗 <a href="https://cyberscoop.com/ai-video-generator-malware-mandiant-unc6032-vietnam/" target="_blank">Read more</a></p>
-
-    <p>🧬 <b>Skitnet: Post-Exploitation Toolkit Gains Ransomware Adoption</b><br>
-    Used by Black Basta and Cactus. Includes fileless execution, DNS C2, Rust payloads, and spoofed Microsoft Teams lures.<br>
-    🔗 <a href="https://www.cysecurity.news/2025/05/surge-in-skitnet-usage-highlights.html" target="_blank">Read more</a></p>
-
-    <p>🖨️ <b>Procolored Printers Shipped with RATs and Clipper Malware</b><br>
-    Compromised Mega.nz software bundle included XRedRAT and SnipVex. Stolen $1M in BTC. Clean versions now released.<br>
-    🔗 <a href="https://www.cysecurity.news/2025/05/malware-discovered-in-procolored.html" target="_blank">Read more</a></p>
-
-    <p>📨 <b>DBatLoader Campaign Delivers Remcos RAT via Phishing</b><br>
-    Uses LOLBAS like `esentutl.exe`, BatCloak, and UAC bypass tricks. ANY.RUN details loader behavior and persistence methods.<br>
-    🔗 <a href="https://hackread.com/new-phishing-campaign-dbatloader-drop-remcos-rat/" target="_blank">Read more</a></p>
-
-    <p>🛡️ <b>Fake Bitdefender Site Delivers Modular Malware Toolkit</b><br>
-    Campaign pushes VenomRAT, StormKitty, and SilentTrinity. Hosted payloads on Bitbucket, S3. Targets banks, Microsoft logins.<br>
-    🔗 <a href="https://www.infosecurity-magazine.com/news/fake-bitdefender-site-spreads/" target="_blank">Read more</a></p>
+    <p>🌐 <b>SquareX Demos Fullscreen BitM Attack Abusing Safari’s API</b><br>
+    Enables fake login overlays with no warning. Bypasses EDRs. Webinar scheduled June 5.<br>
+    🔗 <a href="https://hackread.com/fullscreen-bitm-attack-discovered-by-squarex-exploits-browser-fullscreen-apis-to-steal-credentials-in-safari/" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
-    <h2>📊 Trends</h2>
+    <h2>💥 Breaches & Leaks</h2>
 
-    <p>🎣 <b>Phishing Dominates in EU: GitHub Now Top Malware Host</b><br>
-    16% of orgs hit monthly. GitHub overtakes OneDrive. GenAI tools increasingly blocked; Stable Diffusion and Grok among top offenders.<br>
-    🔗 <a href="https://www.helpnetsecurity.com/2025/05/28/attackers-phishing-method-europe/" target="_blank">Read more</a></p>
+    <p>🖥️ <b>ConnectWise Breached via CVE-2025-3935 Flaw in ScreenConnect</b><br>
+    Small subset of cloud users impacted. Flaw patched in April. Nation-state actor suspected. Clients demand IOCs.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/connectwise-breached-in-cyberattack-linked-to-nation-state-hackers/" target="_blank">Read more</a></p>
+
+    <p>👙 <b>Victoria’s Secret Takes Website Offline After Cyber Incident</b><br>
+    Physical stores unaffected. Incident follows a wave of attacks on Dior and Adidas, tied to DragonForce ransomware.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/victorias-secret-takes-down-website-after-security-incident/" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>🗞️ Others</h2>
 
-    <p>🏥 <b>HIPAA Update Mandates Annual Pen Tests for All Entities</b><br>
-    New HHS rule enforces yearly pentests, biannual scans, MFA, and recovery plans for ePHI. Applies to all HIPAA-covered organizations.<br>
-    🔗 <a href="https://www.tripwire.com/state-of-security/proposed-hipaa-update-makes-yearly-pen-testing-mandatory" target="_blank">Read more</a></p>
+    <p>🔑 <b>Microsoft Authenticator Deprecates Password Autofill by August</b><br>
+    Users must export passwords or switch to Edge. No new saves allowed from June. Access ends in August.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/microsoft-authenticator-now-warns-to-export-passwords-before-july-cutoff/" target="_blank">Read more</a></p>
 
-    <p>🧠 <b>Zscaler to Acquire Red Canary, Bolster AI-Driven SOC Capabilities</b><br>
-    Acquisition adds Red Canary MDR to Zscaler’s cloud defense. Deal closes August 2025, aims to unify detection and Zero Trust automation.<br>
-    🔗 <a href="https://cyberscoop.com/zscaler-red-canary-acquisition/" target="_blank">Read more</a></p>
-  </div>
-
-  <div class="news-item">
-    <h2>🛠️ Tools</h2>
-
-    <p>🛠️ <b>Woodpecker: Open-Source Red Teaming for K8s, APIs, and AI</b><br>
-    Simulates OWASP Top 10, supports MITRE ATLAS. Focused on democratizing enterprise-grade security testing across emerging tech environments.<br>
-    🔗 <a href="https://www.helpnetsecurity.com/2025/05/28/woodpecker-open-source-red-teaming/" target="_blank">Read more</a></p>
+    <p>🧬 <b>China Launches Commercial Quantum-Secure Communication</b><br>
+    Protects against future quantum threats using QKD and PQC. Covers 16 cities and 900+ institutions.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/china-launches-advanced-quantum.html" target="_blank">Read more</a></p>
   </div>
 
   <p style="text-align:center;">
