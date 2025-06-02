@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 02/06/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 02/06/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>📡 <b>CVE-2025-20188: Cisco IOS XE WLC Arbitrary File Upload</b><br>
+    Flaw in Catalyst 9800 WLCs allows RCE via hardcoded JWT and OpenResty Lua abuse. Patch available (17.12.04+).<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/exploit-details-for-max-severity-cisco-ios-xe-flaw-now-public/" target="_blank">Read more</a></p>
+
+    <p>💬 <b>vBulletin RCE Exploits Target Versions 5.x and 6.x</b><br>
+    CVE-2025-48827 actively exploited via Reflection API abuse. Admins urged to upgrade to v6.1.1 immediately.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/hackers-are-exploiting-critical-flaw-in-vbulletin-forum-software/" target="_blank">Read more</a></p>
+
+    <p>🐧 <b>Linux Core Dump Race Conditions Leak SUID Data</b><br>
+    CVE-2025-5054 and CVE-2025-4598 allow attackers to access sensitive core dumps. Ubuntu, RHEL, Fedora affected.<br>
+    🔗 <a href="https://securityaffairs.com/178464/hacking/two-linux-flaws-can-lead-to-the-disclosure-of-sensitive-data.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>🚨 <b>AVCheck Takedown Hits Major CAV Ecosystem</b><br>
+    U.S. and Dutch law enforcement seize malware-testing site used by ransomware groups. Linked to Cryptor.biz and Crypt.guru.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/police-takes-down-avcheck-antivirus-site-used-by-cybercriminals/" target="_blank">Read more</a></p>
+
+    <p>🎯 <b>Trickbot Leader ‘Stern’ Identified by Germany</b><br>
+    Vitaly Kovalev exposed as Trickbot/Conti ringleader. Interpol Red Notice issued under Operation Endgame.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/germany-doxxes-conti-ransomware-and-trickbot-ring-leader/" target="_blank">Read more</a></p>
+
+    <p>🖥️ <b>Interlock Ransomware Targets FreeBSD and Windows</b><br>
+    Disguises as browser updates and uses ClickFix trick. Drops `.interlock` ransom notes, affects critical sectors.<br>
+    🔗 <a href="https://www.tripwire.com/state-of-security/interlock-ransomware-what-you-need-know" target="_blank">Read more</a></p>
+
+    <p>🐷 <b>FBI Links Funnull Tech to 332K Scam Domains</b><br>
+    Filipino firm accused of enabling romance fraud infrastructure. Over 548 Funnull CNAMEs tied to pig butchering campaigns.<br>
+    🔗 <a href="https://www.darkreading.com/threat-intelligence/fbi-warns-tech-company-crypto-scams" target="_blank">Read more</a></p>
+
+    <p>🎣 <b>Haozi: Chinese PhaaS Automates Phishing Campaigns</b><br>
+    Plug-and-play phishing platform supports Telegram support, USDT payments. Over $280K in processed fraud.<br>
+    🔗 <a href="https://hackread.com/chinese-phishing-service-haozi-criminal-profits/" target="_blank">Read more</a></p>
+
+    <p>🦠 <b>EDDIESTEALER Malware Distributed via CAPTCHA Scam</b><br>
+    Rust-based infostealer uses ClickFix tactic, PowerShell loaders, and ChromeKatz. Targets multiple OSes.<br>
+    🔗 <a href="https://thehackernews.com/2025/05/eddiestealer-malware-uses-clickfix.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>💥 Breaches & Leaks</h2>
+
+    <p>🏥 <b>Kettering Health Ransomware Outage Disrupts 14 Facilities</b><br>
+    Linked to Interlock group. Elective procedures halted. FBI and CISA likely involved in incident response.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/ransomware-attack-disrupts-kettering.html" target="_blank">Read more</a></p>
+
+    <p>🕊️ <b>Russia-Linked Hackers Target UK MoD via ‘Damascened Peacock’</b><br>
+    Fake journalists deliver malware tied to RomCom. Futurico-signed payloads tied to Storm-0978 actor.<br>
+    🔗 <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/damascened-peacock-russian-hackers-targeted-uk-ministry-of-defence" target="_blank">Read more</a></p>
+
+    <p>🎥 <b>TikTok Data Breach Claims Surface for 428M Records</b><br>
+    Threat actor ‘Often9’ alleges internal API flaw. Verification pending amid skepticism over legitimacy.<br>
+    🔗 <a href="https://hackread.com/threat-actor-tiktok-breach-428-million-records-sale/" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
