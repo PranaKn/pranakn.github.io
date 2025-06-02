@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cybersecurity Newsfeed - 30/05/25</title>
+  <title>Cybersecurity Newsfeed - 02/06/25</title>
   <style>
     body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
     h1, h2 { color: #c9a227; text-align: center; }
@@ -16,70 +16,66 @@
 <body>
 
   <h1>📰 Cybersecurity Newsfeed</h1>
-  <h2>📅 30/05/25</h2>
+  <h2>📅 02/06/25</h2>
 
   <div class="news-item">
     <h2>🔥 Vulnerabilities</h2>
 
-    <p>🍏 <b>Safari BitM Vulnerability Exploited in Fullscreen Credential Theft</b><br>
-    Safari lacks clear alerts in fullscreen mode, enabling realistic BitM phishing attacks. Apple declined to fix. <br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/apple-safari-exposes-users-to-fullscreen-browser-in-the-middle-attacks/" target="_blank">Read more</a></p>
+    <p>📡 <b>CVE-2025-20188: Cisco IOS XE WLC Arbitrary File Upload</b><br>
+    Flaw in Catalyst 9800 WLCs allows RCE via hardcoded JWT and OpenResty Lua abuse. Patch available (17.12.04+).<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/exploit-details-for-max-severity-cisco-ios-xe-flaw-now-public/" target="_blank">Read more</a></p>
 
-    <p>🦊 <b>Firefox 139.0.1 Fixes GPU Glitches on NVIDIA Systems</b><br>
-    Emergency patch reverts DirectComposition changes to stop video flickering and corruption on dual-monitor setups.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/software/mozilla-releases-firefox-13901-update-to-fix-artifacts-on-nvidia-gpus/" target="_blank">Read more</a></p>
+    <p>💬 <b>vBulletin RCE Exploits Target Versions 5.x and 6.x</b><br>
+    CVE-2025-48827 actively exploited via Reflection API abuse. Admins urged to upgrade to v6.1.1 immediately.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/hackers-are-exploiting-critical-flaw-in-vbulletin-forum-software/" target="_blank">Read more</a></p>
 
-    <p>🔌 <b>CVE-2025-47577: Critical File Upload Flaw in WooCommerce Wishlist</b><br>
-    Unauthenticated RCE risk in plugin with 100K+ installs. No patch yet. Users urged to uninstall.<br>
-    🔗 <a href="https://thehackernews.com/2025/05/over-100000-wordpress-sites-at-risk.html" target="_blank">Read more</a></p>
+    <p>🐧 <b>Linux Core Dump Race Conditions Leak SUID Data</b><br>
+    CVE-2025-5054 and CVE-2025-4598 allow attackers to access sensitive core dumps. Ubuntu, RHEL, Fedora affected.<br>
+    🔗 <a href="https://securityaffairs.com/178464/hacking/two-linux-flaws-can-lead-to-the-disclosure-of-sensitive-data.html" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>🕵️ Adversaries & Attacks</h2>
 
-    <p>🔐 <b>AyySSHush Botnet Expands, Hits 12K ASUS Routers</b><br>
-    Exploits CVE-2023-39780 and weak SSH credentials, disables protections, persists via NVRAM. Linked to ViciousTrap ORB infrastructure.<br>
-    🔗 <a href="https://www.darkreading.com/vulnerabilities-threats/botnet-persistent-backdoors-asus-routers" target="_blank">Read more</a></p>
+    <p>🚨 <b>AVCheck Takedown Hits Major CAV Ecosystem</b><br>
+    U.S. and Dutch law enforcement seize malware-testing site used by ransomware groups. Linked to Cryptor.biz and Crypt.guru.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/police-takes-down-avcheck-antivirus-site-used-by-cybercriminals/" target="_blank">Read more</a></p>
 
-    <p>🐾 <b>PumaBot: SSH Brute-Forcing Linux Botnet Targets IoT</b><br>
-    Written in Go, pulls targets from C2 server, uses rootkits, and avoids honeypots. May mimic Redis files.<br>
-    🔗 <a href="https://www.darkreading.com/threat-intelligence/pumabot-targets-linux-devices-botnet-campaign" target="_blank">Read more</a></p>
+    <p>🎯 <b>Trickbot Leader ‘Stern’ Identified by Germany</b><br>
+    Vitaly Kovalev exposed as Trickbot/Conti ringleader. Interpol Red Notice issued under Operation Endgame.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/germany-doxxes-conti-ransomware-and-trickbot-ring-leader/" target="_blank">Read more</a></p>
 
-    <p>🎭 <b>Fake AI Tools Spread CyberLock, Lucky_Gh0$t Ransomware</b><br>
-    Talos finds malware hidden in fake NovaLeadsAI, ChatGPT, and InVideo installers. Targets sales, tech, and marketing sectors.<br>
-    🔗 <a href="https://hackread.com/fake-chatgpt-invideo-ai-downloads-deliver-ransomware/" target="_blank">Read more</a></p>
+    <p>🖥️ <b>Interlock Ransomware Targets FreeBSD and Windows</b><br>
+    Disguises as browser updates and uses ClickFix trick. Drops `.interlock` ransom notes, affects critical sectors.<br>
+    🔗 <a href="https://www.tripwire.com/state-of-security/interlock-ransomware-what-you-need-know" target="_blank">Read more</a></p>
 
-    <p>📂 <b>Header-Corrupting RAT Evades Forensics via dllhost.exe</b><br>
-    Fortinet finds RAT with broken PE headers, TLS encryption, and XOR-obfuscation. Requires memory dump analysis.<br>
-    🔗 <a href="https://hackread.com/new-malware-corrupts-its-headers-block-analysis/" target="_blank">Read more</a></p>
+    <p>🐷 <b>FBI Links Funnull Tech to 332K Scam Domains</b><br>
+    Filipino firm accused of enabling romance fraud infrastructure. Over 548 Funnull CNAMEs tied to pig butchering campaigns.<br>
+    🔗 <a href="https://www.darkreading.com/threat-intelligence/fbi-warns-tech-company-crypto-scams" target="_blank">Read more</a></p>
 
-    <p>🌐 <b>SquareX Demos Fullscreen BitM Attack Abusing Safari’s API</b><br>
-    Enables fake login overlays with no warning. Bypasses EDRs. Webinar scheduled June 5.<br>
-    🔗 <a href="https://hackread.com/fullscreen-bitm-attack-discovered-by-squarex-exploits-browser-fullscreen-apis-to-steal-credentials-in-safari/" target="_blank">Read more</a></p>
+    <p>🎣 <b>Haozi: Chinese PhaaS Automates Phishing Campaigns</b><br>
+    Plug-and-play phishing platform supports Telegram support, USDT payments. Over $280K in processed fraud.<br>
+    🔗 <a href="https://hackread.com/chinese-phishing-service-haozi-criminal-profits/" target="_blank">Read more</a></p>
+
+    <p>🦠 <b>EDDIESTEALER Malware Distributed via CAPTCHA Scam</b><br>
+    Rust-based infostealer uses ClickFix tactic, PowerShell loaders, and ChromeKatz. Targets multiple OSes.<br>
+    🔗 <a href="https://thehackernews.com/2025/05/eddiestealer-malware-uses-clickfix.html" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>💥 Breaches & Leaks</h2>
 
-    <p>🖥️ <b>ConnectWise Breached via CVE-2025-3935 Flaw in ScreenConnect</b><br>
-    Small subset of cloud users impacted. Flaw patched in April. Nation-state actor suspected. Clients demand IOCs.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/connectwise-breached-in-cyberattack-linked-to-nation-state-hackers/" target="_blank">Read more</a></p>
+    <p>🏥 <b>Kettering Health Ransomware Outage Disrupts 14 Facilities</b><br>
+    Linked to Interlock group. Elective procedures halted. FBI and CISA likely involved in incident response.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/05/ransomware-attack-disrupts-kettering.html" target="_blank">Read more</a></p>
 
-    <p>👙 <b>Victoria’s Secret Takes Website Offline After Cyber Incident</b><br>
-    Physical stores unaffected. Incident follows a wave of attacks on Dior and Adidas, tied to DragonForce ransomware.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/victorias-secret-takes-down-website-after-security-incident/" target="_blank">Read more</a></p>
-  </div>
+    <p>🕊️ <b>Russia-Linked Hackers Target UK MoD via ‘Damascened Peacock’</b><br>
+    Fake journalists deliver malware tied to RomCom. Futurico-signed payloads tied to Storm-0978 actor.<br>
+    🔗 <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/damascened-peacock-russian-hackers-targeted-uk-ministry-of-defence" target="_blank">Read more</a></p>
 
-  <div class="news-item">
-    <h2>🗞️ Others</h2>
-
-    <p>🔑 <b>Microsoft Authenticator Deprecates Password Autofill by August</b><br>
-    Users must export passwords or switch to Edge. No new saves allowed from June. Access ends in August.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/microsoft-authenticator-now-warns-to-export-passwords-before-july-cutoff/" target="_blank">Read more</a></p>
-
-    <p>🧬 <b>China Launches Commercial Quantum-Secure Communication</b><br>
-    Protects against future quantum threats using QKD and PQC. Covers 16 cities and 900+ institutions.<br>
-    🔗 <a href="https://www.cysecurity.news/2025/05/china-launches-advanced-quantum.html" target="_blank">Read more</a></p>
+    <p>🎥 <b>TikTok Data Breach Claims Surface for 428M Records</b><br>
+    Threat actor ‘Often9’ alleges internal API flaw. Verification pending amid skepticism over legitimacy.<br>
+    🔗 <a href="https://hackread.com/threat-actor-tiktok-breach-428-million-records-sale/" target="_blank">Read more</a></p>
   </div>
 
   <p style="text-align:center;">
