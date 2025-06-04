@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cybersecurity Newsfeed - 03/06/25</title>
+  <title>Cybersecurity Newsfeed - 04/06/25</title>
   <style>
     body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
     h1, h2 { color: #c9a227; text-align: center; }
@@ -16,86 +16,78 @@
 <body>
 
   <h1>📰 Cybersecurity Newsfeed</h1>
-  <h2>📅 03/06/25</h2>
+  <h2>📅 04/06/25</h2>
 
   <div class="news-item">
     <h2>🔥 Vulnerabilities</h2>
 
-    <p>⚠️ <b>CISA Adds 5 Flaws to KEV List</b><br>
-    Includes CVEs affecting ASUS routers, Craft CMS, and ConnectWise ScreenConnect, some actively exploited. Urgent patching recommended.<br>
-    🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/06/02/cisa-adds-five-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
+    <p>🌐 <b>Chrome Zero-Day CVE-2025-5419 Patched</b><br>
+    Google fixed an actively exploited V8 flaw in Chrome v137.0.7151.68/.69. Initially mitigated via config, now fully patched.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/google-patches-new-chrome-zero-day-bug-exploited-in-attacks/" target="_blank">Read more</a></p>
 
-    <p>🐧 <b>Race-Condition Linux Flaws Leak Sensitive Data</b><br>
-    CVE-2025-5054 and CVE-2025-4598 let attackers steal core dumps with password hashes. Qualys urges suid_dumpable=0.<br>
-    🔗 <a href="https://www.infosecurity-magazine.com/news/linux-vulnerabilities-expose/" target="_blank">Read more</a></p>
+    <p>💾 <b>HPE StoreOnce Flaws Include CVE-2025-37093</b><br>
+    Version 4.3.11 fixes 8 bugs, incl. critical auth bypass (CVSS 9.8). No mitigations. Upgrade urged for enterprise backup users.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/hewlett-packard-enterprise-warns-of-critical-storeonce-auth-bypass/" target="_blank">Read more</a></p>
 
-    <p>🧱 <b>Nomad & Consul Exploited for Cryptojacking by JINX-0132</b><br>
-    Misconfigured HashiCorp and Docker environments hijacked for XMRig mining. Gitea CVE-2020-14144 also used.<br>
-    🔗 <a href="https://www.infosecurity-magazine.com/news/cryptojacking-campaign-devops/" target="_blank">Read more</a></p>
+    <p>📱 <b>Android June Update Fixes 34 Flaws</b><br>
+    CVE-2025-26443 (LPE) among fixes. Three Qualcomm zero-days still unpatched. OEM rollouts pending.<br>
+    🔗 <a href="https://cyberscoop.com/android-security-update-june-2025/" target="_blank">Read more</a></p>
+
+    <p>🐧 <b>Race-Condition Bugs Leak Core Dumps</b><br>
+    CVE-2025-5054 and CVE-2025-4598 exploit Apport and systemd-coredump for privilege memory exfil. Serious risk in shared systems.<br>
+    🔗 <a href="https://www.schneier.com/blog/archives/2025/06/new-linux-vulnerabilities.html" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>🕵️ Adversaries & Attacks</h2>
 
-    <p>🧠 <b>Russian Market Surges as Infostealer Log Hub</b><br>
-    Following Genesis Market takedown, logs from Lumma and Acreed dominate. 61% include SaaS credentials.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/russian-market-emerges-as-a-go-to-shop-for-stolen-credentials/" target="_blank">Read more</a></p>
+    <p>📇 <b>Crocodilus Android Malware Adds Contact Spoofing</b><br>
+    New variant adds fake contacts to mimic banks/family. Uses encrypted payloads and dropper evasion. Now global.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/android-malware-crocodilus-adds-fake-contacts-to-spoof-trusted-callers/" target="_blank">Read more</a></p>
 
-    <p>💻 <b>Sysdig: Python Loader Campaign Targets Windows & Linux</b><br>
-    Misconfigured services abused to install miners, infostealers. JDK-JAR loaders, DLLs use evasion techniques.<br>
-    🔗 <a href="https://www.infosecurity-magazine.com/news/malware-campaign-targets-windows/" target="_blank">Read more</a></p>
+    <p>🖼️ <b>WhatsApp Image Scam Uses Steganography</b><br>
+    Malware hidden in image metadata leads to banking theft. Case reported in India. Bypasses AV tools.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/06/whatsapp-image-scam-uses-steganography.html" target="_blank">Read more</a></p>
 
-    <p>📈 <b>Acreed Replaces Lumma as Top Dark Web Stealer</b><br>
-    Post-Lumma, Acreed logs flood Russian Market. 77% of logs include SSO tokens. $2 price tags fuel trade.<br>
-    🔗 <a href="https://www.infosecurity-magazine.com/news/acreed-dominant-infostealer-lumma/" target="_blank">Read more</a></p>
+    <p>📩 <b>Fake DocuSign Pages Deliver NetSupport RAT</b><br>
+    Clipboard poisoning via PowerShell command deploys RAT. Spoofed domains mimic popular platforms.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/fake-docusign-pages-deliver-rat/" target="_blank">Read more</a></p>
 
-    <p>🔐 <b>Operation Endgame: AVCheck and Cryptor.biz Seized</b><br>
-    Authorities dismantle major CAV tools. User logs seized to trace ransomware developers and testers.<br>
-    🔗 <a href="https://www.infosecurity-magazine.com/news/dutch-police-shut-down-counter-av/" target="_blank">Read more</a></p>
+    <p>🌐 <b>DollyWay Malware Infected 20K+ WordPress Sites</b><br>
+    Since 2016, campaign redirects visitors to scams. Hides in plugins, logs admin credentials, reinfects sites.<br>
+    🔗 <a href="https://www.kaspersky.com/blog/dollyway-world-domination-infects-wordpress-websites/53506/" target="_blank">Read more</a></p>
 
-    <p>📱 <b>Qualcomm Zero-Days Patched After Limited Exploits</b><br>
-    CVEs in Adreno GPU exploited in the wild. Use-after-free and auth issues fixed in May 2025 update.<br>
-    🔗 <a href="https://securityaffairs.com/178532/hacking/qualcomm-fixed-three-zero-days-exploited-in-limited-targeted-attacks.html" target="_blank">Read more</a></p>
-
-    <p>📨 <b>NetBird Phishing Targets CFOs; Tycoon 2FA Rises</b><br>
-    Spear-phishing via fake recruiters installs NetBird. PhaaS tools offer advanced AitM, OAuth, and 2FA bypass.<br>
-    🔗 <a href="https://thehackernews.com/2025/06/fake-recruiter-emails-target-cfos-using.html" target="_blank">Read more</a></p>
+    <p>🛠️ <b>JINX-0132 Campaign Exploits DevOps Tools</b><br>
+    Misconfigured Docker, Nomad, Gitea abused to mine Monero. Public GitHub used to avoid detection.<br>
+    🔗 <a href="https://securityaffairs.com/178548/cyber-crime/cryptojacking-campaign-relies-on-devops-tools.html" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>📊 Trends</h2>
 
-    <p>🎭 <b>Anime-Themed Malware Scams Surge Past 250K Cases</b><br>
-    Fake Naruto, Demon Slayer, and Shrek links lure Gen Z users. Kaspersky warns to stream safely.<br>
-    🔗 <a href="https://www.cysecurity.news/2025/06/hackers-use-popular-anime-titles-to.html" target="_blank">Read more</a></p>
-  </div>
-
-  <div class="news-item">
-    <h2>💥 Breaches & Leaks</h2>
-
-    <p>🧥 <b>The North Face Suffers 4th Breach via Credential Stuffing</b><br>
-    April attack exposed names, contacts, purchases. No payment data leaked. MFA enforcement still lacking.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/the-north-face-warns-customers-of-april-credential-stuffing-attack/" target="_blank">Read more</a></p>
-
-    <p>💎 <b>Cartier Confirms Customer Data Exposure</b><br>
-    Breach revealed names, emails, and countries. No passwords leaked. Follows similar Dior, Adidas incidents.<br>
-    🔗 <a href="https://www.bleepingcomputer.com/news/security/cartier-discloses-data-breach-amid-fashion-brand-cyberattacks/" target="_blank">Read more</a></p>
-
-    <p>🏦 <b>MainStreet Bancshares: 3rd-Party Breach Affects 4.65%</b><br>
-    Vendor breach hit ~4.65% of clients. SEC 8-K disclosures now under fire for aiding ransomware pressure tactics.<br>
-    🔗 <a href="https://www.theregister.com/2025/06/02/mainstreet_bancshares_says_thirdparty_breach/" target="_blank">Read more</a></p>
+    <p>🇮🇳 <b>India Faces Malware Surge in Critical Sectors</b><br>
+    Over 369M events in H1 2024. Finance, healthcare, and smart factories hit hardest. Urgent call for awareness and policy reform.<br>
+    🔗 <a href="https://www.tripwire.com/state-of-security/rising-tide-understanding-surge-cyber-attacks-india" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>🌍 Others</h2>
 
-    <p>🇦🇺 <b>Australia Enacts World’s First Ransomware Reporting Law</b><br>
-    AUD 3M+ orgs must report ransomware payments in 72 hrs or face penalties. Aims to lead global cyber reform.<br>
-    🔗 <a href="https://www.darkreading.com/threat-intelligence/australia-ransomware-payment-disclosure-rules" target="_blank">Read more</a></p>
+    <p>🎯 <b>Ukraine Drone Strike Powered by ArduPilot</b><br>
+    SBU used 117 open-source drones to hit Russian bases. $7B+ in damage. ArduPilot enabled precision over jammed networks.<br>
+    🔗 <a href="https://www.404media.co/ukraines-massive-drone-attack-was-powered-by-open-source-software/" target="_blank">Read more</a></p>
 
-    <p>🇺🇦 <b>Operation Spiderweb: Ukraine Drone Strike Hits 40+ Russian Jets</b><br>
-    $7B in estimated damage. Civilian trucks used to deliver 117 drones. Tu-95s and A-50s reportedly downed.<br>
-    🔗 <a href="https://www.theregister.com/2025/06/02/ukrainian_drones_russia_bombing/" target="_blank">Read more</a></p>
+    <p>🚘 <b>Auto Industry Plagued by Weak Passwords</b><br>
+    NordPass: "123456" and "P@ssw0rd" still common. MFA lacking. Report covers 2.5TB of leaked credentials.<br>
+    🔗 <a href="https://hackread.com/smart-cars-dumb-passwords-auto-industry-weak-passwords/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🛠 Tools</h2>
+
+    <p>🔎 <b>Vet: Supply Chain Scanner for Malicious Packages</b><br>
+    Open-source tool detects bad dependencies in npm, PyPI, Docker, etc. Powered by SafeDep. CI/CD ready.<br>
+    🔗 <a href="https://github.com/safedep/vet" target="_blank">Read more</a></p>
   </div>
 
   <p style="text-align:center;">
