@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 04/06/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 04/06/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>🌐 <b>Chrome Zero-Day CVE-2025-5419 Patched</b><br>
+    Google fixed an actively exploited V8 flaw in Chrome v137.0.7151.68/.69. Initially mitigated via config, now fully patched.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/google-patches-new-chrome-zero-day-bug-exploited-in-attacks/" target="_blank">Read more</a></p>
+
+    <p>💾 <b>HPE StoreOnce Flaws Include CVE-2025-37093</b><br>
+    Version 4.3.11 fixes 8 bugs, incl. critical auth bypass (CVSS 9.8). No mitigations. Upgrade urged for enterprise backup users.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/hewlett-packard-enterprise-warns-of-critical-storeonce-auth-bypass/" target="_blank">Read more</a></p>
+
+    <p>📱 <b>Android June Update Fixes 34 Flaws</b><br>
+    CVE-2025-26443 (LPE) among fixes. Three Qualcomm zero-days still unpatched. OEM rollouts pending.<br>
+    🔗 <a href="https://cyberscoop.com/android-security-update-june-2025/" target="_blank">Read more</a></p>
+
+    <p>🐧 <b>Race-Condition Bugs Leak Core Dumps</b><br>
+    CVE-2025-5054 and CVE-2025-4598 exploit Apport and systemd-coredump for privilege memory exfil. Serious risk in shared systems.<br>
+    🔗 <a href="https://www.schneier.com/blog/archives/2025/06/new-linux-vulnerabilities.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>📇 <b>Crocodilus Android Malware Adds Contact Spoofing</b><br>
+    New variant adds fake contacts to mimic banks/family. Uses encrypted payloads and dropper evasion. Now global.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/android-malware-crocodilus-adds-fake-contacts-to-spoof-trusted-callers/" target="_blank">Read more</a></p>
+
+    <p>🖼️ <b>WhatsApp Image Scam Uses Steganography</b><br>
+    Malware hidden in image metadata leads to banking theft. Case reported in India. Bypasses AV tools.<br>
+    🔗 <a href="https://www.cysecurity.news/2025/06/whatsapp-image-scam-uses-steganography.html" target="_blank">Read more</a></p>
+
+    <p>📩 <b>Fake DocuSign Pages Deliver NetSupport RAT</b><br>
+    Clipboard poisoning via PowerShell command deploys RAT. Spoofed domains mimic popular platforms.<br>
+    🔗 <a href="https://www.infosecurity-magazine.com/news/fake-docusign-pages-deliver-rat/" target="_blank">Read more</a></p>
+
+    <p>🌐 <b>DollyWay Malware Infected 20K+ WordPress Sites</b><br>
+    Since 2016, campaign redirects visitors to scams. Hides in plugins, logs admin credentials, reinfects sites.<br>
+    🔗 <a href="https://www.kaspersky.com/blog/dollyway-world-domination-infects-wordpress-websites/53506/" target="_blank">Read more</a></p>
+
+    <p>🛠️ <b>JINX-0132 Campaign Exploits DevOps Tools</b><br>
+    Misconfigured Docker, Nomad, Gitea abused to mine Monero. Public GitHub used to avoid detection.<br>
+    🔗 <a href="https://securityaffairs.com/178548/cyber-crime/cryptojacking-campaign-relies-on-devops-tools.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📊 Trends</h2>
+
+    <p>🇮🇳 <b>India Faces Malware Surge in Critical Sectors</b><br>
+    Over 369M events in H1 2024. Finance, healthcare, and smart factories hit hardest. Urgent call for awareness and policy reform.<br>
+    🔗 <a href="https://www.tripwire.com/state-of-security/rising-tide-understanding-surge-cyber-attacks-india" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🌍 Others</h2>
+
+    <p>🎯 <b>Ukraine Drone Strike Powered by ArduPilot</b><br>
+    SBU used 117 open-source drones to hit Russian bases. $7B+ in damage. ArduPilot enabled precision over jammed networks.<br>
+    🔗 <a href="https://www.404media.co/ukraines-massive-drone-attack-was-powered-by-open-source-software/" target="_blank">Read more</a></p>
+
+    <p>🚘 <b>Auto Industry Plagued by Weak Passwords</b><br>
+    NordPass: "123456" and "P@ssw0rd" still common. MFA lacking. Report covers 2.5TB of leaked credentials.<br>
+    🔗 <a href="https://hackread.com/smart-cars-dumb-passwords-auto-industry-weak-passwords/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🛠 Tools</h2>
+
+    <p>🔎 <b>Vet: Supply Chain Scanner for Malicious Packages</b><br>
+    Open-source tool detects bad dependencies in npm, PyPI, Docker, etc. Powered by SafeDep. CI/CD ready.<br>
+    🔗 <a href="https://github.com/safedep/vet" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
