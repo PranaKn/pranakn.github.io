@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 04/06/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 04/06/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+
+    <p>🛡️ <b>Cisco ISE and CCP Flaws Have Public Exploits</b><br>
+    Cisco warns of bugs in Identity Services Engine and Configuration Professional with PoC exploits available. Patch promptly.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/cisco-warns-of-ise-and-ccp-flaws-with-public-exploit-code/" target="_blank">Read more</a></p>
+
+    <p>📱 <b>Three Qualcomm Zero-Days Added to CISA KEV</b><br>
+    CVE-2025-21479, CVE-2025-21480, and CVE-2025-27038 affect Adreno GPU. Enable unauthorized execution and memory corruption. Patches issued; deadline June 24 for federal agencies.<br>
+    🔗 <a href="https://www.cisa.gov/news-events/alerts/2025/06/03/cisa-adds-three-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+
+    <p>🪤 <b>GitHub Malware Campaign Targets Hackers and Gamers</b><br>
+    Backdoored repos deliver malware via build events. 141 repos link to Sakura RAT, Lumma Stealer, and more.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/hacker-targets-other-hackers-and-gamers-with-backdoored-github-code/" target="_blank">Read more</a></p>
+
+    <p>🎣 <b>Hedera NFT Airdrop Scams Steal Crypto</b><br>
+    Unsolicited NFTs link to phishing dApps. Victims tricked into giving up seed phrases. FBI issues warning.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/fbi-warns-of-nft-airdrop-scams-targeting-hedera-hashgraph-wallets/" target="_blank">Read more</a></p>
+
+    <p>👮 <b>Ukrainian Hacker Arrested After $4.5M Crypto Mining Scheme</b><br>
+    Exploited 5,000+ accounts since 2018. Used OSINT and VMs. Faces up to 15 years in prison.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/hacker-arrested-for-breaching-5-000-hosting-accounts-to-mine-crypto/" target="_blank">Read more</a></p>
+
+    <p>💳 <b>BidenCash Market Takedown Seizes 145 Domains</b><br>
+    $17M in stolen card trade disrupted. Over 15M records sold before FBI and partners shut it down.<br>
+    🔗 <a href="https://cyberscoop.com/bidencash-marketplace-domains-seized/" target="_blank">Read more</a></p>
+
+    <p>💎 <b>RubyGems Supply Chain Attack Hijacks Telegram Traffic</b><br>
+    Malicious plug-ins exfiltrate messages and bot tokens. Targets Fastlane devs.<br>
+    🔗 <a href="https://www.darkreading.com/cyberattacks-data-breaches/attackers-impersonate-ruby-packages-telegram-data" target="_blank">Read more</a></p>
+
+    <p>🎭 <b>Brazilian AI-Generated Scam Uses Fake Journalists</b><br>
+    Video promotes court payout hoax. Victims pay fees, give data. No actual compensation issued.<br>
+    🔗 <a href="https://www.kaspersky.com/blog/fake-bank-payments/53578/" target="_blank">Read more</a></p>
+
+    <p>📧 <b>Conditional Comment Phishing Targets Czech Bank Users</b><br>
+    Outlook shows safe link, others reveal malicious site. Clever HTML trick evades detection.<br>
+    🔗 <a href="https://isc.sans.edu/diary/rss/32010" target="_blank">Read more</a></p>
+
+    <p>📬 <b>AS-REP Roasting Still Threatens Active Directory</b><br>
+    Exploits no pre-auth on Kerberos accounts. Monitor events 4768, 4625. Enforce strong passwords.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/security/kerberos-as-rep-roasting-attacks-what-you-need-to-know/" target="_blank">Read more</a></p>
+
+    <p>🧬 <b>Chaos RAT Variant Hits Linux and Windows</b><br>
+    Masquerades as network tool. Enables remote control, crontab persistence. Used in mining.<br>
+    🔗 <a href="https://thehackernews.com/2025/06/chaos-rat-malware-targets-windows-and.html" target="_blank">Read more</a></p>
+
+    <p>🧨 <b>Play Ransomware Hits 900+ Victims</b><br>
+    Exploits SimpleHelp and FortiOS. Uses EDR killers, custom binaries. Targets critical infrastructure globally.<br>
+    🔗 <a href="https://www.theregister.com/2025/06/04/play_ransomware_infects_900_victims/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>💥 Breaches & Leaks</h2>
+
+    <p>💎 <b>Cartier Discloses Limited Data Breach</b><br>
+    Names and emails exposed. No passwords leaked. Customers urged to stay alert.<br>
+    🔗 <a href="https://securityaffairs.com/178601/data-breach/cartier-disclosed-a-data-breach-following-a-cyber-attack.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🌍 Others</h2>
+
+    <p>🇪🇺 <b>Microsoft Launches EU Cybersecurity Program</b><br>
+    Free initiative targets nation-state threats. Offers AI-driven defense, Europol collaboration.<br>
+    🔗 <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-unveils-free-eu-cybersecurity-program-for-governments/" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
