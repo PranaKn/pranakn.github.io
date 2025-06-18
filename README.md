@@ -27,8 +27,7 @@
 ---
 
 ## ⚡ **Latest Blog Posts**
-📅 **CommingSoon** 
-
+📅 17/06/25 - Book Review - Countdown to ZeroDay by Kim Zetter 
 ---
 
 ## 🛠️ **Tools & Resources**
