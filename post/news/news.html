@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cybersecurity Newsfeed - 17/06/25</title>
+  <title>Cybersecurity Newsfeed - 18/06/25</title>
   <style>
     body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
     h1, h2 { color: #c9a227; text-align: center; }
@@ -16,38 +16,42 @@
 <body>
 
   <h1>📰 Cybersecurity Newsfeed</h1>
-  <h2>📅 17/06/25</h2>
+  <h2>📅 18/06/25</h2>
 
   <div class="news-item">
     <h2>🔥 Vulnerabilities</h2>
-    <p>CISA added two actively exploited flaws to its Known Exploited Vulnerabilities (KEV) Catalog: CVE‑2025‑43200 in Apple operating systems exploited in Graphite spyware attacks, and CVE‑2023‑33538, a command injection vulnerability in TP‑Link routers. <a href="https://www.cisa.gov/news-events/alerts/2025/06/16/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
-    <p>CVE-2025-3464 in ASUS Armoury Crate allows privilege escalation via a hard link swap in AsIO3.sys driver. <a href="https://www.bleepingcomputer.com/news/security/asus-armoury-crate-bug-lets-attackers-get-windows-admin-privileges/" target="_blank">Read more</a></p>
+    <p>CISA added CVE-2023-0386 to its KEV Catalog due to active exploitation. The Linux kernel flaw enables local privilege escalation and poses a serious risk to federal systems. <a href="https://www.cisa.gov/news-events/alerts/2025/06/17/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">Read more</a></p>
+    <p>Veeam patched CVE-2025-23121, a critical RCE in Backup & Replication that affects domain-joined setups. Attackers can exploit it with domain user access. <a href="https://www.bleepingcomputer.com/news/security/new-veeam-rce-flaw-lets-domain-users-hack-backup-servers/" target="_blank">Read more</a></p>
+    <p>A pre-auth RCE chain in Sitecore XP 10.1–10.4 enables hijacking servers via hardcoded user, Zip Slip flaw, and arbitrary file write. Over 22,000 public instances may be exposed. <a href="https://www.bleepingcomputer.com/news/security/sitecore-cms-exploit-chain-starts-with-hardcoded-b-password/" target="_blank">Read more</a></p>
+    <p>CVE-2025-3248 in Langflow is being actively exploited to deploy the Flodrix botnet. Versions prior to 1.3.0 allow unauthenticated RCE via the API. <a href="https://www.darkreading.com/vulnerabilities-threats/hackers-exploit-langflow-flaw-flodrix-botnet" target="_blank">Read more</a></p>
+    <p>Chrome CVE-2025-2783 zero-day was exploited by TaxOff group via phishing to deploy the Trinper backdoor. <a href="https://thehackernews.com/2025/06/google-chrome-zero-day-cve-2025-2783.html" target="_blank">Read more</a></p>
+    <p>Qualys disclosed CVE-2025-6018 and CVE-2025-6019, which enable full local privilege escalation on SUSE and openSUSE systems. <a href="https://blog.qualys.com/vulnerabilities-threat-research/2025/06/17/qualys-tru-uncovers-chained-lpe-suse-15-pam-to-full-root-via-libblockdev-udisks" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>🕵️ Adversaries & Attacks</h2>
-    <p>Scattered Spider group targets U.S. insurance industry using phishing and MFA bypass tactics. <a href="https://www.bleepingcomputer.com/news/security/google-warns-scattered-spider-hackers-now-target-us-insurance-companies/" target="_blank">Read more</a></p>
-    <p>Europol shut down Archetyp Market, a major dark web drug market, seizing infrastructure and arresting the administrator. <a href="https://cyberscoop.com/archetyp-market-takedown-europe/" target="_blank">Read more</a></p>
-    <p>Trend Micro identifies "Water Curse" threat actor using GitHub to spread malware in Visual Studio projects. <a href="https://www.darkreading.com/cyberattacks-data-breaches/water-curse-targets-cybersecurity-pros-github-repos" target="_blank">Read more</a></p>
-    <p>PyPI package chimera-sandbox-extensions used domain generation algorithm to steal AI developer credentials. <a href="https://www.darkreading.com/application-security/malicious-chimera-pypi" target="_blank">Read more</a></p>
-    <p>eSentire reports HijackLoader and DeerStealer campaign abusing signed installers and DLL hijacking. <a href="https://www.infosecurity-magazine.com/news/hijackloader-deerstealer-target/" target="_blank">Read more</a></p>
+    <p>AI tools like "WormGPT" on hacker forums were traced to Grok and Mixtral models. They’re sold to craft malware and phishing emails. <a href="https://cyberscoop.com/uncensored-ai-tool-traced-to-mistral-xai-grok/" target="_blank">Read more</a></p>
+    <p>Insikt Group linked new infrastructure to GrayAlpha, a cybercrime group using fake sites and custom loaders to deploy NetSupport RAT. <a href="https://www.cysecurity.news/2025/06/grayalpha-exposed-deploys-malware-via.html" target="_blank">Read more</a></p>
+    <p>Zscaler discovered "DanaBleed," a DanaBot memory leak flaw aiding a global takedown of 650 domains. <a href="https://www.cysecurity.news/2025/06/danabot-malware-network-disrupted-after.html" target="_blank">Read more</a></p>
+    <p>A phishing campaign in Taiwan uses malware like HoldingHands RAT, targeting government systems with DLLs and surveillance tools. <a href="https://www.darkreading.com/cyberattacks-data-breaches/holdinghands-pickpocket-taiwan-orgs" target="_blank">Read more</a></p>
+    <p>Keyloggers were found embedded in Microsoft Exchange login pages to steal credentials, targeting global sectors. <a href="https://www.helpnetsecurity.com/2025/06/17/researchers-unearth-keyloggers-on-outlook-login-pages/" target="_blank">Read more</a></p>
+    <p>KimJongRAT variants delivered via malicious LNKs and CDNs show increased stealth and targeting, using obfuscated PowerShell and RC4 encryption. <a href="https://unit42.paloaltonetworks.com/kimjongrat-stealer-variant-powershell/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📈 Trends</h2>
+    <p>GreyNoise observed exploit attempts against CVE-2023-28771 in Zyxel devices from over 244 IPs, mostly linked to Mirai botnets. <a href="https://securityaffairs.com/179073/hacking/attackers-target-zyxel-rce-vulnerability-cve-2023-28771.html" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>🔓 Breaches & Leaks</h2>
-    <p>Washington Post confirms state-sponsored actors breached Microsoft email accounts of journalists. <a href="https://www.bleepingcomputer.com/news/security/washington-posts-email-system-hacked-journalists-accounts-compromised/" target="_blank">Read more</a></p>
-    <p>AT&T faces renewed scrutiny after a fresh data leak affects 86 million users, likely from a 2024 breach. <a href="https://www.cysecurity.news/2025/06/at-customers-at-risk-again-after-new.html" target="_blank">Read more</a></p>
+    <p>Scania suffered a breach via compromised credentials from an IT partner, leading to insurance document leaks and extortion attempts. <a href="https://www.bleepingcomputer.com/news/security/scania-confirms-insurance-claim-data-breach-in-extortion-attempt/" target="_blank">Read more</a></p>
+    <p>Cock.li confirmed a breach affecting over 1 million users due to a Roundcube flaw. Exposed data includes email addresses and login timestamps. <a href="https://www.bleepingcomputer.com/news/security/hacker-steals-1-million-cockli-user-records-in-webmail-data-breach/" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>📚 Others</h2>
-    <p>NIST releases SP 1800-35, detailing 19 real-world examples for implementing zero-trust architectures. <a href="https://www.darkreading.com/endpoint-security/nist-outlines-real-world-zero-trust-examples" target="_blank">Read more</a></p>
-    <p>Salesforce-led study finds LLM-based AI agents underperform in CRM tasks, succeeding only 35-58% of the time. <a href="https://www.theregister.com/2025/06/16/salesforce_llm_agents_benchmark/" target="_blank">Read more</a></p>
-  </div>
-
-  <div class="news-item">
-    <h2>🛠️ Tools</h2>
-    <p>Betterment releases "claws," an open-source GitHub Actions linter to prevent misconfigurations and supply chain attacks. <a href="https://www.darknet.org.uk/2025/06/claws-github-actions-workflow-linter-for-secure-ci-cd-pipelines/" target="_blank">Read more</a></p>
+    <p>A GLAM-E Lab report shows AI data-scraping bots are overwhelming cultural heritage servers, risking access to open collections. <a href="https://www.404media.co/ai-scraping-bots-are-breaking-open-libraries-archives-and-museums/" target="_blank">Read more</a></p>
   </div>
 
   <p style="text-align:center;">
