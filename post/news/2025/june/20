@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cybersecurity Newsfeed - 20/06/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 20/06/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+    <p>EchoLeak (CVE-2025-32711) is the first known zero-click Microsoft 365 Copilot flaw, enabling data exfiltration via malicious markdown. Microsoft patched it in June 2025. <a href="https://www.cysecurity.news/2025/06/aim-security-reveals-zero-click-flaw-in.html" target="_blank">Read more</a></p>
+    <p>Atlassian’s AI protocol MCP in Jira Service Management is vulnerable to "Living off AI" prompt injection attacks, letting outsiders manipulate internal agents. <a href="https://www.infosecurity-magazine.com/news/atlassian-ai-agent-mcp-attack/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+    <p>Fake Google ads redirect users to spoofed support sites with scam contact numbers to steal data or access devices. <a href="https://www.darkreading.com/cloud-security/scammers-spread-false-support-info-legitimate-websites" target="_blank">Read more</a></p>
+    <p>Banana Squad hides malware in over 60 fake GitHub repos posing as Python hacking tools, exploiting GitHub’s formatting tricks. <a href="https://hackread.com/banana-squad-data-stealing-malware-github-repositories/" target="_blank">Read more</a></p>
+    <p>Famous Chollima targets Web3 job seekers with fake interviews and delivers PylangGhost malware via fake video driver prompts. <a href="https://hackread.com/n-korean-hackers-pylangghost-malware-crypo-job-scam/" target="_blank">Read more</a></p>
+    <p>A Ryuk ransomware initial access broker arrested in Kyiv has been extradited to the U.S. in connection to prior ransomware ops. <a href="https://www.infosecurity-magazine.com/news/alleged-ryuk-initial-access-broker/" target="_blank">Read more</a></p>
+    <p>Salt Typhoon (aka GhostEmperor) breached U.S. satellite firm Viasat in a long-running telecom espionage campaign. <a href="https://securityaffairs.com/179146/security/china-linked-group-salt-typhoon-breached-satellite-firm-viasat.html" target="_blank">Read more</a></p>
+    <p>APT29 exploited Google app-specific passwords via phishing campaigns to gain persistent access to email accounts of critics. <a href="https://thehackernews.com/2025/06/russian-apt29-exploits-gmail-app.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🔓 Breaches & Leaks</h2>
+    <p>Krispy Kreme breach affected 161,676 people, exposing sensitive financial and personal data including SSNs and biometric records. <a href="https://www.infosecurity-magazine.com/news/krispy-kreme-data-breach-financial/" target="_blank">Read more</a></p>
+    <p>UBS confirmed a breach from vendor Chain IQ, leaking data on over 130,000 employees including contact info and leadership details. <a href="https://www.infosecurity-magazine.com/news/ubs-employee-data-exposed-third/" target="_blank">Read more</a></p>
+    <p>Researchers uncovered 16 billion login credentials from 30 new infostealer datasets, posing major risks for identity theft and phishing. <a href="https://securityaffairs.com/179149/data-breach/researchers-discovered-the-largest-data-breach-ever-exposing-16-billion-login-credentials.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📚 Others</h2>
+    <p>DuckDuckGo expanded Scam Blocker to combat threats like fake stores, crypto scams, and malvertising, with privacy-respecting updates every 20 minutes. <a href="https://www.bleepingcomputer.com/news/security/duckduckgo-beefs-up-scam-defense-to-block-fake-stores-crypto-sites/" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
