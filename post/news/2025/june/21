@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cybersecurity Newsfeed - 23/06/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 23/06/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+    <p>Trend Micro patched critical RCE and auth bypass flaws in Apex Central and Endpoint Encryption PolicyServer, including CVE-2025-49212/13/16/19/20. <a href="https://www.cysecurity.news/2025/06/trend-micro-patches-critical-remote.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+    <p>APT29 used social engineering to steal Gmail app passwords by impersonating U.S. officials, bypassing MFA and accessing critics' inboxes. <a href="https://www.bleepingcomputer.com/news/security/russian-hackers-bypass-gmail-mfa-using-stolen-app-passwords/" target="_blank">Read more</a></p>
+    <p>Qilin ransomware introduced legal support services for affiliates, including consultation and strategic coercion techniques. <a href="https://www.tripwire.com/state-of-security/qilin-offers-call-lawyer-button-affiliates-attempting-extort-ransoms-victims" target="_blank">Read more</a></p>
+    <p>UNK_SneakyStrike campaign hijacked over 80,000 Entra ID accounts using TeamFiltration for stealthy spraying and backdoors. <a href="https://www.cysecurity.news/2025/06/microsoft-entra-id-faces-surge-in.html" target="_blank">Read more</a></p>
+    <p>Predator spyware remains active in Africa despite U.S. sanctions, with ties to Intellexa-linked infrastructure and corporate actors. <a href="https://www.cysecurity.news/2025/06/predator-spyware-campaign-resurfaces.html" target="_blank">Read more</a></p>
+    <p>Mocha Manakin malware uses PowerShell paste-and-run tricks to install NodeInitRAT, a custom backdoor linked to ransomware. <a href="https://hackread.com/mocha-manakin-malware-nodeinitrat-via-clickfix-attack/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📈 Trends</h2>
+    <p>WordPress "Motors" theme flaw (CVE-2025-4322) exploited to hijack admin accounts; 23,000 attacks reported. <a href="https://www.bleepingcomputer.com/news/security/wordpress-motors-theme-flaw-mass-exploited-to-hijack-admin-accounts/" target="_blank">Read more</a></p>
+    <p>FIN6 uses fake resumes and AWS-hosted .LNK payloads to deploy More_eggs malware in corporate hiring workflows. <a href="https://www.cysecurity.news/2025/06/fake-resumes-become-weapon-of-choice.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🔓 Breaches & Leaks</h2>
+    <p>Oxford City Council disclosed a breach affecting election and staff records from 2001–2022; no citizen impact confirmed. <a href="https://www.bleepingcomputer.com/news/security/oxford-city-council-suffers-breach-exposing-two-decades-of-data/" target="_blank">Read more</a></p>
+    <p>CoinMarketCap suffered a supply chain attack via a doodle image exploit, draining crypto wallets via spoofed popups. <a href="https://www.bleepingcomputer.com/news/security/coinmarketcap-briefly-hacked-to-drain-crypto-wallets-via-fake-web3-popup/" target="_blank">Read more</a></p>
+    <p>Salt Typhoon again breached Viasat during U.S. election season; no customer data impacted, but CISA issued warnings. <a href="https://www.darkreading.com/cloud-security/viasat-salt-typhoon-victim" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📚 Others</h2>
+    <p>Varonis released Jitter-Trap, a detection method for advanced C2 traffic using timing and randomness analysis. <a href="https://hackread.com/cyber-detection-hackers-jitter-patterns-against-them/" target="_blank">Read more</a></p>
+    <p>Iran confirmed nationwide internet shutdown was a defensive response to cyberattacks on critical infrastructure and financial targets. <a href="https://securityaffairs.com/179199/cyber-warfare-2/iran-confirmed-it-shut-down-internet-to-protect-the-country-against-cyberattacks.html" target="_blank">Read more</a></p>
+    <p>Cloudflare blocked the largest recorded DDoS attack (7.3 Tbps) using 122K IPs; RapperBot blamed for a separate AI firm hit. <a href="https://thehackernews.com/2025/06/massive-73-tbps-ddos-attack-delivers.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🛠️ Tools</h2>
+    <p>Praetorian released GitPhish, a tool that automates phishing via GitHub’s OAuth device flow, bypassing credentials and MFA. <a href="https://www.praetorian.com/blog/introducing-github-device-code-phishing/" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
