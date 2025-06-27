@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cybersecurity Newsfeed - 27/06/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 27/06/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+    <p>Talos disclosed CVE‑2025‑1533 & CVE‑2025‑3464 in ASUS <code>AsIO3.sys</code>, enabling local SYSTEM privileges via buffer overflow and auth bypass. No patch yet. <a href="https://blog.talosintelligence.com/decrement-by-one-to-rule-them-all/" target="_blank">Read more</a></p>
+    <p>Hundreds of Model Context Protocol (MCP) servers are exposed to RCE and data leakage due to misconfigurations dubbed “NeighborJack.” <a href="https://www.infosecurity-magazine.com/news/mcp-servers-risk-rce-data-leaks/" target="_blank">Read more</a></p>
+    <p>Cisco fixed CVE‑2025‑20281/20282 (CVSS 10) in ISE/ISE‑PIC allowing unauthenticated root‑level RCE via API and file‑upload flaws. <a href="https://securityaffairs.com/179362/security/cisco-fixed-critical-ise-flaws-allowing-root-level-rce.html" target="_blank">Read more</a></p>
+    <p>CISA confirmed active exploitation of CVE‑2024‑54085 in AMI MegaRAC BMC, enabling remote hijack or bricking of servers. <a href="https://www.bleepingcomputer.com/news/security/cisa-ami-megarac-bug-that-lets-hackers-brick-servers-now-actively-exploited/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+    <p>IRGC‑linked *Educated Manticore* (APT35/42) used AI‑generated spear‑phishing to steal Gmail credentials from Israeli journalists and researchers. <a href="https://thehackernews.com/2025/06/iranian-apt35-hackers-targeting-israeli.html" target="_blank">Read more</a></p>
+    <p>A Kansas City hacker pled guilty to breaching three organizations to market his own security services and avoid gym fees. <a href="https://www.bleepingcomputer.com/news/security/man-pleads-guilty-to-hacking-networks-to-pitch-security-services/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📈 Trends</h2>
+    <p>ESET reports ClickFix attacks jumped 500% in 2025, becoming the No. 2 vector after phishing and linked to infostealers and ransomware. <a href="https://www.helpnetsecurity.com/2025/06/26/clickfix-attacks-fakecaptcha-eset-report/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📚 Others</h2>
+    <p>Commentary warns that rising geopolitical tension is reshaping cyber warfare, demanding adversary‑informed defenses and AI‑aware resilience strategies. <a href="https://www.darkreading.com/vulnerabilities-threats/geopolitical-tensions-shape-cyber-warfare" target="_blank">Read more</a></p>
+    <p>Rapid SaaS adoption without mature resilience plans leaves data at risk; firms must address the shared‑responsibility gap. <a href="https://thehackernews.com/2025/06/the-hidden-risks-of-saas-why-built-in.html" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
