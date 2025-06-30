@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cybersecurity Newsfeed - 30/06/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 28/06/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+    <p>ERNW researchers disclosed CVE-2025-20700, CVE-2025-20701, CVE-2025-20702 in Airoha Bluetooth chipsets used by Sony, Bose, JBL and others. Attackers within range can spy, hijack, or trigger commands. <a href="https://www.bleepingcomputer.com/news/security/bluetooth-flaws-could-let-hackers-spy-through-your-microphone/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+    <p>North Korean group "Famous Chollima" targets crypto professionals with PylangGhost RAT via fake job interviews. Malware steals browser wallet data. <a href="https://www.cysecurity.news/2025/06/north-korean-hackers-target-crypto.html" target="_blank">Read more</a></p>
+    <p>U.S. and allies dismantled DanaBot infrastructure, long used by Russian proxies for theft and espionage. <a href="https://www.cysecurity.news/2025/06/danabot-malware-enables-data-breaches.html" target="_blank">Read more</a></p>
+    <p>Keyloggers were found on Exchange servers in 26 countries. Malware abused OWA to silently harvest credentials. <a href="https://www.cysecurity.news/2025/06/keylogger-injection-targets-microsoft.html" target="_blank">Read more</a></p>
+    <p>Scattered Spider breached a company by tricking its CFO and wiping Azure firewalls in a “scorched earth” attack. <a href="https://www.darkreading.com/cloud-security/scattered-spider-cfo-scorched-earth-attack" target="_blank">Read more</a></p>
+    <p>Remcos malware is spreading via fake PDFs and PowerShell. It disables security and steals control. <a href="https://hackread.com/remcos-malware-campaigns-hit-businesses-and-schools/" target="_blank">Read more</a></p>
+    <p>GreyNoise warns of a spike in MOVEit Transfer scans, possibly preceding exploitation. <a href="https://www.infosecurity-magazine.com/news/moveit-attack-risk-scanning-surge/" target="_blank">Read more</a></p>
+    <p>GIFTEDCROOK malware used in Ukraine-linked espionage campaigns has evolved into a document exfiltration tool. <a href="https://thehackernews.com/2025/06/giftedcrook-malware-evolves-from.html" target="_blank">Read more</a></p>
+    <p>Mustang Panda targets Tibetans with PUBLOAD and Pubshell malware in a DLL side-loading campaign. <a href="https://thehackernews.com/2025/06/pubload-and-pubshell-malware-used-in.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>💥 Breaches & Leaks</h2>
+    <p>BitoPro exchange lost $11M to North Korea’s Lazarus Group via cloud compromise. Funds laundered via Tornado Cash and ThorChain. <a href="https://www.cysecurity.news/2025/06/lazarus-group-suspected-in-11m-crypto.html" target="_blank">Read more</a></p>
+    <p>Hawaiian Airlines confirmed a June 26 cyber incident, part of a broader wave affecting the aviation sector. <a href="https://www.infosecurity-magazine.com/news/hawaiian-airlines-cybersecurity/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🛠 Tools</h2>
+    <p><strong>Sububy</strong>: Ruby-based subdomain enumeration suite with 10 modules and OSINT integrations. Great for red teaming and post-validation. <a href="https://github.com/A3h1nt/Sububy" target="_blank">Read more</a></p>
+    <p><strong>RIFT</strong>: Microsoft’s tool to analyze Rust-based malware using FLIRT and diffing for IDA Pro. Targets RALord and SPICA samples. <a href="https://www.microsoft.com/en-us/security/blog/2025/06/27/unveiling-rift-enhancing-rust-malware-analysis-through-pattern-matching/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🎯 Hunting</h2>
+    <p>Access broker "Mommy" (aka Miya) exposed via leaked TTPs. Focuses on gov/critical infra using tools like Sliver and BloodHound. <a href="https://go.intel471.com/hubfs/Emerging%20Threats/2025%20Emerging%20Threats/Emerging%20Threat%20-%20Mommy%20-%2027%20June%202025.pdf" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
