@@ -27,7 +27,7 @@
 ---
 
 ## ⚡ **Latest Blog Posts**
-📬  **DAILY (weekdays)** - _Newsfeeds with threadlandscape update_
+📬  **DAILY (weekdays)** - _Newsfeeds with threat landscape update_
 
 :date: **17/06/25** - _Book Review - Countdown to ZeroDay by Kim Zetter_
 
