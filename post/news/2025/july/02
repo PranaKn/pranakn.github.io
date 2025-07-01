@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cybersecurity Newsfeed - 02/07/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 02/07/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+    <p>CISA added CVE‑2025‑48927 and CVE‑2025‑48928 to the KEV Catalog due to data leak issues in TM SGNL’s Spring Boot and JSP endpoints. <a href="https://www.cisa.gov/news-events/alerts/2025/07/01/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">Read more</a></p>
+    <p>Google patched CVE‑2025‑6554, a zero-day in Chrome’s V8 engine allowing RCE via type confusion. It's the fourth exploited Chrome flaw this year. <a href="https://www.bleepingcomputer.com/news/security/google-fixes-fourth-actively-exploited-chrome-zero-day-of-2025/" target="_blank">Read more</a></p>
+    <p>The Motors WordPress theme (CVE‑2025‑4322) allowed admin takeover via a validation flaw, now patched in version 5.6.68. <a href="https://www.cysecurity.news/2025/07/thousands-of-wordpress-sites-at-risk-as.html" target="_blank">Read more</a></p>
+    <p>Sudo flaws CVE‑2025‑32462/32463 allowed root access through misconfigurations and `--chroot` abuse; fixed in v1.9.17p1. <a href="https://www.helpnetsecurity.com/2025/07/01/sudo-local-privilege-escalation-vulnerabilities-fixed-cve-2025-32462-cve-2025-32463/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+    <p>APT28 used Signal to phish Ukrainian officials, dropping new malware (BeardShell, SlimAgent) and hijacking Roundcube webmail. <a href="https://www.cysecurity.news/2025/07/russian-apt28-targets-ukraine-using.html" target="_blank">Read more</a></p>
+    <p>LLM poisoning emerges as threat: attackers manipulate GPT responses by pre-creating fake branded domains and AI-written lures. <a href="https://www.darkreading.com/cyber-risk/seo-llms-fall-prey-phishing-scams" target="_blank">Read more</a></p>
+    <p>Sarcoma ransomware group hit Swiss nonprofit Radix, leaking Swiss gov’t data in double-extortion scheme. <a href="https://www.infosecurity-magazine.com/news/ransomware-radix-swiss-government/" target="_blank">Read more</a></p>
+    <p>US dismantled massive North Korean remote worker fraud campaign, seizing laptops and \$88M earned via fake identities. <a href="https://www.securityweek.com/us-storms-29-laptop-farms-in-crackdown-on-north-korean-it-worker-schemes/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📈 Trends</h2>
+    <p>Phishers abuse Microsoft 365’s Direct Send to spoof internal email addresses, send fake voicemail QR-code lures, and bypass account security. <a href="https://hackread.com/scammers-microsoft-365-direct-spoof-emails-us-firms/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>💥 Breaches & Leaks</h2>
+    <p>The ICC confirmed a new breach under investigation following its 2023 cyber espionage incident; details remain undisclosed. <a href="https://www.bleepingcomputer.com/news/security/international-criminal-court-hit-by-new-sophisticated-cyberattack/" target="_blank">Read more</a></p>
+    <p>Johnson Controls has begun notifying victims of its 2023 ransomware attack, which led to 27TB of stolen data and service disruption. <a href="https://www.bleepingcomputer.com/news/security/johnson-controls-starts-notifying-people-affected-by-2023-breach/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📚 Others</h2>
+    <p>Following US strikes on Iran, DHS warns of retaliatory ICS attacks by groups like Cyber Av3ngers; many exposed devices remain unpatched. <a href="https://www.securityweek.com/iranian-hackers-preferred-ics-targets-left-open-amid-fresh-us-attack-warning/" target="_blank">Read more</a></p>
+    <p>OFAC sanctioned Russian host Aeza Group for offering bulletproof hosting to ransomware gangs and disinformation campaigns. <a href="https://www.bleepingcomputer.com/news/security/aeza-group-sanctioned-for-hosting-ransomware-infostealer-servers/" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
