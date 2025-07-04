@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cybersecurity Newsfeed - 03/07/25</title>
+  <title>Cybersecurity Newsfeed - 04/07/25</title>
   <style>
     body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
     h1, h2 { color: #c9a227; text-align: center; }
@@ -16,44 +16,39 @@
 <body>
 
   <h1>📰 Cybersecurity Newsfeed</h1>
-  <h2>📅 03/07/25</h2>
+  <h2>📅 04/07/25</h2>
 
   <div class="news-item">
     <h2>🔥 Vulnerabilities</h2>
-    <p>CISA added CVE-2025-6554 to its KEV catalog after confirmed exploitation. The Chrome V8 engine flaw enables type confusion and arbitrary code execution via malicious web content. <a href="https://www.cisa.gov/news-events/alerts/2025/07/02/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">Read more</a></p>
-    <p>Cisco patched a backdoor (CVE-2025-20309) in Unified CM that allowed root login via hardcoded credentials. No workaround exists—upgrade to version 15SU3 or patch CSCwp27755. <a href="https://www.bleepingcomputer.com/news/security/cisco-removes-unified-cm-callManager-backdoor-root-account/" target="_blank">Read more</a></p>
-    <p>LLMs mislead users with unsafe login URLs 34% of the time, posing phishing risks. Hallucinated domains may be exploited by attackers. <a href="https://www.infosecurity-magazine.com/news/ai-models-mislead-users-login-urls/" target="_blank">Read more</a></p>
-    <p>The Forminator WordPress plugin (400,000+ installs) had a critical file deletion bug (CVE-2025-6463) fixed in v1.44.3. Sites risk full takeover via wp-config reset. <a href="https://www.securityweek.com/forminator-wordpress-plugin-vulnerability-exposes-400000-websites-to-takeover/" target="_blank">Read more</a></p>
+    <p>Grafana patched four Chromium-based RCE vulnerabilities in Image Renderer and Synthetic Monitoring Agent. Self-hosted users must upgrade. <a href="https://www.bleepingcomputer.com/news/security/grafana-releases-critical-security-update-for-image-renderer-plugin/" target="_blank">Read more</a></p>
+    <p>Cisco resolved CVE-2025-20309—hardcoded root credentials in Unified CM enabling remote RCE. <a href="https://www.helpnetsecurity.com/2025/07/03/cisco-fixes-maximum-severity-flaw-in-enterprise-unified-comms-platform-cve-2025-20309/" target="_blank">Read more</a></p>
+    <p>Apache patched Tomcat (CVE-2025-24813) and Camel (CVE-2025-27636, -29891) vulnerabilities, following rapid proof-of-concept releases and global exploitation. <a href="https://unit42.paloaltonetworks.com/apache-cve-2025-24813-cve-2025-27636-cve-2025-29891/" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>🕵️ Adversaries & Attacks</h2>
-    <p>Fake crypto wallet extensions on Firefox Store steal credentials. Over 40 malicious add-ons impersonate MetaMask, Coinbase, Trust Wallet. <a href="https://www.bleepingcomputer.com/news/security/dozens-of-fake-wallet-add-ons-flood-firefox-store-to-drain-crypto/" target="_blank">Read more</a></p>
-    <p>Spain arrested two hackers targeting politicians, journalists, and government entities. One handled data theft, the other crypto transactions. <a href="https://www.bleepingcomputer.com/news/security/spain-arrests-hackers-who-targeted-politicians-and-journalists/" target="_blank">Read more</a></p>
-    <p>China-linked Houken group exploited Ivanti VPN zero-days, then self-patched to maintain exclusive access. Targets include France, SE Asia. <a href="https://www.darkreading.com/cyber-risk/initial-access-broker-self-patches-zero-days" target="_blank">Read more</a></p>
-    <p>Gamaredon APT shifted focus to Ukrainian targets using new malware (PteroGraphin, PteroQuark), Cloudflare tunneling, and HTML smuggling. <a href="https://www.darkreading.com/cyberattacks-data-breaches/russian-apt-gamaredon-ukraine-phishing" target="_blank">Read more</a></p>
-    <p>Qantas breach exposed frequent flyer data of up to 6 million users via third-party platform. Scattered Spider suspected. <a href="https://hackread.com/qantas-confirms-data-breach-linked-third-party-vendor/" target="_blank">Read more</a></p>
-    <p>Blind Eagle group linked to Proton66 hosting; targets Colombian banks via phishing, VBS scripts, and RATs. <a href="https://hackread.com/blind-eagle-russian-host-proton66-latin-america-attacks/" target="_blank">Read more</a></p>
-    <p>Qwizzserial Android malware infects 100,000+ devices in Uzbekistan via Telegram, stealing SMS, SIM, and bank info. <a href="https://www.infosecurity-magazine.com/news/android-sms-stealer-100000/" target="_blank">Read more</a></p>
-    <p>A bug in Cl0p’s own data theft tool creates RCE opportunity against them. The flaw allows shell injection via folder names. <a href="https://www.theregister.com/2025/07/02/cl0p_rce_vulnerability/" target="_blank">Read more</a></p>
-    <p>NimDoor, advanced macOS malware from DPRK, targets crypto firms. Uses LaunchAgents, signal-based persistence, and Telegram data exfil. <a href="https://www.bleepingcomputer.com/news/security/nimdoor-crypto-theft-macos-malware-revives-itself-when-killed/" target="_blank">Read more</a></p>
+    <p>BlueNoroff group uses fake Zoom SDK scripts and AppleScript droppers to target crypto and gambling firms. <a href="https://www.cysecurity.news/2025/07/north-korean-hackers-target-fintech-and.html" target="_blank">Read more</a></p>
+    <p>Chinese actors spoof Apple, Michael Kors, and more with fake shopping sites to steal payment data. <a href="https://hackread.com/china-fake-marketplace-mimics-top-retail-brands-fraud/" target="_blank">Read more</a></p>
+    <p>40+ fake Firefox extensions impersonating wallets like MetaMask and Trust Wallet to steal credentials. <a href="https://thehackernews.com/2025/07/over-40-malicious-firefox-extensions.html" target="_blank">Read more</a></p>
+    <p>Attackers inject trojans in ConnectWise installers via Authenticode certificate stuffing, evading signature checks. <a href="https://www.cysecurity.news/2025/07/hackers-exploit-connectwise.html" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>📈 Trends</h2>
-    <p>LNK-based attacks surged from 21,000 (2023) to 68,000 (2024). Palo Alto identified 4 LNK malware types using obfuscation, PowerShell, Base64. <a href="https://unit42.paloaltonetworks.com/lnk-malware/" target="_blank">Read more</a></p>
+    <p>Quishing on the rise: 1.7M malicious QR codes and 2.7M QR-laced emails detected daily. <a href="https://www.darkreading.com/endpoint-security/criminals-send-qr-codes-phishing" target="_blank">Read more</a></p>
+    <p>Threat actors abuse supply chain and dev tooling. Oracle Cloud and GitHub Actions among recent cases. <a href="https://www.darkreading.com/threat-intelligence/dark-web-vendors-third-parties-supply-chains" target="_blank">Read more</a></p>
+    <p>Callback phishing scams using PDFs, QR codes, and fake support numbers impersonate Microsoft, PayPal, DocuSign. <a href="https://www.malwarebytes.com/blog/news/2025/07/microsoft-paypal-docusign-and-geek-squad-faked-in-callback-phishing-scams" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
     <h2>💥 Breaches & Leaks</h2>
-    <p>Ahold Delhaize ransomware breach exposed 2.2M U.S. employee records. Health, ID, bank info leaked; INC Ransom suspected. <a href="https://www.cysecurity.news/2025/07/ahold-delhaize-reports-major-data.html" target="_blank">Read more</a></p>
-    <p>North Korea’s Lazarus stole $11M from BitoPro via hot wallet vulnerability and social engineering. Assets laundered via Tornado Cash. <a href="https://www.cysecurity.news/2025/06/bitopro-blames-north-koreas-lazarus.html" target="_blank">Read more</a></p>
-    <p>Kelly Benefits breach affected 553,660 people. Data includes SSNs, health info, financial records. Clients include CVS, Guardian, OneAmerica. <a href="https://www.infosecurity-magazine.com/news/dozens-corporates-kelly-benefits/" target="_blank">Read more</a></p>
+    <p>IdeaLab breach leaked 137,000 files (262GB) via Hunters International. Free ID protection now offered. <a href="https://www.bleepingcomputer.com/news/security/idealab-confirms-data-stolen-in-ransomware-attack-last-year/" target="_blank">Read more</a></p>
+    <p>Medical firm Surmodics hit by cyberattack and partial shutdown, now restoring systems. <a href="https://www.cysecurity.news/2025/07/surmodics-hit-by-cyberattack-shuts-down.html" target="_blank">Read more</a></p>
   </div>
 
   <div class="news-item">
-    <h2>🎯 Hunting</h2>
-    <p>Ubuntu disabled Spectre mitigations in Intel GPU Compute Runtime to boost OpenCL/OneAPI performance by 20%. Risk deemed minimal. <a href="https://arstechnica.com/security/2025/06/ubuntu-disables-intel-gpu-security-mitigations-promises-20-performance-boost/" target="_blank">Read more</a></p>
+    <h2>🧰 Tools</h2>
+    <p>GitPhish simulates GitHub device code phishing for red team testing and detection validation. <a href="https://github.com/praetorian-inc/GitPhish" target="_blank">Read more</a></p>
   </div>
 
   <p style="text-align:center;">
