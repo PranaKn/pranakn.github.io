@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cybersecurity Newsfeed - 04/07/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 04/07/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+    <p>Grafana patched four Chromium-based RCE vulnerabilities in Image Renderer and Synthetic Monitoring Agent. Self-hosted users must upgrade. <a href="https://www.bleepingcomputer.com/news/security/grafana-releases-critical-security-update-for-image-renderer-plugin/" target="_blank">Read more</a></p>
+    <p>Cisco resolved CVE-2025-20309—hardcoded root credentials in Unified CM enabling remote RCE. <a href="https://www.helpnetsecurity.com/2025/07/03/cisco-fixes-maximum-severity-flaw-in-enterprise-unified-comms-platform-cve-2025-20309/" target="_blank">Read more</a></p>
+    <p>Apache patched Tomcat (CVE-2025-24813) and Camel (CVE-2025-27636, -29891) vulnerabilities, following rapid proof-of-concept releases and global exploitation. <a href="https://unit42.paloaltonetworks.com/apache-cve-2025-24813-cve-2025-27636-cve-2025-29891/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+    <p>BlueNoroff group uses fake Zoom SDK scripts and AppleScript droppers to target crypto and gambling firms. <a href="https://www.cysecurity.news/2025/07/north-korean-hackers-target-fintech-and.html" target="_blank">Read more</a></p>
+    <p>Chinese actors spoof Apple, Michael Kors, and more with fake shopping sites to steal payment data. <a href="https://hackread.com/china-fake-marketplace-mimics-top-retail-brands-fraud/" target="_blank">Read more</a></p>
+    <p>40+ fake Firefox extensions impersonating wallets like MetaMask and Trust Wallet to steal credentials. <a href="https://thehackernews.com/2025/07/over-40-malicious-firefox-extensions.html" target="_blank">Read more</a></p>
+    <p>Attackers inject trojans in ConnectWise installers via Authenticode certificate stuffing, evading signature checks. <a href="https://www.cysecurity.news/2025/07/hackers-exploit-connectwise.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📈 Trends</h2>
+    <p>Quishing on the rise: 1.7M malicious QR codes and 2.7M QR-laced emails detected daily. <a href="https://www.darkreading.com/endpoint-security/criminals-send-qr-codes-phishing" target="_blank">Read more</a></p>
+    <p>Threat actors abuse supply chain and dev tooling. Oracle Cloud and GitHub Actions among recent cases. <a href="https://www.darkreading.com/threat-intelligence/dark-web-vendors-third-parties-supply-chains" target="_blank">Read more</a></p>
+    <p>Callback phishing scams using PDFs, QR codes, and fake support numbers impersonate Microsoft, PayPal, DocuSign. <a href="https://www.malwarebytes.com/blog/news/2025/07/microsoft-paypal-docusign-and-geek-squad-faked-in-callback-phishing-scams" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>💥 Breaches & Leaks</h2>
+    <p>IdeaLab breach leaked 137,000 files (262GB) via Hunters International. Free ID protection now offered. <a href="https://www.bleepingcomputer.com/news/security/idealab-confirms-data-stolen-in-ransomware-attack-last-year/" target="_blank">Read more</a></p>
+    <p>Medical firm Surmodics hit by cyberattack and partial shutdown, now restoring systems. <a href="https://www.cysecurity.news/2025/07/surmodics-hit-by-cyberattack-shuts-down.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🧰 Tools</h2>
+    <p>GitPhish simulates GitHub device code phishing for red team testing and detection validation. <a href="https://github.com/praetorian-inc/GitPhish" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
