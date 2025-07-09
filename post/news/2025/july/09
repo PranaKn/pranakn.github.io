@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cybersecurity Newsfeed - 09/07/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 09/07/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+    <p>Microsoft fixed 137 flaws in its July Patch Tuesday, including one publicly disclosed zero-day (CVE-2025-49719) in SQL Server and 14 critical RCE bugs in Office, SharePoint, Hyper-V, and KDC Proxy. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2025-patch-tuesday-fixes-one-zero-day-137-flaws/" target="_blank">Read more</a></p>
+    <p>Ruckus Wireless vSZ and RND products are affected by multiple critical vulnerabilities including unauthenticated RCE and hardcoded credentials. No patches available. <a href="https://kb.cert.org/vuls/id/613753" target="_blank">Read more</a></p>
+    <p>SAP fixed 31 flaws including CVE-2025-30012 (CVSS 10) and CVE-2025-42967 (CVSS 9.9), both allowing unauthenticated remote code execution. <a href="https://www.securityweek.com/sap-patches-critical-flaws-that-could-allow-remote-code-execution-full-system-takeover/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+    <p>Italy arrested Xu Zewei, linked to HAFNIUM, for breaching Microsoft Exchange and stealing U.S. COVID-19 research data. <a href="https://cyberscoop.com/italian-authorities-arrest-chinese-man-over-microsoft-exchange-server-hack-targeting-of-covid-19-researchers/" target="_blank">Read more</a></p>
+    <p>New Android attack TapTrap uses invisible UI animations to trick users into granting permissions. <a href="https://www.bleepingcomputer.com/news/security/new-android-taptrap-attack-fools-users-with-invisible-ui-trick/" target="_blank">Read more</a></p>
+    <p>Anatsa Android banking trojan returns via Google Play disguised as "Document Viewer", now targeting U.S. and Canadian users. <a href="https://thehackernews.com/2025/07/anatsa-android-banking-trojan-hits.html" target="_blank">Read more</a></p>
+    <p>TGR-CRI-0045 APT exploits leaked ASP.NET Machine Keys to breach IIS via View State deserialization. <a href="https://unit42.paloaltonetworks.com/initial-access-broker-exploits-leaked-machine-keys/" target="_blank">Read more</a></p>
+    <p>RondoDox botnet exploits TBK and Four-Faith router flaws to hijack IoT devices as proxy infrastructure. <a href="https://thehackernews.com/2025/07/rondodox-botnet-exploits-flaws-in-tbk.html" target="_blank">Read more</a></p>
+    <p>APT36 is targeting Indian defense systems with malware tailored to BOSS Linux via a malicious .desktop file. <a href="https://hackread.com/pakistan-transparent-tribe-indian-defence-linux-malware/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📈 Trends</h2>
+    <p>Cybercriminals exploit AI hype using SEO poisoning to spread malware through fake high-ranking sites. <a href="https://www.cysecurity.news/2025/07/cybercriminals-target-ai-enthusiasts.html" target="_blank">Read more</a></p>
+    <p>Open source malware packages spiked 188% YoY in Q2, with 107 tied to Lazarus Group. <a href="https://www.darkreading.com/application-security/malicious-open-source-packages-spike" target="_blank">Read more</a></p>
+    <p>Identity-focused attacks surged 156% as PhaaS platforms like Tycoon 2FA enable MFA bypass. <a href="https://hackread.com/infostealers-as-a-service-identity-hacks-record-highs/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📚 Others</h2>
+    <p>U.S. diplomats targeted by AI voice scams and deepfake impersonations, including fake Secretary Marco Rubio. <a href="https://www.securityweek.com/impostor-uses-ai-to-impersonate-rubio-and-contact-foreign-and-us-officials/" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
