@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cybersecurity Newsfeed - 11/07/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>📅 11/07/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+    <p>PCA Cyber Security disclosed "PerfektBlue" flaws in OpenSynergy’s BlueSDK stack affecting millions of vehicles, enabling RCE and data leaks. <a href="https://www.securityweek.com/millions-of-cars-exposed-to-remote-hacking-via-perfektblue-attack/" target="_blank">Read more</a></p>
+    <p>Java Card-based eSIMs used in 2B+ devices are vulnerable to spying and SIM swaps via a long-unpatched Java Card VM flaw. <a href="https://www.darkreading.com/endpoint-security/esim-bug-millions-phones-spying-takeover" target="_blank">Read more</a></p>
+    <p>mcp-remote (CVE-2025-6514) allows RCE when connecting to malicious MCP servers; other critical flaws found in Anthropic's MCP server too. <a href="https://thehackernews.com/2025/07/critical-mcp-remote-vulnerability.html" target="_blank">Read more</a></p>
+    <p>CitrixBleed 2 (CVE‑2025‑5777) is actively exploited to leak NetScaler credentials; patch required by July 11 under CISA directive. <a href="https://www.cisa.gov/news-events/alerts/2025/07/10/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+    <p>UK charged 4 suspected members of Scattered Spider, including ex-LAPSUS$ hackers, for major extortion campaigns. <a href="https://krebsonsecurity.com/2025/07/uk-charges-four-in-scattered-spider-ransom-group/" target="_blank">Read more</a></p>
+    <p>ZuRu macOS malware now hides in trojanized Termius app, using helper binaries and ad hoc signatures to evade Apple defenses. <a href="https://thehackernews.com/2025/07/new-macos-malware-zuru-targeting.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📈 Trends</h2>
+    <p>Fake online store scams rose 790% in Q1 2025, driven by cloned sites, deepfakes, and AI reviews. DNS spoofing also used. <a href="https://www.helpnetsecurity.com/2025/07/10/tips-online-shopping-scams/" target="_blank">Read more</a></p>
+    <p>Sonatype tracked over 16,000 malicious packages in Q2 2025, including Lazarus-linked threats aimed at credential theft. <a href="https://www.helpnetsecurity.com/2025/07/10/open-source-malware-trends-2025/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>💥 Breaches & Leaks</h2>
+    <p>McHire job platform leaked up to 64M McDonald’s applicants’ data due to default credentials and API flaw. <a href="https://www.malwarebytes.com/blog/news/2025/07/mcdonalds-ai-bot-spills-data-on-job-applicants" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📚 Others</h2>
+    <p>Microsoft Outlook suffered global outages affecting web, mobile, and desktop access. No ETA yet. <a href="https://www.zdnet.com/article/microsoft-outlook-goes-down-around-the-world-heres-what-we-know/" target="_blank">Read more</a></p>
+    <p>Forescout tested 50 AI models for exploit generation—93% failed; LLMs mostly limited to basic coding help. <a href="https://www.infosecurity-magazine.com/news/llms-fall-vulnerability-discovery/" target="_blank">Read more</a></p>
+    <p>Only 23% of orgs have high software supply chain visibility, with 80% of low-visibility orgs reporting a breach. <a href="https://www.helpnetsecurity.com/2025/07/10/low-global-software-supply-chain-visibility/" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
