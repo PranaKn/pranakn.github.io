@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cybersecurity Newsfeed - 14/07/25</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
+    h1, h2 { color: #c9a227; text-align: center; }
+    p { line-height: 1.6; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { color: #ff6600; }
+    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>📰 Cybersecurity Newsfeed</h1>
+  <h2>🗓️ 14/07/25</h2>
+
+  <div class="news-item">
+    <h2>🔥 Vulnerabilities</h2>
+    <p>Google Gemini for Workspace is vulnerable to invisible prompt injections hidden in email HTML, allowing phishing content in AI summaries. <a href="https://www.bleepingcomputer.com/news/security/google-gemini-flaw-hijacks-email-summaries-for-phishing/" target="_blank">Read more</a></p>
+    <p>Fortinet FortiWeb CVE-2025-25257 (CVSS 9.8) is exploitable via SQL injection for remote code execution. PoC and detection tools now available. <a href="https://securityaffairs.com/179874/security/patch-immediately-cve-2025-25257-poc-enables-remote-code-execution-on-fortinet-fortiweb.html" target="_blank">Read more</a></p>
+    <p>Wing FTP Server CVE-2025-47812 (CVSS 10) is being exploited to run Lua code with system privileges. Update to 7.4.4 or later. <a href="https://securityaffairs.com/179861/hacking/wing-ftp-server-flaw-actively-exploited-shortly-after-technical-details-were-made-public.html" target="_blank">Read more</a></p>
+    <p>Over 600 Laravel apps are vulnerable due to leaked APP_KEYs, enabling RCE via deserialization attacks. Rotate keys and scan secrets. <a href="https://thehackernews.com/2025/07/over-600-laravel-apps-exposed-to-remote.html" target="_blank">Read more</a></p>
+    <p>NVIDIA recommends enabling ECC on GPUs to defend against Rowhammer-induced bit flips, especially in GDDR6 environments. <a href="https://www.bleepingcomputer.com/news/security/nvidia-shares-guidance-to-defend-gddr6-gpus-against-rowhammer-attacks/" target="_blank">Read more</a></p>
+    <p>OpenVSX zero-day "VSXPloit" allowed attacker control of AI tool extensions like Cursor and Windsurf. Auto-build system now patched. <a href="https://www.bleepingcomputer.com/news/security/the-zero-day-that-couldve-compromised-every-cursor-and-windsurf-user/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🕵️ Adversaries & Attacks</h2>
+    <p>Mamona ransomware encrypts files offline and self-deletes to evade detection. Detection relies on note creation and deletion patterns. <a href="https://www.cysecurity.news/2025/07/latest-malware-mamona-attacks-locally.html" target="_blank">Read more</a></p>
+    <p>Scamfluencers trick users using AI deepfakes and social manipulation, causing $1.9B in losses in 2024. Users urged to stay vigilant. <a href="https://www.cysecurity.news/2025/07/scamfluencers-use-social-media-to.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📊 Trends</h2>
+    <p>India-linked DoNot APT used spear-phishing and Google Drive links to infect European foreign affairs ministry with LoptikMod malware. <a href="https://hackread.com/donot-apt-hits-european-ministry-loptikmod-malware/" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>📚 Others</h2>
+    <p>Germany's privacy commissioner wants Google and Apple to remove DeepSeek AI app over data transfers to China violating GDPR. <a href="https://www.cysecurity.news/2025/07/deepseek-faces-ban-from-app-stores-in.html" target="_blank">Read more</a></p>
+  </div>
+
+  <div class="news-item">
+    <h2>🤖 Hunting</h2>
+    <p>Earth Alux APT infiltrated China Mobile Tietong using Wondershare DLL sideloading and VELETRIX loader to deliver obfuscated Golang shells. <a href="https://0x0d4y.blog/telecommunications-supply-chain-china-nexus-threat-technical-analysis-of-veletrix-loaders-strategic-infrastructure-positioning/" target="_blank">Read more</a></p>
+  </div>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
