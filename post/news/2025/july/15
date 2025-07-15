@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cybersecurity Newsfeed - 15/07/25</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    h1 {
+      color: #c9a227;
+    }
+    h2 {
+      color: #ff9800;
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+    }
+    a {
+      color: #4fc3f7;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 15/07/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>CISA has issued an advisory on CVE-2025-1727, a critical vulnerability affecting the radio-based communication between End-of-Train (EoT) and Head-of-Train (HoT) systems used in freight and passenger trains. The protocol lacks authentication and encryption, allowing attackers to send spoofed brake commands via software-defined radio, potentially causing train stoppages or brake failures. <a href="https://www.cisa.gov/news-events/alerts/2025/07/14/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">More info</a></li>
+    <li>Over 240 Gigabyte motherboard models are vulnerable to four critical UEFI firmware flaws (CVE-2025-7026 to -7029), allowing attackers with admin access to execute code in System Management Mode (SMM), enabling stealthy bootkits that survive OS reinstalls. <a href="https://www.bleepingcomputer.com/news/security/gigabyte-motherboards-vulnerable-to-uefi-malware-bypassing-secure-boot/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>A new Web-inject campaign by ransomware group Interlock is delivering an enhanced variant of its NodeSnake RAT, now rewritten in PHP for stealthier persistence. <a href="https://www.darkreading.com/threat-intelligence/web-inject-campaign-interlock-rat-variant" target="_blank">More info</a></li>
+    <li>A fake "Solidity Language" extension for the Cursor AI IDE infected systems with malware, leading to the theft of $500,000 in crypto from a Russian developer. <a href="https://www.bleepingcomputer.com/news/security/malicious-vscode-extension-in-cursor-ide-led-to-500k-crypto-theft/" target="_blank">More info</a></li>
+    <li>Unit 42 uncovered a cyber-espionage campaign (CL-STA-1020) targeting Southeast Asian government agencies using the *HazyBeacon* backdoor leveraging AWS Lambda URLs. <a href="https://unit42.paloaltonetworks.com/windows-backdoor-for-novel-c2-communication/" target="_blank">More info</a></li>
+    <li>Two trojanized versions of the Gravity Forms WordPress plugin were briefly distributed via the official download page following a supply chain attack. <a href="https://www.securityweek.com/hackers-inject-malware-into-gravity-forms-wordpress-plugin/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>CTM360 uncovered over 17,000 fake news sites mimicking trusted outlets like CNN and BBC to promote investment scams globally. <a href="https://www.infosecurity-magazine.com/news/fake-news-sites-investment-scams/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📂 Breach/Leaks</h2>
+  <ul>
+    <li>Elmo’s official X (formerly Twitter) account was hacked and used to post hate speech and conspiracy content before being secured. <a href="https://www.theregister.com/2025/07/14/someone_hijacked_elmos_x_account/" target="_blank">More info</a></li>
+    <li>Louis Vuitton UK suffered a data breach on July 2, 2025, exposing customer names, contact details, and purchase histories. <a href="https://hackread.com/louis-vuitton-uk-cyberattack-3-lvmh-breach-3-months/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📌 Others</h2>
+  <ul>
+    <li>Russian basketball player Daniil Kasatkin was arrested in Paris, accused of acting as a negotiator for a ransomware group. <a href="https://hackread.com/russian-basketball-daniil-kasatkin-arrest-ransomware/" target="_blank">More info</a></li>
+    <li>The tool *Defendnot* can disable Microsoft Defender by spoofing antivirus registration, raising BYOD risks. <a href="https://www.kaspersky.com/blog/defendnot-disables-microsoft-defender-on-windows/53820/" target="_blank">More info</a></li>
+    <li>China-built SafeLine WAF by Chaitin Tech has become the most-starred WAF on GitHub in 2025, gaining popularity among startups and homelabs. <a href="https://hackread.com/china-built-safeline-waf-gains-global-popularity-among-startups-homelabs/" target="_blank">More info</a></li>
+  </ul>
+</body>
+</html>
