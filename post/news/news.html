@@ -3,56 +3,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cybersecurity Newsfeed - 14/07/25</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📰 Cybersecurity Newsfeed - 15/07/25</title>
   <style>
-    body { font-family: Arial, sans-serif; background-color: #121212; color: #ffffff; padding: 20px; }
-    h1, h2 { color: #c9a227; text-align: center; }
-    p { line-height: 1.6; }
-    a { color: #c9a227; text-decoration: none; }
-    a:hover { color: #ff6600; }
-    .news-item { margin-bottom: 30px; border-left: 4px solid #c9a227; padding-left: 15px; }
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    h1 {
+      color: #c9a227;
+    }
+    h2 {
+      color: #ff9800;
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+    }
+    a {
+      color: #4fc3f7;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    li {
+      margin-bottom: 15px;
+    }
   </style>
 </head>
 <body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 15/07/25</h2>
 
-  <h1>📰 Cybersecurity Newsfeed</h1>
-  <h2>🗓️ 14/07/25</h2>
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>CISA has issued an advisory on CVE-2025-1727, a critical vulnerability affecting the radio-based communication between End-of-Train (EoT) and Head-of-Train (HoT) systems used in freight and passenger trains. The protocol lacks authentication and encryption, allowing attackers to send spoofed brake commands via software-defined radio, potentially causing train stoppages or brake failures. <a href="https://www.cisa.gov/news-events/alerts/2025/07/14/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">More info</a></li>
+    <li>Over 240 Gigabyte motherboard models are vulnerable to four critical UEFI firmware flaws (CVE-2025-7026 to -7029), allowing attackers with admin access to execute code in System Management Mode (SMM), enabling stealthy bootkits that survive OS reinstalls. <a href="https://www.bleepingcomputer.com/news/security/gigabyte-motherboards-vulnerable-to-uefi-malware-bypassing-secure-boot/" target="_blank">More info</a></li>
+  </ul>
 
-  <div class="news-item">
-    <h2>🔥 Vulnerabilities</h2>
-    <p>Google Gemini for Workspace is vulnerable to invisible prompt injections hidden in email HTML, allowing phishing content in AI summaries. <a href="https://www.bleepingcomputer.com/news/security/google-gemini-flaw-hijacks-email-summaries-for-phishing/" target="_blank">Read more</a></p>
-    <p>Fortinet FortiWeb CVE-2025-25257 (CVSS 9.8) is exploitable via SQL injection for remote code execution. PoC and detection tools now available. <a href="https://securityaffairs.com/179874/security/patch-immediately-cve-2025-25257-poc-enables-remote-code-execution-on-fortinet-fortiweb.html" target="_blank">Read more</a></p>
-    <p>Wing FTP Server CVE-2025-47812 (CVSS 10) is being exploited to run Lua code with system privileges. Update to 7.4.4 or later. <a href="https://securityaffairs.com/179861/hacking/wing-ftp-server-flaw-actively-exploited-shortly-after-technical-details-were-made-public.html" target="_blank">Read more</a></p>
-    <p>Over 600 Laravel apps are vulnerable due to leaked APP_KEYs, enabling RCE via deserialization attacks. Rotate keys and scan secrets. <a href="https://thehackernews.com/2025/07/over-600-laravel-apps-exposed-to-remote.html" target="_blank">Read more</a></p>
-    <p>NVIDIA recommends enabling ECC on GPUs to defend against Rowhammer-induced bit flips, especially in GDDR6 environments. <a href="https://www.bleepingcomputer.com/news/security/nvidia-shares-guidance-to-defend-gddr6-gpus-against-rowhammer-attacks/" target="_blank">Read more</a></p>
-    <p>OpenVSX zero-day "VSXPloit" allowed attacker control of AI tool extensions like Cursor and Windsurf. Auto-build system now patched. <a href="https://www.bleepingcomputer.com/news/security/the-zero-day-that-couldve-compromised-every-cursor-and-windsurf-user/" target="_blank">Read more</a></p>
-  </div>
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>A new Web-inject campaign by ransomware group Interlock is delivering an enhanced variant of its NodeSnake RAT, now rewritten in PHP for stealthier persistence. <a href="https://www.darkreading.com/threat-intelligence/web-inject-campaign-interlock-rat-variant" target="_blank">More info</a></li>
+    <li>A fake "Solidity Language" extension for the Cursor AI IDE infected systems with malware, leading to the theft of $500,000 in crypto from a Russian developer. <a href="https://www.bleepingcomputer.com/news/security/malicious-vscode-extension-in-cursor-ide-led-to-500k-crypto-theft/" target="_blank">More info</a></li>
+    <li>Unit 42 uncovered a cyber-espionage campaign (CL-STA-1020) targeting Southeast Asian government agencies using the *HazyBeacon* backdoor leveraging AWS Lambda URLs. <a href="https://unit42.paloaltonetworks.com/windows-backdoor-for-novel-c2-communication/" target="_blank">More info</a></li>
+    <li>Two trojanized versions of the Gravity Forms WordPress plugin were briefly distributed via the official download page following a supply chain attack. <a href="https://www.securityweek.com/hackers-inject-malware-into-gravity-forms-wordpress-plugin/" target="_blank">More info</a></li>
+  </ul>
 
-  <div class="news-item">
-    <h2>🕵️ Adversaries & Attacks</h2>
-    <p>Mamona ransomware encrypts files offline and self-deletes to evade detection. Detection relies on note creation and deletion patterns. <a href="https://www.cysecurity.news/2025/07/latest-malware-mamona-attacks-locally.html" target="_blank">Read more</a></p>
-    <p>Scamfluencers trick users using AI deepfakes and social manipulation, causing $1.9B in losses in 2024. Users urged to stay vigilant. <a href="https://www.cysecurity.news/2025/07/scamfluencers-use-social-media-to.html" target="_blank">Read more</a></p>
-  </div>
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>CTM360 uncovered over 17,000 fake news sites mimicking trusted outlets like CNN and BBC to promote investment scams globally. <a href="https://www.infosecurity-magazine.com/news/fake-news-sites-investment-scams/" target="_blank">More info</a></li>
+  </ul>
 
-  <div class="news-item">
-    <h2>📊 Trends</h2>
-    <p>India-linked DoNot APT used spear-phishing and Google Drive links to infect European foreign affairs ministry with LoptikMod malware. <a href="https://hackread.com/donot-apt-hits-european-ministry-loptikmod-malware/" target="_blank">Read more</a></p>
-  </div>
+  <h2>📂 Breach/Leaks</h2>
+  <ul>
+    <li>Elmo’s official X (formerly Twitter) account was hacked and used to post hate speech and conspiracy content before being secured. <a href="https://www.theregister.com/2025/07/14/someone_hijacked_elmos_x_account/" target="_blank">More info</a></li>
+    <li>Louis Vuitton UK suffered a data breach on July 2, 2025, exposing customer names, contact details, and purchase histories. <a href="https://hackread.com/louis-vuitton-uk-cyberattack-3-lvmh-breach-3-months/" target="_blank">More info</a></li>
+  </ul>
 
-  <div class="news-item">
-    <h2>📚 Others</h2>
-    <p>Germany's privacy commissioner wants Google and Apple to remove DeepSeek AI app over data transfers to China violating GDPR. <a href="https://www.cysecurity.news/2025/07/deepseek-faces-ban-from-app-stores-in.html" target="_blank">Read more</a></p>
-  </div>
-
-  <div class="news-item">
-    <h2>🤖 Hunting</h2>
-    <p>Earth Alux APT infiltrated China Mobile Tietong using Wondershare DLL sideloading and VELETRIX loader to deliver obfuscated Golang shells. <a href="https://0x0d4y.blog/telecommunications-supply-chain-china-nexus-threat-technical-analysis-of-veletrix-loaders-strategic-infrastructure-positioning/" target="_blank">Read more</a></p>
-  </div>
-
-  <p style="text-align:center;">
-    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
-  </p>
-
+  <h2>📌 Others</h2>
+  <ul>
+    <li>Russian basketball player Daniil Kasatkin was arrested in Paris, accused of acting as a negotiator for a ransomware group. <a href="https://hackread.com/russian-basketball-daniil-kasatkin-arrest-ransomware/" target="_blank">More info</a></li>
+    <li>The tool *Defendnot* can disable Microsoft Defender by spoofing antivirus registration, raising BYOD risks. <a href="https://www.kaspersky.com/blog/defendnot-disables-microsoft-defender-on-windows/53820/" target="_blank">More info</a></li>
+    <li>China-built SafeLine WAF by Chaitin Tech has become the most-starred WAF on GitHub in 2025, gaining popularity among startups and homelabs. <a href="https://hackread.com/china-built-safeline-waf-gains-global-popularity-among-startups-homelabs/" target="_blank">More info</a></li>
+  </ul>
 </body>
 </html>
