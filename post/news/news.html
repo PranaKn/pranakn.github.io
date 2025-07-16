@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>📰 Cybersecurity Newsfeed - 16/07/25</title>
+  <title>📰 Cybersecurity Newsfeed - 17/07/25</title>
   <style>
     body {
       background-color: #121212;
@@ -43,38 +43,36 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 16/07/25</h2>
+  <h2>📅 17/07/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li>Microsoft has issued an emergency KB5064489 update to fix a bug that prevented Azure VMs from launching when Trusted Launch was disabled and VBS was enabled. This issue, introduced by KB5062553, impacted Windows Server 2025 and Windows 11 24H2 on VM version 8.0. Microsoft recommends using the out-of-band update and enabling Trusted Launch. <a href="https://www.bleepingcomputer.com/news/microsoft/windows-kb5064489-emergency-update-fixes-azure-vm-launch-issues/" target="_blank">More info</a></li>
+    <li>Oracle’s July 2025 Critical Patch Update addresses 309 vulnerabilities, including CVEs rated CVSS 9.8 like CVE-2025-31651 and CVE-2024-52046. Oracle urges immediate updates, especially for internet-facing services, as 74% of flaws involve third-party components. <a href="https://blog.qualys.com/vulnerabilities-threat-research/2025/07/16/oracle-critical-patch-update-july-2025-security-update-review" target="_blank">More info</a></li>
+    <li>CVE-2025-6558 is an actively exploited zero-day in Chrome’s ANGLE and GPU components, allowing sandbox escape via malicious HTML. Google, Microsoft, Brave, and Opera have released urgent patches in Chrome 138. <a href="https://www.helpnetsecurity.com/2025/07/16/update-google-chrome-to-fix-actively-exploited-zero-day-cve-2025-6558/" target="_blank">More info</a></li>
+    <li>Semperis researchers disclosed a critical flaw in Windows Server 2025 dMSA called “Golden dMSA,” allowing attackers with access to a KDS root key to generate passwords for any gMSA/dMSA account. <a href="https://thehackernews.com/2025/07/critical-golden-dmsa-attack-in-windows.html" target="_blank">More info</a></li>
+    <li>CVE-2025-3248 is an RCE flaw in Langflow before v1.3.0, exploited to deliver Flodrix, a stealthy DDoS botnet. It abuses the `/api/v1/validate/code` endpoint with unauthenticated malicious POST requests. <a href="https://www.trendmicro.com/en_us/research/25/f/langflow-vulnerability-flodric-botnet.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li>A threat group is targeting Chinese-speaking Android users with a Trojanized Telegram app exploiting the Janus vulnerability (2017) on Android 5.0–8.0. The malware is distributed through 600+ fake Chinese-language domains and uses Firebase for control. <a href="https://www.darkreading.com/cyberattacks-data-breaches/telegram-app-chinese-users-android-data" target="_blank">More info</a></li>
-    <li>Abacus Market, the largest Western darknet marketplace, has abruptly shut down after handling over $300 million in transactions. The shutdown is suspected to be either an exit scam or covert takedown. <a href="https://www.bleepingcomputer.com/news/security/abacus-dark-web-drug-market-goes-offline-in-suspected-exit-scam/" target="_blank">More info</a></li>
-    <li>Ontinue researchers discovered "SVG Smuggling" attacks where SVG images with embedded JavaScript redirect users to malicious sites. Delivered via phishing emails, these attacks evade detection due to poor email security configs. <a href="https://hackread.com/attackers-hide-javascript-svg-images-malicious-sites/" target="_blank">More info</a></li>
-    <li>North Korean actors uploaded 67 malicious npm packages to distribute XORIndex malware, targeting developers for espionage and crypto theft. The campaign mimics legit libraries and uses postinstall scripts. <a href="https://www.bleepingcomputer.com/news/security/north-korean-xorindex-malware-hidden-in-67-malicious-npm-packages/" target="_blank">More info</a></li>
-    <li>Cloudflare reports a rise in hyper-volumetric DDoS attacks in Q2 2025, including a 7.3 Tbps peak. Although total incidents dropped, intense floods surged 1,150%, targeting sectors like telecom, gaming, and IT. <a href="https://thehackernews.com/2025/07/hyper-volumetric-ddos-attacks-reach.html" target="_blank">More info</a></li>
-    <li>A new Konfety Android malware variant bypasses analysis tools using malformed ZIP headers and dynamic encrypted DEX loading, enabling ad fraud and persistent hijacking. <a href="https://securityaffairs.com/179969/malware/android-malware-konfety-evolves-with-zip-manipulation-and-dynamic-loading.html" target="_blank">More info</a></li>
-    <li>Operation Elicius by Europol dismantled the Diskstation ransomware gang, which targeted Synology NAS devices globally, causing severe disruption. One suspect was arrested in Romania. <a href="https://www.bleepingcomputer.com/news/security/police-disrupt-diskstation-ransomware-gang-attacking-nas-devices/" target="_blank">More info</a></li>
-    <li>GLOBAL GROUP, a new RaaS likely linked to BlackLock, emerged in June 2025 targeting victims in AU, BR, EU, and the US. It exploits device vulnerabilities and offers AI-powered negotiation and high revenue shares to affiliates. <a href="https://thehackernews.com/2025/07/newly-emerged-global-group-raas-expands.html" target="_blank">More info</a></li>
+    <li>China-linked APT Salt Typhoon breached the U.S. Army National Guard between March and December 2024, stealing admin credentials and configurations. It reused known exploits and used GRE tunnels to evade detection. <a href="https://securityaffairs.com/180018/intelligence/salt-typhoon-breach-chinese-apt-compromises-u-s-army-national-guard-network.html" target="_blank">More info</a></li>
+    <li>Matanbuchus 3.0, an upgraded malware loader, is sold for up to $15,000/month and used in ransomware campaigns. It uses Microsoft Teams phishing, DNS C2, and evades EDR/XDR. <a href="https://www.darkreading.com/threat-intelligence/matanbuchus-loader-ransomware-infections" target="_blank">More info</a></li>
+    <li>BADBOX 2.0 Android malware has been found pre-installed in over 1 million IoT devices globally. It’s embedded in firmware and survives factory resets, turning devices into botnets. <a href="https://hackread.com/badbox-2-0-preinstalled-android-iot-devices-worldwide/" target="_blank">More info</a></li>
+    <li>Operation Eastwood disrupted the pro-Russian NoName057(16) group, dismantling over 100 systems and arresting suspects in France and Spain. The group had launched widespread DDoS campaigns. <a href="https://securityaffairs.com/180027/cyber-crime/operation-eastwood-disrupted-operations-of-pro-russian-hacker-group-noname05716.html" target="_blank">More info</a></li>
+    <li>Matanbuchus 3.0 has been confirmed to support in-memory execution, LOLBins, COM hijacking, and delivery of Cobalt Strike. It spreads via fake IT support calls. <a href="https://thehackernews.com/2025/07/hackers-leverage-microsoft-teams-to.html" target="_blank">More info</a></li>
+    <li>Microsoft reports Octo Tempest (Scattered Spider) now targets the airline sector using ransomware like DragonForce, credential theft, and hybrid attacks involving ESXi. <a href="https://www.microsoft.com/en-us/security/blog/2025/07/16/protecting-customers-from-octo-tempest-attacks-across-multiple-industries/" target="_blank">More info</a></li>
+    <li>Trellix found SquidLoader used in malware attacks on Hong Kong financial institutions, delivering Cobalt Strike Beacons via Mandarin spear-phishing emails. <a href="https://www.infosecurity-magazine.com/news/squidloader-malware-targets-hong/" target="_blank">More info</a></li>
+    <li>Google TAG exposed OVERSTEP, a user-mode rootkit used by UNC6148 to compromise SonicWall SMA 100 devices. It hides in boot processes, steals credentials, and ensures persistent access. <a href="https://www.bleepingcomputer.com/news/security/sonicwall-sma-devices-hacked-with-overstep-rootkit-tied-to-ransomware/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li>Cybercriminals are increasingly abusing malicious Firefox extensions. Socket's research found 8 harmful extensions that hijack sessions and steal tokens. Users are urged to stick to Mozilla’s recommended list. <a href="https://www.cysecurity.news/2025/07/malicious-firefox-extension-steals.html" target="_blank">More info</a></li>
-  </ul>
-
-  <h2>📂 Breach/Leaks</h2>
-  <ul>
-    <li>DragonForce ransomware group claimed an attack on Belk (US retailer), disrupting systems and leaking 156 GB of data including names and SSNs. Belk is offering credit monitoring to affected individuals. <a href="https://www.securityweek.com/ransomware-group-claims-attack-on-belk/" target="_blank">More info</a></li>
+    <li>Ransomware attacks on the global retail sector rose 58% in Q2 2025, with UK brands like M&S and Harrods targeted. 95% of the 276 confirmed incidents involved data exfiltration. <a href="https://www.infosecurity-magazine.com/news/retail-ransomware-jump-globally-q2/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📌 Others</h2>
   <ul>
-    <li>Daniel Stenberg, creator of curl, may end the bug bounty program due to a surge in invalid AI-generated reports—95% of 2025 submissions were non-actionable. <a href="https://www.theregister.com/2025/07/15/curl_creator_mulls_nixing_bug/" target="_blank">More info</a></li>
+    <li>Ukrainian groups BO Team and Cyber Alliance claim to have wiped 47TB of data from Russia’s Gaskar Integration plant, disrupting military drone production. <a href="https://www.theregister.com/2025/07/16/ukrainian_drone_attack/" target="_blank">More info</a></li>
   </ul>
   <p style="text-align:center;">
     <a href="https://pranakn.github.io">⬅ Back to Archive</a>
