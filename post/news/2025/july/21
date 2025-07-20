@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📰 Cybersecurity Newsfeed - 21/07/25</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    h1 {
+      color: #c9a227;
+    }
+    h2 {
+      color: #c9a227;
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+    }
+    a {
+      color: #c9a227;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 21/07/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>Microsoft SharePoint zero-day CVE-2025-53770 is actively exploited with no patch available. Attackers steal cryptographic keys via tampered ViewState payloads. Microsoft urges AMSI and Defender AV activation. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-sharepoint-zero-day-exploited-in-rce-attacks-no-patch-available/" target="_blank">More info</a></li>
+    <li>CISA added CVE-2025-53770 to its KEV Catalog due to active exploitation. The flaw enables unauthenticated RCE and persistent access via ViewState abuse. Isolation or AMSI/Defender activation is advised. <a href="https://www.cisa.gov/news-events/alerts/2025/07/20/cisa-adds-one-known-exploited-vulnerability-cve-2025-53770-toolshell-catalog" target="_blank">More info</a></li>
+    <li>HPE warns of hardcoded credentials in Aruba Instant On APs (CVE-2025-37103), and a command injection bug (CVE-2025-37102). Users must upgrade to firmware 3.2.1.0 immediately. <a href="https://www.bleepingcomputer.com/news/security/hpe-warns-of-hardcoded-passwords-in-aruba-access-points/" target="_blank">More info</a></li>
+    <li>Binarly uncovered four high-severity UEFI vulnerabilities in 240+ Gigabyte motherboard models, allowing stealthy bootkit installation via SMM flaws. BIOS updates are required. <a href="https://www.cysecurity.news/2025/07/gigabyte-firmware-vulnerability-enables.html" target="_blank">More info</a></li>
+    <li>Tempest Security disclosed CVEs in Intelbras RX routers allowing unauthenticated access and XSS attacks. Patching to firmware 2.2.12 or newer is critical. <a href="https://seclists.org/fulldisclosure/2025/Jul/14" target="_blank">More info</a></li>
+    <li>CrushFTP confirmed active exploitation of CVE-2025-54309 enabling unauthorized admin access via the web interface. Patch to versions v10.8.5 or v11.3.4_23 is mandatory. <a href="https://www.bleepingcomputer.com/news/security/new-crushftp-zero-day-exploited-in-attacks-to-hijack-servers/" target="_blank">More info</a></li>
+    <li>Wiz disclosed *NVIDIAScape* (CVE-2025-23266), a critical flaw in Nvidia’s Container Toolkit allowing container escape and host takeover in shared GPU clouds. <a href="https://www.securityweek.com/critical-nvidia-toolkit-flaw-exposes-ai-cloud-services-to-hacking/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>Singapore warns of UNC3886 targeting national critical infrastructure using stealthy attacks and compromised routers. The group has a history of exploiting Fortinet and Juniper zero-days. <a href="https://securityaffairs.com/180179/uncategorized/singapore-warns-china-linked-group-unc3886-targets-its-critical-infrastructure.html" target="_blank">More info</a></li>
+    <li>*SquidLoader* malware targets financial institutions in Asia using password-protected RAR phishing and multi-stage infection to deploy Cobalt Strike. <a href="https://hackread.com/squidloader-malware-hits-hong-kong-financial-firms/" target="_blank">More info</a></li>
+    <li>EncryptHub targets Web3 developers via fake AI platforms to deliver *Fickle Stealer* malware. Meanwhile, KAWA4096 and Crux ransomware families emerged using stealth and legitimate tools. <a href="https://thehackernews.com/2025/07/encrypthub-targets-web3-developers.html" target="_blank">More info</a></li>
+    <li>Interlock RAT now uses PHP in new campaigns deployed via fake CAPTCHA pages. It abuses PowerShell, RDP, and Cloudflare Tunneling to maintain access. <a href="https://www.cysecurity.news/2025/07/interlock-rat-evolves-in-new-kongtuke.html" target="_blank">More info</a></li>
+    <li>Chinese cybercrime syndicates are laundering over $580M annually in India through mule accounts and fake apps, exploiting digital lending and crypto platforms. <a href="https://hackread.com/chinese-groups-launder-india-fake-apps-mule-accounts/" target="_blank">More info</a></li>
+    <li>RedDirection campaign abused Chrome and Edge extensions to spy on over 2.3 million users, accessing cookies and redirecting to phishing sites. <a href="https://www.cysecurity.news/2025/07/over-2-million-users-affected-browser.html" target="_blank">More info</a></li>
+    <li>A major npm supply chain attack compromised `eslint-config-prettier` and others, dropping Windows malware via malicious DLLs. Lockfiles and secrets must be reviewed. <a href="https://www.bleepingcomputer.com/news/security/popular-npm-linter-packages-hijacked-via-phishing-to-drop-malware/" target="_blank">More info</a></li>
+    <li>Three AUR packages were found installing CHAOS RAT on Linux. Users should delete `/tmp/systemd-initd` and reinstall clean systems. <a href="https://www.bleepingcomputer.com/news/security/arch-linux-pulls-aur-packages-that-installed-chaos-rat-malware/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>A new variant of *ClickFix* called *FileFix* tricks users into pasting PowerShell in File Explorer address bar, deploying Interlock RAT and ransomware. <a href="https://www.cysecurity.news/2025/07/filefix-malware-trick-amplifies.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📌 Others</h2>
+  <ul>
+    <li>Japanese police released a free decryptor for Phobos and 8Base ransomware variants (.phobos, .8base, .faust, .elbie, .LIZARD), available via NoMoreRansom. <a href="https://www.cysecurity.news/2025/07/free-ransomware-decryptor-released-for.html" target="_blank">More info</a></li>
+  </ul>
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
