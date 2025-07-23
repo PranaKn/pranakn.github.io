@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📰 Cybersecurity Newsfeed - 23/07/25</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    h1 {
+      color: #c9a227;
+    }
+    h2 {
+      color: #c9a227;
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+    }
+    a {
+      color: #c9a227;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 23/07/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>Cisco confirmed active exploitation of ISE and ISE-PIC vulnerabilities (CVE-2025-20281/82/20337) allowing unauthenticated RCE with root privileges. Immediate patching is advised. <a href="https://securityaffairs.com/180260/hacking/cisco-confirms-active-exploitation-of-ise-and-ise-pic-flaws.html" target="_blank">More info</a></li>
+    <li>CISA added four exploited vulnerabilities to its KEV catalog: CrushFTP CVE-2025-54309, Chromium CVE-2025-6558, SysAid CVE-2025-2775/2776, and SharePoint CVEs. <a href="https://www.cisa.gov/news-events/alerts/2025/07/22/cisa-adds-four-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+    <li>Helmholz REX 100 routers contain 8 vulnerabilities, including OS command injection, SQLi, and unauthenticated XSS/DoS risks. Patches available in firmware 2.3.3. <a href="https://www.securityweek.com/vulnerabilities-expose-helmholz-industrial-routers-to-hacking/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>AI-powered fake e-commerce platforms have proliferated, with 690,000+ fake shops created using SEO and redirect chains to steal data. <a href="https://www.darknet.org.uk/2025/07/fake-e-commerce-platforms-as-attack-vectors-threats-in-2025/" target="_blank">More info</a></li>
+    <li>Lumma infostealer rebounded after takedown, now using Selectel and multiple channels including GitHub, PowerShell loaders, and fake ads. <a href="https://www.bleepingcomputer.com/news/security/lumma-infostealer-malware-returns-after-law-enforcement-disruption/" target="_blank">More info</a></li>
+    <li>Coyote malware abuses Windows UI Automation framework to identify banking and crypto websites—first real-world UIA reconnaissance abuse. <a href="https://www.bleepingcomputer.com/news/security/coyote-malware-abuses-windows-accessibility-framework-for-data-theft/" target="_blank">More info</a></li>
+    <li>Russian groups UTA0352/0355 abuse OAuth workflows to phish Microsoft 365 credentials via Signal/WhatsApp, impersonating diplomats. <a href="https://www.infosecurity-magazine.com/news/russian-hackers-target-ngos-oauth/" target="_blank">More info</a></li>
+    <li>Chinese authorities use *Massistant* to extract encrypted app data from confiscated phones, raising global digital rights concerns. <a href="https://www.cysecurity.news/2025/07/china-hacks-seized-phones-using.html" target="_blank">More info</a></li>
+    <li>UNC6148 targets SonicWall SMA devices with *Overstep* backdoor, exploiting old credentials and CVEs to delete logs and maintain access. <a href="https://www.cysecurity.news/2025/07/hackers-exploit-end-of-life-sonicwall.html" target="_blank">More info</a></li>
+    <li>Proofpoint warns of RFQ scams exploiting Net 30/45 terms to fraudulently acquire goods. Domains and shipments traced to West Africa. <a href="https://www.infosecurity-magazine.com/news/net-rfq-scam-targets-high-value/" target="_blank">More info</a></li>
+    <li>*Greedy Sponge* continues phishing campaigns in Mexico using AllaKore RAT, SystemBC, and new threats like Neptune RAT and Ghost Crypt. <a href="https://thehackernews.com/2025/07/credential-theft-and-remote-access.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>CISA, FBI, HHS, and MS-ISAC warn of escalating Interlock ransomware attacks on healthcare. TTPs include FileFix trick and double extortion. <a href="https://www.bleepingcomputer.com/news/security/cisa-and-fbi-warn-of-escalating-interlock-ransomware-attacks/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📂 Breach/Leaks</h2>
+  <ul>
+    <li>AMEOS Group suffered a security breach impacting patient and staff data across its healthcare network in Central Europe. No ransomware confirmed. <a href="https://www.bleepingcomputer.com/news/security/major-european-healthcare-network-discloses-security-breach/" target="_blank">More info</a></li>
+  </ul>
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
