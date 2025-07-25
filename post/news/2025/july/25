@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📰 Cybersecurity Newsfeed - 25/07/25</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    h1 {
+      color: #c9a227;
+    }
+    h2 {
+      color: #c9a227;
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+    }
+    a {
+      color: #c9a227;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 25/07/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>Mitel patched a critical auth bypass flaw (CVSS 9.4) in MiVoice MX-ONE, affecting versions 7.3–7.8 SP1. Exploitation could allow unauthorized admin access. SQLi in MiCollab (CVE-2025-52914) was also fixed. <a href="https://thehackernews.com/2025/07/critical-mitel-flaw-lets-hackers-bypass.html" target="_blank">More info</a></li>
+    <li>Microsoft confirms *Storm-2603* is exploiting CVE-2025-49704/49706 (and bypasses) in SharePoint to deploy *Warlock* ransomware. All internet-facing SharePoint servers should be assumed compromised. <a href="https://www.helpnetsecurity.com/2025/07/24/storm-2603-spotted-deploying-ransomware-on-exploited-sharepoint-servers/" target="_blank">More info</a></li>
+    <li>Cisco Talos disclosed five DoS vulnerabilities in Bloomberg’s *Comdb2* DB (v8.1). Attackers can trigger service crashes via crafted TCP packets. Patches and Snort rules released. <a href="https://blog.talosintelligence.com/bloomberg-comdb2-null-pointer-dereference-and-denial-of-service-vulnerabilities/" target="_blank">More info</a></li>
+    <li>SonicWall warns of critical RCE (CVE-2025-40599) in SMA 100 series appliances. Exploitable via the web interface using valid credentials. Patch, reset credentials, enable MFA, and restrict external access. <a href="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-critical-rce-flaw-in-sma-100-VPN-appliances/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>*Trojan.Scavenger* abuses DLL search order hijacking to steal credentials and crypto wallet keys. Spread via fake game mods, it tampers with MetaMask, LastPass, and Bitwarden. <a href="https://hackread.com/scavenger-trojan-crypto-wallets-game-mods-browser-flaws/" target="_blank">More info</a></li>
+    <li>*Coyote* malware abuses Windows UI Automation to extract banking/crypto credentials from 75 Brazilian sites. First confirmed in-the-wild abuse of UIA. <a href="https://securityaffairs.com/180334/malware/coyote-malware-is-first-ever-malware-abusing-windows-ui-automation.html" target="_blank">More info</a></li>
+    <li>*Koske*, a Linux malware, hides in polyglot JPEG panda images and uses LD_PRELOAD to mine 18 cryptocurrencies. Targets exposed JupyterLab environments. <a href="https://www.bleepingcomputer.com/news/security/new-koske-linux-malware-hides-in-cute-panda-images/" target="_blank">More info</a></li>
+    <li>China-linked *Fire Ant* exploited VMware flaws to persist on ESXi and pivot to guest VMs. Used stealthy backdoors and unregistered VMs. <a href="https://thehackernews.com/2025/07/fire-ant-exploits-vmware-flaw-to.html" target="_blank">More info</a></li>
+    <li>*EncryptHub* compromised the Steam game *Chemia* to deliver HijackLoader, Vidar, and Fickle Stealer. Third Steam abuse this year. <a href="https://www.bleepingcomputer.com/news/security/hacker-sneaks-infostealer-malware-into-early-access-steam-game/" target="_blank">More info</a></li>
+    <li>*CastleLoader*, a malware loader, spreads RedLine, NetSupport RAT, and more via Cloudflare phishing and fake GitHub pages. 469 systems infected since May. <a href="https://thehackernews.com/2025/07/castleloader-malware-infects-469.html" target="_blank">More info</a></li>
+    <li>*Konfety* Android malware uses ZIP/BZIP evasion and geofencing. Targets users via third-party stores, installs unwanted apps, and hides from tools like APKTool. <a href="https://www.cysecurity.news/2025/07/new-variant-of-konfety-android-malware.html" target="_blank">More info</a></li>
+    <li>Chinese APTs deployed *Gh0st RAT* and *PhantomNet* to spy on Tibetans via fake Element and check-in apps. Watering hole attacks tied to Dalai Lama’s 90th birthday. <a href="https://thehackernews.com/2025/07/china-based-apts-deploy-fake-dalai-lama.html" target="_blank">More info</a></li>
+    <li>Researchers found a persistent WordPress backdoor in `mu-plugins`. It decodes a payload from the DB, restores itself via plugin abuse, and resets admin passwords. <a href="https://securityaffairs.com/180311/malware/stealth-backdoor-found-in-wordpress-mu-plugins-folder.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>Phishing campaign mimicking execs in transportation industry led to credential theft and invoice fraud. Traced to Nigerian group *SilverTerrier*. FBI advises reporting to IC3 within 72 hours for fund recovery. <a href="https://krebsonsecurity.com/2025/07/phishers-target-aviation-execs-to-scam-customers/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📂 Breach/Leaks</h2>
+  <ul>
+    <li>Law enforcement seized BlackSuit ransomware leak portals in Operation Checkmate. Gang extorted over $500M and is suspected of rebranding as Chaos. <a href="https://www.bleepingcomputer.com/news/security/law-enforcement-seizes-blacksuit-ransomware-leak-sites/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🧰 Tools</h2>
+  <ul>
+    <li>New Python FIM tool **ficheck.py** released, inspired by *fcheck*. Supports SHA-256, inode tracking, permission checks, cron scheduling, and email alerts. Lightweight and fast. <a href="https://isc.sans.edu/diary/rss/32136" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🔍 Hunting</h2>
+  <ul>
+    <li>*Chaos* ransomware group, likely a rebrand of *BlackSuit*, uses phishing, RMM abuse, hybrid AES/ECDH encryption, and no-payment ransom notes. Avoids CIS countries, operates on RAMP, and runs DDoS threats for extortion. <a href="https://blog.talosintelligence.com/new-chaos-ransomware/" target="_blank">More info</a></li>
+  </ul>
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
