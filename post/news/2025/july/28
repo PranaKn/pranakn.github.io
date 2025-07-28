@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📰 Cybersecurity Newsfeed - 28/07/25</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    h1 {
+      color: #c9a227;
+    }
+    h2 {
+      color: #c9a227;
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+    }
+    a {
+      color: #c9a227;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 28/07/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>Over 200,000 WordPress sites are vulnerable to CVE-2025-24000 in the Post SMTP plugin (≤v3.2.0), which allows low-privileged users to hijack admin accounts via REST API email log access. Only 48.5% have updated. <a href="https://www.bleepingcomputer.com/news/security/post-smtp-plugin-flaw-exposes-200k-wordpress-sites-to-hijacking-attacks/" target="_blank">More info</a></li>
+    <li>Mitel patched a critical auth bypass flaw (CVSS 9.4) in MiVoice MX-ONE (v7.3–7.8 SP1). It allows unauthenticated admin access via Provisioning Manager. No CVE assigned yet. <a href="https://www.securityweek.com/mitel-patches-critical-flaw-in-enterprise-communication-platform/" target="_blank">More info</a></li>
+    <li>CISA warns of unpatched auth bypass in LG LNV5110R cameras (CVE-2025-7742), enabling RCE via POST requests. Devices are end-of-life but still widely deployed in critical infrastructure. <a href="https://securityaffairs.com/180368/security/unpatched-flaw-in-eol-lg-lnv5110r-cameras-lets-hackers-gain-admin-access.html" target="_blank">More info</a></li>
+    <li>Amazon’s Q Developer Extension for VS Code was hacked to inject a fake data-wiping command. The attacker used malformed code to protest insecure AI. AWS revoked credentials and released v1.85.0. <a href="https://www.bleepingcomputer.com/news/security/amazon-ai-coding-agent-hacked-to-inject-data-wiping-commands/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>Scattered Spider is targeting VMware ESXi hypervisors using advanced social engineering and disk-swap attacks to deploy ransomware. Google urges vSphere hardening and phishing-resistant MFA. <a href="https://www.bleepingcomputer.com/news/security/scattered-spider-is-running-a-vmware-esxi-hacking-spree/" target="_blank">More info</a></li>
+    <li>APT028's *LameHug* malware uses Alibaba’s LLM Qwen-2.5-Coder to generate dynamic commands. Sent via ZIP phishing, it exfiltrates Windows documents. <a href="https://www.cysecurity.news/2025/07/ai-powered-malware-lamehug-attacks.html" target="_blank">More info</a></li>
+    <li>The BlackSuit ransomware site was seized in a global law enforcement op. Linked to Royal and Conti, BlackSuit used phishing and credential theft, demanding ransoms up to $60M. <a href="https://securityaffairs.com/180409/cyber-crime/law-enforcement-operations-seized-blacksuit-ransomware-gangs-darknet-sites.html" target="_blank">More info</a></li>
+    <li>CloudSEK uncovered a ₹17.5 crore fake currency ring in India run via Meta platforms. Over 750 accounts were identified and reported. <a href="https://hackread.com/researchers-online-fake-currency-operation-in-india/" target="_blank">More info</a></li>
+    <li>Unit 42 reports Muddled Libra (Scattered Spider) has evolved into a modular cloud-focused threat group causing over $400M in damage using help desk and cloud abuse. <a href="https://www.paloaltonetworks.com/blog/2025/07/muddled-libra-social-engineering-enterprise-scale-disruption/" target="_blank">More info</a></li>
+    <li>Aqua Security reveals AI-assisted *Koske* Linux malware targeting JupyterLab with rootkits and polyglot JPEG droppers for cryptomining. <a href="https://www.securityweek.com/sophisticated-koske-linux-malware-developed-with-ai-aid/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>Attackers hijack deleted/expired Discord invite codes to create malicious vanity links redirecting to malware. Victims are lured into executing PowerShell via ClickFix to install AsyncRAT and Skuld Stealer. <a href="https://www.kaspersky.com/blog/hijacked-discord-invite-links-for-multi-stage-malware-delivery/53955/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📂 Breach/Leaks</h2>
+  <ul>
+    <li>Allianz Life suffered a breach via a third-party CRM, exposing PII of 1.4M customers and employees. Attack tied to ShinyHunters. FBI notified. <a href="https://securityaffairs.com/180445/data-breach/allianz-life-data-breach-exposed-the-data-of-most-of-its-1-4m-customers.html" target="_blank">More info</a></li>
+    <li>A regimental newsletter accidentally leaked UK Special Forces data spanning a decade, prompting a MoD review and national security concerns. <a href="https://www.cysecurity.news/2025/07/uk-army-probes-leak-of-special-forces.html" target="_blank">More info</a></li>
+    <li>NASCAR confirmed a Medusa ransomware breach exposing SSNs, credentials, and maps. Attack occurred in March, discovered in June. <a href="https://hackread.com/nascar-ransomware-confirm-medusa-ransomware-data-breach/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🧩 Others</h2>
+  <ul>
+    <li>BreachForums returned on its .onion domain under admin “N/A”, denying ties to IntelBroker or ShinyHunters. It resurfaces amid increased forum takedowns. <a href="https://hackread.com/breachforums-resurface-original-dark-web-onion-address/" target="_blank">More info</a></li>
+    <li>Christina Chapman, an Arizona “laptop farmer,” was sentenced to 8.5 years for helping DPRK IT workers infiltrate 309 U.S. firms, laundering $17M. <a href="https://www.darkreading.com/remote-workforce/north-korea-it-worker-rampage-doj" target="_blank">More info</a></li>
+  </ul>
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
