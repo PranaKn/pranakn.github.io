@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📰 Cybersecurity Newsfeed - 29/07/25</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    h1 {
+      color: #c9a227;
+    }
+    h2 {
+      color: #c9a227;
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+    }
+    a {
+      color: #c9a227;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 29/07/25</h2>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>Endgame Gear's OP1w 4k v2 mouse config tool was trojanized with XRed malware between June 26–July 9, 2025, enabling keylogging and data exfiltration. <a href="https://www.bleepingcomputer.com/news/security/endgame-gear-mouse-config-tool-infected-users-with-malware/" target="_blank">More info</a></li>
+    <li>CVE-2025-31199 (Sploitlight) allows macOS apps to bypass TCC protections using Spotlight plugins, accessing photos and Apple Intelligence cache. Patched in March 2025. <a href="https://hackread.com/macos-sploitlight-flaw-apple-intelligence-cached-data/" target="_blank">More info</a></li>
+    <li>Attackers breached Toptal's GitHub org to upload 10 malicious npm packages stealing tokens and wiping systems. Also targeted PyPI and npm with spyware. <a href="https://thehackernews.com/2025/07/hackers-breach-toptal-github-publish-10.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>A prompt injection flaw in Google Gemini CLI (fixed in v0.1.14) allowed stealthy code execution via crafted `README.md` files. <a href="https://cyberscoop.com/google-gemini-cli-prompt-injection-arbitrary-code-execution/" target="_blank">More info</a> / <a href="https://www.bleepingcomputer.com/news/security/flaw-in-gemini-cli-ai-coding-assistant-allowed-stealthy-code-execution/" target="_blank">More</a></li>
+    <li>Researcher released an exploit for CVE-2025-20281, a Cisco ISE RCE flaw abused via `enableStrongSwanTunnel()` and Java `Runtime.exec()`. Escapes Docker to host. <a href="https://www.bleepingcomputer.com/news/security/exploit-available-for-critical-cisco-ise-bug-exploited-in-attacks/" target="_blank">More info</a></li>
+    <li>CISA added CVE-2025-20281, CVE-2025-20337 (Cisco ISE) and CVE-2023-2533 (PaperCut NG/MF) to KEV catalog. Federal agencies must patch urgently. <a href="https://www.cisa.gov/news-events/alerts/2025/07/28/cisa-adds-three-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>A targeted malware campaign uses ISO files and adult/romance lures to deliver AutoIt-based loaders to German-speaking users. Bypasses AV, installs *DragonMapper*. <a href="https://hackread.com/malicious-iso-file-romance-scam-on-german-speakers/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📂 Breach/Leaks</h2>
+  <ul>
+    <li>Tea app breached: 59 GB of selfies, IDs, and now 1.1M private messages leaked due to insecure Firebase bucket. Attackers built a “facesmash” clone with the data. <a href="https://www.bleepingcomputer.com/news/security/tea-app-leak-worsens-with-second-database-exposing-user-chats/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🛠️ Tools</h2>
+  <ul>
+    <li><strong>Argus</strong> is a CLI recon tool with 50+ modules for DNS, IPs, SSL, OSINT, and leaks. Faster but shallower than Amass, it's ideal for rapid surface mapping. <a href="https://www.darknet.org.uk/2025/07/argus-ultimate-reconnaissance-toolkit-for-offensive-recon-operations/" target="_blank">More info</a></li>
+    <li><strong>Autoswagger</strong> is a new tool from Intruder that scans exposed API docs for auth flaws. It found serious leaks including SQL access, AD enumeration, and MPN credentials. <a href="https://www.bleepingcomputer.com/news/security/free-tool-autoswagger-finds-the-api-flaws-attackers-hope-you-miss/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🔍 Hunting</h2>
+  <ul>
+    <li><strong>UNC3886</strong> is exploiting VMware, Fortinet, Juniper and other infra using rootkits like MopSled, CastleTap, and Reptile. They leverage CVEs: 2023-34048, 2022-41328, 2023-20867, and 2025–21590. <a href="https://www.trendmicro.com/en_us/research/25/g/revisiting-unc3886-tactics-to-defend-against-present-risk.html" target="_blank">More info</a></li>
+  </ul>
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
