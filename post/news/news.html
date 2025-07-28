@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>📰 Cybersecurity Newsfeed - 28/07/25</title>
+  <title>📰 Cybersecurity Newsfeed - 29/07/25</title>
   <style>
     body {
       background-color: #121212;
@@ -43,42 +43,41 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 28/07/25</h2>
-
-  <h2>🛡️ Vulnerabilities</h2>
-  <ul>
-    <li>Over 200,000 WordPress sites are vulnerable to CVE-2025-24000 in the Post SMTP plugin (≤v3.2.0), which allows low-privileged users to hijack admin accounts via REST API email log access. Only 48.5% have updated. <a href="https://www.bleepingcomputer.com/news/security/post-smtp-plugin-flaw-exposes-200k-wordpress-sites-to-hijacking-attacks/" target="_blank">More info</a></li>
-    <li>Mitel patched a critical auth bypass flaw (CVSS 9.4) in MiVoice MX-ONE (v7.3–7.8 SP1). It allows unauthenticated admin access via Provisioning Manager. No CVE assigned yet. <a href="https://www.securityweek.com/mitel-patches-critical-flaw-in-enterprise-communication-platform/" target="_blank">More info</a></li>
-    <li>CISA warns of unpatched auth bypass in LG LNV5110R cameras (CVE-2025-7742), enabling RCE via POST requests. Devices are end-of-life but still widely deployed in critical infrastructure. <a href="https://securityaffairs.com/180368/security/unpatched-flaw-in-eol-lg-lnv5110r-cameras-lets-hackers-gain-admin-access.html" target="_blank">More info</a></li>
-    <li>Amazon’s Q Developer Extension for VS Code was hacked to inject a fake data-wiping command. The attacker used malformed code to protest insecure AI. AWS revoked credentials and released v1.85.0. <a href="https://www.bleepingcomputer.com/news/security/amazon-ai-coding-agent-hacked-to-inject-data-wiping-commands/" target="_blank">More info</a></li>
-  </ul>
+  <h2>📅 29/07/25</h2>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li>Scattered Spider is targeting VMware ESXi hypervisors using advanced social engineering and disk-swap attacks to deploy ransomware. Google urges vSphere hardening and phishing-resistant MFA. <a href="https://www.bleepingcomputer.com/news/security/scattered-spider-is-running-a-vmware-esxi-hacking-spree/" target="_blank">More info</a></li>
-    <li>APT028's *LameHug* malware uses Alibaba’s LLM Qwen-2.5-Coder to generate dynamic commands. Sent via ZIP phishing, it exfiltrates Windows documents. <a href="https://www.cysecurity.news/2025/07/ai-powered-malware-lamehug-attacks.html" target="_blank">More info</a></li>
-    <li>The BlackSuit ransomware site was seized in a global law enforcement op. Linked to Royal and Conti, BlackSuit used phishing and credential theft, demanding ransoms up to $60M. <a href="https://securityaffairs.com/180409/cyber-crime/law-enforcement-operations-seized-blacksuit-ransomware-gangs-darknet-sites.html" target="_blank">More info</a></li>
-    <li>CloudSEK uncovered a ₹17.5 crore fake currency ring in India run via Meta platforms. Over 750 accounts were identified and reported. <a href="https://hackread.com/researchers-online-fake-currency-operation-in-india/" target="_blank">More info</a></li>
-    <li>Unit 42 reports Muddled Libra (Scattered Spider) has evolved into a modular cloud-focused threat group causing over $400M in damage using help desk and cloud abuse. <a href="https://www.paloaltonetworks.com/blog/2025/07/muddled-libra-social-engineering-enterprise-scale-disruption/" target="_blank">More info</a></li>
-    <li>Aqua Security reveals AI-assisted *Koske* Linux malware targeting JupyterLab with rootkits and polyglot JPEG droppers for cryptomining. <a href="https://www.securityweek.com/sophisticated-koske-linux-malware-developed-with-ai-aid/" target="_blank">More info</a></li>
+    <li>Endgame Gear's OP1w 4k v2 mouse config tool was trojanized with XRed malware between June 26–July 9, 2025, enabling keylogging and data exfiltration. <a href="https://www.bleepingcomputer.com/news/security/endgame-gear-mouse-config-tool-infected-users-with-malware/" target="_blank">More info</a></li>
+    <li>CVE-2025-31199 (Sploitlight) allows macOS apps to bypass TCC protections using Spotlight plugins, accessing photos and Apple Intelligence cache. Patched in March 2025. <a href="https://hackread.com/macos-sploitlight-flaw-apple-intelligence-cached-data/" target="_blank">More info</a></li>
+    <li>Attackers breached Toptal's GitHub org to upload 10 malicious npm packages stealing tokens and wiping systems. Also targeted PyPI and npm with spyware. <a href="https://thehackernews.com/2025/07/hackers-breach-toptal-github-publish-10.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>A prompt injection flaw in Google Gemini CLI (fixed in v0.1.14) allowed stealthy code execution via crafted `README.md` files. <a href="https://cyberscoop.com/google-gemini-cli-prompt-injection-arbitrary-code-execution/" target="_blank">More info</a> / <a href="https://www.bleepingcomputer.com/news/security/flaw-in-gemini-cli-ai-coding-assistant-allowed-stealthy-code-execution/" target="_blank">More</a></li>
+    <li>Researcher released an exploit for CVE-2025-20281, a Cisco ISE RCE flaw abused via `enableStrongSwanTunnel()` and Java `Runtime.exec()`. Escapes Docker to host. <a href="https://www.bleepingcomputer.com/news/security/exploit-available-for-critical-cisco-ise-bug-exploited-in-attacks/" target="_blank">More info</a></li>
+    <li>CISA added CVE-2025-20281, CVE-2025-20337 (Cisco ISE) and CVE-2023-2533 (PaperCut NG/MF) to KEV catalog. Federal agencies must patch urgently. <a href="https://www.cisa.gov/news-events/alerts/2025/07/28/cisa-adds-three-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li>Attackers hijack deleted/expired Discord invite codes to create malicious vanity links redirecting to malware. Victims are lured into executing PowerShell via ClickFix to install AsyncRAT and Skuld Stealer. <a href="https://www.kaspersky.com/blog/hijacked-discord-invite-links-for-multi-stage-malware-delivery/53955/" target="_blank">More info</a></li>
+    <li>A targeted malware campaign uses ISO files and adult/romance lures to deliver AutoIt-based loaders to German-speaking users. Bypasses AV, installs *DragonMapper*. <a href="https://hackread.com/malicious-iso-file-romance-scam-on-german-speakers/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📂 Breach/Leaks</h2>
   <ul>
-    <li>Allianz Life suffered a breach via a third-party CRM, exposing PII of 1.4M customers and employees. Attack tied to ShinyHunters. FBI notified. <a href="https://securityaffairs.com/180445/data-breach/allianz-life-data-breach-exposed-the-data-of-most-of-its-1-4m-customers.html" target="_blank">More info</a></li>
-    <li>A regimental newsletter accidentally leaked UK Special Forces data spanning a decade, prompting a MoD review and national security concerns. <a href="https://www.cysecurity.news/2025/07/uk-army-probes-leak-of-special-forces.html" target="_blank">More info</a></li>
-    <li>NASCAR confirmed a Medusa ransomware breach exposing SSNs, credentials, and maps. Attack occurred in March, discovered in June. <a href="https://hackread.com/nascar-ransomware-confirm-medusa-ransomware-data-breach/" target="_blank">More info</a></li>
+    <li>Tea app breached: 59 GB of selfies, IDs, and now 1.1M private messages leaked due to insecure Firebase bucket. Attackers built a “facesmash” clone with the data. <a href="https://www.bleepingcomputer.com/news/security/tea-app-leak-worsens-with-second-database-exposing-user-chats/" target="_blank">More info</a></li>
   </ul>
 
-  <h2>🧩 Others</h2>
+  <h2>🛠️ Tools</h2>
   <ul>
-    <li>BreachForums returned on its .onion domain under admin “N/A”, denying ties to IntelBroker or ShinyHunters. It resurfaces amid increased forum takedowns. <a href="https://hackread.com/breachforums-resurface-original-dark-web-onion-address/" target="_blank">More info</a></li>
-    <li>Christina Chapman, an Arizona “laptop farmer,” was sentenced to 8.5 years for helping DPRK IT workers infiltrate 309 U.S. firms, laundering $17M. <a href="https://www.darkreading.com/remote-workforce/north-korea-it-worker-rampage-doj" target="_blank">More info</a></li>
+    <li><strong>Argus</strong> is a CLI recon tool with 50+ modules for DNS, IPs, SSL, OSINT, and leaks. Faster but shallower than Amass, it's ideal for rapid surface mapping. <a href="https://www.darknet.org.uk/2025/07/argus-ultimate-reconnaissance-toolkit-for-offensive-recon-operations/" target="_blank">More info</a></li>
+    <li><strong>Autoswagger</strong> is a new tool from Intruder that scans exposed API docs for auth flaws. It found serious leaks including SQL access, AD enumeration, and MPN credentials. <a href="https://www.bleepingcomputer.com/news/security/free-tool-autoswagger-finds-the-api-flaws-attackers-hope-you-miss/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🔍 Hunting</h2>
+  <ul>
+    <li><strong>UNC3886</strong> is exploiting VMware, Fortinet, Juniper and other infra using rootkits like MopSled, CastleTap, and Reptile. They leverage CVEs: 2023-34048, 2022-41328, 2023-20867, and 2025–21590. <a href="https://www.trendmicro.com/en_us/research/25/g/revisiting-unc3886-tactics-to-defend-against-present-risk.html" target="_blank">More info</a></li>
   </ul>
   <p style="text-align:center;">
     <a href="https://pranakn.github.io">⬅ Back to Archive</a>
