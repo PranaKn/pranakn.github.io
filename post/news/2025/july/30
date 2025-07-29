@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📰 Cybersecurity Newsfeed - 30/07/25</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    h1 {
+      color: #c9a227;
+    }
+    h2 {
+      color: #c9a227;
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+    }
+    a {
+      color: #c9a227;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 30/07/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>Binarly disclosed six firmware vulnerabilities in Lenovo all-in-one desktops (CVE-2025-4421 to -4424), enabling persistent implants and Secure Boot bypass. <a href="https://www.securityweek.com/lenovo-firmware-vulnerabilities-allow-persistent-implant-deployment/" target="_blank">More info</a></li>
+    <li>Hackers exploited CVE-2025-31324 in SAP NetWeaver to deploy Auto-Color Linux malware with stealth rootkits. Ransomware and suspected Chinese APTs involved. <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-sap-netweaver-bug-to-deploy-linux-auto-color-malware/" target="_blank">More info</a></li>
+    <li>Wiz researchers found a critical auth bypass in Wix’s Base44 AI coding platform, exposing private apps using public app IDs. Patched within 24 hours. <a href="https://thehackernews.com/2025/07/wiz-uncovers-critical-access-bypass.html" target="_blank">More info</a></li>
+    <li>CISA added CVE-2023-2533 (PaperCut NG/MF CSRF flaw) to KEV Catalog due to RCE risk via admin session hijack. Patch deadline: August 18, 2025. <a href="https://thehackernews.com/2025/07/cisa-adds-papercut-ngmf-csrf.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>“Choicejacking” attack simulates USB user input in 133ms to enable data transfer without consent on iOS and Android. Avoid public charging ports. <a href="https://hackread.com/choicejacking-attack-steals-data-phones-public-chargers/" target="_blank">More info</a></li>
+    <li>PyPI phishing campaign steals dev credentials via fake domain <em>pypj[.]org</em>. Emails spoof PyPI verification notices. Change credentials if affected. <a href="https://thehackernews.com/2025/07/pypi-warns-of-ongoing-phishing-campaign.html" target="_blank">More info</a></li>
+    <li>*SarangTrap* campaign targets Android and iOS with fake dating/cloud apps. Over 250 APKs and 80 domains used for data theft and extortion. <a href="https://thehackernews.com/2025/07/cybercriminals-use-fake-apps-to-steal.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>Despite phishing-resistant MFA, attackers now use AitM downgrade kits, consent phishing, OAuth abuse, and app-specific password trickery to bypass modern identity protections. <a href="https://www.bleepingcomputer.com/news/security/how-attackers-are-still-phishing-phishing-resistant-authentication/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📂 Breach/Leaks</h2>
+  <ul>
+    <li>Orange (France) suffered a cyberattack on July 25 disrupting services across regions. No confirmed data theft. Recovery expected by July 30. <a href="https://securityaffairs.com/180552/security/orange-reports-major-cyberattack-warns-of-service-disruptions.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🗃️ Others</h2>
+  <ul>
+    <li>Hacktivists *Silent Crow* and *Cyberpartisans BY* claim they breached Russia’s Aeroflot, canceling 60+ flights, wiping 7,000 servers, and exfiltrating data. <a href="https://www.bleepingcomputer.com/news/security/russian-airline-aeroflot-grounds-dozens-of-flights-after-cyberattack/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🔍 Hunting</h2>
+  <ul>
+    <li>Gunra ransomware expands to Linux with high-speed multi-threaded encryption and stealth ops. Targets global sectors including law and healthcare. <a href="https://www.trendmicro.com/en_us/research/25/g/gunra-ransomware-linux-variant.html" target="_blank">More info</a></li>
+  </ul>
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
