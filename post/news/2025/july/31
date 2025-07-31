@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📰 Cybersecurity Newsfeed - 31/07/25</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    h1 {
+      color: #c9a227;
+    }
+    h2 {
+      color: #c9a227;
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+    }
+    a {
+      color: #c9a227;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 31/07/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>Apple patched CVE-2025-6558, a zero-day in ANGLE affecting Chrome users. The flaw allows sandbox escape and has been added to CISA KEV. <a href="https://securityaffairs.com/180595/security/apple-fixed-a-zero-day-exploited-in-attacks-against-google-chrome-users.html" target="_blank">More info</a></li>
+    <li>watchTowr disclosed three SonicWall SMA100 flaws (CVE-2025-40596/97/98), allowing pre-auth RCE or DoS. Firmware updates are available. <a href="https://hackread.com/sonicwall-patch-after-3-vpn-vulnerabilities-disclosed/" target="_blank">More info</a></li>
+    <li>Lenovo BIOS flaws in Yoga and IdeaCentre desktops allow Secure Boot bypass and persistence. Some patches won’t arrive until November. <a href="https://www.bleepingcomputer.com/news/security/new-lenovo-uefi-firmware-updates-fix-secure-boot-bypass-flaws/" target="_blank">More info</a></li>
+    <li>Dahua smart cameras are vulnerable to unauthenticated RCE via ONVIF/RPC services. CVE-2025-31700/31701 were patched in April. <a href="https://thehackernews.com/2025/07/critical-dahua-camera-flaws-enable.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>Silk Typhoon (Hafnium) ties to state-backed firms like Shanghai Firetech reveal China's broader offensive ecosystem. <a href="https://www.darkreading.com/threat-intelligence/silk-typhoon-powerful-offensive-tools-prc" target="_blank">More info</a></li>
+    <li>Fake crypto trading apps spread via Facebook ads deliver JSCEAL malware using MSI installers and browser-linked triggers. <a href="https://thehackernews.com/2025/07/hackers-use-facebook-ads-to-spread.html" target="_blank">More info</a></li>
+    <li>UNC2891 attempted ATM spoofing by planting a 4G Raspberry Pi in a bank's switch. The TinyShell backdoor was used to move laterally. <a href="https://www.bleepingcomputer.com/news/security/hackers-plant-4g-raspberry-pi-on-bank-network-in-failed-atm-heist/" target="_blank">More info</a></li>
+    <li>Coyote banking trojan uses Windows UI Automation to steal browser banking data, targeting Brazilian users via Squirrel installers. <a href="https://www.cysecurity.news/2025/07/emerging-threat-uses-windows-tools-to.html" target="_blank">More info</a></li>
+    <li>Malware-laced software on Endgame Gear’s OP1w mouse page deployed Xred malware. Issue lasted from June 26 to July 9. <a href="https://www.cysecurity.news/2025/07/malware-discovered-in-endgame-gear.html" target="_blank">More info</a></li>
+    <li>A decryptor for FunkSec ransomware is now available via No More Ransom. Victims should validate `.funksec` signatures before recovery. <a href="https://thehackernews.com/2025/07/funksec-ransomware-decryptor-released.html" target="_blank">More info</a></li>
+    <li>Akamai’s report reveals rise of “quadruple extortion” and AI-aided ransomware tactics. TrickBot linked to $724M in crypto theft. <a href="https://hackread.com/trickbot-behind-724-million-crypto-theft-extortion/" target="_blank">More info</a></li>
+    <li>A stealth campaign using Quora, GitHub, and DLL hijacking delivered Cobalt Strike Beacon globally. Overlaps with EastWind activity. <a href="https://securelist.com/cobalt-strike-attacks-using-quora-github-social-media/117085/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>Over 1,200 fake gaming sites lure users with false prizes and Mr. Beast endorsements, demanding crypto “verification deposits.” <a href="https://krebsonsecurity.com/2025/07/scammers-unleash-flood-of-slick-online-gaming-sites/" target="_blank">More info</a></li>
+    <li>AI assistants like QueryAI-1.0 now power DDoS-for-hire services. NETSCOUT warns of AI-managed, natural-language, multi-vector attack evolution. <a href="https://www.netscout.com/blog/asert/when-chatbots-become-attack-coordinators-ai-revolution-ddos" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📂 Breach/Leaks</h2>
+  <ul>
+    <li>INC Ransom claims breach of Dollar Tree (1.2TB), but company denies ownership, suggesting data comes from 99 Cents Only Stores. <a href="https://hackread.com/inc-ransomware-1-2tb-data-breach-at-dollar-tree/" target="_blank">More info</a></li>
+    <li>SafePay ransomware threatens to leak 3.5TB of Ingram Micro data. The incident caused a global outage earlier this month. <a href="https://www.bleepingcomputer.com/news/security/safepay-ransomware-threatens-to-leak-35tb-of-ingram-micro-data/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🗃️ Others</h2>
+  <ul>
+    <li>Dropbox Passwords service shuts down Oct 28. Users should export credentials before data is deleted. <a href="https://www.theregister.com/2025/07/30/dropbox_drops_dropbox_passwords/" target="_blank">More info</a></li>
+    <li>Google Project Zero now publishes limited vulnerability info one week after vendor notification to improve patch speed. <a href="https://www.infosecurity-magazine.com/news/google-report-new-vulnerabilities/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🛠️ Tools</h2>
+  <ul>
+    <li>CISA released the Eviction Strategies Tool, featuring Playbook-NG and COUN7ER, to guide post-compromise eviction efforts. <a href="https://www.cisa.gov/news-events/alerts/2025/07/30/eviction-strategies-tool-released" target="_blank">More info</a></li>
+  </ul>
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
