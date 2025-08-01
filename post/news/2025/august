@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📰 Cybersecurity Newsfeed - 01/08/25</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    h1 {
+      color: #c9a227;
+    }
+    h2 {
+      color: #c9a227;
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+    }
+    a {
+      color: #c9a227;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 01/08/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>Active exploitation of CVE-2025-5394 in the Alone WordPress theme enables unauthenticated RCE via ZIP uploads. Patched in 7.8.5. <a href="https://securityaffairs.com/180630/hacking/attackers-actively-exploit-critical-zero-day-in-alone-wordpress-theme.html" target="_blank">More info</a></li>
+    <li>CISA disclosed six vulnerabilities in Honeywell Experion PKS affecting pre-R520.2 and R530 versions. Flaws allow RCE and DoS on critical infrastructure. <a href="https://www.securityweek.com/honeywell-experion-pks-flaws-allow-manipulation-of-industrial-processes/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>Russia-linked APT Secret Blizzard (Turla) targets embassies in Moscow with ISP-level AiTM attacks using ApolloShadow malware. <a href="https://securityaffairs.com/180638/apt/russia-linked-apt-secret-blizzard-targets-foreign-embassies-in-moscow-with-apolloshadow-malware.html" target="_blank">More info</a></li>
+    <li>Epsilon Red ransomware spreads via fake Discord, Twitch, and OnlyFans verification pages using .HTA files and ActiveX abuse. <a href="https://hackread.com/onlyfans-discord-clickfix-pages-epsilon-red-ransomware/" target="_blank">More info</a></li>
+    <li>Malicious Chrome extensions can hijack conversations from ChatGPT, Claude, Copilot, and Gemini to steal corporate data. <a href="https://www.zdnet.com/article/malicious-extensions-can-use-chatgpt-to-steal-your-personal-data-heres-how/" target="_blank">More info</a></li>
+    <li>Scattered Spider halts activity after four UK arrests. Mandiant notes their recent use of RattyRAT, DragonForce, and AiTM TTPs. <a href="https://www.infosecurity-magazine.com/news/cybercriminals-spooked-scattered/" target="_blank">More info</a></li>
+    <li>Lazarus Group distributed over 200 malicious npm and PyPI packages to steal secrets and infiltrate CI/CD systems in a large-scale espionage campaign. <a href="https://thehackernews.com/2025/07/alert-fatigue-data-overload-and-fall-of.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>Secret Blizzard’s use of Russia’s SORM and ISP-level MITM confirms a new stage in APT-level surveillance and diplomatic espionage. <a href="https://www.bleepingcomputer.com/news/security/microsoft-russian-hackers-use-isp-access-to-hack-embassies-in-aitm-attacks/" target="_blank">More info</a></li>
+    <li>GreyNoise: 80% of new CVE disclosures follow malicious scanning spikes within six weeks—often by probing known vendor vulnerabilities. <a href="https://www.bleepingcomputer.com/news/security/spikes-in-malicious-activity-precede-new-cves-in-80-percent-of-cases/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📂 Breach/Leaks</h2>
+  <ul>
+    <li>Everest ransomware claims Mailchimp breach with 767MB of marketing and CRM data. No confirmation yet from Mailchimp. <a href="https://hackread.com/everest-ransomware-claims-mailchimp-small-breach/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🗃️ Others</h2>
+  <ul>
+    <li>China considers anti-Starlink countermeasures such as lasers, ASAT tactics, and supply chain attacks as Starlink expands global dominance. <a href="https://www.securityweek.com/chinese-researchers-suggest-lasers-and-sabotage-to-counter-musks-starlink-satellites/" target="_blank">More info</a></li>
+  </ul>
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
