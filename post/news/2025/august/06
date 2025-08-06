@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📰 Cybersecurity Newsfeed - 06/08/25</title>
+    <style>
+        body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+        h1 { text-align: center; color: #c9a227; }
+        h2 { color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+        a { color: #c9a227; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        ul { list-style-type: disc; margin-left: 20px; }
+        li { margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <h1>Cybersecurity Newsfeed</h1>
+    <h2>📅 06/08/25</h2>
+<h2>Vulnerabilities</h2><ul>
+<li>Check Point discovers MCPoison and CurXecute RCE flaws in Cursor AI coding platform <a href="https://www.darkreading.com/vulnerabilities-threats/rce-flaw-ai-coding-tool-supply-chain-risk" target="_blank">More info</a></li>
+<li>Adobe patches critical zero-days CVE-2025-54253 and CVE-2025-54254 in AEM Forms after exploit release <a href="https://www.bleepingcomputer.com/news/security/adobe-issues-emergency-fixes-for-aem-forms-zero-days-after-pocs-released/" target="_blank">More info</a></li>
+<li>CISA adds three D-Link vulnerabilities to KEV catalog: CVE-2020-25078, -25079, -2022-40799 <a href="https://www.cisa.gov/news-events/alerts/2025/08/05/cisa-adds-three-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+<li>Google patches Android flaws CVE-2025-21479, -21480, -27038; CISA flags as exploited <a href="https://thehackernews.com/2025/08/google-fixes-3-android-vulnerabilities.html" target="_blank">More info</a></li>
+<li>Wiz finds RCE chain in NVIDIA Triton Server (CVE-2025-23319, -23320, -23334) for model theft and lateral movement <a href="https://www.infosecurity-magazine.com/news/vulnerabilities-nvidias-triton/" target="_blank">More info</a></li>
+</ul>
+<h2>Adversaries</h2><ul>
+<li>Unit 42 confirms Storm-2603 is CL-CRI-1040 behind Project AK47 and ToolShell exploit chain <a href="https://unit42.paloaltonetworks.com/ak47-activity-linked-to-sharepoint-vulnerabilities/" target="_blank">More info</a></li>
+<li>Forescout: ransomware up 36%, zero-day exploits up 46%; IoT and OT increasingly targeted <a href="https://www.itsecurityguru.org/2025/08/05/surge-in-zero-day-exploits-identified-in-forescouts-latest-threat-report/" target="_blank">More info</a></li>
+</ul>
+<h2>Trends</h2><ul>
+<li>FBI warns about scam QR codes in mystery packages as phishing vector rises <a href="https://www.malwarebytes.com/blog/news/2025/08/unexpected-snail-mail-packages-are-being-sent-with-scammy-qr-codes-warns-fbi" target="_blank">More info</a></li>
+<li>Mozilla and PyPI alert about phishing campaigns spoofing dev portals <a href="https://www.kaspersky.com/blog/mozilla-pypi-phishing-attacks/54048/" target="_blank">More info</a></li>
+</ul>
+<h2>Breaches & Leaks</h2><ul>
+<li>Pandora confirms breach amid Salesforce phishing campaign by ShinyHunters <a href="https://www.bleepingcomputer.com/news/security/pandora-confirms-data-breach-amid-ongoing-salesforce-data-theft-attacks/" target="_blank">More info</a></li>
+<li>PBS confirms breach of 4,000 employees via MyPBS internal portal, leaked on Discord <a href="https://www.bleepingcomputer.com/news/security/pbs-confirms-data-breach-after-employee-info-leaked-on-discord-servers/" target="_blank">More info</a></li>
+<li>Cisco confirms breach after vishing attack led to CRM profile data theft <a href="https://www.darkreading.com/cyberattacks-data-breaches/cisco-user-data-stolen-vishing-attack" target="_blank">More info</a></li>
+</ul>
+<h2>Others</h2><ul>
+<li>Study: Iran’s cyber ops during Israel conflict used coordinated influence and data theft <a href="https://cyberscoop.com/iranian-hackers-12-day-conflict-hacktivism-securityscorecard/" target="_blank">More info</a></li>
+</ul>
+<p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+</p>
+</body>
+</html>
