@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📰 Cybersecurity Newsfeed - 07/08/25</title>
+    <style>
+        body {{ background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }}
+        h1 {{ text-align: center; color: #c9a227; }}
+        h2 {{ text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }}
+        a {{ color: #c9a227; text-decoration: none; }}
+        a:hover {{ text-decoration: underline; }}
+        ul {{ list-style-type: disc; margin-left: 20px; }}
+        li {{ margin-bottom: 15px; }}
+    </style>
+</head>
+<body>
+    <h1>Cybersecurity Newsfeed</h1>
+    <h2>📅 07/08/25</h2>
+<h2>🛡️ Vulnerabilities</h2><ul>
+<li>14 zero-days in HashiCorp Vault and CyberArk Conjur allow full takeover of secret management systems <a href="https://www.darkreading.com/cybersecurity-operations/critical-zero-day-bugs-cyberark-hashicorp-password-vaults" target="_blank">More info</a></li>
+<li>Trend Micro patches CVE-2025-54948/54987 in Apex One; RCE flaws exploited in the wild <a href="https://securityaffairs.com/180856/hacking/trend-micro-fixes-two-actively-exploited-apex-one-rce-flaws.html" target="_blank">More info</a></li>
+<li>Veeam fixes CVE-2025-23121 RCE flaw in Backup & Replication, exploited by ransomware groups <a href="https://www.cysecurity.news/2025/08/veeam-fixes-critical-remote-code.html" target="_blank">More info</a></li>
+<li>Cisco Talos discloses 12 vulnerabilities in WWBN AVideo, MedDream PACS, and Eclipse ThreadX <a href="https://blog.talosintelligence.com/wwbn-meddream-eclipse-vulnerabilities/" target="_blank">More info</a></li>
+</ul>
+<h2>🎯 Adversaries</h2><ul>
+<li>Phishers exploit M365 Direct Send to spoof internal users and bypass SPF/DKIM/DMARC <a href="https://www.darkreading.com/cyber-risk/phishers-abuse-m365-direct-send-to-spoof-internal-users" target="_blank">More info</a></li>
+<li>Muddled Libra's vishing playbook leads to ransomware deployment in 50% of Unit 42 cases <a href="https://unit42.paloaltonetworks.com/why-the-focus-on-muddled-libra/" target="_blank">More info</a></li>
+<li>Akira ransomware uses BYOVD via Intel driver rwdrv.sys to disable Defender <a href="https://www.bleepingcomputer.com/news/security/akira-ransomware-abuses-cpu-tuning-tool-to-disable-microsoft-defender/" target="_blank">More info</a></li>
+<li>Recorded Future uncovers active Candiru DevilsTongue spyware clusters targeting Windows users <a href="https://www.cysecurity.news/2025/08/devilstongue-spyware-attacking-windows.html" target="_blank">More info</a></li>
+<li>WhatsApp bans 6.8M scam-linked accounts in crackdown on global fraud centers <a href="https://securityaffairs.com/180864/cyber-crime/whatsapp-cracks-down-on-6-8m-scam-accounts-in-global-takedown.html" target="_blank">More info</a></li>
+<li>LunaSpy Android spyware campaign hides as antivirus, steals sensitive data <a href="https://www.kaspersky.com/blog/disguised-spy-for-android/54051/" target="_blank">More info</a></li>
+</ul>
+<h2>📈 Trends</h2><ul>
+<li>ESET H1 2025 Threat Report: ClickFix and FakeCaptcha social engineering rise; Redline disrupted <a href="https://www.welivesecurity.com/en/podcasts/eset-threat-report-h1-2025-clickfix-infostealer-disruptions-ransomware-deathmatch/" target="_blank">More info</a></li>
+</ul>
+<h2>📁 Breaches & Leaks</h2><ul>
+<li>Hackers alter apprenticeshipindia.gov.in bank data to divert stipends; ₹1.46 lakh stolen <a href="https://www.cysecurity.news/2025/08/hackers-tamper-govt-portal-pocket-14.html" target="_blank">More info</a></li>
+<li>Chinese syndicate steals 115M U.S. payment card data via smishing, bypasses MFA protections <a href="https://hackread.com/chinese-stole-115-million-us-cards-smishing-campaign/" target="_blank">More info</a></li>
+<li>National Bank of Canada outage impacts millions; confirmed as technical, not cyber incident <a href="https://www.bleepingcomputer.com/news/technology/national-bank-of-canada-online-systems-down-due-to-technical-issue/" target="_blank">More info</a></li>
+</ul>
+<h2>🗃️ Others</h2><ul>
+<li>“Ghost Calls” uses TURN servers from Zoom and Teams to tunnel C2 traffic via WebRTC <a href="https://www.bleepingcomputer.com/news/security/new-ghost-calls-tactic-abuses-zoom-and-microsoft-teams-for-c2-operations/" target="_blank">More info</a></li>
+<li>Ukraine claims breach of Russia's Borei-A nuclear sub, leaks files via Telegram <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/ukraine-claims-to-have-hacked-secrets-from-russias-newest-nuclear-submarine" target="_blank">More info</a></li>
+</ul>
+<h2>🧰 Tools</h2><ul>
+<li>Black Kite launches ASI to measure vendor risk exposure to specific threat actors like Volt Typhoon <a href="https://www.helpnetsecurity.com/2025/08/06/black-kite-asi-adversary-susceptibility-index/" target="_blank">More info</a></li>
+</ul>
+<p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+</p>
+</body>
+</html>
