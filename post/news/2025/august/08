@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📰 Cybersecurity Newsfeed - 08/08/25</title>
+    <style>
+        body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+        h1 { text-align: center; color: #c9a227; }
+        h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+        a { color: #c9a227; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        ul { list-style-type: disc; margin-left: 20px; }
+        li { margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <h1>Cybersecurity Newsfeed</h1>
+    <h2>📅 08/08/25</h2>
+<h2>🛡️ Vulnerabilities</h2><ul>
+<li>ECScape technique in Amazon ECS allows privilege escalation via WebSocket and IMDS misuse <a href="https://www.darkreading.com/cloud-security/privilege-escalation-amazon-ecs-iam-hijacking" target="_blank">More info</a></li>
+<li>CVE-2025-53786 in Exchange hybrid setups enables privilege escalation to Exchange Online <a href="https://securityaffairs.com/180923/security/cisa-microsoft-warn-of-critical-exchange-hybrid-flaw-cve-2025-53786.html" target="_blank">More info</a></li>
+<li>Axis camera RCE flaw (CVE-2025-30023) threatens 6,500 exposed servers via Axis.Remoting <a href="https://thehackernews.com/2025/08/6500-axis-servers-expose-remoting.html" target="_blank">More info</a></li>
+<li>New HTTP request smuggling variants affect Akamai, Cloudflare, GitLab, Netlify, T-Mobile <a href="https://www.securityweek.com/new-http-request-smuggling-attacks-impacted-cdns-major-orgs-millions-of-websites/" target="_blank">More info</a></li>
+</ul>
+<h2>🎯 Adversaries</h2><ul>
+<li>Silver Fox APT blends espionage and profit-driven malware in Asia and North America <a href="https://www.darkreading.com/threat-intelligence/silver-fox-apt-espionage-cybercrime" target="_blank">More info</a></li>
+<li>NPM packages *naya-flore* and *nvlore-hsc* wipe files unless kill switch is met <a href="https://www.bleepingcomputer.com/news/security/fake-whatsapp-developer-libraries-hide-destructive-data-wiping-code/" target="_blank">More info</a></li>
+<li>Royal and BlackSuit ransomware groups hit 450 U.S. orgs, extort $370M+ since 2022 <a href="https://cyberscoop.com/blacksuit-royal-ransomware-450-us-victims/" target="_blank">More info</a></li>
+<li>SocGholish spreads via TDS and compromised sites; adds Raspberry Robin support <a href="https://thehackernews.com/2025/08/socgholish-malware-spread-via-ad-tools.html" target="_blank">More info</a></li>
+<li>Akira ransomware exploits CVE-2024-40766 in SonicWall Gen 7 firewalls, not a zero-day <a href="https://www.bleepingcomputer.com/news/security/sonicwall-finds-no-sslvpn-zero-day-links-ransomware-attacks-to-2024-flaw/" target="_blank">More info</a></li>
+<li>150 malicious Firefox add-ons steal wallet data in GreedyBear campaign <a href="https://www.bleepingcomputer.com/news/security/wave-of-150-crypto-draining-extensions-hits-firefox-add-on-store/" target="_blank">More info</a></li>
+<li>Malicious Go and npm packages use obfuscation and C2s to deliver cross-platform malware <a href="https://thehackernews.com/2025/08/malicious-go-npm-packages-deliver-cross.html" target="_blank">More info</a></li>
+<li>Promptware attack via Google Calendar event hijacks Gemini AI to steal data, activate devices <a href="https://hackread.com/promptware-attack-hijack-gemini-ai-google-calendar-invite/" target="_blank">More info</a></li>
+<li>DarkCloud Stealer infection chain evolves with VB6 payloads, PowerShell loaders, LPE exploits <a href="https://unit42.paloaltonetworks.com/new-darkcloud-stealer-infection-chain/" target="_blank">More info</a></li>
+</ul>
+<h2>📈 Trends</h2><ul>
+<li>New EDR killer tool used by 8 ransomware groups in BYOVD attacks with stolen certs <a href="https://www.bleepingcomputer.com/news/security/new-edr-killer-tool-used-by-eight-different-ransomware-groups/" target="_blank">More info</a></li>
+</ul>
+<h2>📁 Breaches & Leaks</h2><ul>
+<li>Bouygues Telecom breach affects 6.4M users; IBANs and contract data exposed <a href="https://www.bleepingcomputer.com/news/security/bouygues-telecom-confirms-data-breach-impacting-64-million-customers/" target="_blank">More info</a></li>
+</ul>
+<h2>🗃️ Others</h2><ul>
+<li>NSA’s CAPT program finds 50K+ flaws in small defense contractors, expands in 2025 <a href="https://www.infosecurity-magazine.com/news/dod-contractors-nsa-cyber-services/" target="_blank">More info</a></li>
+<li>Samourai Wallet founders plead guilty to laundering $200M via Whirlpool and Ricochet <a href="https://www.darkreading.com/threat-intelligence/cryptomixer-founders-guilty-money-laundering" target="_blank">More info</a></li>
+<li>Microsoft’s AI-based Phishing Triage Agent in Defender enters public preview <a href="https://techcommunity.microsoft.com/blog/microsoftthreatprotectionblog/announcing-public-preview-phishing-triage-agent-in-microsoft-defender/4438301" target="_blank">More info</a></li>
+</ul>
+<p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+</p>
+</body>
+</html>
