@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📰 Cybersecurity Newsfeed - 13/08/25</title>
+    <style>
+        body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+        h1 { text-align: center; color: #c9a227; }
+        h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+        a { color: #c9a227; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        ul { list-style-type: disc; margin-left: 20px; }
+        li { margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <h1>Cybersecurity Newsfeed</h1>
+    <h2>📅 13/08/25</h2>
+<h2>🛡️ Vulnerabilities</h2><ul>
+<li>SAP August 2025 Patch Tuesday fixes 26 flaws, including CVE-2025-42957/42950 (CVSS 9.9) RCE in S/4HANA <a href="https://securityaffairs.com/181085/uncategorized/sap-fixed-26-flaws-in-august-2025-update-including-4-critical.html" target="_blank">More info</a></li>
+<li>35 Docker Hub images, including Debian, still contain XZ Utils backdoor CVE-2024-3094 <a href="https://thehackernews.com/2025/08/researchers-spot-xz-utils-backdoor-in.html" target="_blank">More info</a></li>
+<li>CISA adds CVE-2013-3893, CVE-2007-0671, CVE-2025-8088 to KEV catalog of exploited vulnerabilities <a href="https://www.cisa.gov/news-events/alerts/2025/08/12/cisa-adds-three-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+<li>Citrix NetScaler CVE-2025-6543 exploited to breach critical orgs; NCSC issues detection script <a href="https://securityaffairs.com/181070/hacking/dutch-ncsc-citrix-netscaler-zero-day-breaches-critical-orgs.html" target="_blank">More info</a></li>
+<li>Microsoft August 2025 Patch Tuesday fixes 107 flaws, incl. zero-day CVE-2025-53779 Kerberos EoP <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-august-2025-patch-tuesday-fixes-one-zero-day-107-flaws/" target="_blank">More info</a></li>
+<li>“Sleepwalk” side-channel attack extracts cryptographic keys via CPU context switch power spikes <a href="https://www.kaspersky.com/blog/sleepwalk-side-channel-attack/54083/" target="_blank">More info</a></li>
+</ul>
+<h2>🎯 Adversaries</h2><ul>
+<li>Muddled Libra (Scattered Spider) operates as fluid network of personas across diverse cybercrimes <a href="https://unit42.paloaltonetworks.com/muddled-libras-strike-teams/" target="_blank">More info</a></li>
+<li>New ransomware “Charon” targets Middle East public sector, aviation using APT-like tradecraft <a href="https://www.trendmicro.com/en_us/research/25/h/new-ransomware-charon.html" target="_blank">More info</a></li>
+</ul>
+<h2>📈 Trends</h2><ul>
+<li>Fortinet SSL VPN brute-force attacks spike; pivot from FortiOS to FortiManager after Aug 5 <a href="https://thehackernews.com/2025/08/fortinet-ssl-vpns-hit-by-global-brute.html" target="_blank">More info</a></li>
+<li>ShinyHunters-SC Spider collaboration suspected as Salesforce campaign targets financial services <a href="https://thehackernews.com/2025/08/cybercrime-groups-shinyhunters.html" target="_blank">More info</a></li>
+</ul>
+<h2>📁 Breaches & Leaks</h2><ul>
+<li>ShinyHunters leaks 2.8M Allianz Life records stolen in Salesforce OAuth app campaign <a href="https://www.bleepingcomputer.com/news/security/hackers-leak-allianz-life-data-stolen-in-salesforce-attacks/" target="_blank">More info</a></li>
+<li>C/side report warns of mobile browser PWA-based credential theft via malicious service workers <a href="https://www.cysecurity.news/2025/08/cybercriminals-escalate-client-side.html" target="_blank">More info</a></li>
+</ul>
+<h2>🗃️ Others</h2><ul>
+<li>HUNTING: Cisco Talos tracks “PS1Bot” modular PowerShell/C# info-stealer malware campaign <a href="https://blog.talosintelligence.com/ps1bot-malvertising-campaign/" target="_blank">More info</a></li>
+</ul>
+<p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+</p>
+</body>
+</html>
