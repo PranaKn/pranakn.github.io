@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📰 Cybersecurity Newsfeed - 14/08/25</title>
+    <style>
+        body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+        h1 { text-align: center; color: #c9a227; }
+        h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+        a { color: #c9a227; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        ul { list-style-type: disc; margin-left: 20px; }
+        li { margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <h1>Cybersecurity Newsfeed</h1>
+    <h2>📅 14/08/25</h2>
+<h2>🛡️ Vulnerabilities</h2><ul>
+<li>CISA adds CVE-2025-8875 and CVE-2025-8876 in N-able N-central to KEV after active exploitation <a href="https://www.cisa.gov/news-events/alerts/2025/08/13/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+<li>FIDO downgrade attack on Microsoft Entra ID bypasses passkeys, enabling phishing <a href="https://www.bleepingcomputer.com/news/security/new-downgrade-attack-can-bypass-fido-auth-in-microsoft-entra-id/" target="_blank">More info</a></li>
+<li>Fortinet FortiSIEM CVE-2025-25256 pre-auth RCE exploited in wild; patch or restrict port 7900 <a href="https://www.bleepingcomputer.com/news/security/fortinet-warns-of-fortisiem-pre-auth-rce-flaw-with-exploit-in-the-wild/" target="_blank">More info</a></li>
+<li>CVE-2025-32433 in Erlang/OTP actively exploited, targeting OT networks for RCE <a href="https://www.darkreading.com/ics-ot-security/patch-now-attackers-target-ot-networks-critical-rce-flaw" target="_blank">More info</a></li>
+<li>XZ Utils backdoor CVE-2024-3094 remnants found in 35 Debian-based Docker images <a href="https://www.darkreading.com/vulnerabilities-threats/xz-utils-backdoor-live-old-docker-images" target="_blank">More info</a></li>
+</ul>
+<h2>🎯 Adversaries</h2><ul>
+<li>Akira ransomware uses BYOVD with Intel rwdrv.sys to disable Microsoft Defender <a href="https://www.cysecurity.news/2025/08/akira-ransomware-turns-off-windows.html" target="_blank">More info</a></li>
+<li>Royal ransomware attack drives Einhaus Group into insolvency after €200K ransom loss <a href="https://www.cysecurity.news/2025/08/einhaus-group-faces-insolvency-after.html" target="_blank">More info</a></li>
+<li>MedusaLocker RaaS recruiting penetration testers with corporate network access <a href="https://www.fortra.com/blog/medusalocker-ransomware-gang-hiring-penetration-testers" target="_blank">More info</a></li>
+<li>Fake Minecraft “Eaglercraft” installer spreads NjRat spyware targeting gamers <a href="https://hackread.com/fake-minecraft-installer-njrat-spyware-steal-data/" target="_blank">More info</a></li>
+<li>Efimer Trojan campaign swaps crypto wallet addresses, spreads via torrents and phishing <a href="https://hackread.com/efimer-trojan-crypto-hacks-wordpress-torrents-phishing/" target="_blank">More info</a></li>
+<li>Charon ransomware targets Middle East with APT-style DLL sideloading and BYOVD <a href="https://securityaffairs.com/181098/malware/charon-ransomware-targets-middle-east-with-apt-attack-methods.html" target="_blank">More info</a></li>
+<li>Intel, AMD, Nvidia issue security advisories for CPU, firmware, and AI framework flaws <a href="https://www.securityweek.com/chipmaker-patch-tuesday-many-vulnerabilities-addressed-by-intel-amd-nvidia/" target="_blank">More info</a></li>
+<li>Zoom CVE-2025-49457 and Xerox FreeFlow Core CVE-2025-8356 patched; RCE and privilege escalation risks <a href="https://thehackernews.com/2025/08/zoom-and-xerox-release-critical.html" target="_blank">More info</a></li>
+<li>PS1Bot malware campaign uses malvertising, SEO poisoning for modular PowerShell/C# attacks <a href="https://thehackernews.com/2025/08/new-ps1bot-malware-campaign-uses.html" target="_blank">More info</a></li>
+</ul>
+<h2>📁 Breaches & Leaks</h2><ul>
+<li>Croatian Institute hit by ransomware, linked to ToolShell exploits; refuses ransom, restores from backups <a href="https://www.helpnetsecurity.com/2025/08/13/croatian-research-institute-confirms-ransomware-attack-via-toolshell-vulnerabilities/" target="_blank">More info</a></li>
+</ul>
+<h2>🗃️ Others</h2><ul>
+<li>Russia restricts WhatsApp & Telegram calls, citing crime & terrorism; WhatsApp cites E2EE protection <a href="https://cyberscoop.com/russia-restricts-whatsapp-telegram-calls-alleging-criminal-terrorist-activity/" target="_blank">More info</a></li>
+<li>Nvidia denies Chinese claims of H20 chip backdoors, warns U.S. “Chip Security Act” could create vulnerabilities <a href="https://www.cysecurity.news/2025/08/nvidia-pushes-back-against-claims-of.html" target="_blank">More info</a></li>
+</ul>
+<p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+</p>
+</body>
+</html>
