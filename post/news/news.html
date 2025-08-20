@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 19/08/25</title>
+  <title>📰 Cybersecurity Newsfeed - 20/08/25</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; color: #c9a227; }
@@ -16,35 +16,39 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 19/08/25</h2>
+  <h2>📅 20/08/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li>CISA adds <b>CVE-2025-54948</b> (OS command injection, CVSS 9.4) in <b>Trend Micro Apex One Management Console</b> to KEV; FixTool issued Aug 5–6, critical patch on Aug 15; related <b>CVE-2025-54987</b> disclosed <a href="https://www.cisa.gov/news-events/alerts/2025/08/18/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">More info</a></li>
-    <li>~880 <b>N-able N-central</b> servers still vulnerable to <b>CVE-2025-8875</b> & <b>CVE-2025-8876</b>; fixes in <b>N-central 2025.3.1</b>; CISA KEV with Aug 20 BOD 22-01 deadline <a href="https://www.bleepingcomputer.com/news/security/over-800-n-able-servers-left-unpatched-against-critical-flaws/" target="_blank">More info</a></li>
-    <li>Google patches <b>Gemini</b> indirect prompt injection via malicious <b>Calendar</b> invites enabling data exfiltration and device actions without acceptance <a href="https://www.cysecurity.news/2025/08/gemini-flaw-exposed-via-malicious.html" target="_blank">More info</a></li>
-    <li>Microsoft warns of <b>PipeMagic</b> backdoor in trojanized <b>ChatGPT Desktop</b> app; linked to <b>Storm-2460</b> and <b>CVE-2025-29824</b> exploitation <a href="https://hackread.com/fake-chatgpt-desktop-app-pipemagic-backdoor-microsoft/" target="_blank">More info</a></li>
-    <li><b>Sni5Gect</b> 5G attack injects payloads via unencrypted pre-auth messages; 70–90% success up to 20m; GSMA ID <b>CVD-2024-0096</b> <a href="https://www.securityweek.com/novel-5g-attack-bypasses-need-for-malicious-base-station/" target="_blank">More info</a></li>
+    <li>SAP NetWeaver Visual Composer flaws <b>CVE-2025-31324</b> (auth bypass) and <b>CVE-2025-42999</b> (deserialization) chained for RCE; exploit leaked by ShinyHunters; Onapsis/Mandiant warn of reuse across SAP bugs <a href="https://securityaffairs.com/181325/security/exploit-weaponizes-sap-netweaver-bugs-for-full-system-compromise.html" target="_blank">More info</a></li>
+    <li>Ollama Desktop v0.10.0 incomplete CORS checks exposed users to drive-by chat hijacking & model injection; patched in v0.10.1 <a href="https://www.theregister.com/2025/08/19/ollama_driveby_attack/" target="_blank">More info</a></li>
+    <li>Microsoft SharePoint flaws <b>CVE-2025-53770</b> & <b>CVE-2025-53771</b> exploited to steal MachineKey secrets and achieve unauthenticated RCE; patched in Subscription Edition & 2019 <a href="https://www.trendmicro.com/en_us/research/25/g/cve-2025-53770-and-cve-2025-53771-sharepoint-attacks.html" target="_blank">More info</a></li>
+    <li><b>MadeYouReset</b> (CVE-2025-8671) bypasses HTTP/2 Rapid Reset fixes; impacts Netty, F5 BIG-IP, Tomcat, Jetty, h2o; record-scale DDoS risk if unpatched <a href="https://www.darkreading.com/vulnerabilities-threats/internet-wide-vulnerability-giant-ddos-attacks" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><b>Noodlophile</b> infostealer uses fake copyright complaints to spear-phish Facebook-linked corporate emails; DLL sideloading via Haihaisoft PDF Reader; Telegram-based staging <a href="https://www.darkreading.com/threat-intelligence/noodlophile-stealer-bogus-copyright-complaints" target="_blank">More info</a></li>
-    <li>Threat actor <b>Chucky_BF</b> hawks alleged <b>15.8M</b> PayPal credentials (1.1GB) for $750; likely from infostealer logs, authenticity unverified <a href="https://hackread.com/threat-actor-selling-plain-text-paypal-credentials/" target="_blank">More info</a></li>
-    <li>USB-borne cryptominer campaign installs <b>Zephyr/XMRig</b> via DLL search-order hijacking and PowerShell; global spread across multiple regions <a href="https://www.infosecurity-magazine.com/news/usb-malware-spreads-cryptominer/" target="_blank">More info</a></li>
-    <li>Chinese APT <b>UAT-7237</b> targets Taiwanese web infrastructure; persistence via <b>SoftEther VPN</b>/RDP; tools include Cobalt Strike, Mimikatz, custom <b>SoundBill</b> loader <a href="https://www.infosecurity-magazine.com/news/chinese-apt-web-hosting-taiwan/" target="_blank">More info</a></li>
-    <li>Malicious PyPI <b>termncolor</b> (deps: <b>colorinal</b>) delivers multi-stage malware; DLL sideloading (<code>vcpktsvr.exe</code>, <code>libcef.dll</code>), Zulip C2, Linux <code>terminate.so</code> <a href="https://thehackernews.com/2025/08/malicious-pypi-and-npm-packages.html" target="_blank">More info</a></li>
+    <li>Russian hackers again strike Polish hydropower plant in Tczew; turbines disrupted; CERT Polska urges stronger OT defenses <a href="https://www.darkreading.com/cyberattacks-data-breaches/russian-hacktivists-polish-power-plant-attack" target="_blank">More info</a></li>
+    <li>Active exploitation of Apache ActiveMQ flaw <b>CVE-2023-46604</b> installs Linux malware <b>DripDropper</b>; attackers patch bug post-compromise; Dropbox C2 & SSH modifications used <a href="https://www.thehackernews.com/2025/08/apache-activemq-flaw-exploited-to.html" target="_blank">More info</a></li>
+    <li>Kaspersky discovers <b>GodRAT</b>, a Gh0st RAT derivative spread via Skype `.SCR` files; linked to Winnti/APT41; uses steganography & plugin system <a href="https://securelist.com/godrat/117119/" target="_blank">More info</a></li>
+    <li>Alternate report: <b>DripDropper</b> malware persists on Linux cloud servers by patching ActiveMQ flaw; PyInstaller ELF binary with Dropbox C2 <a href="https://www.zdnet.com/article/dripdropper-linux-malware-cleans-up-after-itself/" target="_blank">More info</a></li>
+    <li>Trellix: European embassies in South Korea targeted with <b>XenoRAT</b> via malicious GitHub repos; overlaps with APT43/Kimsuky but aligns with China-based ops <a href="https://www.bleepingcomputer.com/news/security/xenorat-malware-campaign-hits-multiple-embassies-in-south-korea/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li>Canadian Investment Regulatory Organization (<b>CIRO</b>) breached; registrant data exposed; core functions unaffected; phishing risk raised <a href="https://www.infosecurity-magazine.com/news/canadian-financial-regulator-hacked/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🗃️ Others</h2>
   <ul>
-    <li>US DOJ seizes <b>$2.8M</b> crypto, $70k cash, and a luxury car from <b>Ianis Antropenko</b> tied to <b>Zeppelin</b> ransomware operation <a href="https://securityaffairs.com/181237/cyber-crime/doj-seizes-2-8m-linked-to-zeppelin-ransomware.html" target="_blank">More info</a></li>
-    <li><b>Buttercup</b> (Trail of Bits) open-source AI platform automates vuln discovery/patching; AIxCC runner-up; requires 8 CPU, 16GB RAM, 100GB disk <a href="https://github.com/trailofbits/buttercup" target="_blank">More info</a></li>
+    <li>Citizen Lab reveals VPNs like Turbo VPN, Snap VPN, VPN Monster share ownership linked to Qihoo 360; flaws include hard-coded creds & covert data collection <a href="https://hackread.com/citizen-lab-vpn-networks-sharing-ownership-security-flaws/" target="_blank">More info</a></li>
+    <li>Elastic denies zero-day RCE in Defend EDR driver after AshES Cybersecurity public disclosure; company cites lack of reproducible PoC <a href="https://www.bleepingcomputer.com/news/security/elastic-rejects-claims-of-a-zero-day-rce-flaw-in-defend-edr/" target="_blank">More info</a></li>
   </ul>
-  
-  <h2>🧰 Tools</h2>
+
+  <h2>🕵️ Hunting</h2>
   <ul>
-    <li><b>Buttercup</b> (Trail of Bits) automates vuln discovery & patching with fuzzing, static analysis, and multi-agent AI; AIxCC runner-up; requires 8 CPU, 16GB RAM, 100GB disk <a href="https://github.com/trailofbits/buttercup" target="_blank">More info</a></li>
+    <li>DFIR analysis of <b>Veletrix Loader</b> from memory dump reveals DLL sideloading (<code>drstat.dll</code>), shellcode decrypt/execution, and confirmed C2 (62.234.24.38:9999); highlights memory forensics for IOC extraction <a href="https://0x0d4y.blog/veletrix-loader-infection-a-look-from-a-digital-forensic-perspective/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
