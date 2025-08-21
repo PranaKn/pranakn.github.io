@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 20/08/25</title>
+  <title>📰 Cybersecurity Newsfeed - 21/08/25</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; color: #c9a227; }
@@ -16,39 +16,46 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 20/08/25</h2>
+  <h2>📅 21/08/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li>SAP NetWeaver Visual Composer flaws <b>CVE-2025-31324</b> (auth bypass) and <b>CVE-2025-42999</b> (deserialization) chained for RCE; exploit leaked by ShinyHunters; Onapsis/Mandiant warn of reuse across SAP bugs <a href="https://securityaffairs.com/181325/security/exploit-weaponizes-sap-netweaver-bugs-for-full-system-compromise.html" target="_blank">More info</a></li>
-    <li>Ollama Desktop v0.10.0 incomplete CORS checks exposed users to drive-by chat hijacking & model injection; patched in v0.10.1 <a href="https://www.theregister.com/2025/08/19/ollama_driveby_attack/" target="_blank">More info</a></li>
-    <li>Microsoft SharePoint flaws <b>CVE-2025-53770</b> & <b>CVE-2025-53771</b> exploited to steal MachineKey secrets and achieve unauthenticated RCE; patched in Subscription Edition & 2019 <a href="https://www.trendmicro.com/en_us/research/25/g/cve-2025-53770-and-cve-2025-53771-sharepoint-attacks.html" target="_blank">More info</a></li>
-    <li><b>MadeYouReset</b> (CVE-2025-8671) bypasses HTTP/2 Rapid Reset fixes; impacts Netty, F5 BIG-IP, Tomcat, Jetty, h2o; record-scale DDoS risk if unpatched <a href="https://www.darkreading.com/vulnerabilities-threats/internet-wide-vulnerability-giant-ddos-attacks" target="_blank">More info</a></li>
+    <li>DEF CON 33: Marek Tóth shows 11 password manager extensions (1Password, Bitwarden, Enpass, iCloud Passwords, LastPass) vulnerable to DOM-based clickjacking; users urged to disable autofill <a href="https://thehackernews.com/2025/08/dom-based-extension-clickjacking.html" target="_blank">More info</a></li>
+    <li>Apple patches actively exploited zero-day <b>CVE-2025-43300</b> in Image I/O affecting iOS, macOS; sixth exploited zero-day in 2025 <a href="https://www.bleepingcomputer.com/news/apple/apple-emergency-updates-fix-new-actively-exploited-zero-day/" target="_blank">More info</a></li>
+    <li>Trend Micro: Warlock ransomware exploits SharePoint flaws <b>CVE-2025-49704</b>, <b>49706</b>, <b>53770</b>, <b>53771</b> for lateral movement & ransomware deployment <a href="https://www.darkreading.com/vulnerabilities-threats/warlock-ransomware-targets-vulnerable-sharepoint-servers" target="_blank">More info</a></li>
+    <li>watchTowr releases PoC for Commvault unauthenticated RCE chains: <b>CVE-2025-57791</b> + <b>57790</b>, <b>57788</b> + <b>57789</b>; on-prem instances urged to patch <a href="https://www.theregister.com/2025/08/20/commvault_bug_chains_patched/" target="_blank">More info</a></li>
+    <li>Multiple password managers (1Password, Bitwarden, Enpass, iCloud Passwords, LastPass, LogMeOnce) still unpatched against clickjacking attacks; Bitwarden fixed, others pending <a href="https://www.bleepingcomputer.com/news/security/major-password-managers-can-leak-logins-in-clickjacking-attacks/" target="_blank">More info</a></li>
+    <li>Google Chrome 139 fixes high-severity <b>CVE-2025-9132</b> in V8 engine found by Big Sleep AI; users urged to update immediately <a href="https://securityaffairs.com/181338/security/google-fixed-chrome-flaw-found-by-big-sleep-ai.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li>Russian hackers again strike Polish hydropower plant in Tczew; turbines disrupted; CERT Polska urges stronger OT defenses <a href="https://www.darkreading.com/cyberattacks-data-breaches/russian-hacktivists-polish-power-plant-attack" target="_blank">More info</a></li>
-    <li>Active exploitation of Apache ActiveMQ flaw <b>CVE-2023-46604</b> installs Linux malware <b>DripDropper</b>; attackers patch bug post-compromise; Dropbox C2 & SSH modifications used <a href="https://www.thehackernews.com/2025/08/apache-activemq-flaw-exploited-to.html" target="_blank">More info</a></li>
-    <li>Kaspersky discovers <b>GodRAT</b>, a Gh0st RAT derivative spread via Skype `.SCR` files; linked to Winnti/APT41; uses steganography & plugin system <a href="https://securelist.com/godrat/117119/" target="_blank">More info</a></li>
-    <li>Alternate report: <b>DripDropper</b> malware persists on Linux cloud servers by patching ActiveMQ flaw; PyInstaller ELF binary with Dropbox C2 <a href="https://www.zdnet.com/article/dripdropper-linux-malware-cleans-up-after-itself/" target="_blank">More info</a></li>
-    <li>Trellix: European embassies in South Korea targeted with <b>XenoRAT</b> via malicious GitHub repos; overlaps with APT43/Kimsuky but aligns with China-based ops <a href="https://www.bleepingcomputer.com/news/security/xenorat-malware-campaign-hits-multiple-embassies-in-south-korea/" target="_blank">More info</a></li>
+    <li>DOJ charges Oregon man Ethan Foltz for running Mirai-based <b>Rapper Bot</b> DDoS-for-hire service; 6 Tbps attacks, 18k targets worldwide <a href="https://www.bleepingcomputer.com/news/legal/rapper-bot-malware-seized-alleged-developer-identified-and-charged/" target="_blank">More info</a></li>
+    <li>UK sanctions Kyrgyz banks & crypto networks aiding Russia; targets include Capital Bank, Old Vector, Altair Holding <a href="https://securityaffairs.com/181375/laws-and-regulations/britain-targets-kyrgyz-financial-institutions-crypto-networks-aiding-kremlin.html" target="_blank">More info</a></li>
+    <li>Doctor Web finds fake Android antivirus <b>GuardCB</b> spying on Russian users; livestreaming, keylogging, and data theft capabilities <a href="https://hackread.com/fake-antivirus-app-android-malware-spy-russian-users/" target="_blank">More info</a></li>
+    <li>Push Security: Phishing campaign abuses <b>office.com</b> links & ADFS redirects with malvertising to steal Microsoft 365 credentials <a href="https://www.bleepingcomputer.com/news/security/hackers-steal-microsoft-logins-using-legitimate-adfs-redirects/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>Cybercriminals abuse AI site builder <b>Lovable</b> for phishing, malware, wallet drainers; company adds AI-based safeguards <a href="https://hackread.com/ai-website-builder-lovable-phishing-malware-scams/" target="_blank">More info</a></li>
+    <li>Barracuda: New QR code phishing methods split or embed malicious QR fragments to evade scanners; AI-powered detection advised <a href="https://www.infosecurity-magazine.com/news/hackers-qr-codes-new-quishing/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📁 Breaches & Leaks</h2>
   <ul>
-    <li>Canadian Investment Regulatory Organization (<b>CIRO</b>) breached; registrant data exposed; core functions unaffected; phishing risk raised <a href="https://www.infosecurity-magazine.com/news/canadian-financial-regulator-hacked/" target="_blank">More info</a></li>
+    <li>Pharma firm <b>Inotiv</b> hit by Qilin ransomware; 176GB of data stolen, operations disrupted, samples leaked online <a href="https://www.infosecurity-magazine.com/news/pharma-inotiv-confirms-ransomware/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🗃️ Others</h2>
   <ul>
-    <li>Citizen Lab reveals VPNs like Turbo VPN, Snap VPN, VPN Monster share ownership linked to Qihoo 360; flaws include hard-coded creds & covert data collection <a href="https://hackread.com/citizen-lab-vpn-networks-sharing-ownership-security-flaws/" target="_blank">More info</a></li>
-    <li>Elastic denies zero-day RCE in Defend EDR driver after AshES Cybersecurity public disclosure; company cites lack of reproducible PoC <a href="https://www.bleepingcomputer.com/news/security/elastic-rejects-claims-of-a-zero-day-rce-flaw-in-defend-edr/" target="_blank">More info</a></li>
+    <li>Palo Alto Unit 42: <b>Logit-Gap Steering</b> paper shows alignment training leaves jailbreak vectors; >75% success on multiple LLMs <a href="https://unit42.paloaltonetworks.com/logit-gap-steering-impact/" target="_blank">More info</a></li>
+    <li>China suffers hour-long nationwide outage on Aug 20; port 443 traffic blocked by forged TCP RST+ACK packets <a href="https://www.theregister.com/2025/08/21/china_port_443_block_outage/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🕵️ Hunting</h2>
   <ul>
-    <li>DFIR analysis of <b>Veletrix Loader</b> from memory dump reveals DLL sideloading (<code>drstat.dll</code>), shellcode decrypt/execution, and confirmed C2 (62.234.24.38:9999); highlights memory forensics for IOC extraction <a href="https://0x0d4y.blog/veletrix-loader-infection-a-look-from-a-digital-forensic-perspective/" target="_blank">More info</a></li>
+    <li>Cisco Talos links decade-long network device compromises to Russian FSB-linked <b>Static Tundra</b>; exploits old Cisco Smart Install flaw <b>CVE-2018-0171</b> <a href="https://blog.talosintelligence.com/static-tundra/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
