@@ -20,26 +20,38 @@
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li>Docker patches critical container escape flaw CVE-2025-9074 in Docker Desktop for Windows/macOS; upgrade to 4.44.3 required <a href="https://securityaffairs.com/181545/security/docker-fixes-critical-desktop-flaw-allowing-container-escapes.html" target="_blank">More info</a></li>
-    <li>Microsoft mitigates systemic postMessage risks across Teams, Power BI, Dynamics 365 after CVE-2024-49038, Bing Travel, Teams app XSS cases <a href="https://msrc.microsoft.com/blog/2025/08/postmessaged-and-compromised/" target="_blank">More info</a></li>
-    <li>CISA adds Citrix CVE-2024-8069, CVE-2024-8068 and Git CVE-2025-48384 flaws to KEV catalog; active exploitation confirmed, urgent patching urged <a href="https://www.cisa.gov/news-events/alerts/2025/08/25/cisa-adds-three-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+    <li>CISA adds Citrix NetScaler CVE-2025-7775 zero-day memory overflow flaw to KEV catalog; active exploitation confirmed <a href="https://www.cisa.gov/news-events/alerts/2025/08/26/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">More info</a></li>
+    <li>Citrix discloses CVE-2025-7775, CVE-2025-7776, CVE-2025-8424 NetScaler flaws enabling RCE, DoS, and unauthorized access; 20% appliances run unsupported versions <a href="https://www.darkreading.com/vulnerabilities-threats/citrix-zero-day-under-active-attack" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li>GreyNoise sees surge in scanning against Microsoft RDP Web portals from 1,971 IPs; brute force, password-spraying risks rise <a href="https://www.bleepingcomputer.com/news/security/surge-in-coordinated-scans-targets-microsoft-rdp-auth-servers/" target="_blank">More info</a></li>
-    <li>Trail of Bits reveals Anamorpher attack hiding malicious prompts in images for AI systems, impacting Google Gemini, Vertex AI <a href="https://www.bleepingcomputer.com/news/security/new-ai-attack-hides-data-theft-prompts-in-downscaled-images/" target="_blank">More info</a></li>
-    <li>ClickFix ransomware variant hides payloads in HTML using zero-width characters, white-on-white text for AI summarizer abuse <a href="https://www.darkreading.com/vulnerabilities-threats/clickfix-attack-ai-summaries-pushing-malware" target="_blank">More info</a></li>
-    <li>UNC6384, linked to Mustang Panda, deploys PlugX via AitM captive portals using signed STATICPLUGIN, CANONSTAGER loaders <a href="https://thehackernews.com/2025/08/unc6384-deploys-plugx-via-captive.html" target="_blank">More info</a></li>
-    <li>Fake Telegram Premium site spreads Lumma Stealer malware via telegrampremium[.]app drive-by attack; C2 via Telegram, Steam <a href="https://www.cysecurity.news/2025/08/fake-telegram-premium-website-spreads.html" target="_blank">More info</a></li>
-    <li>Zscaler finds 77 malicious Android apps (19M installs) on Google Play delivering adware, Joker, Harly, Anatsa banking trojan <a href="https://www.bleepingcomputer.com/news/security/malicious-android-apps-with-19m-installs-removed-from-google-play/" target="_blank">More info</a></li>
+    <li>UNC6395 steals data from 700+ Salesforce customers via stolen Salesloft Drift OAuth tokens; credentials, AWS keys, Snowflake access exposed <a href="https://cyberscoop.com/salesforce-salesloft-drift-attack-spree-google/" target="_blank">More info</a></li>
+    <li>ESET discovers PromptLock, first AI-powered ransomware exploiting prompt injection against LLMs like Ollama, GPT-OSS:20B for encryption & data exfiltration <a href="https://cyberscoop.com/prompt-lock-eset-ransomware-research-ai-powered-prompt-injection/" target="_blank">More info</a> <a href="https://x.com/esetresearch/status/1960365364300087724?t=dtqCMcf-olK_VbvIvBQlTg" target="_blank">Tweet</a></li>
+    <li>Check Point finds ZipLine phishing campaign abusing Contact Us forms, ZIP archives with MixShell implant using DNS TXT tunneling C2 <a href="https://www.theregister.com/2025/08/26/zipline_phishing_campaign/" target="_blank">More info</a></li>
+    <li>Zimperium warns Hook Android Trojan evolves into ransomware-capable hybrid threat; spreads via malicious APKs, abuses Accessibility Services <a href="https://www.darkreading.com/endpoint-security/hook-android-trojan-ransomware-attacks" target="_blank">More info</a> <a href="https://hackread.com/android-hook-malware-variant-locks-devices-ransomware/" target="_blank">More info</a></li>
+    <li>ShadowCaptcha exploits 100+ compromised WordPress sites delivering Lumma, Rhadamanthys stealers, Epsilon Red ransomware, miners via fake CAPTCHA lures <a href="https://thehackernews.com/2025/08/shadowcaptcha-exploits-wordpress-sites.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li>FortiGuard detects global UpCrypter phishing campaign doubling in activity, spreading RATs like DCRat, PureHVNC, Babylon RAT <a href="https://hackread.com/fake-voicemail-emails-install-upcrypter-malware-windows/" target="_blank">More info</a></li>
-    <li>FBI reports $16.6B U.S. losses to phishing/scams in 2024; Gmail phishing mimics login flow, steals credentials, 2FA codes <a href="https://www.cysecurity.news/2025/08/new-gmail-phishing-attack-exploits.html" target="_blank">More info</a></li>
-    <li>Dr. Web: Android.Backdoor.916.origin masquerades as Russian Central Bank/FSB antivirus, spying on executives since Jan 2025 <a href="https://www.bleepingcomputer.com/news/security/new-android-malware-poses-as-antivirus-from-russian-intelligence-agency/" target="_blank">More info</a></li>
+    <li>GreyNoise observes 30k+ IPs scanning Microsoft RDP services Aug. 21 & 24; botnet probing for timing flaws, credential attacks, or possible zero-day <a href="https://www.darkreading.com/cyber-risk/malicious-scanning-remote-desktop-services" target="_blank">More info</a></li>
+    <li>FortiGuard uncovers global phishing delivering UpCrypter loader with RATs like PureHVNC, DCRat, Babylon RAT using spoofed websites & personalized emails <a href="https://www.infosecurity-magazine.com/news/phishing-upcrypter-deploy-rat/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li>Nevada cyberattack disrupts state offices, websites, phone systems; recovery ongoing with federal & local agency support <a href="https://www.bleepingcomputer.com/news/security/nevada-closes-state-offices-as-cyberattack-disrupts-it-systems/" target="_blank">More info</a></li>
+    <li>Nissan confirms Qilin ransomware stole 4TB from Creative Box Inc. design subsidiary; 3D vehicle data, VR workflows, financial docs exposed <a href="https://www.bleepingcomputer.com/news/security/nissan-confirms-design-studio-data-breach-claimed-by-qilin-ransomware/" target="_blank">More info</a></li>
+    <li>Hacker “Chucky_BF” advertises 15.8M PayPal accounts with plaintext credentials for $750 on underground forums; likely infostealer-sourced <a href="https://www.cysecurity.news/2025/08/paypal-password-leak-puts-millions-of.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🗃️ Others</h2>
+  <ul>
+    <li>Whistleblower: Department of Government Efficiency stored SSA NUMIDENT database (300M+ Americans) insecurely on AWS cloud bypassing security protocols <a href="https://fedscoop.com/doge-social-security-database-whistleblower-cloud-environment-data-vulnerabilities/" target="_blank">More info</a></li>
+    <li>ASSET group releases Sni5Gect open-source 5G sniffing/injection toolkit exploiting unencrypted initial connection window; CVE assigned CVD-2024-0096 <a href="https://thehackernews.com/2025/08/new-sni5gect-attack-crashes-phones-and.html" target="_blank">More info</a></li>
+    <li>MITRE launches AADAPT framework mapping adversary TTPs in crypto & digital payments; counters $9.3B fraud surge, pig butchering scams, double-spending risks <a href="https://www.tripwire.com/state-of-security/mitre-introduces-aadapt-framework-combat-crypto-focused-cyber-threats" target="_blank">More info</a></li>
+    <li>GDPR compliance gaps persist as 80% employees reuse passwords; role-based interactive training urged under GDPR Article 32 to embed security in workflows <a href="https://www.bleepingcomputer.com/news/security/beyond-gdpr-security-training-turning-regulation-into-opportunity/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
