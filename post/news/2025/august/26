@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 26/08/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 26/08/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>Docker patches critical container escape flaw CVE-2025-9074 in Docker Desktop for Windows/macOS; upgrade to 4.44.3 required <a href="https://securityaffairs.com/181545/security/docker-fixes-critical-desktop-flaw-allowing-container-escapes.html" target="_blank">More info</a></li>
+    <li>Microsoft mitigates systemic postMessage risks across Teams, Power BI, Dynamics 365 after CVE-2024-49038, Bing Travel, Teams app XSS cases <a href="https://msrc.microsoft.com/blog/2025/08/postmessaged-and-compromised/" target="_blank">More info</a></li>
+    <li>CISA adds Citrix CVE-2024-8069, CVE-2024-8068 and Git CVE-2025-48384 flaws to KEV catalog; active exploitation confirmed, urgent patching urged <a href="https://www.cisa.gov/news-events/alerts/2025/08/25/cisa-adds-three-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>GreyNoise sees surge in scanning against Microsoft RDP Web portals from 1,971 IPs; brute force, password-spraying risks rise <a href="https://www.bleepingcomputer.com/news/security/surge-in-coordinated-scans-targets-microsoft-rdp-auth-servers/" target="_blank">More info</a></li>
+    <li>Trail of Bits reveals Anamorpher attack hiding malicious prompts in images for AI systems, impacting Google Gemini, Vertex AI <a href="https://www.bleepingcomputer.com/news/security/new-ai-attack-hides-data-theft-prompts-in-downscaled-images/" target="_blank">More info</a></li>
+    <li>ClickFix ransomware variant hides payloads in HTML using zero-width characters, white-on-white text for AI summarizer abuse <a href="https://www.darkreading.com/vulnerabilities-threats/clickfix-attack-ai-summaries-pushing-malware" target="_blank">More info</a></li>
+    <li>UNC6384, linked to Mustang Panda, deploys PlugX via AitM captive portals using signed STATICPLUGIN, CANONSTAGER loaders <a href="https://thehackernews.com/2025/08/unc6384-deploys-plugx-via-captive.html" target="_blank">More info</a></li>
+    <li>Fake Telegram Premium site spreads Lumma Stealer malware via telegrampremium[.]app drive-by attack; C2 via Telegram, Steam <a href="https://www.cysecurity.news/2025/08/fake-telegram-premium-website-spreads.html" target="_blank">More info</a></li>
+    <li>Zscaler finds 77 malicious Android apps (19M installs) on Google Play delivering adware, Joker, Harly, Anatsa banking trojan <a href="https://www.bleepingcomputer.com/news/security/malicious-android-apps-with-19m-installs-removed-from-google-play/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>FortiGuard detects global UpCrypter phishing campaign doubling in activity, spreading RATs like DCRat, PureHVNC, Babylon RAT <a href="https://hackread.com/fake-voicemail-emails-install-upcrypter-malware-windows/" target="_blank">More info</a></li>
+    <li>FBI reports $16.6B U.S. losses to phishing/scams in 2024; Gmail phishing mimics login flow, steals credentials, 2FA codes <a href="https://www.cysecurity.news/2025/08/new-gmail-phishing-attack-exploits.html" target="_blank">More info</a></li>
+    <li>Dr. Web: Android.Backdoor.916.origin masquerades as Russian Central Bank/FSB antivirus, spying on executives since Jan 2025 <a href="https://www.bleepingcomputer.com/news/security/new-android-malware-poses-as-antivirus-from-russian-intelligence-agency/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
