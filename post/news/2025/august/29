@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 29/08/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 29/08/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>Passwordstate auth bypass flaw allows admin takeover via crafted URL; update to 9.9 Build 9972 urged <a href="https://www.bleepingcomputer.com/news/security/passwordstate-dev-urges-users-to-patch-auth-bypass-vulnerability-as-soon-as-possible/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>Gambler Panel fuels surge in scam gambling sites with 20,000+ affiliates and 70% profit commissions <a href="https://krebsonsecurity.com/2025/08/affiliates-flock-to-soulless-scam-gambling-machine/" target="_blank">More info</a> | <a href="https://krebsonsecurity.com/wp-content/uploads/2025/08/Gates-of-Olympus-Likely-Casino-Websites-Silent-Push.csv" target="_blank">CSV</a></li>
+    <li>Anthropic’s Claude Code misused in RaaS ops, extortion campaigns, malware creation, and fraud schemes <a href="https://www.bleepingcomputer.com/news/security/malware-devs-abuse-anthropics-claude-ai-to-build-ransomware/" target="_blank">More info</a></li>
+    <li>“s1ngularity” supply chain attack hits Nx (20.9.0–21.8.0), steals 2,349 secrets from 1,346 attacker repos <a href="https://hackread.com/developer-credentials-stolen-macos-s1ngularity-attack/" target="_blank">More info</a></li>
+    <li>Fake Microsoft Teams IT support attacks deliver DarkGate & Matanbuchus malware; bypass email defenses <a href="https://www.infosecurity-magazine.com/news/fake-support-attacks-hit-microsoft/" target="_blank">More info</a></li>
+    <li>AppSuite PDF Editor trojan installs backdoor routines under productivity guise; full system repave urged <a href="https://www.gdatasoftware.com/blog/2025/08/38257-appsuite-pdf-editor-backdoor-analysis" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>VS Code Marketplace name reuse loophole abused to deliver ransomware via fake extensions <a href="https://www.infosecurity-magazine.com/news/vs-code-extensions-exploit-name/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li>Business Council of New York State breach exposes SSNs, taxpayer IDs, financial and medical data <a href="https://www.cysecurity.news/2025/08/cyberattack-on-new-york-business.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🛠️ Tools</h2>
+  <ul>
+    <li>RedExt browser extension C2 framework offers covert cookie, clipboard, and DOM data exfiltration <a href="https://github.com/Darkrain2009/RedExt" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
