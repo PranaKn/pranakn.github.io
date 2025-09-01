@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 01/09/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 01/09/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>WhatsApp patches CVE-2025-55177 zero-click spyware flaw targeting iOS/macOS users <a href="https://hackread.com/whatsapp-0-day-exploit-attack-targeted-ios-macos-users/" target="_blank">More info</a></li>
+    <li>CrushFTP zero-day (CVE-2025-54309) exploited to seize admin access; patch released in v10.8.5/v11.3.4 <a href="https://hackread.com/hackers-exploit-crushftp-zero-day-take-over-servers/" target="_blank">More info</a></li>
+    <li>CISA adds Sangoma FreePBX CVE-2025-57819 auth bypass flaw to KEV; active exploitation ongoing <a href="https://www.cisa.gov/news-events/alerts/2025/08/29/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">More info</a></li>
+    <li>Sangoma warns FreePBX CVE-2025-57819 zero-day exploited since Aug 21; urgent patching required <a href="https://securityaffairs.com/181693/hacking/experts-warn-of-actively-exploited-freepbx-zero-day.html" target="_blank">More info</a></li>
+    <li>Apple issues emergency updates for CVE-2025-43300 Image I/O zero-day used in sophisticated attacks <a href="https://www.cysecurity.news/2025/08/apple-issues-emergency-security-updates.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>Amazon disrupts APT29 watering hole campaign abusing Microsoft device code authentication <a href="https://securityaffairs.com/181747/apt/amazon-blocks-apt29-campaign-targeting-microsoft-device-code-authentication.html" target="_blank">More info</a></li>
+    <li>TamperedChef infostealer spreads via fake PDF apps signed with fraudulent certificates <a href="https://www.bleepingcomputer.com/news/security/tamperedchef-infostealer-delivered-through-fraudulent-pdf-editor/" target="_blank">More info</a></li>
+    <li>Lab Dookhtegan cripples Iranian ship communications via satellite provider Fannava breach <a href="https://securityaffairs.com/181737/hacking/lab-dookhtegan-disrupts-comms-iranian-ships.html" target="_blank">More info</a></li>
+    <li>Facebook malvertising campaign pushes Brokewell spyware via fake TradingView premium apps <a href="https://hackread.com/fake-facebook-ads-brokewell-spyware-android-users/" target="_blank">More info</a></li>
+    <li>North Korean APT37 spear-phishes South Korean intel & govt staff with tailored lures, RokRAT malware <a href="https://www.infosecurity-magazine.com/news/north-korea-apt37-spear-phishing/" target="_blank">More info</a></li>
+    <li>TAOTH espionage campaign hijacks abandoned Sogou Zhuyin IME update server for malware delivery <a href="https://thehackernews.com/2025/08/abandoned-sogou-zhuyin-update-server.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>India becomes most-targeted nation for malware; phishing hits 25% of all threats in 2025 <a href="https://www.cysecurity.news/2025/08/india-most-targeted-by-malware-as-ai.html" target="_blank">More info</a></li>
+    <li>Threat actors abuse Velociraptor forensic tool & Microsoft Teams phishing for persistence & credential theft <a href="https://thehackernews.com/2025/08/attackers-abuse-velociraptor-forensic.html" target="_blank">More info</a></li>
+    <li>WordPress plugins & themes exploited for malware, RCE, donor data leaks, and admin hijacking <a href="https://www.kaspersky.com/blog/vulnerable-wordpress-plugins-and-themes/54228/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li>Ransomware attack on Miljödata disrupts 200 Swedish organizations using Adato system for sick leave cases <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/sweden-scrambles-after-ransomware-attack-puts-sensitive-worker-data-at-risk" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🗃️ Others</h2>
+  <ul>
+    <li>US & Dutch authorities seize VerifTools fake ID marketplace linked to $6.4M in fraud; site relaunches quickly <a href="https://hackread.com/feds-seize-veriftools-net-relaunch-veriftools-com/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
