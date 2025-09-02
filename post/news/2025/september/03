@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 02/09/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 02/09/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>Pangea reveals LegalPwn prompt injection bypassing LLM security via doctored legal text <a href="https://www.theregister.com/2025/09/01/legalpwn_ai_jailbreak/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>APT36 targets Indian agencies with malicious PDFs dropping Go-based ELF spyware <a href="https://www.cysecurity.news/2025/09/transparent-tribe-target-indian.html" target="_blank">More info</a></li>
+    <li>Image scaling attack hides malicious commands in images to hijack AI assistants <a href="https://hackread.com/hidden-commands-images-exploit-ai-chatbots-steal-data/" target="_blank">More info</a></li>
+    <li>ScarCruft APT37 spear-phishing campaign delivers RokRAT malware to academics & officials <a href="https://hackread.com/north-korea-scarcruft-target-academics-rokrat-malware/" target="_blank">More info</a></li>
+    <li>Meta ads push fake TradingView Premium apps with Brokewell Android malware <a href="https://www.bleepingcomputer.com/news/security/brokewell-android-malware-delivered-through-fake-tradingview-ads/" target="_blank">More info</a></li>
+    <li>Scattered Spider pivots to browser attacks using overlays, token theft & malicious extensions <a href="https://thehackernews.com/2025/09/when-browsers-become-attack-surface.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>DDoS attacks hit 8M in H1 2025; calls grow for ISP-level botnet disruption <a href="https://www.theregister.com/2025/09/01/ddos_opinion/" target="_blank">More info</a></li>
+    <li>Android droppers now delivering SMS stealers, spyware & crypto miners <a href="https://thehackernews.com/2025/09/android-droppers-now-deliver-sms.html" target="_blank">More info</a></li>
+    <li>Silver Fox APT abuses Microsoft-signed drivers to deploy ValleyRAT backdoor <a href="https://www.infosecurity-magazine.com/news/silver-fox-deploy-valleyrat/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li>Salesloft Drift breach exposes Salesforce, Slack, Google Workspace, AWS & OpenAI tokens <a href="https://krebsonsecurity.com/2025/09/the-ongoing-fallout-from-a-breach-at-ai-chatbot-maker-salesloft/" target="_blank">More info</a></li>
+    <li>Zscaler confirms Salesforce data breach tied to Salesloft Drift supply-chain attack <a href="https://www.bleepingcomputer.com/news/security/zscaler-data-breach-exposes-customer-info-after-salesloft-drift-compromise/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🗃️ Others</h2>
+  <ul>
+    <li>Report warns about “money mule” risks from scams using unwitting participants <a href="https://www.kaspersky.com/blog/how-to-avoid-becoming-dropper/54232/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
