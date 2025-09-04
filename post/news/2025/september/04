@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 04/09/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 04/09/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>Hundreds of Ubiquiti routers still show hacked banners from old campaigns like MFWorm, highlighting long-term neglect <a href="https://www.darkreading.com/endpoint-security/hacked-routers-linger-on-the-internet-for-years-data-shows" target="_blank">More info</a></li>
+    <li>CISA adds TP-Link flaws CVE-2023-50224 and CVE-2025-9377 to KEV; chaining enables credential theft and RCE on end-of-life routers <a href="https://www.cisa.gov/news-events/alerts/2025/09/03/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+    <li>Hackers weaponize HexStrike-AI red-teaming framework to rapidly exploit new Citrix bugs CVE-2025-7775/7776/8424 <a href="https://www.bleepingcomputer.com/news/security/hackers-use-new-hexstrike-ai-tool-to-rapidly-exploit-n-day-flaws/" target="_blank">More info</a></li>
+    <li>Google September 2025 Android patch fixes 84 flaws including zero-days CVE-2025-38352 (Linux timers) and CVE-2025-48543 (ART sandbox bypass) <a href="https://www.bleepingcomputer.com/news/security/google-fixes-actively-exploited-android-flaws-in-september-update/" target="_blank">More info</a> | <a href="https://securityaffairs.com/181871/security/google-addressed-two-android-flaws-actively-exploited-in-targeted-attacks.html" target="_blank">More info</a></li>
+    <li>Unit 42 exposes AI supply chain flaw “Model Namespace Reuse,” allowing malicious model hijacking on Hugging Face, Azure, Vertex, Kaggle <a href="https://unit42.paloaltonetworks.com/model-namespace-reuse/" target="_blank">More info</a></li>
+    <li>Misconfigured Navy Federal Credit Union server exposed 378GB of internal files, usernames, hashed passwords, Tableau workbooks <a href="https://hackread.com/misconfigured-server-navy-federal-credit-union-data-leak/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>APT28 deploys new Outlook VBA backdoor “NotDoor,” hijacking emails to trigger commands, exfiltration, and persistence <a href="https://www.darkreading.com/endpoint-security/apt28-outlook-notdoor-backdoor" target="_blank">More info</a></li>
+    <li>Malicious npm packages colortoolsv2/mimelib2 hid commands in Ethereum smart contracts to drop malware, tied to Stargazers Ghost Network <a href="https://thehackernews.com/2025/09/malicious-npm-packages-exploit-ethereum.html" target="_blank">More info</a></li>
+    <li>Malicious Go package golang-random-ip-ssh-bruteforce steals weak SSH logins and exfiltrates them to Telegram bot @sshZXC_bot <a href="https://www.cysecurity.news/2025/09/malicious-go-package-disguised-as-ssh.html" target="_blank">More info</a></li>
+    <li>Tycoon phishing kit evolves with obfuscation tactics: hidden Unicode, malformed URLs, fake CAPTCHAs to evade detection <a href="https://www.infosecurity-magazine.com/news/tycoon-phishing-kit-hide-malicious/" target="_blank">More info</a></li>
+    <li>New ClickFix scam (FileFix) spreads MetaStealer via fake AnyDesk installer and Explorer trick, blending social engineering and malware <a href="https://hackread.com/fake-anydesk-installer-metastealer-clickfix-scam/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>PayPal scam emails spoof service@paypal[.]com with $910 fake charges, tricking users into adding secondary attackers to accounts <a href="https://www.malwarebytes.com/blog/news/2025/09/paypal-users-targeted-in-account-profile-scam" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li>SaaS provider Workiva discloses data breach via third-party CRM; stolen customer PII tied to ShinyHunters’ Salesforce token theft campaign <a href="https://www.bleepingcomputer.com/news/security/saas-giant-workiva-discloses-data-breach-after-salesforce-attack/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🗃️ Others</h2>
+  <ul>
+    <li>Japan, South Korea, U.S. intensify crackdown on North Korea’s fake freelancer IT worker scheme, linked to $88M in revenue and espionage <a href="https://www.darkreading.com/cybersecurity-operations/japan-south-korea-north-korean-it-worker-scam" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
