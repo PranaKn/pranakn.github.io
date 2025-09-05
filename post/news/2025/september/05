@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 05/09/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 05/09/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>CISA adds Linux kernel (CVE-2025-38352), Android Runtime (CVE-2025-48543), and Sitecore deserialization (CVE-2025-53690) flaws to KEV after active exploitation <a href="https://www.cisa.gov/news-events/alerts/2025/09/04/cisa-adds-three-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+    <li>TP-Link confirms unpatched zero-day in CWMP implementation on multiple routers, enabling RCE; patches released for EU devices <a href="https://www.bleepingcomputer.com/news/security/new-tp-link-zero-day-surfaces-as-cisa-warns-other-flaws-are-exploited/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>ESET uncovers GhostRedirector campaign boosting gambling sites via compromised IIS servers and SEO poisoning <a href="https://www.darkreading.com/cyber-risk/chinese-hackers-google-boost-gambling-sites" target="_blank">More info</a></li>
+    <li>SentinelLabs & Validin uncover Lazarus-linked “Contagious Interview” campaign exploiting CTI platforms and targeting crypto professionals <a href="https://www.sentinelone.com/labs/contagious-interview-threat-actors-scout-cyber-intel-platforms-reveal-plans-and-ops/" target="_blank">More info</a></li>
+    <li>Scattered Lapsus$ Hunters coalition threatens Google with leaks unless security experts are fired; no evidence of compromise provided <a href="https://hackread.com/scattered-lapsus-hunters-google-fire-experts-data-leak/" target="_blank">More info</a></li>
+    <li>Guardio Labs exposes “Grokking” malvertising on X using Grok AI to amplify malicious links hidden in promoted ads <a href="https://thehackernews.com/2025/09/cybercriminals-exploit-xs-grok-ai-to.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>Attackers actively exploiting Sitecore deserialization flaw (CVE-2025-53690) with WEEPSTEEL malware, forcing urgent machine key rotation <a href="https://www.theregister.com/2025/09/04/unknown_miscreants_snooping_around_sitecore/" target="_blank">More info</a> | <a href="https://www.bleepingcomputer.com/news/security/hackers-exploited-sitecore-zero-day-flaw-to-deploy-backdoors/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li>Chess.com discloses breach via file transfer app, affecting 4,500 users; limited PII exposed, identity monitoring offered <a href="https://www.bleepingcomputer.com/news/security/chesscom-discloses-recent-data-breach-via-file-transfer-app/" target="_blank">More info</a></li>
+    <li>Bridgestone Americas investigates cyberattack disrupting manufacturing in South Carolina and Quebec; no customer data stolen <a href="https://www.bleepingcomputer.com/news/security/tire-giant-bridgestone-confirms-cyberattack-impacts-manufacturing/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🛠️ Tools</h2>
+  <ul>
+    <li>BlockEDRTraffic PoC helps red teams block EDR network telemetry via firewall rules or Windows Filtering Platform filters <a href="https://github.com/0xJs/BlockEDRTraffic" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Hunting</h2>
+  <ul>
+    <li>Trend Micro details AMOS macOS stealer campaign spreading via cracked apps and copy-paste Terminal commands <a href="https://www.trendmicro.com/en_us/research/25/i/an-mdr-analysis-of-the-amos-stealer-campaign.html" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
