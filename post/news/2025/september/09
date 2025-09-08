@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 09/09/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 09/09/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>Sitecore CVE-2025-53690 exploited via ViewState deserialization, using insecure sample keys; WEEPSTEEL malware deployed <a href="https://hackread.com/zero-day-sitecore-exploited-deploy-weepsteel-malware/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>Japan phishing campaign delivers MostereRAT, a former banking trojan turned RAT, disabling AV/EDR and abusing AnyDesk/TightVNC <a href="https://www.darkreading.com/cyberattacks-data-breaches/mostererat-blocks-security-tools" target="_blank">More info</a></li>
+    <li>Salt Typhoon (UNC4841) linked to 45 new domains since 2020; infrastructure suggests espionage and possible PSYOP ops <a href="https://www.theregister.com/2025/09/08/salt_typhoon_domains/" target="_blank">More info</a></li>
+    <li>Lazarus Group’s Contagious Interview campaign uses ClickFix fake job interviews to spread ContagiousDrop malware across crypto firms <a href="https://hackread.com/lazarus-group-malware-clickfix-scam-fake-job-interview/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>Large-scale scans target Cisco ASA devices; 25,000 IPs observed probing ASA portals and Cisco IOS SSH/Telnet <a href="https://www.bleepingcomputer.com/news/security/surge-in-networks-scans-targeting-cisco-asa-devices-raise-concerns/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🗃️ Others</h2>
+  <ul>
+    <li>SentinelOne to acquire Observo AI, enhancing AI-native SIEM pipelines for lower storage costs and faster SOC detection <a href="https://www.helpnetsecurity.com/2025/09/08/sentinelone-observo-ai-acquisition/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🛠️ Tools</h2>
+  <ul>
+    <li>InterceptSuite interception tool debuts; supports non-HTTP protocols (SMTP, MQTT, DBs), TLS interception, SOCKS5, and STARTTLS <a href="https://github.com/InterceptSuite/InterceptSuite" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
