@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 09/09/25</title>
+  <title>📰 Cybersecurity Newsfeed - 10/09/25</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; color: #c9a227; }
@@ -16,33 +16,51 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 09/09/25</h2>
+  <h2>📅 10/09/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li>Sitecore CVE-2025-53690 exploited via ViewState deserialization, using insecure sample keys; WEEPSTEEL malware deployed <a href="https://hackread.com/zero-day-sitecore-exploited-deploy-weepsteel-malware/" target="_blank">More info</a></li>
+    <li>Microsoft Patch Tuesday fixes 86 vulnerabilities, including NTFS RCE, SMBv3 race, NTLM EoP, and SMB relay EoP (publicly disclosed) <a href="https://krebsonsecurity.com/2025/09/microsoft-patch-tuesday-september-2025-edition/" target="_blank">More info</a> | <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-september-2025-patch-tuesday-fixes-81-flaws-two-zero-days/" target="_blank">More info</a> | <a href="https://blog.talosintelligence.com/microsoft-patch-tuesday-september-2025/" target="_blank">More info</a></li>
+    <li>SAP Patch Day: 21 new + 4 updated notes; critical RCE in AS Java RMI-P4 (CVE-2025-42944, CVSS 10.0) and file upload bug (CVE-2025-42922, CVSS 9.9) <a href="https://securityaffairs.com/182040/security/sap-september-2025-patch-day-fixed-4-critical-flaws.html" target="_blank">More info</a></li>
+    <li>Adobe fixes critical ColdFusion path traversal (CVE-2025-54261, CVSS 9.0) and Commerce/Magento bypass flaw; Acrobat Reader, Premiere Pro also patched <a href="https://www.securityweek.com/adobe-patches-critical-coldfusion-and-commerce-vulnerabilities/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li>Japan phishing campaign delivers MostereRAT, a former banking trojan turned RAT, disabling AV/EDR and abusing AnyDesk/TightVNC <a href="https://www.darkreading.com/cyberattacks-data-breaches/mostererat-blocks-security-tools" target="_blank">More info</a></li>
-    <li>Salt Typhoon (UNC4841) linked to 45 new domains since 2020; infrastructure suggests espionage and possible PSYOP ops <a href="https://www.theregister.com/2025/09/08/salt_typhoon_domains/" target="_blank">More info</a></li>
-    <li>Lazarus Group’s Contagious Interview campaign uses ClickFix fake job interviews to spread ContagiousDrop malware across crypto firms <a href="https://hackread.com/lazarus-group-malware-clickfix-scam-fake-job-interview/" target="_blank">More info</a></li>
+    <li>Akamai: attackers exploit Docker APIs, deploying Tor-hidden containers with persistence, scanning, and Go-based droppers <a href="https://www.bleepingcomputer.com/news/security/hackers-hide-behind-tor-in-exposed-docker-api-breaches/" target="_blank">More info</a></li>
+    <li>New Android malware RatOn evolves from NFC relay into full banking trojan + RAT, targeting wallets and Czech banking app <a href="https://thehackernews.com/2025/09/raton-android-malware-detected-with-nfc.html" target="_blank">More info</a></li>
+    <li>DFIR Report: actor linked to Play, RansomHub & DragonForce RaaS groups; intrusion used SectopRAT, SystemBC, Betruger backdoor <a href="https://www.securityweek.com/threat-actor-connected-to-play-ransomhub-and-dragonforce-ransomware-operations/" target="_blank">More info</a></li>
+    <li>LunaLock ransomware threatens to leak stolen art into AI datasets; $50K ransom demand at Artists&Clients platform <a href="https://securityaffairs.com/182014/malware/lunalock-ransomware-threatens-victims-by-feeding-stolen-data-to-ai-models.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li>Large-scale scans target Cisco ASA devices; 25,000 IPs observed probing ASA portals and Cisco IOS SSH/Telnet <a href="https://www.bleepingcomputer.com/news/security/surge-in-networks-scans-targeting-cisco-asa-devices-raise-concerns/" target="_blank">More info</a></li>
+    <li>Salty2FA phishing kit mimics MFA portals, rotates subdomains, and uses Cloudflare Turnstile to evade detection <a href="https://hackread.com/salty2fa-phishing-kit-bypasses-mfa-clone-login-pages/" target="_blank">More info</a></li>
+    <li>Axios + Microsoft 365 Direct Send abuse drives phishing surge, hijacking session tokens with 70% success rate <a href="https://thehackernews.com/2025/09/axios-abuse-and-salty-2fa-kits-fuel.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li>DoD exposed YouTube/Facebook/X stream keys for years on DVIDS portal; fixed this week with new keys <a href="https://www.theregister.com/2025/09/09/us_dod_exposed_keys/" target="_blank">More info</a></li>
+    <li>Restaurant Brands (Burger King, Popeyes, Tim Hortons) platforms exposed via AWS Cognito misconfig; access to sales data & voice recordings <a href="https://www.malwarebytes.com/blog/news/2025/09/popeyes-tim-hortons-burger-king-platforms-have-catastrophic-vulnerabilities-say-hackers" target="_blank">More info</a></li>
   </ul>
 
   <h2>🗃️ Others</h2>
   <ul>
-    <li>SentinelOne to acquire Observo AI, enhancing AI-native SIEM pipelines for lower storage costs and faster SOC detection <a href="https://www.helpnetsecurity.com/2025/09/08/sentinelone-observo-ai-acquisition/" target="_blank">More info</a></li>
+    <li>US sanctions Burma/Cambodia scam networks stealing $10B+ in 2024; linked to human trafficking and fake crypto schemes <a href="https://www.bleepingcomputer.com/news/security/us-sanctions-cyber-scammers-who-stole-billions-from-americans/" target="_blank">More info</a></li>
+    <li>Kosovo’s Liridon Masurica pleads guilty to running BlackDB.cc cybercrime marketplace; faces up to 55 years <a href="https://www.bleepingcomputer.com/news/security/kosovo-hacker-pleads-guilty-to-running-blackdb-cybercrime-marketplace/" target="_blank">More info</a></li>
+    <li>US charges Tymoshchuk, alleged admin of LockerGoga/MegaCortex/Nefilim ransomware, with $11M reward for capture <a href="https://www.bleepingcomputer.com/news/security/us-charges-admin-of-lockergoga-megacortex-nefilim-ransomware/" target="_blank">More info</a></li>
+    <li>New research shows general proofs of security for Fiat–Shamir transformation impossible; transformation remains heuristic <a href="https://www.schneier.com/blog/archives/2025/09/new-cryptanalysis-of-the-fiat-shamir-protocol.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>🛠️ Tools</h2>
   <ul>
-    <li>InterceptSuite interception tool debuts; supports non-HTTP protocols (SMTP, MQTT, DBs), TLS interception, SOCKS5, and STARTTLS <a href="https://github.com/InterceptSuite/InterceptSuite" target="_blank">More info</a></li>
+    <li>asnip: lightweight Go tool for ASN reconnaissance, mapping domains to ASNs & CIDRs for attack surface discovery <a href="https://github.com/harleo/asnip" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Hunting</h2>
+  <ul>
+    <li>Gentlemen ransomware group campaign hits manufacturing, healthcare, and insurance with GPO abuse, driver exploits, and custom AV evasion <a href="https://www.trendmicro.com/en_us/research/25/i/unmasking-the-gentlemen-ransomware.html" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
