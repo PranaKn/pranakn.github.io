@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 11/09/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 11/09/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>Cursor AI editor exposes devs via Workspace Trust disabled by default, enabling malicious <code>tasks.json</code> autorun <a href="https://www.bleepingcomputer.com/news/security/cursor-ai-editor-lets-repos-autorun-malicious-code-on-devices/" target="_blank">More info</a></li>
+    <li>Massive NPM supply-chain attack hijacked chalk & debug-js (2.6B weekly downloads) via maintainer phishing; crypto-stealer payload spread widely <a href="https://www.bleepingcomputer.com/news/security/hackers-left-empty-handed-after-massive-npm-supply-chain-attack/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>Chinese APT deploys EggStreme fileless malware (EggStremeAgent, EggStremeWizard, Stowaway) against Philippine military <a href="https://thehackernews.com/2025/09/chinese-apt-deploys-eggstreme-fileless.html" target="_blank">More info</a> | <a href="https://hackread.com/chinese-apt-philippine-military-eggstreme-fileless-malware/" target="_blank">More info</a></li>
+    <li>FBI adapts hunt methods as Salt Typhoon & Volt Typhoon blend into system tools; focus shifts to prepositioning & cloud/edge attacks <a href="https://cyberscoop.com/chinas-typhoons-changing-the-way-fbi-hunts-sophisticated-threats/" target="_blank">More info</a></li>
+    <li>ChillyHell modular macOS backdoor evaded Apple for 4 years; notarized sample linked to UNC4487 now revoked <a href="https://www.theregister.com/2025/09/10/chillyhell_modular_macos_malware/" target="_blank">More info</a></li>
+    <li>Fileless AsyncRAT attack via compromised ScreenConnect client; used Update.vbs, Obfuscator.dll, fake Skype Updater persistence <a href="https://hackread.com/fileless-malware-attack-asyncrat-credential-theft/" target="_blank">More info</a></li>
+    <li>KillSec ransomware hits Brazilian healthcare firm MedicSolution; 34 GB of medical data exposed via misconfigured AWS buckets <a href="https://www.infosecurity-magazine.com/news/killsec-ransomware-hits-brazilian/" target="_blank">More info</a></li>
+    <li>Buterat backdoor targets gov/enterprise networks, hiding in processes, hijacking execution with SetThreadContext & encrypted C2 <a href="https://hackread.com/buterat-backdoor-malware-enterprise-govt-networks/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>China-backed APT41 impersonated US lawmaker in phishing campaign during trade talks, aiming at espionage <a href="https://www.darkreading.com/cybersecurity-operations/chinese-hackers-allegedly-pose-us-lawmaker" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li>Jaguar Land Rover confirms data theft from Sept 2 cyberattack; Scattered Lapsus$ Hunters claim responsibility, post SAP screenshots <a href="https://www.bleepingcomputer.com/news/security/jaguar-land-rover-jlr-confirms-data-theft-after-recent-cyberattack/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🗃️ Others</h2>
+  <ul>
+    <li>Google Pixel 10 camera embeds C2PA credentials in photos via Titan M2 & StrongBox; tamper-proof verification chain against deepfakes <a href="https://www.bleepingcomputer.com/news/security/pixel-10-fights-ai-fakes-with-new-android-photo-verification-tech/" target="_blank">More info</a></li>
+    <li>Apple unveils Memory Integrity Enforcement (MIE) on iPhone 17 & Air; system-wide EMTE/TCE protections against overflows & side-channels <a href="https://thehackernews.com/2025/09/apple-iphone-air-and-iphone-17-feature.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🛠️ Tools</h2>
+  <ul>
+    <li>Garak: open-source LLM vulnerability scanner probing hallucinations, injections, jailbreaks, toxic outputs; supports Hugging Face, OpenAI, LiteLLM, GGUF <a href="https://www.helpnetsecurity.com/2025/09/10/garak-open-source-llm-vulnerability-scanner/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
