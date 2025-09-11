@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 10/09/25</title>
+  <title>📰 Cybersecurity Newsfeed - 11/09/25</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; color: #c9a227; }
@@ -16,51 +16,43 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 10/09/25</h2>
+  <h2>📅 11/09/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li>Microsoft Patch Tuesday fixes 86 vulnerabilities, including NTFS RCE, SMBv3 race, NTLM EoP, and SMB relay EoP (publicly disclosed) <a href="https://krebsonsecurity.com/2025/09/microsoft-patch-tuesday-september-2025-edition/" target="_blank">More info</a> | <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-september-2025-patch-tuesday-fixes-81-flaws-two-zero-days/" target="_blank">More info</a> | <a href="https://blog.talosintelligence.com/microsoft-patch-tuesday-september-2025/" target="_blank">More info</a></li>
-    <li>SAP Patch Day: 21 new + 4 updated notes; critical RCE in AS Java RMI-P4 (CVE-2025-42944, CVSS 10.0) and file upload bug (CVE-2025-42922, CVSS 9.9) <a href="https://securityaffairs.com/182040/security/sap-september-2025-patch-day-fixed-4-critical-flaws.html" target="_blank">More info</a></li>
-    <li>Adobe fixes critical ColdFusion path traversal (CVE-2025-54261, CVSS 9.0) and Commerce/Magento bypass flaw; Acrobat Reader, Premiere Pro also patched <a href="https://www.securityweek.com/adobe-patches-critical-coldfusion-and-commerce-vulnerabilities/" target="_blank">More info</a></li>
+    <li>Cursor AI editor exposes devs via Workspace Trust disabled by default, enabling malicious <code>tasks.json</code> autorun <a href="https://www.bleepingcomputer.com/news/security/cursor-ai-editor-lets-repos-autorun-malicious-code-on-devices/" target="_blank">More info</a></li>
+    <li>Massive NPM supply-chain attack hijacked chalk & debug-js (2.6B weekly downloads) via maintainer phishing; crypto-stealer payload spread widely <a href="https://www.bleepingcomputer.com/news/security/hackers-left-empty-handed-after-massive-npm-supply-chain-attack/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li>Akamai: attackers exploit Docker APIs, deploying Tor-hidden containers with persistence, scanning, and Go-based droppers <a href="https://www.bleepingcomputer.com/news/security/hackers-hide-behind-tor-in-exposed-docker-api-breaches/" target="_blank">More info</a></li>
-    <li>New Android malware RatOn evolves from NFC relay into full banking trojan + RAT, targeting wallets and Czech banking app <a href="https://thehackernews.com/2025/09/raton-android-malware-detected-with-nfc.html" target="_blank">More info</a></li>
-    <li>DFIR Report: actor linked to Play, RansomHub & DragonForce RaaS groups; intrusion used SectopRAT, SystemBC, Betruger backdoor <a href="https://www.securityweek.com/threat-actor-connected-to-play-ransomhub-and-dragonforce-ransomware-operations/" target="_blank">More info</a></li>
-    <li>LunaLock ransomware threatens to leak stolen art into AI datasets; $50K ransom demand at Artists&Clients platform <a href="https://securityaffairs.com/182014/malware/lunalock-ransomware-threatens-victims-by-feeding-stolen-data-to-ai-models.html" target="_blank">More info</a></li>
+    <li>Chinese APT deploys EggStreme fileless malware (EggStremeAgent, EggStremeWizard, Stowaway) against Philippine military <a href="https://thehackernews.com/2025/09/chinese-apt-deploys-eggstreme-fileless.html" target="_blank">More info</a> | <a href="https://hackread.com/chinese-apt-philippine-military-eggstreme-fileless-malware/" target="_blank">More info</a></li>
+    <li>FBI adapts hunt methods as Salt Typhoon & Volt Typhoon blend into system tools; focus shifts to prepositioning & cloud/edge attacks <a href="https://cyberscoop.com/chinas-typhoons-changing-the-way-fbi-hunts-sophisticated-threats/" target="_blank">More info</a></li>
+    <li>ChillyHell modular macOS backdoor evaded Apple for 4 years; notarized sample linked to UNC4487 now revoked <a href="https://www.theregister.com/2025/09/10/chillyhell_modular_macos_malware/" target="_blank">More info</a></li>
+    <li>Fileless AsyncRAT attack via compromised ScreenConnect client; used Update.vbs, Obfuscator.dll, fake Skype Updater persistence <a href="https://hackread.com/fileless-malware-attack-asyncrat-credential-theft/" target="_blank">More info</a></li>
+    <li>KillSec ransomware hits Brazilian healthcare firm MedicSolution; 34 GB of medical data exposed via misconfigured AWS buckets <a href="https://www.infosecurity-magazine.com/news/killsec-ransomware-hits-brazilian/" target="_blank">More info</a></li>
+    <li>Buterat backdoor targets gov/enterprise networks, hiding in processes, hijacking execution with SetThreadContext & encrypted C2 <a href="https://hackread.com/buterat-backdoor-malware-enterprise-govt-networks/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li>Salty2FA phishing kit mimics MFA portals, rotates subdomains, and uses Cloudflare Turnstile to evade detection <a href="https://hackread.com/salty2fa-phishing-kit-bypasses-mfa-clone-login-pages/" target="_blank">More info</a></li>
-    <li>Axios + Microsoft 365 Direct Send abuse drives phishing surge, hijacking session tokens with 70% success rate <a href="https://thehackernews.com/2025/09/axios-abuse-and-salty-2fa-kits-fuel.html" target="_blank">More info</a></li>
+    <li>China-backed APT41 impersonated US lawmaker in phishing campaign during trade talks, aiming at espionage <a href="https://www.darkreading.com/cybersecurity-operations/chinese-hackers-allegedly-pose-us-lawmaker" target="_blank">More info</a></li>
   </ul>
 
   <h2>📁 Breaches & Leaks</h2>
   <ul>
-    <li>DoD exposed YouTube/Facebook/X stream keys for years on DVIDS portal; fixed this week with new keys <a href="https://www.theregister.com/2025/09/09/us_dod_exposed_keys/" target="_blank">More info</a></li>
-    <li>Restaurant Brands (Burger King, Popeyes, Tim Hortons) platforms exposed via AWS Cognito misconfig; access to sales data & voice recordings <a href="https://www.malwarebytes.com/blog/news/2025/09/popeyes-tim-hortons-burger-king-platforms-have-catastrophic-vulnerabilities-say-hackers" target="_blank">More info</a></li>
+    <li>Jaguar Land Rover confirms data theft from Sept 2 cyberattack; Scattered Lapsus$ Hunters claim responsibility, post SAP screenshots <a href="https://www.bleepingcomputer.com/news/security/jaguar-land-rover-jlr-confirms-data-theft-after-recent-cyberattack/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🗃️ Others</h2>
   <ul>
-    <li>US sanctions Burma/Cambodia scam networks stealing $10B+ in 2024; linked to human trafficking and fake crypto schemes <a href="https://www.bleepingcomputer.com/news/security/us-sanctions-cyber-scammers-who-stole-billions-from-americans/" target="_blank">More info</a></li>
-    <li>Kosovo’s Liridon Masurica pleads guilty to running BlackDB.cc cybercrime marketplace; faces up to 55 years <a href="https://www.bleepingcomputer.com/news/security/kosovo-hacker-pleads-guilty-to-running-blackdb-cybercrime-marketplace/" target="_blank">More info</a></li>
-    <li>US charges Tymoshchuk, alleged admin of LockerGoga/MegaCortex/Nefilim ransomware, with $11M reward for capture <a href="https://www.bleepingcomputer.com/news/security/us-charges-admin-of-lockergoga-megacortex-nefilim-ransomware/" target="_blank">More info</a></li>
-    <li>New research shows general proofs of security for Fiat–Shamir transformation impossible; transformation remains heuristic <a href="https://www.schneier.com/blog/archives/2025/09/new-cryptanalysis-of-the-fiat-shamir-protocol.html" target="_blank">More info</a></li>
+    <li>Google Pixel 10 camera embeds C2PA credentials in photos via Titan M2 & StrongBox; tamper-proof verification chain against deepfakes <a href="https://www.bleepingcomputer.com/news/security/pixel-10-fights-ai-fakes-with-new-android-photo-verification-tech/" target="_blank">More info</a></li>
+    <li>Apple unveils Memory Integrity Enforcement (MIE) on iPhone 17 & Air; system-wide EMTE/TCE protections against overflows & side-channels <a href="https://thehackernews.com/2025/09/apple-iphone-air-and-iphone-17-feature.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>🛠️ Tools</h2>
   <ul>
-    <li>asnip: lightweight Go tool for ASN reconnaissance, mapping domains to ASNs & CIDRs for attack surface discovery <a href="https://github.com/harleo/asnip" target="_blank">More info</a></li>
-  </ul>
-
-  <h2>🎯 Hunting</h2>
-  <ul>
-    <li>Gentlemen ransomware group campaign hits manufacturing, healthcare, and insurance with GPO abuse, driver exploits, and custom AV evasion <a href="https://www.trendmicro.com/en_us/research/25/i/unmasking-the-gentlemen-ransomware.html" target="_blank">More info</a></li>
+    <li>Garak: open-source LLM vulnerability scanner probing hallucinations, injections, jailbreaks, toxic outputs; supports Hugging Face, OpenAI, LiteLLM, GGUF <a href="https://www.helpnetsecurity.com/2025/09/10/garak-open-source-llm-vulnerability-scanner/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
