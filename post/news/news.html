@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 12/09/25</title>
+  <title>📰 Cybersecurity Newsfeed - 15/09/25</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; color: #c9a227; }
@@ -16,42 +16,37 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 12/09/25</h2>
+  <h2>📅 15/09/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li>Apple CarPlay zero-click RCE (CVE-2025-24132) remains largely unpatched across auto industry; exploit via USB/Wi-Fi/Bluetooth abusing iAP2 <a href="https://www.darkreading.com/vulnerabilities-threats/apple-carplay-rce-exploit" target="_blank">More info</a></li>
-    <li>CISA adds DELMIA Apriso deserialization RCE (CVE-2025-5086) to KEV; active attacks via FlexNetOperationsService endpoint <a href="https://www.cisa.gov/news-events/alerts/2025/09/11/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">More info</a></li>
-    <li>VMScape (CVE-2025-40300): Spectre-like cross-VM leak of QEMU memory on AMD Zen/Intel Coffee Lake; mitigations with IBPB on VMEXIT <a href="https://www.bleepingcomputer.com/news/security/new-vmscape-attack-breaks-guest-host-isolation-on-amd-intel-cpus/" target="_blank">More info</a></li>
-    <li>Chrome 140 patches critical ServiceWorker UAF (CVE-2025-10200) and Mojo bug (CVE-2025-10201); updates rolling out on all platforms <a href="https://securityaffairs.com/182107/security/google-fixes-critical-chrome-flaw-researcher-earns-43k.html" target="_blank">More info</a></li>
-    <li>Adobe fixes “SessionReaper” (CVE-2025-54236) in Commerce/Magento enabling ATO and unauth RCE via REST API; urgent patching urged <a href="https://securityaffairs.com/182075/security/critical-flaw-sessionreaper-in-commerce-and-magento-platforms-lets-attackers-hijack-customer-accounts.html" target="_blank">More info</a></li>
+    <li>Samsung patches Quramsoft image parsing RCE (CVE-2025-21043) exploited via malicious images; zero-click risk on Android <a href="https://hackread.com/samsung-android-image-parsing-vulnerability-attacks/" target="_blank">More info</a></li>
+    <li>Cursor editor flaw allows .vscode/tasks.json auto-execution with Workspace Trust off; enables supply-chain malware <a href="https://www.zdnet.com/article/this-critical-cursor-security-flaw-could-expose-your-code-to-malware-how-to-fix-it/" target="_blank">More info</a></li>
+    <li>CISA adds DELMIA Apriso RCE (CVE-2025-5086) to KEV; exploited via malicious SOAP deserialization <a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-actively-exploited-dassault-rce-vulnerability/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li>VoidProxy PhaaS enables AiTM phishing to hijack Microsoft/Google accounts, stealing creds, MFA codes, and session cookies <a href="https://www.theregister.com/2025/09/11/voidproxy_phishing_service/" target="_blank">More info</a></li>
-    <li>Apple & CERT-FR: four 2025 spyware waves targeting iPhone users; latest chained CVE-2025-43300 with WhatsApp CVE-2025-55177 <a href="https://www.bleepingcomputer.com/news/security/apple-warns-customers-targeted-in-recent-spyware-attacks/" target="_blank">More info</a></li>
-    <li>Fake “Meta Verified”/AI extensions steal Facebook & Instagram accounts; malvertising + Chrome Web Store abuse observed <a href="https://thehackernews.com/2025/09/fake-madgicx-plus-and-socialmetrics.html" target="_blank">More info</a></li>
-    <li>Akira ransomware exploits old SonicWall flaw (CVE-2024-40766) and misconfigs to breach networks; SonicWall notes no new 0-day <a href="https://securityaffairs.com/182112/cyber-crime/akira-ransomware-exploits-year-old-sonicwall-flaw-with-multiple-vectors.html" target="_blank">More info</a></li>
-    <li>FastNetMon mitigates 1.5 Bpps UDP DDoS from IoT/MikroTik swarms targeting a European scrubbing provider <a href="https://www.bleepingcomputer.com/news/security/ddos-defender-targeted-in-15-bpps-denial-of-service-attack/" target="_blank">More info</a></li>
+    <li>UNC6040 & UNC6395 breach Salesforce using fake OAuth apps and stolen Drift tokens; link to ShinyHunters/Lapsus$ <a href="https://www.bleepingcomputer.com/news/security/fbi-warns-of-unc6040-unc6395-hackers-stealing-salesforce-data/" target="_blank">More info</a></li>
+    <li>VoidProxy PhaaS uses AiTM to steal Microsoft/Google credentials, MFA codes, and cookies <a href="https://www.bleepingcomputer.com/news/security/new-voidproxy-phishing-service-targets-microsoft-365-google-accounts/" target="_blank">More info</a></li>
+    <li>WhiteCobra plants 24 malicious VSCode/Cursor/Windsurf extensions with LummaStealer; crypto wallet thefts reported <a href="https://www.bleepingcomputer.com/news/security/whitecobra-floods-vscode-market-with-crypto-stealing-extensions/" target="_blank">More info</a></li>
+    <li>Enlace Hacktivista leaks 600 GB of Great Firewall code/logs from Geedge Networks & MESA Lab <a href="https://hackread.com/great-firewall-of-china-data-published-largest-leak/" target="_blank">More info</a></li>
+    <li>Qrator blocks 5.76M-device IoT botnet DDoS, peaking at record L7 scale; Brazil, US, Vietnam major sources <a href="https://hackread.com/qrator-labs-mitigate-l7-ddos-attack-5-76m-botnet/" target="_blank">More info</a></li>
+    <li>HybridPetya ransomware bypasses UEFI Secure Boot (CVE-2024-7344), encrypts MFT using Salsa20 <a href="https://securityaffairs.com/182149/malware/hybridpetya-ransomware-bypasses-uefi-secure-boot-echoing-petya-notpetya.html" target="_blank">More info</a></li>
+    <li>SEO poisoning campaign delivers Hiddengh0st RAT and Winos stealer to Chinese-speaking Windows users <a href="https://hackread.com/seo-poisoning-attack-windows-hiddengh0st-winos-malware/" target="_blank">More info</a></li>
+    <li>Scattered Lapsus$ Hunters announce shutdown after JLR/Salesforce breaches; experts suspect regrouping <a href="https://hackread.com/scattered-lapsus-hunters-hacker-group-shutdown/" target="_blank">More info</a></li>
+    <li>Trend Micro warns of EvilAI, malware disguised as AI tools with valid signatures, using AES C2 and Node.js payloads <a href="https://www.trendmicro.com/en_us/research/25/i/evilai.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li>Vidar infostealer resurges with heavy obfuscation, AMSI bypasses, LOLBins, and browser API hooks for stealthy credential theft <a href="https://www.darkreading.com/endpoint-security/vidar-infostealer-back-with-vengeance" target="_blank">More info</a></li>
-    <li>Attackers abuse Google AppSheet to send phish from trusted @appsheet.com, evading SPF/DKIM/DMARC with legit infrastructure <a href="https://hackread.com/google-appsheet-phishing-scam-fake-trademark-notices/" target="_blank">More info</a></li>
+    <li>15 ransomware groups including Lapsus$/Scattered Spider announce “retirement”; experts suspect rebrandings <a href="https://www.theregister.com/2025/09/14/in_brief_infosec/" target="_blank">More info</a></li>
+    <li>Cofense: “dual-threat” campaigns mix phishing and malware (Muck Stealer, ConnectWise RAT, SimpleHelp RAT) <a href="https://hackread.com/muck-stealer-malware-phishing-new-attack-waves/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📁 Breaches & Leaks</h2>
   <ul>
-    <li>UK rail operator LNER: third-party breach exposed customer contact details & journey histories; phishing risk flagged <a href="https://hackread.com/uk-rail-operator-lner-cyber-attack-passenger-data/" target="_blank">More info</a></li>
-    <li>Panama MEF incident: ministry says contained, but INC Ransom claims 1.5 TB exfiltration incl. emails and budgeting docs <a href="https://www.bleepingcomputer.com/news/security/panama-ministry-of-economy-discloses-breach-claimed-by-inc-ransomware/" target="_blank">More info</a></li>
-  </ul>
-
-  <h2>🗃️ Others</h2>
-  <ul>
-    <li>“Bulletproof” host Stark Industries rebrands as the[.]hosting under WorkTitans BV to skirt EU sanctions; infrastructure persists <a href="https://krebsonsecurity.com/2025/09/bulletproof-host-stark-industries-evades-eu-sanctions/" target="_blank">More info</a></li>
-    <li>Microsoft to add malicious link warnings in Teams private chats; preview Sept, GA in Nov, on by default <a href="https://www.bleepingcomputer.com/news/security/microsoft-adds-malicious-link-warnings-to-teams-private-chats/" target="_blank">More info</a></li>
+    <li>Vietnam’s National Credit Information Center breached by ShinyHunters; data tied to major banks stolen <a href="https://securityaffairs.com/182189/cyber-crime/shinyhunters-attack-national-credit-information-center-of-vietnam.html" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
