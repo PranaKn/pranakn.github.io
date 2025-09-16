@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 16/09/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 16/09/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>Rowhammer “Phoenix” attacks on DDR5 bypass TRR/ECC; privilege escalation demo on AMD Zen + SK Hynix <a href="https://security.googleblog.com/2025/09/supporting-rowhammer-research-to.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>LLM coding assistants like Copilot pose risks: backdoors, prompt injection, LLMJacking credential theft <a href="https://unit42.paloaltonetworks.com/code-assistant-llms/" target="_blank">More info</a></li>
+    <li>Akira used plaintext Huntress recovery codes to bypass MFA, disable protections, and persist on endpoints <a href="https://www.theregister.com/2025/09/15/ransomware_recovery_codes_plaintext/" target="_blank">More info</a></li>
+    <li>Mustang Panda uses updated TONESHELL8/9 and SnakeDisk USB worm targeting Thailand for Yokai backdoor installs <a href="https://thehackernews.com/2025/09/mustang-panda-deploys-snakedisk-usb.html" target="_blank">More info</a></li>
+    <li>SEO poisoning campaign drops Hiddengh0st and Winos trojans via fake sites and trojanized installers <a href="https://www.infosecurity-magazine.com/news/seo-poisoning-targets-china/" target="_blank">More info</a></li>
+    <li>UN warns scam syndicates relocating to Timor-Leste; Micron gets $3.63B for AI DRAM; China probes US chips <a href="https://www.theregister.com/2025/09/15/asia_tech_news_roundup/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>Villager AI pentest tool from Cyberspike downloaded 10k+ times; automates recon, exploits, evasion <a href="https://hackread.com/china-ai-pentest-tool-villager-10k-downloads/" target="_blank">More info</a></li>
+    <li>Czechia warns of high cyber espionage risk from China & Russia, citing PRC intelligence laws <a href="https://www.cysecurity.news/2025/09/czechia-warns-of-chinese-data-transfers.html" target="_blank">More info</a></li>
+    <li>Phishing now drops RMM tools (Atera, PDQ, SimpleHelp) instead of malware; fake updates and IRS forms used <a href="https://hackread.com/hackers-rmm-installs-fake-chrome-updates-teams-invite/" target="_blank">More info</a></li>
+    <li>Browser-based attacks surge: ClickFix, OAuth consent abuse, MFA gaps, malicious extensions, and phishing <a href="https://thehackernews.com/2025/09/6-browser-based-attacks-security-teams.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li>FinWise Bank insider breach affects 689k people via ex-employee with AFF data access <a href="https://www.securityweek.com/689000-affected-by-insider-breach-at-finwise-bank/" target="_blank">More info</a></li>
+    <li>KillSec hits Brazil’s MedicSolution, leaking 34GB of patient data from exposed AWS S3 buckets <a href="https://www.darkreading.com/cyberattacks-data-breaches/killsec-ransomware-brazil-healthcare-software-provider" target="_blank">More info</a></li>
+    <li>Fake account created in Google’s LERS law enforcement portal; no data accessed; linked to Lapsus$/ShinyHunters <a href="https://www.bleepingcomputer.com/news/security/google-confirms-fraudulent-account-created-in-law-enforcement-portal/" target="_blank">More info</a></li>
+    <li>Kering confirms breach hitting Gucci, Balenciaga, McQueen customers; 7.4M emails stolen by ShinyHunters <a href="https://securityaffairs.com/182236/cyber-crime/hackers-steal-millions-of-gucci-balenciaga-and-alexander-mcqueen-customer-records.html" target="_blank">More info</a></li>
+    <li>Rust developers hit by phishing via fake GitHub login at github.rustfoundation.dev <a href="https://www.helpnetsecurity.com/2025/09/15/phishing-campaign-targets-rust-developers/" target="_blank">More info</a></li>
+    <li>Panama MEF confirms malware incident; INC Ransom claims 1.5TB data theft <a href="https://securityaffairs.com/182203/data-breach/panamas-ministry-of-economy-and-finance-data-breach.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🧰 Tools</h2>
+  <ul>
+    <li>Arkime: open-source large-scale PCAP platform with Capture, Viewer, and OpenSearch integration <a href="https://github.com/arkime/arkime" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
