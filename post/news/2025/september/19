@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 19/09/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 19/09/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>Chrome 140.0.7339.185/.186 patches 4 flaws incl. actively exploited zero-day CVE-2025-10585 (V8 type confusion) <a href="https://www.malwarebytes.com/blog/news/2025/09/update-your-chrome-today-google-patches-4-vulnerabilities-including-one-zero-day" target="_blank">More info</a></li>
+    <li>ShadowLeak zero-click attack on ChatGPT’s Deep Research agent exfiltrated Gmail/Drive/Teams/GitHub data; patched in Aug <a href="https://securityaffairs.com/182334/hacking/shadowleak-radware-uncovers-zero-click-attack-on-chatgpt.html" target="_blank">More info</a></li>
+    <li>WatchGuard fixes critical RCE (CVE-2025-9242) in Fireware OS affecting Firebox VPN; admins urged to patch or apply workarounds <a href="https://www.bleepingcomputer.com/news/security/watchguard-warns-of-critical-vulnerability-in-firebox-firewalls/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>CountLoader malware loader used by LockBit, Black Basta, and Qilin to deliver Cobalt Strike, AdaptixC2, and PureHVNC RAT <a href="https://thehackernews.com/2025/09/countloader-broadens-russian-ransomware.html" target="_blank">More info</a></li>
+    <li>South Korea busts $3.8B Cambodia-based illicit casino network, arrests 10, repatriates 49 fugitives from Philippines <a href="https://www.cysecurity.news/2025/09/south-korea-intensifies-crackdown-with.html" target="_blank">More info</a></li>
+    <li>Two malicious PyPI packages (sisaws, secmeasure) dropped SilentSync RAT; exfiltrated credentials and persisted cross-platform <a href="https://thehackernews.com/2025/09/silentsync-rat-delivered-via-two.html" target="_blank">More info</a></li>
+    <li>China’s TA415 (APT41) spoofed Rep. Moolenaar & US-China Business Council to phish trade policy experts with WhirlCoil loader <a href="https://www.theregister.com/2025/09/18/pandamonium_chinabacked_attackers_spoof_congressman/" target="_blank">More info</a></li>
+    <li>Vane Viper malvertising network tied to PropellerAds/AdTech Holding pushes malware & scams via 60K domains and 1T DNS queries <a href="https://hackread.com/vane-viper-malvertising-adtech-global-scams/" target="_blank">More info</a></li>
+    <li>CopyCop (Storm-1516) disinfo network relaunched with 200+ AI news sites using Llama 3 to target global elections <a href="https://www.theregister.com/2025/09/18/russian_fakenews_network/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>Attackers abuse gaming platforms: Endgame Gear mouse utility infected with XRed backdoor; Steam games and Minecraft skins spread infostealers <a href="https://www.kaspersky.com/blog/gamer-malware-endgame-gear-steam-minecraft/54336/" target="_blank">More info</a></li>
+    <li>RevengeHotels (TA558) adds VenomRAT with AI-generated JS/PowerShell loaders to steal hotel guest credit card data <a href="https://www.securityweek.com/threat-actor-infests-hotels-with-new-rat/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li>New York Blood Center breach exposes data of 194K people incl. SSNs, IDs, banking, health records, and test results <a href="https://www.infosecurity-magazine.com/news/new-york-blood-center-data-breach/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🗃️ Others</h2>
+  <ul>
+    <li>SystemBC proxy botnet uses 1,500+ infected VPS servers daily (80% of REM Proxy’s fleet) to hide C2 and power brute-force campaigns <a href="https://www.bleepingcomputer.com/news/security/systembc-malware-turns-infected-vps-systems-into-proxy-highway/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🧪 Tools</h2>
+  <ul>
+    <li>thermoptic: Chrome-driven HTTP stealth proxy that perfectly mimics Chrome traffic to evade JA3/JA4+ fingerprinting <a href="https://www.darknet.org.uk/2025/09/thermoptic-chrome-perfect-http-fingerprint-cloaking-for-red-team-web-ops/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🔍 Hunting</h2>
+  <ul>
+    <li>CISA shares YARA/SIGMA for Ivanti EPMM CVE-2025-4427/4428 post-exploitation chains using JAR loaders & Tomcat web listeners <a href="https://www.cisa.gov/news-events/analysis-reports/ar25-261a" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
