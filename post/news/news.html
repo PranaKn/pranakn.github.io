@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 19/09/25</title>
+  <title>📰 Cybersecurity Newsfeed - 22/09/25</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; color: #c9a227; }
@@ -16,49 +16,39 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 19/09/25</h2>
+  <h2>📅 22/09/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li>Chrome 140.0.7339.185/.186 patches 4 flaws incl. actively exploited zero-day CVE-2025-10585 (V8 type confusion) <a href="https://www.malwarebytes.com/blog/news/2025/09/update-your-chrome-today-google-patches-4-vulnerabilities-including-one-zero-day" target="_blank">More info</a></li>
-    <li>ShadowLeak zero-click attack on ChatGPT’s Deep Research agent exfiltrated Gmail/Drive/Teams/GitHub data; patched in Aug <a href="https://securityaffairs.com/182334/hacking/shadowleak-radware-uncovers-zero-click-attack-on-chatgpt.html" target="_blank">More info</a></li>
-    <li>WatchGuard fixes critical RCE (CVE-2025-9242) in Fireware OS affecting Firebox VPN; admins urged to patch or apply workarounds <a href="https://www.bleepingcomputer.com/news/security/watchguard-warns-of-critical-vulnerability-in-firebox-firewalls/" target="_blank">More info</a></li>
+    <li>Entra ID: legacy “actor tokens” + Azure AD Graph flaw (CVE-2025-55241) let attackers impersonate users & obtain Global Admin; tokens bypass CA and leave no issuance logs <a href="https://www.bleepingcomputer.com/news/security/microsoft-entra-id-flaw-allowed-hijacking-any-companys-tenant/" target="_blank">More info</a></li>
+    <li>ShadowLeak: zero-click prompt-injection in ChatGPT Deep Research could exfiltrate Gmail/connector data from OpenAI cloud via hidden HTML/CSS; patched in Aug <a href="https://thehackernews.com/2025/09/shadowleak-zero-click-flaw-leaks-gmail.html" target="_blank">More info</a></li>
+    <li>GoAnywhere MFT: CVE-2025-10035 (CVSS 10) deserialization in License Servlet enables RCE; upgrade to 7.8.4 / 7.6.3 and restrict Admin Console exposure <a href="https://securityaffairs.com/182351/security/fortra-addressed-a-maximum-severity-flaw-in-goanywhere-mft-software.html" target="_blank">More info</a></li>
+    <li>CISA details malware used in Ivanti EPMM zero-days (CVE-2025-4427/4428); loaders/web listeners execute code & steal LDAP creds; IOCs + YARA/SIGMA provided <a href="https://www.bleepingcomputer.com/news/security/cisa-exposes-malware-kits-deployed-in-ivanti-epmm-attacks/" target="_blank">More info</a></li>
+    <li>WatchGuard Fireware iked: CVE-2025-9242 OOB write → unauth RCE on Firebox (many T/M/Cloud models); fixes in 12.3.1_U3, 12.5.13, 12.11.4, 2025.1.1 <a href="https://hackread.com/watchguard-fix-for-firebox-firewall-vulnerability/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li>CountLoader malware loader used by LockBit, Black Basta, and Qilin to deliver Cobalt Strike, AdaptixC2, and PureHVNC RAT <a href="https://thehackernews.com/2025/09/countloader-broadens-russian-ransomware.html" target="_blank">More info</a></li>
-    <li>South Korea busts $3.8B Cambodia-based illicit casino network, arrests 10, repatriates 49 fugitives from Philippines <a href="https://www.cysecurity.news/2025/09/south-korea-intensifies-crackdown-with.html" target="_blank">More info</a></li>
-    <li>Two malicious PyPI packages (sisaws, secmeasure) dropped SilentSync RAT; exfiltrated credentials and persisted cross-platform <a href="https://thehackernews.com/2025/09/silentsync-rat-delivered-via-two.html" target="_blank">More info</a></li>
-    <li>China’s TA415 (APT41) spoofed Rep. Moolenaar & US-China Business Council to phish trade policy experts with WhirlCoil loader <a href="https://www.theregister.com/2025/09/18/pandamonium_chinabacked_attackers_spoof_congressman/" target="_blank">More info</a></li>
-    <li>Vane Viper malvertising network tied to PropellerAds/AdTech Holding pushes malware & scams via 60K domains and 1T DNS queries <a href="https://hackread.com/vane-viper-malvertising-adtech-global-scams/" target="_blank">More info</a></li>
-    <li>CopyCop (Storm-1516) disinfo network relaunched with 200+ AI news sites using Llama 3 to target global elections <a href="https://www.theregister.com/2025/09/18/russian_fakenews_network/" target="_blank">More info</a></li>
+    <li>ESET: Gamaredon + Turla collaborated in Ukraine—noisy footholds handed to Turla’s Kazuar implants; first technical link between the groups <a href="https://securityaffairs.com/182404/apt/eset-uncovers-gamaredon-turla-collaboration-in-ukraine-cyberattacks.html" target="_blank">More info</a></li>
+    <li>DPRK’s Contagious Interview pivots: ClickFix job lures now drop BeaverTail (stealer) & InvisibleFerret (backdoor) via cross-platform binaries; broader targeting beyond dev roles <a href="https://thehackernews.com/2025/09/dprk-hackers-use-clickfix-to-deliver.html" target="_blank">More info</a></li>
+    <li>MalTerminal: early LLM-enabled Windows malware using (deprecated) OpenAI API to generate ransomware/reverse shells on the fly; part of emerging LLM-embedded threat class <a href="https://thehackernews.com/2025/09/researchers-uncover-gpt-4-powered.html" target="_blank">More info</a></li>
+    <li>“ForgeCraft” ring sold 6,500+ fake US/CA IDs to 4,500 buyers; high-quality holograms/UV, covert shipping; ~$785K revenue traced to operator in Xiamen, China <a href="https://hackread.com/chinese-network-ofake-us-canadian-ids/" target="_blank">More info</a></li>
+    <li>UNC1549/Subtle Snail: LinkedIn-themed phishing hit 11 telecoms (34 devices) with MINIBIKE backdoor (Azure-proxied C2); MuddyWater also shifts to bespoke tools suite <a href="https://thehackernews.com/2025/09/unc1549-hacks-34-devices-in-11-telecom.html" target="_blank">More info</a></li>
+    <li>Picus Blue Report: ransomware prevention efficacy dropped (overall 62%; exfil prevention 3%); many families routinely bypass controls; calls for continuous BAS <a href="https://www.bleepingcomputer.com/news/security/known-emerging-unstoppable-ransomware-attacks-still-evade-defenses/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li>Attackers abuse gaming platforms: Endgame Gear mouse utility infected with XRed backdoor; Steam games and Minecraft skins spread infostealers <a href="https://www.kaspersky.com/blog/gamer-malware-endgame-gear-steam-minecraft/54336/" target="_blank">More info</a></li>
-    <li>RevengeHotels (TA558) adds VenomRAT with AI-generated JS/PowerShell loaders to steal hotel guest credit card data <a href="https://www.securityweek.com/threat-actor-infests-hotels-with-new-rat/" target="_blank">More info</a></li>
+    <li>Fake GitHub repos push Atomic Stealer to macOS users via SEO + ClickFix-style Terminal prompts; brands spoofed include LastPass/1Password/Dropbox/etc. <a href="https://thehackernews.com/2025/09/lastpass-warns-of-fake-repositories.html" target="_blank">More info</a></li>
+    <li>PhaaS platforms Lucid & Lighthouse power 17,500+ phishing domains targeting 316 brands across 74 countries; advanced smishing & geo/user-agent targeting <a href="https://thehackernews.com/2025/09/17500-phishing-domains-target-316.html" target="_blank">More info</a></li>
+    <li>Attackers abuse AI site builders (Vercel/Lovable/Netlify) to host fake CAPTCHA gates that cloak phishing redirects; dozens of cases since Jan 2025 <a href="https://www.infosecurity-magazine.com/news/attackers-abuse-ai-fake-captchas/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📁 Breaches & Leaks</h2>
   <ul>
-    <li>New York Blood Center breach exposes data of 194K people incl. SSNs, IDs, banking, health records, and test results <a href="https://www.infosecurity-magazine.com/news/new-york-blood-center-data-breach/" target="_blank">More info</a></li>
-  </ul>
-
-  <h2>🗃️ Others</h2>
-  <ul>
-    <li>SystemBC proxy botnet uses 1,500+ infected VPS servers daily (80% of REM Proxy’s fleet) to hide C2 and power brute-force campaigns <a href="https://www.bleepingcomputer.com/news/security/systembc-malware-turns-infected-vps-systems-into-proxy-highway/" target="_blank">More info</a></li>
-  </ul>
-
-  <h2>🧪 Tools</h2>
-  <ul>
-    <li>thermoptic: Chrome-driven HTTP stealth proxy that perfectly mimics Chrome traffic to evade JA3/JA4+ fingerprinting <a href="https://www.darknet.org.uk/2025/09/thermoptic-chrome-perfect-http-fingerprint-cloaking-for-red-team-web-ops/" target="_blank">More info</a></li>
-  </ul>
-
-  <h2>🔍 Hunting</h2>
-  <ul>
-    <li>CISA shares YARA/SIGMA for Ivanti EPMM CVE-2025-4427/4428 post-exploitation chains using JAR loaders & Tomcat web listeners <a href="https://www.cisa.gov/news-events/analysis-reports/ar25-261a" target="_blank">More info</a></li>
+    <li>Collins Aerospace check-in outage disrupts airports in Berlin/Brussels/London; manual ops & widespread cancellations; safety/ATC unaffected; cause under probe <a href="https://www.securityweek.com/airport-cyberattack-disrupts-more-flights-across-europe/" target="_blank">More info</a></li>
+    <li>500GB Great Firewall trove (Geedge Networks + MESA Lab) leaks DPI/VPN detection code & export records to Myanmar/Pakistan/Ethiopia/Kazakhstan <a href="https://www.cysecurity.news/2025/09/500gb-leak-marks-largest-exposure-of.html" target="_blank">More info</a></li>
+    <li>Canada RCMP shuts down TradeOgre exchange; seizes $40M+ crypto in landmark takedown of privacy-focused, no-KYC platform <a href="https://www.bleepingcomputer.com/news/security/canada-dismantles-tradeogre-exchange-seizes-40-million-in-crypto/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
