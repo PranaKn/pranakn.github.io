@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 23/09/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 23/09/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>VMScape (CVE-2025-40300): Spectre v2–style escape reads host memory from a VM (~32 B/s on Zen4); patched in Linux; limited risk on SEV/TDX-enabled clouds <a href="https://www.kaspersky.com/blog/vmscape-spectre-attack/54377/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>FBI IC3 impersonation: spoofed “ic3” sites harvest victim PII/financial data; report fraud only via <a href="http://www.ic3.gov" target="_blank">ic3.gov</a> <a href="https://www.malwarebytes.com/blog/news/2025/09/scammers-are-impersonating-the-fbi-to-steal-your-personal-data" target="_blank">More info</a></li>
+    <li>Operation Rewrite: Chinese actor (CL-UNK-1037) uses BadIIS IIS module to poison SEO, hijack servers, and exfiltrate code; overlaps with GhostRedirector/Gamshen <a href="https://thehackernews.com/2025/09/badiis-malware-spreads-via-seo.html" target="_blank">More info</a> | <a href="https://unit42.paloaltonetworks.com/operation-rewrite-seo-poisoning-campaign/" target="_blank">Unit 42</a></li>
+    <li>Iran-linked Nimbus Manticore expands to Western Europe (defense/telecom/aviation); MiniJunk backdoor & MiniBrowse stealer use forged code-signed certs <a href="https://www.darkreading.com/cyberattacks-data-breaches/iran-linked-hackers-europe-new-malware" target="_blank">More info</a></li>
+    <li>Mac SEO poison: fake GitHub repos push Atomic/AMOS via terminal commands; Cookie Spider linked via SHAMOS variant <a href="https://www.darkreading.com/application-security/attackers-phony-github-pages-mac-malware" target="_blank">More info</a></li>
+    <li>CountLoader: .NET/PowerShell/JScript loader used by LockBit/BlackBasta/Qilin; lures as “Ukrainian police” PDFs; tracks to RU cybercrime infra <a href="https://hackread.com/fake-ukrainian-police-emails-countloader-malware-loader/" target="_blank">More info</a></li>
+    <li>FastNetMon blocks 1.5B pps UDP DDoS from IoT/MikroTik across 11k+ networks targeting EU scrubbing provider <a href="https://www.cysecurity.news/2025/09/fastnetmon-mitigates-15-billion-pps.html" target="_blank">More info</a></li>
+    <li>MalTerminal: earliest LLM-enabled malware dynamically generates payloads via GPT-4; related PoCs (PromptLock, LAMEHUG) show LLM-embedded threats <a href="https://securityaffairs.com/182433/malware/researchers-expose-malterminal-an-llm-enabled-malware-pioneer.html" target="_blank">More info</a></li>
+    <li>Steam game “BlockBlasters” weaponized with cryptodrainer/StealC; >$150k stolen incl. $32k from streamer during charity event <a href="https://www.bleepingcomputer.com/news/security/verified-steam-game-steals-streamers-cancer-treatment-donations/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>AT&T CISO: attackers mimic Salt Typhoon—target EDR “blind spots,” missing logs, and LOTL tooling; defenders must rethink coverage & telemetry <a href="https://cyberscoop.com/telecom-exec-salt-typhoon-inspiring-other-hackers-to-use-unconventional-techniques/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li>Stellantis third-party incident exposed customer contact data; ShinyHunters claimed responsibility; phishing risk flagged <a href="https://www.infosecurity-magazine.com/news/stellantis-confims-third-party/" target="_blank">More info</a></li>
+    <li>American Archive of Public Broadcasting fixed long-standing IDOR enabling unauthorized downloads of restricted media <a href="https://www.bleepingcomputer.com/news/security/american-archive-of-public-broadcasting-fixes-bug-exposing-restricted-media/" target="_blank">More info</a></li>
+    <li>Collins Aerospace attack disrupted airport check-ins across Europe (Heathrow/Brussels/Berlin/Dublin); highlights aviation supply-chain risk <a href="https://www.itsecurityguru.org/2025/09/22/european-airports-disrupted-by-supply-chain-cyberattack/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🗃️ Others</h2>
+  <ul>
+    <li>EDR-Freeze PoC abuses Windows Error Reporting to suspend AV/EDR from user mode (no vuln driver); monitor WER against security PIDs <a href="https://www.bleepingcomputer.com/news/security/new-edr-freeze-tool-uses-windows-wer-to-suspend-security-software/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
