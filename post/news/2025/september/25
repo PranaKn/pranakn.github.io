@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 25/09/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 25/09/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>Supermicro BMC flaws (CVE-2025-7937 & CVE-2025-6198) allow persistent firmware backdoors; patches released, PoCs public <a href="https://www.bleepingcomputer.com/news/security/new-supermicro-bmc-flaws-can-create-persistent-backdoors/" target="_blank">More info</a></li>
+    <li>Cisco IOS/IOS XE zero-day (CVE-2025-20352) in SNMP exploited; DoS → root on IOS XE; restrict SNMP & patch ASAP <a href="https://www.bleepingcomputer.com/news/security/cisco-warns-of-ios-zero-day-vulnerability-exploited-in-attacks/" target="_blank">More info</a></li>
+    <li>OxygenOS (OnePlus) flaw (CVE-2025-10184) lets any app read SMS via unsecured content providers; avoid SMS 2FA until fixed <a href="https://www.bleepingcomputer.com/news/security/unpatched-flaw-in-oneplus-phones-lets-rogue-apps-text-messages/" target="_blank">More info</a></li>
+    <li>Lovense API bugs leaked real emails & enabled passwordless ATO; years of reports ignored until public disclosure forced fixes <a href="https://www.kaspersky.com/blog/lovense-vulnerabilities-exposed/54400/" target="_blank">More info</a></li>
+    <li>Libraesva ESG 0-day (CVE-2025-59689) actively exploited via crafted compressed attachments; fixes auto-deployed on 5.x <a href="https://www.helpnetsecurity.com/2025/09/24/libraesva-esg-vulnerability-cve-2025-59689-exploited/" target="_blank">More info</a></li>
+    <li>CISA: GeoServer RCE (CVE-2024-36401) used to breach US agency in 2024; China Chopper, cron, brute force, Stowaway proxy observed <a href="https://www.securityweek.com/geoserver-flaw-exploited-in-us-federal-agency-hack/" target="_blank">More info</a></li>
+    <li>CVE-2025-10585 (Chromium V8 type confusion) added to CISA KEV; update Chrome/Chromium browsers immediately <a href="https://www.cisa.gov/news-events/alerts/2025/09/23/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>Pandoc SSRF (CVE-2025-51591) exploited to probe AWS IMDS; enforce IMDSv2 & sanitize inputs <a href="https://thehackernews.com/2025/09/hackers-exploit-pandoc-cve-2025-51591.html" target="_blank">More info</a></li>
+    <li>Bookworm RAT linked to China-aligned Stately Taurus via Unit 42’s attribution framework (infra, PDBs, TTP overlap) <a href="https://unit42.paloaltonetworks.com/bookworm-to-stately-taurus/" target="_blank">More info</a></li>
+    <li>RedNovember (Storm-2077): Chinese actor exploiting perimeter device bugs to hit defense/aerospace/gov globally <a href="https://thehackernews.com/2025/09/chinese-hackers-rednovember-target.html" target="_blank">More info</a></li>
+    <li>UNC5221 targets US legal/SaaS/BPO/tech with BRICKSTORM backdoor; stealth via memory-only servlet filters & long dwell time <a href="https://thehackernews.com/2025/09/unc5221-uses-brickstorm-backdoor-to.html" target="_blank">More info</a></li>
+    <li>Obscura ransomware spreads via NETLOGON GPO replication; kills 120+ processes, uses Curve25519 + XChaCha20 <a href="https://www.bleepingcomputer.com/news/security/obscura-an-obscure-new-ransomware-variant/" target="_blank">More info</a></li>
+    <li>npm “fezbox” used steganographic QR codes to fetch cookie-stealing malware; removed after 300+ downloads <a href="https://www.darkreading.com/application-security/npm-package-malware-stenographic-qr-codes" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>PSF warns of PyPI phishing via fake domains (pypi-mirror[.]org, pypj[.]org); enable phishing-resistant 2FA, reset creds if clicked <a href="https://www.bleepingcomputer.com/news/security/pypi-urges-users-to-reset-credentials-after-new-phishing-attacks/" target="_blank">More info</a></li>
+    <li>GitHub notifications abused to push fake Y Combinator invites; drainer site tricked users into signing wallet-drain txns <a href="https://www.bleepingcomputer.com/news/security/github-notifications-abused-to-impersonate-y-combinator-for-crypto-theft/" target="_blank">More info</a></li>
+    <li>Ransomware enters “machine-speed” era: sub-30-minute attacks, AI-boosted quad-extortion; zero-trust + AI-driven detection urged <a href="https://www.paloaltonetworks.com/blog/2025/09/ransomware-speed-crisis/" target="_blank">More info</a></li>
+    <li>Bugcrowd: hardware vulns up 88%, API issues +10%; broken access control leads, payouts for criticals +32% <a href="https://www.helpnetsecurity.com/2025/09/24/api-hardware-vulnerabilities-attack/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li>Boyd Gaming (28 casinos, 16k staff) discloses data breach; operations unaffected, regulators & individuals notified <a href="https://www.bleepingcomputer.com/news/security/boyd-gaming-discloses-data-breach-after-suffering-a-cyberattack/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🗃️ Others</h2>
+  <ul>
+    <li>UK NCA arrests suspect over Collins Aerospace MUSE ransomware that disrupted European airports; Hardbit/Loki suspected <a href="https://www.bleepingcomputer.com/news/security/uk-arrests-suspect-for-rtx-ransomware-attack-causing-airport-disruptions/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
