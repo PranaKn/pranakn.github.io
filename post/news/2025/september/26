@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cybersecurity Newsfeed – September 26, 2025</title>
+  <style>
+    body { background-color: #121212; color: #e0e0e0; font-family: Arial, sans-serif; margin: 20px; }
+    h1 { color: #90caf9; border-bottom: 2px solid #90caf9; padding-bottom: 5px; }
+    h2 { color: #ffcc80; margin-top: 30px; }
+    p { line-height: 1.6; }
+    a { color: #80cbc4; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .section { margin-bottom: 40px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed – September 26, 2025</h1>
+
+  <div class="section">
+    <h2>Vulnerabilities</h2>
+    <p><strong>CISA Emergency Directive 25-03</strong> orders U.S. agencies to patch Cisco ASA and Firepower zero-days (CVE-2025-20333, CVE-2025-20362) enabling RCE and ROM persistence. Linked to ArcaneDoor (UAT4356/STORM-1849). Agencies must patch by Sept 26 and disconnect EoS units by Sept 30. UK NCSC reports LINE VIPER and RayInitiator malware on 5500-X devices. Cisco also patched CVE-2025-20363. <a href="https://www.bleepingcomputer.com/news/security/cisa-orders-agencies-to-patch-cisco-flaws-exploited-in-zero-day-attacks/">Read more</a></p>
+    <p><strong>ForcedLeak in Salesforce Agentforce</strong> (CVSS 9.4) let attackers inject malicious code via Web-to-Lead, exfiltrating CRM records. Abuse included an expired trusted Salesforce domain. Salesforce patched with Trusted URL enforcement. <a href="https://hackread.com/forcedleak-salesforce-agentforce-ai-agent-crm-data/">Read more</a></p>
+  </div>
+
+  <div class="section">
+    <h2>Adversaries</h2>
+    <p><strong>XCSSET macOS malware</strong> variant steals Firefox data, hijacks clipboards, and persists via LaunchDaemon entries and fake System Settings apps. Spreads through infected Xcode projects. <a href="https://www.bleepingcomputer.com/news/security/microsoft-warns-of-new-xcsset-macos-malware-variant-targeting-xcode-devs/">Read more</a></p>
+    <p><strong>Malicious npm package postmark-mcp</strong> silently exfiltrated emails by BCC’ing to attacker domain. Affected ~1,500 downloads in a week. <a href="https://www.bleepingcomputer.com/news/security/unofficial-postmark-mcp-npm-silently-stole-users-emails/">Read more</a></p>
+    <p><strong>North Korea’s DeceptiveDevelopment</strong> now uses Lazarus-linked malware Tropidoor and TsunamiKit alongside BeaverTail and InvisibleFerret, targeting developers and cryptocurrency projects. <a href="https://www.theregister.com/2025/09/25/lazarus_group_shares_malware_with_it_scammers/">Read more</a></p>
+    <p><strong>Vietnam-linked Lone None</strong> runs phishing with fake copyright notices, deploying Pure Logs and Lone None Stealer to hijack credentials and wallets, using Telegram C2. <a href="https://hackread.com/vietnamese-hackers-fake-copyright-notice-lone-none-stealer/">Read more</a></p>
+    <p><strong>Rust crates faster_log & async_println</strong> stolen keys from ~8,500 downloads by mimicking fast_log, exfiltrating via Cloudflare Worker endpoints. <a href="https://www.bleepingcomputer.com/news/security/malicious-rust-packages-on-cratesio-steal-crypto-wallet-keys/">Read more</a></p>
+  </div>
+
+  <div class="section">
+    <h2>Trends</h2>
+    <p><strong>New SVG-based phishing campaign</strong> hides malicious JavaScript in “recipe”-themed SVGs, redirecting to typosquatted domains. Active since August, targets Microsoft 365/Outlook logins. <a href="https://www.malwarebytes.com/blog/news/2025/09/new-svg-based-phishing-campaign-is-a-recipe-for-disaster">Read more</a></p>
+  </div>
+
+  <div class="section">
+    <h2>Breaches & Leaks</h2>
+    <p><strong>Volvo North America</strong> confirms breach exposing employee SSNs after ransomware hit supplier Miljödata, linked to DataCarry group. 870K accounts leaked; Volvo offers 18 months identity protection. <a href="https://securityaffairs.com/182577/data-breach/volvo-north-america-disclosed-a-data-breach-following-a-ransomware-attack-on-it-provider-miljodata.html">Read more</a></p>
+  </div>
+
+  <div class="section">
+    <h2>Others</h2>
+    <p><strong>Austria’s military</strong> replaced Microsoft Office with LibreOffice across 16,000 workstations, citing sovereignty and privacy over cost savings. Germany, Denmark, and France are making similar moves. <a href="https://www.zdnet.com/article/austria-military-ditches-microsoft-for-open-source-libreoffice-here-is-why/">Read more</a></p>
+  </div>
+
+  <div class="section">
+    <h2>Hunting</h2>
+    <p><strong>LockBit 5.0 ransomware</strong> confirmed by Trend Micro, with Windows, Linux, and ESXi variants. Uses DLL reflection, ETW patching, and XChaCha20 encryption. Marks one of the most dangerous cross-platform ransomware strains to date. <a href="https://www.trendmicro.com/en_us/research/25/i/lockbit-5-targets-windows-linux-esxi.html">Read more</a></p>
+  </div>
+
+</body>
+</html>
