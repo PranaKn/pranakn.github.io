@@ -30,6 +30,7 @@
 📬  **DAILY (weekdays)** - _Newsfeeds with threat landscape update_
 
 📅 **17/06/25** - _Book Review - Countdown to ZeroDay by Kim Zetter_
+📅 **26/09/25** - _Book Review - Cybersecurity Dilemma by Ben Buchanan_
 
 ---
 
