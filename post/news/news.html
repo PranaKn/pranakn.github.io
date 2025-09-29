@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 29/09/25</title>
+  <title>📰 Cybersecurity Newsfeed - 30/09/25</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; color: #c9a227; }
@@ -16,45 +16,29 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 29/09/25</h2>
+  <h2>📅 30/09/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li>Project Zero: non-timing pointer-leak via pointer-keyed NSDictionary layouts (NSNumber/NSNull) enables address reconstruction with CRT during deserialize→re-serialize flows; patched by Apple Mar 31, 2025. Mitigate by avoiding address-based hashes/keys or by keyed hashing. <a href="https://googleprojectzero.blogspot.com/2025/09/pointer-leaks-through-pointer-keyed.html" target="_blank">More info</a></li>
+    <li>Apple issued rapid “.0.1” updates (iOS/iPadOS 26.0.1, macOS Tahoe 26.0.1, Sequoia 15.7.1, Sonoma 14.8.1, iOS/iPadOS 18.7.1, visionOS 26.0.1) to fix <strong>CVE-2025-43400</strong>, a Font Parser bug causing crashes or memory corruption; no exploitation seen. <a href="https://isc.sans.edu/diary/rss/32330" target="_blank">More info</a></li>
+    <li>CISA added five KEVs: <strong>CVE-2021-21311</strong> (Adminer SSRF), <strong>CVE-2025-20352</strong> (Cisco IOS SNMP overflow), <strong>CVE-2025-10035</strong> (GoAnywhere MFT deserialization), <strong>CVE-2025-59689</strong> (Libraesva ESG command injection), <strong>CVE-2025-32463</strong> (sudo chroot LPE). Agencies must patch under BOD 22-01. <a href="https://www.cisa.gov/news-events/alerts/2025/09/29/cisa-adds-five-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li>Akira ransomware bypasses SonicWall SSL VPN MFA using <em>pre-theft</em> credentials/OTP seeds (pre-Aug 2024); rapid post-compromise pivoting to Veeam, BYOVD EDR kill. Admins must reset all SSL VPN creds on previously exposed devices. <a href="https://www.bleepingcomputer.com/news/security/akira-ransomware-breaching-mfa-protected-sonicwall-vpn-accounts/" target="_blank">More info</a></li>
-    <li>Malvertising/SEO poisoning pushes fake Microsoft Teams installers that drop the Oyster backdoor (a.k.a. Broomstick/CleanUpLoader) with scheduled-task persistence and questionable code-signing. <a href="https://www.bleepingcomputer.com/news/security/fake-microsoft-teams-installers-push-oyster-malware-via-malvertising/" target="_blank">More info</a></li>
-    <li>“ShadowLeak”: zero-click indirect prompt-injection in ChatGPT Deep Research could read Gmail/other connectors and exfiltrate via hidden HTML—executed in OpenAI’s cloud; reported June, patched August. <a href="https://www.cysecurity.news/2025/09/shadowleak-zero-click-chatgpt-flaw.html" target="_blank">More info</a></li>
-    <li>New PlugX variant hits telecom/manufacturing in Central & South Asia (DLL sideloading, RainyDay/Turian overlaps) + PANW analysis of Mustang Panda’s long-running Bookworm RAT. <a href="https://www.thehackernews.com/2025/09/china-linked-plugx-and-bookworm-malware.html" target="_blank">More info</a></li>
-    <li>Phishing with .xlam “invoice” lures delivers XWorm via reflective injection; C2 at 158.94.209[.]180. <a href="https://hackread.com/hackers-fake-invoices-xworm-rat-office-files/" target="_blank">More info</a></li>
-    <li>Recorded Future: China-backed <strong>RedNovember</strong> exploited edge devices (Ivanti, SonicWall, Cisco, Fortinet) to hit gov/defense/aerospace/telecom; tools include Pantegana, SparkRAT, Cobalt Strike. <a href="https://www.theregister.com/2025/09/27/rednovember_chinese_espionage/" target="_blank">More info</a></li>
-    <li>Cisco: state actor tied to <strong>ArcaneDoor</strong> exploiting ASA/FTD zero-days (CVE-2025-20333/20362, plus 20363 risk) to deploy persistent RayInitiator bootkit & LINE VIPER loader. <a href="https://unit42.paloaltonetworks.com/zero-day-vulnerabilities-affect-cisco-software/" target="_blank">More info</a></li>
-    <li>Iran-linked <strong>UNC1549</strong> signed malware with valid SSL.com certs (MiniJunk/MiniBrowse family), spotlighting PKI abuse and CA vetting gaps. <a href="https://www.darkreading.com/vulnerabilities-threats/iranian-hackers-ssl-certificates-sign-malware" target="_blank">More info</a></li>
-    <li>Fortinet: Ukraine-themed phishing delivers <strong>CountLoader</strong> → Amatera Stealer & PureMiner; SVG→ZIP→CHM chain; PureCoder toolset overlaps. <a href="https://www.thehackernews.com/2025/09/researchers-expose-svg-and-purerat.html" target="_blank">More info</a></li>
-    <li>Fortra GoAnywhere MFT (CVE-2025-10035) exploited since Sept 10: forged license response → RCE; IOCs incl. <code>admin-go</code>, <code>jwunst.exe</code>, <code>zato_be.exe</code>. Patch to 7.8.4/7.6.3. <a href="https://www.bleepingcomputer.com/news/security/maximum-severity-goanywhere-mft-flaw-exploited-as-zero-day/" target="_blank">More info</a></li>
-    <li>Russia-linked <strong>COLDRIVER</strong> runs ClickFix-style lures: CAPTCHA → BAITSWITCH DLL → SIMPLEFIX PS backdoor with registry-stored encrypted payloads. <a href="https://www.thehackernews.com/2025/09/new-coldriver-malware-campaign-joins-bo.html" target="_blank">More info</a></li>
-    <li>Vane Viper/Omnatuor: decade-long malvertising/ad-fraud operator (PropellerAds/Monetag ties) driving ~1T DNS queries/yr across 60k+ domains. <a href="https://www.thehackernews.com/2025/09/vane-viper-generates-1-trillion-dns.html" target="_blank">More info</a></li>
-  </ul>
-
-  <h2>📈 Trends</h2>
-  <ul>
-    <li>“Free TradingView Premium” spyware campaign jumps to Google Ads & YouTube using hijacked verified channels; payload <code>Trojan.Agent.GOSL</code> steals creds and crypto. <a href="https://hackread.com/tradingview-scam-expands-to-google-youtube/" target="_blank">More info</a></li>
+    <li><strong>DarkCloud Infostealer V4.2</strong> resurfaces (rewritten in VB6), sold via Telegram; steals browser data, creds, wallets, docs; spreads through phishing ZIPs. <a href="https://hackread.com/darkcloud-infostealer-grab-credentials-crypto-contacts/" target="_blank">More info</a></li>
+    <li>Microsoft: AI-assisted phishing uses <strong>LLM-generated obfuscated SVG files</strong> to redirect to credential-harvesting pages. Campaign detected Aug 28, 2025; highlights AI’s role in phishing. <a href="https://thehackernews.com/2025/09/microsoft-flags-ai-driven-phishing-llm.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>📁 Breaches & Leaks</h2>
   <ul>
-    <li>Harrods: third-party incident exposed names/contact details of online shoppers; no passwords/payment data. <a href="https://www.securityweek.com/british-department-store-harrods-warns-customers-that-some-personal-details-taken-in-data-breach/" target="_blank">More info</a></li>
-    <li>Union County, Ohio: ransomware breach (45,487 affected) — SSNs, DLs, financial/medical, passport, and fingerprint data; activity May 6–18. <a href="https://securityaffairs.com/182689/uncategorized/ohios-union-county-suffers-ransomware-attack-impacting-45000-people.html" target="_blank">More info</a></li>
-    <li>Archer Health: exposed 23GB (145k+ files) of patient records via open DB — PII, SSNs, care plans, referrals; secured after disclosure. <a href="https://hackread.com/archer-health-data-leak-23gb-medical-records/" target="_blank">More info</a></li>
+    <li><strong>RemoteCOM SCOUT</strong> breach exposed ~7k officers & 14k monitored clients; leaked names, addresses, IPs, probation details. Risks include vigilante attacks & phishing. <a href="https://www.malwarebytes.com/blog/news/2025/09/sex-offenders-terrorists-drug-dealers-exposed-in-spyware-breach" target="_blank">More info</a></li>
+    <li><strong>Medusa ransomware</strong> claims 834GB stolen from Comcast; demands $1.2M ransom or sale; samples show actuarial reports, SQL scripts, and analytics. Comcast has not confirmed. <a href="https://hackread.com/medusa-ransomware-comcast-data-breach/" target="_blank">More info</a></li>
   </ul>
 
-  <h2>🧰 Tools</h2>
+  <h2>📌 Others</h2>
   <ul>
-    <li><strong>SetupHijack</strong>: Windows PoC racing installer/updater temp file drops to swap payloads → local privilege escalation. Mitigate with Authenticode checks, block execution from world-writable paths, and integrity monitoring. <a href="https://github.com/hackerhouse-opensource/SetupHijack" target="_blank">More info</a></li>
-    <li><strong>convert-ts-bash-history.py</strong> v0.9: parse one/many <code>.bash_history</code> into <code>path|ISO8601|command</code> lines for quick timeline triage; handles HISTTIMEFORMAT when present. <a href="https://github.com/clausing/scripts/blob/master/convert-ts-bash-history.py" target="_blank">More info</a></li>
+    <li>Dutch police arrested two <strong>17-year-olds</strong> recruited via Telegram by pro-Russian hackers; caught spying near embassies/Europol in The Hague. Reflects trend of teens used as proxy agents across Europe. <a href="https://hackread.com/dutch-teens-arrested-spying-pro-russian-hackers/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
