@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 30/09/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 30/09/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>Apple issued rapid “.0.1” updates (iOS/iPadOS 26.0.1, macOS Tahoe 26.0.1, Sequoia 15.7.1, Sonoma 14.8.1, iOS/iPadOS 18.7.1, visionOS 26.0.1) to fix <strong>CVE-2025-43400</strong>, a Font Parser bug causing crashes or memory corruption; no exploitation seen. <a href="https://isc.sans.edu/diary/rss/32330" target="_blank">More info</a></li>
+    <li>CISA added five KEVs: <strong>CVE-2021-21311</strong> (Adminer SSRF), <strong>CVE-2025-20352</strong> (Cisco IOS SNMP overflow), <strong>CVE-2025-10035</strong> (GoAnywhere MFT deserialization), <strong>CVE-2025-59689</strong> (Libraesva ESG command injection), <strong>CVE-2025-32463</strong> (sudo chroot LPE). Agencies must patch under BOD 22-01. <a href="https://www.cisa.gov/news-events/alerts/2025/09/29/cisa-adds-five-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>DarkCloud Infostealer V4.2</strong> resurfaces (rewritten in VB6), sold via Telegram; steals browser data, creds, wallets, docs; spreads through phishing ZIPs. <a href="https://hackread.com/darkcloud-infostealer-grab-credentials-crypto-contacts/" target="_blank">More info</a></li>
+    <li>Microsoft: AI-assisted phishing uses <strong>LLM-generated obfuscated SVG files</strong> to redirect to credential-harvesting pages. Campaign detected Aug 28, 2025; highlights AI’s role in phishing. <a href="https://thehackernews.com/2025/09/microsoft-flags-ai-driven-phishing-llm.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>RemoteCOM SCOUT</strong> breach exposed ~7k officers & 14k monitored clients; leaked names, addresses, IPs, probation details. Risks include vigilante attacks & phishing. <a href="https://www.malwarebytes.com/blog/news/2025/09/sex-offenders-terrorists-drug-dealers-exposed-in-spyware-breach" target="_blank">More info</a></li>
+    <li><strong>Medusa ransomware</strong> claims 834GB stolen from Comcast; demands $1.2M ransom or sale; samples show actuarial reports, SQL scripts, and analytics. Comcast has not confirmed. <a href="https://hackread.com/medusa-ransomware-comcast-data-breach/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📌 Others</h2>
+  <ul>
+    <li>Dutch police arrested two <strong>17-year-olds</strong> recruited via Telegram by pro-Russian hackers; caught spying near embassies/Europol in The Hague. Reflects trend of teens used as proxy agents across Europe. <a href="https://hackread.com/dutch-teens-arrested-spying-pro-russian-hackers/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
