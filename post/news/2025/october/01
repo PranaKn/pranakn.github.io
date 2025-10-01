@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 01/10/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 01/10/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>Western Digital patched <strong>CVE-2025-30247</strong> in My Cloud NAS (PR2100/PR4100/EX4100/EX2 Ultra, etc.), fixing HTTP POST command injection. DL2100/DL4100 remain EoS and unpatched. Exploitation could allow ransomware or file theft. <a href="https://www.bleepingcomputer.com/news/security/critical-wd-my-cloud-bug-allows-remote-command-injection/" target="_blank">More info</a></li>
+    <li>Tenable’s “<strong>Gemini Trifecta</strong>”: three flaws in Google Gemini AI (log poisoning, search personalization abuse, browsing hijack) allowed exfiltration via malicious prompts or poisoned history; all patched by Google. <a href="https://www.securityweek.com/google-patches-gemini-ai-hacks-involving-poisoned-logs-search-results/" target="_blank">More info</a></li>
+    <li>Broadcom fixed six VMware flaws, including <strong>CVE-2025-41244</strong> (LPE in VMware Tools/Aria Ops, exploited by UNC5174 since Oct 2024). Also addressed CVE-2025-41245/41246. Products: VCF, vSphere, Telco Cloud. <a href="https://securityaffairs.com/182816/uncategorized/broadcom-patches-vmware-zero-day-actively-exploited-by-unc5174.html" target="_blank">More info</a></li>
+    <li>Microsoft KB5065789 preview for Windows 11 24H2 build 26100.6725: 41 fixes including AI File Explorer actions, passkey manager support, gaming perf boosts, Hyper-V ARM64 fix, WSUS issues. Still DRM-protected Blu-ray/DVD bugs remain. <a href="https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5065789-update-released-with-41-changes-and-fixes/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li>PANW Unit 42 exposed <strong>Phantom Taurus</strong>, a Chinese APT targeting gov/military in Africa, ME, Asia; uses SQL exfiltration (mssq.bat) and .NET suite (NET-STAR, IIServerCore backdoor) overlapping with APT27/Mustang Panda. <a href="https://www.darkreading.com/cyberattacks-data-breaches/new-china-apt-strikes-precision-persistence" target="_blank">More info</a></li>
+    <li><strong>Klopatra</strong> Android banking Trojan (3k+ infections in Italy/Spain) spread via fake Mobdro app; abuses Accessibility, records screens, enables remote transfers during charging. <a href="https://www.darkreading.com/threat-intelligence/klopatra-trojan-bank-transfers-sleep" target="_blank">More info</a></li>
+    <li><strong>MatrixPDF</strong> toolkit ($400/mo) converts PDFs into phishing/malware lures with fake secure-doc prompts, JS triggers, clickable overlays; bypasses Gmail filters. <a href="https://www.bleepingcomputer.com/news/security/new-matrixpdf-toolkit-turns-pdfs-into-phishing-and-malware-lures/" target="_blank">More info</a></li>
+    <li><strong>CVE-2025-32463</strong>: sudo chroot LPE bug (1.9.14–1.9.17) exploited in wild; malicious NSS libs via crafted nsswitch.conf → root. Patch to 1.9.17p1+; CISA mandates agency fixes by Oct 20. <a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-linux-sudo-flaw-exploited-in-attacks/" target="_blank">More info</a></li>
+    <li>Malicious npm <strong>fezbox</strong>: QR-code JPG contained reversed URL with cookie-theft payload, bypassing scanners. Highlights supply-chain risks. <a href="https://www.cysecurity.news/2025/09/fezbox-npm-package-uses-qr-codes-to.html" target="_blank">More info</a></li>
+    <li><strong>Datzbro</strong> Android Trojan targets elderly via fake Facebook “senior events”; abuses Accessibility, overlays, DTO, keylogging; C2 tools leaked in Chinese. <a href="https://thehackernews.com/2025/09/new-android-trojan-datzbro-tricking.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>WestJet</strong> June cyberattack confirmed: exposed names, IDs, passports, addresses, loyalty details. FBI-assisted probe; 2 years free ID protection for customers. <a href="https://www.bleepingcomputer.com/news/security/westjet-confirms-recent-breach-exposed-customers-passports/" target="_blank">More info</a></li>
+    <li><strong>ClaimPix leak</strong>: 10.7TB/5.1M unencrypted auto-insurance files (PII, VINs, repairs, POAs). Risks include identity theft, fraud, cloning. Exposure origin unclear. <a href="https://hackread.com/us-auto-insurance-claimpix-leaked-10tb-records/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📌 Others</h2>
+  <ul>
+    <li><strong>Imgur</strong> blocked UK access after ICO threatened fines under Online Safety Act; since Sept 30, users see “not viewable in your region.” VPN needed to bypass. <a href="https://www.bleepingcomputer.com/news/technology/imgur-blocks-uk-users-after-data-watchdog-signals-possible-fine/" target="_blank">More info</a></li>
+    <li>Microsoft KB5065789 preview also partially fixed DRM-protected video playback (Blu-ray/DVD/TV apps). Audio DRM issues persist. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-drm-video-playback-issues-now-partially-resolved/" target="_blank">More info</a></li>
+    <li>Dutch police arrested two <strong>17-year-olds</strong> spying for Russia near Europol/embassies using Wi-Fi sniffers. One under house arrest, one detained; seen as proxy-agent use trend. <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/dutch-teens-recruited-telegram-russia" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
