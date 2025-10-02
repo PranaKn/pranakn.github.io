@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 01/10/25</title>
+  <title>📰 Cybersecurity Newsfeed - 02/10/25</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; color: #c9a227; }
@@ -16,37 +16,42 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 01/10/25</h2>
+  <h2>📅 02/10/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li>Western Digital patched <strong>CVE-2025-30247</strong> in My Cloud NAS (PR2100/PR4100/EX4100/EX2 Ultra, etc.), fixing HTTP POST command injection. DL2100/DL4100 remain EoS and unpatched. Exploitation could allow ransomware or file theft. <a href="https://www.bleepingcomputer.com/news/security/critical-wd-my-cloud-bug-allows-remote-command-injection/" target="_blank">More info</a></li>
-    <li>Tenable’s “<strong>Gemini Trifecta</strong>”: three flaws in Google Gemini AI (log poisoning, search personalization abuse, browsing hijack) allowed exfiltration via malicious prompts or poisoned history; all patched by Google. <a href="https://www.securityweek.com/google-patches-gemini-ai-hacks-involving-poisoned-logs-search-results/" target="_blank">More info</a></li>
-    <li>Broadcom fixed six VMware flaws, including <strong>CVE-2025-41244</strong> (LPE in VMware Tools/Aria Ops, exploited by UNC5174 since Oct 2024). Also addressed CVE-2025-41245/41246. Products: VCF, vSphere, Telco Cloud. <a href="https://securityaffairs.com/182816/uncategorized/broadcom-patches-vmware-zero-day-actively-exploited-by-unc5174.html" target="_blank">More info</a></li>
-    <li>Microsoft KB5065789 preview for Windows 11 24H2 build 26100.6725: 41 fixes including AI File Explorer actions, passkey manager support, gaming perf boosts, Hyper-V ARM64 fix, WSUS issues. Still DRM-protected Blu-ray/DVD bugs remain. <a href="https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5065789-update-released-with-41-changes-and-fixes/" target="_blank">More info</a></li>
+    <li>OpenSSL patches three flaws: <strong>CVE-2025-9230</strong> (CMS PWRI decryption → DoS/RCE risk), <strong>CVE-2025-9231</strong> (SM2 ARM64 timing leak), <strong>CVE-2025-9232</strong> (low-sev DoS). Update to 3.5.4/3.4.3/3.3.5/3.2.6/3.0.18/1.1.1zd/1.0.2zm. <a href="https://securityaffairs.com/182845/security/openssl-patches-3-vulnerabilities-urging-immediate-updates.html" target="_blank">More info</a></li>
+    <li>Adobe Analytics ingestion bug (Sept 17–18) mixed customer data across tenants (3–5% impacted). Adobe advises deleting affected datasets, backups, and downstream copies (CJA, RT-CDP, AJO). <a href="https://www.bleepingcomputer.com/news/security/adobe-analytics-bug-leaked-customer-tracking-data-to-other-tenants/" target="_blank">More info</a></li>
+    <li><strong>CVE-2025-10725</strong> in Red Hat OpenShift AI (CVSS 9.9): misbound <code>kueue-batch-user-role</code> → low-priv users can escalate to cluster admin and master takeover. Remove ClusterRoleBinding and patch immediately. <a href="https://www.theregister.com/2025/10/01/critical_red_hat_openshift_ai_bug/" target="_blank">More info</a></li>
+    <li>Cisco Talos: six bugs patched—five in NVIDIA CUDA Toolkit (<code>cuobjdump</code>/<code>nvdisasm</code> OOB writes/overflows: CVE-2025-23338/23339/23340/23271/23308) and one Adobe Acrobat Reader UAF (<strong>CVE-2025-54257</strong>). Snort SIDs available. <a href="https://blog.talosintelligence.com/nvidia-and-adobe-vulnerabilities/" target="_blank">More info</a></li>
+    <li><strong>WireTap</strong> attack: DDR4 interposer + ~$1k logic analyzers can recover Intel SGX attestation keys via deterministic memory encryption; physical/supply-chain threat. <a href="https://thehackernews.com/2025/10/new-wiretap-attack-extracts-intel-sgx.html" target="_blank">More info</a></li>
+    <li><strong>CVE-2025-59363</strong> in One Identity OneLogin: API leaked OIDC client secrets via <code>/api/2/apps</code> to valid API users; fixed in 2025.3.0. Harden IAM API access and RBAC. <a href="https://thehackernews.com/2025/10/onelogin-bug-let-attackers-use-api-keys.html" target="_blank">More info</a></li>
+    <li>TOTOLINK X6000R router bugs: <strong>CVE-2025-52906</strong> (pre-auth cmd injection), <strong>52905</strong> (arg injection), <strong>52907</strong> (auth bypass) in <code>/cgi-bin/cstecgi.cgi</code>; patch to V9.4.0cu.1498_B20250826. <a href="https://unit42.paloaltonetworks.com/totolink-x6000r-vulnerabilities/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li>PANW Unit 42 exposed <strong>Phantom Taurus</strong>, a Chinese APT targeting gov/military in Africa, ME, Asia; uses SQL exfiltration (mssq.bat) and .NET suite (NET-STAR, IIServerCore backdoor) overlapping with APT27/Mustang Panda. <a href="https://www.darkreading.com/cyberattacks-data-breaches/new-china-apt-strikes-precision-persistence" target="_blank">More info</a></li>
-    <li><strong>Klopatra</strong> Android banking Trojan (3k+ infections in Italy/Spain) spread via fake Mobdro app; abuses Accessibility, records screens, enables remote transfers during charging. <a href="https://www.darkreading.com/threat-intelligence/klopatra-trojan-bank-transfers-sleep" target="_blank">More info</a></li>
-    <li><strong>MatrixPDF</strong> toolkit ($400/mo) converts PDFs into phishing/malware lures with fake secure-doc prompts, JS triggers, clickable overlays; bypasses Gmail filters. <a href="https://www.bleepingcomputer.com/news/security/new-matrixpdf-toolkit-turns-pdfs-into-phishing-and-malware-lures/" target="_blank">More info</a></li>
-    <li><strong>CVE-2025-32463</strong>: sudo chroot LPE bug (1.9.14–1.9.17) exploited in wild; malicious NSS libs via crafted nsswitch.conf → root. Patch to 1.9.17p1+; CISA mandates agency fixes by Oct 20. <a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-linux-sudo-flaw-exploited-in-attacks/" target="_blank">More info</a></li>
-    <li>Malicious npm <strong>fezbox</strong>: QR-code JPG contained reversed URL with cookie-theft payload, bypassing scanners. Highlights supply-chain risks. <a href="https://www.cysecurity.news/2025/09/fezbox-npm-package-uses-qr-codes-to.html" target="_blank">More info</a></li>
-    <li><strong>Datzbro</strong> Android Trojan targets elderly via fake Facebook “senior events”; abuses Accessibility, overlays, DTO, keylogging; C2 tools leaked in Chinese. <a href="https://thehackernews.com/2025/09/new-android-trojan-datzbro-tricking.html" target="_blank">More info</a></li>
+    <li>NETSCOUT: <strong>Keymous+</strong> ran 249 DDoS attacks (Feb–Sep), peaking 11.8 Gbps solo/44 Gbps with DDoS54; gov/telecom/finance hit across 15 countries; 06:00 UTC timing. <a href="https://www.netscout.com/blog/asert/keymous-threat-actor-profile" target="_blank">More info</a></li>
+    <li>Okta: North Korea’s IT worker program broadened to finance/healthcare/AI/gov contractors; 130+ identities, ~6,500 interviews targeting 5,000+ firms. Tighten hiring and access controls. <a href="https://www.helpnetsecurity.com/2025/10/01/north-korea-it-workers-worldwide/" target="_blank">More info</a></li>
+    <li>Infoblox: <strong>Detour Dog</strong> hijacked DNS on 30k+ sites in 89 countries since 2020; DNS TXT–controlled redirects deliver <strong>Strela Stealer</strong> via StarFish backdoor (Hive0145). <a href="https://hackread.com/detour-dog-dns-hijacking-websites-strela-stealer/" target="_blank">More info</a></li>
+    <li>SEKOIA: Attackers abuse Milesight industrial routers’ SMS APIs (incl. CVE-2023-43261) to run Europe-wide smishing; 572/18k exposed still risky; campaigns use GroozaBot/Telegram logs. <a href="https://thehackernews.com/2025/10/hackers-exploit-milesight-routers-to.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>Credential-themed ZIPs drop <code>.lnk</code> shortcuts that launch obfuscated PowerShell → DLL (masquerading as “.ppt”) via <code>rundll32</code>; focuses on LOLBins and AV-aware variants. Mitigate with WDAC/AppLocker, MotW enforcement, and script-block logging. <a href="https://www.infosecurity-magazine.com/news/shortcut-credential-lures-deliver/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📁 Breaches & Leaks</h2>
   <ul>
-    <li><strong>WestJet</strong> June cyberattack confirmed: exposed names, IDs, passports, addresses, loyalty details. FBI-assisted probe; 2 years free ID protection for customers. <a href="https://www.bleepingcomputer.com/news/security/westjet-confirms-recent-breach-exposed-customers-passports/" target="_blank">More info</a></li>
-    <li><strong>ClaimPix leak</strong>: 10.7TB/5.1M unencrypted auto-insurance files (PII, VINs, repairs, POAs). Risks include identity theft, fraud, cloning. Exposure origin unclear. <a href="https://hackread.com/us-auto-insurance-claimpix-leaked-10tb-records/" target="_blank">More info</a></li>
+    <li>North America: ~3.7M affected—Allianz Life (~1.5M via third-party CRM, incl. SSNs), WestJet (1.2M; passports/IDs), Motility Software (766,670; ransomware). ID protection offered. <a href="https://www.theregister.com/2025/10/01/north_american_data_breaches/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📌 Others</h2>
   <ul>
-    <li><strong>Imgur</strong> blocked UK access after ICO threatened fines under Online Safety Act; since Sept 30, users see “not viewable in your region.” VPN needed to bypass. <a href="https://www.bleepingcomputer.com/news/technology/imgur-blocks-uk-users-after-data-watchdog-signals-possible-fine/" target="_blank">More info</a></li>
-    <li>Microsoft KB5065789 preview also partially fixed DRM-protected video playback (Blu-ray/DVD/TV apps). Audio DRM issues persist. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-drm-video-playback-issues-now-partially-resolved/" target="_blank">More info</a></li>
-    <li>Dutch police arrested two <strong>17-year-olds</strong> spying for Russia near Europol/embassies using Wi-Fi sniffers. One under house arrest, one detained; seen as proxy-agent use trend. <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/dutch-teens-recruited-telegram-russia" target="_blank">More info</a></li>
+    <li>Classic Outlook crash at startup tied to Exchange auth limits; current fix requires opening a Microsoft 365 Admin support case. Use new Outlook/OWA as workaround. <a href="https://www.bleepingcomputer.com/news/microsoft/new-bug-in-classic-outlook-can-only-be-fixed-via-microsoft-support/" target="_blank">More info</a></li>
+    <li>F-Droid warns Google’s 2026 Developer Verification could block unverified apps on certified devices, threatening third-party stores and OSS distribution. <a href="https://www.bleepingcomputer.com/news/security/f-droid-project-threatened-by-googles-new-dev-registration-rules/" target="_blank">More info</a></li>
+    <li>Google Drive for Desktop adds AI-powered ransomware detection: pauses sync on suspected encryption and offers restore workflow; enabled by default for Workspace/personal accounts. <a href="https://www.bleepingcomputer.com/news/security/google-drive-for-desktop-gets-ai-powered-ransomware-detection/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
