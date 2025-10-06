@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 03/10/25</title>
+  <title>📰 Cybersecurity Newsfeed - 06/10/25</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; color: #c9a227; }
@@ -16,52 +16,42 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 03/10/25</h2>
+  <h2>📅 06/10/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li>DrayTek <strong>CVE-2025-10547</strong>: uninitialized stack value → arbitrary <code>free()</code> → crash/RCE via crafted WebUI HTTP(S); patch now and restrict remote WebUI/SSL VPN. <a href="https://www.bleepingcomputer.com/news/security/draytek-warns-of-remote-code-execution-bug-in-vigor-routers/" target="_blank">More info</a></li>
-    <li>CISA adds five to KEV: Bash cmd injection (CVE-2014-6278), Juniper ScreenOS auth bypass (CVE-2015-7755), Jenkins RCE (CVE-2017-1000353), Meteobridge cmd injection (CVE-2025-4008), Samsung ImageIO OOB write (CVE-2025-21043). Patch/mitigate & monitor. <a href="https://www.cisa.gov/news-events/alerts/2025/10/02/cisa-adds-five-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+    <li><strong>Oracle CVE-2025-61882</strong>: E-Business Suite BI Publisher Integration zero-day (CVSS 9.8) exploited by <strong>Clop</strong>; unauthenticated RCE. Versions 12.2.3–12.2.14 affected. Requires Oct 2023 CPU first. IOCs include leaked Python exploit files and C2 IPs linked to Scattered Lapsus$ Hunters. <a href="https://www.bleepingcomputer.com/news/security/oracle-patches-ebs-zero-day-exploited-in-clop-data-theft-attacks/" target="_blank">More info</a></li>
+    <li><strong>Zimbra CVE-2025-27915</strong>: XSS via malicious .ICS files; exploited in Jan 2025. Targets spoofed Libyan Navy, hit Brazilian military org. Steals Webmail creds via SOAP API; Base64 payloads tied to UNC1151-like ops (RU/BY origin suspected). <a href="https://www.bleepingcomputer.com/news/security/hackers-exploited-zimbra-flaw-as-zero-day-using-icalendar-files/" target="_blank">More info</a></li>
+    <li><strong>Ghost in the Cloud</strong>: AWS X-Ray abused as C2; trace annotations used for beaconing and data exfil with SigV4 signing to evade detection. Demonstrated with <strong>XRayC2</strong> toolkit. <a href="https://youtu.be/C6fFUozkcg4" target="_blank">Demo</a></li>
+    <li><strong>CometJacking</strong>: prompt-injection on Perplexity’s Comet AI browser; URL parameter triggers agent data exfiltration (Gmail, Calendar, etc.) via Base64 encoding. No creds needed; demonstrates AI browser risk. <a href="https://thehackernews.com/2025/10/cometjacking-one-click-can-turn.html" target="_blank">More info</a></li>
+    <li><strong>Meteobridge CVE-2025-4008</strong>: command injection in unauthenticated CGI; actively exploited. Added to CISA KEV alongside Jenkins, Juniper ScreenOS, Bash, and Samsung zero-day (CVE-2025-21043). Agencies: 3 weeks to patch. <a href="https://www.securityweek.com/organizations-warned-of-exploited-meteobridge-vulnerability/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li>Extortion emails claiming <strong>Clop</strong> target Oracle E-Business Suite users; unverified “proof” (3 files) via compromised third-party accounts. Oracle: apply fixes from July 2025 CPU; investigations ongoing. <a href="https://cyberscoop.com/extortion-email-clop-oracle-customers/" target="_blank">More info</a></li>
-    <li>ESET: Android spyware <strong>ProSpy</strong>/<strong>ToSpy</strong> masquerade as Signal/ToTok; fake stores (incl. Samsung clone) push manual installs stealing contacts, SMS, files, audio/video. UAE-focused. <a href="https://cyberscoop.com/android-spyware-disguised-as-legitimate-messaging-apps-targets-uae-victims-researchers-reveal/" target="_blank">More info</a></li>
-    <li><strong>Confucius</strong> targets Pakistan: weaponized .PPSX/.LNK → DLL sideloading to drop <em>WooperStealer</em> and new Python backdoor <em>Anondoor</em> (screens, Chrome creds, C2). <a href="https://thehackernews.com/2025/10/confucius-hackers-hit-pakistan-with-new.html" target="_blank">More info</a></li>
-    <li>Malicious PyPI <strong>soopsocks</strong> (2,653 downloads): fake SOCKS5 proxy; VBScript + Go <code>_AUTORUN.EXE</code> → PowerShell, privilege escalation, firewall changes, service/scheduled task persistence; exfil via Discord. <a href="https://thehackernews.com/2025/10/alert-malicious-pypi-package-soopsocks.html" target="_blank">More info</a></li>
-    <li>Exec-targeted spear phish: ZIP → <code>.lnk</code> → PowerShell → DLL (masquerading as .ppt) run with <code>rundll32</code>; AV-aware payload, C2 <em>faw3.com</em>. Classic LOLBins evasion. <a href="https://hackread.com/malicious-zip-files-windows-shortcuts-malware/" target="_blank">More info</a></li>
+    <li><strong>Water Saci</strong> (Trend Micro): WhatsApp-borne malware <em>SORVEPOTEL</em> spreads via ZIP+LNK+PowerShell chain; hijacks WhatsApp Web for propagation. Brazil-heavy (457/477 cases); delivers infostealers targeting banking/crypto creds via overlays. <a href="https://www.trendmicro.com/en_us/research/25/j/self-propagating-malware-spreads-via-whatsapp.html" target="_blank">More info</a></li>
+    <li><strong>Rhadamanthys</strong> stealer (Check Point): evolves into tiered MaaS ($299–$499+); adds steganographic payloads (WAV/JPEG/PNG), Lua plugin runner, strong anti-analysis and obfuscation. Actor “kingcrete2022” now “Mythical Origin Labs.” <a href="https://thehackernews.com/2025/10/rhadamanthys-stealer-evolves-adds.html" target="_blank">More info</a></li>
+    <li><strong>Cavalry Werewolf</strong>: BI.ZONE links to YoroTrooper/Tomiris; spear-phishing Kyrgyz/Russian gov & industrial targets with <em>FoalShell</em> and <em>StallionRAT</em> (Telegram exfil, PowerShell remote exec). Expanding toolset/persistence. <a href="https://thehackernews.com/2025/10/new-cavalry-werewolf-attack-hits.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li>CERT-UA: UAC-0245 spreading <strong>CABINETRAT</strong> via malicious Excel XLLs (e.g., “UBD Request.xll”). XLL drops EXE, persists, extracts shellcode from PNG; ports 18700/42831/20046/33976. Block untrusted XLLs, scrutinize ZIPs from messaging apps. <a href="https://securityaffairs.com/182862/cyber-warfare-2/cert-ua-warns-uac-0245-targets-ukraine-with-cabinetrat-backdoor.html" target="_blank">More info</a></li>
-    <li>(Also) ESET: ongoing Android spyware wave in UAE—<strong>ProSpy</strong>/<strong>ToSpy</strong> use fake app stores to lure installs; exfiltrates chats, media, device data. <a href="https://www.helpnetsecurity.com/2025/10/02/android-spyware-signal-totok/" target="_blank">More info</a></li>
+    <li><strong>GreyNoise</strong>: 500% surge in scans on Palo Alto GlobalProtect/PAN-OS portals (1,285 IPs). Mostly US/UK/NL/CA/RU. No compromise yet; signs of recon. Also sees Grafana CVE-2021-43798 exploit attempts. <a href="https://www.bleepingcomputer.com/news/security/massive-surge-in-scans-targeting-palo-alto-networks-login-portals/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📁 Breaches & Leaks</h2>
   <ul>
-    <li><strong>Renault UK</strong>: third-party breach exposed names/contact/addresses/vehicle data (incl. VINs); no financials; phishing risk flagged. <a href="https://hackread.com/renault-uk-customers-third-party-data-breach/" target="_blank">More info</a></li>
-    <li><strong>Kodex Global</strong> outage: AWS registrar honored fraudulent legal order, freezing domain for 4 hours; no data compromise, safeguards promised. <a href="https://www.theregister.com/2025/10/02/subpoena_tracking_platform_outage_blamed/" target="_blank">More info</a></li>
-    <li><strong>Red Hat</strong>: confirms GitLab-linked incident after Crimson Collective claims 570GB from 28k repos incl. ~800 CERs; core supply chain unaffected. <a href="https://www.bleepingcomputer.com/news/security/red-hat-confirms-security-incident-after-hackers-breach-gitlab-instance/" target="_blank">More info</a></li>
-    <li><strong>Allianz Life</strong>: 1.5M impacted; social-engineered access to third-party Salesforce CRM exposed PII/SSNs; data leaked by ShinyHunters. <a href="https://securityaffairs.com/182876/data-breach/allianz-life-data-breach-impacted-1-5-million-people.html" target="_blank">More info</a></li>
+    <li><strong>Discord</strong>: 3rd-party breach (likely Zendesk) exfiltrated support ticket data incl. names, emails, IDs, partial payment info. Access revoked; forensics and law enforcement engaged. Claimed by Scattered Lapsus$ Hunters, then denied. <a href="https://www.bleepingcomputer.com/news/security/discord-discloses-data-breach-after-hackers-steal-support-tickets/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📌 Others</h2>
   <ul>
-    <li>Microsoft Defender for Endpoint bug falsely flags Dell BIOS as outdated; fix in progress. Also resolved macOS black-screen crashes and prior false positives blocking Teams/Exchange URLs. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-defender-bug-triggers-erroneous-bios-update-alerts/" target="_blank">More info</a></li>
-    <li>Outlook (Web & new Windows) will stop rendering inline SVGs to blunt phishing/malware; attachments still viewable; rollout completes mid-Oct. <a href="https://www.bleepingcomputer.com/news/security/microsoft-outlook-stops-displaying-inline-svg-images-used-in-attacks/" target="_blank">More info</a></li>
-    <li>FTC sues <strong>Sendit</strong> maker Iconic Hearts for COPPA violations, fake messages, and hidden charges; DOJ referral, heavy fines possible. <a href="https://www.malwarebytes.com/blog/news/2025/10/sendit-app-tricked-kids-harvested-their-data-and-faked-messages-ftc-claims" target="_blank">More info</a></li>
+    <li><strong>Signal SPQR</strong>: new “Sparse Post-Quantum Ratchet” adds PQC (ML-KEM + ECDH hybrid) to Double Ratchet → “Triple Ratchet”; forward secrecy + post-compromise security. Verified via ProVerif; Rust-tested. <a href="https://www.bleepingcomputer.com/news/security/signal-adds-new-cryptographic-defense-against-quantum-attacks/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🧰 Tools</h2>
   <ul>
-    <li><strong>Checkov</strong>: OSS SAST/SCA for IaC & containers (Terraform/CloudFormation/K8s/Helm/OpenTofu/etc.), 1,000+ policies, CI/CD integrations, SARIF/JSON/CSV/MD outputs, remediation guidance. <a href="https://www.helpnetsecurity.com/2025/10/02/chekov-open-source-static-code-analysis-tool-iac/" target="_blank">More info</a></li>
-  </ul>
-
-  <h2>🕵️ Hunting</h2>
-  <ul>
-    <li>Cisco Talos on <strong>UAT-8099</strong>: hijacked IIS servers (IN/TH/VN/CA/BR) for SEO fraud/data theft; web shells → SoftEther/EasyTier/FRP persistence, LSASS dumps, Cobalt Strike via DLL sideloading, BadIIS variants manipulating Googlebot and redirects. <a href="https://blog.talosintelligence.com/uat-8099-chinese-speaking-cybercrime-group-seo-fraud/" target="_blank">More info</a></li>
+    <li><strong>Hack The Box Threat Range</strong>: AI-powered incident simulation platform for SOC/IR training; realistic live-fire team exercises, resilience scoring, and breach readiness validation. Built post-LetsDefend acquisition. <a href="https://www.itsecurityguru.org/2025/10/03/hack-the-box-introduces-threat-range-for-cyber-incident-simulation/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
