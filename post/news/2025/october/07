@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 07/10/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 07/10/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>Unity Runtime <strong>CVE-2025-59489</strong>: <code>-xrsdk-pre-init-library</code> + unsafe loads → library injection; Android code exec, Windows priv-esc risk. Unity patched supported branches; Valve blocked custom URI schemes; Microsoft advises uninstalling vulnerable games until rebuilt. <a href="https://www.bleepingcomputer.com/news/security/steam-and-microsoft-warn-of-unity-flaw-exposing-gamers-to-attacks/" target="_blank">More info</a> • <a href="https://flatt.tech/research/posts/arbitrary-code-execution-in-unity-runtime/" target="_blank">Research</a></li>
+    <li>CISA KEV adds 7 exploited bugs (Mozilla/IE/Windows/Linux kernel + <strong>CVE-2025-61882</strong> Oracle EBS unauth RCE). Patch/monitor urgently, hunt for intrusion artifacts. <a href="https://www.cisa.gov/news-events/alerts/2025/10/06/cisa-adds-seven-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+    <li>Redis <strong>CVE-2025-49844 “RediShell”</strong>: 13-year Lua UAF → sandbox escape & RCE (auth’d). Patch OSS 8.2.2+/Stack 7.4.0-v7+, restrict access, disable Lua if possible; ~330k exposed, 60k unauth. <a href="https://www.bleepingcomputer.com/news/security/redis-warns-of-max-severity-flaw-impacting-thousands-of-instances/" target="_blank">More info</a></li>
+    <li>Dell UnityVSA <strong>CVE-2025-36604</strong>: unauth command injection via login redirect URI (<code>getCASURL</code> Perl concat). Fix in 5.5.1+ (DSA-2025-281); related XSS (<strong>CVE-2025-36605</strong>) also patched. <a href="https://hackread.com/dell-unityvsa-flaw-command-execution-without-login/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>XWorm</strong> reemerges (v6.0/6.4/6.5): 35+ plugins (steal creds, RDP, exfil, ransomware). Spread via JS/PS/Excel, masquerades as Discord; ransomware module echoes NoCry (AES-CBC). Defense: EDR, email filtering, network monitoring. <a href="https://www.bleepingcomputer.com/news/security/xworm-malware-resurfaces-with-ransomware-module-over-35-plugins/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Medusa/Storm-1175</strong> exploiting GoAnywhere MFT <strong>CVE-2025-10035</strong> since Sept 11 → RMM (SimpleHelp/MeshAgent), recon (Netscan), exfil (Rclone), ransomware. Patch & review logs; 500+ exposed instances remain. <a href="https://www.bleepingcomputer.com/news/security/microsoft-critical-goanywhere-bug-exploited-in-ransomware-attacks/" target="_blank">More info</a></li>
+    <li>UAE: Android spyware <strong>ProSpy</strong>/<strong>ToSpy</strong> posing as Signal/ToTok via fake sites; steals contacts, chats, backups, files. Play Protect now blocking known variants. <a href="https://hackread.com/spyware-fake-signal-totok-apps-uae-android-users/" target="_blank">More info</a></li>
+    <li><strong>1Password</strong> phish: fake Watchtower breach alerts from <code>watchtower@eightninety[.]com</code> → typosquat <em>onepass-word[.]com</em>; Mandrill redirect abused. Verify within app, not via email links. <a href="https://www.malwarebytes.com/blog/news/2025/10/phishers-target-1password-users-with-convincing-fake-breach-alert" target="_blank">More info</a></li>
+    <li><strong>Scattered Lapsus$ Hunters</strong>: crowdsourced extortion—paying $10 BTC to harass execs of alleged victims; OAuth token abuse via Salesloft Drift noted. <a href="https://www.theregister.com/2025/10/06/scattered_lapsus_bitcoin_reward/" target="_blank">More info</a></li>
+    <li><strong>“Trinity of Chaos”</strong> leak site (Lapsus$/Scattered Spider/ShinyHunters): 39 firms listed, claims 1.5B records (Salesforce OAuth/vishing). FBI alerts issued. <a href="https://www.infosecurity-magazine.com/news/trinity-chaos-launches-data-leak/" target="_blank">More info</a></li>
+    <li><strong>UAT-8099</strong>: Chinese-speaking group hijacks high-rep IIS (IN/TH/VN/CA/BR) for SEO fraud/data theft; BadIIS variants (proxy/injector/SEO), Cobalt Strike, SoftEther/FRP persistence. <a href="https://thehackernews.com/2025/10/chinese-cybercrime-group-runs-global.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Red Hat</strong>: ShinyHunters joins Crimson Collective to extort after GitLab consulting breach (≈570GB, ~800 CERs). Threat to leak Oct 10. <a href="https://www.bleepingcomputer.com/news/security/red-hat-data-breach-escalates-as-shinyhunters-joins-extortion/" target="_blank">More info</a></li>
+    <li><strong>Asahi</strong>: ransomware with confirmed data theft; systems isolated, operations disrupted, manual workarounds in place; group unclaimed. <a href="https://www.infosecurity-magazine.com/news/asahi-ransomware-attack-data-stolen/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📌 Others</h2>
+  <ul>
+    <li>EU vote (Oct 14) on “Chat Control” device-scanning before encryption; <strong>Signal</strong> warns it would leave EU if passed. Privacy orgs flag backdoor risks vs. supporters’ CSAM aims. <a href="https://cyberscoop.com/potential-eu-law-sparks-global-concerns-encryption-privacy/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🧰 Tools</h2>
+  <ul>
+    <li>Kaspersky: ML pipeline to detect <strong>DLL hijacking</strong> via telemetry on library loads (non-standard paths, unsigned DLLs, renamed exes). FP rate down to 10⁻⁵, 70–80% detection; integrated into MDR/SIEM. <a href="https://securelist.com/building-ml-model-to-detect-dll-hijacking/117565/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
