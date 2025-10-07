@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 06/10/25</title>
+  <title>📰 Cybersecurity Newsfeed - 07/10/25</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; color: #c9a227; }
@@ -16,42 +16,45 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 06/10/25</h2>
+  <h2>📅 07/10/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>Oracle CVE-2025-61882</strong>: E-Business Suite BI Publisher Integration zero-day (CVSS 9.8) exploited by <strong>Clop</strong>; unauthenticated RCE. Versions 12.2.3–12.2.14 affected. Requires Oct 2023 CPU first. IOCs include leaked Python exploit files and C2 IPs linked to Scattered Lapsus$ Hunters. <a href="https://www.bleepingcomputer.com/news/security/oracle-patches-ebs-zero-day-exploited-in-clop-data-theft-attacks/" target="_blank">More info</a></li>
-    <li><strong>Zimbra CVE-2025-27915</strong>: XSS via malicious .ICS files; exploited in Jan 2025. Targets spoofed Libyan Navy, hit Brazilian military org. Steals Webmail creds via SOAP API; Base64 payloads tied to UNC1151-like ops (RU/BY origin suspected). <a href="https://www.bleepingcomputer.com/news/security/hackers-exploited-zimbra-flaw-as-zero-day-using-icalendar-files/" target="_blank">More info</a></li>
-    <li><strong>Ghost in the Cloud</strong>: AWS X-Ray abused as C2; trace annotations used for beaconing and data exfil with SigV4 signing to evade detection. Demonstrated with <strong>XRayC2</strong> toolkit. <a href="https://youtu.be/C6fFUozkcg4" target="_blank">Demo</a></li>
-    <li><strong>CometJacking</strong>: prompt-injection on Perplexity’s Comet AI browser; URL parameter triggers agent data exfiltration (Gmail, Calendar, etc.) via Base64 encoding. No creds needed; demonstrates AI browser risk. <a href="https://thehackernews.com/2025/10/cometjacking-one-click-can-turn.html" target="_blank">More info</a></li>
-    <li><strong>Meteobridge CVE-2025-4008</strong>: command injection in unauthenticated CGI; actively exploited. Added to CISA KEV alongside Jenkins, Juniper ScreenOS, Bash, and Samsung zero-day (CVE-2025-21043). Agencies: 3 weeks to patch. <a href="https://www.securityweek.com/organizations-warned-of-exploited-meteobridge-vulnerability/" target="_blank">More info</a></li>
-  </ul>
-
-  <h2>🎯 Adversaries</h2>
-  <ul>
-    <li><strong>Water Saci</strong> (Trend Micro): WhatsApp-borne malware <em>SORVEPOTEL</em> spreads via ZIP+LNK+PowerShell chain; hijacks WhatsApp Web for propagation. Brazil-heavy (457/477 cases); delivers infostealers targeting banking/crypto creds via overlays. <a href="https://www.trendmicro.com/en_us/research/25/j/self-propagating-malware-spreads-via-whatsapp.html" target="_blank">More info</a></li>
-    <li><strong>Rhadamanthys</strong> stealer (Check Point): evolves into tiered MaaS ($299–$499+); adds steganographic payloads (WAV/JPEG/PNG), Lua plugin runner, strong anti-analysis and obfuscation. Actor “kingcrete2022” now “Mythical Origin Labs.” <a href="https://thehackernews.com/2025/10/rhadamanthys-stealer-evolves-adds.html" target="_blank">More info</a></li>
-    <li><strong>Cavalry Werewolf</strong>: BI.ZONE links to YoroTrooper/Tomiris; spear-phishing Kyrgyz/Russian gov & industrial targets with <em>FoalShell</em> and <em>StallionRAT</em> (Telegram exfil, PowerShell remote exec). Expanding toolset/persistence. <a href="https://thehackernews.com/2025/10/new-cavalry-werewolf-attack-hits.html" target="_blank">More info</a></li>
+    <li>Unity Runtime <strong>CVE-2025-59489</strong>: <code>-xrsdk-pre-init-library</code> + unsafe loads → library injection; Android code exec, Windows priv-esc risk. Unity patched supported branches; Valve blocked custom URI schemes; Microsoft advises uninstalling vulnerable games until rebuilt. <a href="https://www.bleepingcomputer.com/news/security/steam-and-microsoft-warn-of-unity-flaw-exposing-gamers-to-attacks/" target="_blank">More info</a> • <a href="https://flatt.tech/research/posts/arbitrary-code-execution-in-unity-runtime/" target="_blank">Research</a></li>
+    <li>CISA KEV adds 7 exploited bugs (Mozilla/IE/Windows/Linux kernel + <strong>CVE-2025-61882</strong> Oracle EBS unauth RCE). Patch/monitor urgently, hunt for intrusion artifacts. <a href="https://www.cisa.gov/news-events/alerts/2025/10/06/cisa-adds-seven-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+    <li>Redis <strong>CVE-2025-49844 “RediShell”</strong>: 13-year Lua UAF → sandbox escape & RCE (auth’d). Patch OSS 8.2.2+/Stack 7.4.0-v7+, restrict access, disable Lua if possible; ~330k exposed, 60k unauth. <a href="https://www.bleepingcomputer.com/news/security/redis-warns-of-max-severity-flaw-impacting-thousands-of-instances/" target="_blank">More info</a></li>
+    <li>Dell UnityVSA <strong>CVE-2025-36604</strong>: unauth command injection via login redirect URI (<code>getCASURL</code> Perl concat). Fix in 5.5.1+ (DSA-2025-281); related XSS (<strong>CVE-2025-36605</strong>) also patched. <a href="https://hackread.com/dell-unityvsa-flaw-command-execution-without-login/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>GreyNoise</strong>: 500% surge in scans on Palo Alto GlobalProtect/PAN-OS portals (1,285 IPs). Mostly US/UK/NL/CA/RU. No compromise yet; signs of recon. Also sees Grafana CVE-2021-43798 exploit attempts. <a href="https://www.bleepingcomputer.com/news/security/massive-surge-in-scans-targeting-palo-alto-networks-login-portals/" target="_blank">More info</a></li>
+    <li><strong>XWorm</strong> reemerges (v6.0/6.4/6.5): 35+ plugins (steal creds, RDP, exfil, ransomware). Spread via JS/PS/Excel, masquerades as Discord; ransomware module echoes NoCry (AES-CBC). Defense: EDR, email filtering, network monitoring. <a href="https://www.bleepingcomputer.com/news/security/xworm-malware-resurfaces-with-ransomware-module-over-35-plugins/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Medusa/Storm-1175</strong> exploiting GoAnywhere MFT <strong>CVE-2025-10035</strong> since Sept 11 → RMM (SimpleHelp/MeshAgent), recon (Netscan), exfil (Rclone), ransomware. Patch & review logs; 500+ exposed instances remain. <a href="https://www.bleepingcomputer.com/news/security/microsoft-critical-goanywhere-bug-exploited-in-ransomware-attacks/" target="_blank">More info</a></li>
+    <li>UAE: Android spyware <strong>ProSpy</strong>/<strong>ToSpy</strong> posing as Signal/ToTok via fake sites; steals contacts, chats, backups, files. Play Protect now blocking known variants. <a href="https://hackread.com/spyware-fake-signal-totok-apps-uae-android-users/" target="_blank">More info</a></li>
+    <li><strong>1Password</strong> phish: fake Watchtower breach alerts from <code>watchtower@eightninety[.]com</code> → typosquat <em>onepass-word[.]com</em>; Mandrill redirect abused. Verify within app, not via email links. <a href="https://www.malwarebytes.com/blog/news/2025/10/phishers-target-1password-users-with-convincing-fake-breach-alert" target="_blank">More info</a></li>
+    <li><strong>Scattered Lapsus$ Hunters</strong>: crowdsourced extortion—paying $10 BTC to harass execs of alleged victims; OAuth token abuse via Salesloft Drift noted. <a href="https://www.theregister.com/2025/10/06/scattered_lapsus_bitcoin_reward/" target="_blank">More info</a></li>
+    <li><strong>“Trinity of Chaos”</strong> leak site (Lapsus$/Scattered Spider/ShinyHunters): 39 firms listed, claims 1.5B records (Salesforce OAuth/vishing). FBI alerts issued. <a href="https://www.infosecurity-magazine.com/news/trinity-chaos-launches-data-leak/" target="_blank">More info</a></li>
+    <li><strong>UAT-8099</strong>: Chinese-speaking group hijacks high-rep IIS (IN/TH/VN/CA/BR) for SEO fraud/data theft; BadIIS variants (proxy/injector/SEO), Cobalt Strike, SoftEther/FRP persistence. <a href="https://thehackernews.com/2025/10/chinese-cybercrime-group-runs-global.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>📁 Breaches & Leaks</h2>
   <ul>
-    <li><strong>Discord</strong>: 3rd-party breach (likely Zendesk) exfiltrated support ticket data incl. names, emails, IDs, partial payment info. Access revoked; forensics and law enforcement engaged. Claimed by Scattered Lapsus$ Hunters, then denied. <a href="https://www.bleepingcomputer.com/news/security/discord-discloses-data-breach-after-hackers-steal-support-tickets/" target="_blank">More info</a></li>
+    <li><strong>Red Hat</strong>: ShinyHunters joins Crimson Collective to extort after GitLab consulting breach (≈570GB, ~800 CERs). Threat to leak Oct 10. <a href="https://www.bleepingcomputer.com/news/security/red-hat-data-breach-escalates-as-shinyhunters-joins-extortion/" target="_blank">More info</a></li>
+    <li><strong>Asahi</strong>: ransomware with confirmed data theft; systems isolated, operations disrupted, manual workarounds in place; group unclaimed. <a href="https://www.infosecurity-magazine.com/news/asahi-ransomware-attack-data-stolen/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📌 Others</h2>
   <ul>
-    <li><strong>Signal SPQR</strong>: new “Sparse Post-Quantum Ratchet” adds PQC (ML-KEM + ECDH hybrid) to Double Ratchet → “Triple Ratchet”; forward secrecy + post-compromise security. Verified via ProVerif; Rust-tested. <a href="https://www.bleepingcomputer.com/news/security/signal-adds-new-cryptographic-defense-against-quantum-attacks/" target="_blank">More info</a></li>
+    <li>EU vote (Oct 14) on “Chat Control” device-scanning before encryption; <strong>Signal</strong> warns it would leave EU if passed. Privacy orgs flag backdoor risks vs. supporters’ CSAM aims. <a href="https://cyberscoop.com/potential-eu-law-sparks-global-concerns-encryption-privacy/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🧰 Tools</h2>
   <ul>
-    <li><strong>Hack The Box Threat Range</strong>: AI-powered incident simulation platform for SOC/IR training; realistic live-fire team exercises, resilience scoring, and breach readiness validation. Built post-LetsDefend acquisition. <a href="https://www.itsecurityguru.org/2025/10/03/hack-the-box-introduces-threat-range-for-cyber-incident-simulation/" target="_blank">More info</a></li>
+    <li>Kaspersky: ML pipeline to detect <strong>DLL hijacking</strong> via telemetry on library loads (non-standard paths, unsigned DLLs, renamed exes). FP rate down to 10⁻⁵, 70–80% detection; integrated into MDR/SIEM. <a href="https://securelist.com/building-ml-model-to-detect-dll-hijacking/117565/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
