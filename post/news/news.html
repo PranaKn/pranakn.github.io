@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 08/10/25</title>
+  <title>📰 Cybersecurity Newsfeed - 10/10/25</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; color: #c9a227; }
@@ -16,41 +16,42 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 08/10/25</h2>
+  <h2>📅 10/10/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>Mic-E-Mouse attack</strong>: UC Irvine researchers show high-DPI optical mice can capture desk vibrations and reconstruct speech (42–61% accuracy, +19 dB gain). Access to mouse data streams enables acoustic eavesdropping; safeguards recommended. <a href="https://hackread.com/mic-e-mouse-attack-computer-mice-conversations/" target="_blank">More info</a></li>
-    <li><strong>ASCII smuggling in Google Gemini</strong>: Unicode tags hide payloads → data poisoning, misinformation, model manipulation. Google won’t patch; affects Gemini, DeepSeek, Grok (ChatGPT/Claude/Copilot sanitized). Risk from Workspace integrations. <a href="https://www.bleepingcomputer.com/news/security/google-wont-fix-new-ascii-smuggling-attack-in-gemini/" target="_blank">More info</a></li>
-    <li><strong>Zimbra ZCS CVE-2025-27915</strong>: stored XSS via ICS <code>&lt;details ontoggle&gt;</code> in Classic Web Client (v9.0–10.1). Allows JS execution, email redirection, mailbox modification. Added to CISA KEV; patch immediately. <a href="https://www.cisa.gov/news-events/alerts/2025/10/07/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">More info</a></li>
+    <li><strong>GitHub Copilot Chat</strong>: CSP bypass + remote prompt injection leaked AWS keys & private repo data via Camo image proxy. Fixed Aug 14; rotate secrets, audit Chat usage, restrict repo access. <a href="https://www.securityweek.com/github-copilot-chat-flaw-leaked-data-from-private-repositories/" target="_blank">More info</a></li>
+    <li><strong>Axis Autodesk Revit Plugin (ZDI-24-1181)</strong>: Exposed Azure Storage creds in signed DLLs → cloud file access & potential supply-chain attack via malicious RFA uploads. Fully patched in v25.3.718 (Mar 2025). <a href="https://www.trendmicro.com/en_us/research/25/j/axis-plugin-flaw-autodesk-revit-supply-chain-risk.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>BatShadow (Vietnam)</strong>: new campaign using Go-based <em>Vampire Bot</em> in fake recruiter ZIPs → PowerShell, RDP tools, Edge redirections → exfil C2. Targets job seekers/digital marketers; overlaps with Agent Tesla/Lumma Stealer. <a href="https://thehackernews.com/2025/10/batshadow-group-uses-new-go-based.html" target="_blank">More info</a></li>
-    <li><strong>Qilin ransomware</strong> claims Japan’s <strong>Asahi Group</strong> attack → 27GB theft (financials, employee data, business plans). Rust/C RaaS targeting Windows/Linux/ESXi; avoids CIS systems. <a href="https://www.infosecurity-magazine.com/news/qilin-ransomware-asahi-cyber-attack/" target="_blank">More info</a></li>
-    <li><strong>North Korea crypto theft</strong>: $2B stolen in 2025 (total $6B+), largest ever; funds nuclear program. 30+ hacks (incl. $1.46B Bybit breach); shift to social engineering and complex laundering (cross-chain, obscure blockchains). <a href="https://www.bleepingcomputer.com/news/cryptocurrency/north-korean-hackers-stole-over-2-billion-in-crypto-this-year/" target="_blank">More info</a></li>
+    <li><strong>ClayRat spyware</strong>: Android malware via fake Telegram & app clones (WhatsApp, TikTok, YouTube); exfiltrates SMS, photos, contacts. Uses session-based installs to bypass Android 13+. <a href="https://www.bleepingcomputer.com/news/security/new-android-spyware-clayrat-imitates-whatsapp-tiktok-youtube/" target="_blank">More info</a></li>
+    <li><strong>Storm-2603 (China-linked)</strong>: abusing vulnerable Velociraptor DFIR tool (CVE-2025-6264) → privilege escalation → LockBit/Babuk ransomware. Uses Impacket, Defender bypass, VMware access. <a href="https://www.bleepingcomputer.com/news/security/hackers-now-use-velociraptor-dfir-tool-in-ransomware-attacks/" target="_blank">More info</a></li>
+    <li><strong>Klopatra Trojan</strong>: fake Android IPTV/VPN app “Mobdro Pro” steals banking creds; highlights privacy risks in weak VPNs (TurboVPN, XYVPN). <a href="https://www.malwarebytes.com/blog/news/2025/10/fake-vpn-and-streaming-app-drops-malware-that-drains-your-bank-account" target="_blank">More info</a></li>
+    <li><strong>UTA0388 (China-aligned)</strong>: spear-phishing w/ Go-based GOVERSHELL via DLL sideloading; multi-language lures; overlaps UNK_DropPitch. <a href="https://thehackernews.com/2025/10/from-healthkick-to-govershell-evolution.html" target="_blank">More info</a></li>
+    <li><strong>TwoNet (pro-Russian)</strong>: duped into Forescout honeypot water facility; exploited defaults, modified PLCs, claimed success online; shows OT/ICS attack trends. <a href="https://www.itsecurityguru.org/2025/10/09/pro-russian-hacking-group-snared-by-forescout-vedere-labs-honeypot/" target="_blank">More info</a></li>
+    <li><strong>RondoDox Botnet</strong>: exploits 56+ IoT CVEs (D-Link, Netgear, QNAP, TP-Link); Pwn2Own flaws reused; uses exploit “shotgun” tactic; patch firmware, isolate IoT. <a href="https://www.bleepingcomputer.com/news/security/rondodox-botnet-targets-56-n-day-flaws-in-worldwide-attacks/" target="_blank">More info</a></li>
+    <li><strong>Storm-2657</strong>: “Payroll Pirate” phishing MFA codes → hijacks Workday payroll, edits MFA settings; use phishing-resistant MFA (FIDO2). <a href="https://www.microsoft.com/en-us/security/blog/2025/10/09/investigating-targeted-payroll-pirate-attacks-affecting-us-universities/" target="_blank">More info</a></li>
+    <li><strong>PureRAT campaign</strong>: Python infostealer → hybrid .NET RAT (TLS-pinned C2, AMSI patching, ETW unhooking); linked to PXA Stealer. <a href="https://www.bleepingcomputer.com/news/security/from-infostealer-to-full-rat-dissecting-the-purerat-attack-chain/" target="_blank">More info</a></li>
+    <li><strong>Chaos-C++ ransomware</strong>: rewritten C++ variant w/ destructive deletion >1.3GB + BTC wallet hijack; waits 15s to evade sandboxes; targets user dirs. <a href="https://www.darkreading.com/threat-intelligence/chaos-ransomware-upgrades-aggressive-new-variant" target="_blank">More info</a></li>
+    <li><strong>Fake Teams Installers</strong>: SEO/malvertising campaign dropping <em>Oyster/Broomstick</em> backdoor; spoofed domains (*teams-install.top*); fraudulent certs. <a href="https://hackread.com/fake-teams-installers-oyster-backdoor-broomstick/" target="_blank">More info</a></li>
+    <li><strong>Email JS malware</strong>: steganographic JS attachments deliver Formbook, Remcos, Agent Tesla; disguised as DHL/payment messages; advises layered email security. <a href="https://hackread.com/your-shipment-notification-malware-dropper/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>LLM black market</strong>: selling prompt injections, jailbreaks, leaked model data (EchoLeak CVE-2025-32711). WormGPT resurfaces; exploit-as-a-service emerging for AI. <a href="https://www.darknet.org.uk/2025/10/llm-black-markets-in-2025-prompt-injection-jailbreak-sales-model-leaks/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📁 Breaches & Leaks</h2>
   <ul>
-    <li><strong>Salesforce</strong> refuses ransom from <em>Scattered Lapsus$ Hunters</em> (linked to ShinyHunters); 1B records allegedly stolen from 39 major firms via OAuth/social engineering. Victims: Google, Cisco, Cloudflare, Palo Alto Networks, Disney. <a href="https://www.bleepingcomputer.com/news/security/salesforce-refuses-to-pay-ransom-over-widespread-data-theft-attacks/" target="_blank">More info</a></li>
-    <li><strong>Avnet</strong>: breach of external EMEA sales DB (1.3TB claim). Data unreadable without proprietary tools; samples show employee/contact info. No critical data leaked; secrets rotated post-incident. <a href="https://www.bleepingcomputer.com/news/security/electronics-giant-avnet-confirms-breach-says-stolen-data-unreadable/" target="_blank">More info</a></li>
+    <li><strong>SonicWall</strong>: confirms breach of all cloud backup customers; firewall configs (.EXP) stolen w/ AES-256 creds; reset passwords, VPN keys, API tokens. <a href="https://www.bleepingcomputer.com/news/security/sonicwall-firewall-configs-stolen-for-all-cloud-backup-customers/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📌 Others</h2>
   <ul>
-    <li><strong>India</strong> disconnects 6.1M fake SIMs in 3 months; eastern Uttar Pradesh major fraud hub. <em>Sanchar Saathi</em> app lets citizens verify numbers; re-verification ordered for 9+ SIMs. <a href="https://www.cysecurity.news/2025/10/fake-sim-cards-fuel-cybercrime-surge-as.html" target="_blank">More info</a></li>
-  </ul>
-
-  <h2>🧰 Tools</h2>
-  <ul>
-    <li><strong>RustRedOps</strong>: GitHub collection of Rust-based red-team PoCs (process injection, API hooking, ETW/AMSI patching, UEFI, WebAssembly shellcode). Legit use for research; defenders watch for in-memory execution and unsigned binaries. <a href="https://www.darknet.org.uk/2025/10/rustredops-rust-native-offensive-toolkit-collection-for-red-teams/" target="_blank">More info</a></li>
-  </ul>
-
-  <h2>🕵️ Hunting</h2>
-  <ul>
-    <li><strong>Mustang Panda</strong> (Hive0154): June 2025 DLL sideloading campaign → Claimloader → Publoader via <code>EnumFontsW</code>; XOR string obfuscation, Run key + scheduled task persistence; Tibetan targets. <a href="https://0x0d4y.blog/mustang-panda-employ-publoader-through-claimloader-yes-another-dll-side-loading-technique-delivery-via-phishing/" target="_blank">More info</a></li>
+    <li><strong>Microsoft outage</strong>: Azure Front Door failure (Kubernetes instance loss) → global 365 access issues (EMEA focus). 96–98% restored by midday. <a href="https://www.bleepingcomputer.com/news/microsoft/azure-outage-blocks-access-to-microsoft-365-services-admin-portals/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
