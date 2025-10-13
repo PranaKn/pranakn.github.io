@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 10/10/25</title>
+  <title>📰 Cybersecurity Newsfeed - 13/10/25</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; color: #c9a227; }
@@ -16,42 +16,40 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 10/10/25</h2>
+  <h2>📅 13/10/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>GitHub Copilot Chat</strong>: CSP bypass + remote prompt injection leaked AWS keys & private repo data via Camo image proxy. Fixed Aug 14; rotate secrets, audit Chat usage, restrict repo access. <a href="https://www.securityweek.com/github-copilot-chat-flaw-leaked-data-from-private-repositories/" target="_blank">More info</a></li>
-    <li><strong>Axis Autodesk Revit Plugin (ZDI-24-1181)</strong>: Exposed Azure Storage creds in signed DLLs → cloud file access & potential supply-chain attack via malicious RFA uploads. Fully patched in v25.3.718 (Mar 2025). <a href="https://www.trendmicro.com/en_us/research/25/j/axis-plugin-flaw-autodesk-revit-supply-chain-risk.html" target="_blank">More info</a></li>
+    <li><strong>Gladinet CentreStack/Triofox</strong> zero-day <strong>CVE-2025-11371</strong> (LFI) actively exploited to read <code>Web.config</code> + steal machineKey → RCE via prior ViewState bug <strong>CVE-2025-30406</strong>. No patch; mitigate by removing temp handler line in <code>UploadDownloadProxy/Web.config</code> (blocks <code>t.dn</code>), expect limited functionality. <a href="https://www.bleepingcomputer.com/news/security/hackers-exploiting-zero-day-in-gladinet-file-sharing-software/" target="_blank">More info</a></li>
+    <li><strong>Juniper</strong> ships mega-patches: ~220 vulns across Junos OS/Space/Security Director; nine critical in Junos Space incl. <strong>CVE-2025-59978</strong> (admin-page XSS, CVSS 9.0). Update to Junos Space <strong>24.1R4 Patch V1</strong> (162 fixes). <a href="https://securityaffairs.com/183229/security/juniper-patched-nine-critical-flaws-in-junos-space.html" target="_blank">More info</a></li>
+    <li><strong>Grafana</strong> path traversal <strong>CVE-2021-43798</strong> added to CISA KEV; unauth file read in 8.0.0-beta1→8.3.0. Patch to 8.0.7/8.1.8/8.2.7/8.3.1+, rotate exposed creds, restrict public access. Deadline: <strong>Oct 30, 2025</strong>. <a href="https://www.cisa.gov/news-events/alerts/2025/10/09/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">More info</a></li>
+    <li><strong>Ivanti Endpoint Manager</strong>: ZDI drops 13 unpatched bugs (12 RCE, 1 LPE). Highest CVSS 8.8; fixes slated by Mar 2026. Reduce exposure; monitor closely. <a href="https://www.securityweek.com/zdi-drops-13-unpatched-ivanti-endpoint-manager-vulnerabilities/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>ClayRat spyware</strong>: Android malware via fake Telegram & app clones (WhatsApp, TikTok, YouTube); exfiltrates SMS, photos, contacts. Uses session-based installs to bypass Android 13+. <a href="https://www.bleepingcomputer.com/news/security/new-android-spyware-clayrat-imitates-whatsapp-tiktok-youtube/" target="_blank">More info</a></li>
-    <li><strong>Storm-2603 (China-linked)</strong>: abusing vulnerable Velociraptor DFIR tool (CVE-2025-6264) → privilege escalation → LockBit/Babuk ransomware. Uses Impacket, Defender bypass, VMware access. <a href="https://www.bleepingcomputer.com/news/security/hackers-now-use-velociraptor-dfir-tool-in-ransomware-attacks/" target="_blank">More info</a></li>
-    <li><strong>Klopatra Trojan</strong>: fake Android IPTV/VPN app “Mobdro Pro” steals banking creds; highlights privacy risks in weak VPNs (TurboVPN, XYVPN). <a href="https://www.malwarebytes.com/blog/news/2025/10/fake-vpn-and-streaming-app-drops-malware-that-drains-your-bank-account" target="_blank">More info</a></li>
-    <li><strong>UTA0388 (China-aligned)</strong>: spear-phishing w/ Go-based GOVERSHELL via DLL sideloading; multi-language lures; overlaps UNK_DropPitch. <a href="https://thehackernews.com/2025/10/from-healthkick-to-govershell-evolution.html" target="_blank">More info</a></li>
-    <li><strong>TwoNet (pro-Russian)</strong>: duped into Forescout honeypot water facility; exploited defaults, modified PLCs, claimed success online; shows OT/ICS attack trends. <a href="https://www.itsecurityguru.org/2025/10/09/pro-russian-hacking-group-snared-by-forescout-vedere-labs-honeypot/" target="_blank">More info</a></li>
-    <li><strong>RondoDox Botnet</strong>: exploits 56+ IoT CVEs (D-Link, Netgear, QNAP, TP-Link); Pwn2Own flaws reused; uses exploit “shotgun” tactic; patch firmware, isolate IoT. <a href="https://www.bleepingcomputer.com/news/security/rondodox-botnet-targets-56-n-day-flaws-in-worldwide-attacks/" target="_blank">More info</a></li>
-    <li><strong>Storm-2657</strong>: “Payroll Pirate” phishing MFA codes → hijacks Workday payroll, edits MFA settings; use phishing-resistant MFA (FIDO2). <a href="https://www.microsoft.com/en-us/security/blog/2025/10/09/investigating-targeted-payroll-pirate-attacks-affecting-us-universities/" target="_blank">More info</a></li>
-    <li><strong>PureRAT campaign</strong>: Python infostealer → hybrid .NET RAT (TLS-pinned C2, AMSI patching, ETW unhooking); linked to PXA Stealer. <a href="https://www.bleepingcomputer.com/news/security/from-infostealer-to-full-rat-dissecting-the-purerat-attack-chain/" target="_blank">More info</a></li>
-    <li><strong>Chaos-C++ ransomware</strong>: rewritten C++ variant w/ destructive deletion >1.3GB + BTC wallet hijack; waits 15s to evade sandboxes; targets user dirs. <a href="https://www.darkreading.com/threat-intelligence/chaos-ransomware-upgrades-aggressive-new-variant" target="_blank">More info</a></li>
-    <li><strong>Fake Teams Installers</strong>: SEO/malvertising campaign dropping <em>Oyster/Broomstick</em> backdoor; spoofed domains (*teams-install.top*); fraudulent certs. <a href="https://hackread.com/fake-teams-installers-oyster-backdoor-broomstick/" target="_blank">More info</a></li>
-    <li><strong>Email JS malware</strong>: steganographic JS attachments deliver Formbook, Remcos, Agent Tesla; disguised as DHL/payment messages; advises layered email security. <a href="https://hackread.com/your-shipment-notification-malware-dropper/" target="_blank">More info</a></li>
+    <li>NY smishing: fake “<strong>Inflation Refund</strong>” texts steal SSNs/bank data; real checks are automatic—no action required. Report to state/IRS. <a href="https://www.bleepingcomputer.com/news/security/fake-inflation-refund-texts-target-new-yorkers-in-new-scam/" target="_blank">More info</a></li>
+    <li>Spain busts <strong>GXC Team</strong> (leader “GoogleXcoder”): CaaS selling AI phishing kits, Android malware, voice-scam tools; seizures across Spain; more arrests likely. <a href="https://www.bleepingcomputer.com/news/security/spain-dismantles-gxc-team-cybercrime-syndicate-arrests-leader/" target="_blank">More info</a></li>
+    <li><strong>Scattered Lapsus$ Hunters</strong> (Muddled/Bling Libra ties) extort retail/hospitality via Salesforce tenant breaches (1B+ records). Shift to EaaS (no encryption). Apply zero trust, scan creds, join ISACs. <a href="https://unit42.paloaltonetworks.com/scattered-lapsus-hunters/" target="_blank">More info</a></li>
+    <li><strong>Aisuru</strong> DDoS botnet: record <strong>29.6 Tbps</strong> from 300k IoT devices (US ISPs heavy). Mirai-based; also sold as residential proxy; claims Totolink supply vector. <a href="https://krebsonsecurity.com/2025/10/ddos-botnet-aisuru-blankets-us-isps-in-record-ddos/" target="_blank">More info</a></li>
+    <li><strong>Storm-2657</strong> “Payroll Pirates”: AiTM phishing steals creds/MFA → Workday payroll reroute; enrolls attacker MFA & hides alerts. Enforce FIDO2, audit devices/inbox rules. <a href="https://thehackernews.com/2025/10/microsoft-warns-of-payroll-pirates.html" target="_blank">More info</a></li>
+    <li><strong>Beamglea</strong> campaign: 175 malicious npm packages (~26k downloads) host redirect HTML/JS on UNPKG → prefilled Microsoft phishing pages. Monitor/sinkhole malicious UNPKG URLs. <a href="https://thehackernews.com/2025/10/175-malicious-npm-packages-with-26000.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>LLM black market</strong>: selling prompt injections, jailbreaks, leaked model data (EchoLeak CVE-2025-32711). WormGPT resurfaces; exploit-as-a-service emerging for AI. <a href="https://www.darknet.org.uk/2025/10/llm-black-markets-in-2025-prompt-injection-jailbreak-sales-model-leaks/" target="_blank">More info</a></li>
-  </ul>
-
-  <h2>📁 Breaches & Leaks</h2>
-  <ul>
-    <li><strong>SonicWall</strong>: confirms breach of all cloud backup customers; firewall configs (.EXP) stolen w/ AES-256 creds; reset passwords, VPN keys, API tokens. <a href="https://www.bleepingcomputer.com/news/security/sonicwall-firewall-configs-stolen-for-all-cloud-backup-customers/" target="_blank">More info</a></li>
+    <li><strong>RondoDox</strong> botnet uses 50+ exploits across 30+ vendors (incl. KEV CVEs) to hijack routers/DVRs/CCTV/web servers for DDoS/mining/intrusion. Patch firmware, replace EoL, segment networks. <a href="https://www.securityweek.com/rondodox-botnet-takes-exploit-shotgun-approach/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📌 Others</h2>
   <ul>
-    <li><strong>Microsoft outage</strong>: Azure Front Door failure (Kubernetes instance loss) → global 365 access issues (EMEA focus). 96–98% restored by midday. <a href="https://www.bleepingcomputer.com/news/microsoft/azure-outage-blocks-access-to-microsoft-365-services-admin-portals/" target="_blank">More info</a></li>
+    <li><strong>Apple bug bounty</strong> revamped: up to <strong>$2M</strong> for zero-click RCE (bonuses >$5M possible); higher rewards for iCloud/wireless; secured iPhone 17s to researchers in 2026. <a href="https://www.bleepingcomputer.com/news/security/apple-now-offers-2-million-for-zero-click-rce-vulnerabilities/" target="_blank">More info</a></li>
+    <li><strong>AI coding risk</strong>: 90% AI-generated code compiles but ~45% has OWASP Top-10 flaws; repeated AI revisions worsen security. Use SAST, human reviews, secure prompts. <a href="https://www.kaspersky.com/blog/vibe-coding-2025-risks/54584/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🧰 Tools</h2>
+  <ul>
+    <li><strong>CloudConqueror</strong>: shows abuse paths via AWS CloudControl APIs for stealthy enumeration/bruteforce/persistence. Monitor CloudTrail CloudControl events, alert on restricted-policy use. <a href="https://github.com/ExaForce/CloudConqueror" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
