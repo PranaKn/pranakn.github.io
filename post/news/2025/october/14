@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 14/10/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 14/10/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>OpenAI Guardrails bypass</strong> — HiddenLayer researchers defeated OpenAI’s new Guardrails toolkit (DevDay 2025). Using prompt injection, they manipulated the LLM’s confidence score and evaded its detector, proving that AI-based defenses remain vulnerable to adversarial prompting. <a href="https://www.malwarebytes.com/blog/news/2025/10/researchers-break-openai-guardrails" target="_blank">More info</a></li>
+    <li><strong>Fortra GoAnywhere MFT</strong> — CVE-2025-10035 (CVSS 10.0) enables unauthenticated code execution via deserialization flaw in License Servlet. 450 systems remain exposed; experts urge zero trust redesign and monitoring to counter legacy MFT flaws exploited by Clop. <a href="https://www.itsecurityguru.org/2025/10/13/hidden-cost-of-mft-vulnerabilities-why-cve-2025-10035-demands-a-new-security-playbook/" target="_blank">More info</a></li>
+    <li><strong>Clevo UEFI firmware (VU#538470)</strong> — leaked Intel Boot Guard keys enable signing malicious UEFI code for stealth persistence. Multiple OEMs use affected firmware; no official fix yet. <a href="https://kb.cert.org/vuls/id/538470" target="_blank">More info</a></li>
+    <li><strong>Oracle E-Business Suite</strong> — CVE-2025-61884 info disclosure flaw allows unauthenticated data theft. Emergency patch covers versions 12.2.3–12.2.14; Clop-linked exploitation suspected. <a href="https://www.bleepingcomputer.com/news/security/oracle-releases-emergency-patch-for-new-e-business-suite-flaw/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>NY inflation refund smishing</strong> — Fraudulent SMS messages mimic New York’s Department of Revenue to steal SSNs and bank data. Official refunds are automatic; ignore messages. <a href="https://www.malwarebytes.com/blog/news/2025/10/phishing-scams-exploit-new-yorks-inflation-refund-program" target="_blank">More info</a></li>
+    <li><strong>Global RDP botnet</strong> — GreyNoise tracked 100k+ IPs from 100+ countries brute-forcing RDP/Remote Desktop Web Access since Oct 8, using coordinated timing attacks to enumerate accounts. Block IPs, restrict RDP exposure. <a href="https://www.bleepingcomputer.com/news/security/massive-multi-country-botnet-targets-rdp-services-in-the-us/" target="_blank">More info</a></li>
+    <li><strong>ShinyHunters, Scattered Spider & Lapsus$</strong> — Breached 39 companies via Salesforce, leaking 5.7M Qantas and 23M Vietnam Airlines records plus data from FedEx, Toyota, and Marriott. Identity theft risks remain severe. <a href="https://hackread.com/shinyhunters-leak-data-qantas-vietnam-airlines-others/" target="_blank">More info</a></li>
+    <li><strong>SonicWall SSLVPN campaign</strong> — Over 100 accounts breached across 16 orgs using stolen credentials. Attackers moved laterally post-login; Huntress recommends resetting secrets, MFA, and disabling remote access. <a href="https://www.bleepingcomputer.com/news/security/sonicwall-vpn-accounts-breached-using-stolen-creds-in-widespread-attacks/" target="_blank">More info</a></li>
+    <li><strong>RMM phishing surge</strong> — DarkAtlas reports rising misuse of AnyDesk, ScreenConnect, and Atera for initial access. ScreenConnect favored for stealth persistence; defenders should monitor Event ID 4573 and in-memory installers. <a href="https://www.infosecurity-magazine.com/news/hackers-target-screenconnects/" target="_blank">More info</a></li>
+    <li><strong>Beamglea phishing</strong> — 175 fake npm packages (“redirect-*”) use UNPKG CDN to redirect victims to Microsoft credential harvesters. Targets industrial and tech sectors. <a href="https://www.securityweek.com/npm-infrastructure-abused-in-phishing-campaign-aimed-at-industrial-and-electronics-firms/" target="_blank">More info</a></li>
+    <li><strong>Astaroth Trojan</strong> — McAfee observed new campaign abusing GitHub for config hosting to evade takedowns. Delivered via DocuSign-themed emails; injects into RegSvc.exe, exfiltrates data through Ngrok tunnels. <a href="https://securityaffairs.com/183323/cyber-crime/astaroth-trojan-abuses-github-to-host-configs-and-evade-takedowns.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breach / Leaks</h2>
+  <ul>
+    <li><strong>SimonMed Imaging</strong> — 1.2M patient records stolen in Medusa ransomware attack (Jan–Feb 2025). Data includes ID scans, payments, and reports. Company deployed EDR, MFA, and offered Experian protection. <a href="https://www.bleepingcomputer.com/news/security/simonmed-says-12-million-patients-impacted-in-january-data-breach/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📌 Others</h2>
+  <ul>
+    <li><strong>Schleswig-Holstein, Germany</strong> — Migrated 40k+ mailboxes from Microsoft Exchange to Open-Xchange & Thunderbird, completing digital sovereignty project. Marks EU trend toward open-source adoption. <a href="https://www.zdnet.com/article/german-state-replaces-microsoft-exchange-and-outlook-with-open-source-email/" target="_blank">More info</a></li>
+    <li><strong>Microsoft IE Mode locked down</strong> — Edge’s IE Mode exploited via Chakra JS engine zero-day; enabled full RCE and privilege escalation. Fix requires manual whitelisting of legacy sites. <a href="https://thehackernews.com/2025/10/microsoft-locks-down-ie-mode-after.html" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
