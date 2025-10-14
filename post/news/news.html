@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 13/10/25</title>
+  <title>📰 Cybersecurity Newsfeed - 14/10/25</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; color: #c9a227; }
@@ -16,40 +16,36 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 13/10/25</h2>
+  <h2>📅 14/10/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>Gladinet CentreStack/Triofox</strong> zero-day <strong>CVE-2025-11371</strong> (LFI) actively exploited to read <code>Web.config</code> + steal machineKey → RCE via prior ViewState bug <strong>CVE-2025-30406</strong>. No patch; mitigate by removing temp handler line in <code>UploadDownloadProxy/Web.config</code> (blocks <code>t.dn</code>), expect limited functionality. <a href="https://www.bleepingcomputer.com/news/security/hackers-exploiting-zero-day-in-gladinet-file-sharing-software/" target="_blank">More info</a></li>
-    <li><strong>Juniper</strong> ships mega-patches: ~220 vulns across Junos OS/Space/Security Director; nine critical in Junos Space incl. <strong>CVE-2025-59978</strong> (admin-page XSS, CVSS 9.0). Update to Junos Space <strong>24.1R4 Patch V1</strong> (162 fixes). <a href="https://securityaffairs.com/183229/security/juniper-patched-nine-critical-flaws-in-junos-space.html" target="_blank">More info</a></li>
-    <li><strong>Grafana</strong> path traversal <strong>CVE-2021-43798</strong> added to CISA KEV; unauth file read in 8.0.0-beta1→8.3.0. Patch to 8.0.7/8.1.8/8.2.7/8.3.1+, rotate exposed creds, restrict public access. Deadline: <strong>Oct 30, 2025</strong>. <a href="https://www.cisa.gov/news-events/alerts/2025/10/09/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">More info</a></li>
-    <li><strong>Ivanti Endpoint Manager</strong>: ZDI drops 13 unpatched bugs (12 RCE, 1 LPE). Highest CVSS 8.8; fixes slated by Mar 2026. Reduce exposure; monitor closely. <a href="https://www.securityweek.com/zdi-drops-13-unpatched-ivanti-endpoint-manager-vulnerabilities/" target="_blank">More info</a></li>
+    <li><strong>OpenAI Guardrails bypass</strong> — HiddenLayer researchers defeated OpenAI’s new Guardrails toolkit (DevDay 2025). Using prompt injection, they manipulated the LLM’s confidence score and evaded its detector, proving that AI-based defenses remain vulnerable to adversarial prompting. <a href="https://www.malwarebytes.com/blog/news/2025/10/researchers-break-openai-guardrails" target="_blank">More info</a></li>
+    <li><strong>Fortra GoAnywhere MFT</strong> — CVE-2025-10035 (CVSS 10.0) enables unauthenticated code execution via deserialization flaw in License Servlet. 450 systems remain exposed; experts urge zero trust redesign and monitoring to counter legacy MFT flaws exploited by Clop. <a href="https://www.itsecurityguru.org/2025/10/13/hidden-cost-of-mft-vulnerabilities-why-cve-2025-10035-demands-a-new-security-playbook/" target="_blank">More info</a></li>
+    <li><strong>Clevo UEFI firmware (VU#538470)</strong> — leaked Intel Boot Guard keys enable signing malicious UEFI code for stealth persistence. Multiple OEMs use affected firmware; no official fix yet. <a href="https://kb.cert.org/vuls/id/538470" target="_blank">More info</a></li>
+    <li><strong>Oracle E-Business Suite</strong> — CVE-2025-61884 info disclosure flaw allows unauthenticated data theft. Emergency patch covers versions 12.2.3–12.2.14; Clop-linked exploitation suspected. <a href="https://www.bleepingcomputer.com/news/security/oracle-releases-emergency-patch-for-new-e-business-suite-flaw/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li>NY smishing: fake “<strong>Inflation Refund</strong>” texts steal SSNs/bank data; real checks are automatic—no action required. Report to state/IRS. <a href="https://www.bleepingcomputer.com/news/security/fake-inflation-refund-texts-target-new-yorkers-in-new-scam/" target="_blank">More info</a></li>
-    <li>Spain busts <strong>GXC Team</strong> (leader “GoogleXcoder”): CaaS selling AI phishing kits, Android malware, voice-scam tools; seizures across Spain; more arrests likely. <a href="https://www.bleepingcomputer.com/news/security/spain-dismantles-gxc-team-cybercrime-syndicate-arrests-leader/" target="_blank">More info</a></li>
-    <li><strong>Scattered Lapsus$ Hunters</strong> (Muddled/Bling Libra ties) extort retail/hospitality via Salesforce tenant breaches (1B+ records). Shift to EaaS (no encryption). Apply zero trust, scan creds, join ISACs. <a href="https://unit42.paloaltonetworks.com/scattered-lapsus-hunters/" target="_blank">More info</a></li>
-    <li><strong>Aisuru</strong> DDoS botnet: record <strong>29.6 Tbps</strong> from 300k IoT devices (US ISPs heavy). Mirai-based; also sold as residential proxy; claims Totolink supply vector. <a href="https://krebsonsecurity.com/2025/10/ddos-botnet-aisuru-blankets-us-isps-in-record-ddos/" target="_blank">More info</a></li>
-    <li><strong>Storm-2657</strong> “Payroll Pirates”: AiTM phishing steals creds/MFA → Workday payroll reroute; enrolls attacker MFA & hides alerts. Enforce FIDO2, audit devices/inbox rules. <a href="https://thehackernews.com/2025/10/microsoft-warns-of-payroll-pirates.html" target="_blank">More info</a></li>
-    <li><strong>Beamglea</strong> campaign: 175 malicious npm packages (~26k downloads) host redirect HTML/JS on UNPKG → prefilled Microsoft phishing pages. Monitor/sinkhole malicious UNPKG URLs. <a href="https://thehackernews.com/2025/10/175-malicious-npm-packages-with-26000.html" target="_blank">More info</a></li>
+    <li><strong>NY inflation refund smishing</strong> — Fraudulent SMS messages mimic New York’s Department of Revenue to steal SSNs and bank data. Official refunds are automatic; ignore messages. <a href="https://www.malwarebytes.com/blog/news/2025/10/phishing-scams-exploit-new-yorks-inflation-refund-program" target="_blank">More info</a></li>
+    <li><strong>Global RDP botnet</strong> — GreyNoise tracked 100k+ IPs from 100+ countries brute-forcing RDP/Remote Desktop Web Access since Oct 8, using coordinated timing attacks to enumerate accounts. Block IPs, restrict RDP exposure. <a href="https://www.bleepingcomputer.com/news/security/massive-multi-country-botnet-targets-rdp-services-in-the-us/" target="_blank">More info</a></li>
+    <li><strong>ShinyHunters, Scattered Spider & Lapsus$</strong> — Breached 39 companies via Salesforce, leaking 5.7M Qantas and 23M Vietnam Airlines records plus data from FedEx, Toyota, and Marriott. Identity theft risks remain severe. <a href="https://hackread.com/shinyhunters-leak-data-qantas-vietnam-airlines-others/" target="_blank">More info</a></li>
+    <li><strong>SonicWall SSLVPN campaign</strong> — Over 100 accounts breached across 16 orgs using stolen credentials. Attackers moved laterally post-login; Huntress recommends resetting secrets, MFA, and disabling remote access. <a href="https://www.bleepingcomputer.com/news/security/sonicwall-vpn-accounts-breached-using-stolen-creds-in-widespread-attacks/" target="_blank">More info</a></li>
+    <li><strong>RMM phishing surge</strong> — DarkAtlas reports rising misuse of AnyDesk, ScreenConnect, and Atera for initial access. ScreenConnect favored for stealth persistence; defenders should monitor Event ID 4573 and in-memory installers. <a href="https://www.infosecurity-magazine.com/news/hackers-target-screenconnects/" target="_blank">More info</a></li>
+    <li><strong>Beamglea phishing</strong> — 175 fake npm packages (“redirect-*”) use UNPKG CDN to redirect victims to Microsoft credential harvesters. Targets industrial and tech sectors. <a href="https://www.securityweek.com/npm-infrastructure-abused-in-phishing-campaign-aimed-at-industrial-and-electronics-firms/" target="_blank">More info</a></li>
+    <li><strong>Astaroth Trojan</strong> — McAfee observed new campaign abusing GitHub for config hosting to evade takedowns. Delivered via DocuSign-themed emails; injects into RegSvc.exe, exfiltrates data through Ngrok tunnels. <a href="https://securityaffairs.com/183323/cyber-crime/astaroth-trojan-abuses-github-to-host-configs-and-evade-takedowns.html" target="_blank">More info</a></li>
   </ul>
 
-  <h2>📈 Trends</h2>
+  <h2>💥 Breach / Leaks</h2>
   <ul>
-    <li><strong>RondoDox</strong> botnet uses 50+ exploits across 30+ vendors (incl. KEV CVEs) to hijack routers/DVRs/CCTV/web servers for DDoS/mining/intrusion. Patch firmware, replace EoL, segment networks. <a href="https://www.securityweek.com/rondodox-botnet-takes-exploit-shotgun-approach/" target="_blank">More info</a></li>
+    <li><strong>SimonMed Imaging</strong> — 1.2M patient records stolen in Medusa ransomware attack (Jan–Feb 2025). Data includes ID scans, payments, and reports. Company deployed EDR, MFA, and offered Experian protection. <a href="https://www.bleepingcomputer.com/news/security/simonmed-says-12-million-patients-impacted-in-january-data-breach/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📌 Others</h2>
   <ul>
-    <li><strong>Apple bug bounty</strong> revamped: up to <strong>$2M</strong> for zero-click RCE (bonuses >$5M possible); higher rewards for iCloud/wireless; secured iPhone 17s to researchers in 2026. <a href="https://www.bleepingcomputer.com/news/security/apple-now-offers-2-million-for-zero-click-rce-vulnerabilities/" target="_blank">More info</a></li>
-    <li><strong>AI coding risk</strong>: 90% AI-generated code compiles but ~45% has OWASP Top-10 flaws; repeated AI revisions worsen security. Use SAST, human reviews, secure prompts. <a href="https://www.kaspersky.com/blog/vibe-coding-2025-risks/54584/" target="_blank">More info</a></li>
-  </ul>
-
-  <h2>🧰 Tools</h2>
-  <ul>
-    <li><strong>CloudConqueror</strong>: shows abuse paths via AWS CloudControl APIs for stealthy enumeration/bruteforce/persistence. Monitor CloudTrail CloudControl events, alert on restricted-policy use. <a href="https://github.com/ExaForce/CloudConqueror" target="_blank">More info</a></li>
+    <li><strong>Schleswig-Holstein, Germany</strong> — Migrated 40k+ mailboxes from Microsoft Exchange to Open-Xchange & Thunderbird, completing digital sovereignty project. Marks EU trend toward open-source adoption. <a href="https://www.zdnet.com/article/german-state-replaces-microsoft-exchange-and-outlook-with-open-source-email/" target="_blank">More info</a></li>
+    <li><strong>Microsoft IE Mode locked down</strong> — Edge’s IE Mode exploited via Chakra JS engine zero-day; enabled full RCE and privilege escalation. Fix requires manual whitelisting of legacy sites. <a href="https://thehackernews.com/2025/10/microsoft-locks-down-ie-mode-after.html" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
