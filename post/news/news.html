@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 14/10/25</title>
+  <title>📰 Cybersecurity Newsfeed - 15/10/25</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; color: #c9a227; }
@@ -16,36 +16,34 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 14/10/25</h2>
+  <h2>📅 15/10/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>OpenAI Guardrails bypass</strong> — HiddenLayer researchers defeated OpenAI’s new Guardrails toolkit (DevDay 2025). Using prompt injection, they manipulated the LLM’s confidence score and evaded its detector, proving that AI-based defenses remain vulnerable to adversarial prompting. <a href="https://www.malwarebytes.com/blog/news/2025/10/researchers-break-openai-guardrails" target="_blank">More info</a></li>
-    <li><strong>Fortra GoAnywhere MFT</strong> — CVE-2025-10035 (CVSS 10.0) enables unauthenticated code execution via deserialization flaw in License Servlet. 450 systems remain exposed; experts urge zero trust redesign and monitoring to counter legacy MFT flaws exploited by Clop. <a href="https://www.itsecurityguru.org/2025/10/13/hidden-cost-of-mft-vulnerabilities-why-cve-2025-10035-demands-a-new-security-playbook/" target="_blank">More info</a></li>
-    <li><strong>Clevo UEFI firmware (VU#538470)</strong> — leaked Intel Boot Guard keys enable signing malicious UEFI code for stealth persistence. Multiple OEMs use affected firmware; no official fix yet. <a href="https://kb.cert.org/vuls/id/538470" target="_blank">More info</a></li>
-    <li><strong>Oracle E-Business Suite</strong> — CVE-2025-61884 info disclosure flaw allows unauthenticated data theft. Emergency patch covers versions 12.2.3–12.2.14; Clop-linked exploitation suspected. <a href="https://www.bleepingcomputer.com/news/security/oracle-releases-emergency-patch-for-new-e-business-suite-flaw/" target="_blank">More info</a></li>
+    <li><strong>Windows 10 EoS</strong>: Final cumulative update <strong>KB5066791</strong> ships (6 zero-days + 172 fixes). Win10 now only via ESUs (1y consumer, up to 3y enterprise; EMEA gets 1y free). Fixes IME, PSRemoting, SMBv1, Autopilot ESP; removes <code>ltmdm64.sys</code>. <a href="https://www.bleepingcomputer.com/news/microsoft/final-windows-10-patch-tuesday-update-rolls-out-as-support-ends/" target="_blank">More info</a></li>
+    <li><strong>Pixnapping</strong>: Android side-channel “pixel-snaps” 2FA/messages using intents + SurfaceFlinger quirks + GPU.zip timing; PoCs on Pixel 6–9/Galaxy S25 (Android 13–16). Sept partial fix <strong>CVE-2025-48561</strong> bypassed; fuller patch due Dec 2025. <a href="https://www.bleepingcomputer.com/news/security/new-android-pixnapping-attack-steals-mfa-codes-pixel-by-pixel/" target="_blank">More info</a> • <a href="https://vimeo.com/1127270954?fl=pl&fe=sh" target="_blank">Demo</a></li>
+    <li><strong>October Patch Tuesday</strong>: 172 CVEs (6 0-days, 8 Critical). Highlights: remove Agere fax-modem driver (CVE-2025-24990/24052), <em>RasMan</em> SYSTEM EoP (CVE-2025-59230), IGEL OS Secure Boot bypass intake (CVE-2025-47827), AMD SEV-SNP RMP corruption ack (CVE-2025-0033). <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2025-patch-tuesday-fixes-6-zero-days-172-flaws/" target="_blank">More info</a></li>
+    <li><strong>Oracle EBS</strong>: Quiet OOB patch for <strong>CVE-2025-61884</strong> (pre-auth SSRF / info disclosure) abused in wild; blocks leaked <code>/configurator/UiServlet</code> chain via <code>return_url</code> validation. Urgent: update or block endpoint. <a href="https://www.bleepingcomputer.com/news/security/oracles-silently-fixes-zero-day-exploit-leaked-by-shinyhunters/" target="_blank">More info</a></li>
+    <li><strong>Framework Secure Boot</strong>: ~200k Linux systems shipped with signed UEFI shells exposing <code>mm</code> (memory modify) → Secure Boot bypass by nulling <code>gSecurity2</code>; bootkit risk. Update firmware or delete Framework DB key until patched. <a href="https://www.bleepingcomputer.com/news/security/secure-boot-bypass-risk-on-nearly-200-000-linux-framework-sytems/" target="_blank">More info</a></li>
+    <li><strong>RMPocalypse</strong> (CVE-2025-0033): AMD SEV-SNP RMP race enables attestation forgery/replay/code injection; impacts EPYC 7003–9005. Firmware/BIOS updates rolling through Nov; Azure Confidential Computing clusters patching. <a href="https://thehackernews.com/2025/10/rmpocalypse-single-8-byte-write.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>NY inflation refund smishing</strong> — Fraudulent SMS messages mimic New York’s Department of Revenue to steal SSNs and bank data. Official refunds are automatic; ignore messages. <a href="https://www.malwarebytes.com/blog/news/2025/10/phishing-scams-exploit-new-yorks-inflation-refund-program" target="_blank">More info</a></li>
-    <li><strong>Global RDP botnet</strong> — GreyNoise tracked 100k+ IPs from 100+ countries brute-forcing RDP/Remote Desktop Web Access since Oct 8, using coordinated timing attacks to enumerate accounts. Block IPs, restrict RDP exposure. <a href="https://www.bleepingcomputer.com/news/security/massive-multi-country-botnet-targets-rdp-services-in-the-us/" target="_blank">More info</a></li>
-    <li><strong>ShinyHunters, Scattered Spider & Lapsus$</strong> — Breached 39 companies via Salesforce, leaking 5.7M Qantas and 23M Vietnam Airlines records plus data from FedEx, Toyota, and Marriott. Identity theft risks remain severe. <a href="https://hackread.com/shinyhunters-leak-data-qantas-vietnam-airlines-others/" target="_blank">More info</a></li>
-    <li><strong>SonicWall SSLVPN campaign</strong> — Over 100 accounts breached across 16 orgs using stolen credentials. Attackers moved laterally post-login; Huntress recommends resetting secrets, MFA, and disabling remote access. <a href="https://www.bleepingcomputer.com/news/security/sonicwall-vpn-accounts-breached-using-stolen-creds-in-widespread-attacks/" target="_blank">More info</a></li>
-    <li><strong>RMM phishing surge</strong> — DarkAtlas reports rising misuse of AnyDesk, ScreenConnect, and Atera for initial access. ScreenConnect favored for stealth persistence; defenders should monitor Event ID 4573 and in-memory installers. <a href="https://www.infosecurity-magazine.com/news/hackers-target-screenconnects/" target="_blank">More info</a></li>
-    <li><strong>Beamglea phishing</strong> — 175 fake npm packages (“redirect-*”) use UNPKG CDN to redirect victims to Microsoft credential harvesters. Targets industrial and tech sectors. <a href="https://www.securityweek.com/npm-infrastructure-abused-in-phishing-campaign-aimed-at-industrial-and-electronics-firms/" target="_blank">More info</a></li>
-    <li><strong>Astaroth Trojan</strong> — McAfee observed new campaign abusing GitHub for config hosting to evade takedowns. Delivered via DocuSign-themed emails; injects into RegSvc.exe, exfiltrates data through Ngrok tunnels. <a href="https://securityaffairs.com/183323/cyber-crime/astaroth-trojan-abuses-github-to-host-configs-and-evade-takedowns.html" target="_blank">More info</a></li>
+    <li><strong>TigerJack</strong>: Malicious VSCode/OpenVSX extensions (<em>C++ Playground</em>, <em>HTTP Format</em>) steal code and mine crypto (CoinIMP); 17k+ downloads; removed from VSCode but persist on OpenVSX. Beware republished names/JS RCE. <a href="https://www.bleepingcomputer.com/news/security/malicious-crypto-stealing-vscode-extensions-resurface-on-openvsx/" target="_blank">More info</a></li>
+    <li><strong>TA585</strong>: Runs own phishing infra; ClickFix/web-inject overlays deliver <strong>MonsterV2</strong> RAT/stealer (clipper, HVNC). Sold $800–$2k/mo; avoids CIS; obfuscated with SonicCrypt. <a href="https://thehackernews.com/2025/10/researchers-expose-ta585s-monsterv2.html" target="_blank">More info</a></li>
   </ul>
 
-  <h2>💥 Breach / Leaks</h2>
+  <h2>📁 Breaches & Leaks</h2>
   <ul>
-    <li><strong>SimonMed Imaging</strong> — 1.2M patient records stolen in Medusa ransomware attack (Jan–Feb 2025). Data includes ID scans, payments, and reports. Company deployed EDR, MFA, and offered Experian protection. <a href="https://www.bleepingcomputer.com/news/security/simonmed-says-12-million-patients-impacted-in-january-data-breach/" target="_blank">More info</a></li>
+    <li><strong>Flax Typhoon</strong> (China): Year-long ArcGIS compromise—JSOE → gated web shell, persistence via backup, SoftEther “bridge.exe” (service <em>SysBridge</em>) for HTTPS egress; LOTL to blend with REST traffic and exfiltrate. <a href="https://thehackernews.com/2025/10/chinese-hackers-exploit-arcgis-server.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>📌 Others</h2>
   <ul>
-    <li><strong>Schleswig-Holstein, Germany</strong> — Migrated 40k+ mailboxes from Microsoft Exchange to Open-Xchange & Thunderbird, completing digital sovereignty project. Marks EU trend toward open-source adoption. <a href="https://www.zdnet.com/article/german-state-replaces-microsoft-exchange-and-outlook-with-open-source-email/" target="_blank">More info</a></li>
-    <li><strong>Microsoft IE Mode locked down</strong> — Edge’s IE Mode exploited via Chakra JS engine zero-day; enabled full RCE and privilege escalation. Fix requires manual whitelisting of legacy sites. <a href="https://thehackernews.com/2025/10/microsoft-locks-down-ie-mode-after.html" target="_blank">More info</a></li>
+    <li><strong>Exchange Server 2016/2019 EoS</strong>: Final security updates released (Oct 14, 2025). Migrate to Exchange Online or Exchange Server Subscription Edition (supports in-place from 2019). <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-2016-and-2019-have-reached-end-of-support/" target="_blank">More info</a></li>
+    <li><strong>Vuln credit dispute</strong>: FuzzingLabs vs Gecko Security over Ollama (CVE-2025-51471) & Gradio (CVE-2025-48889) claims; raises CVE ownership and coordination challenges. <a href="https://www.bleepingcomputer.com/news/security/security-firms-dispute-credit-for-overlapping-cve-reports/" target="_blank">More info</a></li>
+    <li><strong>Crypto standards debate</strong>: Peter Todd warns NSA push for quantum-only standards could weaken hybrid PQC; echoes Dual_EC concerns. NIST still endorses hybrids (e.g., ECC+Kyber). <a href="https://www.cysecurity.news/2025/10/bitcoin-developer-warns-nsa-may-be.html" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
