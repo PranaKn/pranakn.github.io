@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 17/10/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 17/10/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Operation Zero Disco (CVE-2025-20352)</strong> — Cisco SNMP stack overflow (CVSS 7.7) exploited to deploy Linux rootkits on Cisco 9400/9300/3750G switches. Rootkits use a universal “disco” password, disable logs, and inject hooks into IOSd. Patch and disable SNMP. <a href="https://documents.trendmicro.com/images/uploads/Operation%20Zero%20Disco%20IoCs-wpV04Mt.txt" target="_blank">More info</a></li>
+    <li><strong>Adobe AEM Forms (CVE-2025-54253)</strong> — Apache Struts devMode misconfig enables unauth RCE; patched Aug 2025. Public PoC led to active exploitation. Patch to 6.5.0-0108+ by Nov 5 per CISA. <a href="https://www.helpnetsecurity.com/2025/10/16/adobe-experience-manager-vulnerability-exploited-cve-2025-54253/" target="_blank">More info</a></li>
+    <li><strong>Gladinet CentreStack (CVE-2025-11371)</strong> — Actively exploited LFI exposes Web.config → chained with ViewState RCE (CVE-2025-30406). Fixed in v16.10.10408.56683; apply or disable temp handler. <a href="https://www.bleepingcomputer.com/news/security/gladinet-fixes-actively-exploited-zero-day-in-file-sharing-software/" target="_blank">More info</a></li>
+    <li><strong>Fuji Electric V-SFT flaws</strong> — 20+ bugs in Monitouch HMI config tool enable info leak or RCE via malicious project files. Fixed in v6.2.9.0; four-month vendor turnaround. <a href="https://www.securityweek.com/fuji-electric-hmi-configurator-flaws-expose-industrial-organizations-to-hacking/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Vanilla Tempest (Vice Society)</strong> — Microsoft revoked 200+ certs abused for Rhysida ransomware, distributed via fake Teams installers hosting Oyster backdoor. Exploited trusted signers like SSL.com and DigiCert. <a href="https://www.securityweek.com/microsoft-revokes-over-200-certificates-to-disrupt-ransomware-campaign/" target="_blank">More info</a></li>
+    <li><strong>Famous Chollima (DPRK)</strong> — Fake job app “Chessfi” drops BeaverTail + OtterCookie malware via npm package node-nvm-ssh, stealing wallets and credentials via JS-based infostealer. <a href="https://hackread.com/nk-famous-chollima-beavertail-ottercookie-malware/" target="_blank">More info</a></li>
+    <li><strong>LinkPro rootkit</strong> — Linux rootkit (Go + eBPF) hides activity after Jenkins (CVE-2024-23897) exploit. Features TCP “knock” activation (window=54321) and systemd persistence. <a href="https://thehackernews.com/2025/10/linkpro-linux-rootkit-uses-ebpf-to-hide.html" target="_blank">More info</a></li>
+    <li><strong>UNC5342 (DPRK)</strong> — Uses EtherHiding to distribute malware via smart contracts on Ethereum/BSC, delivering JADESNOW → InvisibleFerret spyware in “Contagious Interview” job lures. <a href="https://www.bleepingcomputer.com/news/security/north-korean-hackers-use-etherhiding-to-hide-malware-on-the-blockchain/" target="_blank">More info</a></li>
+    <li><strong>Jewelbug APT</strong> — China-linked group targeted Russian IT provider (Jan–May 2025) using ShadowPad, KillAV, and Graph API backdoor. Exfiltration to Yandex Cloud; signs of supply chain intent. <a href="https://securityaffairs.com/183488/apt/china-linked-apt-jewelbug-targets-russian-it-provider-in-rare-cross-nation-cyberattack.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>PayPal invoice phishing</strong> — Attackers send fake invoices via legitimate PayPal channels, adding phone numbers that route to scam “support” demanding payments. Verify invoices by logging in directly. <a href="https://www.itsecurityguru.org/2025/10/16/knowbe4-warns-of-new-paypal-invoice-phishing-scam/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>VS Code / Open VSX marketplaces</strong> — 550+ leaked credentials (including AI provider tokens) found in extensions; potential for supply-chain attacks. Microsoft revoked and deployed secret scanning. <a href="https://www.darkreading.com/application-security/leaks-microsoft-vs-code-marketplaces-supply-chain-risks" target="_blank">More info</a></li>
+    <li><strong>NetcoreCloud</strong> — 40B+ email logs (13.4TB) exposed via misconfigured server; contained client data from finance/health sectors. Now secured. <a href="https://hackread.com/misconfigured-netcorecloud-server-40-billion-records/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📌 Others</h2>
+  <ul>
+    <li><strong>Lumma Stealer disruption</strong> — Doxxing campaign exposed Water Kurita operators, collapsing Lumma’s Telegram/C2 infra and shifting demand to Vidar/StealC. <a href="https://www.trendmicro.com/en_us/research/25/j/the-impact-of-water-kurita-lumma-stealer-doxxing.html" target="_blank">More info</a></li>
+    <li><strong>Operation Heracles</strong> — Europol + German police dismantled 1,406 fake crypto trading platforms targeting German speakers; AI-generated sites lured investors. 866k access attempts recorded post-seizure. <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/operation-heracles-strikes-blow-massive-network-fraudulent-crypto-trading-sites" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🕵️ Hunting</h2>
+  <ul>
+    <li><strong>Famous Chollima (DPRK)</strong> — Cisco Talos observed merged BeaverTail/OtterCookie malware in Chessfi Node.js app via npm node-nvm-ssh. OtterCookie v5 adds clipboard/keylog/screenshot theft. Found also in malicious VS Code extension. <a href="https://blog.talosintelligence.com/beavertail-and-ottercookie/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
