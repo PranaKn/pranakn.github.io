@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 20/10/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 20/10/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li>ConnectWise Automate: <strong>CVE-2025-11492</strong> (agents send data over HTTP → AiTM) + <strong>CVE-2025-11493</strong> (no integrity on updates). Cloud fixed in <code>Automate 2025.9</code>; on-prem update ASAP. <a href="https://www.bleepingcomputer.com/news/security/connectwise-fixes-automate-bug-allowing-aitm-update-attacks/" target="_blank">More info</a></li>
+    <li>ASP.NET Core/Kestrel: <strong>CVE-2025-55315</strong> request smuggling (highest-severity ASP.NET Core bug to date) — can hijack creds, modify files, crash servers. Patches for .NET 2.3/8.0/9.0 & VS 2022. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-highest-severity-aspnet-core-flaw-ever/" target="_blank">More info</a></li>
+    <li>WatchGuard Fireware <code>iked</code>: <strong>CVE-2025-9242</strong> OOB write via IKEv2 → unauth RCE on VPN gateway. Patch or apply mitigations immediately. <a href="https://thehackernews.com/2025/10/researchers-uncover-watchguard-vpn-bug.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Winos 4.0 / ValleyRAT</strong>: expands from CN/TW to JP/MY via finance-ministry PDF lures → HoldingHands RAT & Winos 4.0; signed EXEs, Dokany loader, scheduler persistence. <a href="https://securityaffairs.com/183580/security/winos-4-0-hackers-expand-to-japan-and-malaysia-with-new-malware.html" target="_blank">More info</a></li>
+    <li>macOS devs targeted: Google ads to fake Homebrew/LogMeIn/TradingView → “ClickFix” copy-paste installs that disable Gatekeeper and drop AMOS/Odyssey stealers. <a href="https://www.bleepingcomputer.com/news/security/google-ads-for-fake-homebrew-logmein-sites-push-infostealers/" target="_blank">More info</a></li>
+    <li><strong>CAPI Backdoor</strong> (.NET) hits Russian auto/e-commerce: ZIP + LNK → <code>rundll32</code> loads <code>adobe.dll</code>; steals creds/screens; C2 <code>91.223.75[.]96</code>; typosquat <em>carprlce[.]ru</em>. <a href="https://thehackernews.com/2025/10/new-net-capi-backdoor-targets-russian.html" target="_blank">More info</a></li>
+    <li>Zendesk abuse: unauth ticket creation used to email-bomb victims via legit domains (Discord, NordVPN, WaPo). Require verified users for ticket creation. <a href="https://krebsonsecurity.com/2025/10/email-bombs-exploit-lax-authentication-in-zendesk/" target="_blank">More info</a></li>
+    <li>npm supply chain: fake <code>https-proxy-utils</code> dropped <strong>AdaptixC2</strong> (alt to Cobalt Strike) via post-install on Win/macOS/Linux; DLL sideload via <code>msdtc.exe</code>. <a href="https://securelist.com/adaptixc2-agent-found-in-an-npm-package/117784/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li>Microsoft DTR 2025: AI-enhanced cyber & influence ops by RU/CN/IR/DPRK surged (200+ incidents in July) — U.S. most targeted; modernize defenses. <a href="https://www.securityweek.com/microsoft-russia-china-increasingly-using-ai-to-escalate-cyberattacks-on-the-us/" target="_blank">More info</a></li>
+    <li>CERT/CC VU#652514: DNS rebinding + cached/misapplied CORS headers can bypass same-origin and exfiltrate internal data; update browsers, harden CORS. <a href="https://kb.cert.org/vuls/id/652514" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Experian NL</strong>: €2.7M GDPR fine for unlawful mass personal-data collection; exiting NL and deleting data by EOY 2025. <a href="https://www.bleepingcomputer.com/news/legal/experian-fined-32-million-for-mass-collecting-personal-data/" target="_blank">More info</a></li>
+    <li><strong>Envoy Air</strong> (American Airlines subsidiary): Oracle EBS data theft tied to Clop’s Aug ’25 campaign (CVE-2025-61882/61884). Limited business/contact data impacted. <a href="https://www.bleepingcomputer.com/news/security/american-airlines-subsidiary-envoy-confirms-oracle-data-theft-attack/" target="_blank">More info</a></li>
+    <li><strong>Sotheby’s</strong>: breach exposed names, SSNs, financial account data; 12-month credit monitoring offered. <a href="https://www.securityweek.com/hackers-steal-sensitive-data-from-auction-house-sothebys/" target="_blank">More info</a></li>
+    <li><strong>Prosper</strong>: 17.6M users’ PII (incl. SSNs, income, credit status) exposed via unauthorized DB queries; enable 2FA & monitor identity. <a href="https://www.malwarebytes.com/blog/news/2025/10/prosper-data-breach-puts-17-million-people-at-risk-of-identity-theft" target="_blank">More info</a></li>
+    <li>U.S. gov doxing: spreadsheets claim hundreds of DHS/FBI/DOJ contacts leaked by “Com” community; scope unconfirmed — tighten OPSEC. <a href="https://www.404media.co/hackers-dox-hundreds-of-dhs-ice-fbi-and-doj-officials/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
