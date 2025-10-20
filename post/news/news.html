@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 20/10/25</title>
+  <title>📰 Cybersecurity Newsfeed - 21/10/25</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; color: #c9a227; }
@@ -16,37 +16,47 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 20/10/25</h2>
+  <h2>📅 21/10/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li>ConnectWise Automate: <strong>CVE-2025-11492</strong> (agents send data over HTTP → AiTM) + <strong>CVE-2025-11493</strong> (no integrity on updates). Cloud fixed in <code>Automate 2025.9</code>; on-prem update ASAP. <a href="https://www.bleepingcomputer.com/news/security/connectwise-fixes-automate-bug-allowing-aitm-update-attacks/" target="_blank">More info</a></li>
-    <li>ASP.NET Core/Kestrel: <strong>CVE-2025-55315</strong> request smuggling (highest-severity ASP.NET Core bug to date) — can hijack creds, modify files, crash servers. Patches for .NET 2.3/8.0/9.0 & VS 2022. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-highest-severity-aspnet-core-flaw-ever/" target="_blank">More info</a></li>
-    <li>WatchGuard Fireware <code>iked</code>: <strong>CVE-2025-9242</strong> OOB write via IKEv2 → unauth RCE on VPN gateway. Patch or apply mitigations immediately. <a href="https://thehackernews.com/2025/10/researchers-uncover-watchguard-vpn-bug.html" target="_blank">More info</a></li>
+    <li><strong>CISA KEV additions</strong>: 5 new actively exploited flaws — Apple CVE-2022-48503, Kentico Xperience CVE-2025-2746/2747, Windows SMB CVE-2025-33073, Oracle EBS CVE-2025-61884. Federal patch deadline imminent. <a href="https://www.cisa.gov/news-events/alerts/2025/10/20/cisa-adds-five-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+    <li><strong>WatchGuard Fireware CVE-2025-9242</strong>: 76K Fireboxes exposed worldwide; unauth IKEv2 RCE risk. Patch to 2025.1.1 / 12.11.4+ immediately. <a href="https://www.bleepingcomputer.com/news/security/over-75-000-watchguard-security-devices-vulnerable-to-critical-rce/" target="_blank">More info</a></li>
+    <li><strong>Satellite Comms</strong>: UCSD & UMD researchers show half of GEO satellites leak unencrypted calls, airline data, and military traffic via $800 receiver. Urge standardized encryption. <a href="https://www.cysecurity.news/2025/10/satellites-found-broadcasting-sensitive.html" target="_blank">More info</a></li>
+    <li><strong>Windows SMB CVE-2025-33073</strong>: Privilege escalation exploited in wild; improper access control allows SYSTEM-level takeover. Patch by Nov 10. <a href="https://www.bleepingcomputer.com/news/security/cisa-high-severity-windows-smb-flaw-now-exploited-in-attacks/" target="_blank">More info</a></li>
+    <li><strong>ConnectWise Automate</strong>: CVE-2025-11492/11493 fixed in v2025.9 enforcing HTTPS + TLS 1.2; mitigates MiTM & update tampering. <a href="https://www.securityweek.com/connectwise-patches-critical-flaw-in-automate-rmm-tool/" target="_blank">More info</a></li>
+    <li><strong>Dolby Unified Decoder CVE-2025-54957</strong>: Out-of-bounds write enables zero-click RCE via crafted audio; fixed in Oct patches across Android, Windows, ChromeOS. <a href="https://www.securityweek.com/vulnerability-in-dolby-decoder-can-allow-zero-click-attacks/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>Winos 4.0 / ValleyRAT</strong>: expands from CN/TW to JP/MY via finance-ministry PDF lures → HoldingHands RAT & Winos 4.0; signed EXEs, Dokany loader, scheduler persistence. <a href="https://securityaffairs.com/183580/security/winos-4-0-hackers-expand-to-japan-and-malaysia-with-new-malware.html" target="_blank">More info</a></li>
-    <li>macOS devs targeted: Google ads to fake Homebrew/LogMeIn/TradingView → “ClickFix” copy-paste installs that disable Gatekeeper and drop AMOS/Odyssey stealers. <a href="https://www.bleepingcomputer.com/news/security/google-ads-for-fake-homebrew-logmein-sites-push-infostealers/" target="_blank">More info</a></li>
-    <li><strong>CAPI Backdoor</strong> (.NET) hits Russian auto/e-commerce: ZIP + LNK → <code>rundll32</code> loads <code>adobe.dll</code>; steals creds/screens; C2 <code>91.223.75[.]96</code>; typosquat <em>carprlce[.]ru</em>. <a href="https://thehackernews.com/2025/10/new-net-capi-backdoor-targets-russian.html" target="_blank">More info</a></li>
-    <li>Zendesk abuse: unauth ticket creation used to email-bomb victims via legit domains (Discord, NordVPN, WaPo). Require verified users for ticket creation. <a href="https://krebsonsecurity.com/2025/10/email-bombs-exploit-lax-authentication-in-zendesk/" target="_blank">More info</a></li>
-    <li>npm supply chain: fake <code>https-proxy-utils</code> dropped <strong>AdaptixC2</strong> (alt to Cobalt Strike) via post-install on Win/macOS/Linux; DLL sideload via <code>msdtc.exe</code>. <a href="https://securelist.com/adaptixc2-agent-found-in-an-npm-package/117784/" target="_blank">More info</a></li>
+    <li><strong>ColdRiver (Russia)</strong>: Replaced LOSTKEYS with new NOROBOT downloader & MAYBEROBOT PowerShell backdoor; targets NATO entities. <a href="https://www.darkreading.com/cyberattacks-data-breaches/coldriver-drops-fresh-malware-targets" target="_blank">More info</a></li>
+    <li><strong>GlassWorm supply-chain attack</strong>: 35K+ VS Code / OpenVSX downloads infected; steals GitHub/npm creds, uses Solana + Google Calendar C2. Payload “ZOMBI” forms botnet. <a href="https://www.bleepingcomputer.com/news/security/self-spreading-glassworm-malware-hits-openvsx-vs-code-registries/" target="_blank">More info</a></li>
+    <li><strong>DBX Tecnologia spamware</strong>: 131 cloned Chrome extensions automate WhatsApp Web messages in Brazil; inject scripts, sold under “WL Extensão.” <a href="https://thehackernews.com/2025/10/131-chrome-extensions-caught-hijacking.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li>Microsoft DTR 2025: AI-enhanced cyber & influence ops by RU/CN/IR/DPRK surged (200+ incidents in July) — U.S. most targeted; modernize defenses. <a href="https://www.securityweek.com/microsoft-russia-china-increasingly-using-ai-to-escalate-cyberattacks-on-the-us/" target="_blank">More info</a></li>
-    <li>CERT/CC VU#652514: DNS rebinding + cached/misapplied CORS headers can bypass same-origin and exfiltrate internal data; update browsers, harden CORS. <a href="https://kb.cert.org/vuls/id/652514" target="_blank">More info</a></li>
+    <li><strong>Azure Blob Storage abuse</strong>: Microsoft warns blob misconfigurations enable recon, lateral movement, data theft, and C2 via SAS / Functions / replication abuse. Apply Defender for Storage and least privilege. <a href="https://www.microsoft.com/en-us/security/blog/2025/10/20/inside-the-attack-chain-threat-activity-targeting-azure-blob-storage/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📁 Breaches & Leaks</h2>
   <ul>
-    <li><strong>Experian NL</strong>: €2.7M GDPR fine for unlawful mass personal-data collection; exiting NL and deleting data by EOY 2025. <a href="https://www.bleepingcomputer.com/news/legal/experian-fined-32-million-for-mass-collecting-personal-data/" target="_blank">More info</a></li>
-    <li><strong>Envoy Air</strong> (American Airlines subsidiary): Oracle EBS data theft tied to Clop’s Aug ’25 campaign (CVE-2025-61882/61884). Limited business/contact data impacted. <a href="https://www.bleepingcomputer.com/news/security/american-airlines-subsidiary-envoy-confirms-oracle-data-theft-attack/" target="_blank">More info</a></li>
-    <li><strong>Sotheby’s</strong>: breach exposed names, SSNs, financial account data; 12-month credit monitoring offered. <a href="https://www.securityweek.com/hackers-steal-sensitive-data-from-auction-house-sothebys/" target="_blank">More info</a></li>
-    <li><strong>Prosper</strong>: 17.6M users’ PII (incl. SSNs, income, credit status) exposed via unauthorized DB queries; enable 2FA & monitor identity. <a href="https://www.malwarebytes.com/blog/news/2025/10/prosper-data-breach-puts-17-million-people-at-risk-of-identity-theft" target="_blank">More info</a></li>
-    <li>U.S. gov doxing: spreadsheets claim hundreds of DHS/FBI/DOJ contacts leaked by “Com” community; scope unconfirmed — tighten OPSEC. <a href="https://www.404media.co/hackers-dox-hundreds-of-dhs-ice-fbi-and-doj-officials/" target="_blank">More info</a></li>
+    <li><strong>Lynx ransomware</strong>: Breach of UK contractor Dodd Group leaks 4 TB of MoD base data (RAF Lakenheath, Portreath, Predannack etc.). <a href="https://securityaffairs.com/183640/data-breach/russian-lynk-group-leaks-sensitive-uk-mod-files-including-info-on-eight-military-bases.html" target="_blank">More info</a></li>
+    <li><strong>Muji / Askul ransomware</strong>: Logistics breach halts Muji online sales; no actor claimed yet; part of Japan’s rising ransomware wave. <a href="https://www.bleepingcomputer.com/news/security/retail-giant-muji-halts-online-sales-after-ransomware-attack-on-supplier/" target="_blank">More info</a></li>
+    <li><strong>The Com collective</strong>: Telegram leak of >1K FBI/ICE/DHS/DOJ officials’ data; linked to BlackCat & LAPSUS$; may plan IRS doxing next. <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/hundreds-masked-ice-agents-doxxed-hackers-personal-details-posted-telegram" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📌 Others</h2>
+  <ul>
+    <li><strong>AWS outage</strong>: US-East-1 DNS failure (DynamoDB API) cascaded to EC2/Lambda/S3 — 8 M+ global outage reports. <a href="https://www.zdnet.com/home-and-office/networking/an-aws-failure-took-down-the-internet-monday-morning-and-the-aftershocks-continue/" target="_blank">More info</a></li>
+    <li><strong>MSS vs NSA</strong>: China accuses NSA of attacking National Time Service Center using 42 cyber tools (2022–24) to disrupt Beijing Time infrastructure. <a href="https://thehackernews.com/2025/10/mss-claims-nsa-used-42-cyber-tools-in.html" target="_blank">More info</a></li>
+    <li><strong>Agentic AI OODA-loop essay</strong>: Explains how AI agents’ Observe-Orient-Decide-Act cycle is attackable (poisons, prompt injection, tool hijack); proposes semantic integrity for safety. <a href="https://www.schneier.com/blog/archives/2025/10/agentic-ais-ooda-loop-problem.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🧰 Tools</h2>
+  <ul>
+    <li><strong>XRayC2</strong>: Uses AWS X-Ray trace annotations as covert C2; hides commands in telemetry; defenders should monitor PutTrace/GetTrace spikes & tighten privileges. <a href="https://www.darknet.org.uk/2025/10/xrayc2-weaponizing-aws-x-ray-for-covert-command-and-control-c2/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
