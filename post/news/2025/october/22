@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 22/10/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 22/10/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>TP-Link Omada</strong> (13 models): command injection quartet — CVE-2025-6542/8750 (CVSS 9.3), CVE-2025-6541 (8.6), CVE-2025-7851 (8.7). Unauth RCE possible; update firmware ASAP. <a href="https://www.bleepingcomputer.com/news/security/tp-link-warns-of-critical-command-injection-flaw-in-omada-gateways/" target="_blank">More info</a></li>
+    <li><strong>Cursor & Windsurf IDEs</strong>: ship outdated Electron/Chromium/V8 with 94+ n-day vulns; PoC shows V8 Maglev overflow (CVE-2025-7656) crash → likely RCE. Consider maintained VS Code builds. <a href="https://www.bleepingcomputer.com/news/security/cursor-windsurf-ides-riddled-with-94-plus-n-day-chromium-vulnerabilities/" target="_blank">More info</a></li>
+    <li><strong>Pwn2Own Ireland</strong> Day 1: 34 zero-days landed; $522.5k paid. Team DDOS chains 8 bugs vs QNAP NAS/router; Synology, Canon, Sonos also popped. <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-34-zero-days-on-first-day-of-pwn2own-ireland/" target="_blank">More info</a></li>
+    <li><strong>WatchGuard Fireware OS</strong> CVE-2025-9242 (CVSS 9.3): IKEv2 OOB write → unauth RCE; 71k+ exposed Fireboxes. Patch (2025.1.1/12.11.4/12.5.13/12.3.1_U3) or limit BOVPN scope. <a href="https://www.infosecurity-magazine.com/news/watchguard-fireware-os-flaw/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Vidar Stealer 2.0</strong>: rewritten in C; multithreaded theft, Chrome App-Bound bypass, anti-analysis; steals creds/cookies/wallets; exfil via Telegram/Steam URLs. <a href="https://www.bleepingcomputer.com/news/security/vidar-stealer-20-adds-multi-threaded-data-theft-better-evasion/" target="_blank">More info</a></li>
+    <li><strong>Salt Typhoon (CN)</strong>: long-running telecom/energy/government ops in 80+ countries; NetScaler zero-day; SNAPPYBEE backdoor; caught by anomaly detection. <a href="https://hackread.com/salt-typhoon-apt-telecom-energy-sectors-darktrace/" target="_blank">More info</a></li>
+    <li><strong>PolarEdge</strong> TLS ELF backdoor herds routers (Cisco/ASUS/QNAP/Synology); config in last 512 bytes XOR 0x11; links to GhostSocks/Lumma infra. <a href="https://thehackernews.com/2025/10/polaredge-targets-cisco-asus-qnap.html" target="_blank">More info</a></li>
+    <li><strong>PassiveNeuron</strong> resurges: Neursite (C++) & NeuralExecutor (.NET) implants on Windows/SQL servers; Cobalt Strike; likely China-linked TTPs. <a href="https://www.darkreading.com/cyberattacks-data-breaches/-passiveneuron-cyber-spies-target-industrial-financial-orgs" target="_blank">More info</a></li>
+    <li><strong>ColdRiver / Star Blizzard</strong>: swaps LostKeys for NoRobot → YesRobot → MaybeRobot (PowerShell) via ClickFix fake CAPTCHAs; rapid tooling rotation. <a href="https://www.bleepingcomputer.com/news/security/russian-hackers-evolve-malware-pushed-in-i-am-not-a-robot-clickfix-attacks/" target="_blank">More info</a> | <a href="https://www.infosecurity-magazine.com/news/russian-coldriver-hackers-new/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>GlassWorm</strong> VS Code supply-chain: 35.8k+ infections; invisible Unicode; C2 via Solana blockchain + Google Calendar; steals GitHub/NPM/git creds; spreads on VS Code/OpenVSX. <a href="https://www.darkreading.com/application-security/self-propagating-glassworm-vs-code-supply-chain" target="_blank">More info</a></li>
+    <li><strong>ClickFix via TikTok</strong>: videos lure users to run PowerShell (e.g., “free Photoshop activator”) → AuroStealer, RATs, ransomware; Microsoft: 47% of initial access in ’24–’25. <a href="https://www.zdnet.com/article/scam-texts-net-over-1-billion-for-cyber-gangs-how-to-avoid-their-traps/" target="_blank">More info</a></li>
+    <li><strong>Fake job offers → FB phish</strong>: KFC/Ferrari/Red Bull lures send to faux portals/FB logins; look for rebrand.ly tricks & mismatched senders. <a href="https://hackread.com/phishing-emails-offer-jobs-steal-facebook-logins/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Muji outage</strong>: logistics partner Askul hit by ransomware; online sales halted; shipping/support services suspended; data-leak probe ongoing. <a href="https://securityaffairs.com/183639/breaking-news/japanese-retailer-muji-halted-online-sales-after-a-ransomware-attack-on-logistics-partner.html" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
