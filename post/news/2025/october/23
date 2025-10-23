@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cybersecurity Newsfeed – 23/10/2025</title>
+<style>
+body { background-color: #0e0e0e; color: #e0e0e0; font-family: Monaco, monospace; margin: 40px; }
+h1, h2 { color: #c9a227; text-align: center; }
+a { color: #c9a227; text-decoration: none; }
+a:hover { text-decoration: underline; }
+section { margin-top: 40px; }
+hr { border: 1px solid #333; margin-top: 30px; }
+footer { text-align: center; color: #777; margin-top: 50px; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<h1>Cybersecurity Newsfeed</h1>
+<h2>October 23, 2025</h2>
+
+<section>
+<h2>🛡️ Vulnerabilities</h2>
+<p>CISA added <b>CVE-2025-61932</b>—an improper verification flaw in Motex LANSCOPE Endpoint Manager—to the KEV catalog. It allows arbitrary code execution via crafted packets on on-prem versions 9.4.7.1 and earlier. Patching is required by <b>November 12</b>. <a href="https://www.cisa.gov/news-events/alerts/2025/10/22/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">[CISA]</a></p>
+
+<p>Google Project Zero disclosed <b>CVE-2025-54957</b>, a buffer overflow in Dolby’s Unified Decoder Component used on Windows and Android. The zero-click flaw can trigger RCE via crafted audio streams. Fixes were issued for UDC 4.5–4.13. <a href="https://www.malwarebytes.com/blog/news/2025/10/zero-click-dolby-audio-bug-lets-attackers-run-code-on-android-and-windows-devices" target="_blank">[Malwarebytes]</a></p>
+</section>
+
+<section>
+<h2>🎯 Adversaries & Attacks</h2>
+<p><b>MuddyWater (Iran)</b> targeted over 100 Middle East/North Africa entities using <b>Phoenix backdoor v4</b> delivered via FakeUpdate loader from phishing emails sent through a compromised NordVPN account. The campaign includes PDQ and Action1 RMM tool usage. <a href="https://www.bleepingcomputer.com/news/security/iranian-hackers-targeted-over-100-govt-orgs-with-phoenix-backdoor/" target="_blank">[BleepingComputer]</a></p>
+
+<p><b>Bitter APT</b> deployed a C# backdoor via malicious Excel XLAM and a WinRAR exploit altering Word templates, communicating with C2 <code>esanojinjasvc.com</code>. <a href="https://hackread.com/bitter-apt-winrar-vulnerability-backdoor-attacks/" target="_blank">[HackRead]</a></p>
+
+<p><b>PhantomCaptcha</b> targeted Ukraine relief groups (Red Cross, UNICEF, NRC) with phishing PDFs leading to a fake Zoom site that dropped a WebSocket RAT hosted on Russian VPS infra, linked to <b>COLDRIVER</b>. <a href="https://securityaffairs.com/183720/apt/phantomcaptcha-targets-ukraine-relief-groups-with-websocket-rat.html" target="_blank">[SecurityAffairs]</a></p>
+
+<p>Hackers exploit <b>CVE-2025-54236 (SessionReaper)</b> in Adobe Commerce to hijack sessions via REST API, with 62% of stores still unpatched. <a href="https://www.bleepingcomputer.com/news/security/hackers-exploiting-critical-sessionreaper-flaw-in-adobe-magento/" target="_blank">[BleepingComputer]</a></p>
+
+<p>China-linked APTs <b>Earth Estries</b> and <b>Earth Naga</b> share access in “Premier Pass-as-a-Service,” using ShadowPad, Cobalt Strike, and Citrix exploits for coordinated espionage. <a href="https://www.trendmicro.com/en_us/research/25/j/premier-pass-as-a-service.html" target="_blank">[TrendMicro]</a></p>
+
+<p>A new Rust desync flaw <b>TARmageddon (CVE-2025-62518)</b> enables RCE via async-tar and tokio-tar libraries; developers urged to migrate to patched forks. <a href="https://www.bleepingcomputer.com/news/security/tarmageddon-flaw-in-abandoned-rust-library-enables-rce-attacks/" target="_blank">[BleepingComputer]</a></p>
+
+<p><b>SocGholish</b> (FakeUpdates) is being used by <b>Evil Corp</b> and <b>RansomHub</b> to deliver ransomware via compromised WordPress sites. <a href="https://hackread.com/socgholish-malware-compromised-sites-ransomware/" target="_blank">[HackRead]</a></p>
+
+<p>Chinese APTs exploit <b>CVE-2025-53770 (ToolShell)</b> in SharePoint to install ShadowPad and Sliver across government and telecom sectors globally. <a href="https://www.bleepingcomputer.com/news/security/sharepoint-toolshell-attacks-targeted-orgs-across-four-continents/" target="_blank">[BleepingComputer]</a></p>
+
+<p><b>PassiveNeuron</b> continues espionage in Asia, Africa, and Latin America, using Neursite (C++) and NeuralExecutor (.NET) with GitHub dead-drop C2 and SQL-based lateral movement. <a href="https://thehackernews.com/2025/10/researchers-identify-passiveneuron-apt.html" target="_blank">[TheHackerNews]</a></p>
+
+<p><b>ColdRiver (Russia)</b> upgraded its ClickFix toolkit using <b>NOROBOT</b>, <b>YESROBOT</b>, and <b>MAYBEROBOT</b> to evade detection and persist via scheduled tasks, continuing its espionage campaigns against Western targets. <a href="https://securityaffairs.com/183672/apt/russia-linked-coldriver-speeds-up-malware-evolution-after-lostkeys-exposure.html" target="_blank">[SecurityAffairs]</a></p>
+</section>
+
+<section>
+<h2>📈 Trends</h2>
+<p><b>Unit 42</b> uncovered “<b>Jingle Thief</b>,” a Morocco-based cloud-only campaign stealing M365 gift card credentials without malware by abusing OneDrive and SharePoint access. <a href="https://www.helpnetsecurity.com/2025/10/22/cloud-based-techniques-gift-card-fraud/" target="_blank">[HelpNetSecurity]</a></p>
+</section>
+
+<section>
+<h2>📁 Breaches & Leaks</h2>
+<p><b>FinWise Bank</b> breach exposed data of 689,000 American First Finance customers after a former employee retained credentials. The breach went undetected for a year. <a href="https://www.bleepingcomputer.com/news/security/finwise-data-breach-shows-why-encryption-is-your-last-defense/" target="_blank">[BleepingComputer]</a></p>
+</section>
+
+<section>
+<h2>📌 Others</h2>
+<p><b>Meta</b> launched AI-based scam detection for Messenger and new WhatsApp warnings to counter fraud; 8 million scam accounts disabled. <a href="https://www.bleepingcomputer.com/news/security/meta-launches-new-anti-scam-tools-for-whatsapp-and-messenger/" target="_blank">[BleepingComputer]</a></p>
+
+<p><b>Verizon’s 2025 Mobile Security Index</b> shows smishing attacks now surpass phishing, with 70% of attacks hitting personal devices. Adopting zero-trust and MDM reduces breaches by half. <a href="https://www.darkreading.com/threat-intelligence/verizon-mobile-blindspot-data-breaches" target="_blank">[DarkReading]</a></p>
+</section>
+
+<hr>
+<footer>
+<p>🗞️ <a href="https://cybernewsfeed.example/archive" target="_blank">View Archive</a></p>
+</footer>
+</body>
+</html>
