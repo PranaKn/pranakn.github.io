@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 23/10/25</title>
+  <title>📰 Cybersecurity Newsfeed - 24/10/25</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; color: #c9a227; }
@@ -16,42 +16,43 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 23/10/25</h2>
+  <h2>📅 24/10/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>Motex LANSCOPE Endpoint Manager</strong>: CVE-2025-61932 (improper source verification) → arbitrary code execution via crafted packets; on-prem ≤9.4.7.1 affected. Patch by Nov 12. <a href="https://www.cisa.gov/news-events/alerts/2025/10/22/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">More info</a></li>
-    <li><strong>Dolby Unified Decoder Component</strong>: CVE-2025-54957 zero-click RCE via malformed Dolby Digital Plus audio; affects Windows/Android devices (Pixel/Samsung). Fixes in UDC 4.5–4.13. <a href="https://www.malwarebytes.com/blog/news/2025/10/zero-click-dolby-audio-bug-lets-attackers-run-code-on-android-and-windows-devices" target="_blank">More info</a></li>
+    <li><strong>Adobe Commerce / Magento</strong>: CVE-2025-54236 “SessionReaper” exploited post-PoC; session hijacking via REST API; 60% sites unpatched; 97 IPs scanning. Patch + WAF ASAP. <a href="https://www.darkreading.com/vulnerabilities-threats/sessionreaper-adobe-commerce-flaw-under-attack" target="_blank">More info</a></li>
+    <li><strong>Shadow Escape (AI MCP flaw)</strong>: zero-click data theft via Model Context Protocol; malicious PDFs trigger AI assistants (ChatGPT/Gemini/Claude) to exfil sensitive data. Audit MCP permissions urgently. <a href="https://hackread.com/shadow-escape-0-click-attack-ai-assistants-risk/" target="_blank">More info</a></li>
+    <li><strong>AI Sidebar Spoofing</strong>: Atlas & Comet AI browsers can be mimicked by malicious extensions; users tricked into OAuth/phishing/reverse-shell. Avoid handling sensitive data via AI browsers. <a href="https://www.bleepingcomputer.com/news/security/spoofed-ai-sidebars-can-trick-atlas-comet-users-into-dangerous-actions/" target="_blank">More info</a></li>
+    <li><strong>BIND 9</strong>: CVE-2025-40780/40778/8677 → cache poisoning & DoS; upgrade to 9.18.41/9.20.15/9.21.14; no workarounds. <a href="https://www.securityweek.com/bind-updates-address-high-severity-cache-poisoning-flaws/" target="_blank">More info</a></li>
+    <li><strong>Oracle Critical Patch Update (Oct 2025)</strong>: 374 fixes across products; 80% third-party deps; several CVEs (CVSS 9.8) allow unauth RCE. Prioritize Oracle Comms, MySQL, Fusion Middleware. <a href="https://blog.qualys.com/vulnerabilities-threat-research/2025/10/22/oracle-critical-patch-update-october-2025-security-update-review" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>MuddyWater (Iran)</strong>: 100+ Middle East/North Africa gov targets hit via Phoenix v4 backdoor (AES-encrypted, COM persistence) delivered by FakeUpdate loader; used Action1 RMM + PDQ tools. <a href="https://www.bleepingcomputer.com/news/security/iranian-hackers-targeted-over-100-govt-orgs-with-phoenix-backdoor/" target="_blank">More info</a></li>
-    <li><strong>Bitter APT</strong>: new Excel XLAM & WinRAR vector drops C# backdoor (vlcplayer.dll/winnsc.exe) using C2 esanojinjasvc[.]com. Targets South Asian gov/military orgs. <a href="https://hackread.com/bitter-apt-winrar-vulnerability-backdoor-attacks/" target="_blank">More info</a></li>
-    <li><strong>PhantomCaptcha</strong>: phishing vs. Ukraine relief NGOs via fake Zoom (zoomconference[.]app) → PowerShell loader + WebSocket RAT; Russian VPS infra, ColdRiver-linked. <a href="https://securityaffairs.com/183720/apt/phantomcaptcha-targets-ukraine-relief-groups-with-websocket-rat.html" target="_blank">More info</a></li>
-    <li><strong>Adobe Commerce (Magento)</strong>: CVE-2025-54236 “SessionReaper” exploited to hijack REST API sessions; 62% stores unpatched, 250+ attempts/day logged. <a href="https://www.bleepingcomputer.com/news/security/hackers-exploiting-critical-sessionreaper-flaw-in-adobe-magento/" target="_blank">More info</a></li>
-    <li><strong>Earth Estries & Earth Naga</strong>: “Premier Pass-as-a-Service” sharing access and exploits (Cobalt Strike, ShadowPad, Citrix CVE-2025-5777); joint APAC espionage ops. <a href="https://www.trendmicro.com/en_us/research/25/j/premier-pass-as-a-service.html" target="_blank">More info</a></li>
-    <li><strong>TARmageddon</strong>: CVE-2025-62518 async-tar/tokio-tar RCE via TAR header desync → file overwrite injection; tokio-tar unpatched; migrate to astral-tokio-tar. <a href="https://www.bleepingcomputer.com/news/security/tarmageddon-flaw-in-abandoned-rust-library-enables-rce-attacks/" target="_blank">More info</a></li>
-    <li><strong>SocGholish (FakeUpdates)</strong>: MaaS used by Evil Corp & RansomHub; WP site compromise + domain shadowing + TDS for selective ransomware delivery. <a href="https://hackread.com/socgholish-malware-compromised-sites-ransomware/" target="_blank">More info</a></li>
-    <li><strong>Chinese APTs</strong>: exploit CVE-2025-53770 (ToolShell) in SharePoint for global RCE; drops ShadowPad, Sliver; linked to Budworm/Violet/Salt Typhoon. <a href="https://www.bleepingcomputer.com/news/security/sharepoint-toolshell-attacks-targeted-orgs-across-four-continents/" target="_blank">More info</a></li>
-    <li><strong>PassiveNeuron</strong>: espionage in Asia/Africa/LatAm via Neursite (C++) + NeuralExecutor (.NET); GitHub dead-drop, Cobalt Strike, SQL pivoting. <a href="https://thehackernews.com/2025/10/researchers-identify-passiveneuron-apt.html" target="_blank">More info</a></li>
-    <li><strong>ColdRiver (Russia)</strong>: accelerated retooling since May; NOROBOT → YESROBOT → MAYBEROBOT; ClickFix CAPTCHA lure, rundll32 delivery; evolving persistence. <a href="https://securityaffairs.com/183672/apt/russia-linked-coldriver-speeds-up-malware-evolution-after-lostkeys-exposure.html" target="_blank">More info</a></li>
+    <li><strong>Agenda / Qilin Ransomware</strong>: Linux payload deployed on Windows via legit RMM tools (Atera→AnyDesk); 591 victims across 58 nations; BYOVD, Veeam theft. <a href="https://www.trendmicro.com/en_us/research/25/j/agenda-ransomware-deploys-linux-variant-on-windows-systems.html" target="_blank">More info</a></li>
+    <li><strong>YouTube Ghost Network</strong>: 3,000+ scam videos pushing Rhadamanthys/Lumma stealers via fake cracks; tripled activity in 2025. <a href="https://www.zdnet.com/article/dont-be-fooled-by-this-massive-youtube-scam-network-how-to-protect-yourself/" target="_blank">More info</a></li>
+    <li><strong>Dark Covenant (Recorded Future)</strong>: Russia formalizes control of cybercrime, shielding groups (Conti/TrickBot) while arresting expendables; tighter recruitment. <a href="https://www.securityweek.com/russian-government-now-actively-managing-cybercrime-groups-security-firm/" target="_blank">More info</a></li>
+    <li><strong>Python Infostealer (Android)</strong>: runs in Termux; harvests contacts, SMS, FB/WhatsApp DBs, media, banking data; exfil via Telegram. Avoid sideloading Termux scripts. <a href="https://isc.sans.edu/diary/32414" target="_blank">More info</a></li>
+    <li><strong>GlassWorm</strong>: VS Code extension worm infects 35.8k+ users via OpenVSX; steals Git/NPM creds, crypto wallets; C2 via Solana & Google Calendar. <a href="https://hackread.com/glassworm-malware-developers-openvsx-marketplace/" target="_blank">More info</a></li>
+    <li><strong>Fake “Nethereum” NuGet package</strong>: Cyrillic homoglyph attack (Netherеum.All) steals ETH wallet keys; 11.7M fake downloads before takedown. <a href="https://thehackernews.com/2025/10/fake-nethereum-nuget-package-used.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>Jingle Thief</strong>: cloud-only campaign (Atlas Lion/Morocco) stealing M365 gift card creds; lives off cloud via OneDrive/SharePoint abuse; minimal forensic trace. <a href="https://www.helpnetsecurity.com/2025/10/22/cloud-based-techniques-gift-card-fraud/" target="_blank">More info</a></li>
+    <li><strong>Lazarus (North Korea)</strong>: Operation DreamJob targets 3 EU drone firms; fake job PDFs install ScoringMathTea RAT for UAV tech theft. <a href="https://cyberscoop.com/north-korea-lazarus-attacks-drone-companies/" target="_blank">More info</a></li>
+    <li><strong>Smishing Triad</strong>: PhaaS group running 194k+ malicious domains; impersonates banks/government; rotating infra via Dominet HK. <a href="https://unit42.paloaltonetworks.com/global-smishing-campaign/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📁 Breaches & Leaks</h2>
   <ul>
-    <li><strong>FinWise Bank</strong>: insider reused creds → exfil 689k American First Finance records; undetected 1 year; weak key mgmt cited. <a href="https://www.bleepingcomputer.com/news/security/finwise-data-breach-shows-why-encryption-is-your-last-defense/" target="_blank">More info</a></li>
+    <li><strong>Toys “R” Us Canada</strong>: confirmed breach (July 30); customer data (names, contacts) leaked; passwords/payment data safe; phishing risk. <a href="https://www.bleepingcomputer.com/news/security/toys-r-us-canada-warns-customers-info-leaked-in-data-breach/" target="_blank">More info</a></li>
+    <li><strong>Comcast (Medusa ransomware)</strong>: 186 GB leak (≈834 GB uncompressed) after failed $1.2M ransom; RCE via CVE-2025-10035; data includes financial scripts/files. <a href="https://hackread.com/medusa-ransomware-comcast-data-leak/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📌 Others</h2>
   <ul>
-    <li><strong>Meta</strong>: launches AI scam detection for Messenger + screen-sharing warnings on WhatsApp; 8M scam accounts, 21k fake support pages removed. <a href="https://www.bleepingcomputer.com/news/security/meta-launches-new-anti-scam-tools-for-whatsapp-and-messenger/" target="_blank">More info</a></li>
-    <li><strong>Verizon MSI 2025</strong>: smishing now > phishing; 70% attacks hit personal BYOD devices; full best-practices adoption halves breach rates. <a href="https://www.darkreading.com/threat-intelligence/verizon-mobile-blindspot-data-breaches" target="_blank">More info</a></li>
+    <li><strong>HP OneAgent Update</strong>: version 1.2.50.9581 removed legit Microsoft certs → broke Entra ID/Intune trust; patch pulled, manual re-enrollment needed. <a href="https://www.bleepingcomputer.com/news/microsoft/hp-pulls-update-that-broke-microsoft-entra-id-auth-on-some-ai-pcs/" target="_blank">More info</a></li>
+    <li><strong>SpaceX Starlink crackdown</strong>: 2,500+ terminals in Myanmar disabled for aiding scam/human-trafficking ops; highlights satellite misuse in cybercrime. <a href="https://www.theregister.com/2025/10/23/spacex_starlink_myanmar/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
