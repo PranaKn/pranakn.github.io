@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 24/10/25</title>
+  <title>📰 Cybersecurity Newsfeed - 27/10/25</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; color: #c9a227; }
@@ -16,43 +16,50 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 24/10/25</h2>
+  <h2>📅 27/10/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>Adobe Commerce / Magento</strong>: CVE-2025-54236 “SessionReaper” exploited post-PoC; session hijacking via REST API; 60% sites unpatched; 97 IPs scanning. Patch + WAF ASAP. <a href="https://www.darkreading.com/vulnerabilities-threats/sessionreaper-adobe-commerce-flaw-under-attack" target="_blank">More info</a></li>
-    <li><strong>Shadow Escape (AI MCP flaw)</strong>: zero-click data theft via Model Context Protocol; malicious PDFs trigger AI assistants (ChatGPT/Gemini/Claude) to exfil sensitive data. Audit MCP permissions urgently. <a href="https://hackread.com/shadow-escape-0-click-attack-ai-assistants-risk/" target="_blank">More info</a></li>
-    <li><strong>AI Sidebar Spoofing</strong>: Atlas & Comet AI browsers can be mimicked by malicious extensions; users tricked into OAuth/phishing/reverse-shell. Avoid handling sensitive data via AI browsers. <a href="https://www.bleepingcomputer.com/news/security/spoofed-ai-sidebars-can-trick-atlas-comet-users-into-dangerous-actions/" target="_blank">More info</a></li>
-    <li><strong>BIND 9</strong>: CVE-2025-40780/40778/8677 → cache poisoning & DoS; upgrade to 9.18.41/9.20.15/9.21.14; no workarounds. <a href="https://www.securityweek.com/bind-updates-address-high-severity-cache-poisoning-flaws/" target="_blank">More info</a></li>
-    <li><strong>Oracle Critical Patch Update (Oct 2025)</strong>: 374 fixes across products; 80% third-party deps; several CVEs (CVSS 9.8) allow unauth RCE. Prioritize Oracle Comms, MySQL, Fusion Middleware. <a href="https://blog.qualys.com/vulnerabilities-threat-research/2025/10/22/oracle-critical-patch-update-october-2025-security-update-review" target="_blank">More info</a></li>
+    <li><strong>OpenAI Atlas omnibox</strong>: URL→prompt parsing bug lets attackers smuggle jailbreak instructions as malformed links; can coerce destructive actions in trusted sessions. Root cause: boundary failure between “URL” vs “user intent.” <a href="https://www.securityweek.com/chatgpt-atlas-omnibox-is-vulnerable-to-jailbreaks/" target="_blank">More info</a></li>
+    <li><strong>WSUS (CVE-2025-59287, CVSS 9.8)</strong>: unauth deserialization RCE → SYSTEM over network, abuse WSUS to push malicious updates. Microsoft shipped out-of-band fix Oct 23 after public exploit & active targeting. Patch/reboot or isolate 8530/8531 now. <a href="https://www.cisa.gov/news-events/alerts/2025/10/24/microsoft-releases-out-band-security-update-mitigate-windows-server-update-service-vulnerability-cve" target="_blank">More info</a></li>
+    <li><strong>CISA KEV updates</strong>: adds WSUS RCE (CVE-2025-59287) and Adobe Commerce/Magento SessionReaper (CVE-2025-54236, CVSS 9.8) — unauth session hijack/RCE. Fed orgs: patch WSUS w/ Oct 23 OOB, upgrade Commerce ≥2.4.7 ASAP. <a href="https://www.cisa.gov/news-events/alerts/2025/10/24/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>Agenda / Qilin Ransomware</strong>: Linux payload deployed on Windows via legit RMM tools (Atera→AnyDesk); 591 victims across 58 nations; BYOVD, Veeam theft. <a href="https://www.trendmicro.com/en_us/research/25/j/agenda-ransomware-deploys-linux-variant-on-windows-systems.html" target="_blank">More info</a></li>
-    <li><strong>YouTube Ghost Network</strong>: 3,000+ scam videos pushing Rhadamanthys/Lumma stealers via fake cracks; tripled activity in 2025. <a href="https://www.zdnet.com/article/dont-be-fooled-by-this-massive-youtube-scam-network-how-to-protect-yourself/" target="_blank">More info</a></li>
-    <li><strong>Dark Covenant (Recorded Future)</strong>: Russia formalizes control of cybercrime, shielding groups (Conti/TrickBot) while arresting expendables; tighter recruitment. <a href="https://www.securityweek.com/russian-government-now-actively-managing-cybercrime-groups-security-firm/" target="_blank">More info</a></li>
-    <li><strong>Python Infostealer (Android)</strong>: runs in Termux; harvests contacts, SMS, FB/WhatsApp DBs, media, banking data; exfil via Telegram. Avoid sideloading Termux scripts. <a href="https://isc.sans.edu/diary/32414" target="_blank">More info</a></li>
-    <li><strong>GlassWorm</strong>: VS Code extension worm infects 35.8k+ users via OpenVSX; steals Git/NPM creds, crypto wallets; C2 via Solana & Google Calendar. <a href="https://hackread.com/glassworm-malware-developers-openvsx-marketplace/" target="_blank">More info</a></li>
-    <li><strong>Fake “Nethereum” NuGet package</strong>: Cyrillic homoglyph attack (Netherеum.All) steals ETH wallet keys; 11.7M fake downloads before takedown. <a href="https://thehackernews.com/2025/10/fake-nethereum-nuget-package-used.html" target="_blank">More info</a></li>
+    <li><strong>NCSC (UK)</strong>: warns of escalating China-linked intrusions vs UK orgs; AI boosts phishing & vuln discovery. Ransomware still #1 threat; new rules force critical providers to report major cyber incidents in 24h. <a href="https://www.cysecurity.news/2025/10/ncsc-warns-of-rising-cyber-threats.html" target="_blank">More info</a></li>
+    <li><strong>CoPhish</strong>: Datadog shows Copilot Studio agents abused to stage fake OAuth consent flows on Microsoft-hosted pages; steals tokens/gets elevated app perms. Lock down Entra ID consent + app creation. <a href="https://www.bleepingcomputer.com/news/security/new-cophish-attack-steals-oauth-tokens-via-copilot-studio-agents/" target="_blank">More info</a></li>
+    <li><strong>Smishing Triad</strong>: China-based PhaaS running 194k+ domains via HK registrar + US infra; fake toll/delivery/banking SMS → creds, bank theft, stock “ramp & dump.” ≈$1B in 3yrs. <a href="https://thehackernews.com/2025/10/smishing-triad-linked-to-194000.html" target="_blank">More info</a></li>
+    <li><strong>LockBit revival</strong>: LockBit 5.0 (“ChuongDong”) + LockBit 3.0 back in play post-Operation Cronos; ≥12 new victims since Sept ’25 across EU/US/Asia; new affiliate panel, $500 BTC buy-in, multi-OS encryptors. <a href="https://www.infosecurity-magazine.com/news/new-lockbit-ransomware-victims/" target="_blank">More info</a></li>
+    <li><strong>CryptoChameleon vs LastPass</strong>: phishing with fake “vault inheritance / death certificate” emails & passkey-themed domains (lastpassrecovery[.]com etc.) to steal master passwords / FIDO creds. <a href="https://www.bleepingcomputer.com/news/security/fake-lastpass-death-claims-used-to-breach-password-vaults/" target="_blank">More info</a></li>
+    <li><strong>APT36 / Transparent Tribe</strong>: spear-phish Indian gov targets w/ DeskRAT (Go RAT for BOSS Linux) via modgovindia[.]com; WebSocket C2, cron/systemd persistence, data theft. Windows variants via StealthServer. <a href="https://thehackernews.com/2025/10/apt36-targets-indian-government-with.html" target="_blank">More info</a></li>
+    <li><strong>Baohuo Android backdoor</strong>: fake “Telegram X” app (58k+ infections in IN/BR/ID) using Xposed to hijack Telegram sessions, hide rogue logins, grab clipboard/files; Redis-backed C2 for resilience. <a href="https://hackread.com/baohuo-android-malware-telegram-x-hijacks-accounts/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>Lazarus (North Korea)</strong>: Operation DreamJob targets 3 EU drone firms; fake job PDFs install ScoringMathTea RAT for UAV tech theft. <a href="https://cyberscoop.com/north-korea-lazarus-attacks-drone-companies/" target="_blank">More info</a></li>
-    <li><strong>Smishing Triad</strong>: PhaaS group running 194k+ malicious domains; impersonates banks/government; rotating infra via Dominet HK. <a href="https://unit42.paloaltonetworks.com/global-smishing-campaign/" target="_blank">More info</a></li>
+    <li><strong>WordPress mass exploitation</strong>: outdated GutenKit / Hunk Companion plugins hit w/ millions of RCE attempts; attackers drop “up” plugin from GitHub → PHP backdoors, admin hijack, wp-query-console. Patch GutenKit ≥2.1.1 / Hunk Companion ≥1.9.0 and hunt rogue plugins. <a href="https://www.bleepingcomputer.com/news/security/hackers-launch-mass-attacks-exploiting-outdated-wordpress-plugins/" target="_blank">More info</a></li>
+    <li><strong>PhantomCaptcha</strong>: Oct 8 blitz vs Ukraine aid orgs (Red Cross, UNICEF, NRC) & gov admins. Fake President’s Office PDFs → fake CAPTCHA (ClickFix) → PowerShell loader → WebSocket RAT (shell, exfil, persistence). Infra on RU VPS (KVMKA); overlaps ColdRiver TTPs. <a href="https://www.infosecurity-magazine.com/news/blitz-spear-phishing-ngos-ukraine/" target="_blank">More info</a></li>
+    <li><strong>MuddyWater (Iran)</strong>: >100 MidEast/MENA gov/diplomatic orgs hit since Aug ’25; phishing from compromised mailbox via NordVPN; FakeUpdate loader drops Phoenix backdoor, abuses PDQ/Action1 RMM for stealthy intel theft. <a href="https://www.theregister.com/2025/10/24/iran_muddywater_campaign/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📁 Breaches & Leaks</h2>
   <ul>
-    <li><strong>Toys “R” Us Canada</strong>: confirmed breach (July 30); customer data (names, contacts) leaked; passwords/payment data safe; phishing risk. <a href="https://www.bleepingcomputer.com/news/security/toys-r-us-canada-warns-customers-info-leaked-in-data-breach/" target="_blank">More info</a></li>
-    <li><strong>Comcast (Medusa ransomware)</strong>: 186 GB leak (≈834 GB uncompressed) after failed $1.2M ransom; RCE via CVE-2025-10035; data includes financial scripts/files. <a href="https://hackread.com/medusa-ransomware-comcast-data-leak/" target="_blank">More info</a></li>
+    <li><strong>Collins Aerospace MUSE outage</strong>: ransomware on airline check-in platform crippled Brussels, Berlin, Heathrow; half flights at BRU canceled, 2h+ LHR delays. ENISA says restore is nearly done; aviation warns of 600% YoY cyberattack surge. <a href="https://www.cysecurity.news/2025/10/hundreds-of-european-flights-disrupted.html" target="_blank">More info</a></li>
+    <li><strong>AT&T Careers (Everest)</strong>: gang claims 576k+ applicant/employee records (names, PII) and threatens leak; AT&T silent. Everest known for HR/rec platform extortion. <a href="https://hackread.com/everest-ransomware-att-careers-breach/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📌 Others</h2>
   <ul>
-    <li><strong>HP OneAgent Update</strong>: version 1.2.50.9581 removed legit Microsoft certs → broke Entra ID/Intune trust; patch pulled, manual re-enrollment needed. <a href="https://www.bleepingcomputer.com/news/microsoft/hp-pulls-update-that-broke-microsoft-entra-id-auth-on-some-ai-pcs/" target="_blank">More info</a></li>
-    <li><strong>SpaceX Starlink crackdown</strong>: 2,500+ terminals in Myanmar disabled for aiding scam/human-trafficking ops; highlights satellite misuse in cybercrime. <a href="https://www.theregister.com/2025/10/23/spacex_starlink_myanmar/" target="_blank">More info</a></li>
+    <li><strong>Rosselkhoznadzor DDoS</strong>: Russia’s food safety agency hit again; VetIS / Saturn / Mercury tracking systems knocked offline → meat/dairy/baby food shipments delayed nationwide. Fourth 2025 hit; no claim of responsibility. <a href="https://securityaffairs.com/183845/security/russian-rosselkhoznadzor-hit-by-ddos-attack-food-shipments-delayed.html" target="_blank">More info</a></li>
+    <li><strong>Firefox extension privacy rules</strong>: from 03/11/25, add-ons must declare data collection/sharing in manifest; disclosure shown in install prompts, AMO, about:addons. Mandatory for all by mid-2026. <a href="https://www.bleepingcomputer.com/news/software/mozilla-new-firefox-extensions-must-disclose-data-collection-practices/" target="_blank">More info</a></li>
+    <li><strong>DHS vs Montcowatch</strong>: DHS tried to unmask ICE-spotting IG/FB accounts using customs law (§1509) about “imported merchandise.” Judge blocked the request; ACLU says gov’t overreach vs anonymous critics. <a href="https://www.404media.co/dhs-tries-to-unmask-ice-spotting-instagram-account-by-claiming-it-imports-merchandise/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🧰 Tools</h2>
+  <ul>
+    <li><strong>NetExec</strong>: unified `nxc` CLI for SMB/SSH/LDAP/WMI/WinRM/RDP/VNC/MSSQL/etc. High-concurrency lateral-movement tester for AD. Red/purple teams must mind OPSEC; defenders should alert on noisy multi-protocol spray. <a href="https://www.darknet.org.uk/2025/10/netexec-network-execution-toolkit-for-windows-and-active-directory/" target="_blank">More info</a></li>
+    <li><strong>AzureHound</strong>: BloodHound’s Azure/Entra ID mapper abused by APTs (Curious Serpens, Void Blizzard, Storm-0501) for cloud recon, privilege escalation pathing, and key vault discovery. Hunt for its collection patterns / UA in Graph logs, lock down app registration & enforce phishing-resistant MFA. <a href="https://unit42.paloaltonetworks.com/threat-actor-misuse-of-azurehound/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
