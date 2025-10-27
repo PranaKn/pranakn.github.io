@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 28/10/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 28/10/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>ChatGPT Atlas (macOS)</strong>: “Tainted Memories” vuln lets malicious web content inject commands into session memory, execute actions, or access files. No phishing protection, 90% higher exposure than Chrome/Edge. <a href="https://hackread.com/chatgpt-tainted-memories-atlas-browser/" target="_blank">More info</a></li>
+    <li><strong>QNAP / ASP.NET Core (CVE-2025-55315)</strong>: Kestrel flaw in NetBak PC Agent enables HTTP request smuggling, CSRF bypass, and auth hijack. Patch or reinstall with latest .NET 8 runtime. <a href="https://www.bleepingcomputer.com/news/security/qnap-warns-its-windows-backup-software-is-also-affected-by-critical-aspnet-flaw/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Operation ForumTroll (Memento Labs / ex-Hacking Team)</strong>: phishing via fake “Primakov Readings” forum emails exploits Chrome zero-day; installs “Dante” spyware. Targets RU gov, finance, academia. <a href="https://cyberscoop.com/hacking-team-dante-spyware-kaspersky/" target="_blank">More info</a> | <a href="https://securelist.com/forumtroll-apt-hacking-team-dante-spyware/117851/" target="_blank">More info</a></li>
+    <li><strong>HyperRat</strong>: Android RAT sold as MaaS with VNC, SMS phishing, Telegram C2, data theft, and accessibility bypass. Distributed via sideloaded APKs. <a href="https://hackread.com/hyperrat-android-malware-sold-spy-tool/" target="_blank">More info</a></li>
+    <li><strong>RedTiger-based infostealer</strong>: Discord-focused stealer built from open-source RedTiger kit; exfiltrates tokens, creds, wallets, and webcam images via GoFile. <a href="https://www.bleepingcomputer.com/news/security/hackers-steal-discord-accounts-with-redtiger-based-infostealer/" target="_blank">More info</a></li>
+    <li><strong>EtherHiding (UNC5342 / DPRK)</strong>: hackers embed malware in Ethereum & BNB smart contracts; blockchain used as immutable C2 hosting. Costs ≈$2/update; replaces bulletproof servers. <a href="https://www.cysecurity.news/2025/10/hackers-exploit-blockchain-networks-to.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>Ransomware payments</strong>: only 23% victims paid in Q3 2025 (down 6 years straight); avg. payment $377k. Data theft 76% of cases; Akira & Qilin = 44% of activity. <a href="https://www.bleepingcomputer.com/news/security/ransomware-profits-drop-as-victims-stop-paying-hackers/" target="_blank">More info</a></li>
+    <li><strong>Qilin ransomware surge</strong>: 40+ monthly victims, peaks >100 in mid-2025; RaaS model w/ PsExec, Mimikatz, PowerShell, Cyberduck; heavy EU/US targeting. <a href="https://www.infosecurity-magazine.com/news/qilin-ransomware-40-cases-monthly/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li><em>No major breaches reported for this date.</em></li>
+  </ul>
+
+  <h2>📌 Others</h2>
+  <ul>
+    <li><strong>Microsoft Store app removal policy</strong>: new GPO/CSP/Intune option lets admins delete preinstalled Store apps in Windows 11 25H2 Enterprise/Education, simplifying provisioning. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-now-lets-admins-remove-pre-installed-microsoft-store-apps-via-policy/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
