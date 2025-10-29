@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 28/10/25</title>
+  <title>📰 Cybersecurity Newsfeed - 29/10/25</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; color: #c9a227; }
@@ -16,36 +16,51 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 28/10/25</h2>
+  <h2>📅 29/10/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>ChatGPT Atlas (macOS)</strong>: “Tainted Memories” vuln lets malicious web content inject commands into session memory, execute actions, or access files. No phishing protection, 90% higher exposure than Chrome/Edge. <a href="https://hackread.com/chatgpt-tainted-memories-atlas-browser/" target="_blank">More info</a></li>
-    <li><strong>QNAP / ASP.NET Core (CVE-2025-55315)</strong>: Kestrel flaw in NetBak PC Agent enables HTTP request smuggling, CSRF bypass, and auth hijack. Patch or reinstall with latest .NET 8 runtime. <a href="https://www.bleepingcomputer.com/news/security/qnap-warns-its-windows-backup-software-is-also-affected-by-critical-aspnet-flaw/" target="_blank">More info</a></li>
+    <li><strong>DELMIA Apriso (Dassault)</strong>: CVE-2025-6204 (code injection) & CVE-2025-6205 (missing authorization) added to CISA KEV; active exploitation of 2020–2025 releases. <a href="https://www.cisa.gov/news-events/alerts/2025/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+    <li><strong>TEE.Fail</strong>: DDR5 memory-bus interposition side-channel breaks Intel SGX/TDX & AMD SEV-SNP; AES-XTS ciphertext leaks enable key theft & attestation forgery with <$1K hardware. <a href="https://www.bleepingcomputer.com/news/security/teefail-attack-breaks-confidential-computing-on-intel-amd-nvidia-cpus/" target="_blank">More info</a></li>
+    <li><strong>BiDi Swap</strong>: decade-old Unicode directionality spoofing flaw lets mixed-script URLs appear legitimate; affects Chrome, Firefox, Edge. Phishing-ready exploit of RTL/LTR markers. <a href="https://www.bleepingcomputer.com/news/security/bidi-swap-the-bidirectional-text-trick-that-makes-fake-urls-look-real/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>Operation ForumTroll (Memento Labs / ex-Hacking Team)</strong>: phishing via fake “Primakov Readings” forum emails exploits Chrome zero-day; installs “Dante” spyware. Targets RU gov, finance, academia. <a href="https://cyberscoop.com/hacking-team-dante-spyware-kaspersky/" target="_blank">More info</a> | <a href="https://securelist.com/forumtroll-apt-hacking-team-dante-spyware/117851/" target="_blank">More info</a></li>
-    <li><strong>HyperRat</strong>: Android RAT sold as MaaS with VNC, SMS phishing, Telegram C2, data theft, and accessibility bypass. Distributed via sideloaded APKs. <a href="https://hackread.com/hyperrat-android-malware-sold-spy-tool/" target="_blank">More info</a></li>
-    <li><strong>RedTiger-based infostealer</strong>: Discord-focused stealer built from open-source RedTiger kit; exfiltrates tokens, creds, wallets, and webcam images via GoFile. <a href="https://www.bleepingcomputer.com/news/security/hackers-steal-discord-accounts-with-redtiger-based-infostealer/" target="_blank">More info</a></li>
-    <li><strong>EtherHiding (UNC5342 / DPRK)</strong>: hackers embed malware in Ethereum & BNB smart contracts; blockchain used as immutable C2 hosting. Costs ≈$2/update; replaces bulletproof servers. <a href="https://www.cysecurity.news/2025/10/hackers-exploit-blockchain-networks-to.html" target="_blank">More info</a></li>
+    <li><strong>Aisuru botnet</strong>: shifts from DDoS (30 Tbps peaks) to monetization—700k IoT bots now sold as residential proxies for AI scraping & fraud. <a href="https://krebsonsecurity.com/2025/10/aisuru-botnet-shifts-from-ddos-to-residential-proxies/" target="_blank">More info</a></li>
+    <li><strong>YouTube Ghost Network</strong>: fake game cheats & cracks spread Lumma, Rhadamantys, RedLine, Phemedrone via hijacked channels. New trend toward enterprise-targeted “plugin” lures. <a href="https://www.darkreading.com/cyberattacks-data-breaches/youtube-ghost-network-target-users" target="_blank">More info</a></li>
+    <li><strong>Qilin ransomware (ex-Agenda)</strong>: abuses Windows Subsystem for Linux to run Linux encryptors; bypasses EDR with BYOVD (eskle.sys) & dark-kill. 700+ victims in 62 countries. <a href="https://www.bleepingcomputer.com/news/security/qilin-ransomware-abuses-wsl-to-run-linux-encryptors-in-windows/" target="_blank">More info</a></li>
+    <li><strong>Atroposia RAT-as-a-Service</strong>: $200/month modular RDP trojan with stealth access, crypto theft, and DNS hijack; growing RaaS ecosystem. <a href="https://www.darkreading.com/vulnerabilities-threats/attackers-sell-turnkey-remote-access-trojan-atroposia" target="_blank">More info</a></li>
+    <li><strong>Herodotus banking trojan</strong>: Android 9–16 malware targets Italy & Brazil; mimics Chrome app, abuses accessibility & overlays for credential theft. <a href="https://thehackernews.com/2025/10/new-android-trojan-herodotus-outsmarts.html" target="_blank">More info</a></li>
+    <li><strong>KK Park raid (Myanmar)</strong>: 1,500+ scam-lab workers fled to Thailand after army raid; highlights human trafficking & cybercrime overlap in SE Asia. <a href="https://www.securityweek.com/stragglers-from-myanmar-scam-center-raided-by-army-cross-into-thailand-as-buildings-are-blown-up/" target="_blank">More info</a></li>
+    <li><strong>BlueNoroff (DPRK)</strong>: expands SnatchCrypto ops to Windows; GhostCall & GhostHire campaigns use AI-enhanced lures to target VC execs & devs. <a href="https://www.darkreading.com/threat-intelligence/north-korea-bluenoroff-expands-crypto-heists" target="_blank">More info</a></li>
+    <li><strong>RedTiger infostealer</strong>: Python stealer hits Discord gamers (mainly France); steals tokens, webcam data, crypto, Steam creds via GoFile & Discord webhooks. <a href="https://hackread.com/redtiger-malware-discord-tokens-webcam-images/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>Ransomware payments</strong>: only 23% victims paid in Q3 2025 (down 6 years straight); avg. payment $377k. Data theft 76% of cases; Akira & Qilin = 44% of activity. <a href="https://www.bleepingcomputer.com/news/security/ransomware-profits-drop-as-victims-stop-paying-hackers/" target="_blank">More info</a></li>
-    <li><strong>Qilin ransomware surge</strong>: 40+ monthly victims, peaks >100 in mid-2025; RaaS model w/ PsExec, Mimikatz, PowerShell, Cyberduck; heavy EU/US targeting. <a href="https://www.infosecurity-magazine.com/news/qilin-ransomware-40-cases-monthly/" target="_blank">More info</a></li>
+    <li><strong>Deepfake-as-a-Service</strong>: now a mature fraud model; used for $20M Arup scam, romance, and gov-targeted impersonations. Europol & FBI urge deepfake-aware defenses. <a href="https://www.darknet.org.uk/2025/10/deepfake-as-a-service-2025-how-voice-cloning-and-synthetic-media-fraud-are-changing-enterprise-defenses/" target="_blank">More info</a></li>
+    <li><strong>Malicious SEO via AI</strong>: attackers mass-produce fake sites, spam content, and link farms using AI; ethical SEO buried under algorithmic noise. <a href="https://unit42.paloaltonetworks.com/malicious-seo-and-ai/" target="_blank">More info</a></li>
+    <li><strong>WordPress plugin exploitation</strong>: renewed mass attacks abusing GutenKit (≤2.1.0) & Hunk Companion (≤1.8.5); 9M+ exploit attempts; arbitrary plugin installs = full takeover. <a href="https://hackread.com/wordpress-mass-attack-gutenkit-hunk-companion-plugins/" target="_blank">More info</a></li>
+    <li><strong>SideWinder APT</strong>: new ClickOnce/PDF spear-phish vs EU embassy in Delhi & South Asia orgs; uses ModuleInstaller + StealerBot, MagTek DLL sideload, region-locked C2. <a href="https://thehackernews.com/2025/10/sidewinder-adopts-new-clickonce-based.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>📁 Breaches & Leaks</h2>
   <ul>
-    <li><em>No major breaches reported for this date.</em></li>
+    <li><strong>Dentsu / Merkle breach</strong>: staff & client data (banking, payroll) exfiltrated; Japan HQ unaffected. Affects Microsoft, Nestlé, AmEx clients. <a href="https://www.bleepingcomputer.com/news/security/advertising-giant-dentsu-reports-data-breach-at-subsidiary-merkle/" target="_blank">More info</a></li>
+    <li><strong>Svenska kraftnät (Sweden)</strong>: Everest ransomware claims 280GB theft from isolated file-transfer system; grid operations intact. <a href="https://www.securityweek.com/hackers-target-swedish-power-grid-operator/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📌 Others</h2>
   <ul>
-    <li><strong>Microsoft Store app removal policy</strong>: new GPO/CSP/Intune option lets admins delete preinstalled Store apps in Windows 11 25H2 Enterprise/Education, simplifying provisioning. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-now-lets-admins-remove-pre-installed-microsoft-store-apps-via-policy/" target="_blank">More info</a></li>
+    <li><strong>ACCC vs Microsoft</strong>: AU regulator sues over misleading 365 Copilot upgrades; alleges hidden legacy options & 45% price hikes. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-sued-for-allegedly-tricking-millions-into-copilot-m365-subscriptions/" target="_blank">More info</a></li>
+    <li><strong>Python Software Foundation</strong>: rejected $1.5M NSF grant over anti-DEI clause, citing ethical conflict; seeks community funding. <a href="https://www.bleepingcomputer.com/news/software/python-rejects-15m-grant-from-us-govt-fearing-ethical-compromise/" target="_blank">More info</a></li>
+    <li><strong>764 network indictment</strong>: U.S. teen “Inactive” charged for crimes under extremist 764 group (animal cruelty, exploitation, cyberstalking); faces 30+ years. <a href="https://hackread.com/us-teen-indicted-764-network-case-crimes/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🔍 Hunting</h2>
+  <ul>
+    <li><strong>Water Saci (Brazil)</strong>: SORVEPOTEL backdoor via hijacked WhatsApp Web sessions; new VBS/PowerShell payloads, Chrome session theft, IMAP fallback C2. Linked to Coyote banking trojan lineage. <a href="https://www.trendmicro.com/en_us/research/25/j/active-water-saci-campaign-whatsapp-update.html" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
