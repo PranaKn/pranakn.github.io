@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 30/10/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 30/10/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>WP Anti-Malware Security & Brute-Force Firewall</strong> (≥100k installs): CVE-2025-11705 lets authenticated subscribers read arbitrary files (e.g., <em>wp-config.php</em>); fixed in 4.23.83 — patch now. <a href="https://www.bleepingcomputer.com/news/security/wordpress-security-plugin-exposes-private-data-to-site-subscribers/" target="_blank">More info</a></li>
+    <li><strong>XWiki</strong> SolrSearch macro RCE: CVE-2025-24893 (CVSS 9.8) actively exploited for cryptomining; update to 15.10.11 / 16.4.1+ immediately. <a href="https://hackread.com/hackers-hijack-xwiki-servers-crypto-mining/" target="_blank">More info</a> | <a href="https://www.securityweek.com/xwiki-vulnerability-exploited-in-cryptocurrency-mining-operation/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Android NFC/HCE stealers</strong>: 760+ fake banking/gov apps relay tap-to-pay data via Telegram bots; active in BR, RU, PL — avoid sideloading & audit NFC perms. <a href="https://hackread.com/nfc-relay-malware-clone-tap-to-pay-android/" target="_blank">More info</a></li>
+    <li><strong>Malicious npm typosquats</strong>: 10 packages (e.g., <em>typescriptjs</em>, <em>deezcord.js</em>) fetch PyInstaller infostealer; ~10k downloads; rotate keys & purge deps. <a href="https://www.bleepingcomputer.com/news/security/malicious-npm-packages-fetch-infostealer-for-windows-linux-macos/" target="_blank">More info</a></li>
+    <li><strong>PhantomRaven</strong> npm campaign: 126 packages, 86k+ downloads; steals npm/GitHub/GitLab/Jenkins/CircleCI tokens via Remote Dynamic Dependencies. <a href="https://www.bleepingcomputer.com/news/security/phantomraven-attack-floods-npm-with-credential-stealing-packages/" target="_blank">More info</a></li>
+    <li><strong>Sandworm-linked ops (RU)</strong>: LotL tooling + Localolive webshell vs Ukrainian orgs; credential theft, PowerShell backdoors, minimal malware footprint. <a href="https://securityaffairs.com/183999/apt/russian-hackers-likely-linked-to-sandworm-exploit-legitimate-tools-against-ukrainian-targets.html" target="_blank">More info</a></li>
+    <li><strong>Airstalk</strong>: Windows PS/.NET malware abuses Workspace ONE MDM APIs for covert C2 & dead-drop; audit API usage & credential scope. <a href="https://unit42.paloaltonetworks.com/new-windows-based-malware-family-airstalk/" target="_blank">More info</a></li>
+    <li><strong>Atroposia RAT</strong>: new RaaS (~$200/mo) offers hidden RDP, creds/crypto theft, DNS hijack, UAC bypass; tighten MFA & telemetry. <a href="https://www.infosecurity-magazine.com/news/new-atroposia-rat-surfaces-on-dark/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>Automated botnet surge</strong>: Mirai/Gafgyt/Mozi hammer PHP/IoT/cloud via old CVEs (PHPUnit, Laravel, ThinkPHP); “TurboMirai” hits 20 Tbps DDoS & proxy abuse. <a href="https://thehackernews.com/2025/10/experts-reports-sharp-increase-in.html" target="_blank">More info</a></li>
+    <li><strong>PhantomRaven supply-chain</strong>: RDD “invisible dependencies” fetch payloads at install; watch for suspicious network during <em>npm install</em>. <a href="https://www.darkreading.com/application-security/malicious-npm-packages-invisible-dependencies" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Canada Critical Infrastructure</strong>: hacktivists tampered with PLC/SCADA at water, oil/gas, grain orgs; Cyber Centre urges MFA/VPNs & ICS exposure audits. <a href="https://securityaffairs.com/184007/hacktivism/hacktivists-breach-canadas-critical-infrastructure-cyber-agency-warns.html" target="_blank">More info</a></li>
+    <li><strong>Dentsu/Merkle</strong>: theft of employee/client data (banking, payroll, NI#); systems taken offline; law enforcement & regulators notified. <a href="https://www.darkreading.com/cyberattacks-data-breaches/dentsu-subsidiary-breached-employee-data-stolen" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📌 Others</h2>
+  <ul>
+    <li><strong>Microsoft global outage</strong>: DNS/AFD misconfig disrupted Azure & M365 (Intune, Exchange, AFD CDN); rollbacks in progress; use CLI/PowerShell as workaround. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-dns-outage-impacts-azure-and-microsoft-365-services/" target="_blank">More info</a></li>
+    <li><strong>MITRE ATT&CK v18</strong>: adds Detection Strategies & Analytics; expands CI/CD, K8s, cloud DB, ransomware prep, mobile linked-device abuse, and ICS assets. <a href="https://www.securityweek.com/mitre-unveils-attck-v18-with-updates-to-detections-mobile-ics/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
