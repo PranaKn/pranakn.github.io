@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 31/10/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 31/10/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Windows ML / ONNX model abuse</strong>: Researcher hxr1 showed malware hidden in AI models; encoded payloads bypass EDR via trusted DLLs. Monitor model loaders & apply YARA rules. <a href="https://www.darkreading.com/vulnerabilities-threats/lotl-attack-malware-windows-native-ai-stack" target="_blank">More info</a></li>
+    <li><strong>Claroty Secure Remote Access (CVE-2025-54603)</strong>: Critical OIDC auth bypass enables admin takeover even with MFA; patch 4.0.2+. <a href="https://www.darkreading.com/ics-ot-security/claroty-patches-authentication-bypass-flaw" target="_blank">More info</a></li>
+    <li><strong>VMware Aria / Tools (CVE-2025-41244)</strong>: Privilege escalation exploited by UNC5174 since Oct 2024; CISA mandates patch by Nov 20. <a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-vmware-tools-flaw-exploited-since-october-2024/" target="_blank">More info</a></li>
+    <li><strong>CISA KEV update</strong>: Adds XWiki (CVE-2025-24893) and VMware Aria (CVE-2025-41244) as active exploits; patch by Nov 20 under BOD 22-01. <a href="https://www.cisa.gov/news-events/alerts/2025/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+    <li><strong>Elementor King Addons</strong>: CVE-2025-6327 (file upload) & CVE-2025-6325 (privilege escalation); trivial exploitation; update to v51.1.37. <a href="https://www.infosecurity-magazine.com/news/critical-flaws-elementor-king/" target="_blank">More info</a></li>
+    <li><strong>Docker vulnerabilities</strong>: CVE-2025-62725 (Compose path traversal) and EUVD-2025-36191 (DLL hijack in Desktop installer); fix in Compose 2.40.2 & Desktop 4.49.0. <a href="https://www.theregister.com/2025/10/30/docker_compose_desktop_flaws/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>AdaptixC2 weaponization</strong>: Russian ransomware groups (Fog, Akira) hijack open-source C2 built by “RalfHacker” for encrypted ops & fake Teams help-desk scams. <a href="https://thehackernews.com/2025/10/russian-ransomware-gangs-weaponize-open.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>NFC relay malware surge</strong>: 760+ fake Android apps steal tap-to-pay card data using HCE; spread from Poland to RU, CZ, SK; 70+ C2 servers tracked. <a href="https://www.bleepingcomputer.com/news/security/massive-surge-of-nfc-relay-malware-steals-europeans-credit-cards/" target="_blank">More info</a></li>
+    <li><strong>Fake ChatGPT / DALL·E / WhatsApp apps</strong>: Spyware and adware on third-party stores (Aptoide, etc.); WhatsApp Plus steals OTPs & SMS. Avoid sideloading. <a href="https://hackread.com/spyware-chatgpt-dalle-whatsapp-apps-us-users/" target="_blank">More info</a></li>
+    <li><strong>Fake PayPal invoice scam</strong>: Gmail-based tech support scam sends $823 “invoice”; passes SPF/DKIM/DMARC; tricking users into remote access theft. <a href="https://www.malwarebytes.com/blog/news/2025/10/fake-paypal-invoice-from-geek-squad-is-a-tech-support-scam" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Canada critical infrastructure</strong>: Hacktivists tamper with ICS (water, oil/gas, farm silo); exploited exposed PLCs/SCADA, no malware used. <a href="https://www.theregister.com/2025/10/30/hacktivists_canadian_ics_systems/" target="_blank">More info</a></li>
+    <li><strong>Conduent</strong>: 10.5M+ affected; SSNs, health data leaked; linked to Safepay ransomware 2024 breach. <a href="https://www.bleepingcomputer.com/news/security/bpo-giant-conduent-confirms-data-breach-impacts-105-million-people/" target="_blank">More info</a></li>
+    <li><strong>Ribbon Communications</strong>: Nation-state breach (Dec 2024–Sep 2025); legacy customer files accessed; tied to Salt Typhoon ops. <a href="https://hackread.com/nation-state-hack-us-telecom-ribbon-communications/" target="_blank">More info</a></li>
+    <li><strong>Proton / Constella</strong>: Data Breach Observatory tracks 794 breaches, 300M+ records exposed in 2025; SMBs = 71% of victims. <a href="https://www.infosecurity-magazine.com/news/proton-300-million-records/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📌 Others</h2>
+  <ul>
+    <li><strong>WhatsApp passkey backups</strong>: New biometric/PIN-based encryption for cloud backups (iOS/Android); private key stays on device. <a href="https://www.bleepingcomputer.com/news/security/whatsapp-adds-passwordless-chat-backups-on-ios-and-android/" target="_blank">More info</a></li>
+    <li><strong>Ex-L3Harris exec convicted</strong>: Peter Williams sold $35M in classified exploits to Russian broker; faces 10 years. <a href="https://www.bleepingcomputer.com/news/security/ex-l3harris-exec-guilty-of-selling-cyber-exploits-to-russian-broker/" target="_blank">More info</a></li>
+    <li><strong>CISA / NSA Exchange guidance</strong>: New best practices urge retiring hybrid Exchange servers & hardening auth/encryption configs. <a href="https://www.cisa.gov/news-events/alerts/2025/10/30/new-guidance-released-microsoft-exchange-server-security-best-practices" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🧰 Tools</h2>
+  <ul>
+    <li><strong>DynamoRIO</strong>: Cisco Talos guide on DBI for Windows 11; building drmgr/drwrap clients for unpacking, tracing, patching; GitHub repo provided. <a href="https://dynamorio.org/page_history.html" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
