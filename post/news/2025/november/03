@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 03/11/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 03/11/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Agent Session Smuggling (AI attack)</strong>: Unit 42 revealed an AI exploit that hijacks Agent2Agent (A2A) sessions for covert commands and data theft. Mitigate via human validation, crypto verification, and transparent logging. <a href="https://unit42.paloaltonetworks.com/agent-session-smuggling-in-agent2agent-systems/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>BadCandy / Cisco IOS XE</strong>: ASD warns 400+ routers in AU compromised via CVE-2023-20198; attackers reinfect using stolen creds; disable Web UI and audit configs. <a href="https://securityaffairs.com/184095/hacking/badcandy-webshell-threatens-unpatched-cisco-ios-xe-devices-warns-australian-government.html" target="_blank">More info</a></li>
+    <li><strong>Iran-linked attacks on Israeli IT providers</strong>: Shamir Medical Center targeted during Yom Kippur; campaign tied to Iranian espionage harvesting civilian data. <a href="https://www.cysecurity.news/2025/11/iran-attacks-israeli-cybersecurity.html" target="_blank">More info</a></li>
+    <li><strong>Hezi Rash hacktivists</strong>: Kurdish nationalist DDoS group hits JP, TR, IL, DE, IR; 350+ attacks via Killnet/NoName tools; uses EliteStress & Abyssal DDoS v3. <a href="https://hackread.com/kurdish-hacktivists-hezi-rash-ddos-attacks/" target="_blank">More info</a></li>
+    <li><strong>Bronze Butler (Tick)</strong>: China-linked actors exploited Lanscope zero-day (CVE-2025-61932) for SYSTEM-level code exec; Gokcpdoor malware w/ DLL sideload & Havoc C2. <a href="https://www.bleepingcomputer.com/news/security/china-linked-hackers-exploited-lanscope-flaw-as-a-zero-day-in-attacks/" target="_blank">More info</a></li>
+    <li><strong>UNC6384 (China-linked)</strong>: Used Windows LNK zero-day (ZDI-25-148) to spy on EU diplomats via PlugX + Canon DLL side-loaders; tied to Mustang Panda. <a href="https://securityaffairs.com/184083/apt/china-linked-unc6384-exploits-windows-zero-day-to-spy-on-european-diplomats.html" target="_blank">More info</a></li>
+    <li><strong>Airstalk (CL-STA-1009)</strong>: Suspected nation-state malware abusing AirWatch MDM APIs for covert C2 & browser data theft; .NET & PowerShell variants. <a href="https://thehackernews.com/2025/10/nation-state-hackers-deploy-new.html" target="_blank">More info</a></li>
+    <li><strong>Meduza Stealer arrests</strong>: Russian police detained 3 devs behind Meduza & Aurora Stealer; accused of hacking domestic targets under Article 273. <a href="https://www.bleepingcomputer.com/news/security/alleged-meduza-stealer-malware-admins-arrested-after-hacking-russian-org/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>WSUS RCE exploitation (CVE-2025-59287)</strong>: Rising port 8530/8531 scans linked to unauth RCE; Microsoft released out-of-band patch—apply immediately. <a href="https://isc.sans.edu/diary/32440" target="_blank">More info</a></li>
+    <li><strong>Linux netfilter flaw (CVE-2024-1086)</strong>: Ransomware gangs exploit use-after-free in nf_tables for privilege escalation; patch all kernels ≤6.6. <a href="https://securityaffairs.com/184076/security/old-linux-kernel-flaw-cve-2024-1086-resurfaces-in-ransomware-attacks.html" target="_blank">More info</a></li>
+    <li><strong>EY 4TB cloud exposure</strong>: Unencrypted SQL backup (.BAK) exposed on Azure; Neo Security found it after 15 failed disclosures; secured post-alert. <a href="https://securityaffairs.com/184062/data-breach/ernst-young-exposes-4tb-sql-server-backup-publicly-on-microsoft-azure.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Open VSX registry</strong>: 550+ leaked tokens abused in GlassWorm campaign; tokens rotated, malicious extensions removed, improved auto-revocation. <a href="https://www.bleepingcomputer.com/news/security/open-vsx-rotates-tokens-used-in-supply-chain-malware-attack/" target="_blank">More info</a></li>
+    <li><strong>University of Pennsylvania</strong>: Salesforce Marketing Cloud abused to send fake “We got hacked” emails; incident under investigation, no data theft confirmed. <a href="https://www.bleepingcomputer.com/news/security/offensive-we-got-hacked-emails-sent-in-penn-security-incident/" target="_blank">More info</a></li>
+    <li><strong>Ribbon Communications</strong>: Nation-state intrusion by China-linked actors since Dec 2024; contained by Sep 2025; minor customer file exposure. <a href="https://securityaffairs.com/184042/intelligence/suspected-chinese-actors-compromise-u-s-telecom-firm-ribbon-communications.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📌 Others</h2>
+  <ul>
+    <li><strong>Jabber Zeus extradition</strong>: Ukrainian Yuriy Rybtsov (MrICQ) extradited to U.S. for Zeus trojan ops tied to Evil Corp & Dridex banking theft. <a href="https://krebsonsecurity.com/2025/11/alleged-jabber-zeus-coder-mricq-in-u-s-custody/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
