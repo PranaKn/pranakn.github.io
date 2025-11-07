@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 07/11/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 07/11/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Clop ↔ The Washington Post</strong>: group added WaPo to its leak site, threatening data release; continues double-extortion playbook after MOVEit/GoAnywhere/Accellion waves. <a href="https://securityaffairs.com/184304/cyber-crime/clop-ransomware-group-claims-the-breach-of-the-washington-post.html" target="_blank">More info</a></li>
+    <li><strong>Cargo heists via RMM</strong>: trucking/logistics firms hit; attackers hijack broker/carrier accounts, deploy RMM, reroute freight for theft. Verify and monitor remote tools. <a href="https://www.malwarebytes.com/blog/news/2025/11/hackers-commit-highway-robbery-stealing-cargo-and-goods" target="_blank">More info</a></li>
+    <li><strong>AI-in-the-loop malware</strong>: PROMPTFLUX/STEAL/LOCK mutate at runtime using Gemini/Qwen2.5; QuietVault/FruitShell leverage AI for evasion and theft. <a href="https://securityaffairs.com/184275/malware/google-sounds-alarm-on-self-modifying-ai-malware.html" target="_blank">More info</a></li>
+    <li><strong>InedibleOchotense</strong>: Russia-aligned cluster impersonates ESET; trojanized installers drop <em>Kalambur</em> backdoor via fake domains; overlaps with Sandworm sub-clusters. RomCom abused WinRAR 0-day (CVE-2025-8088). <a href="https://thehackernews.com/2025/11/trojanized-eset-installers-drop.html" target="_blank">More info</a></li>
+    <li><strong>Cisco ASA/FTD</strong> new attack variant on CVE-2025-20333/20362 triggers reload/DoS; further critical UCCX bugs (20354/20358) allow root RCE; ISE DoS (20343) fixed. Patch now. <a href="https://thehackernews.com/2025/11/cisco-warns-of-new-firewall-attack.html" target="_blank">More info</a></li>
+    <li><strong>Cavalry Werewolf → ShellNET</strong>: phishing drops reverse-shell; chain uses BITSAdmin, FileSpyNET, SOCKS5 tunneling via Telegram C2; trojanized WinRAR/7-Zip/VS Code. <a href="https://hackread.com/cavalry-werewolf-russia-government-shellnet-backdoor/" target="_blank">More info</a></li>
+    <li><strong>Aisuru botnet</strong> skewed Cloudflare “top domains” by flooding 1.1.1.1; 30 Tbps-capable IoT herd now targeting Cloudflare DNS; rankings redacted. <a href="https://krebsonsecurity.com/2025/11/cloudflare-scrubs-aisuru-botnet-from-top-domains-list/" target="_blank">More info</a></li>
+    <li><strong>Bronze Butler (Tick) → Lanscope 0-day</strong>: CVE-2025-61932 (CVSS 9.8) used to drop Gokcpdoor/Havoc; CISA KEV; patch released (cloud unaffected). <a href="https://www.darkreading.com/application-security/bronze-butler-apt-exploits-zero-day-vuln-root-japan" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>Booking.com partner scams</strong>: compromised hotel accounts push ClickFix → PowerShell → PureRAT; creds resold, some up to $5k; WhatsApp/email lures. <a href="https://www.infosecurity-magazine.com/news/i-paid-twice-phishing-campaign/" target="_blank">More info</a></li>
+    <li><strong>WhatsApp screen-share scam</strong>: impostors hijack sessions to grab OTPs/passwords; AnyDesk/TeamViewer abused; losses up to US$700k. Enable 2-step verification. <a href="https://www.welivesecurity.com/en/scams/sharing-is-scaring-whatsapp-screen-sharing-scam/" target="_blank">More info</a></li>
+    <li><strong>ClickFix 2.0</strong>: multi-OS pages with video tutorials, countdown timers, auto-copied commands deliver OS-specific payloads; treat paste-and-run prompts as high-risk. <a href="https://www.bleepingcomputer.com/news/security/clickfix-malware-attacks-evolve-with-multi-os-support-video-tutorials/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Nevada ransomware AAR</strong>: trojanized admin tool via malicious Google ad led to months-long compromise; backups deleted; 90% restored in 28 days, no ransom paid. Model transparency. <a href="https://www.bleepingcomputer.com/news/security/how-a-ransomware-gang-encrypted-nevada-governments-systems/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
