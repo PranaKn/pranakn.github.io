@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 05/11/25</title>
+  <title>📰 Cybersecurity Newsfeed - 07/11/25</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; color: #c9a227; }
@@ -16,59 +16,34 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 05/11/25</h2>
+  <h2>📅 07/11/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>Apple patches 105+ vulnerabilities</strong> across macOS, iOS/iPadOS, Safari, visionOS, watchOS, and Xcode, none exploited in the wild. Researchers criticize lack of severity ratings. WebKit fixes dominate. <a href="https://cyberscoop.com/apple-security-update-november-2025/" target="_blank">More info</a></li>
-
-    <li><strong>Android November 2025 security update</strong> fixes two critical System flaws: CVE-2025-48593 (RCE on Android 13–16) and CVE-2025-48581 (privilege escalation on Android 16). No user interaction required. Patch level 2025-11-01 released. <a href="https://securityaffairs.com/184208/security/google-fixed-a-critical-remote-code-execution-in-android.html" target="_blank">More info</a></li>
-
-    <li><strong>CISA adds CVE-2025-11371 (CentreStack/Triofox LFI)</strong> and <strong>CVE-2025-48703 (CWP RCE)</strong> to KEV; both actively exploited and unauthenticated. <a href="https://www.cisa.gov/news-events/alerts/2025/11/04/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
-
-    <li><strong>AMD Zen 5 RDSEED bug</strong> returns zero ~10% of the time, weakening cryptographic RNG. Affects EPYC 9005, Ryzen 9000/AI 300, Threadripper 9000. 64-bit RDSEED unaffected. Fix rolling out via AGESA/microcode. <a href="https://www.zdnet.com/article/amd-confirms-zen-5-chips-hit-by-critical-bug-but-a-fix-on-the-way/" target="_blank">More info</a></li>
-
-    <li><strong>CVE-2025-11953</strong> in <strong>@react-native-community/cli</strong>: critical (CVSS 9.8) RCE via POST requests to Metro dev server; affects millions weekly. Fixed in v20.0.0. <a href="https://www.securityweek.com/critical-flaw-in-popular-react-native-npm-package-exposes-developers-to-attacks/" target="_blank">More info</a></li>
-
-    <li><strong>Microsoft Teams spoofing flaws</strong> (CVE-2024-38197): attackers could edit messages without “Edited” tags, forge identities, modify notification display names—major social engineering threat. Patched by Microsoft. <a href="https://thehackernews.com/2025/11/microsoft-teams-bugs-let-attackers.html" target="_blank">More info</a></li>
-
-    <li><strong>CVE-2025-5397</strong> in JobMonster WordPress theme allows admin hijacking via social login bypass; active exploitation observed. Patch in 4.8.2. <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-auth-bypass-flaw-in-jobmonster-wordpress-theme/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>Curly COMrades</strong> hide persistence using lightweight Alpine Hyper-V VMs on Windows, running CurlyShell and CurlCat while injecting Kerberos tickets into LSASS. Evades many EDRs; defenders should monitor virtualization abuse. <a href="https://www.darkreading.com/endpoint-security/pro-russian-hackers-linux-vms-hide-windows" target="_blank">More info</a></li>
-
-    <li><strong>U.S. sanctions entities tied to North Korea</strong> for laundering billions via crypto thefts and fake IT contractor schemes. Funds support nuclear weapons development. <a href="https://cyberscoop.com/north-korean-companies-people-sanctioned-for-money-laundering-from-cybercrime-it-worker-schemes/" target="_blank">More info</a></li>
-
-    <li><strong>239 malicious Android apps</strong> on Google Play downloaded 42M times; spyware increased 220%. Key threats: Anatsa, BadBazaar, SpyLoan, Android Void. Zero-trust and IoT hardening recommended. <a href="https://www.bleepingcomputer.com/news/security/malicious-android-apps-on-google-play-downloaded-42-million-times/" target="_blank">More info</a></li>
-
-    <li><strong>Scattered LAPSUS$ Hunters (SLH)</strong> emerges as extortion-as-a-service alliance combining Scattered Spider, LAPSUS$, and ShinyHunters. Developing *Sh1nySp1d3r* ransomware to rival LockBit. <a href="https://thehackernews.com/2025/11/a-cybercrime-merger-like-no-other.html" target="_blank">More info</a></li>
-
-    <li><strong>DragonForce ransomware</strong> built on Conti code, cartel-style collective allied with Scattered Spider; attacks include Marks & Spencer. Encourages branded variants. <a href="https://www.infosecurity-magazine.com/news/dragonforce-cartel-conti-derived/" target="_blank">More info</a></li>
-
-    <li><strong>TruffleNet AWS SES abuse</strong>: attackers using stolen AWS credentials + TruffleHog tooling via Portainer-managed cluster to run BEC campaigns. Over 800 hosts observed. <a href="https://www.darkreading.com/vulnerabilities-threats/trufflenet-attack-stolen-credentials-aws" target="_blank">More info</a></li>
-
-    <li><strong>Operation SkyCloak</strong>: phishing targets Russian/Belarus defense orgs using hidden LNKs to deploy Tor-enabled PowerShell backdoor with OpenSSH tunneling and persistent C2. <a href="https://thehackernews.com/2025/11/operation-skycloak-deploys-tor-enabled.html" target="_blank">More info</a></li>
+    <li><strong>Clop ↔ The Washington Post</strong>: group added WaPo to its leak site, threatening data release; continues double-extortion playbook after MOVEit/GoAnywhere/Accellion waves. <a href="https://securityaffairs.com/184304/cyber-crime/clop-ransomware-group-claims-the-breach-of-the-washington-post.html" target="_blank">More info</a></li>
+    <li><strong>Cargo heists via RMM</strong>: trucking/logistics firms hit; attackers hijack broker/carrier accounts, deploy RMM, reroute freight for theft. Verify and monitor remote tools. <a href="https://www.malwarebytes.com/blog/news/2025/11/hackers-commit-highway-robbery-stealing-cargo-and-goods" target="_blank">More info</a></li>
+    <li><strong>AI-in-the-loop malware</strong>: PROMPTFLUX/STEAL/LOCK mutate at runtime using Gemini/Qwen2.5; QuietVault/FruitShell leverage AI for evasion and theft. <a href="https://securityaffairs.com/184275/malware/google-sounds-alarm-on-self-modifying-ai-malware.html" target="_blank">More info</a></li>
+    <li><strong>InedibleOchotense</strong>: Russia-aligned cluster impersonates ESET; trojanized installers drop <em>Kalambur</em> backdoor via fake domains; overlaps with Sandworm sub-clusters. RomCom abused WinRAR 0-day (CVE-2025-8088). <a href="https://thehackernews.com/2025/11/trojanized-eset-installers-drop.html" target="_blank">More info</a></li>
+    <li><strong>Cisco ASA/FTD</strong> new attack variant on CVE-2025-20333/20362 triggers reload/DoS; further critical UCCX bugs (20354/20358) allow root RCE; ISE DoS (20343) fixed. Patch now. <a href="https://thehackernews.com/2025/11/cisco-warns-of-new-firewall-attack.html" target="_blank">More info</a></li>
+    <li><strong>Cavalry Werewolf → ShellNET</strong>: phishing drops reverse-shell; chain uses BITSAdmin, FileSpyNET, SOCKS5 tunneling via Telegram C2; trojanized WinRAR/7-Zip/VS Code. <a href="https://hackread.com/cavalry-werewolf-russia-government-shellnet-backdoor/" target="_blank">More info</a></li>
+    <li><strong>Aisuru botnet</strong> skewed Cloudflare “top domains” by flooding 1.1.1.1; 30 Tbps-capable IoT herd now targeting Cloudflare DNS; rankings redacted. <a href="https://krebsonsecurity.com/2025/11/cloudflare-scrubs-aisuru-botnet-from-top-domains-list/" target="_blank">More info</a></li>
+    <li><strong>Bronze Butler (Tick) → Lanscope 0-day</strong>: CVE-2025-61932 (CVSS 9.8) used to drop Gokcpdoor/Havoc; CISA KEV; patch released (cloud unaffected). <a href="https://www.darkreading.com/application-security/bronze-butler-apt-exploits-zero-day-vuln-root-japan" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>CVE-2025-11833 Post SMTP WordPress plugin</strong> exploited to hijack admin accounts via exposed password reset emails; 210k sites unpatched. Fix available in v3.6.1. <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-wordpress-plugin-post-smtp-to-hijack-admin-accounts/" target="_blank">More info</a></li>
+    <li><strong>Booking.com partner scams</strong>: compromised hotel accounts push ClickFix → PowerShell → PureRAT; creds resold, some up to $5k; WhatsApp/email lures. <a href="https://www.infosecurity-magazine.com/news/i-paid-twice-phishing-campaign/" target="_blank">More info</a></li>
+    <li><strong>WhatsApp screen-share scam</strong>: impostors hijack sessions to grab OTPs/passwords; AnyDesk/TeamViewer abused; losses up to US$700k. Enable 2-step verification. <a href="https://www.welivesecurity.com/en/scams/sharing-is-scaring-whatsapp-screen-sharing-scam/" target="_blank">More info</a></li>
+    <li><strong>ClickFix 2.0</strong>: multi-OS pages with video tutorials, countdown timers, auto-copied commands deliver OS-specific payloads; treat paste-and-run prompts as high-risk. <a href="https://www.bleepingcomputer.com/news/security/clickfix-malware-attacks-evolve-with-multi-os-support-video-tutorials/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📁 Breaches & Leaks</h2>
   <ul>
-    <li><strong>Apache OpenOffice breach claim denied</strong>: Akira ransomware gang alleged 23GB data theft; ASF says no such data exists and no compromise detected. <a href="https://www.bleepingcomputer.com/news/security/apache-openoffice-disputes-data-breach-claims-by-ransomware-gang/" target="_blank">More info</a></li>
-
-    <li><strong>Miljödata breach</strong> impacts up to 1.5M Swedes; Datacarry leak includes IDs, addresses, children’s data. IMY investigating possible GDPR violations; 870k records confirmed. <a href="https://www.bleepingcomputer.com/news/security/data-breach-at-major-swedish-software-supplier-impacts-15-million/" target="_blank">More info</a></li>
-  </ul>
-
-  <h2>📌 Others</h2>
-  <ul>
-    <li><strong>€700M crypto scam network dismantled</strong> in Belgium/France/Cyprus operation; 9 arrested; seized €1.6M and luxury goods; fake investment platforms used. <a href="https://www.infosecurity-magazine.com/news/french-police-seize-16m-euros/" target="_blank">More info</a></li>
-
-    <li><strong>MIT Sloan retracts “80% AI ransomware” paper</strong> after industry backlash; researchers label it “cyberslop” and marketing hype. <a href="https://www.theregister.com/2025/11/03/mit_sloan_updates_ai_ransomware_paper/" target="_blank">More info</a></li>
+    <li><strong>Nevada ransomware AAR</strong>: trojanized admin tool via malicious Google ad led to months-long compromise; backups deleted; 90% restored in 28 days, no ransom paid. Model transparency. <a href="https://www.bleepingcomputer.com/news/security/how-a-ransomware-gang-encrypted-nevada-governments-systems/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
