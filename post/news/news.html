@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 07/11/25</title>
+  <title>📰 Cybersecurity Newsfeed - 10/11/25</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; color: #c9a227; }
@@ -16,38 +16,67 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 07/11/25</h2>
+  <h2>📅 10/11/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
+    <li><strong>runC container escapes</strong>: CVE-2025-31133, -52565, -52881 allow mount/symlink race exploitation enabling host root writes; fixed in runC 1.2.8, 1.3.3, 1.4.0-rc.3+. Use rootless containers. <a href="https://www.bleepingcomputer.com/news/security/dangerous-runc-flaws-could-allow-hackers-to-escape-docker-containers/" target="_blank">More info</a></li>
+
+    <li><strong>Whisper Leak (LLM side-channel)</strong>: adversaries infer LLM prompt topics with 98% accuracy via TLS traffic pattern analysis; affects OpenAI, Mistral, DeepSeek, xAI. Mitigate via padding, VPN, non-streaming models. <a href="https://thehackernews.com/2025/11/microsoft-uncovers-whisper-leak-attack.html" target="_blank">More info</a></li>
+
+    <li><strong>Cisco ASA/FTD 0-days</strong>: CVE-2025-20362 & -20333 actively exploited for reboot loops and remote takeover; ArcaneDoor implicated; CISA mandates 24-hour patch/disconnect; 34k systems exposed. <a href="https://www.bleepingcomputer.com/news/security/cisco-actively-exploited-firewall-flaws-now-abused-for-dos-attacks/" target="_blank">More info</a></li>
+
+    <li><strong>NuGet sabotage time bombs</strong>: 9 malicious packages planned 2027–2028 sabotage of SQL/PLC systems; Sharp7Extend mimics Sharp7 and disrupts Siemens S7 PLCs; audit dependencies immediately. <a href="https://www.theregister.com/2025/11/07/cybercriminals_plant_destructive_time_bomb/" target="_blank">More info</a></li>
+
+    <li><strong>Ollama / NVIDIA Triton flaws</strong>: Black Hat EU 2025 talk reveals 5 critical issues including Ollama auth bypass, file read/copy, DoS, heap overflow; Triton RCE via command injection. Patches released. <a href="https://www.darkreading.com/vulnerabilities-threats/ollama-nvidia-flaws-ai-infrastructure-risk" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>Clop ↔ The Washington Post</strong>: group added WaPo to its leak site, threatening data release; continues double-extortion playbook after MOVEit/GoAnywhere/Accellion waves. <a href="https://securityaffairs.com/184304/cyber-crime/clop-ransomware-group-claims-the-breach-of-the-washington-post.html" target="_blank">More info</a></li>
-    <li><strong>Cargo heists via RMM</strong>: trucking/logistics firms hit; attackers hijack broker/carrier accounts, deploy RMM, reroute freight for theft. Verify and monitor remote tools. <a href="https://www.malwarebytes.com/blog/news/2025/11/hackers-commit-highway-robbery-stealing-cargo-and-goods" target="_blank">More info</a></li>
-    <li><strong>AI-in-the-loop malware</strong>: PROMPTFLUX/STEAL/LOCK mutate at runtime using Gemini/Qwen2.5; QuietVault/FruitShell leverage AI for evasion and theft. <a href="https://securityaffairs.com/184275/malware/google-sounds-alarm-on-self-modifying-ai-malware.html" target="_blank">More info</a></li>
-    <li><strong>InedibleOchotense</strong>: Russia-aligned cluster impersonates ESET; trojanized installers drop <em>Kalambur</em> backdoor via fake domains; overlaps with Sandworm sub-clusters. RomCom abused WinRAR 0-day (CVE-2025-8088). <a href="https://thehackernews.com/2025/11/trojanized-eset-installers-drop.html" target="_blank">More info</a></li>
-    <li><strong>Cisco ASA/FTD</strong> new attack variant on CVE-2025-20333/20362 triggers reload/DoS; further critical UCCX bugs (20354/20358) allow root RCE; ISE DoS (20343) fixed. Patch now. <a href="https://thehackernews.com/2025/11/cisco-warns-of-new-firewall-attack.html" target="_blank">More info</a></li>
-    <li><strong>Cavalry Werewolf → ShellNET</strong>: phishing drops reverse-shell; chain uses BITSAdmin, FileSpyNET, SOCKS5 tunneling via Telegram C2; trojanized WinRAR/7-Zip/VS Code. <a href="https://hackread.com/cavalry-werewolf-russia-government-shellnet-backdoor/" target="_blank">More info</a></li>
-    <li><strong>Aisuru botnet</strong> skewed Cloudflare “top domains” by flooding 1.1.1.1; 30 Tbps-capable IoT herd now targeting Cloudflare DNS; rankings redacted. <a href="https://krebsonsecurity.com/2025/11/cloudflare-scrubs-aisuru-botnet-from-top-domains-list/" target="_blank">More info</a></li>
-    <li><strong>Bronze Butler (Tick) → Lanscope 0-day</strong>: CVE-2025-61932 (CVSS 9.8) used to drop Gokcpdoor/Havoc; CISA KEV; patch released (cloud unaffected). <a href="https://www.darkreading.com/application-security/bronze-butler-apt-exploits-zero-day-vuln-root-japan" target="_blank">More info</a></li>
+    <li><strong>Herodotus Android trojan</strong>: mimics human typing to evade fraud systems; steals financial data, screens, overlays, OTPs. Active in Italy/Brazil; MAS-as-a-Service. <a href="https://www.cysecurity.news/2025/11/herodotus-trojan-mimics-human-typing-to.html" target="_blank">More info</a></li>
+
+    <li><strong>GlassWorm returns</strong>: 3 new OpenVSX malware extensions with invisible Unicode JS stealing GitHub/NPM/crypto creds; linked to Russian-speaking actors using RedExt C2. <a href="https://www.bleepingcomputer.com/news/security/glassworm-malware-returns-on-openvsx-with-3-new-vscode-extensions/" target="_blank">More info</a></li>
+
+    <li><strong>Atroposia RAT platform</strong>: $200/month subscription toolkit with RAT, vuln scanner, DNS hijack, HRDP stealth sessions; strong evasion & UAC bypass. <a href="https://www.cysecurity.news/2025/11/atroposia-malware-offers-attackers.html" target="_blank">More info</a></li>
+
+    <li><strong>LANDFALL spyware</strong>: deployed via Samsung 0-day CVE-2025-21042; malicious DNG images achieve likely zero-click; drops backdoor + SELinux manipulator; targets Middle East. <a href="https://securityaffairs.com/184331/security/landfall-spyware-exploited-samsung-zero-day-cve-2025-21042-in-middle-east-attacks.html" target="_blank">More info</a></li>
+
+    <li><strong>NuGet sabotage (second disclosure)</strong>: shanhai666 packages include Sharp7Extend with 20% activation chance for PLC tampering; nearly 9,500 downloads. <a href="https://www.bleepingcomputer.com/news/security/malicious-nuget-packages-drop-disruptive-time-bombs/" target="_blank">More info</a></li>
+
+    <li><strong>AI-generated ransomware PoC</strong>: “susvsex” VS Code extension zipped/encrypted/exfiltrated files; AI-written style with hardcoded keys; removed by Microsoft. <a href="https://www.darkreading.com/application-security/ransomvibing-infests-visual-studio-extension-market" target="_blank">More info</a></li>
+
+    <li><strong>ESET APT Activity Q2–Q3</strong>: Sandworm deploys Zerolot/Sting wipers; Gamaredon expands; RomCom exploits WinRAR 0-day; China/Iran/North Korea escalate espionage. <a href="https://www.infosecurity-magazine.com/news/russian-sandworm-new-wiper-ukraine/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>Booking.com partner scams</strong>: compromised hotel accounts push ClickFix → PowerShell → PureRAT; creds resold, some up to $5k; WhatsApp/email lures. <a href="https://www.infosecurity-magazine.com/news/i-paid-twice-phishing-campaign/" target="_blank">More info</a></li>
-    <li><strong>WhatsApp screen-share scam</strong>: impostors hijack sessions to grab OTPs/passwords; AnyDesk/TeamViewer abused; losses up to US$700k. Enable 2-step verification. <a href="https://www.welivesecurity.com/en/scams/sharing-is-scaring-whatsapp-screen-sharing-scam/" target="_blank">More info</a></li>
-    <li><strong>ClickFix 2.0</strong>: multi-OS pages with video tutorials, countdown timers, auto-copied commands deliver OS-specific payloads; treat paste-and-run prompts as high-risk. <a href="https://www.bleepingcomputer.com/news/security/clickfix-malware-attacks-evolve-with-multi-os-support-video-tutorials/" target="_blank">More info</a></li>
+    <li><strong>Find My iPhone phishing</strong>: SMS/iMessage spoof alerts claim lost device found; fake Find My pages steal Apple IDs; disable Activation Lock. <a href="https://www.bleepingcomputer.com/news/security/lost-iphone-dont-fall-for-phishing-texts-saying-it-was-found/" target="_blank">More info</a></li>
+
+    <li><strong>ClickFix evolution</strong>: fake CAPTCHA → now OS auto-detection, auto-copy malicious code, video infection tutorials, countdown pressure; spreads via SEO/email/social ads. <a href="https://www.malwarebytes.com/blog/news/2025/11/fake-captcha-sites-now-have-tutorial-videos-to-help-victims-install-malware" target="_blank">More info</a></li>
   </ul>
 
   <h2>📁 Breaches & Leaks</h2>
   <ul>
-    <li><strong>Nevada ransomware AAR</strong>: trojanized admin tool via malicious Google ad led to months-long compromise; backups deleted; 90% restored in 28 days, no ransom paid. Model transparency. <a href="https://www.bleepingcomputer.com/news/security/how-a-ransomware-gang-encrypted-nevada-governments-systems/" target="_blank">More info</a></li>
+    <li><strong>Chinese APT hits U.S. nonprofit</strong>: exploited Log4j, Atlassian OGNL, Struts; DLL sideloading (sbamres.dll), msbuild.exe abuse, scheduled tasks, suspected DCSync behavior. <a href="https://securityaffairs.com/184351/apt/china-linked-hackers-target-u-s-non-profit-in-long-term-espionage-campaign.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📌 Others</h2>
+  <ul>
+    <li><strong>Proposed TP-Link ban</strong>: U.S. considers blocking TP-Link sales over China ties; critics note most vendors rely on Chinese manufacturing. Encourage firmware updates & open-source firmware. <a href="https://krebsonsecurity.com/2025/11/drilling-down-on-uncle-sams-proposed-tp-link-ban/" target="_blank">More info</a></li>
+
+    <li><strong>Stalkerware Test 2025</strong>: Malwarebytes scores 100%; Bitdefender/ESET/Kaspersky/McAfee at 94%; Google at 53%. Stalkerware still often sideloaded with insecure data storage. <a href="https://www.malwarebytes.com/blog/news/2025/11/malwarebytes-scores-100-in-av-comparatives-stalkerware-test-2025" target="_blank">More info</a></li>
+
+    <li><strong>Discord breach implications</strong>: ID verification laws drive dangerous data collection (IDs, IPs, docs); MSPs face amplified risks; calls for unified security platforms. <a href="https://www.bleepingcomputer.com/news/security/id-verification-laws-are-fueling-the-next-wave-of-breaches/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🧰 Tools</h2>
+  <ul>
+    <li><strong>Scanners-Box</strong>: curated recon toolkit for red teams; supports modular scanning, fingerprinting, weak-password checks; best used in isolated environments with monitoring. <a href="https://www.darknet.org.uk/2025/11/scanners-box-open-source-reconnaissance-and-scanning-toolkit/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
     <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
   </p>
+
 </body>
 </html>
