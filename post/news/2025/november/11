@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 11/11/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 11/11/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Gladinet Triofox auth bypass</strong>: CVE-2025-12480 exploited by UNC6485 to create admin accounts and run scripts as SYSTEM via AV feature; installs Zoho UEMS/Assist & AnyDesk; tunnels via Plink/PuTTY. Patch + audit admins & AV paths. <a href="https://thehackernews.com/2025/11/hackers-exploiting-triofox-flaw-to.html" target="_blank">More info</a></li>
+
+    <li><strong>Samsung Galaxy RCE in KEV</strong>: CVE-2025-21042 (libimagecodec.quram.so) enables RCE on Android 13–16 pre–Apr 2025; used in LANDFALL spyware; prioritized patching mandated. <a href="https://www.cisa.gov/news-events/alerts/2025/11/10/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">More info</a></li>
+
+    <li><strong>expr-eval RCE</strong>: CVE-2025-12735 (CVSS 9.8) allows arbitrary code via crafted function objects in <code>Parser.evaluate()</code>; migrate to expr-eval-fork v3.0.0+ and audit dynamic eval. <a href="https://www.bleepingcomputer.com/news/security/popular-javascript-library-expr-eval-vulnerable-to-rce-flaw/" target="_blank">More info</a></li>
+
+    <li><strong>runC container escapes</strong>: CVE-2025-31133/-52565/-52881 enable mount/procfs abuse to reach host; update to 1.2.8/1.3.3/1.4.0-rc.3+, harden containers, monitor symlink/mount races. <a href="https://www.securityweek.com/runc-vulnerabilities-can-be-exploited-to-escape-containers/" target="_blank">More info</a></li>
+
+    <li><strong>Monsta FTP pre-auth RCE</strong>: CVE-2025-34299 lets attackers write arbitrary payloads and gain server control; 2.11.3 fixes; ~5k exposed instances—update immediately. <a href="https://hackread.com/monsta-ftp-flaw-web-servers-open-server-takeover/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>KONNI campaign (APT37/Kimsuky)</strong>: signed MSI + AutoIT delivers KONNI/Remcos/Quasar/RftRAT; steals Google/Naver creds; abuses Google Find Hub to wipe Android; hijacks KakaoTalk sessions. Enable MFA, verify senders. <a href="https://www.bleepingcomputer.com/news/security/apt37-hackers-abuse-google-find-hub-in-android-data-wiping-attacks/" target="_blank">More info</a></li>
+
+    <li><strong>Quantum Route Redirect (QRR)</strong>: PhaaS with ~1k domains automates M365 credential theft; bot/human filtering, compromised-hosted pages; U.S. most targeted. Strengthen URL filtering & ATO detection. <a href="https://www.bleepingcomputer.com/news/security/quantum-route-redirect-phaas-targets-microsoft-365-users-worldwide/" target="_blank">More info</a></li>
+
+    <li><strong>KONNI via “Stress Clear.msi”</strong>: AutoIt EndRAT + RATs, minute-interval persistence, remote shell/exfil, lateral movement & admin creation via config abuse; secure messenger workflows and recovery. <a href="https://thehackernews.com/2025/11/konni-hackers-turn-googles-find-hub.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📌 Others</h2>
+  <ul>
+    <li><strong>Yanluowang IAB plea</strong>: Aleksey Volkov (“chubaka.kor”) to plead guilty for selling access; tied to LockBit; faces up to 53 years and $9.1M restitution. <a href="https://www.bleepingcomputer.com/news/security/yanluowang-initial-access-broker-pleaded-guilty-to-ransomware-attacks/" target="_blank">More info</a></li>
+
+    <li><strong>Firefox 145 anti-fingerprinting</strong>: Phase-2 protections cut trackability (35% → 20%); randomize cores/fonts/touch/screen; private/strict modes first; 32-bit Linux support ends. <a href="https://www.bleepingcomputer.com/news/security/mozilla-firefox-gets-new-anti-fingerprinting-defenses/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+
+</body>
+</html>
