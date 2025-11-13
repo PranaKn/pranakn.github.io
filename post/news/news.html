@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 12/11/25</title>
+  <title>📰 Cybersecurity Newsfeed - 13/11/25</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; color: #c9a227; }
@@ -16,52 +16,45 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 12/11/25</h2>
+  <h2>📅 13/11/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>Synology BeeStation RCE</strong>: CVE-2025-12686 (buffer overflow) demoed at Pwn2Own; update BeeStation OS to 1.3.2-65648+; no mitigations. <a href="https://www.bleepingcomputer.com/news/security/synology-fixes-beestation-zero-days-demoed-at-pwn2own-ireland/" target="_blank">More info</a></li>
+    <li><strong>Synology BeeStation RCE</strong>: CVE-2025-12686 patched after Pwn2Own Ireland; improper buffer validation → RCE; update to 1.3.2-65648+. QNAP also patched its event zero-days. <a href="https://securityaffairs.com/184528/security/synology-patches-critical-beestation-rce-flaw-shown-at-pwn2own-ireland-2025.html" target="_blank">More info</a></li>
 
-    <li><strong>SAP Patch Day</strong>: 19 fixes; CVE-2025-42890 (CVSS 10.0) hardcoded creds in SQL Anywhere Monitor → RCE; discontinue monitor DBs; CVE-2025-42887 (CVSS 9.9) code injection in Solution Manager; NetWeaver AS Java fix updated. <a href="https://securityaffairs.com/184500/security/sap-fixed-a-maximum-severity-flaw-in-sql-anywhere-monitor.html" target="_blank">More info</a></li>
+    <li><strong>CitrixBleed 2 & Cisco ISE 0-days</strong>: Both exploited pre-patch; attackers used Citrix session hijack & Cisco ISE RCE to deploy in-memory web shells; identity systems increasingly targeted—apply strict privilege limits. <a href="https://www.darkreading.com/vulnerabilities-threats/citrixbleed-2-cisco-zero-day-bugs" target="_blank">More info</a></li>
 
-    <li><strong>Adobe fixes 29 vulns</strong>: InDesign, Photoshop, Illustrator, Pass, Substance 3D, etc.; critical code exec & a critical bypass; exploitation priority low but patch promptly. <a href="https://www.securityweek.com/adobe-patches-29-vulnerabilities/" target="_blank">More info</a></li>
+    <li><strong>OpenAI Sora 2 prompt leak</strong>: Mindgard found audio transcript bug leaking system prompt fragments; revealed hidden safety rules; mitigations: limit output length, test multimodal leakage channels. <a href="https://hackread.com/mindgard-sora-2-vulnerability-prompt-via-audio/" target="_blank">More info</a></li>
 
-    <li><strong>Microsoft Patch Tuesday</strong>: 60+ CVEs incl. actively exploited Windows kernel LPE (CVE-2025-62215); multiple criticals across Windows/Office/VS/PowerScribe. <a href="https://www.securityweek.com/microsoft-patches-actively-exploited-windows-kernel-zero-day/" target="_blank">More info</a></li>
+    <li><strong>CISA adds 3 exploited CVEs</strong>: WatchGuard Firebox CVE-2025-9242, Triofox CVE-2025-12480, Windows kernel CVE-2025-62215; confirm active exploitation; patch VPNs, segment networks, enhance monitoring. <a href="https://www.cisa.gov/news-events/alerts/2025/11/12/cisa-adds-three-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
 
-    <li><strong>Windows 10 ESU begins</strong>: KB5068781 enables ESU enrollment, updates 19045.6575/19044.6575; includes Nov fixes (63 CVEs). <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-kb5068781-the-first-windows-10-extended-security-update/" target="_blank">More info</a></li>
-
-    <li><strong>Pixnapping screen-pixel leak</strong>: CVE-2025-48561 lets zero-permission apps infer screen content via overlays + GPU timing; 2FA codes exfil in ~22s; stronger Android fix due Dec. <a href="https://www.kaspersky.com/blog/pixnapping-cve-2025-48561/54756/" target="_blank">More info</a></li>
+    <li><strong>Chipmaker patch roundup</strong>: Intel fixed 60+ bugs (Xeon, Slim Bootloader, Graphics, QAT); AMD 14 vulns (Kria/Zynq, StoreMi); Nvidia patched NeMo, Megatron LM, AIStore, Triton DoS; update firmware/software ASAP. <a href="https://www.securityweek.com/chipmaker-patch-tuesday-over-60-vulnerabilities-patched-by-intel/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>Script-kiddie phish, instant theft</strong>: .shtml fake login sent from compromised Czech email; creds exfil via Telegram bot; use MFA, verify senders, avoid attachments. <a href="https://www.malwarebytes.com/blog/threat-intel/2025/11/how-credentials-get-stolen-in-seconds-even-with-a-script-kiddie-level-phish" target="_blank">More info</a></li>
-
-    <li><strong>Rhadamanthys disrupted</strong>: Panels locked down, Tor sites offline; law enforcement suspected (EU infra); ties to Operation Endgame. <a href="https://www.bleepingcomputer.com/news/security/rhadamanthys-infostealer-disrupted-as-cybercriminals-lose-server-access/" target="_blank">More info</a></li>
-
-    <li><strong>Triofox CVE-2025-12480 at scale</strong>: UNC6485 abused header spoofing to gain admin, execute scripts via AV feature, deploy Zoho/AnyDesk, tunnel with Plink/PuTTY; update to 16.10.10408.56683 and audit configs. <a href="https://www.bleepingcomputer.com/news/security/hackers-abuse-triofox-antivirus-feature-to-deploy-remote-access-tools/" target="_blank">More info</a></li>
+    <li><strong>Citrix & Cisco exploited together</strong>: MadPot honeypots saw APT chaining CitrixBleed 2 (CVE-2025-5777) + Cisco ISE (CVE-2025-20337) to install stealthy “IdentityAuditAction” web shell using DES encoding; deep product knowledge shows sophistication. <a href="https://www.bleepingcomputer.com/news/security/hackers-exploited-citrix-cisco-ise-flaws-in-zero-day-attacks/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>Qilin ransomware surge</strong>: Affiliates exploit unpatched VPNs/MFA gaps; SMBs in construction/health/finance hardest hit; 88% combine data theft + encryption; expand collaboration with Scattered Spider. <a href="https://www.infosecurity-magazine.com/news/qilin-ransomware-activity-surges/" target="_blank">More info</a></li>
+    <li><strong>DanaBot returns</strong>: Post–Operation Endgame resurgence; new Windows v669 variant with new C2s & wallet addresses; still used for credential theft/ransomware staging; IoCs published. <a href="https://securityaffairs.com/184548/malware/new-danabot-windows-version-appears-in-the-threat-landscape-after-may-disruption.html" target="_blank">More info</a></li>
+
+    <li><strong>Printer exploitation rising</strong>: SAS 2025 revealed Canon CVE-2024-12649 (CVSS 9.8); malicious XPS with crafted TTF triggers RCE via stack overflow; patch, segment, and monitor printers. <a href="https://www.kaspersky.com/blog/canon-ttf-vulnerability-printer-risk/54764/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📁 Breaches & Leaks</h2>
   <ul>
-    <li><strong>GlobalLogic Oracle EBS breach</strong>: CVE-2025-61882 zero-day used to steal HR data on 10k+ staff; linked to Clop’s Oracle campaign. <a href="https://www.bleepingcomputer.com/news/security/globallogic-warns-10-000-employees-of-data-theft-after-oracle-breach/" target="_blank">More info</a></li>
+    <li><strong>AI firms leak secrets on GitHub</strong>: 65% of top AI orgs exposed API keys/tokens via public repos, forks, and gists; affected Anthropic, Glean, Crusoe; use secret scanning & proper disclosure channels. <a href="https://www.fortra.com/blog/ai-companies-accidentally-leak-passwords-digital-keys-github" target="_blank">More info</a></li>
+
+    <li><strong>Synnovis NHS data breach</strong>: Qilin ransomware’s June 2024 attack exposed NHS IDs, DOBs, some test data; massive London hospital disruption; no ransom paid; NHS to notify affected patients. <a href="https://www.bleepingcomputer.com/news/security/synnovis-notifies-of-data-breach-after-2024-ransomware-attack/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📌 Others</h2>
   <ul>
-    <li><strong>ASIO sabotage warning</strong>: Australia flags China-linked groups (Salt/VOLT Typhoon) probing critical infra; urges board-level accountability and AI-aware defenses. <a href="https://www.theregister.com/2025/11/12/asio_cyber_sabotage_warnings/" target="_blank">More info</a></li>
+    <li><strong>Google vs Smishing Triad</strong>: Lawsuit against 25 Lighthouse PhaaS operators; platform enabled mass SMS phishing (1M+ victims, 115M cards stolen); Google seeks RICO/CFAA injunctions. <a href="https://www.darkreading.com/threat-intelligence/google-dim-lighthouse-phishing-as-a-service" target="_blank">More info</a></li>
 
-    <li><strong>“Bitcoin Queen” sentenced</strong>: Zhimin Qian gets 11y8m for laundering £5.5B scam funds; UK’s largest crypto seizure (61k BTC). <a href="https://www.bleepingcomputer.com/news/security/bitcoin-queen-gets-11-years-in-prison-for-73-billion-bitcoin-scam/" target="_blank">More info</a></li>
-  </ul>
-
-  <h2>🧰 Tools</h2>
-  <ul>
-    <li><strong>SharpParty</strong>: C# port of PoolParty process-injection (thread-pool work items); msbuild/PowerShell-friendly; briefly evaded MDE—defenders should monitor msbuild, thread-pool anomalies. <a href="https://levelblue.com/blogs/security-essentials/sharpparty" target="_blank">More info</a></li>
+    <li><strong>Zero Trust for AI agents</strong>: CISOs warned AI assistants need unique IDs, least-privilege, continuous monitoring; agentic identities expand attack surfaces—govern them like users. <a href="https://www.bleepingcomputer.com/news/security/extending-zero-trust-to-ai-agents-never-trust-always-verify-goes-autonomous/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
