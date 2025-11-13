@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 14/11/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 14/11/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>ImunifyAV RCE</strong>: AI-bolit scanner flaw enables arbitrary PHP function execution via <code>call_user_func_array</code>; affects Imunify360, AV+, and free versions before 32.7.4.0; update immediately to 32.7.4.0+. <a href="https://www.bleepingcomputer.com/news/security/rce-flaw-in-imunifyav-puts-millions-of-linux-hosted-sites-at-risk/" target="_blank">More info</a></li>
+
+    <li><strong>CISA Directive 25-03 guidance</strong>: New details on mitigation for Cisco ASA/Firepower CVEs 2025-20333 & 2025-20362; many agencies mispatched; mandates verification and use of RayDetect scanner for RayInitiator compromise checks. <a href="https://www.cisa.gov/news-events/alerts/2025/11/12/update-implementation-guidance-emergency-directive-cisco-asa-and-firepower-device-vulnerabilities" target="_blank">More info</a></li>
+
+    <li><strong>WatchGuard Fireware RCE (CVE-2025-9242)</strong>: Active exploitation confirmed; affects 11.10.2–12.11.3 and 2025.1; remote unauth RCE via <code>iked</code> in IKEv2; 54k exposed Fireboxes, 18.5k in U.S.; patch immediately. <a href="https://thehackernews.com/2025/11/cisa-flags-critical-watchguard-fireware.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>npm “IndonesianFoods” worm</strong>: Auto-publishes 100k+ npm packages every 7 seconds; currently non-malicious but highlights massive supply-chain abuse; linked to TEA Protocol token farming. <a href="https://www.bleepingcomputer.com/news/security/new-indonesianfoods-worm-floods-npm-with-100-000-packages/" target="_blank">More info</a></li>
+
+    <li><strong>Akira ransomware update</strong>: Group earned $244M since 2023; exploits stolen creds, VPNs, RDP, and Cisco/SonicWall/VMware flaws; rapid double-extortion operations within hours. <a href="https://www.cisa.gov/news-events/alerts/2025/11/13/cisa-and-partners-release-advisory-update-akira-ransomware" target="_blank">More info</a></li>
+
+    <li><strong>“Safery: Ethereum Wallet” Chrome extension</strong>: Steals seed phrases by encoding them into SUI transactions; evades C2 detection via blockchain; still available on Chrome Web Store. <a href="https://securityaffairs.com/184585/malware/chrome-extension-safery-steals-ethereum-wallet-seed-phrases.html" target="_blank">More info</a></li>
+
+    <li><strong>Uhale photo frames preloaded malware</strong>: Android-based devices download malware at boot, tied to Vo1d botnet & Mezmess; rooted with SELinux disabled, 17 flaws found; avoid untrusted IoT devices. <a href="https://www.bleepingcomputer.com/news/security/popular-android-based-photo-frames-download-malware-on-boot/" target="_blank">More info</a></li>
+
+    <li><strong>Rust boosts Android security</strong>: Memory safety issues drop below 20%; Rust code 4× safer, 25% faster in review; now core to kernel & Play Services. <a href="https://security.googleblog.com/2025/11/rust-in-android-move-fast-fix-things.html" target="_blank">More info</a></li>
+
+    <li><strong>Formbook campaign</strong>: Phishing ZIP → obfuscated VBS → PowerShell chain downloads payload from Google Drive → injects into <code>msiexec.exe</code>; final C2: 216.250.252.227:7719. <a href="https://isc.sans.edu/diary/32480" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>Hospitality phishing surge</strong>: 4,300+ domains impersonating Booking, Expedia, Airbnb, etc.; fake CAPTCHAs & multilingual phishing sites; likely linked to PureRAT campaigns. <a href="https://thehackernews.com/2025/11/russian-hackers-create-4300-fake-travel.html" target="_blank">More info</a></li>
+
+    <li><strong>Brazil banking malware spike</strong>: Coyote & Maverick Trojans spreading via WhatsApp desktop; .NET multistage PowerShell attacks harvesting banking/crypto creds; thousands infected. <a href="https://www.darkreading.com/cyberattacks-data-breaches/coyote-maverick-banking-trojans-brazil" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Hunting</h2>
+  <ul>
+    <li><strong>Lumma Stealer evolves</strong>: Adds browser fingerprinting via injected Chrome JS; exfil via HTTP POST; persists via EdgeUpdate.exe injection; still active post-operator doxx. <a href="https://www.trendmicro.com/en_us/research/25/k/lumma-stealer-browser-fingerprinting.html" target="_blank">More info</a></li>
+
+    <li><strong>Kraken ransomware</strong>: Evolved from HelloKitty; uses SMB exploits, Cloudflared, SSHFS; double extortion for Windows/Linux/ESXi; RSA-4096 + ChaCha20 encryption; runs “Last Haven” forum. <a href="https://blog.talosintelligence.com/kraken-ransomware-group/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📁 Breaches & Leaks</h2>
+  <ul></ul>
+
+  <h2>📌 Others</h2>
+  <ul></ul>
+
+  <h2>🧰 Tools</h2>
+  <ul></ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
