@@ -1,73 +1,73 @@
-# 18/11/2025
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 18/11/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 18/11/25</h2>
 
-**VULNERABILITIES**
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Cursor MCP injection & credential theft</strong>: Knostic found Cursor’s AI dev environment lacks integrity checks used by VS Code, allowing malicious MCP servers to tamper with runtime components. Attackers can overwrite login pages, inject arbitrary HTML/JS, and force all new tabs to run attacker-controlled code, enabling credential theft and browser hijacking. Cursor claims the issue is inherent to its design, underscoring supply-chain risks in AI tooling and the need to strictly vet extensions and MCP servers. <a href="https://www.darkreading.com/vulnerabilities-threats/cursor-issue-credential-stealing-attacks" target="_blank">More info</a></li>
 
-Researchers uncovered that Cursor, a fast-growing AI-powered developer environment, is vulnerable to JavaScript injection attacks that let adversaries hijack its internal browser and steal credentials. Knostic found Cursor lacks integrity checks that tools like VS Code perform, making its runtime components easier to tamper with. By abusing a malicious MCP server—whose broad permissions let it modify components—attackers can overwrite login pages, inject arbitrary HTML/JS, and force every new browser tab to run attacker-controlled code. Cursor says this is inherent to how the tool works, not a fixable bug. The research highlights rising supply-chain risks in AI-assisted development and urges strict vetting of extensions and MCP servers.
+    <li><strong>EchoGram LLM guardrail bypass</strong>: HiddenLayer’s EchoGram technique abuses “flip tokens” — nonsense strings absent from guardrail training data — to invert allow/deny decisions in models like GPT-5.1, Claude, and Gemini. A single token such as <code>=coffee</code> can sneak malicious prompts past filters or falsely block benign ones, enabling abuse and alert fatigue. Researchers warn attackers could replicate the method within months, with serious implications for high-stakes sectors using LLM-based safety layers. <a href="https://hackread.com/echogram-flaw-bypass-guardrails-major-llms/" target="_blank">More info</a></li>
+  </ul>
 
-- https://www.darkreading.com/vulnerabilities-threats/cursor-issue-credential-stealing-attacks
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Kraken ransomware benchmarks victims</strong>: Cisco Talos reports Kraken, a Russian-speaking group spun out of HelloKitty, launched major big-game attacks in August 2025. The group exploits SMB flaws, uses Cloudflare for persistence, and SSHFS for data theft, then encrypts Windows, Linux, and ESXi systems. Its new strain benchmarks each host to pick the fastest, lowest-noise encryption method. Operations use credential theft, RDP access, multi-threaded encryptors, and ransoms around $1M. <a href="https://www.infosecurity-magazine.com/news/kraken-benchmarking-enhance/" target="_blank">More info</a></li>
 
-HiddenLayer researchers uncovered **EchoGram**, a major flaw in LLM guardrails affecting models like GPT-5.1, Claude, and Gemini. Guardrails typically block harmful prompts using either LLM-as-a-judge or classification filters, but EchoGram bypasses both by inserting “flip tokens”—nonsensical words or sequences missing from guardrail training data. These tokens trick the defence layer into reversing its decision, allowing malicious prompts through or falsely flagging safe queries. A single token such as “=coffee” was enough to bypass protections in tests. The technique can also generate alert fatigue by triggering false positives. HiddenLayer warns attackers could replicate the method within months, risking misuse in sensitive sectors like finance and healthcare.
+    <li><strong>DoorDash email spoofing dispute</strong>: A flaw in DoorDash for Business allowed anyone to send fully branded emails from <code>no-reply@doordash.com</code> via HTML injection in the Budget Name field. Stored unsanitized, it let attackers hide real content and insert phishing payloads. The bug reportedly lingered 15+ months after a HackerOne report marked “Informative.” DoorDash eventually patched it but banned the researcher for alleged extortion, sparking debate over disclosure and bug bounty practices. <a href="https://www.bleepingcomputer.com/news/security/doordash-email-spoofing-vulnerability-sparks-messy-disclosure-dispute/" target="_blank">More info</a></li>
 
-- https://hackread.com/echogram-flaw-bypass-guardrails-major-llms/
+    <li><strong>INC Ransom hits Pennsylvania AG</strong>: Pennsylvania’s Attorney General confirmed that an August 9 ransomware attack led to theft of names, Social Security numbers, and medical data, while taking down the website, email, and phone systems. Analysts noted exposed Citrix NetScaler devices vulnerable to Citrix Bleed 2 (CVE-2025-5777), likely exploited. INC Ransom claimed 5.7TB of stolen data and even alleged FBI network access, adding to a series of ransomware incidents against the state. <a href="https://www.bleepingcomputer.com/news/security/pennsylvania-ag-confirms-data-breach-after-inc-ransom-attack/" target="_blank">More info</a></li>
 
-**ADVERSARIES**
+    <li><strong>Dragon Breath’s RONINGLOADER & Gh0st RAT</strong>: Dragon Breath (APT-Q-27), part of Miuuti Group, uses a multi-stage loader dubbed RONINGLOADER via trojanized NSIS installers for apps like Chrome and Teams. The campaign employs heavy defense evasion, WDAC tampering, PPL/EDR-Freeze tricks, and a signed driver (<code>ollama.sys</code>) to kill Chinese AV tools. RONINGLOADER injects a modified Gh0st RAT via <code>regsvr32</code> to support command execution, data theft, keylogging, clipboard capture, and persistence, alongside large-scale Chinese app impersonation. <a href="https://thehackernews.com/2025/11/dragon-breath-uses-roningloader-to.html" target="_blank">More info</a></li>
+  </ul>
 
-Cisco Talos reports that Kraken, a Russian-speaking ransomware group emerging from the former HelloKitty cartel, conducted major big-game hunting attacks in August 2025. The group exploits SMB flaws for initial access, uses Cloudflare for persistence, and leverages SSHFS to steal data before encrypting systems across Windows, Linux, and ESXi. Kraken’s new ransomware strain benchmarks each victim machine to choose the fastest, least-detectable encryption method. Its leak site promotes a new forum, “Last Haven,” backed by former HelloKitty operators. Attacks involve credential theft, RDP access, and multi-threaded encryptors, with ransoms around $1M. Strong credential hygiene and hardened remote services are recommended.
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>EVALUSION ClickFix campaigns</strong>: eSentire tracks new ClickFix-driven campaigns, dubbed EVALUSION, distributing Amatera Stealer and NetSupport RAT. Amatera, a MaaS evolution of ACR Stealer, targets crypto wallets, browsers, messaging and FTP/email clients while evading AV/EDR with WoW64 syscalls. Infection chains abuse <code>mshta.exe</code> and PowerShell to pull a PureCrypter-packed DLL injected into MSBuild, with NetSupport deployed only on high-value hosts. Related activity uses Cephas and Tycoon 2FA phishing kits to spread XWorm and other stealers. <a href="https://thehackernews.com/2025/11/new-evalusion-clickfix-campaign.html" target="_blank">More info</a></li>
 
-- https://www.infosecurity-magazine.com/news/kraken-benchmarking-enhance/
+    <li><strong>Fake X DMCA takedowns steal logins</strong>: Scammers send bogus copyright complaints posing as X, urging users to “Review Details” within 24 hours or face account restrictions. The link leads to a phishing page mimicking X’s login to harvest credentials. The scheme leans on urgency and realistic formatting. Defenses include checking URLs, enabling 2FA, avoiding unsolicited links, and using password managers that won’t autofill on fake domains; victims should reset passwords and revoke third-party access. <a href="https://www.malwarebytes.com/blog/news/2025/11/scammers-are-sending-bogus-copyright-warnings-to-steal-your-x-login" target="_blank">More info</a></li>
 
-Researchers found a flaw in DoorDash’s “DoorDash for Business” platform that allowed anyone to send fully branded, official-looking emails from **no-reply@doordash.com**, creating a near-perfect phishing vector. The bug came from an HTML injection in the Budget Name field, which was stored as raw text and rendered directly in emails, letting attackers hide legitimate content and insert malicious payloads. The issue reportedly remained unpatched for more than 15 months after a HackerOne report was marked “Informative.” DoorDash ultimately fixed the flaw but banned the researcher, accusing them of extortion after they demanded payment; the researcher says the company ignored the issue until pressured. The vulnerability did not expose user data but posed significant phishing risks.
+    <li><strong>Contagious Interview pivots to JSON hosting</strong>: NVISO reports that North Korea’s Contagious Interview campaign now hides payloads on JSON Keeper, JSONsilo, and npoint.io. Fake recruiters on LinkedIn send “interview demo projects” to crypto/Web3 developers, with repos containing Base64 “API keys” that actually point to JSON-hosted malware. Victims receive BeaverTail (JS infostealer), which deploys InvisibleFerret (Python RAT) and TsunamiKit profiling tools, while attackers abuse GitHub/GitLab and Railway for hosting. <a href="https://securityaffairs.com/184726/cyber-warfare-2/north-korean-threat-actors-use-json-sites-to-deliver-malware-via-trojanized-code.html" target="_blank">More info</a></li>
+  </ul>
 
-- https://www.bleepingcomputer.com/news/security/doordash-email-spoofing-vulnerability-sparks-messy-disclosure-dispute/
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Everest ransomware claims Under Armour breach</strong>: Everest says it stole 343GB from Under Armour, allegedly exposing personal data for millions of customers worldwide. Sample leaks include emails, phone numbers, purchase histories, location data, marketing logs, consent records, and detailed product catalog information—suggesting compromise of marketing or personalization systems. Under Armour has yet to confirm the breach. Users are urged to change passwords, enable 2FA, and remain alert for targeted phishing. <a href="https://hackread.com/everest-ransomware-under-armour-users-data/" target="_blank">More info</a></li>
 
-Pennsylvania’s Attorney General confirmed that the August 2025 ransomware attack led to unauthorized access and theft of files containing names, Social Security numbers, and medical information. Systems were crippled on August 9, including the website, email, and phone lines. Cybersecurity analysts noted the AG’s network had exposed Citrix NetScaler devices vulnerable to **Citrix Bleed 2 (CVE-2025-5777)**, likely exploited. INC Ransom later claimed responsibility, alleging theft of 5.7TB of data and even access to an FBI network. INC Ransom, active since 2023, has hit global government and private-sector victims. This marks Pennsylvania’s third major ransomware incident in recent years.
+    <li><strong>Eurofiber France ticketing breach</strong>: Eurofiber confirmed data theft from its French operations after attackers exploited a vulnerability in its ticket management system on November 13. The incident, impacting Eurofiber Cloud and brands including Eurafibre, FullSave, Netiwan, and Avelia, did not involve banking or highly sensitive data, and services stayed online. The flaw was patched within hours, and the case was reported to CNIL and ANSSI as an extortion attack affecting only French customers. <a href="https://www.theregister.com/2025/11/17/eurofiber_breach/" target="_blank">More info</a></li>
+  </ul>
 
-- https://www.bleepingcomputer.com/news/security/pennsylvania-ag-confirms-data-breach-after-inc-ransom-attack/
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>Aisuru botnet fuels 15.72 Tbps Azure DDoS</strong>: Microsoft disclosed a 15.72 Tbps, 3.64 billion pps DDoS attack on an Azure IP in Australia, launched by the Aisuru Turbo-Mirai IoT botnet. Aisuru draws on over 500,000 compromised routers and cameras and has powered multiple record-breaking attacks, including Cloudflare’s 22.2 Tbps incident. The botnet expanded after TotoLink’s firmware server compromise, highlighting a sharp rise in global DDoS activity and IoT-driven attack power. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-aisuru-botnet-used-500-000-ips-in-15-tbps-azure-ddos-attack/" target="_blank">More info</a></li>
 
-Dragon Breath (APT-Q-27), part of the larger Miuuti Group, is using a new multi-stage loader dubbed **RONINGLOADER** to deliver a modified **Gh0st RAT** variant in campaigns targeting Chinese-speaking users. The attack uses trojanized NSIS installers for apps like Chrome and Teams, heavy defense evasion, WDAC tampering, PPL/EDR-Freeze tricks, and a signed driver (“ollama.sys”) to kill Chinese AV products. RONINGLOADER ultimately injects Gh0st RAT via regsvr32 to enable command execution, data theft, keylogging, clipboard capture, and persistence. Parallel campaigns (“Trio” and “Chorus”) mimic over 40 Chinese apps using large-scale brand impersonation to distribute the RAT.
+    <li><strong>Dutch police seize bulletproof hosting servers</strong>: Dutch authorities seized about 250 physical servers and thousands of virtual servers used by a bulletproof hosting service active since 2022 and linked to over 80 cybercrime cases. The provider promised anonymity, ignored abuse complaints, and supported ransomware, botnets, phishing, spam, money laundering, and child abuse material. The raid hit data centers in The Hague and Zoetermeer; no arrests yet. Sources suggest the infrastructure may belong to CrazyRDP, which went offline after the takedown. <a href="https://www.bleepingcomputer.com/news/security/dutch-police-seizes-250-servers-used-by-bulletproof-hosting-service/" target="_blank">More info</a></li>
+  </ul>
 
-- https://thehackernews.com/2025/11/dragon-breath-uses-roningloader-to.html
+  <h2>🛠️ Tools</h2>
+  <ul>
+    <li><strong>Sara Pentest: agentic AI for continuous testing</strong>: Synack’s Sara Pentest, built on its Autonomous Red Agent architecture, delivers scalable, continuous AI-driven penetration testing for hosts and web apps. Agents perform recon, attempt exploits like human pentesters, and validate findings to reduce false positives, while Synack’s triage team confirms results. The platform shrinks exposure windows from months to days, lets organizations test at any scale, react quickly to zero-days, and reserve human experts for complex scenarios. <a href="https://www.helpnetsecurity.com/2025/11/17/synack-sara-pentest/" target="_blank">More info</a></li>
 
-**TRENDS**
+    <li><strong>mcp-scan for MCP server guardrails</strong>: Invariant Labs released <strong>mcp-scan</strong>, a security tool that proxies between AI agents and Model Context Protocol servers to enforce runtime guardrails. Acting as a dynamic proxy, it logs, analyzes, and blocks risky tool calls; detects prompt injection, insecure configs, and over-privileged tools; and uses YAML-defined rules for custom policies. Detailed audit logs support IR and SIEM ingestion, benefiting both red teams building attack chains and defenders enforcing strict MCP policies. <a href="https://github.com/invariantlabs-ai/mcp-scan" target="_blank">More info</a></li>
+  </ul>
 
-Researchers warn of new malware campaigns using ClickFix social-engineering to deploy Amatera Stealer and NetSupport RAT, tracked as **EVALUSION** by eSentire. Amatera, an evolution of ACR Stealer, is sold via MaaS and targets crypto wallets, browsers, messaging apps, FTP clients, and email clients while evading AV/EDR using WoW64 syscalls. The infection chain abuses **mshta.exe** and PowerShell to fetch a PureCrypter-packed DLL injected into MSBuild. NetSupport is only deployed if the host is part of a domain or holds valuable files. Related campaigns spread XWorm, credential stealers, and NetSupport via phishing kits like **Cephas** and **Tycoon 2FA**.
-
-- https://thehackernews.com/2025/11/new-evalusion-clickfix-campaign.html
-
-Scammers are sending fake DMCA copyright notices pretending to be from X, pressuring users to click a “Review Details” button within 24 hours. The link leads to a phishing page mimicking X’s login screen, stealing any credentials entered. These attacks rely on urgency, fear of account restriction, and believable formatting. Users should verify URLs, enable 2FA, avoid clicking links in unsolicited emails, and use password managers that won’t autofill on fake sites. If compromised, users should change passwords, secure their email, revoke third-party access, and contact X support.
-
-- https://www.malwarebytes.com/blog/news/2025/11/scammers-are-sending-bogus-copyright-warnings-to-steal-your-x-login
-
-NVISO reports that North Korea’s **Contagious Interview** campaign has evolved, now using legitimate **JSON storage services** (JSON Keeper, JSONsilo, npoint.io) to host next-stage malware delivered through fake coding projects. Active since 2023, the campaign targets software developers—especially in crypto/Web3—by posing as recruiters on LinkedIn and sending “interview demo projects.” These repos hide Base64 “API keys” that actually link to JSON-hosted payloads. Victims receive **BeaverTail** (JS infostealer), which deploys **InvisibleFerret** (Python RAT) and the profiling tool **TsunamiKit** from Pastebin. Attackers also abuse GitHub/GitLab and Railway hosting. NVISO warns developers not to run code from unsolicited recruiters.
-
-- https://securityaffairs.com/184726/cyber-warfare-2/north-korean-threat-actors-use-json-sites-to-deliver-malware-via-trojanized-code.html
-
-**BREACH/LEAKS**
-
-Everest ransomware claims it breached Under Armour and stole 343GB of data, allegedly exposing personal information of millions of customers worldwide. The leaked samples include emails, phone numbers, purchase histories, product metadata, location data, marketing logs, and consent records, suggesting compromise of marketing or personalization systems. Product catalog entries with detailed SKU and regional info were also exposed. Everest gave Under Armour seven days to respond via Tox, referencing past high-profile leaks like AT&T and Dublin Airport. Under Armour has not confirmed the breach. Users should change passwords, enable 2FA, and watch for phishing attempts.
-
-- https://hackread.com/everest-ransomware-under-armour-users-data/
-
-Eurofiber confirmed that cybercriminals stole data from its French division after exploiting a vulnerability in its ticket management system on November 13. The breach affected Eurofiber Cloud and regional brands Eurafibre, FullSave, Netiwan, and Avelia, though customer services stayed operational. Stolen data did not include banking or highly sensitive information, and the flaw was patched within hours. Eurofiber reported the incident to CNIL and ANSSI as an extortion attack but would not say if ransom was demanded or paid. Only French customers were impacted. The incident follows recent attacks on B2B telcos like Colt and ICUK.
-
-- https://www.theregister.com/2025/11/17/eurofiber_breach/
-
-**OTHERS**
-
-Microsoft revealed that its Azure network was hit by a massive 15.72 Tbps DDoS attack from the Aisuru botnet, firing 3.64 billion packets per second at an IP in Australia. Aisuru, a Turbo-Mirai IoT botnet, draws on over 500,000 compromised routers and cameras and has been behind multiple record-breaking attacks, including Cloudflare’s 22.2 Tbps event. The botnet expanded rapidly in 2025 after TotoLink’s firmware server was compromised. Cloudflare also removed Aisuru-linked domains from its rankings after attackers manipulated DNS traffic. The surge reflects an unprecedented rise in global DDoS activity, with Cloudflare mitigating over 27 million attacks in 2024 alone.
-
-- https://www.bleepingcomputer.com/news/microsoft/microsoft-aisuru-botnet-used-500-000-ips-in-15-tbps-azure-ddos-attack/
-
-Dutch police seized around 250 physical servers and thousands of virtual servers belonging to a long-running bulletproof hosting operation active since 2022 and linked to over 80 cybercrime investigations. The unnamed provider promised total anonymity, ignored abuse reports, and supported ransomware operations, botnets, phishing, spam, money laundering, and even child abuse material. The takedown occurred across data centers in The Hague and Zoetermeer. No arrests have been made yet, and forensic analysis is ongoing. Although unconfirmed, sources indicate the seized infrastructure may belong to CrazyRDP, a no-KYC anonymous VPS/RDP service that abruptly went offline after the raid.
-
-- https://www.bleepingcomputer.com/news/security/dutch-police-seizes-250-servers-used-by-bulletproof-hosting-service/
-
-**TOOLS**
-
-Synack launched **Sara Pentest**, an agentic AI pentesting system built on its Autonomous Red Agent architecture. It performs scalable, continuous penetration testing on hosts and web apps, identifying, validating, and prioritizing exploitable vulnerabilities far faster than traditional engagements—shrinking exposure windows from months to days. The AI agents conduct reconnaissance, attempt exploits like human pentesters, and verify findings to reduce false positives, with Synack’s triage team providing final confirmation. Organizations can test at any scale, respond immediately to updates or zero-days, cut costs by reserving human experts for complex tasks, and guide human pentesters with AI-generated findings.
-
-- https://www.helpnetsecurity.com/2025/11/17/synack-sara-pentest/
-
-Researchers at Invariant Labs released **mcp-scan**, a security tool that monitors and enforces guardrails for **Model Context Protocol (MCP)** servers in real time. Unlike earlier static scanners, mcp-scan can act as a **dynamic proxy**, sitting between AI agents and MCP servers to log, analyze, and block risky tool calls. It detects prompt injection, insecure configurations, over-privileged tools, and malicious flows. YAML guardrails allow custom blocking rules, while detailed audit logs support incident response and SIEM ingestion. Red teams can use it to reveal hidden capabilities and build attack chains; defenders can baseline agent behavior and enforce strict policies on high-risk tools.
-
-- https://github.com/invariantlabs-ai/mcp-scan
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
