@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 19/11/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 19/11/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Chrome’s 7th zero-day of 2025 (CVE-2025-13223)</strong>: Google rushed an emergency patch for a high-severity V8 type confusion bug already exploited in the wild, enabling arbitrary code execution via malicious HTML and full system compromise when chained with other flaws. A second V8 bug, CVE-2025-13224, was found by Google’s Big Sleep LLM-based tool. TAG’s Clément Lecigne linked exploitation to likely spyware or state-backed actors. Users should update Chrome immediately. <a href="https://www.theregister.com/2025/11/18/google_chrome_seventh_0_day/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>AISURU & TurboMirai DDoS botnets</strong>: Microsoft auto-mitigated a record 15.72 Tbps DDoS attack in Australia from the AISURU IoT botnet, leveraging 500k+ source IPs and ~300k compromised routers, cameras, and DVRs. AISURU backs DDoS-for-hire, credential stuffing, AI-driven scraping, phishing, and proxy services. NETSCOUT also detailed Eleven11/RapperBot, another TurboMirai variant behind 3,600 attacks before takedown, though many devices remain exposed and ripe for re-hijacking. <a href="https://thehackernews.com/2025/11/microsoft-mitigates-record-572-tbps.html" target="_blank">More info</a></li>
+
+    <li><strong>Iran UNC1549 expands aerospace espionage</strong>: Iran-linked cluster UNC1549 (Tortoiseshell/Imperial Kitten/Nimbus Manticore/Subtle Snail/GalaxyGato) has ramped targeting of aerospace, aviation, and defense firms since mid-2024, extending beyond Israel to the US, UAE, Qatar, Spain, Greece, and Saudi Arabia. The group abuses weaker third-party suppliers and VDI breakouts with stolen Citrix/VMware/Azure VDA creds, then deploys a deep toolset (TWOSTROKE, LIGHTRAIL, DEEPROOT, MINIBIKE, GHOSTLINE, POLLBLEND, DCSYNCER.SLICK) with reverse SSH tunnels and delayed backdoors for months-long IP theft and strategic intelligence collection. <a href="https://www.darkreading.com/cybersecurity-operations/iran-nexus-threat-actor-unc1549-takes-aim-aerospace" target="_blank">More info</a> | <a href="https://thehackernews.com/2025/11/iranian-hackers-use-deeproot-and.html" target="_blank">More info</a></li>
+
+    <li><strong>ShadowRay 2.0 hijacks Ray clusters</strong>: IronErn440 exploits CVE-2023-48022 in exposed Ray Clusters, abusing the unauthenticated Jobs API to push AI-generated Bash/Python payloads across all nodes and self-propagate between clusters. Over 230,000 Ray servers are public, fueling a cryptomining and espionage botnet that mines Monero with XMRig, kills rival miners, hides as fake processes, steals credentials and AI models, opens reverse shells, and can launch Sockstress DDoS. With no fix, defenders must isolate Ray, lock down dashboards, enforce firewalls, and monitor closely. <a href="https://www.bleepingcomputer.com/news/security/new-shadowray-attacks-convert-ray-clusters-into-crypto-miners/" target="_blank">More info</a></li>
+
+    <li><strong>Malicious npm packages hide behind Adspect cloaking</strong>: Seven npm packages from publisher “dino_reborn” used advanced cloaking and traffic-filtering to steer only real victims to crypto scam sites. Six carried a 39 kB malware payload and one generated fake pages, all fronted by Adspect, a cloaking service from the malvertising world, to fingerprint visitors and show decoy content to researchers. Victims saw fake CAPTCHAs and “crypto verification” flows; all packages are now removed, but Adspect-style proxy paths and fingerprinting scripts signal future supply-chain attacks. <a href="https://www.darkreading.com/application-security/malicious-npm-packages-adspect-cloaking-crypto-scam" target="_blank">More info</a></li>
+
+    <li><strong>RondoDox botnet exploits XWiki RCE (CVE-2025-24893)</strong>: RondoDox now abuses a critical XWiki eval-injection bug in the SolrSearch endpoint, added to CISA’s KEV on October 30. Since November 3, VulnCheck has seen crafted HTTP GET requests injecting base64-encoded Groovy code that downloads the botnet’s shell payload. Other actors use the flaw for cryptominers and reverse shells, with scanning surging via Nuclei-based Groovy probes. XWiki versions before 15.10.11 and 16.4.1 must be patched immediately. <a href="https://www.bleepingcomputer.com/news/security/rondodox-botnet-malware-now-hacks-servers-using-xwiki-flaw/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>Sneaky 2FA adds Browser-in-the-Browser</strong>: The Sneaky 2FA Phishing-as-a-Service kit now supports BitB attacks, rendering convincing “Sign in with Microsoft” pop-ups using HTML/CSS and iframes after a Cloudflare Turnstile check. The fake window masks the malicious URL and leverages bot protection, conditional loading, obfuscation, and fast domain rotation. In parallel, new research shows malicious extensions can hijack WebAuthn and steal passkeys, while AitM kits like Tycoon can downgrade users to phishable login flows, eroding confidence in legacy MFA. <a href="https://thehackernews.com/2025/11/sneaky-2fa-phishing-kit-adds-bitb-pop.html" target="_blank">More info</a></li>
+
+    <li><strong>Tycoon 2FA and the collapse of legacy MFA</strong>: Tycoon 2FA has become a top-tier PhaaS platform, powering 64,000+ attacks this year by letting low-skilled attackers intercept credentials and relay MFA in real time to seize full Microsoft 365 and Gmail sessions. Its reverse-proxy engine perfectly mirrors login flows and defeats SMS codes, TOTP apps, and other shared-secret methods, backed by advanced evasion, CAPTCHA filters, and anti-analysis. One successful phish grants complete cloud access, leaving FIDO2 hardware-bound biometrics as the only truly phishing-resistant option. <a href="https://www.bleepingcomputer.com/news/security/the-tycoon-2fa-phishing-platform-and-the-collapse-of-legacy-mfa/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Pajemploi data breach hits 1.2M childcare workers</strong>: France’s Pajemploi service (URSSAF) reported a breach affecting up to 1.2 million home-based childcare workers. Attackers stole full names, birthplaces, postal addresses, Social Security numbers, Pajemploi and accreditation numbers, and banking institution names, but not IBANs, emails, phone numbers, or passwords. Operations continue, but authorities warn of heightened fraud risk. CNIL and ANSSI were notified and individuals will receive direct alerts. No ransomware group has claimed responsibility. <a href="https://www.bleepingcomputer.com/news/security/french-agency-pajemploi-reports-data-breach-affecting-12m-people/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>Cloudflare outage disrupts major services</strong>: A Cloudflare incident briefly took down or degraded access to X, ChatGPT, Spotify, League of Legends, Downdetector, and more. Reports spiked after 7 a.m. ET, affecting hundreds of thousands globally. Cloudflare blamed internal service degradation and rolled out fixes by ~10 a.m. ET. The event echoes prior Cloudflare and CrowdStrike outages, underscoring the fragility of centralized cloud infrastructure and the systemic risk of failures at core internet providers. <a href="https://www.zdnet.com/article/major-cloudflare-outage-took-down-chatgpt-x-and-spotify-tuesday-heres-what-happened/" target="_blank">More info</a></li>
+
+    <li><strong>Sysmon to ship natively with Windows</strong>: Microsoft will integrate Sysmon directly into Windows 11 and Windows Server 2025, ending the need for separate Sysinternals deployment and simplifying enterprise coverage. Sysmon’s full capabilities — custom configs, advanced filters, and rich telemetry for processes, network, file events, tampering, WMI persistence, and more — remain intact. It will be installable via Windows Optional Features and updated via Windows Update, with new documentation, enterprise management, and AI-driven detection on the roadmap. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-to-integrate-sysmon-directly-into-windows-11-server-2025/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Hunting</h2>
+  <ul>
+    <li><strong>Lazarus ScoringMathTea RAT in Operation DreamJob</strong>: ScoringMathTea is a sophisticated Lazarus RAT used in the “Gotta Fly” DreamJob campaign to steal UAV-related tech from firms assisting Ukraine. Delivered via targeted phishing and supply-chain access, it initializes config data, decrypts C2 strings with a custom chained polyalphabetic cipher, and resolves 270+ APIs via its own hashing algorithm. C2 uses randomized beacons and TEA/XTEA-encrypted, optionally compressed payloads over HTTP/S. A reflective plugin loader walks the PEB for unhooked APIs, manually maps PE modules, applies relocations, enforces memory protections, and executes entirely in memory for stealthy, modular post-exploitation. <a href="https://0x0d4y.blog/arsenal-analysis-of-a-nation-state-actor-an-in-depth-look-at-lazarus-scoringmathtea/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
