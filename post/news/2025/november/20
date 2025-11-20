@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 20/11/25</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 20/11/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>FortiWeb OS cmd injection & Chrome V8 zero-day in KEV</strong>: CISA added two actively exploited flaws to the KEV catalog: FortiWeb’s authenticated OS command injection (CVE-2025-58034) allowing arbitrary command execution, and Chrome V8 type confusion zero-day CVE-2025-13223 enabling code execution via malicious HTML. Both underscore ongoing risk to perimeter appliances and widely used browsers and carry urgent patch deadlines for U.S. federal agencies. <a href="https://www.cisa.gov/news-events/alerts/2025/11/19/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">More info</a> | <a href="https://www.cisa.gov/news-events/alerts/2025/11/18/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">More info</a></li>
+
+    <li><strong>7-Zip RCE (CVE-2025-11001) actively exploited</strong>: A Windows-only flaw in 7-Zip’s ZIP symlink handling lets crafted archives escape the extraction folder and write to arbitrary paths, potentially leading to code execution under a service account. NHS England warns of active exploitation and a public PoC. The bug, found by Ryota Shiga and takumi-san.ai, is fixed in 7-Zip 25.00 (July 2025); exploitation requires user interaction and often elevated privileges. Users should update immediately. <a href="https://securityaffairs.com/184850/security/7-zip-rce-flaw-cve-2025-11001-actively-exploited-in-attacks-in-the-wild.html" target="_blank">More info</a></li>
+
+    <li><strong>Second FortiWeb 0-day & suspected exploit chain (CVE-2025-58034)</strong>: Fortinet confirmed that CVE-2025-58034, an authenticated OS command injection bug in FortiWeb, is a zero-day already exploited in the wild, with Trend Micro seeing ~2,000 detections. Coming days after unauthenticated path traversal CVE-2025-64446, researchers suspect a chained exploit providing unauthenticated RCE. Both vulnerabilities were quietly patched before disclosure, raising concerns as attackers rapidly weaponize FortiWeb flaws. CISA added CVE-2025-58034 to KEV with a seven-day patch deadline. <a href="https://www.theregister.com/2025/11/19/fortinet_confirms_second_fortiweb_0day/" target="_blank">More info</a></li>
+
+    <li><strong>W3 Total Cache PHP command injection (CVE-2025-9501)</strong>: A critical unauthenticated command injection flaw in the W3 Total Cache WordPress plugin lets attackers execute arbitrary PHP commands simply by posting a malicious comment. The bug in <code>_parse_dynamic_mfunc()</code> affects all versions before 2.8.13; despite a patch on October 20, hundreds of thousands of sites remain exposed. WPScan plans to release a PoC on November 24, likely accelerating exploitation. Admins must update to 2.8.13 or disable the plugin/comments. <a href="https://www.bleepingcomputer.com/news/security/w3-total-cache-wordpress-plugin-vulnerable-to-php-command-injection/" target="_blank">More info</a></li>
+
+    <li><strong>Comet AI Browser hidden MCP API enables local RCE</strong>: SquareX found an undocumented MCP API in Comet’s AI Browser (<code>chrome.perplexity.mcp.addStdioServer</code>) that lets embedded extensions execute arbitrary local commands, bypassing standard browser security. The API gives Comet’s hidden Agentic extension persistent device-level control and can be triggered from perplexity.ai, enabling silent launch of local apps—including ransomware—without user consent. Because the extension is non-removable, any XSS, phishing, or insider breach at Perplexity could compromise all Comet users. Researchers call for mandatory disclosure, third-party audits, and user controls. <a href="https://hackread.com/obscure-mcp-api-in-comet-browser-breaches-user-trust-enabling-full-device-control-via-ai-browsers/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Iran’s cyber-enabled kinetic targeting</strong>: Amazon detailed two cases where Iranian-linked groups fused cyber espionage with real-world strikes. Imperial Kitten used AIS and CCTV access between 2021–2024 to track ships ahead of a February 2024 Houthi missile attack, while MuddyWater leveraged compromised CCTV in Jerusalem to support Iran’s June 23, 2025 missile strike. The cases highlight growing “cyber-to-kinetic” operations and the need for defenders to consider physical consequences of digital intrusions. <a href="https://www.securityweek.com/amazon-details-irans-cyber-enabled-kinetic-attacks-linking-digital-spying-to-physical-strikes/" target="_blank">More info</a></li>
+
+    <li><strong>Sanctions on Russian bulletproof hosting</strong>: The U.S., U.K., and Australia jointly sanctioned major Russian BPH providers including Media Land (used by LockBit, BlackSuit, Play, and for DDoS), its sister firms, and executives linked to Evil Corp and Black Basta. Aeza Group and UK front Hypercore Ltd were also targeted, along with companies in Serbia and Uzbekistan. Sanctions freeze assets and expose collaborators to penalties, while Five Eyes guidance urges ISPs to block malicious infrastructure and tighten customer vetting. <a href="https://www.bleepingcomputer.com/news/security/us-sanctions-russian-bulletproof-hosting-provider-media-land-over-ransomware-ties/" target="_blank">More info</a></li>
+
+    <li><strong>DigitStealer targets ARM-based Macs</strong>: New Mac infostealer DigitStealer masquerades as a “DynamicLake” utility, tricking users into dragging a file into Terminal to trigger a multi-stage, largely fileless infection. It avoids Intel Macs, older systems, certain regions, and VMs, running only on newer ARM-based devices. The malware harvests documents, notes, browser data, Keychain secrets, wallets, VPN configs, and Telegram sessions, exfiltrating them to attacker servers and complicating forensics. Users should avoid untrusted tools, use MFA, and rely on behavioral defenses. <a href="https://www.malwarebytes.com/blog/news/2025/11/mac-users-warned-about-new-digitstealer-information-stealer" target="_blank">More info</a></li>
+
+    <li><strong>Brazilian WhatsApp worm + Eternidade Stealer</strong>: A new Brazil-focused campaign uses an obfuscated VBS dropper to deliver two payloads: a Python script that hijacks WhatsApp Web via WPPConnect to send malicious attachments to all contacts, and an MSI installer that deploys Eternidade Stealer only on machines using Brazilian Portuguese. Eternidade employs process hollowing and IMAP-based rotating C2 to target apps like Bradesco, MercadoPago, Binance, and MetaMask, stealing credentials, screenshots, and files. Telemetry shows global exposure despite a Brazilian focus. <a href="https://thehackernews.com/2025/11/python-based-whatsapp-worm-spreads.html" target="_blank">More info</a></li>
+
+    <li><strong>Operation WrtHug hijacks 50,000+ ASUS routers</strong>: The WrtHug campaign exploits six ASUS WRT router flaws—especially critical AiCloud bug CVE-2025-2492—compromising ~50,000 mostly end-of-life AC/AX models. Infections cluster in Taiwan, with victims across Asia, Europe, Russia, and the U.S., but none in China, hinting (weakly) at possible Chinese origin. Attackers replace TLS certificates with a distinctive 100-year self-signed cert, aiding tracking. The campaign resembles AyySSHush; ASUS has patched supported devices, while outdated models should be replaced or have remote access disabled. <a href="https://www.bleepingcomputer.com/news/security/new-wrthug-campaign-hijacks-thousands-of-end-of-life-asus-routers/" target="_blank">More info</a></li>
+
+    <li><strong>ShinySp1d3r RaaS from ShinyHunters</strong>: A leaked dev build of ShinySp1d3r, a new RaaS linked to ShinyHunters, Scattered Spider, and Lapsus$, shows a from-scratch Windows encryptor with ETW evasion, process-killing, shadow copy deletion, lateral movement via SCM/WMI/GPO, anti-analysis, drive wiping, and ChaCha20+RSA encryption. Each file carries custom SPDR–ENDS headers and unique extensions, with ransom notes and wallpapers dropped per folder. Linux/ESXi versions and a “lightning” ASM variant are in development. Operators claim to avoid healthcare and CIS targets, though such promises are often unreliable. <a href="https://www.bleepingcomputer.com/news/security/meet-shinysp1d3r-new-ransomware-as-a-service-created-by-shinyhunters/" target="_blank">More info</a></li>
+
+    <li><strong>PlushDaemon EdgeStepper update-hijacking</strong>: ESET uncovered EdgeStepper, a Go-based backdoor used by China-aligned PlushDaemon to hijack DNS on compromised edge devices and redirect software update traffic. By poisoning update channels—especially for Chinese software like Sogou Pinyin—the group delivers malicious DLLs (LittleDaemon), which install DaemonicLogistics and ultimately the SlowStepper backdoor. Active since at least 2018, PlushDaemon targets organizations in Asia, the U.S., and New Zealand, illustrating a broader Chinese trend toward supply-chain and update abuse. <a href="https://thehackernews.com/2025/11/edgestepper-implant-reroutes-dns.html" target="_blank">More info</a></li>
+
+    <li><strong>ServiceNow Now Assist second-order prompt injection</strong>: AppOmni showed that ServiceNow’s Now Assist AI agents can be abused via second-order prompt injection under default settings. Benign agents read attacker-planted instructions in accessible records and silently recruit more-privileged agents through auto-discovery and collaboration, enabling data exfiltration, record tampering, privilege escalation, or email sending without visible prompts. Since agents inherit the invoking user’s privileges, attacks blend into normal workflows. Mitigations include supervised execution for privileged agents, disabling autonomous overrides, segmenting agents, and monitoring activity. <a href="https://thehackernews.com/2025/11/servicenow-ai-agents-can-be-tricked.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Cyber Toufan leaks Redback IFV program data</strong>: Pro-Hamas group Cyber Toufan, believed aligned with Iran, leaked sensitive data from Australia’s AUD $7B Redback infantry fighting vehicle program after breaching Israeli defense contractors via supplier MAYA Technologies. The dump includes detailed 3D schematics, technical files, and hundreds of employee photos, with claims of “tens of terabytes” of documents, calls, and videos on systems like Iron-Vision, Iron Beam, Spike NLOS, and Hermes 900, plus Australian Defence Force deliberations. Israel says no classified systems were compromised, but the incident underscores supply-chain exposure in defense projects. <a href="https://www.cysecurity.news/2025/11/pro-hamas-hackers-leak-alleged-redback.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>Cloudflare outage traced to internal config error</strong>: Cloudflare confirmed Tuesday’s global outage stemmed from a permissions change in a ClickHouse database that generated malformed Bot Management feature files every five minutes. These oversized files propagated across the network, exceeded software limits, and caused widespread 5xx errors for sites like X, Uber, Canva, and ChatGPT. The impact seemed intermittent until all nodes adopted the bad file. Cloudflare halted propagation, restored a good file, restarted its proxy fleet, and fully resolved issues by 17:06 UTC. The company pledged hardening measures and apologized. <a href="https://www.darkreading.com/cyber-risk/cloudflare-blames-outage-internal-error" target="_blank">More info</a></li>
+
+    <li><strong>Guidance to curb bulletproof hosting abuse</strong>: CISA and international partners released JRTF-developed guidance for ISPs and defenders to reduce cybercrime enabled by bulletproof hosting providers. BPH services lease resilient infrastructure to threat actors, often hiding inside legitimate ASNs and powering fast-flux, malware delivery, phishing, ransomware, and C2. The guide recommends building high-confidence malicious resource lists, carefully filtering traffic, monitoring baselines, sharing intelligence, and enforcing strong logging. ISPs are urged to notify customers, offer optional filtering, vet clients more rigorously, and adopt sector-wide accountability standards. <a href="https://www.cisa.gov/sites/default/files/2025-11/Bulletproof_Defense_Mitigating_Risks_from_Bulletproof_Hosting_Providers_508c.pdf" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
