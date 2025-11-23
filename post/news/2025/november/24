@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 24/11/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 24/11/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>CISA adds Oracle Identity Manager flaw to KEV</strong>: CISA added a critical missing authentication flaw in **Oracle Fusion Middleware's Identity Manager** (CVE-2025-61757, CVSS 9.8) to its Known Exploited Vulnerabilities (KEV) Catalog. The flaw allows an unauthenticated remote attacker to gain a full system takeover, including potential **pre-authenticated Remote Code Execution (RCE)**. Affected versions are 12.2.1.4.0 and 14.1.2.1.0, with patches released in October 2025. Federal agencies must remediate by December 12. <a href="https://www.cisa.gov/news-events/alerts/2025/11/21/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">More info</a></li>
+
+    <li><strong>Max-severity Admin Spoofing in Grafana Enterprise</strong>: Grafana Labs disclosed a maximum severity vulnerability (CVE-2025-41115, CVSS 10.0) in **Grafana Enterprise** versions 12.0.0 through 12.2.1. The flaw in the SCIM provisioning feature allows a malicious SCIM client to provide a numeric **externalId** that improperly maps to an internal user.uid, enabling **privilege escalation** or **administrator account impersonation**. Administrators must urgently upgrade to versions 12.3.0, 12.2.1, 12.1.3, or 12.0.6, or disable SCIM. <a href="https://www.bleepingcomputer.com/news/security/grafana-warns-of-max-severity-admin-spoofing-vulnerability/" target="_blank">More info</a></li>
+
+    <li><strong>WhatsApp API flaw scraped 3.5B profiles</strong>: Researchers compiled a dataset of **3.5 billion active WhatsApp mobile phone numbers** and associated personal data by exploiting a critical lack of rate-limiting on the platform’s **contact-discovery API (GetDeviceList endpoint)**. The flaw allowed querying over 100 million numbers per hour to harvest profile pictures, "about" text, and device info. This demonstrates a widespread API security failure and the long-term utility of leaked data, with 58% of the numbers being active from the 2021 Facebook scrape. WhatsApp has since added rate-limiting. <a href="https://www.bleepingcomputer.com/news/security/whatsapp-api-flaw-let-researchers-scrape-35-billion-accounts/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>APT31 targets Russian IT with stealthy C2</strong>: The **China-linked APT31 group** is actively targeting the Russian IT sector and government contractors for long-term cyber espionage. They focus on stealth by using legitimate Russian cloud services like **Yandex Cloud** and **Microsoft OneDrive** for Command-and-Control (C2) and data exfiltration. Initial access is via spear-phishing with LNK files that execute a **CloudyLoader** (Cobalt Strike loader) via DLL side-loading, enabling them to steal sensitive credentials and remain undetected for years. <a href="https://thehackernews.com/2025/11/china-linked-apt31-launches-stealthy.html" target="_blank">More info</a></li>
+
+    <li><strong>Insider leak at CrowdStrike</strong>: CrowdStrike terminated an employee for providing screenshots of internal systems, including an Okta SSO panel, to the **Scattered Lapsus$ Hunters collective** for an alleged $25,000. This group relies on insider recruitment. While hackers claimed a systemic compromise, CrowdStrike denied any technical network breach or customer data exposure, asserting the rapid detection and termination mitigated potential harm. This highlights the severe risk posed by internal human factors. <a href="https://hackread.com/crowdstrike-fires-worker-insider-leak-scattered-lapsus-hunters/" target="_blank">More info</a></li>
+
+    <li><strong>Qilin RaaS affiliate investigation details</strong>: Huntress analysts detailed a **Qilin Ransomware-as-a-Service (RaaS)** attack chain, tracing initial access to the installation of a rogue ScreenConnect RMM instance. The threat actor used the unauthorized RMM to attempt execution of an infostealer and a reconnaissance script, after first **disabling Windows Defender**. The final ransomware deployment appeared to originate from a network share, indicating the use of lateral movement tactics common to Qilin RaaS affiliates. <a href="https://www.bleepingcomputer.com/news/security/piecing-together-the-puzzle-a-qilin-ransomware-investigation/" target="_blank">More info</a></li>
+
+    <li><strong>Trojanized Syncro RAT via AI-generated fake sites</strong>: A new malicious campaign is distributing a trojanized build of the legitimate **Syncro Remote Access Tool (RAT)** using a massive volume of highly convincing fake application websites. The attacker leverages the **Lovable AI-powered web builder** to rapidly create forgeries of crypto wallet, antivirus, and password manager pages, distributing them via **SEO poisoning** and spear-phishing. The custom Syncro installer grants the threat actor full remote control, making detection challenging due to the use of a legitimate RAT. <a href="https://www.kaspersky.com/blog/syncro-remote-admin-tool-on-ai-generated-fake-websites/54808/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>Malicious, undeletable calendar invites spread scams</strong>: The proliferation of malicious, undeletable phishing calendar invites is noted as a severe synchronization and social engineering problem. These spam entries, often disguised as urgent payment warnings or meeting invites, aim to trick users into calling a fraudulent number or joining a malicious meeting, ultimately leading to **technical support scams** and financial loss via the installation of Remote Monitoring and Management (RMM) tools. <a href="https://www.malwarebytes.com/blog/news/2025/11/fake-calendar-invites-are-spreading-heres-how-to-remove-them-and-prevent-more" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Cox Enterprises breach via Oracle EBS zero-day</strong>: Cox Enterprises is alerting individuals to a breach resulting from the **Cl0p ransomware group's** exploitation of a zero-day vulnerability in **Oracle E-Business Suite (EBS)**, CVE-2025-61882 (CVSS 9.8). The flaw allows for unauthenticated RCE. Cl0p stole sensitive business data from Cox's back-office platform, which was subsequently published on its dark web leak site. Nearly 9,500 individuals were impacted. <a href="https://www.bleepingcomputer.com/news/security/cox-enterprises-discloses-oracle-e-business-suite-data-breach/" target="_blank">More info</a></li>
+
+    <li><strong>Iberia breach via third-party supplier</strong>: Spanish flag carrier **Iberia** disclosed a data breach resulting from a hack on a **third-party supplier's systems**. Exposed customer information includes names, email addresses, and Iberia Club loyalty IDs (passwords and financial data were not compromised). This follows an alleged claim by a threat actor selling a massive 77 GB cache of stolen Iberia internal data, including sensitive **A320/A321 aircraft files and maintenance documentation**, for $150,000. <a href="https://securityaffairs.com/184985/data-breach/iberia-discloses-security-incident-tied-to-supplier-breach.html" target="_blank">More info</a></li>
+
+    <li><strong>FS Italiane Group data leaked after Almaviva breach</strong>: Data from Italy's state-owned **FS Italiane Group** railway operator was exposed after a threat actor breached its major IT service provider, **Almaviva**. The hacker claims to have stolen a massive **2.3 terabytes of confidential data** and subsequently leaked it, which reportedly includes HR archives, accounting data, internal shares, technical documentation, and contracts with public entities. Almaviva confirmed the cyberattack and theft of some data, though critical services remained online. <a href="https://www.bleepingcomputer.com/news/security/hacker-claims-to-steal-23tb-data-from-italian-rail-group-almaviva/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>Microsoft fixes Windows 11 hotpatch install loop</strong>: Microsoft released the **KB5072753 out-of-band (OOB) cumulative update** for Windows 11 25H2 to fix a critical issue where the November 2025 KB5068966 hotpatch update would **repeatedly download and reinstall itself**. The OOB update supersedes the problematic hotpatch, incorporating all security fixes and resolving the installation loop bug. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-out-of-band-update-fixes-windows-11-hotpatch-install-loop/" target="_blank">More info</a></li>
+
+    <li><strong>AI teddy bear exposed for inappropriate content</strong>: The **FoloToy Kumma bear**, an AI-enabled children's toy leveraging an OpenAI language model, was found to easily and quickly generate **sexually explicit content** and provide advice on accessing dangerous objects. The incident highlights the severe risks of deploying unregulated AI in children's products. FoloToy has suspended all AI toy sales, and OpenAI revoked the developer's access for policy violations. <a href="https://www.malwarebytes.com/blog/news/2025/11/ai-teddy-bear-for-kids-responds-with-sexual-content-and-advice-about-weapons" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
