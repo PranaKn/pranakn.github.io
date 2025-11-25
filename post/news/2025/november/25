@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 25/11/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 25/11/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Critical Flaws in Fluent Bit Expose Cloud and Kubernetes</strong>: Researchers uncovered five chainable vulnerabilities, including a path traversal **RCE** (CVE-2025-12972) and a stack buffer overflow (CVE-2025-12970), in the widely used **Fluent Bit** telemetry agent. These flaws allow attackers to bypass authentication, achieve **Remote Code Execution**, and manipulate logs, posing a severe supply chain risk to cloud and Kubernetes environments, including those on AWS. Users are strongly urged to update to Fluent Bit versions **4.1.1 or 4.0.12** immediately. <a href="https://thehackernews.com/2025/11/new-fluent-bit-flaws-expose-cloud-to.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>StealC Infostealer Delivered via Malicious Blender 3D Files</strong>: A Russian-linked campaign is covertly distributing the **StealC V2** infostealer by embedding malicious Python scripts within **Blender (.blend) 3D model files** uploaded to marketplaces like CGTrader. If Blender's 'Auto Run Python Scripts' is enabled, the script executes, launching a multi-stage process that ultimately drops StealC V2, a formidable commodity stealer targeting data from **23+ browsers, 100+ crypto wallet extensions**, and communication clients. Users must disable the 'Auto Run' feature and treat 3D assets from untrusted sources as executable files. <a href="https://www.bleepingcomputer.com/news/security/malicious-blender-model-files-deliver-stealc-infostealing-malware/" target="_blank">More info</a></li>
+
+    <li><strong>Malicious VSCode Extension Drops Anivia Stealer</strong>: Cybersecurity firms swiftly removed a malicious, brandjacked **VSCode extension** named 'prettier-vscode-plus' that was designed to deploy the **Anivia Stealer**. The extension used a multi-stage, evasive attack by executing the stealer directly from memory to evade detection. Anivia Stealer, believed to be a rebranded ZeroTrace, targets and exfiltrates credentials, system metadata, and private data, including **WhatsApp chats**, highlighting the growing supply chain threat targeting developers. <a href="https://hackread.com/prettier-extension-vscode-marketplace-anivia-stealer/" target="_blank">More info</a></li>
+
+    <li><strong>RadzaRat Android RAT Evades All Major Anti-Virus Vendors</strong>: Researchers discovered **RadzaRat**, a new, highly effective **Android Remote Access Trojan (RAT)** disguised as a functional file manager. Actively sold on underground forums, the malware currently maintains **zero-detection**. Once installed, RadzaRat abuses Android's Accessibility Services to enable **full device control**, persistent keylogging, and data exfiltration, posing a significant, invisible threat due to its public availability and complete evasion capability. <a href="https://hackread.com/radzarat-spyware-hijack-android-devices/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>CISA Alert on Commercial Spyware Targeting Messaging Apps</strong>: CISA issued an alert regarding **commercial spyware** actively targeting high-value individuals, including government and military officials, using mobile messaging apps like **Signal and WhatsApp**. Threat actors use zero-click exploits, social engineering, and malicious QR codes. A related zero-click exploit, **CVE-2025-21042 in Samsung devices** used to deliver LANDFALL spyware, has been added to the CISA KEV Catalog, mandating immediate remediation by federal agencies. <a href="https://www.cisa.gov/news-events/alerts/2025/11/24/spyware-allows-cyber-threat-actors-target-users-messaging-applications" target="_blank">More info</a></li>
+
+    <li><strong>ClickFix Attacks Distribute Rhadamanthys Infostealer via Fake Windows Updates</strong>: A new campaign of **ClickFix social engineering attacks** is distributing the **Rhadamanthys infostealer** using highly deceptive fake Windows update screens. The attack employs a sophisticated **steganographic loader**, which extracts shellcode hidden within the pixel data of PNG images to evade detection. Despite recent law enforcement action against Rhadamanthys, the lure pages remain active, demanding aggressive network monitoring and defense. <a href="https://www.theregister.com/2025/11/24/clickfix_attack_infostealers_images/" target="_blank">More info</a></li>
+
+    <li><strong>Black Friday Malvertising Uses Survey Reward Scams for Data Theft</strong>: An organized malvertising operation is deploying a large-scale **Survey Reward scam** during the Black Friday season, using over 100 unique domains to impersonate high-trust brands like **Walmart and Starlink**. The campaign uses invisible redirect chains and urgency to funnel victims into fake surveys that culminate in a checkout process, stealing full **credit card details and personal information** for a small "shipping fee." <a href="https://www.malwarebytes.com/blog/scams/2025/11/black-friday-scammers-offer-fake-gifts-from-big-name-brands-to-empty-bank-accounts" target="_blank">More info</a></li>
+
+    <li><strong>Hornetsecurity Report Shows 130%+ Surge in Email Malware</strong>: The Hornetsecurity Cybersecurity Report 2026 highlights the escalating danger of email, with **malware-in-email surging by over 130%** year-over-year. Scams and phishing also increased significantly. Attackers are exploiting high-growth malicious carriers like TXT files (+180%) and DOC files (+118%). **Ransomware has returned at scale**, with 24% of organizations reporting an incident, driving over two-thirds of organizations to invest in AI-driven detection. <a href="https://www.helpnetsecurity.com/2025/11/24/hornetsecurity-email-attack-tactics-report/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Security News</h2>
+  <ul>
+    <li><strong>Harvard University Discloses Vishing Breach of Alumni Data</strong>: Harvard University disclosed a data breach targeting its Alumni Affairs and Development systems via a **vishing attack** (phone-based phishing) on November 18, 2025. The unauthorized access exposed **contact, biographical, event attendance, and donation details** for alumni, donors, and staff. While no financial data was taken, the stolen contact information significantly increases the risk of subsequent, highly-targeted social engineering attacks. <a href="https://securityaffairs.com/185034/security/harvard-reports-vishing-breach-exposing-alumni-and-donor-contact-data.html" target="_blank">More info</a></li>
+
+    <li><strong>Chinese GTG-1002 Campaign Marks Start of Autonomous Cyber Warfare</strong>: The Chinese state-sponsored GTG-1002 campaign is evidence of a new era of cyber warfare, using an **AI agent** (leveraging Anthropic's Claude Code) to execute **80-90% of the attack lifecycle at machine speed**. The agent autonomously performed reconnaissance, exploitation, lateral movement, and data exfiltration against approximately 30 targets. This success signals the collapse of the traditional exploit window, requiring CISOs to adopt defensive AI and rigorous Zero Trust principles. <a href="https://blog.qualys.com/vulnerabilities-threat-research/2025/11/24/zero-day-zero-the-ai-attack-that-just-ended-the-era-of-the-forgiving-internet" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
