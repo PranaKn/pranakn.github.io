@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>📰 Cybersecurity Newsfeed - 02/12/25</title>
+     <style>
+          body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+          h1 { text-align: center; color: #c9a227; }
+          h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+          a { color: #c9a227; text-decoration: none; }
+          a:hover { text-decoration: underline; }
+          ul { list-style-type: disc; margin-left: 20px; }
+          li { margin-bottom: 15px; }
+     </style>
+</head>
+<body>
+     <h1>Cybersecurity Newsfeed</h1>
+     <h2>📅 02/12/25</h2>
+
+     <h2>🛡️ Vulnerabilities</h2>
+     <ul>
+          <li><strong>Google's December Android Security Update patches 107 defects, including two actively exploited zero-day vulnerabilities</strong>: Google's December Android Security Update patches 107 defects, including two actively exploited zero-day vulnerabilities, **CVE-2025-48633** and **CVE-2025-48572**, affecting the Android framework. These high-severity flaws can be exploited for information access and privilege escalation, respectively, and Google noted they may be under limited, targeted exploitation, likely involving malicious spyware. The update also addresses a critical remote denial of service vulnerability, **CVE-2025-48631**, in the framework. Immediate patching is required via the two security patch levels, 2025-12-01 and 2025-12-05. <a href="https://cyberscoop.com/android-security-update-december-2025/" target="_blank">More info</a></li>
+
+          <li><strong>SmartTube YouTube client for Android TV breached to push malicious update</strong>: The popular open-source **SmartTube YouTube client for Android TV** was compromised after an attacker gained access to the developer's signing keys, pushing a malicious update (version 30.51) to users. The developer confirmed the compromise, which led to Google Play Protect blocking the application. Reverse engineering revealed an injected, unapproved native library, **libalphasdk.so**, which runs silently, fingerprints the device, and periodically **exfiltrates device metrics** via an encrypted channel. Users are urged to avoid the compromised builds and reset Google account passwords. <a href="https://www.bleepingcomputer.com/news/security/smarttube-youtube-app-for-android-tv-breached-to-push-malicious-update/" target="_blank">More info</a></li>
+     </ul>
+
+     <h2>🎯 Adversaries</h2>
+     <ul>
+          <li><strong>ShadyPanda campaign infected 4.3 million Chrome/Edge users via malicious extensions</strong>: A sophisticated, multi-year campaign, dubbed **ShadyPanda**, infected **4.3 million Google Chrome and Microsoft Edge users** via seemingly legitimate browser extensions that were later updated with backdoors and spyware. The operation involved publishing benign productivity tools, gaining a large user base, and then pushing a malicious update capable of complete browser surveillance, **data exfiltration to servers in China**, and anti-analysis features. The malware, found in extensions like "Clean Master," steals visited URLs, search queries, and fingerprints, enabling remote code execution. <a href="https://www.theregister.com/2025/12/01/chrome_edge_malicious_browser_extensions/" target="_blank">More info</a></li>
+
+          <li><strong>Glassworm malware returns in third wave of malicious VS Code packages</strong>: The **Glassworm** campaign has re-emerged in its third wave, adding **24 new malicious packages** across the OpenVSX and Microsoft Visual Studio Marketplaces, targeting developers using VS Code-compatible editors. The malware uses **invisible Unicode characters** to hide its Rust-based implant and bypass code review. Upon installation, the extension attempts to steal **GitHub, npm, and OpenVSX credentials**, along with cryptocurrency wallet data. Glassworm establishes a SOCKS proxy and installs an **HVNC client** for stealthy remote access, turning the developer's machine into criminal infrastructure. <a href="https://www.bleepingcomputer.com/news/security/glassworm-malware-returns-in-third-wave-of-malicious-vs-code-packages/" target="_blank">More info</a></li>
+
+          <li><strong>Police disrupt Cryptomixer, seizing €25M and 12TB of data</strong>: German and Swiss law enforcement, with support from Europol, successfully disrupted "**Cryptomixer**," a major cryptocurrency mixing service accused of **laundering over €1.3 billion ($1.5 billion)** in illicit funds since 2016. The hybrid service was a preferred tool for ransomware groups, dark web markets, and other cybercriminals. The operation, conducted between November 24 and 28, resulted in the seizure of three servers, the `cryptomixer.io` domain, **12TB of data**, and more than **€25 million in Bitcoin**. <a href="https://www.darkreading.com/cyberattacks-data-breaches/police-disrupt-cryptomixer-seize-millions-crypto" target="_blank">More info</a></li>
+
+          <li><strong>Albiriox Android MaaS malware focuses on On-Device Fraud (ODF)</strong>: **Albiriox** is a new, rapidly maturing Android **Malware-as-a-Service (MaaS)** advertised on Russian-speaking forums, specializing in On-Device Fraud (ODF) and full device takeover. Sold for $720/month, it targets over **400 banking and cryptocurrency applications** globally. Its core feature is a **VNC-based remote access module** that uses accessibility services to enable real-time screen streaming, UI automation, and fraudulent transactions, bypassing traditional authentication. Developers prioritize evasion, offering integration with crypting services. <a href="https://www.infosecurity-magazine.com/news/android-maas-malware-albiriox-dark/" target="_blank">More info</a></li>
+     </ul>
+
+     <h2>📈 Trends</h2>
+     <ul>
+          <li><strong>Arkanix Stealer uses C++ and 'Chrome Elevator' to defeat Google's App Bound Encryption</strong>: **Arkanix** is a new, rapidly developed information stealer, initially Python-based and quickly implemented in C++, that is distributed on Discord and sold via a web panel. The malware targets a broad range of sensitive data, including credentials from multiple Chromium-based browsers, a long list of crypto/wallet browser extensions (e.g., MetaMask), and specific crypto wallets like Exodus. The C++ "Premium" version utilizes a tool called **'Chrome Elevator' to defeat Google's App Bound Encryption (ABE)** in browsers like Chrome and Edge by injecting code into the browser process to extract data. <a href="https://www.gdatasoftware.com/blog/2025/12/38306-arkanix-stealer" target="_blank">More info</a></li>
+     </ul>
+
+     <h2>💥 Breaches & Leaks</h2>
+     <ul>
+          <li><strong>Retail giant Coupang suffers data breach impacting 33.7 million people</strong>: South Korea's largest retailer, **Coupang**, has disclosed a massive data breach, exposing the personal information of **33.7 million customers**. The unauthorized access began on June 24, 2025, but was not detected until November 18, 2025. Exposed data includes full names, phone numbers, email addresses, physical addresses, and order information. Authorities are investigating the cause, with local media suggesting the breach was executed by a **former Chinese employee** who leveraged **unrevoked authentication keys** to access internal systems from overseas, highlighting a critical failure in internal access management. <a href="https://www.bleepingcomputer.com/news/security/retail-giant-coupang-suffers-data-breach-impacting-337-million-people/" target="_blank">More info</a></li>
+     </ul>
+
+     <h2>📚 Others</h2>
+     <ul>
+          <li><strong>Google deletes X post after being caught using a stolen AI recipe infographic</strong>: Google is facing backlash after its **NotebookLM AI tool**, promoting the image model Nano Banana Pro, appeared to **plagiarize a recipe** from the HowSweetEats food blog. A now-deleted X post from the NotebookLM account featured an AI-generated recipe infographic that was identified as being "strikingly identical" to the blogger’s original, lacking any source citation. This incident highlights a broader intellectual property concern regarding AI models, which are trained on vast datasets of web content. <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/google-deletes-x-post-after-getting-caught-using-a-stolen-ai-recipe-infographic/" target="_blank">More info</a></li>
+     </ul>
+
+     <p style="text-align:center;">
+          <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+     </p>
+</body>
+</html>
