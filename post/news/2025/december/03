@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 03/12/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 03/12/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Google December Android Patch Fixes Two Zero-Days</strong>: Google’s December **Android Security Bulletin** addresses 107 vulnerabilities, including two **high-severity zero-days** in the Android Framework component actively exploited in targeted attacks. The zero-days are **CVE-2025-48633** (information disclosure) and **CVE-2025-48572** (elevation-of-privilege), affecting Android versions 13 through 16. CISA immediately added both to its **Known Exploited Vulnerabilities (KEV) Catalog**, urging organizations to apply the security patch level of 2025-12-05 or later, highlighting the critical risk posed by these framework bugs. <a href="https://www.theregister.com/2025/12/02/android_0_days/" target="_blank">More info</a></li>
+
+    <li><strong>Critical Flaws in AI Tool PickleScan Expose Supply Chain Risk</strong>: The JFrog Security Research Team disclosed three critical vulnerabilities (**CVSS 9.3**) in **PickleScan**, a key tool for securing PyTorch and Python pickle files, which could be exploited to upload malicious machine learning models undetected. The flaws include a file extension bypass (**CVE-2025-10155**), divergent ZIP archive handling with corrupted CRCs (**CVE-2025-10156**), and a dangerous import blacklist bypass (**CVE-2025-10157**). These highlight systemic supply chain risks in AI. Remediation is achieved by updating to PickleScan version **0.0.31 or higher**, with a broader recommendation to adopt safer formats like Safetensors. <a href="https://www.infosecurity-magazine.com/news/picklescan-flaws-expose-ai-supply/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>China Researches Disruption of LEO Satellite Constellations</strong>: Chinese academic research indicates a focus on disrupting hostile **low-earth orbit (LEO) satellite constellations** like Starlink, recognizing their strategic importance. The paper estimates that jamming a Taiwan-sized region would require **1,000 to 2,000 drones**, confirming the feasibility of electronic warfare. Experts believe disrupting satellite connectivity would be an early tactic in any future Asian conflict, with cyber- and electronic-warfare attacks favored over kinetic ones due to lower escalation risk. <a href="https://www.darkreading.com/cyberattacks-data-breaches/china-researches-ways-disrupt-satellite-internet" target="_blank">More info</a></li>
+
+    <li><strong>MuddyWater’s New Fooder Loader and MuddyViper Backdoor</strong>: The Iran-aligned cyberespionage group **MuddyWater (TA450)** has launched a more sophisticated campaign targeting organizations in **Israel and Egypt** across technology, government, and utilities. Attackers deployed new custom tools to improve evasion, including the **Fooder loader** (sometimes disguised as a Snake game) which implements execution delays. Fooder reflectively loads the new C/C++ backdoor, **MuddyViper**, providing system reconnaissance, file operations, command execution, and stealing credentials using a fake Windows Security dialog. The malware uniquely utilizes the CNG Windows cryptographic API, continuing MuddyWater's focus on cyberespionage against critical infrastructure. <a href="https://www.welivesecurity.com/en/eset-research/muddywater-snakes-riverbank/" target="_blank">More info</a></li>
+
+    <li><strong>Water Saci Banking Malware Campaign Evolves with Python</strong>: The **Water Saci banking malware** campaign targeting Brazil has evolved, adopting a sophisticated, multi-format attack chain delivered primarily via **WhatsApp**. A key development is the shift from a PowerShell-based propagation routine to a **Python variant (whatsz.py)**, suggested to be an AI-assisted port with enhanced features. The multi-stage infection uses a malicious HTA file to drop an MSI installer, which utilizes a compiled AutoIt script for anti-VM checks and system reconnaissance, specifically targeting Brazilian banking applications. The banking trojan, similar to the Casbaneiro lineage, is ultimately loaded into a hollowed **svchost.exe** process, using an IMAP-based mechanism for secondary C&C updates. <a href="https://www.trendmicro.com/en_us/research/25/l/water-saci.html" target="_blank">More info</a></li>
+
+    <li><strong>Shai-Hulud 2.0 NPM Attack Steals 400,000 Developer Secrets</strong>: The second **Shai-Hulud** attack compromised over **800 NPM packages** with a self-propagating malicious script, resulting in the publication of approximately **400,000 raw secrets** across 30,000 GitHub repositories. This supply chain worm used the **TruffleHog scanning tool** to automatically harvest secrets, including GitHub, NPM, and cloud credentials. Over **60% of the leaked NPM tokens remained valid** as of December 1st, posing an active risk. The attack propagated via the *preinstall* event, and the payload included a destructive mechanism to wipe the victim’s home directory if exfiltration failed. <a href="https://www.bleepingcomputer.com/news/security/shai-hulud-20-npm-malware-attack-exposed-up-to-400-000-dev-secrets/" target="_blank">More info</a></li>
+
+    <li><strong>ShadyPanda Executes Seven-Year "Sleeper Agent" Browser Extension Spyware</strong>: The China-linked **ShadyPanda** group executed a sophisticated, seven-year "sleeper agent" browser extension campaign, secretly compromising an estimated **4.3 million Chrome and Edge users**. The five malicious extensions, which had built trust since 2018, received silent, weaponized updates in mid-2024. These updates introduced an **RCE framework**, allowing the extensions to hourly download and execute arbitrary JavaScript, exfiltrating encrypted browsing history, tracking every visited URL, and collecting complete browser fingerprints. The **WeTab** extension alone accounted for roughly three million installs on Edge. <a href="https://www.malwarebytes.com/blog/news/2025/12/sleeper-browser-extensions-woke-up-as-spyware-on-4-million-devices" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>Lazarus Group's IT Worker Infiltration Scheme Detailed</strong>: A joint research team detailed North Korea's persistent **Famous Chollima (Lazarus Group) IT worker infiltration scheme**, primarily targeting the finance, crypto, and healthcare sectors. The threat actors utilize **identity takeover** for long-term access, not malware deployment. TTPs center on using legitimate tools like **Google Remote Desktop** (configured via PowerShell), **Astrill VPN** for obfuscation, and **AI tools** for passing interviews. The ultimate goal is to gain deep insider access to company networks by having their operative hired as a remote employee under a stolen or fake identity. <a href="https://thehackernews.com/2025/12/researchers-capture-lazarus-apts-remote.html" target="_blank">More info</a></li>
+
+    <li><strong>Calendly Phishing Bypasses MFA to Steal Ad Account Credentials</strong>: A highly targeted and sophisticated phishing campaign is exploiting the **Calendly scheduling platform** to steal credentials for **Google Workspace and Facebook Business/Ad Manager** accounts. The attack impersonates recruiters from over 75 major brands. Victims are directed to a fake Calendly page, which then deploys an **Adversary-in-the-Middle (AiTM) phishing toolkit** to steal session cookies, effectively bypassing MFA. A variant uses **Browser-in-the-Browser (BitB) techniques** to display fake login pop-ups. The goal is to compromise ad accounts for malvertising, malware distribution, or direct resale. <a href="https://www.bleepingcomputer.com/news/security/fake-calendly-invites-spoof-top-brands-to-hijack-ad-manager-accounts/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Everest Ransomware Claims 1TB Data Theft from ASUS</strong>: The **Everest ransomware group** has publicly claimed a breach of global hardware giant **ASUS**, alleging they have exfiltrated over **1TB of data**, including proprietary **camera source code**, from the company's network. The group posted a 21-hour deadline for ASUS to contact them. If confirmed, this would mark a significant intellectual property loss and security risk for the company. ASUS has not yet confirmed or denied the alleged intrusion. <a href="https://hackread.com/everest-ransomware-asus-breach-1tb-data/" target="_blank">More info</a></li>
+
+    <li><strong>Coupang Data Breach Hits 33.7 Million Customers</strong>: South Korean e-commerce giant **Coupang** disclosed a massive data breach affecting approximately **33.7 million customers**—nearly its entire Korean user base—following unauthorized access that persisted for over five months, starting June 24, 2025. Exposed information includes names, email addresses, phone numbers, shipping addresses, and certain order histories. The breach is suspected to have been carried out by a **former Chinese employee** who reportedly exploited unrevoked authentication tokens. Authorities are investigating the incident for possible security regulation violations. <a href="https://securityaffairs.com/185232/data-breach/koreas-amazon-coupang-discloses-a-data-breach-impacting-34m-customers.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>South Korea Arrests Suspects Selling Footage from Hacked IP Cameras</strong>: South Korean police arrested four suspects for hacking over **120,000 IP cameras** in private homes and commercial facilities, then selling the stolen, sexually exploitative footage on a foreign adult site. The suspects exploited vulnerabilities, primarily using simple or **default passwords**. The two main suspects earned over $36,000 in virtual assets. This case highlights the critical need for IP camera users to immediately change default passwords, disable unnecessary remote access, and apply firmware updates. <a href="https://www.bleepingcomputer.com/news/security/korea-arrests-suspects-selling-intimate-videos-from-hacked-ip-cameras/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🛠️ Tools</h2>
+  <ul>
+    <li><strong>Proxyearth Tool Threatens Indian Citizens' Live Location and Aadhaar Data</strong>: The emergence of **Proxyearth**, a website and Telegram bot, allegedly traces Indian users' **live location, full name, residential address, and unredacted Aadhaar card numbers** using only a mobile number. The tool's ability to display comprehensive biodata suggests it is likely leveraging data from massive, prior **Know Your Customer (KYC)** or government-linked data breaches, such as the reported 750 million record mobile user data dump or the 815 million record Aadhaar/Passport leak. This poses a critical data privacy and national security threat by enabling large-scale surveillance and profiling. <a href="https://hackread.com/proxyearth-trace-users-india-mobile-number/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
