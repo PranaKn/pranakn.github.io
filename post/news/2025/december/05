@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>📰 Cybersecurity Newsfeed - 05/12/25</title>
+     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
+     <style>
+          body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+          h1 { text-align: center; color: #c9a227; }
+          h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+          a { color: #c9a227; text-decoration: none; }
+          a:hover { text-decoration: underline; }
+          ul { list-style-type: disc; margin-left: 20px; }
+          li { margin-bottom: 15px; }
+     </style>
+</head>
+<body>
+     <h1>Cybersecurity Newsfeed</h1>
+     <h2>📅 05/12/25</h2>
+
+     <h2>🛡️ Vulnerabilities</h2>
+     <ul>
+          <li><strong>Array Networks AG SSL VPN exploited via command injection</strong>: Array Networks AG Series SSL VPN appliances running ArrayOS AG 9.4.5.8 and earlier with 'DesktopDirect' enabled are being actively exploited through an unassigned **command injection** vulnerability. JPCERT/CC warned that attacks, planting **PHP webshells** at the $/ca/aproxy/webapp/$ path, have been ongoing since August from a specific IP address. Exploitation allows unauthorized access, rogue user creation, and network compromise. Patching to ArrayOS version 9.4.5.9 is urged, despite the flaw lacking a CVE-ID. <a href="https://www.bleepingcomputer.com/news/security/hackers-are-exploiting-arrayos-ag-vpn-flaw-to-plant-webshells/" target="_blank">More info</a></li>
+
+          <li><strong>Malicious Rust crates target Web3 developers</strong>: A software supply chain attack targeted Web3 developers via two malicious Rust crates on crates.io: **evm-units** and its dependency, **uniswap-utils**. The packages downloaded and silently executed OS-specific second-stage payloads via PowerShell or a VBScript. The malware notably checks for the **Qihoo 360 Total Security** antivirus, suggesting a China-focused targeting goal for cryptocurrency theft. The malicious packages were removed and the author's account was disabled. <a href="https://www.helpnetsecurity.com/2025/12/04/malicious-rust-packages-targeted-web3-developers/" target="_blank">More info</a></li>
+
+          <li><strong>Google Chrome patches high-severity Use-After-Free bug</strong>: Google released Chrome version 143.0.7499.40/.41 for desktop, addressing 13 security vulnerabilities, including four high-severity flaws. The most notable is **CVE-2025-13633**, a **Use-After-Free (UAF)** memory corruption bug in the **Digital Credentials** feature. The flaw, with a CVSS score of 8.8, could allow a remote attacker to potentially exploit heap corruption through a crafted HTML page to steal sensitive credentials after compromising the sandboxed renderer process. Users of Chrome and other Chromium-based browsers are urged to update immediately. <a href="https://www.malwarebytes.com/blog/news/2025/12/google-fixes-13-security-issues-affecting-billions" target="_blank">More info</a></li>
+     </ul>
+
+     <h2>🎯 Adversaries</h2>
+     <ul>
+          <li><strong>North Korean actor compromised by LummaC2 infostealer</strong>: A North Korean state-sponsored threat actor's device was compromised by the **LummaC2 infostealer**, exposing a high-end malware development rig. Credentials found on the device, specifically the email $trevorgreer9312@gmail.com$, directly link the machine to the infrastructure used for the **$1.4 billion Bybit crypto exchange heist** in February 2025. The incident revealed poor **OPSEC**, including the use of Astrill VPN with default Chinese browser settings, and exposed internal communications and phishing preparation. <a href="https://hackread.com/north-korean-hacker-device-lummac2-infostealer-bybit/" target="_blank">More info</a></li>
+
+          <li><strong>China-linked Brickstorm malware targets VMware vSphere</strong>: CISA, NSA, and Canada's Cyber Centre jointly warned of Chinese state-sponsored actors deploying the advanced **Brickstorm** malware for long-term espionage, particularly targeting **VMware vSphere** servers. The cross-platform, Golang backdoor is used to create hidden rogue VMs and steal cloned VM snapshots. Brickstorm employs multiple obfuscation layers, including nested TLS and **DNS-over-HTTPS (DoH)**, to evade detection. Actors often gain initial access by exploiting vulnerabilities in edge devices like Ivanti before moving laterally to vCenter and ADFS servers. <a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-chinese-brickstorm-malware-attacks-on-vmware-servers/" target="_blank">More info</a></li>
+
+          <li><strong>Silver Fox uses SEO poisoning to deliver ValleyRAT</strong>: The Chinese threat actor **Silver Fox** is conducting an **SEO poisoning** campaign targeting Chinese-speaking users, including those in Western organizations, using a false flag to mimic Russian threat groups. The campaign leverages lures impersonating Microsoft Teams downloads to deliver **ValleyRAT** (Winos 4.0), a Gh0st RAT variant. The malicious installer uses Cyrillic elements to mislead attribution. ValleyRAT establishes persistent remote control, performs data exfiltration, and employs defense evasion, including configuring Microsoft Defender exclusions. <a href="https://thehackernews.com/2025/12/silver-fox-uses-fake-microsoft-teams.html" target="_blank">More info</a></li>
+          
+          <li><strong>Sturnus Android banking trojan bypasses E2EE</strong>: Researchers have uncovered **Sturnus**, an advanced Android banking trojan targeting financial institutions, primarily in Southern and Central Europe. A key feature is its ability to bypass **end-to-end encryption** in apps like **WhatsApp, Telegram, and Signal** by using device **accessibility features** to capture a screenshot the moment messages are decrypted and displayed on screen. Sturnus also steals banking credentials via convincing overlay attacks, uses a system update screen to hide operations, and tracks PINs/passwords to resist removal. <a href="https://www.cysecurity.news/2025/12/new-android-malware-sturnus-bypasses.html" target="_blank">More info</a></li>
+     </ul>
+
+     <h2>📈 Trends</h2>
+     <ul>
+          <li><strong>Smishing campaigns pivot to exploit holiday shopping</strong>: China-based cybercriminal groups have pivoted their **SMS phishing ("smishing")** campaigns to exploit the holiday shopping season by luring victims with promises of unclaimed **mobile rewards points** and **tax refunds**. These campaigns, linked to a massive Phishing-as-a-Service operation, leverage thousands of newly registered domains spoofing entities like T-Mobile and AT&T. The objective is to phish personal and payment card data, including one-time passcodes, to quickly enroll stolen details into **Apple or Google mobile wallets** for immediate, irreversible financial fraud. <a href="https://krebsonsecurity.com/2025/12/sms-phishers-pivot-to-points-taxes-fake-retailers/" target="_blank">More info</a></li>
+     </ul>
+
+     <h2>💥 Breaches & Leaks</h2>
+     <ul>
+          <li><strong>Qilin ransomware claims attack on Church of Scientology</strong>: The **Qilin Ransomware-as-a-Service (RaaS)** group has claimed a double extortion attack on the **Church of Scientology**, listing the organization and publishing 22 screenshots as proof of access. The leaked material appears to originate from the Advanced Organisation Saint Hill UK (AOSH UK), exposing highly sensitive internal data including financial invoices, security budgets, religious staff visa records, and member personal data. Qilin, a Russian-speaking RaaS operation, is known for its aggressive tactics and use of stolen credentials or exploited remote services for initial access. <a href="https://hackread.com/qilin-ransomware-church-of-scientology-data-theft/" target="_blank">More info</a></li>
+
+          <li><strong>Intellexa allegedly retained remote access to Predator logs</strong>: Multiple overlapping investigations, including the "Intellexa Leaks," suggest the U.S.-sanctioned **Intellexa** retained **remote access** to customer logs, enabling staff to view surveillance details. This raises significant human rights liability concerns regarding the misuse of its **Predator spyware**. New findings confirm the use of malicious mobile ads—a vector named "Aladdin"—for infection and link Predator to the surveillance of Egyptian and Greek activists and a human rights lawyer in Pakistan. Google separately noted Intellexa's proficiency in exploiting zero-day vulnerabilities. <a href="https://cyberscoop.com/intellexa-remotely-accessed-predator-spyware-customer-systems-investigation-finds/" target="_blank">More info</a></li>
+     </ul>
+
+     <h2>📚 Others</h2>
+     <ul>
+          <li><strong>NCSC pilots Proactive Notifications service</strong>: The UK's NCSC is piloting a new **Proactive Notifications** service, delivered via Netcraft, to inform UK organizations about **unpatched vulnerabilities** and lacking security services exposed in their environment. This initiative uses external observations and internet scanning to identify risks and sends actionable software update recommendations. The service complements the NCSC's existing Early Warning service, aiming to create a layered defense by helping harden systems and reduce overall risk exposure. <a href="https://www.bleepingcomputer.com/news/security/ncscs-proactive-notifications-warns-orgs-of-flaws-in-exposed-devices/" target="_blank">More info</a></li>
+
+          <li><strong>Ex-contractors charged for wiping 96 govt databases</strong>: Two Virginia brothers, Muneeb and Sohaib Akhter, previously convicted for hacking the State Department, have been arrested and charged again for a **retaliatory insider attack** after being fired as federal contractors. Muneeb Akhter allegedly accessed government systems without authorization and maliciously **deleted approximately 96 databases** storing U.S. government information, including FOIA records and sensitive investigative files from multiple federal agencies. He also stole sensitive data, including IRS tax information, before wiping company laptops. <a href="https://www.bleepingcomputer.com/news/security/contractors-with-hacking-records-accused-of-wiping-96-govt-databases/" target="_blank">More info</a></li>
+     </ul>
+
+     <p style="text-align:center;">
+          <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+     </p>
+</body>
+</html>
