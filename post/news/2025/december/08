@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📰 Cybersecurity Newsfeed - 08/12/25</title>
+    <style>
+        body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+        h1 { text-align: center; color: #c9a227; }
+        h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+        a { color: #c9a227; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        ul { list-style-type: disc; margin-left: 20px; }
+        li { margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <h1>Cybersecurity Newsfeed</h1>
+    <h2>📅 08/12/25</h2>
+
+    <h2>🛡️ Vulnerabilities</h2>
+    <ul>
+        <li><strong>Critical React2Shell RCE (CVE-2025-55182) Actively Exploited</strong>: The maximum-severity (CVSS 10.0) **React2Shell** flaw is an unauthenticated **Remote Code Execution** vulnerability in React Server Components' insecure deserialization logic (Flight protocol). It affects frameworks like Next.js, with over 77,000 IPs vulnerable and 30+ organizations already compromised by groups like UNC5174. CISA has added it to the KEV Catalog, mandating federal agencies to patch by December 26. Immediate upgrade to React versions 19.0.1+ and corresponding Next.js releases is mandatory. <a href="https://www.bleepingcomputer.com/news/security/react2shell-flaw-exploited-to-breach-30-orgs-77k-ip-addresses-vulnerable/" target="_blank">More info</a> | <a href="https://www.cisa.gov/news-events/alerts/2025/12/05/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">CISA KEV</a></li>
+
+        <li><strong>IDEsaster Flaws in AI-Powered IDEs (e.g., Cursor, Copilot)</strong>: Over 30 security flaws, collectively termed **IDEsaster**, including CVE-2025-49150, were disclosed in AI-powered IDEs. The issues chain prompt injection, auto-approved tool calls, and legitimate IDE features to achieve unauthorized **data exfiltration or RCE**. Attackers exploit auto-write capabilities to inject malicious settings into configuration files (like <code>.vscode/settings.json</code>) without user interaction. Developers must use AI agents only with trusted projects and manually review external context for hidden instructions. <a href="https://thehackernews.com/2025/12/researchers-uncover-30-flaws-in-ai.html" target="_blank">More info</a></li>
+
+        <li><strong>Critical Apache Tika XXE Vulnerability (CVE-2025-66516)</strong>: A critical **XML External Entity (XXE)** vulnerability (CVSS 10.0) in the **Apache Tika** content analysis toolkit (used by Elasticsearch, Solr) allows an unauthenticated attacker to embed a malicious **XFA file inside a PDF**. When Tika processes the PDF, the XXE is triggered in <code>tika-core</code> (versions 1.13 through 3.2.1), potentially allowing the attacker to read sensitive internal files, perform SSRF, or cause DoS. Users must immediately upgrade <code>tika-core</code> to **version 3.2.2** or later. <a href="https://securityaffairs.com/185363/security/maximum-severity-xxe-vulnerability-discovered-in-apache-tika.html" target="_blank">More info</a></li>
+
+        <li><strong>Zero-Click Agentic Browser Attacks Against Perplexity Comet</strong>: New zero-click attacks exploit the autonomy of agentic browsers granted OAuth access. The **"Google Drive Wiper"** attack uses a specially crafted email with natural language instructions (e.g., "delete loose files") that the agent interprets as legitimate housekeeping, leading to **mass file deletion without user confirmation**. Separately, the **HashJack** vulnerability forces AI browsers to execute hidden commands placed after the <code>#</code> symbol in legitimate URLs. Perplexity and Microsoft have patched affected browsers. <a href="https://thehackernews.com/2025/12/zero-click-agentic-browser-attack-can.html" target="_blank">More info</a></li>
+    </ul>
+
+    <h2>🎯 Adversaries</h2>
+    <ul>
+        <li><strong>Coordinated Scanning Targets Palo Alto GlobalProtect and SonicWall APIs</strong>: A coordinated reconnaissance campaign, using over 7,000 IP addresses from German hosting provider 3xK GmbH, is targeting **Palo Alto GlobalProtect VPN portals** and **SonicWall SonicOS API endpoints**. The initial activity involved credential-based attacks and brute-force login attempts against GlobalProtect, with Palo Alto urging customers to enable **Multi-Factor Authentication** as no software flaw was exploited. This was followed by scanning against SonicWall API endpoints, a common pre-exploitation behavior for identifying vulnerable versions or misconfigurations. <a href="https://www.bleepingcomputer.com/news/security/new-wave-of-vpn-login-attempts-targets-palo-alto-globalprotect-portals/" target="_blank">More info</a></li>
+
+        <li><strong>ClayRat Android Spyware Escalates to Full Device Takeover</strong>: The **ClayRat** Android spyware has significantly escalated its capabilities by exploiting **Accessibility Services**. The updated version now records **lock screen credentials**, captures PINs/passwords, automatically unlocks the device, performs screen recording, and uses deceptive overlays to block user interaction and automatically disable Google Play Protect. Distributed via fraudulent phishing domains and Dropbox, ClayRat poses a severe risk to corporate BYOD environments through credential and data theft. <a href="https://hackread.com/clayrat-android-spyware-variant-device-control/" target="_blank">More info</a></li>
+
+        <li><strong>Novel Clickjacking Using SVG Filters and CSS</strong>: Security researcher Lyra Rebane devised a novel clickjacking technique that exploits a cross-origin information leak using **SVG filters (feBlend and feComposite)** and CSS. The SVG filters act as **logic gates** to process pixels from an underlying framed webpage, effectively turning SVG into a programmable device to simplify complex clickjacking attacks. A proof-of-concept exfiltrated text from Google Docs. Defense involves using the Intersection Observer v2 API to detect when an SVG filter covers an iframe. <a href="https://www.theregister.com/2025/12/05/css_svg_clickjacking/" target="_blank">More info</a></li>
+
+        <li><strong>Stealthy Malware Uses AutoIT3 FileInstall() for Shellcode Delivery</strong>: A wave of malware is exploiting the **AutoIT3 scripting language's <code>FileInstall()</code> function** to drop and execute hidden shellcode, enabling highly stealthy payload delivery. The function embeds the payload (like shellcode) directly within the compiled executable, drops it to <code>%TEMP%</code>, decrypts it using an obfuscated function, and uses Windows API calls (<code>VirtualAlloc</code> and <code>DllCall</code> with <code>CallWindowProc</code>) to launch the shellcode in memory, bypassing file-based detection. Observed samples delivered the **Quasar Remote Access Trojan (RAT)** and **Phantom stealer**. <a href="https://isc.sans.edu/diary/32542" target="_blank">More info</a></li>
+    </ul>
+
+    <h2>📈 Trends</h2>
+    <ul>
+        <li><strong>FBI Warns of Spoofed IC3 Websites</strong>: The FBI has issued Public Service Announcement I-091925, warning that cybercriminals are actively **spoofing its Internet Crime Complaint Center (IC3)** website (ic3.gov) to steal sensitive victim data. Threat actors clone the official domain via phishing or SEO poisoning, promising to help victims report a crime or recover funds. The fake portals harvest PII, banking details, and other sensitive information. The FBI reminds users that the genuine IC3 never asks for payment, and the only safe way to submit a report is directly via **www.ic3.gov**. <a href="https://www.cysecurity.news/2025/12/fbi-warns-of-cybercriminals.html" target="_blank">More info</a></li>
+
+        <li><strong>MCP Sampling Attacks Hijack Coding Copilots</strong>: A new class of attack, dubbed **MCP Sampling Attack**, exploits the **Model Context Protocol (MCP)** sampling feature in coding copilots. Malicious servers leverage MCP to inject persistent, hidden instructions into the client. Proof-of-Concepts include **Resource Theft**, **Conversation Hijacking** (e.g., forcing "pirate speak"), and **Covert Tool Invocation** (e.g., writing a <code>.tmpfile</code> without consent). These hidden instructions modify the system without the user's knowledge, necessitating a **least-privilege model** for LLM tools and enhanced output sanitization. <a href="https://unit42.paloaltonetworks.com/model-context-protocol-attack-vectors/" target="_blank">More info</a></li>
+
+        <li><strong>Guide to Continuous Attack Surface Visibility</strong>: An article argues that relying solely on **passive internet-scan data** provides an incomplete and quickly stale view of the modern external attack surface due to cloud adoption and Shadow IT. To maintain an accurate defensive posture, organizations must implement **continuous, automated, active reconnaissance** that daily verifies external exposure, tracks changes, and validates findings in real-time. This active approach is necessary to reveal newly exposed services, misconfigurations, and rogue assets for timely remediation. <a href="https://www.bleepingcomputer.com/news/security/a-practical-guide-to-continuous-attack-surface-visibility/" target="_blank">More info</a></li>
+    </ul>
+
+    <h2>💥 Breaches & Leaks</h2>
+    <ul>
+        <li><strong>Barts Health NHS Trust Breached via Oracle E-Business Suite Flaw</strong>: Barts Health NHS Trust confirmed the **Cl0p ransomware group** breached an invoice database by exploiting a critical zero-day vulnerability in **Oracle E-Business Suite** (likely a flaw CISA added to its KEV Catalog). The breach, which occurred in August, exposed names and addresses of patients who were billed for care, details of former staff, and supplier payment information, though clinical records were unaffected. This incident is part of Cl0p’s larger extortion campaign against Oracle EBS customers globally. <a href="https://hackread.com/barts-health-nhs-cl0p-ransomware-data-breach/" target="_blank">More info</a></li>
+
+        <li><strong>Inoperable Porsche Vehicles in Russia Due to VTS Failure</strong>: Hundreds of Porsche vehicles in Russia became inoperable after their factory-installed **Vehicle Tracking System (VTS)**, an onboard satellite-linked anti-theft module, experienced a widespread connectivity failure. The VTS automatically locks and immobilizes the engine upon losing its network signal. While the exact cause is unknown, the systemic failure highlights the significant fragility and **single point of failure risk** introduced by deeply integrated, connected-car security systems. <a href="https://securityaffairs.com/185398/security/porsche-outage-in-russia-serves-as-a-reminder-of-the-risks-in-connected-vehicle-security.html" target="_blank">More info</a></li>
+
+        <li><strong>Inotiv Discloses Data Breach After Qilin Ransomware Attack</strong>: Pharmaceutical contract research organization **Inotiv** is notifying **9,542 individuals** that their personal information was compromised during an **August 2025 Qilin ransomware attack**. The breach exfiltrated over 176 GB of sensitive data, including PII like names, addresses, **Social Security Numbers**, and PHI like medical records and health insurance data, primarily impacting current/former employees and their family members. Qilin is known for its double extortion tactics against the healthcare sector. <a href="https://www.bleepingcomputer.com/news/security/pharma-firm-inotiv-discloses-data-breach-after-ransomware-attack/" target="_blank">More info</a></li>
+    </ul>
+
+    <h2>📚 Others</h2>
+    <ul>
+        <li><strong>Portugal Institutes Legal Safe Harbor for Security Research</strong>: Portugal has amended its cybercrime legislation to institute a **legal safe harbor** for **good-faith security research**, explicitly decriminalizing illegal system access or data interception under strict conditions (new Article 8.o-A). The exemption applies only when the researcher’s sole purpose is vulnerability identification (not caused by them) and disclosure to the system owner and the **CNCS**. Researchers must avoid DoS, malware, or social engineering and must immediately delete all acquired data. <a href="https://www.bleepingcomputer.com/news/security/portugal-updates-cybercrime-law-to-exempt-security-researchers/" target="_blank">More info</a></li>
+    </ul>
+
+    <p style="text-align:center;">
+        <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+    </p>
+</body>
+</html>
