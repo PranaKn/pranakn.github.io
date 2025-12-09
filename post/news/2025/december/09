@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 09/12/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 09/12/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>CISA Adds Two New Exploited Flaws to KEV Catalog</strong>: CISA mandated immediate remediation for two newly exploited vulnerabilities: **CVE-2022-37055**, a critical **buffer overflow RCE** (CVSS 9.8) in certain D-Link Go-RT-AC750 routers; and **CVE-2025-66644**, an **OS Command Injection** flaw in Array Networks ArrayOS AG Secure Access Gateways. Threat actors have actively exploited both flaws to gain high-privilege remote access, with federal agencies required to patch or discontinue use by December 29, 2025. <a href="https://www.cisa.gov/news-events/alerts/2025/12/08/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+
+    <li><strong>Malicious VS Code Extensions Drop Infostealer via DLL Hijacking</strong>: Two malicious extensions, "**Bitcoin Black**" and "**Codo AI**," were discovered on the **VS Code Marketplace** exploiting developers. The extensions use a **DLL hijacking** technique to load the powerful information-stealing malware, <code>runtime.exe</code>. The malware, named "**Evelyn**," steals credentials, crypto wallets, WiFi passwords, and system data, and hijacks user sessions by launching Chrome/Edge in headless mode. Users are urged to only install extensions from highly reputable publishers. <a href="https://www.bleepingcomputer.com/news/security/malicious-vscode-extensions-on-microsofts-registry-drop-infostealers/" target="_blank">More info</a></li>
+
+    <li><strong>Critical WordPress Sneeit Framework RCE Under Mass Exploitation</strong>: A critical, unauthenticated **Remote Code Execution (RCE)** vulnerability, **CVE-2025-6389** (CVSS 9.8), in the WordPress **Sneeit Framework plugin** is under active, mass exploitation (131,000+ attempts blocked). The flaw in <code>sneeit_articles_pagination_callback()</code> unsafely passes user input to PHP's <code>call_user_func()</code>, allowing attackers to create malicious admin users or upload backdoors. Separately, the **Frost DDoS botnet** is exploiting **CVE-2025-2611** in ICTBroadcast to launch DDoS attacks. <a href="https://thehackernews.com/2025/12/sneeit-wordpress-rce-exploited-in-wild.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Broadside Mirai Botnet Targets Maritime Logistics via TBK DVR Flaw</strong>: A new **Mirai botnet variant**, "**Broadside**," is exploiting **CVE-2024-3721**, a critical remote command injection flaw in unpatched **TBK DVR devices**. The attack uses the <code>/device.rsp</code> endpoint to gain unauthenticated remote control. Broadside diverges from standard Mirai by using **Netlink kernel sockets** for stealthy monitoring and attempting to harvest **system credentials** (<code>/etc/passwd</code> and <code>/etc/shadow</code>) for privilege escalation and long-term foothold within operational networks. <a href="https://www.darkreading.com/threat-intelligence/broadside-mirai-variant-maritime-logistics" target="_blank">More info</a></li>
+
+    <li><strong>Lumma Stealer Campaign Targets Indie Gamers on Itch.io and Patreon</strong>: A campaign distributing the **Lumma Stealer** MaaS is targeting indie gamers via spam comments on **Itch.io** that redirect to malicious **Patreon** download links disguised as game updates. The executable payload (<code>game.exe</code>) is a Node.js application compiled with **nexe** for obfuscation. It features six layers of sophisticated anti-analysis checks before dynamically loading the Lumma Stealer payload via a **reflective loading technique** using a Node.js C++ module. <a href="https://www.gdatasoftware.com/blog/2025/12/38310-lumma-stealer-itchio-patreon" target="_blank">More info</a></li>
+
+    <li><strong>ChrimeraWire Trojan Manipulates Search Engine Rankings via Chrome Debug Mode</strong>: The **ChrimeraWire** trojan is a sophisticated Windows malware that uses a **hidden instance of Google Chrome running in debug mode** to manipulate search engine rankings on platforms like Google and Bing. Installed via complex chains involving DLL hijacking, the trojan uses a C2 server via **WebSocket** to receive encrypted instructions, automating searches, site navigation, and click simulations using probabilistic patterns to mimic genuine user traffic for black-hat SEO manipulation. <a href="https://hackread.com/chrimerawire-trojan-fakes-chrome-search-activity/" target="_blank">More info</a></li>
+
+    <li><strong>JS#SMUGGLER Campaign Delivers NetSupport RAT via Multi-Stage Attack</strong>: The **JS#SMUGGLER** campaign is a three-stage web attack delivering the **NetSupport Remote Access Trojan (RAT)**. The attack begins with an obfuscated JavaScript loader, uses the Windows utility **mshta.exe** to run a hidden, multi-encrypted HTA file that only decrypts the payload in memory (bypassing disk-based AV), and finally uses PowerShell to install the RAT, which establishes persistence via a fake <code>WindowsUpdate.lnk</code> shortcut. <a href="https://hackread.com/jssmuggler-netsupport-rat-infected-sites/" target="_blank">More info</a></li>
+
+    <li><strong>MuddyWater Deploys UDPGangster Backdoor for Evasion</strong>: The Iranian APT group **MuddyWater** is deploying a new custom backdoor called **UDPGangster**, specifically designed to leverage the **User Datagram Protocol (UDP)** on port 1269 for its command-and-control (C2) communication, enhancing evasion against traditional network defenses. The campaign targets entities in Turkey, Israel, and Azerbaijan via spear-phishing emails impersonating government entities. UDPGangster features extensive **anti-analysis checks** to maintain remote access for command execution and file exfiltration. <a href="https://thehackernews.com/2025/12/muddywater-deploys-udpgangster-backdoor.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>Phishing Campaign Targets US Universities, Bypassing MFA with Evilginx</strong>: A months-long phishing campaign (April–November 2025) successfully targeted at least 18 **US universities** by leveraging the **Evilginx** phishing kit to bypass **Multi-Factor Authentication (MFA)**. Evilginx operates as an **Adversary-in-the-Middle (AiTM) proxy**, stealing both credentials and the session cookie generated after successful MFA completion to completely hijack the authenticated session. The operation used approximately **70 temporary domains** and cloaking services like Cloudflare. <a href="https://hackread.com/us-universities-domains-phishing-attacks/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Space Bears Ransomware Group Claims Comcast and Quasar Inc. Breach</strong>: The **Space Bears** ransomware group (linked to Phobos RaaS) is threatening to publish files allegedly stolen from **Comcast** via a breach at their telecommunications engineering contractor, **Quasar Inc.** The group claims the files include detailed city design documentation and utility plans related to Comcast's "Genesis" program. Space Bears is a **data theft and extortion group** that focuses on publication rather than encryption, and has set deadlines for the data release. <a href="https://hackread.com/space-bears-ransomware-comcast-quasar-breach/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>Google Chrome Adds New Security Layer for Gemini Agentic Browsing</strong>: Google is implementing a new layered defense architecture for Chrome's upcoming agentic AI browsing features (powered by Gemini) to mitigate indirect prompt injection attacks. The core component is the **User Alignment Critic**, an isolated secondary LLM that **vets every planned action** by the primary agent to ensure alignment with the user’s goal and safety. The system includes **Origin Sets** and **browser-enforced user oversight** for sensitive sites. <a href="https://www.bleepingcomputer.com/news/security/google-chrome-adds-new-security-layer-for-gemini-ai-agentic-browsing/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
