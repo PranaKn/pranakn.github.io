@@ -1,64 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>📰 Cybersecurity Newsfeed - 09/12/25</title>
- <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📰 Cybersecurity Newsfeed - 10/12/25</title>
+     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
+    <style>
+    	body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
 
- <style>
-    body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
-  h1 { text-align: center; color: #c9a227; }
-  h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
-  a { color: #c9a227; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  ul { list-style-type: disc; margin-left: 20px; }
-  li { margin-bottom: 15px; }
- </style>
+        h1 { text-align: center; color: #c9a227; }
+        h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+        a { color: #c9a227; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        ul { list-style-type: disc; margin-left: 20px; }
+        li { margin-bottom: 15px; }
+    </style>
 </head>
 <body>
- <h1>Cybersecurity Newsfeed</h1>
- <h2>📅 09/12/25</h2>
+    <h1>Cybersecurity Newsfeed</h1>
+    <h2>📅 10/12/25</h2>
 
- <h2>🛡️ Vulnerabilities</h2>
- <ul>
-  <li><strong>CISA Adds Two New Exploited Flaws to KEV Catalog</strong>: CISA mandated immediate remediation for two newly exploited vulnerabilities: **CVE-2022-37055**, a critical **buffer overflow RCE** (CVSS 9.8) in certain D-Link Go-RT-AC750 routers; and **CVE-2025-66644**, an **OS Command Injection** flaw in Array Networks ArrayOS AG Secure Access Gateways. Threat actors have actively exploited both flaws to gain high-privilege remote access, with federal agencies required to patch or discontinue use by December 29, 2025. <a href="https://www.cisa.gov/news-events/alerts/2025/12/08/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+    <h2>🛡️ Vulnerabilities</h2>
+    <ul>
+        <li><strong>Critical Ivanti EPM XSS Flaw Enables Unauthenticated RCE (CVE-2025-10573)</strong>: Ivanti issued an urgent patch for a critical **unauthenticated stored Cross-Site Scripting (XSS)** flaw (CVSS 9.6) in Endpoint Manager (EPM) prior to 2024 SU4 SR1. Attackers can exploit the unsanitized <code>incomingdata</code> API to inject malicious JavaScript into the administrator's dashboard. When viewed, the script executes, allowing the attacker to hijack the admin session and potentially achieve **Remote Code Execution (RCE)**. <a href="https://securityaffairs.com/185508/hacking/ivanti-warns-customers-of-new-epm-flaw-enabling-remote-code-execution.html" target="_blank">More info</a></li>
 
-  <li><strong>Malicious VS Code Extensions Drop Infostealer via DLL Hijacking</strong>: Two malicious extensions, "**Bitcoin Black**" and "**Codo AI**," were discovered on the **VS Code Marketplace** exploiting developers. The extensions use a **DLL hijacking** technique to load the powerful information-stealing malware, <code>runtime.exe</code>. The malware, named "**Evelyn**," steals credentials, crypto wallets, WiFi passwords, and system data, and hijacks user sessions by launching Chrome/Edge in headless mode. Users are urged to only install extensions from highly reputable publishers. <a href="https://www.bleepingcomputer.com/news/security/malicious-vscode-extensions-on-microsofts-registry-drop-infostealers/" target="_blank">More info</a></li>
+        <li><strong>SAP Fixes Three Critical Flaws, Including Code Injection (CVE-2025-42880)</strong>: SAP's December bulletin includes fixes for 14 issues, three of which are critical. The most severe (CVSS 9.9) is an **authenticated code injection flaw (CVE-2025-42880)** in Solution Manager (ST 720), allowing a low-privileged attacker to insert malicious code for potential full system control. Other critical fixes cover Apache Tomcat in Commerce Cloud and a deserialization RCE in jConnect. Immediate patching is urged due to the high-value risk of SAP platforms. <a href="https://www.bleepingcomputer.com/news/security/sap-fixes-three-critical-vulnerabilities-across-multiple-products/" target="_blank">More info</a></li>
 
-  <li><strong>Critical WordPress Sneeit Framework RCE Under Mass Exploitation</strong>: A critical, unauthenticated **Remote Code Execution (RCE)** vulnerability, **CVE-2025-6389** (CVSS 9.8), in the WordPress **Sneeit Framework plugin** is under active, mass exploitation (131,000+ attempts blocked). The flaw in <code>sneeit_articles_pagination_callback()</code> unsafely passes user input to PHP's <code>call_user_func()</code>, allowing attackers to create malicious admin users or upload backdoors. Separately, the **Frost DDoS botnet** is exploiting **CVE-2025-2611** in ICTBroadcast to launch DDoS attacks. <a href="https://thehackernews.com/2025/12/sneeit-wordpress-rce-exploited-in-wild.html" target="_blank">More info</a></li>
- </ul>
+        <li><strong>Adobe Patches Nearly 140 Flaws, Including Critical ColdFusion RCEs</strong>: Adobe released critical updates, fixing nearly 140 vulnerabilities, with a Priority 1 rating. ColdFusion received fixes for three critical **Arbitrary Code Execution (ACE)** flaws (CVSS 9.1), including an **unrestricted file upload (CVE-2025-61808)** that can enable complete system takeover via a malicious web-shell. Adobe Experience Manager (AEM) received 117 fixes, including two critical XSS bugs (CVSS 9.3). <a href="https://www.securityweek.com/adobe-patches-nearly-140-vulnerabilities/" target="_blank">More info</a></li>
 
- <h2>🎯 Adversaries</h2>
- <ul>
-  <li><strong>Broadside Mirai Botnet Targets Maritime Logistics via TBK DVR Flaw</strong>: A new **Mirai botnet variant**, "**Broadside**," is exploiting **CVE-2024-3721**, a critical remote command injection flaw in unpatched **TBK DVR devices**. The attack uses the <code>/device.rsp</code> endpoint to gain unauthenticated remote control. Broadside diverges from standard Mirai by using **Netlink kernel sockets** for stealthy monitoring and attempting to harvest **system credentials** (<code>/etc/passwd</code> and <code>/etc/shadow</code>) for privilege escalation and long-term foothold within operational networks. <a href="https://www.darkreading.com/threat-intelligence/broadside-mirai-variant-maritime-logistics" target="_blank">More info</a></li>
+        <li><strong>Microsoft December Patch Tuesday Fixes Three Zero-Days</strong>: Microsoft's December Patch Tuesday addresses 57 flaws, including three actively exploited zero-day vulnerabilities. These include **CVE-2025-62221** (Use-After-Free for SYSTEM privileges), **CVE-2025-64671** (RCE in GitHub Copilot for JetBrains), and **CVE-2025-54100** (RCE in PowerShell's <code>Invoke-WebRequest</code>). Additionally, CISA has added the critical **React2Shell** flaw (CVE-2025-55182) to its KEV Catalog, requiring government agencies to patch by December 30, 2025. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-december-2025-patch-tuesday-fixes-3-zero-days-57-flaws/" target="_blank">More info</a></li>
 
-  <li><strong>Lumma Stealer Campaign Targets Indie Gamers on Itch.io and Patreon</strong>: A campaign distributing the **Lumma Stealer** MaaS is targeting indie gamers via spam comments on **Itch.io** that redirect to malicious **Patreon** download links disguised as game updates. The executable payload (<code>game.exe</code>) is a Node.js application compiled with **nexe** for obfuscation. It features six layers of sophisticated anti-analysis checks before dynamically loading the Lumma Stealer payload via a **reflective loading technique** using a Node.js C++ module. <a href="https://www.gdatasoftware.com/blog/2025/12/38310-lumma-stealer-itchio-patreon" target="_blank">More info</a></li>
+        <li><strong>Fortinet Warns of Critical FortiCloud SSO Authentication Bypass Flaws</strong>: Fortinet released patches for two critical FortiCloud Single Sign-On (SSO) authentication bypass vulnerabilities (CVSS 9.1): **CVE-2025-59718** (FortiOS/FortiProxy/FortiSwitchManager) and **CVE-2025-59719** (FortiWeb). The flaws exploit improper verification of cryptographic signatures within a malicious SAML message, allowing an **unauthenticated attacker to bypass login checks** if the FortiCloud SSO feature is enabled. Admins should disable the feature as a temporary mitigation. <a href="https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-forticloud-sso-login-auth-bypass-flaws/" target="_blank">More info</a></li>
 
-  <li><strong>ChrimeraWire Trojan Manipulates Search Engine Rankings via Chrome Debug Mode</strong>: The **ChrimeraWire** trojan is a sophisticated Windows malware that uses a **hidden instance of Google Chrome running in debug mode** to manipulate search engine rankings on platforms like Google and Bing. Installed via complex chains involving DLL hijacking, the trojan uses a C2 server via **WebSocket** to receive encrypted instructions, automating searches, site navigation, and click simulations using probabilistic patterns to mimic genuine user traffic for black-hat SEO manipulation. <a href="https://hackread.com/chrimerawire-trojan-fakes-chrome-search-activity/" target="_blank">More info</a></li>
+        <li><strong>GeminiJack Zero-Click Flaw Found in Google Gemini AI</strong>: A critical, zero-click flaw dubbed **GeminiJack** was discovered in Google's **Gemini Enterprise** and Vertex AI Search, stemming from an "architectural weakness" in how the RAG-based AI interprets enterprise data. This **indirect prompt injection** allows an attacker to embed malicious, hidden instructions in a shared item (e.g., Google Doc). When an employee searches, the AI executes the rogue commands, leading to the **exfiltration of sensitive data** (Gmail, Docs, Calendar) via a disguised external image request in the AI's output. <a href="https://hackread.com/geminijack-0-click-flaw-gemini-ai-data-leaks/" target="_blank">More info</a></li>
+    </ul>
 
-  <li><strong>JS#SMUGGLER Campaign Delivers NetSupport RAT via Multi-Stage Attack</strong>: The **JS#SMUGGLER** campaign is a three-stage web attack delivering the **NetSupport Remote Access Trojan (RAT)**. The attack begins with an obfuscated JavaScript loader, uses the Windows utility **mshta.exe** to run a hidden, multi-encrypted HTA file that only decrypts the payload in memory (bypassing disk-based AV), and finally uses PowerShell to install the RAT, which establishes persistence via a fake <code>WindowsUpdate.lnk</code> shortcut. <a href="https://hackread.com/jssmuggler-netsupport-rat-infected-sites/" target="_blank">More info</a></li>
+    <h2>🎯 Adversaries</h2>
+    <ul>
+        <li><strong>North Korea Exploits React2Shell to Deploy EtherRAT with EtherHiding C2</strong>: North Korea-linked threat actors are exploiting the critical **React2Shell RCE flaw (CVE-2025-55182)** to deploy **EtherRAT**, a novel Remote Access Trojan (RAT). EtherRAT is distinguished by its use of the **EtherHiding** technique, resolving its Command-and-Control (C2) URL from an **Ethereum smart contract** using a consensus-based mechanism. The campaign, part of "Contagious Interview" targeting Web3 developers, establishes persistence using five different Linux mechanisms. <a href="https://thehackernews.com/2025/12/north-korea-linked-actors-exploit.html" target="_blank">More info</a></li>
 
-  <li><strong>MuddyWater Deploys UDPGangster Backdoor for Evasion</strong>: The Iranian APT group **MuddyWater** is deploying a new custom backdoor called **UDPGangster**, specifically designed to leverage the **User Datagram Protocol (UDP)** on port 1269 for its command-and-control (C2) communication, enhancing evasion against traditional network defenses. The campaign targets entities in Turkey, Israel, and Azerbaijan via spear-phishing emails impersonating government entities. UDPGangster features extensive **anti-analysis checks** to maintain remote access for command execution and file exfiltration. <a href="https://thehackernews.com/2025/12/muddywater-deploys-udpgangster-backdoor.html" target="_blank">More info</a></li>
- </ul>
+        <li><strong>DeadLock Ransomware Uses BYOVD to Bypass EDR/Kill Security Processes</strong>: A financially motivated actor is deploying **DeadLock** ransomware using a sophisticated **Bring Your Own Vulnerable Driver (BYOVD)** technique to bypass EDR tools. Cisco Talos observed the actor exploiting a flaw in a Baidu Antivirus driver, **CVE-2024-51324**, to gain kernel-level privileges, kill security processes, and eliminate shadow copies before encrypting files with a custom C++ payload and a custom stream cipher. <a href="https://www.infosecurity-magazine.com/news/deadlock-ransomware-uses-byovd/" target="_blank">More info</a></li>
 
- <h2>📈 Trends</h2>
- <ul>
-  <li><strong>Phishing Campaign Targets US Universities, Bypassing MFA with Evilginx</strong>: A months-long phishing campaign (April–November 2025) successfully targeted at least 18 **US universities** by leveraging the **Evilginx** phishing kit to bypass **Multi-Factor Authentication (MFA)**. Evilginx operates as an **Adversary-in-the-Middle (AiTM) proxy**, stealing both credentials and the session cookie generated after successful MFA completion to completely hijack the authenticated session. The operation used approximately **70 temporary domains** and cloaking services like Cloudflare. <a href="https://hackread.com/us-universities-domains-phishing-attacks/" target="_blank">More info</a></li>
- </ul>
+        <li><strong>Storm-0249 IAB Abuses EDR via DLL Sideloading for Ransomware Prep</strong>: Initial Access Broker **Storm-0249** is escalating attacks by leveraging EDR abuse. The attack chain uses ClickFix social engineering, tricking users into executing <code>curl</code> commands to drop a malicious MSI package with SYSTEM privileges. The package performs a **DLL sideloading attack** using a malicious <code>SentinelAgentCore.dll</code> alongside the legitimate, signed <code>SentinelAgentWorker.exe</code>, allowing the malware to execute within the trusted EDR process to bypass detection and profile the victim for ransomware affiliates (LockBit, ALPHV). <a href="https://www.bleepingcomputer.com/news/security/ransomware-iab-abuses-edr-for-stealthy-malware-execution/" target="_blank">More info</a></li>
 
- <h2>💥 Breaches & Leaks</h2>
- <ul>
-  <li><strong>Space Bears Ransomware Group Claims Comcast and Quasar Inc. Breach</strong>: The **Space Bears** ransomware group (linked to Phobos RaaS) is threatening to publish files allegedly stolen from **Comcast** via a breach at their telecommunications engineering contractor, **Quasar Inc.** The group claims the files include detailed city design documentation and utility plans related to Comcast's "Genesis" program. Space Bears is a **data theft and extortion group** that focuses on publication rather than encryption, and has set deadlines for the data release. <a href="https://hackread.com/space-bears-ransomware-comcast-quasar-breach/" target="_blank">More info</a></li>
- </ul>
+        <li><strong>STAC6565 Targets Canada with Espionage/Ransomware Hybrid Campaign</strong>: The financially motivated threat cluster **STAC6565** (Gold Blade/RedCurl) is executing a targeted, hybrid cyber-espionage and ransomware campaign, with nearly **80% of attacks focused on Canadian organizations**. The group abuses recruitment platforms (like Indeed) to deliver weaponized resumes, uses **DLL sideloading** via a legitimate Adobe executable to deploy **RedLoader**, and employs **QWCrypt** (a custom ransomware) which uses a **BYOVD** technique with a renamed Zemana driver to kill security products. <a href="https://thehackernews.com/2025/12/stac6565-targets-canada-in-80-of.html" target="_blank">More info</a></li>
 
- <h2>📚 Others</h2>
- <ul>
-  <li><strong>Google Chrome Adds New Security Layer for Gemini Agentic Browsing</strong>: Google is implementing a new layered defense architecture for Chrome's upcoming agentic AI browsing features (powered by Gemini) to mitigate indirect prompt injection attacks. The core component is the **User Alignment Critic**, an isolated secondary LLM that **vets every planned action** by the primary agent to ensure alignment with the user’s goal and safety. The system includes **Origin Sets** and **browser-enforced user oversight** for sensitive sites. <a href="https://www.bleepingcomputer.com/news/security/google-chrome-adds-new-security-layer-for-gemini-ai-agentic-browsing/" target="_blank">More info</a></li>
- </ul>
+        <li><strong>GrayBravo Threat Actor Runs CastleLoader MaaS for Multiple Payloads</strong>: The financially motivated threat actor **GrayBravo** (formerly TAG-150) is operating a successful **Malware-as-a-Service (MaaS)** model centered on the sophisticated malware loader, **CastleLoader**. This loader distributes various payloads, including CastleRAT, RedLine Stealer, and Hijack Loader. Four distinct clusters are active, utilizing tactics like targeting logistics sectors with compromised freight-matching accounts and using Booking.com-themed phishing campaigns. <a href="https://thehackernews.com/2025/12/four-threat-clusters-using-castleloader.html" target="_blank">More info</a></li>
 
- <p style="text-align:center;">
-  <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
- </p>
+        <li><strong>Spiderman Phishing Kit Automates Credential Theft from European Banks</strong>: The **Spiderman** phishing kit, circulating on the dark web, is a modular, full-stack threat automating real-time credential theft from customers of dozens of European banks and cryptocurrency platforms (Deutsche Bank, CaixaBank, etc.). Requiring no coding, the kit captures a victim’s **full identity profile**—including logins, credit card details, and **MFA codes** (OTP/PhotoTAN)—in a single session, facilitating immediate account takeover. <a href="https://hackread.com/spiderman-phishing-kit-european-banks-credential-theft/" target="_blank">More info</a></li>
+
+        <li><strong>Malicious VS Code Extensions Use Lightshot DLL Sideloading</strong>: Malicious VS Code extensions (masquerading as a theme and an AI assistant) were found to deploy infostealer malware via a **DLL hijacking** technique. The attack uses a legitimate, signed application, **Lightshot**, to sideload a malicious <code>Lightshot.dll</code>, executing the stealer code within a trusted process. This payload harvests sensitive data like browser sessions, clipboard contents, and Wi-Fi credentials. <a href="https://thehackernews.com/2025/12/researchers-find-malicious-vs-code-go.html" target="_blank">More info</a></li>
+    </ul>
+
+    <h2>📈 Trends</h2>
+    <ul>
+        <li><strong>Shanya Packer-as-a-Service (PaaS) Emerges as Advanced EDR Killer</strong>: The new **Shanya Packer-as-a-Service (PaaS)** is an emerging, critical component in the ransomware ecosystem, providing an advanced layer of obfuscation and functioning as a sophisticated **EDR killer**. It drops a legitimate driver alongside a malicious unsigned kernel driver, abusing the clean driver's write access to terminate or delete processes and services associated with security products. It is used globally by major ransomware gangs like **Akira, Medusa, Qilin, and Crytox**. <a href="https://www.darkreading.com/threat-intelligence/packer-as-a-service-shanya-hides-ransomware-kills-edr" target="_blank">More info</a></li>
+    </ul>
+
+    <h2>💥 Breaches & Leaks</h2>
+    <ul>
+        <li><strong>Japanese Firms Suffer Long-Tail Ransomware Damage, Asahi Holdings Exposed 1.9M Individuals</strong>: The Japanese corporate sector is struggling with protracted ransomware impacts, exemplified by **Asahi Holdings'** ongoing back-office disruptions two months post-incident. Asahi confirmed the Qilin ransomware attack may have exposed the personal data of **1.9 million individuals**, including 1.5 million customers and employees. The persistent disruption underscores recovery difficulties for organizations that refuse to pay ransom. <a href="https://www.darkreading.com/cyberattacks-data-breaches/japanese-firms-suffer-long-tail-ransomware-damage" target="_blank">More info</a></li>
+
+        <li><strong>GPS Spoofing Cyberattacks Hit Seven Major Indian Airports</strong>: Seven key Indian airports, including Delhi and Mumbai, were hit by **GPS spoofing** cyberattacks in November 2025, where fake satellite signals misled aircraft navigation systems. Flights approaching Delhi's Runway 10 reported false locations up to **60 nautical miles** from their actual position. Authorities confirmed the sophisticated attacks but stated that no flight operations were interfered with due to contingency procedures and strong ground-based navigation systems. <a href="https://www.cysecurity.news/2025/12/cyberattacks-target-seven-major-indian.html" target="_blank">More info</a></li>
+    </ul>
+
+    <h2>📚 Others</h2>
+    <ul>
+        <li><strong>Cybersecurity Risks of Emerging Humanoid Robots</strong>: The rapidly emerging humanoid robotics sector is facing significant cybersecurity immaturity. Cyberespionage campaigns are actively targeting robotics manufacturers to steal intellectual property. Researchers have also demonstrated severe vulnerabilities, including rooting and remote worming capabilities, in commercially available robots due to the developer trade-off between operational speed (millisecond-speed control loops) and robust security standards like encryption and authentication. <a href="https://www.darkreading.com/ics-ot-security/cybersecurity-risks-humanoid-robots" target="_blank">More info</a></li>
+
+        <li><strong>Microsoft PowerShell Update Warns Against RCE Flaw (CVE-2025-54100)</strong>: Microsoft released an update (KB5074204) for **Windows PowerShell 5.1** to mitigate the high-severity **RCE vulnerability, CVE-2025-54100**, which is a command injection flaw in the <code>Invoke-WebRequest</code> cmdlet. The patch introduces a security confirmation prompt warning users of the script execution risk and recommending the safer <code>-UseBasicParsing</code> parameter. IT administrators must update scripts explicitly to prevent automation failures. <a href="https://www.bleepingcomputer.com/news/security/microsoft-windows-powershell-now-warns-when-running-invoke-webrequest-scripts/" target="_blank">More info</a></li>
+
+        <li><strong>Spain Arrests Hacker Who Stole 64 Million Personal Data Records</strong>: Spanish police in Barcelona arrested a 19-year-old hacker who allegedly stole and attempted to sell **64 million records** from nine breached companies. The stolen personal data is highly sensitive, including full names, addresses, DNI numbers, and IBAN codes. The suspect, who used multiple accounts on hacker forums to sell the data, faces charges for cybercrime and privacy violations. <a href="https://www.bleepingcomputer.com/news/security/spain-arrests-teen-who-stole-64-million-personal-data-records/" target="_blank">More info</a></li>
+    </ul>
+
+    <p style="text-align:center;">
+        <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+    </p>
 </body>
 </html>
