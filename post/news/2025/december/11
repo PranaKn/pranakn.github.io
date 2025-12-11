@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>📰 Cybersecurity Newsfeed - 11/12/25</title>
+ <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
+ <style>
+    body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+  h1 { text-align: center; color: #c9a227; }
+  h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+  a { color: #c9a227; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul { list-style-type: disc; margin-left: 20px; }
+  li { margin-bottom: 15px; }
+ </style>
+</head>
+<body>
+ <h1>Cybersecurity Newsfeed</h1>
+ <h2>📅 11/12/25</h2>
+
+ <h2>🛡️ Vulnerabilities</h2>
+ <ul>
+  <li><strong>CISA adds WinRAR and Microsoft Flaws to KEV Catalog</strong>: CISA mandated patching for two actively exploited vulnerabilities by December 30, 2025. This includes **CVE-2025-6218**, a high-severity RARLAB WinRAR Path Traversal allowing remote code execution via malicious archives, and **CVE-2025-62221**, a Microsoft Windows Use After Free in the Cloud Files Mini Filter Driver that grants local privilege escalation to `SYSTEM` level. <a href="https://www.cisa.gov/news-events/alerts/2025/12/09/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+
+  <li><strong>Gogs Self-Hosted Git Zero-Day RCE Exploited</strong>: A zero-day, **CVE-2025-8110**, is under active exploitation in Gogs, a self-hosted Git service, compromising over 700 internet-exposed instances. The flaw is an authentication bypass for a previous RCE bug, leveraging the `PutContents` API and symbolic links to overwrite the `.git/config` file's `sshCommand`, allowing remote arbitrary code execution for authenticated users with repository creation permissions. Admins must disable open-registration and place Gogs behind a VPN as no patch is immediately available. <a href="https://www.theregister.com/2025/12/10/gogs_0day_under_active_exploitation/" target="_blank">More info</a></li>
+
+  <li><strong>.NET "SOAPwn" RCE Flaw Patched in Enterprise Apps</strong>: WatchTowr Labs revealed "SOAPwn," an "invalid cast vulnerability" in the .NET Framework that enables Remote Code Execution (RCE) by abusing Web Services Description Language (WSDL) imports and SOAP messages. The flaw can be exploited to achieve arbitrary file write via a `file://` path, leading to webshell uploads. Patches were released for Barracuda Service Center RMM (**CVE-2025-34392**, CVSS 9.8) and Ivanti Endpoint Manager (**CVE-2025-13659**, CVSS 8.8), but Microsoft chose not to fix the underlying framework issue. <a href="https://thehackernews.com/2025/12/net-soapwn-flaw-opens-door-for-file.html" target="_blank">More info</a></li>
+
+  <li><strong>Three Flaws in PCIe IDE Protocol Affect Intel/AMD CPUs</strong>: Three specification-level security flaws (**CVE-2025-9612, -9613, -9614**) were disclosed in the PCI Express (PCIe) Integrity and Data Encryption (IDE) protocol, affecting Base Specification Revision 5.0+. The flaws, which require physical or low-level access, undermine data protection, potentially causing information disclosure or privilege escalation by processing stale or incorrect data. Affected products include specific Intel Xeon 6 and AMD EPYC 9005 processors, and vendors are urged to follow the PCIe 6.0 standard Erratum #1 guidance. <a href="https://thehackernews.com/2025/12/three-pcie-encryption-weaknesses-expose.html" target="_blank">More info</a> | <a href="https://www.securityweek.com/intel-amd-processors-affected-by-pcie-vulnerabilities/" target="_blank">More info</a></li>
+
+  <li><strong>Fortinet Patches Two Critical FortiCloud SSO Bypass Flaws</strong>: Fortinet released patches for 18 vulnerabilities, including two critical SAML authentication-bypass flaws, **CVE-2025-59718** and **CVE-2025-59719** (CVSS 9.1). These flaws, caused by improper cryptographic signature verification, allow an unauthenticated attacker to bypass FortiCloud Single Sign-On (SSO) login when the feature is enabled, granting full administrative control. Affected products include FortiOS, FortiWeb, FortiProxy, and FortiSwitchManager. <a href="https://securityaffairs.com/185546/security/fortinet-fixed-two-critical-authentication-bypass-vulnerabilities.html" target="_blank">More info</a></li>
+ <ul>
+  <li><strong>Google Fixes Gemini Enterprise Prompt Injection Flaw ("GeminiJack")</strong>: Google patched a zero-click, corporate data exfiltration vulnerability, dubbed **GeminiJack**, found in Gemini Enterprise and Vertex AI Search. The flaw was an architectural weakness allowing a type of **indirect prompt injection** exploiting the **Retrieval-Augmented Generation (RAG)** architecture. Attackers embedded hidden malicious instructions in shared Google Workspace content. When an employee searched, the RAG system retrieved the poisoned content, and Gemini executed a hidden instruction to exfiltrate data via a malicious external image tag in the response. <a href="https://www.infosecurity-magazine.com/news/google-fixes-gemini-enterprise-flaw/" target="_blank">More info</a></li>
+
+ </ul>
+
+ <h2>🎯 Adversaries</h2>
+ <ul>
+  <li><strong>Storm-0249 Uses ClickFix and EDR Sideloading for Stealth</strong>: Initial Access Broker (IAB) Storm-0249 is executing stealthy campaigns, pivoting from phishing to the "ClickFix" social engineering tactic. The attacker tricks users into executing a command that downloads a malicious MSI, which then deploys a trojanized DLL via **DLL sideloading** within a trusted EDR (like SentinelOne) process, using Windows Installer's `SYSTEM` privileges for high-privilege, fileless execution and evasion. <a href="https://www.darkreading.com/cyberattacks-data-breaches/storm-0249-edr-processes-stealthy-attacks" target="_blank">More info</a></li>
+
+  <li><strong>Pro-Russia Hacktivists Target Critical Infrastructure VNC</strong>: A joint advisory from CISA, FBI, NSA, and partners warns that pro-Russia hacktivist groups (like Cyber Army of Russia Reborn and NoName057(16)) are opportunistically targeting minimally secured, internet-facing Virtual Network Computing (VNC) connections to gain access to Operational Technology (OT) control devices in the U.S. and globally, causing varying impacts, including physical damage. <a href="https://www.cisa.gov/news-events/alerts/2025/12/09/opportunistic-pro-russia-hacktivists-attack-us-and-global-critical-infrastructure" target="_blank">More info</a></li>
+
+  <li><strong>DroidLock Android Malware for Full Device Takeover</strong>: DroidLock is an evolving Android banking malware targeting Spanish-speaking users, distributed outside Google Play. It uses Device Admin and Accessibility Services to perform fraudulent activities, supporting 15 remote commands including device wiping and changing the lock PIN/password. Crucially, it achieves complete device takeover and credential theft via the **VNC sharing system**, stealing the device lock pattern via a screen overlay. <a href="https://www.bleepingcomputer.com/news/security/new-droidlock-malware-locks-android-devices-and-demands-a-ransom/" target="_blank">More info</a></li>
+
+  <li><strong>Agent Tesla RAT Spread via "One Battle After Another" Torrent</strong>: A multi-stage, fileless Living Off the Land (LOTL) attack is distributing the Agent Tesla Remote Access Trojan (RAT) via a malicious torrent for the film *One Battle After Another*. The attack uses a hidden command chain in a shortcut file to execute malicious **PowerShell scripts** embedded within a seemingly benign subtitle file, which runs the final payload entirely in memory to evade detection. <a href="https://hackread.com/dicaprio-one-battle-after-another-torrent-agent-tesla/" target="_blank">More info</a></li>
+
+  <li><strong>ClickFix Deploys CastleLoader via Python Chain</strong>: A new campaign uses the ClickFix social engineering technique to deploy the CastleLoader malware via a Python-based delivery chain. The attack executes a command that launches a hidden `conhost.exe` process to download and execute a tar archive. A bundled Python interpreter reconstructs and decrypts CastleLoader shellcode in memory, which uses PEB Walking for stealthy API resolution before retrieving the final payload, commonly including infostealers (StealC, RedLine) and CastleRAT. <a href="https://www.infosecurity-magazine.com/news/clickfix-rise-castleloader-attacks/" target="_blank">More info</a></li>
+
+  <li><strong>GhostFrame Phishing Kit Uses Hidden iFrames and BLOBs</strong>: GhostFrame is a new, highly evasive Phishing-as-a-Service (PhaaS) kit linked to over one million attacks. It utilizes a unique stealth architecture where the malicious activity is hidden inside an **iframe** loaded from constantly rotating subdomains. Credential forms within the iframe are hidden inside features designed for **image streaming (BLOBs)**, bypassing static content scanners. The kit also aggressively disables analysis tools like right-click and F12. <a href="https://www.malwarebytes.com/blog/news/2025/12/ghostframe-phishing-kit-fuels-widespread-attacks-against-millions" target="_blank">More info</a></li>
+
+  <li><strong>Rust-Based 01flip Ransomware Targets APAC Critical Infra</strong>: A new, financially motivated threat cluster (CL-CRI-1036) is deploying the multi-platform **01flip ransomware**, fully written in the Rust programming language. The attack chain targets critical infrastructure in the Asia-Pacific (APAC) region, starting with exploitation of older flaws like **CVE-2019-11580** (Atlassian Crowd RCE) and deploying the cross-platform adversary emulation tool **Sliver** for lateral movement before encrypting Windows and Linux machines. <a href="https://unit42.paloaltonetworks.com/new-ransomware-01flip-written-in-rust/" target="_blank">More info</a></li>
+ </ul>
+
+ <h2>📈 Trends</h2>
+ <ul>
+  <li><strong>Evolving Browser Hijacking Techniques</strong>: Researchers detail three advanced browser hijacking techniques moving beyond simple preference file changes. These include: 1) Malware manipulating Chrome's **Secure Preferences** by reverse-engineering the non-secret HMAC key to bypass integrity checks; 2) The concept of a **Browser Remote Access Tool (BRAT)** that remotely controls the browser by simulating keyboard shortcuts; 3) Malware disabling Chrome updates and using the deprecated `--load-extension` command-line switch for persistent malicious extension loading. <a href="https://www.gdatasoftware.com/blog/2025/11/38298-learning-about-browser-hijacking" target="_blank">More info</a></li>
+
+  <li><strong>ClickFix Attack Uses ChatGPT/Grok to Deploy AMOS on macOS</strong>: A new, sophisticated ClickFix campaign utilizes **SEO poisoning** to promote shared conversations on legitimate LLM platforms (like ChatGPT and Grok) as top search results. These malicious conversations trick macOS users into copying and executing seemingly benign system troubleshooting commands in their Terminal, which actually download and install the **Atomic macOS Stealer (AMOS)** to harvest sensitive data like credentials and crypto wallets. <a href="https://www.darkreading.com/vulnerabilities-threats/clickfix-style-attack-grok-chatgpt-malware" target="_blank">More info</a></li>
+
+  <li><strong>StealC V2 Spread via Malicious Blender 3D Model Files</strong>: The **StealC V2 infostealer** is being distributed through free, malicious **.blend** 3D model files hosted on legitimate marketplaces. The attack leverages Blender's standard, but dangerous, **Auto Run Python Scripts** feature to automatically execute an embedded Python script upon file opening. This script initiates a multi-stage, fileless attack that installs the powerful infostealer, targeting over 23 browsers and 15 crypto wallets. <a href="https://www.kaspersky.com/blog/malicious-blender-model-files/54948/" target="_blank">More info</a></li>
+
+  <li><strong>New SVG-Based Clickjacking Bypass</strong>: A security researcher unveiled a new clickjacking technique that exploits a loophole in Scalable Vector Graphics (SVG) filters and Cascading Style Sheets (CSS) to bypass **cross-origin isolation**. The attack leverages SVG filters (specifically `feBlend` and `feComposite`) to construct **logic gates** capable of processing pixel data from a cross-origin framed document, effectively allowing arbitrary computation on data protected by the Same-Origin Policy. The flaw affects Chrome and Firefox. <a href="https://www.cysecurity.news/2025/12/new-svg-based-clickjacking-technique.html" target="_blank">More info</a></li>
+ </ul>
+
+ <h2>💥 Breaches & Leaks</h2>
+ <ul>
+ <li><strong>Over 10,000 Docker Hub Images Leaking Live Credentials</strong>: Flare researchers identified over 10,000 Docker Hub container images leaking live, sensitive credentials, affecting over 100 organizations. Exposed secrets included over 4,000 **AI model access tokens**, database credentials, and GitHub tokens, often found hardcoded in configuration or `.ENV files`. While 25% of developers removed the secrets quickly, **75% of the leaked keys were not revoked**, allowing for long-term attacker access. <a href="https://www.bleepingcomputer.com/news/security/over-10-000-docker-hub-images-found-leaking-credentials-auth-keys/" target="_blank">More info</a></li>
+ </ul>
+
+ <h2>📚 Others</h2>
+ <ul>
+  <li><strong>Ukrainian National Charged for Aiding Russian Hacktivist Groups</strong>: U.S. prosecutors charged Ukrainian national Victoria Eduardovna Dubranova for her alleged role in two Russian state-backed hacktivist groups: **NoName057(16)** and **CyberArmyofRussia_Reborn (CARR)**. CARR, reportedly funded by the GRU, claimed credit for destructive attacks on U.S. critical infrastructure (e.g., public drinking water systems). NoName057(16) developed the **DDoSia** tool to recruit volunteers for Distributed Denial-of-Service (DDoS) attacks. <a href="https://www.bleepingcomputer.com/news/security/ukrainian-hacker-charged-with-helping-russian-hacktivist-groups/" target="_blank">More info</a></li>
+
+  <li><strong>Portugal Passes "Safe Harbour" Law for Ethical Hackers</strong>: Portugal's new Decree Law 125/2025 updates its cybercrime legislation, creating a "safe harbour" under Article 8.º-A to shield ethical hackers from prosecution for unauthorized access, provided they act solely for the **public interest**, cause no harm, and **immediately report findings** to the system owner and the National Cybersecurity Centre (CNCS). <a href="https://hackread.com/portugal-cybercrime-law-protects-ethical-hackers/" target="_blank">More info</a></li>
+
+  <li><strong>UK Sanctions Russian and Chinese Firms for 'Malign' Cyber Activity</strong>: The UK imposed new sanctions against Chinese firms **i-Soon** and **Integrity Technology Group** for carrying out vast and indiscriminate cyber activities globally. Russian-linked entities sanctioned include the media outlet **Rybar** for spreading Kremlin disinformation and the **Foundation for the Support and Protection of the Rights of Compatriots Living Abroad (Pravfond)**, described as a GRU front. These actions target hybrid threats combining physical attacks, cyber operations, and disinformation. <a href="https://www.securityweek.com/uk-sanctions-russian-and-chinese-firms-suspected-of-being-malign-actors-in-information-warfare/" target="_blank">More info</a></li>
+
+  <li><strong>Microsoft Teams to Roll Out "External Domains Anomalies Report"</strong>: Microsoft is launching a new security feature for Teams called the "External Domains Anomalies Report," rolling out in February 2026. This report will analyze communication trends to flag sharp spikes in activity or contact with new domains, providing administrators with early visibility into potential data sharing or security risks from external collaboration. <a href="https://www.bleepingcomputer.com/news/security/microsoft-teams-to-warn-of-suspicious-traffic-with-external-domains/" target="_blank">More info</a></li>
+  <li><strong>Backslash Secures AI Model Context Protocol (MCP) Servers</strong>: Backslash Security launched an end-to-end solution for securing the **Model Context Protocol (MCP)** servers used by AI-native coding agents in developer environments. The solution addresses key threats like **Data leakage**, **Prompt Injection attacks**, and **Privilege Escalation** by operating on the developer workstation. An **MCP Proxy** intercepts these threats in real-time, blocking data leakage and enforcing secure configurations for the non-shared responsibility of MCP security. <a href="https://www.helpnetsecurity.com/2025/12/10/backslash-secures-mcp-servers-from-data-leakage-prompt-injection-and-privilege-abuse/" target="_blank">More info</a></li>
+ </ul>
+
+
+
+ <p style="text-align:center;">
+  <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+ </p>
+</body>
+</html>
