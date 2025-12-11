@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📰 Cybersecurity Newsfeed - 12/12/25</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
+    <style>
+        body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+        h1 { text-align: center; color: #c9a227; }
+        h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+        a { color: #c9a227; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        ul { list-style-type: disc; margin-left: 20px; }
+        li { margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <h1>Cybersecurity Newsfeed</h1>
+    <h2>📅 12/12/25</h2>
+
+    <h2>🛡️ Vulnerabilities</h2>
+    <ul>
+        <li><strong>CISA adds GeoServer XXE flaw (CVE-2025-58360) to KEV</strong>: CISA urged immediate remediation for a high-severity (CVSS 8.2) Improper Restriction of XML External Entity Reference (XXE) flaw in GeoServer. Affecting versions before 2.26.2 and 2.25.6, the bug allows an unauthenticated, remote attacker to exploit insufficient XML input sanitization in the <code>/geoserver/wms</code> GetMap operation. Successful exploitation can lead to arbitrary file disclosure, SSRF, and potential DoS. Users must update to GeoServer 2.25.6, 2.26.3, or 2.27.0. <a href="https://www.cisa.gov/news-events/alerts/2025/12/11/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">More info</a></li>
+
+        <li><strong>Google fixes 8th actively exploited Chrome zero-day (466192044)</strong>: Google issued emergency updates for its eighth actively exploited Chrome zero-day of the year. The high-severity flaw, tracked internally, is a likely buffer overflow vulnerability in the open-source **LibANGLE** graphics library's Metal renderer. Exploitation can lead to memory corruption, sensitive information leakage, and arbitrary code execution. Users are urged to update immediately to version 143.0.7499.109/.110 (Windows/Mac) and 143.0.7499.109 (Linux). <a href="https://www.bleepingcomputer.com/news/security/google-fixes-eighth-chrome-zero-day-exploited-in-attacks-in-2025/" target="_blank">More info</a></li>
+
+        <li><strong>Notepad++ fixes malicious update hijacking flaw</strong>: Notepad++ version 8.8.9 fixed a critical security weakness in its **WinGUp** update utility that allowed threat actors to push malicious executables. The vulnerability was a lack of validation for the downloaded installer's integrity and authenticity. The fix now enforces verification of the installer's digital signature and certificate before installation, addressing reports of targeted activity, particularly in East Asia. Users are urged to update immediately. <a href="https://www.bleepingcomputer.com/news/security/notepad-plus-plus-fixes-flaw-that-let-attackers-push-malicious-update-files/" target="_blank">More info</a></li>
+
+        <li><strong>GeminiJack zero-click flaw exfiltrated corporate data from Gemini Enterprise</strong>: A zero-click, indirect prompt injection flaw named **GeminiJack** was discovered in Gemini Enterprise. It exploited the **Retrieval-Augmented Generation (RAG)** architecture to exfiltrate sensitive corporate data from connected tools (Gmail, Docs, Calendar). Attackers planted hidden instructions in shared documents, which the RAG system then executed during routine searches, exfiltrating results via a disguised image request. Google quickly patched the issue by modifying the RAG processing pipeline. <a href="https://securityaffairs.com/185574/hacking/geminijack-zero-click-flaw-in-gemini-enterprise-allowed-corporate-data-exfiltration.html" target="_blank">More info</a></li>
+
+        <li><strong>IBM patches over 100 vulnerabilities, RCE risk in Guardium</strong>: IBM announced patches for over 100 product vulnerabilities, many critical and stemming from third-party components. This included fixes for six critical defects in **Storage Defender (Data Protect)**. A critical RCE risk (CVSS 9.8) was resolved in **IBM Guardium Data Protection** (CVE-2025-48913) due to an **Apache CXF** flaw, allowing untrusted users to potentially achieve Remote Code Execution by manipulating RMI or LDAP URLs. Users must apply updates immediately. <a href="https://www.securityweek.com/ibm-patches-over-100-vulnerabilities/" target="_blank">More info</a></li>
+    </ul>
+
+    <h2>🎯 Adversaries</h2>
+    <ul>
+        <li><strong>Hackers exploit hardcoded crypto keys in Gladinet CentreStack/Triofox RCE chain</strong>: A new, undocumented vulnerability in Gladinet's CentreStack and Triofox, actively exploited, stems from **hardcoded cryptographic keys** used in the <code>GladCtrl64.dll</code> file. Attackers use the keys to forge non-expiring 'Access Tickets,' impersonating users to access the <code>web.config</code> file. This is then chained with the ViewState deserialization flaw (CVE-2025-30406) to achieve RCE. At least nine organizations have been targeted. Users must upgrade to version 16.12.10420.56791 or newer and rotate machine keys. <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-gladinet-centrestack-cryptographic-flaw-in-rce-attacks/" target="_blank">More info</a></li>
+
+        <li><strong>Malicious VSCode extensions hid Rust trojan in fake PNG file</strong>: A covert supply chain attack used **19 malicious VSCode extensions** on the Marketplace since February. The malware was hidden in bundled <code>node_modules</code> and used a modified dependency to execute a JavaScript dropper upon IDE startup. The dropper deployed a Rust-based trojan and Windows living-off-the-land binary (cmstp.exe) from a file disguised as a **.PNG image**. All 19 extensions have been removed, and users are urged to scan their systems for compromise. <a href="https://www.bleepingcomputer.com/news/security/malicious-vscode-marketplace-extensions-hid-trojan-in-fake-png-file/" target="_blank">More info</a></li>
+    </ul>
+
+    <h2>📈 Trends</h2>
+    <ul>
+        <li><strong>New 'ConsentFix' attack hijacks Microsoft accounts via Azure CLI OAuth</strong>: The new 'ConsentFix' attack, a ClickFix social engineering variant, abuses the Azure CLI OAuth app flow to steal authorization codes, bypassing passwords and MFA. Victims are tricked into copying and pasting the OAuth authorization code (visible in a local-host URL after legitimate Microsoft sign-in) into an attacker-controlled phishing page. This grants the attacker powerful, first-party access to the victim’s Microsoft account via the Azure CLI app. Defenders should monitor for unusual Azure CLI login activity. <a href="https://www.bleepingcomputer.com/news/security/new-consentfix-attack-hijacks-microsoft-accounts-via-azure-cli/" target="_blank">More info</a></li>
+    </ul>
+
+    <h2>💥 Breaches & Leaks</h2>
+    <ul>
+        <li><strong>UK fines LastPass £1.2M over 2022 data breach</strong>: The UK's Information Commissioner's Office (ICO) fined LastPass £1.2 million for security failures leading to the 2022 breach that exposed personal data and encrypted password vaults of up to 1.6 million UK users. The ICO cited the company's failure to meet its obligation to protect customer data after an attacker compromised an employee's laptop and, subsequently, a senior employee's master password to steal database backups from GoTo. <a href="https://www.bleepingcomputer.com/news/security/uk-fines-lastpass-over-2022-data-breach-impacting-16-million-users/" target="_blank">More info</a></li>
+
+        <li><strong>Widespread SEO spam hits government and university websites</strong>: Dozens of government and university websites are affected by an SEO spam attack using two main methods. The first exploits input validation flaws to host keyword-stuffed malicious PDFs (promoting AI porn/crypto scams) on high-authority **.gov** or university domains. The second involves malicious redirects of official URLs to e-commerce or malware download sites. The Nevada Department of Transportation confirmed its incident stemmed from a supply chain flaw in a third-party government service provider, Granicus. <a href="https://www.404media.co/porn-is-being-injected-into-government-websites-via-malicious-pdfs/" target="_blank">More info</a></li>
+    </ul>
+
+
+    <p style="text-align:center;">
+        <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+    </p>
+</body>
+</html>
