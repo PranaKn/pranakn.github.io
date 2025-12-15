@@ -1,59 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📰 Cybersecurity Newsfeed - 12/12/25</title>
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
-    <style>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>📰 Cybersecurity Newsfeed - 15/12/25</title>
+     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
+     <style>
         body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
-        h1 { text-align: center; color: #c9a227; }
-        h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
-        a { color: #c9a227; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        ul { list-style-type: disc; margin-left: 20px; }
-        li { margin-bottom: 15px; }
-    </style>
+          h1 { text-align: center; color: #c9a227; }
+          h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+          a { color: #c9a227; text-decoration: none; }
+          a:hover { text-decoration: underline; }
+          ul { list-style-type: disc; margin-left: 20px; }
+          li { margin-bottom: 15px; }
+     </style>
 </head>
 <body>
-    <h1>Cybersecurity Newsfeed</h1>
-    <h2>📅 12/12/25</h2>
+     <h1>Cybersecurity Newsfeed</h1>
+     <h2>📅 15/12/25</h2>
 
-    <h2>🛡️ Vulnerabilities</h2>
-    <ul>
-        <li><strong>CISA adds GeoServer XXE flaw (CVE-2025-58360) to KEV</strong>: CISA urged immediate remediation for a high-severity (CVSS 8.2) Improper Restriction of XML External Entity Reference (XXE) flaw in GeoServer. Affecting versions before 2.26.2 and 2.25.6, the bug allows an unauthenticated, remote attacker to exploit insufficient XML input sanitization in the <code>/geoserver/wms</code> GetMap operation. Successful exploitation can lead to arbitrary file disclosure, SSRF, and potential DoS. Users must update to GeoServer 2.25.6, 2.26.3, or 2.27.0. <a href="https://www.cisa.gov/news-events/alerts/2025/12/11/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">More info</a></li>
+     <h2>🛡️ Vulnerabilities</h2>
+     <ul>
+          <li><strong>Apple patches two WebKit zero-days (CVE-2025-43529, CVE-2025-14174)</strong>: Apple released emergency updates for two WebKit zero-day flaws exploited in "extremely sophisticated" targeted attacks against iPhone 11 and later devices. CVE-2025-43529 is a use-after-free RCE, and CVE-2025-14174 is a memory corruption flaw. The latter, an out-of-bounds memory access in ANGLE, has been added to the CISA KEV Catalog, marking it as an urgent patching priority due to active, targeted exploitation consistent with spyware campaigns. <a href="https://www.bleepingcomputer.com/news/security/apple-fixes-two-zero-day-flaws-exploited-in-sophisticated-attacks/" target="_blank">More info</a></li>
 
-        <li><strong>Google fixes 8th actively exploited Chrome zero-day (466192044)</strong>: Google issued emergency updates for its eighth actively exploited Chrome zero-day of the year. The high-severity flaw, tracked internally, is a likely buffer overflow vulnerability in the open-source **LibANGLE** graphics library's Metal renderer. Exploitation can lead to memory corruption, sensitive information leakage, and arbitrary code execution. Users are urged to update immediately to version 143.0.7499.109/.110 (Windows/Mac) and 143.0.7499.109 (Linux). <a href="https://www.bleepingcomputer.com/news/security/google-fixes-eighth-chrome-zero-day-exploited-in-attacks-in-2025/" target="_blank">More info</a></li>
+          <li><strong>New Windows RasMan DoS zero-day re-enables EoP attack chain</strong>: 0patch researchers discovered a new, unpatched Windows zero-day in the Remote Access Connection Manager (RasMan) service that causes a Denial-of-Service (DoS) crash. Crucially, this DoS flaw can be chained with the previously patched RasMan privilege escalation vulnerability (CVE-2025-59230), which is listed in the CISA KEV Catalog. Since the EoP exploit requires the RasMan service to be stopped, this new zero-day re-enables the full attack path. 0patch is offering a free, unofficial micropatch to mitigate the risk. <a href="https://www.theregister.com/2025/12/12/microsoft_windows_rasman_dos_0day/" target="_blank">More info</a></li>
 
-        <li><strong>Notepad++ fixes malicious update hijacking flaw</strong>: Notepad++ version 8.8.9 fixed a critical security weakness in its **WinGUp** update utility that allowed threat actors to push malicious executables. The vulnerability was a lack of validation for the downloaded installer's integrity and authenticity. The fix now enforces verification of the installer's digital signature and certificate before installation, addressing reports of targeted activity, particularly in East Asia. Users are urged to update immediately. <a href="https://www.bleepingcomputer.com/news/security/notepad-plus-plus-fixes-flaw-that-let-attackers-push-malicious-update-files/" target="_blank">More info</a></li>
+          <li><strong>SEO poisoning leverages ChatGPT/Grok to spread AMOS Stealer</strong>: A new campaign is exploiting the trusted status of AI conversational tools like ChatGPT and Grok. Attackers use SEO poisoning and sponsored search results to surface fake, but credible, AI-generated conversations on official domains. These pages trick macOS users into copying and pasting a malicious, base64-encoded Terminal command that executes a bash script, bypassing Gatekeeper, and silently deploying the pervasive **Atomic macOS Stealer (AMOS)** to harvest Keychain passwords, browser data, and cryptocurrency wallets. <a href="https://www.malwarebytes.com/blog/news/2025/12/google-ads-funnel-mac-users-to-poisoned-ai-chats-that-spread-the-amos-infostealer" target="_blank">More info</a></li>
+     </ul>
 
-        <li><strong>GeminiJack zero-click flaw exfiltrated corporate data from Gemini Enterprise</strong>: A zero-click, indirect prompt injection flaw named **GeminiJack** was discovered in Gemini Enterprise. It exploited the **Retrieval-Augmented Generation (RAG)** architecture to exfiltrate sensitive corporate data from connected tools (Gmail, Docs, Calendar). Attackers planted hidden instructions in shared documents, which the RAG system then executed during routine searches, exfiltrating results via a disguised image request. Google quickly patched the issue by modifying the RAG processing pipeline. <a href="https://securityaffairs.com/185574/hacking/geminijack-zero-click-flaw-in-gemini-enterprise-allowed-corporate-data-exfiltration.html" target="_blank">More info</a></li>
+     <h2>🎯 Adversaries</h2>
+     <ul>
+          <li><strong>PayPal Subscriptions feature abused for high-value phishing scam</strong>: Scammers are exploiting PayPal's legitimate "Subscriptions" feature to send authentic-looking emails from the official **service@paypal.com** address with fake high-value purchase notifications. By embedding fraudulent messages and a cancellation phone number into the Customer service URL field of a genuine "automatic payment no longer active" email, the emails bypass spam filters. The scam tricks victims into calling the provided number, leading to potential fraud or malware installation. PayPal is working to mitigate the method. <a href="https://www.bleepingcomputer.com/news/security/beware-paypal-subscriptions-abused-to-send-fake-purchase-emails/" target="_blank">More info</a></li>
 
-        <li><strong>IBM patches over 100 vulnerabilities, RCE risk in Guardium</strong>: IBM announced patches for over 100 product vulnerabilities, many critical and stemming from third-party components. This included fixes for six critical defects in **Storage Defender (Data Protect)**. A critical RCE risk (CVSS 9.8) was resolved in **IBM Guardium Data Protection** (CVE-2025-48913) due to an **Apache CXF** flaw, allowing untrusted users to potentially achieve Remote Code Execution by manipulating RMI or LDAP URLs. Users must apply updates immediately. <a href="https://www.securityweek.com/ibm-patches-over-100-vulnerabilities/" target="_blank">More info</a></li>
-    </ul>
+          <li><strong>CyberVolk's VolkLocker RaaS fails due to hardcoded key flaw</strong>: The pro-Russia hacktivist group CyberVolk launched **VolkLocker**, a new Golang-based cross-platform Ransomware-as-a-Service (RaaS) targeting Windows and Linux/VMware ESXi. However, researchers found a critical implementation flaw: the ransomware uses a **hardcoded master key** for all file encryption and saves this key in plaintext to a file named <code>system_backup.key</code> in the <code>%TEMP%</code> directory, potentially allowing victims to recover their data. The RaaS is considered immature, despite having a destructive timer function. <a href="https://www.bleepingcomputer.com/news/security/cybervolks-ransomware-debut-stumbles-on-cryptography-weakness/" target="_blank">More info</a></li>
 
-    <h2>🎯 Adversaries</h2>
-    <ul>
-        <li><strong>Hackers exploit hardcoded crypto keys in Gladinet CentreStack/Triofox RCE chain</strong>: A new, undocumented vulnerability in Gladinet's CentreStack and Triofox, actively exploited, stems from **hardcoded cryptographic keys** used in the <code>GladCtrl64.dll</code> file. Attackers use the keys to forge non-expiring 'Access Tickets,' impersonating users to access the <code>web.config</code> file. This is then chained with the ViewState deserialization flaw (CVE-2025-30406) to achieve RCE. At least nine organizations have been targeted. Users must upgrade to version 16.12.10420.56791 or newer and rotate machine keys. <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-gladinet-centrestack-cryptographic-flaw-in-rce-attacks/" target="_blank">More info</a></li>
+          <li><strong>Fake GitHub OSINT tools distribute PyStoreRAT</strong>: A sophisticated, multi-stage campaign is distributing the novel **PyStoreRAT** (Remote Access Trojan) by abusing GitHub. Threat actors create popular, fake repositories masquerading as OSINT or security utilities, then insert a malicious Python/JavaScript loader via subtle "maintenance" commits. The loader executes a remote HTA file using <code>mshta.exe</code>, which deploys the modular PyStoreRAT. The RAT evades EDRs, establishes persistence, searches for cryptocurrency wallets, and delivers follow-on payloads like the Rhadamanthys info-stealer. <a href="https://www.cysecurity.news/2025/12/fake-github-osint-tools-spread.html" target="_blank">More info</a></li>
 
-        <li><strong>Malicious VSCode extensions hid Rust trojan in fake PNG file</strong>: A covert supply chain attack used **19 malicious VSCode extensions** on the Marketplace since February. The malware was hidden in bundled <code>node_modules</code> and used a modified dependency to execute a JavaScript dropper upon IDE startup. The dropper deployed a Rust-based trojan and Windows living-off-the-land binary (cmstp.exe) from a file disguised as a **.PNG image**. All 19 extensions have been removed, and users are urged to scan their systems for compromise. <a href="https://www.bleepingcomputer.com/news/security/malicious-vscode-marketplace-extensions-hid-trojan-in-fake-png-file/" target="_blank">More info</a></li>
-    </ul>
+          <li><strong>Agent Tesla hidden in pirated movie subtitle files (.srt)</strong>: A highly stealthy campaign is distributing the persistent info-stealer **Agent Tesla** by concealing malicious PowerShell scripts within subtitle files of pirated movie torrents. The infection chain starts with a shortcut file (.lnk) that, when executed, triggers a command to extract and run a script hidden inside the .srt file. This multi-stage process ultimately bypasses detection and installs the Agent Tesla payload directly into memory, which specializes in stealing credentials from browsers, email, FTP, and VPN clients. <a href="https://www.bleepingcomputer.com/news/security/fake-one-battle-after-another-torrent-hides-malware-in-subtitles/" target="_blank">More info</a></li>
 
-    <h2>📈 Trends</h2>
-    <ul>
-        <li><strong>New 'ConsentFix' attack hijacks Microsoft accounts via Azure CLI OAuth</strong>: The new 'ConsentFix' attack, a ClickFix social engineering variant, abuses the Azure CLI OAuth app flow to steal authorization codes, bypassing passwords and MFA. Victims are tricked into copying and pasting the OAuth authorization code (visible in a local-host URL after legitimate Microsoft sign-in) into an attacker-controlled phishing page. This grants the attacker powerful, first-party access to the victim’s Microsoft account via the Azure CLI app. Defenders should monitor for unusual Azure CLI login activity. <a href="https://www.bleepingcomputer.com/news/security/new-consentfix-attack-hijacks-microsoft-accounts-via-azure-cli/" target="_blank">More info</a></li>
-    </ul>
+          <li><strong>Four new PhaaS kits use AI, stealth, and MitB for credential theft</strong>: The industrialization of cybercrime is evidenced by four new Phishing-as-a-Service (PhaaS) kits. **BlackForce** uses Man-in-the-Browser (MitB) to bypass MFA/OTPs. **GhostFrame** embeds malicious pages in constantly-changing iframes for stealth. **Spiderman** is a full-stack framework targeting dozens of European banks. **InboxPrime AI** leverages generative AI to automate mass-mailing campaigns, creating highly convincing, unique emails to bypass traditional filters. <a href="https://thehackernews.com/2025/12/new-advanced-phishing-kits-use-ai-and.html" target="_blank">More info</a></li>
 
-    <h2>💥 Breaches & Leaks</h2>
-    <ul>
-        <li><strong>UK fines LastPass £1.2M over 2022 data breach</strong>: The UK's Information Commissioner's Office (ICO) fined LastPass £1.2 million for security failures leading to the 2022 breach that exposed personal data and encrypted password vaults of up to 1.6 million UK users. The ICO cited the company's failure to meet its obligation to protect customer data after an attacker compromised an employee's laptop and, subsequently, a senior employee's master password to steal database backups from GoTo. <a href="https://www.bleepingcomputer.com/news/security/uk-fines-lastpass-over-2022-data-breach-impacting-16-million-users/" target="_blank">More info</a></li>
+          <li><strong>Hamas-affiliated Wirte group upgrades toolkit for cyber espionage</strong>: The Hamas-affiliated threat group Wirte (Ashen Lepus) has expanded its persistent cyber espionage, now targeting government and diplomatic entities in nations like Oman and Morocco. The group upgraded its toolkit with the new **AshTag** malware suite, which features enhanced stealth and modularity. The infection chain uses phishing lures and exploits **DLL side-loading**, with the multi-stage loader evading detection by embedding secondary payloads within outwardly benign C2 HTML tags, including commented-out sections. <a href="https://www.darkreading.com/cyberattacks-data-breaches/hamas-hackers-middle-eastern-diplomats" target="_blank">More info</a></li>
+     </ul>
 
-        <li><strong>Widespread SEO spam hits government and university websites</strong>: Dozens of government and university websites are affected by an SEO spam attack using two main methods. The first exploits input validation flaws to host keyword-stuffed malicious PDFs (promoting AI porn/crypto scams) on high-authority **.gov** or university domains. The second involves malicious redirects of official URLs to e-commerce or malware download sites. The Nevada Department of Transportation confirmed its incident stemmed from a supply chain flaw in a third-party government service provider, Granicus. <a href="https://www.404media.co/porn-is-being-injected-into-government-websites-via-malicious-pdfs/" target="_blank">More info</a></li>
-    </ul>
+     <h2>📈 Trends</h2>
+     <ul>
+          <li><strong>Offensive AI is accelerating cyberattacks; NDR systems are critical</strong>: Adversarial AI-based attacks are achieving unprecedented speed and scale in orchestrating campaigns, automating reconnaissance and lateral movement, which can overwhelm manual security methods. This shift necessitates a Zero Trust model and highlights the critical role of **Network Detection and Response (NDR)** systems. NDR uses real-time behavioral analytics and machine learning on network traffic to identify subtle anomalies, detect fast-moving polymorphic attacks, and reveal lateral threat movement that traditional tools miss. <a href="https://www.bleepingcomputer.com/news/security/ai-is-accelerating-cyberattacks-is-your-network-prepared/" target="_blank">More info</a></li>
 
+          <li><strong>Fake Microsoft Teams/Google Meet downloads spread Oyster Backdoor</strong>: A malvertising and SEO poisoning campaign is targeting users, particularly in the financial sector, by disguising malware as legitimate office tools like Microsoft Teams and Google Meet. Attackers direct victims to malicious download sites that deliver the **Oyster backdoor** (aka Broomstick/CleanUpLoader). Oyster is a preferred initial access tool for human-operated ransomware groups, including **Rhysida** and **Vanilla Tempest**, who leverage it to establish a foothold and conduct reconnaissance before deploying ransomware payloads. <a href="https://hackread.com/fake-microsoft-teams-google-meet-download-oyster-backdoor/" target="_blank">More info</a></li>
 
-    <p style="text-align:center;">
-        <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
-    </p>
+          <li><strong>Job lure campaign uses DLL side-loading to spread PureRAT</strong>: A new email campaign is targeting job seekers and HR professionals with job lure attachments (e.g., <code>Overview_of_Work_Expectations.zip</code>) to spread the **PureRAT** (ResolverRAT) Remote Access Trojan. The attack employs a sophisticated chain that begins with **DLL side-loading**, abusing a renamed Foxit PDF Reader executable to load a malicious DLL. The infection then extracts a hidden, bundled Python environment and runs an encoded Python script to launch the full-featured, modular PureRAT payload. <a href="https://www.trendmicro.com/en_us/research/25/l/valleyrat-campaign.html" target="_blank">More info</a></li>
+     </ul>
+
+     <h2>💥 Breaches & Leaks</h2>
+     <ul>
+          <li><strong>Unsecured 16TB MongoDB exposes 4.3 billion professional records</strong>: An enormous, unsecured 16TB MongoDB database was discovered, exposing approximately 4.3 billion professional records, with nearly two billion containing Personally Identifiable Information (PII) like names, emails, phone numbers, and job roles, scraped from sources like LinkedIn. This massive, structured dataset is highly dangerous as it enables large-scale, highly personalized **AI-driven social engineering attacks**, such as phishing and CEO fraud. The database was secured two days after the owner was notified. <a href="https://securityaffairs.com/185661/data-breach/experts-found-an-unsecured-16tb-database-containing-4-3b-professional-records.html" target="_blank">More info</a></li>
+     </ul>
+
+     <h2>📚 Others</h2>
+     <ul>
+          <li><strong>Mobile network operators facing $19B annual security cost due to regulatory friction</strong>: Mobile network operators are spending up to $19 billion annually on security due to escalating attack volumes and significant friction from complex, uneven regulatory demands across multiple nations. The GSMA argues that this lack of alignment and focus on input-driven compliance, rather than risk outcomes, diverts resources from effective threat detection and response. The organization advocates for coherent, risk-based policies aligned with global standards like ISO 27001. <a href="https://www.helpnetsecurity.com/2025/12/12/gsma-mobile-network-security-pressures-report/" target="_blank">More info</a></li>
+     </ul>
+
+     <p style="text-align:center;">
+          <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+     </p>
 </body>
 </html>
