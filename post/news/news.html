@@ -1,69 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>📰 Cybersecurity Newsfeed - 15/12/25</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📰 Cybersecurity Newsfeed - 16/12/25</title>
      <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
-     <style>
+    <style>
         body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
-          h1 { text-align: center; color: #c9a227; }
-          h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
-          a { color: #c9a227; text-decoration: none; }
-          a:hover { text-decoration: underline; }
-          ul { list-style-type: disc; margin-left: 20px; }
-          li { margin-bottom: 15px; }
-     </style>
+        h1 { text-align: center; color: #c9a227; }
+        h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+        a { color: #c9a227; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        ul { list-style-type: disc; margin-left: 20px; }
+        li { margin-bottom: 15px; }
+    </style>
 </head>
 <body>
-     <h1>Cybersecurity Newsfeed</h1>
-     <h2>📅 15/12/25</h2>
+    <h1>Cybersecurity Newsfeed</h1>
+    <h2>📅 16/12/25</h2>
 
-     <h2>🛡️ Vulnerabilities</h2>
-     <ul>
-          <li><strong>Apple patches two WebKit zero-days (CVE-2025-43529, CVE-2025-14174)</strong>: Apple released emergency updates for two WebKit zero-day flaws exploited in "extremely sophisticated" targeted attacks against iPhone 11 and later devices. CVE-2025-43529 is a use-after-free RCE, and CVE-2025-14174 is a memory corruption flaw. The latter, an out-of-bounds memory access in ANGLE, has been added to the CISA KEV Catalog, marking it as an urgent patching priority due to active, targeted exploitation consistent with spyware campaigns. <a href="https://www.bleepingcomputer.com/news/security/apple-fixes-two-zero-day-flaws-exploited-in-sophisticated-attacks/" target="_blank">More info</a></li>
+    <h2>🛡️ Vulnerabilities</h2>
+    <ul>
+        <li><strong>Urban VPN Proxy Steals AI Chatbot Data</strong>: A widely used Google Chrome and Edge extension, **Urban VPN Proxy**, with over eight million installs, was caught harvesting all user prompts and responses from major AI chatbots (e.g., ChatGPT, Gemini). Version 5.5.0 injected a JavaScript executor to override browser APIs, capturing and exfiltrating non-anonymized conversation data, including potentially sensitive details, to remote servers for monetization. The developer is affiliated with an ad intelligence firm, highlighting a significant breach of user trust despite claims of privacy protection. <a href="https://thehackernews.com/2025/12/featured-chrome-browser-extension.html" target="_blank">More info</a></li>
 
-          <li><strong>New Windows RasMan DoS zero-day re-enables EoP attack chain</strong>: 0patch researchers discovered a new, unpatched Windows zero-day in the Remote Access Connection Manager (RasMan) service that causes a Denial-of-Service (DoS) crash. Crucially, this DoS flaw can be chained with the previously patched RasMan privilege escalation vulnerability (CVE-2025-59230), which is listed in the CISA KEV Catalog. Since the EoP exploit requires the RasMan service to be stopped, this new zero-day re-enables the full attack path. 0patch is offering a free, unofficial micropatch to mitigate the risk. <a href="https://www.theregister.com/2025/12/12/microsoft_windows_rasman_dos_0day/" target="_blank">More info</a></li>
+        <li><strong>Atlassian Patches Maximum-Severity XXE Flaw (CVE-2025-66516)</strong>: Atlassian released a critical update addressing dozens of flaws, most notably a **CVSS 10.0** XML External Entity (XXE) injection vulnerability in the Apache Tika content analysis toolkit used by Jira, Confluence, and Bamboo. The flaw allows an unauthenticated remote attacker to embed a malicious XFA file in a PDF, leading to information disclosure, Server-Side Request Forgery (SSRF), or potentially Remote Code Execution (RCE) by accessing internal resources. The fix is in `tika-core` version 3.2.2 or later. <a href="https://securityaffairs.com/185710/security/atlassian-fixed-maximum-severity-flaw-cve-2025-66516-in-apache-tika.html" target="_blank">More info</a></li>
+    </ul>
 
-          <li><strong>SEO poisoning leverages ChatGPT/Grok to spread AMOS Stealer</strong>: A new campaign is exploiting the trusted status of AI conversational tools like ChatGPT and Grok. Attackers use SEO poisoning and sponsored search results to surface fake, but credible, AI-generated conversations on official domains. These pages trick macOS users into copying and pasting a malicious, base64-encoded Terminal command that executes a bash script, bypassing Gatekeeper, and silently deploying the pervasive **Atomic macOS Stealer (AMOS)** to harvest Keychain passwords, browser data, and cryptocurrency wallets. <a href="https://www.malwarebytes.com/blog/news/2025/12/google-ads-funnel-mac-users-to-poisoned-ai-chats-that-spread-the-amos-infostealer" target="_blank">More info</a></li>
-     </ul>
+    <h2>🎯 Adversaries</h2>
+    <ul>
+        <li><strong>SantaStealer MaaS Promotion</strong>: A new Malware-as-a-Service (MaaS) offering, **SantaStealer**, is being promoted as a rebranded, highly functional information stealer. Sold on a subscription basis for up to $300/month, the stealer targets credentials, cookies, and data from browsers, Telegram, Discord, Steam, and cryptocurrency wallets using 14 modules. Despite its aggressive marketing of anti-detection features, the current samples are easily detectable, suggesting poor operational security by the Russian-speaking developer, though its use of an embedded executable to bypass Chrome’s App-Bound Encryption is notable. <a href="https://www.bleepingcomputer.com/news/security/new-santastealer-malware-steals-data-from-browsers-crypto-wallets/" target="_blank">More info</a></li>
 
-     <h2>🎯 Adversaries</h2>
-     <ul>
-          <li><strong>PayPal Subscriptions feature abused for high-value phishing scam</strong>: Scammers are exploiting PayPal's legitimate "Subscriptions" feature to send authentic-looking emails from the official **service@paypal.com** address with fake high-value purchase notifications. By embedding fraudulent messages and a cancellation phone number into the Customer service URL field of a genuine "automatic payment no longer active" email, the emails bypass spam filters. The scam tricks victims into calling the provided number, leading to potential fraud or malware installation. PayPal is working to mitigate the method. <a href="https://www.bleepingcomputer.com/news/security/beware-paypal-subscriptions-abused-to-send-fake-purchase-emails/" target="_blank">More info</a></li>
+        <li><strong>Operation MoneyMount-ISO Targets Russian Finance</strong>: A new phishing campaign, **Operation MoneyMount-ISO**, is actively targeting Russian-speaking finance and payroll sectors with the **Phantom information-stealing malware**. The attack bypasses email defenses by using a ZIP archive containing a malicious ISO file disguised as a "Confirmation of Bank Transfer." When opened, the ISO auto-mounts and executes a staged payload that injects Phantom Stealer into memory, exfiltrating a wide range of sensitive data via multiple channels, including Telegram bots and Discord webhooks. <a href="https://www.infosecurity-magazine.com/news/russian-phishing-phantom-stealer/" target="_blank">More info</a></li>
 
-          <li><strong>CyberVolk's VolkLocker RaaS fails due to hardcoded key flaw</strong>: The pro-Russia hacktivist group CyberVolk launched **VolkLocker**, a new Golang-based cross-platform Ransomware-as-a-Service (RaaS) targeting Windows and Linux/VMware ESXi. However, researchers found a critical implementation flaw: the ransomware uses a **hardcoded master key** for all file encryption and saves this key in plaintext to a file named <code>system_backup.key</code> in the <code>%TEMP%</code> directory, potentially allowing victims to recover their data. The RaaS is considered immature, despite having a destructive timer function. <a href="https://www.bleepingcomputer.com/news/security/cybervolks-ransomware-debut-stumbles-on-cryptography-weakness/" target="_blank">More info</a></li>
+        <li><strong>VolkLocker Ransomware Flaw Exposed</strong>: The pro-Russia hacktivist group **CyberVolk** relaunched its Ransomware-as-a-Service (RaaS) offering, **VolkLocker** (aka CyberVolk 2.x), supporting both Windows and Linux systems with sophisticated Telegram automation for C2. However, a critical implementation flaw was discovered: the **AES-256 master encryption key is written in plaintext** to a file in the victim's `%TEMP%` folder, allowing victims to self-decrypt their files without paying the ransom. <a href="https://www.darkreading.com/threat-intelligence/flaw-hacktivist-ransomware-victims-decrypt-files" target="_blank">More info</a></li>
+    </ul>
 
-          <li><strong>Fake GitHub OSINT tools distribute PyStoreRAT</strong>: A sophisticated, multi-stage campaign is distributing the novel **PyStoreRAT** (Remote Access Trojan) by abusing GitHub. Threat actors create popular, fake repositories masquerading as OSINT or security utilities, then insert a malicious Python/JavaScript loader via subtle "maintenance" commits. The loader executes a remote HTA file using <code>mshta.exe</code>, which deploys the modular PyStoreRAT. The RAT evades EDRs, establishes persistence, searches for cryptocurrency wallets, and delivers follow-on payloads like the Rhadamanthys info-stealer. <a href="https://www.cysecurity.news/2025/12/fake-github-osint-tools-spread.html" target="_blank">More info</a></li>
+    <h2>💥 Breaches & Leaks</h2>
+    <ul>
+        <li><strong>ShinyHunters Extorts PornHub via Mixpanel Breach</strong>: The **ShinyHunters extortion group** is compromising PornHub by holding the historical search and watch data of its Premium members hostage after a data breach at analytics provider **Mixpanel**. The November 8th breach, via SMS phishing, allegedly stole 94GB of data with over 200 million records, including Premium member email addresses, activity type, location, video URLs, and associated keywords. PornHub confirmed the breach was limited to the third-party vendor, with no core systems, passwords, or payment info affected. <a href="https://www.bleepingcomputer.com/news/security/pornhub-extorted-after-hackers-steal-premium-member-activity-data/" target="_blank">More info</a></li>
 
-          <li><strong>Agent Tesla hidden in pirated movie subtitle files (.srt)</strong>: A highly stealthy campaign is distributing the persistent info-stealer **Agent Tesla** by concealing malicious PowerShell scripts within subtitle files of pirated movie torrents. The infection chain starts with a shortcut file (.lnk) that, when executed, triggers a command to extract and run a script hidden inside the .srt file. This multi-stage process ultimately bypasses detection and installs the Agent Tesla payload directly into memory, which specializes in stealing credentials from browsers, email, FTP, and VPN clients. <a href="https://www.bleepingcomputer.com/news/security/fake-one-battle-after-another-torrent-hides-malware-in-subtitles/" target="_blank">More info</a></li>
+        <li><strong>SoundCloud Breach Confirmed by ShinyHunters</strong>: Audio streaming platform SoundCloud confirmed a recent security breach of an ancillary service dashboard, attributed to the **ShinyHunters extortion gang**, which disrupted VPN connectivity and caused temporary DoS attacks. The breach impacted about 20% of users (28 million accounts), exposing only email addresses and publicly visible profile information; no sensitive data like financial details or passwords were stolen. The company has blocked unauthorized access and implemented stronger security controls. <a href="https://www.bleepingcomputer.com/news/security/soundcloud-confirms-breach-after-member-data-stolen-vpn-access-disrupted/" target="_blank">More info</a></li>
 
-          <li><strong>Four new PhaaS kits use AI, stealth, and MitB for credential theft</strong>: The industrialization of cybercrime is evidenced by four new Phishing-as-a-Service (PhaaS) kits. **BlackForce** uses Man-in-the-Browser (MitB) to bypass MFA/OTPs. **GhostFrame** embeds malicious pages in constantly-changing iframes for stealth. **Spiderman** is a full-stack framework targeting dozens of European banks. **InboxPrime AI** leverages generative AI to automate mass-mailing campaigns, creating highly convincing, unique emails to bypass traditional filters. <a href="https://thehackernews.com/2025/12/new-advanced-phishing-kits-use-ai-and.html" target="_blank">More info</a></li>
+        <li><strong>Askul Corporation Data Theft via RansomHouse</strong>: Japanese e-commerce firm Askul confirmed the **RansomHouse extortion group** stole approximately 740,000 customer and partner records in an October ransomware attack that crippled its logistics. The compromised data includes records from business customers, individual customers, partners, and employees. The initial breach was traced to an outsourced partner’s administrator account lacking Multi-Factor Authentication (MFA). Askul did not pay the ransom, and system restoration remains ongoing. <a href="https://www.bleepingcomputer.com/news/security/askul-confirms-theft-of-740k-customer-records-in-ransomhouse-attack/" target="_blank">More info</a></li>
 
-          <li><strong>Hamas-affiliated Wirte group upgrades toolkit for cyber espionage</strong>: The Hamas-affiliated threat group Wirte (Ashen Lepus) has expanded its persistent cyber espionage, now targeting government and diplomatic entities in nations like Oman and Morocco. The group upgraded its toolkit with the new **AshTag** malware suite, which features enhanced stealth and modularity. The infection chain uses phishing lures and exploits **DLL side-loading**, with the multi-stage loader evading detection by embedding secondary payloads within outwardly benign C2 HTML tags, including commented-out sections. <a href="https://www.darkreading.com/cyberattacks-data-breaches/hamas-hackers-middle-eastern-diplomats" target="_blank">More info</a></li>
-     </ul>
+        <li><strong>French Interior Ministry E-mail Server Attack</strong>: The French Ministry of the Interior confirmed a cyberattack on its e-mail servers, detected overnight between December 11 and 12, allowing an unauthorized attacker to access a number of document files. While it is unconfirmed if data was stolen, the ministry implemented heightened security protocols and launched an investigation, considering foreign interference or cybercrime as potential origins. <a href="https://www.bleepingcomputer.com/news/security/france-interior-ministry-confirms-cyberattack-on-email-servers/" target="_blank">More info</a></li>
+    </ul>
 
-     <h2>📈 Trends</h2>
-     <ul>
-          <li><strong>Offensive AI is accelerating cyberattacks; NDR systems are critical</strong>: Adversarial AI-based attacks are achieving unprecedented speed and scale in orchestrating campaigns, automating reconnaissance and lateral movement, which can overwhelm manual security methods. This shift necessitates a Zero Trust model and highlights the critical role of **Network Detection and Response (NDR)** systems. NDR uses real-time behavioral analytics and machine learning on network traffic to identify subtle anomalies, detect fast-moving polymorphic attacks, and reveal lateral threat movement that traditional tools miss. <a href="https://www.bleepingcomputer.com/news/security/ai-is-accelerating-cyberattacks-is-your-network-prepared/" target="_blank">More info</a></li>
+    <h2>📚 Others</h2>
+    <ul>
+        <li><strong>Google Discontinues Dark Web Report Feature</strong>: Google is shutting down its "dark web report" security tool, which notified users of compromised personal information found in illicit data dumps. The company cites user feedback that the reports did not provide "helpful next steps." Monitoring ceases on January 15, 2026, and the full report data will be deleted by February 16, 2026. Google encourages users to use integrated tools like Password Manager, Password Checkup, 2-Step Verification, and the "Results about you" feature. <a href="https://www.bleepingcomputer.com/news/google/google-is-shutting-down-its-dark-web-report-feature-in-january/" target="_blank">More info</a></li>
 
-          <li><strong>Fake Microsoft Teams/Google Meet downloads spread Oyster Backdoor</strong>: A malvertising and SEO poisoning campaign is targeting users, particularly in the financial sector, by disguising malware as legitimate office tools like Microsoft Teams and Google Meet. Attackers direct victims to malicious download sites that deliver the **Oyster backdoor** (aka Broomstick/CleanUpLoader). Oyster is a preferred initial access tool for human-operated ransomware groups, including **Rhysida** and **Vanilla Tempest**, who leverage it to establish a foothold and conduct reconnaissance before deploying ransomware payloads. <a href="https://hackread.com/fake-microsoft-teams-google-meet-download-oyster-backdoor/" target="_blank">More info</a></li>
+        <li><strong>Microsoft Updates Break Message Queuing (MSMQ)</strong>: Microsoft confirmed that its December 2025 security updates (e.g., KB5071546) are causing widespread failures in the **Message Queuing (MSMQ) service** on Windows 10 and Server 2016/2019. The issue stems from security model changes that now require non-administrative MSMQ users to have write access to the typically restricted `C:\\Windows\\System32\\MSMQ\\storage` folder, leading to application errors. A fix timeline is unavailable, forcing administrators to consider a risky update rollback. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-december-security-updates-cause-message-queuing-failures/" target="_blank">More info</a></li>
+    </ul>
 
-          <li><strong>Job lure campaign uses DLL side-loading to spread PureRAT</strong>: A new email campaign is targeting job seekers and HR professionals with job lure attachments (e.g., <code>Overview_of_Work_Expectations.zip</code>) to spread the **PureRAT** (ResolverRAT) Remote Access Trojan. The attack employs a sophisticated chain that begins with **DLL side-loading**, abusing a renamed Foxit PDF Reader executable to load a malicious DLL. The infection then extracts a hidden, bundled Python environment and runs an encoded Python script to launch the full-featured, modular PureRAT payload. <a href="https://www.trendmicro.com/en_us/research/25/l/valleyrat-campaign.html" target="_blank">More info</a></li>
-     </ul>
-
-     <h2>💥 Breaches & Leaks</h2>
-     <ul>
-          <li><strong>Unsecured 16TB MongoDB exposes 4.3 billion professional records</strong>: An enormous, unsecured 16TB MongoDB database was discovered, exposing approximately 4.3 billion professional records, with nearly two billion containing Personally Identifiable Information (PII) like names, emails, phone numbers, and job roles, scraped from sources like LinkedIn. This massive, structured dataset is highly dangerous as it enables large-scale, highly personalized **AI-driven social engineering attacks**, such as phishing and CEO fraud. The database was secured two days after the owner was notified. <a href="https://securityaffairs.com/185661/data-breach/experts-found-an-unsecured-16tb-database-containing-4-3b-professional-records.html" target="_blank">More info</a></li>
-     </ul>
-
-     <h2>📚 Others</h2>
-     <ul>
-          <li><strong>Mobile network operators facing $19B annual security cost due to regulatory friction</strong>: Mobile network operators are spending up to $19 billion annually on security due to escalating attack volumes and significant friction from complex, uneven regulatory demands across multiple nations. The GSMA argues that this lack of alignment and focus on input-driven compliance, rather than risk outcomes, diverts resources from effective threat detection and response. The organization advocates for coherent, risk-based policies aligned with global standards like ISO 27001. <a href="https://www.helpnetsecurity.com/2025/12/12/gsma-mobile-network-security-pressures-report/" target="_blank">More info</a></li>
-     </ul>
-
-     <p style="text-align:center;">
-          <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
-     </p>
+    <p style="text-align:center;">
+        <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+    </p>
 </body>
 </html>
