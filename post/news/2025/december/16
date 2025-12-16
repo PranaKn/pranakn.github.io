@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 16/12/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 16/12/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Urban VPN Proxy Steals AI Chatbot Data</strong>: A widely used Google Chrome and Edge extension, **Urban VPN Proxy**, with over eight million installs, was caught harvesting all user prompts and responses from major AI chatbots (e.g., ChatGPT, Gemini). Version 5.5.0 injected a JavaScript executor to override browser APIs, capturing and exfiltrating non-anonymized conversation data, including potentially sensitive details, to remote servers for monetization. The developer is affiliated with an ad intelligence firm, highlighting a significant breach of user trust despite claims of privacy protection. <a href="https://thehackernews.com/2025/12/featured-chrome-browser-extension.html" target="_blank">More info</a></li>
+
+    <li><strong>Atlassian Patches Maximum-Severity XXE Flaw (CVE-2025-66516)</strong>: Atlassian released a critical update addressing dozens of flaws, most notably a **CVSS 10.0** XML External Entity (XXE) injection vulnerability in the Apache Tika content analysis toolkit used by Jira, Confluence, and Bamboo. The flaw allows an unauthenticated remote attacker to embed a malicious XFA file in a PDF, leading to information disclosure, Server-Side Request Forgery (SSRF), or potentially Remote Code Execution (RCE) by accessing internal resources. The fix is in `tika-core` version 3.2.2 or later. <a href="https://securityaffairs.com/185710/security/atlassian-fixed-maximum-severity-flaw-cve-2025-66516-in-apache-tika.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>SantaStealer MaaS Promotion</strong>: A new Malware-as-a-Service (MaaS) offering, **SantaStealer**, is being promoted as a rebranded, highly functional information stealer. Sold on a subscription basis for up to $300/month, the stealer targets credentials, cookies, and data from browsers, Telegram, Discord, Steam, and cryptocurrency wallets using 14 modules. Despite its aggressive marketing of anti-detection features, the current samples are easily detectable, suggesting poor operational security by the Russian-speaking developer, though its use of an embedded executable to bypass Chrome’s App-Bound Encryption is notable. <a href="https://www.bleepingcomputer.com/news/security/new-santastealer-malware-steals-data-from-browsers-crypto-wallets/" target="_blank">More info</a></li>
+
+    <li><strong>Operation MoneyMount-ISO Targets Russian Finance</strong>: A new phishing campaign, **Operation MoneyMount-ISO**, is actively targeting Russian-speaking finance and payroll sectors with the **Phantom information-stealing malware**. The attack bypasses email defenses by using a ZIP archive containing a malicious ISO file disguised as a "Confirmation of Bank Transfer." When opened, the ISO auto-mounts and executes a staged payload that injects Phantom Stealer into memory, exfiltrating a wide range of sensitive data via multiple channels, including Telegram bots and Discord webhooks. <a href="https://www.infosecurity-magazine.com/news/russian-phishing-phantom-stealer/" target="_blank">More info</a></li>
+
+    <li><strong>VolkLocker Ransomware Flaw Exposed</strong>: The pro-Russia hacktivist group **CyberVolk** relaunched its Ransomware-as-a-Service (RaaS) offering, **VolkLocker** (aka CyberVolk 2.x), supporting both Windows and Linux systems with sophisticated Telegram automation for C2. However, a critical implementation flaw was discovered: the **AES-256 master encryption key is written in plaintext** to a file in the victim's `%TEMP%` folder, allowing victims to self-decrypt their files without paying the ransom. <a href="https://www.darkreading.com/threat-intelligence/flaw-hacktivist-ransomware-victims-decrypt-files" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+      </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>ShinyHunters Extorts PornHub via Mixpanel Breach</strong>: The **ShinyHunters extortion group** is compromising PornHub by holding the historical search and watch data of its Premium members hostage after a data breach at analytics provider **Mixpanel**. The November 8th breach, via SMS phishing, allegedly stole 94GB of data with over 200 million records, including Premium member email addresses, activity type, location, video URLs, and associated keywords. PornHub confirmed the breach was limited to the third-party vendor, with no core systems, passwords, or payment info affected. <a href="https://www.bleepingcomputer.com/news/security/pornhub-extorted-after-hackers-steal-premium-member-activity-data/" target="_blank">More info</a></li>
+
+    <li><strong>SoundCloud Breach Confirmed by ShinyHunters</strong>: Audio streaming platform SoundCloud confirmed a recent security breach of an ancillary service dashboard, attributed to the **ShinyHunters extortion gang**, which disrupted VPN connectivity and caused temporary DoS attacks. The breach impacted about 20% of users (28 million accounts), exposing only email addresses and publicly visible profile information; no sensitive data like financial details or passwords were stolen. The company has blocked unauthorized access and implemented stronger security controls. <a href="https://www.bleepingcomputer.com/news/security/soundcloud-confirms-breach-after-member-data-stolen-vpn-access-disrupted/" target="_blank">More info</a></li>
+
+    <li><strong>Askul Corporation Data Theft via RansomHouse</strong>: Japanese e-commerce firm Askul confirmed the **RansomHouse extortion group** stole approximately 740,000 customer and partner records in an October ransomware attack that crippled its logistics. The compromised data includes records from business customers, individual customers, partners, and employees. The initial breach was traced to an outsourced partner’s administrator account lacking Multi-Factor Authentication (MFA). Askul did not pay the ransom, and system restoration remains ongoing. <a href="https://www.bleepingcomputer.com/news/security/askul-confirms-theft-of-740k-customer-records-in-ransomhouse-attack/" target="_blank">More info</a></li>
+
+    <li><strong>French Interior Ministry E-mail Server Attack</strong>: The French Ministry of the Interior confirmed a cyberattack on its e-mail servers, detected overnight between December 11 and 12, allowing an unauthorized attacker to access a number of document files. While it is unconfirmed if data was stolen, the ministry implemented heightened security protocols and launched an investigation, considering foreign interference or cybercrime as potential origins. <a href="https://www.bleepingcomputer.com/news/security/france-interior-ministry-confirms-cyberattack-on-email-servers/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>Google Discontinues Dark Web Report Feature</strong>: Google is shutting down its "dark web report" security tool, which notified users of compromised personal information found in illicit data dumps. The company cites user feedback that the reports did not provide "helpful next steps." Monitoring ceases on January 15, 2026, and the full report data will be deleted by February 16, 2026. Google encourages users to use integrated tools like Password Manager, Password Checkup, 2-Step Verification, and the "Results about you" feature. <a href="https://www.bleepingcomputer.com/news/google/google-is-shutting-down-its-dark-web-report-feature-in-january/" target="_blank">More info</a></li>
+
+    <li><strong>Microsoft Updates Break Message Queuing (MSMQ)</strong>: Microsoft confirmed that its December 2025 security updates (e.g., KB5071546) are causing widespread failures in the **Message Queuing (MSMQ) service** on Windows 10 and Server 2016/2019. The issue stems from security model changes that now require non-administrative MSMQ users to have write access to the typically restricted `C:\\Windows\\System32\\MSMQ\\storage` folder, leading to application errors. A fix timeline is unavailable, forcing administrators to consider a risky update rollback. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-december-security-updates-cause-message-queuing-failures/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
