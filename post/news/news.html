@@ -1,65 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>📰 Cybersecurity Newsfeed - 17/12/25</title>
-     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">     
-     <style>
-        body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }          
-          h1 { text-align: center; color: #c9a227; }
-          h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
-          a { color: #c9a227; text-decoration: none; }
-          a:hover { text-decoration: underline; }
-          ul { list-style-type: disc; margin-left: 20px; }
-          li { margin-bottom: 15px; }
-     </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 18/12/25</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
 </head>
 <body>
-     <h1>Cybersecurity Newsfeed</h1>
-     <h2>📅 17/12/25</h2>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 18/12/25</h2>
 
-     <h2>🛡️ Vulnerabilities</h2>
-     <ul>
-          <li><strong>Fortinet FortiCloud SSO Authentication Bypass (CVE-2025-59718/59719)</strong>: Fortinet is urging customers to patch two critical-severity authentication bypass vulnerabilities, actively being exploited in the wild. Both flaws stem from improper verification of cryptographic signatures in SAML messages, allowing an unauthenticated attacker to bypass FortiCloud Single Sign-On (SSO) login on FortiOS, FortiProxy, FortiSwitchManager, and FortiWeb products. Attackers are leveraging malicious SSO logins to gain administrative access and exfiltrate critical system configuration files. CISA added both CVEs to its KEV Catalog, mandating immediate remediation for federal agencies. Fortinet advises disabling the FortiCloud SSO login feature as a temporary mitigation. <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-newly-patched-fortinet-auth-bypass-flaws/" target="_blank">More info</a></li>
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Zeroday Cloud competition yields 11 zero-day flaws</strong>: The first Zeroday Cloud event in London concluded with researchers earning $320,000 for identifying 11 zero-day vulnerabilities in critical cloud infrastructure. Hosted by Wiz with AWS, Google, and Microsoft, the event saw an 85% success rate. Key exploits targeted Redis, PostgreSQL, and MariaDB. Notably, the Redis Lua sandbox escape (CVE-2025-49844) was recently added to the CISA KEV Catalog. <a href="https://www.bleepingcomputer.com/news/security/zeroday-cloud-hacking-event-awards-320-0000-for-11-zero-days/" target="_blank">More info</a></li>
 
-          <li><strong>JumpCloud Remote Assist for Windows LPE/DoS (CVE-2025-34352)</strong>: A critical vulnerability in the JumpCloud Remote Assist for Windows agent (versions before 0.317.0) enables local privilege escalation (LPE) and denial-of-service (DoS) attacks. The flaw is in the agent's uninstaller, which runs with SYSTEM privileges but performs unsafe file operations in the user-writable TEMP directory. A low-privileged local attacker can abuse symbolic links to coerce arbitrary file writes to protected system locations, leading to full system control or a Blue Screen of Death. JumpCloud has released version 0.317.0 to patch the high-risk LPE vector. <a href="https://www.infosecurity-magazine.com/news/jumpcloud-windows-agent-flaw/" target="_blank">More info</a></li>
+    <li><strong>SonicWall patches SMA1000 zero-day (CVE-2025-40602)</strong>: SonicWall fixed a privilege escalation vulnerability in its AMC console. The flaw was chained with a critical deserialization bug (CVE-2025-23006) to achieve unauthenticated RCE with root privileges. CISA reports these flaws are being used in ransomware campaigns and urges immediate upgrades to version 12.4.3-03245 or 12.5.0-02283. <a href="https://securityaffairs.com/185809/hacking/sonicwall-warns-of-actively-exploited-flaw-in-sma-100-amc.html" target="_blank">More info</a></li>
 
-          <li><strong>Windows Object Manager Race Condition Exploitation Technique</strong>: Google’s Project Zero detailed a new technique to exploit Windows race conditions by pathologically increasing the time of an Object Manager resource lookup from $2\mu s$ to approximately 3 minutes. The method combines deep path traversal using **Shadow Directories**, **hash collision injection** (exploiting the simple `ObpLookupDirectoryEntry` algorithm), and Symbolic Link chaining to create a near-infinite loop in lookup time. This dramatic expansion of the race window makes previously unexploitable Local Privilege Escalation vulnerabilities practical. <a href="https://projectzero.google/2025/12/windows-exploitation-techniques.html" target="_blank">More info</a> | <a href="https://github.com/tyranid/poc-gtfo-13-poc" target="_blank">PoC</a></li>
-     </ul>
+    <li><strong>DNS Root Server resilience vs. Cache Poisoning</strong>: Despite a 21Gb/s attack on the A root server in August 2025, the system leverages BGP anycast to localize threats. However, recent BIND 9 vulnerabilities like CVE-2025-40778 highlight the persistent risk of cache poisoning, which allows unauthenticated remote attackers to redirect traffic. <a href="https://www.netscout.com/blog/asert/dns-root-server-attacks" target="_blank">More info</a></li>
+  </ul>
 
-     <h2>🎯 Adversaries</h2>
-     <ul>
-          <li><strong>Sandworm (APT44) targets Western critical infrastructure via misconfigurations</strong>: Amazon Threat Intelligence disrupted a years-long operation attributed to the Russian GRU, known as Sandworm, targeting Western critical infrastructure, particularly the energy sector. Since 2021, the group has shifted from exploiting vulnerabilities to leveraging customer misconfigurations on cloud-hosted network edge devices (routers/VPNs). This "low-hanging fruit" approach allows them to harvest credentials via passive packet capture for replay attacks against victim online services. Amazon notified impacted customers and mitigated the espionage campaign. <a href="https://www.bleepingcomputer.com/news/security/amazon-disrupts-russian-gru-hackers-attacking-edge-network-devices/" target="_blank">More info</a></li>
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Cellik Android RAT offered as turnkey service</strong>: Research highlights "Cellik," a sophisticated Android RAT available for $150. It enables full device takeover and uses an automated APK builder with Google Play Store integration to wrap malicious payloads within legitimate applications, bypassing Google Play Protect. <a href="https://www.darkreading.com/threat-intelligence/cellik-android-rat-leverages-google-play-store" target="_blank">More info</a></li>
 
-          <li><strong>'GhostPoster' campaign compromises 17 Firefox extensions via steganography</strong>: The 'GhostPoster' campaign compromises over 17 popular Firefox extensions (50,000+ installs) by concealing a JavaScript loader within the PNG logo file using steganography, evading static analysis. The loader, which is stealthy and only fetches the main payload 10% of the time, grants persistent high-privilege browser access. The final payload enables financial fraud by hijacking affiliate links on e-commerce sites, injecting Google Analytics, and performing ad fraud via invisible iframes. Users must immediately remove the listed malicious extensions. <a href="https://www.bleepingcomputer.com/news/security/ghostposter-attacks-hide-malicious-javascript-in-firefox-addon-logos/" target="_blank">More info</a></li>
+    <li><strong>"GhostPairing" campaign hijacks WhatsApp accounts</strong>: Attackers are abusing the legitimate device-linking feature by directing victims to fake Facebook verification pages. By tricking users into entering a pairing code, threat actors gain full access to chat histories. CISA recently added a related WhatsApp authorization flaw (CVE-2025-55177) to the KEV Catalog. <a href="https://www.bleepingcomputer.com/news/security/whatsapp-device-linking-abused-in-account-hijacking-attacks/" target="_blank">More info</a></li>
 
-          <li><strong>Typosquatting NuGet package steals cryptocurrency wallets</strong>: A malicious NuGet package, `Tracer.Fody.NLog`, was discovered to have been typosquatting the legitimate "Tracer.Fody" library for nearly six years. With over 2,000 downloads, the package impersonated the original author and functioned as a cryptocurrency wallet stealer. It scans the default Stratis wallet directory on Windows for `*.wallet.json` files and passwords, exfiltrating the data to a Russian-hosted IP address. This is a recurring pattern of supply chain abuse in the .NET ecosystem by the same infrastructure. <a href="https://thehackernews.com/2025/12/rogue-nuget-package-poses-as-tracerfody.html" target="_blank">More info</a></li>
-     </ul>
+    <li><strong>Kimwolf botnet infects 1.8M Android devices</strong>: Researchers have identified "Kimwolf," a hyper-scale botnet targeting smart TVs and set-top boxes. It uses Ethereum Name Service (ENS) for C2 resilience and shares infrastructure with the AISURU botnet. The botnet monetizes compromised nodes through proxy services and high-volume UDP floods. <a href="https://thehackernews.com/2025/12/kimwolf-botnet-hijacks-18-million.html" target="_blank">More info</a></li>
 
-     <h2>📈 Trends</h2>
-     <ul>
-          <li><strong>Sharp escalation in Android threats in 2025</strong>: Android threats saw a sharp escalation in 2025, driven by sophisticated, multi-component attack frameworks. Comparing the two halves of the year, **adware nearly doubled (90% increase)**, **Potentially Unwanted Programs (PUPs) rose by 66-75%**, and **malware detections grew by about 20%**. For the full year, malware and PUPs accounted for nearly **90%** of all detections (Malware: 43%, PUPs: 45%). Legacy threats like the MobiDash adware family and the Triada Remote Access Trojan detections **more than doubled** in the second half of the year, signaling a shift toward quiet, organized data harvesting. <a href="https://www.malwarebytes.com/blog/mobile/2025/12/android-threats-in-2025-when-your-phone-becomes-the-main-attack-surface" target="_blank">More info</a></li>
+    <li><strong>UAT-9686 deploys "AquaShell" via Cisco zero-day</strong>: This Chinese-nexus APT is exploiting CVE-2025-20393 to deploy "AquaShell," a passive Python-based backdoor. The toolkit includes AquaTunnel for reverse SSH access and AquaPurge for log sanitization. CISA mandates federal remediation by December 24, 2025. <a href="https://blog.talosintelligence.com/uat-9686/" target="_blank">More info</a></li>
 
-          <li><strong>Compromised IAM credentials powering large-scale AWS cryptomining</strong>: An ongoing campaign is leveraging compromised IAM credentials with high privileges to execute a multi-stage cryptocurrency mining attack targeting AWS customer environments. Within ten minutes of initial access, the actor uses the `RunInstances` "DryRun" flag for reconnaissance, creates dozens of ECS clusters using a malicious DockerHub image, and utilizes autoscaling groups to maximize resource consumption on high-performance instances. A key persistence technique involves setting the `disableApiTermination` parameter to "True" to disrupt incident response. <a href="https://thehackernews.com/2025/12/compromised-iam-credentials-power-large-scale-aws-cryptomining.html" target="_blank">More info</a></li>
+    <li><strong>"ClickFix" campaign utilizes fake Word Online errors</strong>: A social engineering attack tricks users into clicking a "How to fix" button that copies a malicious PowerShell command to their clipboard. Victims are then instructed to paste this into the Windows Run box, deploying DarkGate malware and bypassing traditional security scanners. <a href="https://hackread.com/clickfix-attack-fake-browser-install-darkgate-malware/" target="_blank">More info</a></li>
 
-          <li><strong>Over 90% of parked domains now redirect to malicious content</strong>: A study by Infoblox reveals that **over 90%** of traffic to "parked" domains, including expired and typosquatting URLs, now redirects users to malicious content, scams, or malware. The malicious redirection is often conditional, profiling visitors based on their IP address—showing benign pages to VPN users and illicit content to residential IPs. Threat actors are utilizing typosquatted domains for email interception and Business Email Compromise, facilitated by affiliate networks exploiting the domain monetization model. <a href="https://krebsonsecurity.com/2025/12/most-parked-domains-now-serving-malicious-content/" target="_blank">More info</a></li>
-     </ul>
+    <li><strong>Ink Dragon targets European gov and telecom</strong>: The China-aligned group is using a "living-mesh" architecture, weaponizing SharePoint vulnerabilities (CVE-2025-54882) to deploy ShadowPad IIS Listeners. This transforms breached servers into C2 relay nodes, creating complex, multi-layered relay chains. <a href="https://thehackernews.com/2025/12/china-linked-ink-dragon-hacks.html" target="_blank">More info</a></li>
 
-     <h2>💥 Breaches & Leaks</h2>
-     <ul>
-          <li><strong>700Credit data breach exposes 5.6 million individuals' PII</strong>: U.S. fintech firm 700Credit, which provides services to auto dealerships, confirmed a major data breach impacting at least **5.6 million individuals**. The breach, occurring in October, involved unauthorized access to the application layer and exposed highly sensitive personally identifiable information, including names, addresses, dates of birth, and **Social Security numbers** collected between May and October 2025. The incident was traced to an exploited vulnerability in a third-party API. The firm is offering credit monitoring services. <a href="https://www.cysecurity.news/2025/12/700credit-data-breach-exposes-sensitive.html" target="_blank">More info</a></li>
-     </ul>
+    <li><strong>PyStoreRAT targets IT and OSINT professionals</strong>: This RAT targets developers via compromised GitHub repositories. Attackers revive dormant accounts to host AI-generated projects, embedding backdoors via routine updates. PyStoreRAT enables remote command execution and system profiling while utilizing rotating C2 infrastructure. <a href="https://www.cysecurity.news/2025/12/pystorerat-campaign-uses-fake-github.html" target="_blank">More info</a></li>
+  </ul>
 
-     <h2>📚 Others</h2>
-     <ul>
-          <li><strong>Microsoft to block Exchange Online access for outdated mobile devices</strong>: Microsoft announced a significant security change for Exchange Online, stating that mobile devices running Exchange ActiveSync (EAS) versions below 16.1 will be blocked from accessing the cloud email service starting **March 1, 2026**. This mandate only applies to devices using native email applications that rely on the EAS protocol, not Outlook Mobile. Administrators are urged to identify affected devices and ensure they are updated to comply with the new security standard. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-to-block-exchange-online-access-for-outdated-mobile-devices/" target="_blank">More info</a></li>
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>Malicious PDF phishing leverages Telegram exfiltration</strong>: A new campaign uses fake purchase order PDFs to harvest corporate credentials. The lure redirects victims to a login page that executes obfuscated JavaScript, exfiltrating data in real-time to a hardcoded Telegram bot. <a href="https://www.malwarebytes.com/blog/threat-intel/2025/12/inside-a-purchase-order-pdf-phishing-campaign" target="_blank">More info</a></li>
 
-          <li><strong>Texas sues smart TV manufacturers over user surveillance</strong>: The Texas Attorney General has filed lawsuits against five major smart TV manufacturers—Sony, Samsung, LG, Hisense, and TCL—accusing them of violating consumer protection laws by secretly recording user viewing habits. The complaints allege the companies utilize Automated Content Recognition (ACR) technology to capture real-time screenshots and monitor viewing activity, which is then monetized for targeted advertising without adequate user consent. The lawsuits assert the use of "dark patterns" to deceptively enable the surveillance-by-default technology. <a href="https://www.bleepingcomputer.com/news/security/texas-sues-tv-makers-for-spying-on-users-selling-data-without-consent/" target="_blank">More info</a></li>
-     </ul>
+    <li><strong>ESET H2 2025 Report: AI-powered malware arrives</strong>: ESET marks the discovery of "PromptLock," a Go-based ransomware using the Ollama API to generate unique malicious scripts. The report also highlights a 40% year-over-year growth in the ransomware landscape, now dominated by Akira and Qilin. <a href="https://web-assets.esetstatic.com/wls/en/papers/threat-reports/eset-threat-report-h22025.pdf" target="_blank">More info</a></li>
+  </ul>
 
-     <p style="text-align:center;">
-          <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
-     </p>
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
 </body>
 </html>
