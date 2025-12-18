@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 18/12/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 18/12/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Zeroday Cloud competition yields 11 zero-day flaws</strong>: The first Zeroday Cloud event in London concluded with researchers earning $320,000 for identifying 11 zero-day vulnerabilities in critical cloud infrastructure. Hosted by Wiz with AWS, Google, and Microsoft, the event saw an 85% success rate. Key exploits targeted Redis, PostgreSQL, and MariaDB. Notably, the Redis Lua sandbox escape (CVE-2025-49844) was recently added to the CISA KEV Catalog. <a href="https://www.bleepingcomputer.com/news/security/zeroday-cloud-hacking-event-awards-320-0000-for-11-zero-days/" target="_blank">More info</a></li>
+
+    <li><strong>UAT-9686 exploits Cisco AsyncOS zero-day (CVE-2025-20393)</strong>: Suspected Chinese-linked actors have been exploiting a maximum-severity zero-day in Cisco AsyncOS since late November. The flaw impacts Secure Email Gateway and Web Manager appliances. Attackers leverage the bug to execute arbitrary commands with root privileges. CISA has added this to the KEV Catalog, citing active exploitation. <a href="https://www.theregister.com/2025/12/17/attacks_pummeling_cisco_0day/" target="_blank">More info</a></li>
+
+    <li><strong>SonicWall patches SMA1000 zero-day (CVE-2025-40602)</strong>: SonicWall fixed a privilege escalation vulnerability in its AMC console. The flaw was chained with a critical deserialization bug (CVE-2025-23006) to achieve unauthenticated RCE with root privileges. CISA reports these flaws are being used in ransomware campaigns and urges immediate upgrades to version 12.4.3-03245 or 12.5.0-02283. <a href="https://securityaffairs.com/185809/hacking/sonicwall-warns-of-actively-exploited-flaw-in-sma-100-amc.html" target="_blank">More info</a></li>
+
+    <li><strong>DNS Root Server resilience vs. Cache Poisoning</strong>: Despite a 21Gb/s attack on the A root server in August 2025, the system leverages BGP anycast to localize threats. However, recent BIND 9 vulnerabilities like CVE-2025-40778 highlight the persistent risk of cache poisoning, which allows unauthenticated remote attackers to redirect traffic. <a href="https://www.netscout.com/blog/asert/dns-root-server-attacks" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Cellik Android RAT offered as turnkey service</strong>: Research highlights "Cellik," a sophisticated Android RAT available for $150. It enables full device takeover and uses an automated APK builder with Google Play Store integration to wrap malicious payloads within legitimate applications, bypassing Google Play Protect. <a href="https://www.darkreading.com/threat-intelligence/cellik-android-rat-leverages-google-play-store" target="_blank">More info</a></li>
+
+    <li><strong>"GhostPairing" campaign hijacks WhatsApp accounts</strong>: Attackers are abusing the legitimate device-linking feature by directing victims to fake Facebook verification pages. By tricking users into entering a pairing code, threat actors gain full access to chat histories. CISA recently added a related WhatsApp authorization flaw (CVE-2025-55177) to the KEV Catalog. <a href="https://www.bleepingcomputer.com/news/security/whatsapp-device-linking-abused-in-account-hijacking-attacks/" target="_blank">More info</a></li>
+
+    <li><strong>Kimwolf botnet infects 1.8M Android devices</strong>: Researchers have identified "Kimwolf," a hyper-scale botnet targeting smart TVs and set-top boxes. It uses Ethereum Name Service (ENS) for C2 resilience and shares infrastructure with the AISURU botnet. The botnet monetizes compromised nodes through proxy services and high-volume UDP floods. <a href="https://thehackernews.com/2025/12/kimwolf-botnet-hijacks-18-million.html" target="_blank">More info</a></li>
+
+    <li><strong>UAT-9686 deploys "AquaShell" via Cisco zero-day</strong>: This Chinese-nexus APT is exploiting CVE-2025-20393 to deploy "AquaShell," a passive Python-based backdoor. The toolkit includes AquaTunnel for reverse SSH access and AquaPurge for log sanitization. CISA mandates federal remediation by December 24, 2025. <a href="https://blog.talosintelligence.com/uat-9686/" target="_blank">More info</a></li>
+
+    <li><strong>"ClickFix" campaign utilizes fake Word Online errors</strong>: A social engineering attack tricks users into clicking a "How to fix" button that copies a malicious PowerShell command to their clipboard. Victims are then instructed to paste this into the Windows Run box, deploying DarkGate malware and bypassing traditional security scanners. <a href="https://hackread.com/clickfix-attack-fake-browser-install-darkgate-malware/" target="_blank">More info</a></li>
+
+    <li><strong>Ink Dragon targets European gov and telecom</strong>: The China-aligned group is using a "living-mesh" architecture, weaponizing SharePoint vulnerabilities (CVE-2025-54882) to deploy ShadowPad IIS Listeners. This transforms breached servers into C2 relay nodes, creating complex, multi-layered relay chains. <a href="https://thehackernews.com/2025/12/china-linked-ink-dragon-hacks.html" target="_blank">More info</a></li>
+
+    <li><strong>PyStoreRAT targets IT and OSINT professionals</strong>: This RAT targets developers via compromised GitHub repositories. Attackers revive dormant accounts to host AI-generated projects, embedding backdoors via routine updates. PyStoreRAT enables remote command execution and system profiling while utilizing rotating C2 infrastructure. <a href="https://www.cysecurity.news/2025/12/pystorerat-campaign-uses-fake-github.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>Malicious PDF phishing leverages Telegram exfiltration</strong>: A new campaign uses fake purchase order PDFs to harvest corporate credentials. The lure redirects victims to a login page that executes obfuscated JavaScript, exfiltrating data in real-time to a hardcoded Telegram bot. <a href="https://www.malwarebytes.com/blog/threat-intel/2025/12/inside-a-purchase-order-pdf-phishing-campaign" target="_blank">More info</a></li>
+
+    <li><strong>ESET H2 2025 Report: AI-powered malware arrives</strong>: ESET marks the discovery of "PromptLock," a Go-based ransomware using the Ollama API to generate unique malicious scripts. The report also highlights a 40% year-over-year growth in the ransomware landscape, now dominated by Akira and Qilin. <a href="https://web-assets.esetstatic.com/wls/en/papers/threat-reports/eset-threat-report-h22025.pdf" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
