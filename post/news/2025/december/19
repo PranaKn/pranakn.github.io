@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 19/12/25</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 19/12/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>HPE Patches Critical RCE in OneView (CVE-2025-37164)</strong>: Hewlett Packard Enterprise issued patches for a critical RCE vulnerability in its OneView IT management platform with a CVSS score of 10.0. The flaw allows unauthenticated attackers to execute arbitrary code remotely across servers, storage, and networking infrastructure. All versions through v10.20 are affected; users should update to version 11.00. <a href="https://securityaffairs.com/185853/security/hewlett-packard-enterprise-hpe-fixed-maximum-severity-oneview-flaw.html" target="_blank">More info</a></li>
+
+    <li><strong>Critical UEFI Vulnerability in Major Motherboards</strong>: ASRock, Asus, Gigabyte, and MSI have issued firmware patches for a UEFI vulnerability (CVE-2025-11901 and CVE-2025-14302/3/4) that permits early-boot DMA attacks. The flaw falsely reports active IOMMU protections, allowing attackers with physical access to use malicious PCIe devices to read or write arbitrary system memory. <a href="https://www.securityweek.com/uefi-vulnerability-in-major-motherboards-enables-early-boot-attacks/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Amazon Blocks 1,800+ North Korean Scammers</strong>: Amazon CSO Steve Schmidt revealed the company blocked over 1,800 suspected DPRK operatives attempting to secure remote roles using AI-generated resumes and deepfakes. These workers aim to funnel wages toward weapons programs. Concurrently, a new BeaverTail malware variant used by the Lazarus Group has been identified with 128 layers of obfuscation. <a href="https://www.theregister.com/2025/12/18/amazon_blocked_fake_dprk_workers/" target="_blank">More info</a></li>
+
+    <li><strong>Clop Ransomware Targets Gladinet CentreStack</strong>: The Clop gang is targeting internet-exposed Gladinet CentreStack servers. CISA added CVE-2025-14611—a hard-coded cryptographic vulnerability in CentreStack—to its KEV Catalog. Organizations must update to version 16.12.10420.56791 by January 5, 2026, to mitigate RCE risks. <a href="https://www.bleepingcomputer.com/news/security/clop-ransomware-targets-gladinet-centrestack-servers-for-extortion/" target="_blank">More info</a></li>
+
+    <li><strong>Lazarus Group's BeaverTail V5 Features 128 Layers of Concealment</strong>: Researchers identified a new variant of BeaverTail malware targeting developers via trojanized npm packages and VS Code extensions. The campaign uses "EtherHiding," storing C2 payloads within blockchain smart contracts to prevent takedowns. <a href="https://hackread.com/lazarus-embed-beavertail-variant-developer-tools/" target="_blank">More info</a></li>
+
+    <li><strong>"Prince of Persia" (Infy) APT Resurfaces</strong>: After a three-year hiatus, the Iranian state-sponsored group has deployed advanced versions of its "Foudre" and "Tonnerre" malware. The group utilizes a unique RSA-signed Domain Generation Algorithm (DGA) and Telegram bots for data exfiltration targeting European and Asian diplomats. <a href="https://hackread.com/iran-apt-prince-of-persia-resurfaces/" target="_blank">More info</a></li>
+
+    <li><strong>LongNosedGoblin Targets SE Asia and Japan</strong>: ESET identified a China-aligned espionage cluster abusing Windows Group Policy for lateral movement and cloud services (Google Drive/OneDrive) for C2. Their toolset includes the NosyDoor backdoor and NosyHistorian for browser data collection. <a href="https://thehackernews.com/2025/12/china-aligned-threat-group-uses-windows.html" target="_blank">More info</a></li>
+
+    <li><strong>"Scripted Sparrow" Phishing Ring Exposed</strong>: A disciplined global phishing ring has been active since June 2024, masquerading as professional services firms to deceive finance teams. The group keeps payment requests under $50,000 to avoid manual review thresholds and utilizes lookalike domain clusters. <a href="https://www.helpnetsecurity.com/2025/12/18/tracking-scripted-sparrow-phishing-campaigns/" target="_blank">More info</a></li>
+
+    <li><strong>Stealka Infostealer Distributed via GitHub and SourceForge</strong>: Disguised as software cracks and game mods, Stealka targets data from over 100 browsers and 115 browser extensions (including MetaMask and Bitwarden). It exfiltrates session tokens to bypass 2FA and installs cryptocurrency miners. <a href="https://www.kaspersky.com/blog/windows-stealer-stealka/55058/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>Massive Credential-Stuffing Hits VPN Gateways</strong>: GreyNoise detected 1.7 million login attempts targeting Palo Alto GlobalProtect and Cisco SSL VPNs. While these are scripted probes, CISA added CVE-2025-20393 (Cisco AsyncOS zero-day) to its KEV, which is being exploited by China-linked APT UAT-9686. <a href="https://www.bleepingcomputer.com/news/security/new-password-spraying-attacks-target-cisco-pan-vpn-gateways/" target="_blank">More info</a></li>
+
+    <li><strong>Surge in OAuth 2.0 Device Code Phishing</strong>: Threat actors like UNK_AcademicFlare are using QR codes and salary-themed lures to trick users into entering device codes on legitimate Microsoft pages, allowing attackers to bypass MFA and secure persistent cloud access tokens. <a href="https://www.infosecurity-magazine.com/news/oauth-phishing-campaigns/" target="_blank">More info</a></li>
+
+    <li><strong>Kimsuky Distributes DocSwap Android Malware</strong>: The North Korean actor is using QR codes on fake logistics sites to deliver "SecDelivery.apk," a RAT capable of keylogging and audio recording. The attack chain targets both desktop and mobile users through sophisticated redirection. <a href="https://thehackernews.com/2025/12/kimsuky-spreads-docswap-android-malware.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>University of Sydney Repository Breach</strong>: An unauthorized intrusion into an online IT code repository exposed historical data of over 27,000 staff, students, and alumni. Exposed data includes names and contact details dating back to 2010. The university has initiated dark web monitoring. <a href="https://www.bleepingcomputer.com/news/security/university-of-sydney-suffers-data-breach-exposing-student-and-staff-info/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>FBI Seizes E-Note Crypto Exchange Infrastructure</strong>: In a coordinated international effort, authorities seized the E-Note platform, which allegedly laundered over $70 million for cybercriminals. Russian national Mykhalio Chudnovets has been indicted for his role in facilitating ransomware payouts. <a href="https://www.bleepingcomputer.com/news/security/us-seizes-e-note-crypto-exchange-for-laundering-ransomware-payments/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
