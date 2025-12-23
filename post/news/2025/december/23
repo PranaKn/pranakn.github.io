@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 20/12/25</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 20/12/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>WatchGuard Fireware OS Zero-Day (CVE-2025-14733)</strong>: WatchGuard issued an urgent patch for a critical out-of-bounds write vulnerability in the Internet Key Exchange Daemon (iked) process, allowing unauthenticated RCE on Firebox devices. CISA added this to the KEV Catalog on Dec 19, 2025. Shadowserver has identified 125,000 vulnerable exposed IPs. Users should upgrade to 2025.1.4, 12.11.6, or 12.5.15 immediately. <a href="https://www.darkreading.com/vulnerabilities-threats/threat-actors-zero-day-watchguard-firebox" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>MacSync Infostealer evades Gatekeeper</strong>: A new notarized Swift variant of MacSync targets macOS using code-signed disk images to bypass security checks. It exfiltrates keychains, browser data, and crypto wallets. While Apple revoked the associated certificate, the malware uses file inflation and sandbox detection to remain effective. <a href="https://www.bleepingcomputer.com/news/security/new-macsync-malware-dropper-evades-macos-gatekeeper-checks/" target="_blank">More info</a></li>
+
+    <li><strong>Frogblight Android Trojan targets Turkey</strong>: Kaspersky identified this specialized banking Trojan disguised as legal or social aid apps. It harvests SMS permissions and uses WebViews to inject malicious JavaScript into banking portals for credential theft. It features advanced geofencing and sandbox evasion. <a href="https://hackread.com/frogblight-malware-android-fake-court-aid-apps/" target="_blank">More info</a></li>
+
+    <li><strong>Nezha monitoring tool weaponized as RAT</strong>: Threat actors are repurposing the open-source Nezha utility to gain root access across Windows, Linux, and macOS. Due to its "benign" nature and high GitHub popularity, it maintains a 0/72 detection rate on VirusTotal while providing full remote command execution. <a href="https://hackread.com/hackers-abuse-monitoring-tool-nezha-trojan/" target="_blank">More info</a></li>
+
+    <li><strong>Tren de Aragua (TdA) ATM Jackpotting</strong>: The US DOJ indicted 54 individuals linked to the Venezuelan TdA group for a $40M "Ploutus" malware operation. The group used physical access and hard drive replacements to compromise ATMs across the U.S. to fund transnational criminal activities. <a href="https://www.securityweek.com/54-charged-in-us-over-atm-attacks-involving-ploutus-malware/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>RansomHouse updates "Mario" encryptor</strong>: The group has evolved its Mario encryptor to target VMware ESXi environments using a multi-layered scheme with dual encryption keys. It employs intermittent encryption on large files (>8 GB) to bypass detection and complicate recovery. <a href="https://www.cysecurity.news/2025/12/ransomhouse-develops-more-complex.html" target="_blank">More info</a></li>
+
+    <li><strong>Uzbekistan hit by Telegram-distributed malware</strong>: Groups like TrickyWonders and Ajina are leveraging stolen Telegram sessions to spread SMS stealers and banking Trojans via malicious APKs. The campaign reflects high operational maturity with advanced obfuscation techniques. <a href="https://www.darkreading.com/cyber-risk/uzbek-users-android-sms-stealers" target="_blank">More info</a></li>
+
+    <li><strong>Rise of "Insider-as-a-Service"</strong>: Check Point Research reports a surge in criminals bribing employees at firms like Apple and Coinbase for network access. Payouts reach $15,000, allowing attackers to bypass technical perimeters through human-centric access brokers recruited on Telegram. <a href="https://hackread.com/insider-threat-hackers-paying-insiders-bypass-security/" target="_blank">More info</a></li>
+
+    <li><strong>Scripted Sparrow's mass BEC campaigns</strong>: A collective is sending millions of automated, targeted BEC messages monthly by impersonating coaching firms. They use automated tools to produce fraudulent invoices and build credibility through spoofed reply chains without using attachments. <a href="https://www.infosecurity-magazine.com/news/scripted-sparrow-millions-bec-each/" target="_blank">More info</a></li>
+
+    <li><strong>Lateral Movement via COpenControlPanel</strong>: Researchers identified a novel technique weaponizing the COpenControlPanel DCOM object. Attackers can remotely trigger the loading of malicious DLLs via dllhost.exe, bypassing restrictions on traditional DCOM objects. <a href="https://securelist.com/lateral-movement-via-dcom-abusing-control-panel/118232/" target="_blank">More info</a></li>
+
+    <li><strong>Malicious npm package "lotusbail"</strong>: A fake WhatsApp API library on npm, downloaded 56,000 times, facilitates account hijacking. It clones a legitimate library but intercepts WebSocket traffic and uses hardcoded pairing codes to silently link attacker devices to victim accounts. <a href="https://thehackernews.com/2025/12/fake-whatsapp-api-package-on-npm-steals.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Romanian Water Authority Ransomware</strong>: Administrația Națională Apele Române suffered an attack affecting 1,000 systems. Attackers used native Windows BitLocker to encrypt files. While corporate systems were hit, operational technology governing water flow remained safe under manual oversight. <a href="https://www.bleepingcomputer.com/news/security/romanian-water-authority-hit-by-ransomware-attack-over-weekend/" target="_blank">More info</a></li>
+
+    <li><strong>Nissan/Fukuoka Sales Data Exposure</strong>: Nissan confirmed a breach affecting 21,000 customers following a September Red Hat GitLab intrusion. The Crimson Collective exfiltrated 570GB of data, including Customer Engagement Reports containing network maps and credentials. <a href="https://www.bleepingcomputer.com/news/security/nissan-says-thousands-of-customers-exposed-in-red-hat-breach/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>Interpol's Operation Sentinel</strong>: A month-long operation led to 574 arrests and the recovery of $3M across 19 countries. The initiative disrupted 6,000 malicious links and decrypted six ransomware variants, targeting BEC and extortion networks globally. <a href="https://www.bleepingcomputer.com/news/security/interpol-led-action-decrypts-6-ransomware-strains-arrests-hundreds/" target="_blank">More info</a></li>
+
+    <li><strong>FBI seizes E-Note Crypto Exchange</strong>: Authorities dismantled the infrastructure of E-Note, an exchange linked to $70M in laundered proceeds. Russian national Mykhalio Chudnovets was indicted for facilitating money laundering for groups targeting U.S. critical infrastructure. <a href="https://www.infosecurity-magazine.com/news/fbi-disrupts-russian-crypto/" target="_blank">More info</a></li>
+
+    <li><strong>Nigerian Police arrest Raccoon0365 Developer</strong>: Three individuals were arrested for running a Phishing-as-a-Service platform that compromised 5,000 Microsoft 365 accounts. The lead developer sold kits via Telegram that utilized Cloudflare to host fraudulent pages. <a href="https://www.bleepingcomputer.com/news/security/nigeria-arrests-dev-of-microsoft-365-raccoon0365-phishing-platform/" target="_blank">More info</a></li>
+
+    <li><strong>Denmark attributes OT attacks to Russia</strong>: The DDIS officially linked critical infrastructure attacks to Russian state-sponsored groups Z-Pentest and NoName057(16). The groups focus on high-visibility disruptions of water utilities and local elections via poorly secured VNC connections. <a href="https://www.bleepingcomputer.com/news/security/denmark-warns-of-russian-hacktivists-targeting-critical-infrastructure/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
