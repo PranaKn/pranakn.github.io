@@ -33,7 +33,7 @@
 
 📅 **26/09/25** - _Book Review - Cybersecurity Dilemma by Ben Buchanan_
 
-📅 **23/12/25** - _Book Review - Cybersecurity Dilemma by Ben Buchanan_
+📅 **23/12/25** - _Book Review -  CyberMercenaries by Tim Maurer_
 
 ---
 
