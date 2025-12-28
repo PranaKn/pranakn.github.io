@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 29/12/25</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 29/12/25</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Exploited "MongoBleed" (CVE-2025-14847) leaks secrets</strong>: A critical information disclosure vulnerability affecting over 80,000 MongoDB instances is under active exploitation. The flaw (CVSS 8.7) stems from improper length handling in zlib-compressed headers, allowing unauthenticated attackers to exfiltrate database passwords, AWS keys, and session tokens via uninitialized heap memory leaks. MongoDB urges an immediate upgrade or disabling zlib compression. <a href="https://www.bleepingcomputer.com/news/security/exploited-mongobleed-flaw-leaks-mongodb-secrets-87k-servers-exposed/" target="_blank">More info</a></li>
+
+    <li><strong>"LangGrinch" (CVE-2025-68664) hits LangChain Core</strong>: This critical serialization injection flaw (CVSS 9.3) allows attackers to use prompt injection to instantiate unsafe objects. This can lead to remote code execution or the theft of sensitive secrets like OpenAI API keys. Users are advised to upgrade to versions 1.2.5 or 0.3.81, which disable automatic secret loading. <a href="https://securityaffairs.com/186185/hacking/langchain-core-vulnerability-allows-prompt-injection-and-data-exposure.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Amazon disrupts GRU-linked APT44 (Sandworm) campaign</strong>: Amazon's Threat Intelligence division blocked a long-running campaign targeting Western critical infrastructure. The group transitioned in 2025 to targeting misconfigured edge devices, using native packet capture on AWS-hosted instances to harvest credentials. Amazon emphasized that the campaign exploited customer configurations rather than AWS service flaws. <a href="https://www.cysecurity.news/2025/12/amazon-says-it-has-disrupted-gru-linked.html" target="_blank">More info</a></li>
+
+    <li><strong>Malicious npm "lotusbail" targets WhatsApp users</strong>: Researchers identified a Trojanized package masquerading as a WhatsApp Web API library. The malware stole contact lists and session tokens from over 56,000 users and hijacked the pairing process for persistent account access. Victims must manually unlink unrecognized devices in WhatsApp settings to secure their accounts. <a href="https://hackread.com/npm-package-lotusbail-trojan-steal-whatsapp-chats/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>Grubhub subdomain abused for crypto scams</strong>: Scammers used the legitimate <code>b.grubhub.com</code> subdomain to send fake "Holiday Crypto Promotion" emails promising tenfold Bitcoin returns. Grubhub attributes the incident to a compromised third-party support account. The company has since rotated credentials and enhanced its anomaly detection. <a href="https://www.bleepingcomputer.com/news/security/fake-grubhub-emails-promise-tenfold-return-on-sent-cryptocurrency/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Ubisoft Rainbow Six Siege hit by massive breach</strong>: Ubisoft suspended game operations after attackers manipulated moderation systems to distribute $13.33M worth of in-game credits. Reports suggest threat actors used the "MongoBleed" vulnerability to access internal Git repositories and potentially exfiltrate source code dating back to the 90s. <a href="https://www.bleepingcomputer.com/news/security/massive-rainbow-six-siege-breach-gives-players-billions-of-credits/" target="_blank">More info</a></li>
+
+    <li><strong>Stolen LastPass backups enable $28M crypto theft</strong>: Encrypted vault backups stolen during the 2022 LastPass breach continue to be cracked in 2025. Attackers are leveraging weak master passwords to decrypt vaults offline and steal cryptocurrency. The entry point was originally a Plex Media Server vulnerability (CVE-2020-5741) in an employee's home environment. <a href="https://securityaffairs.com/186191/digital-id/stolen-lastpass-backups-enable-crypto-theft-through-2025.html" target="_blank">More info</a></li>
+
+    <li><strong>Wired.com database leak exposes 2.3M records</strong>: A threat actor known as "Lovely" leaked user data including names and emails on a dark web forum. The breach reportedly stems from IDOR flaws in a centralized identity system. The hacker has threatened to release 40 million additional records from other Condé Nast properties like Vogue and The New Yorker. <a href="https://hackread.com/hacker-leak-wired-com-records-conde-nast-breach/" target="_blank">More info</a></li>
+
+    <li><strong>Everest ransomware claims 1 TB Chrysler data theft</strong>: On Christmas Day, the Everest group claimed a breach of Chrysler systems, exfiltrating Salesforce CRM records and vehicle recall histories. This follows a previous breach of parent company Stellantis involving compromised OAuth tokens. Everest is threatening to release HR data and call recordings. <a href="https://hackread.com/everest-ransomware-group-chrysler-data-breach/" target="_blank">More info</a></li>
+
+    <li><strong>Trust Wallet Christmas Eve supply chain attack</strong>: A compromised Chrome extension update (v2.68.0) led to the theft of $7M in crypto. Attackers used a leaked API key to publish a version containing malicious scripts that exfiltrated seed phrases. Trust Wallet has since released v2.69.0 and committed to refunding affected users. <a href="https://www.bleepingcomputer.com/news/security/trust-wallet-confirms-extension-hack-led-to-7-million-crypto-theft/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
