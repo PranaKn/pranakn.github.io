@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 30/12/25</title>
+  <title>📰 Cybersecurity Newsfeed - 05/01/26</title>
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
   <style>
     body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
@@ -17,38 +17,48 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 30/12/25</h2>
+  <h2>📅 05/01/26</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>XSpeeder AI-discovered Zero-Day (CVE-2025-54322)</strong>: Researchers at pwn.ai used autonomous AI agents to find a critical 10.0-rated flaw in XSpeeder networking devices. The vulnerability in <code>vLogin.py</code> allows unauthenticated root access via base64-encoded Python injection in the <code>chkid</code> parameter. Despite seven months of warnings, the vendor hasn't issued a patch, leaving 70,000 industrial devices exposed. CISA also recently added React2Shell (CVE-2025-55182), another AI-identified RCE, to its KEV catalog. <a href="https://hackread.com/xspeeder-0day-flaw-devices-vendor-ignores-alert/" target="_blank">More info</a></li>
-
-    <li><strong>Fortinet 5-Year-Old 2FA Bypass (CVE-2020-12812)</strong>: Threat actors are actively exploiting a half-decade-old flaw in FortiOS SSL VPN to bypass two-factor authentication. The issue stems from inconsistent case-sensitivity in LDAP-linked usernames (e.g., "Admin" vs "admin"). This resurgence follows the addition of two new FortiWeb zero-days (CVE-2025-64446 and CVE-2025-58034) to the CISA KEV Catalog, which enable unauthorized admin accounts and OS command injection. <a href="https://www.bleepingcomputer.com/news/security/fortinet-warns-of-5-year-old-fortios-2fa-bypass-still-exploited-in-attacks/" target="_blank">More info</a></li>
+    <li><strong>10,000+ Fortinet firewalls exposed to 2FA bypass</strong>: Over 10,000 devices remain vulnerable to CVE-2020-12812, a critical flaw in FortiOS SSL VPN. Attackers can bypass FortiToken prompts in LDAP environments by changing username case-sensitivity. CISA added this to the KEV catalog in 2021, but unpatched units still face automated global attacks. <a href="https://www.bleepingcomputer.com/news/security/over-10-000-fortinet-firewalls-exposed-to-ongoing-2fa-bypass-attacks/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>KMSAuto Clipper Malware Campaign</strong>: A Lithuanian national was extradited to South Korea for distributing clipper malware disguised as the KMSAuto Windows activator. Between 2020 and 2023, the suspect infected 2.8 million systems, stealing $1.2 million by swapping cryptocurrency wallet addresses in user clipboards. Forensic evidence from a 2025 arrest in Georgia confirmed 8,400 successful thefts, highlighting the extreme risk of using pirated software activators. <a href="https://www.bleepingcomputer.com/news/security/hacker-arrested-for-kmsauto-malware-campaign-with-28-million-downloads/" target="_blank">More info</a></li>
+    <li><strong>Resecurity "breach" claimed to be honeypot</strong>: The group "Scattered Lapsus$ Hunters" (SLH) claims to have breached Resecurity, but the firm states the attackers hit a sophisticated honeypot filled with synthetic data. Resecurity reportedly gathered telemetry and real IP addresses from the attackers during the process. <a href="https://www.bleepingcomputer.com/news/security/hackers-claim-resecurity-hack-firm-says-it-was-a-honeypot/" target="_blank">More info</a></li>
 
-    <li><strong>Mustang Panda deploys ToneShell with Rootkit</strong>: The China-linked group Mustang Panda is targeting Southeast Asian governments with a new ToneShell variant using a kernel-mode rootkit (<code>ProjectConfiguration.sys</code>). The signed driver intercepts file operations and disables Microsoft Defender to protect user-mode payloads. Recent updates include fake TLS headers for network obfuscation. Because it uses sophisticated evasion, memory forensics is now required for effective detection. <a href="https://www.bleepingcomputer.com/news/security/chinese-state-hackers-use-rootkit-to-hide-toneshell-malware-activity/" target="_blank">More info</a></li>
+    <li><strong>Kimwolf botnet ensnares 2M Android devices</strong>: Targeting unbranded Android TV boxes and digital frames, Kimwolf exploits devices shipped with ADB enabled by default. It uses residential proxies like IPIDEA to bypass firewalls and spread across local networks, facilitating massive DDoS and ad fraud. <a href="https://krebsonsecurity.com/2026/01/the-kimwolf-botnet-is-stalking-your-local-network/" target="_blank">More info</a></li>
+
+    <li><strong>Transparent Tribe and Patchwork target South Asia</strong>: APT36 (Transparent Tribe) and Patchwork have intensified espionage against India and Pakistan using DeskRAT and StreamSpy. The campaigns use weaponized LNK files and WebSockets to evade detection, coinciding with a surge in MongoBleed (CVE-2025-14847) exploits. <a href="https://thehackernews.com/2026/01/transparent-tribe-launches-new-rat.html" target="_blank">More info</a></li>
+
+    <li><strong>Phishing via Google Cloud Application Integration</strong>: Attackers are abusing Google’s "Send Email" task to send malicious notifications from a legitimate Google address, bypassing DMARC and SPF. Over 3,200 organizations were targeted with multi-stage redirects to credential-harvesting sites. <a href="https://securityaffairs.com/186425/cyber-crime/phishing-campaign-abuses-google-cloud-application-to-impersonate-legitimate-google-emails.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>Google Cloud Phishing Abuse</strong>: Attackers are abusing the Google Cloud Application Integration service to send 9,394 malicious emails to over 3,200 organizations worldwide. By using the legitimate <code>noreply-application-integration@google.com</code> address, the campaign bypasses security filters. The multi-stage attack uses fake CAPTCHAs and <code>googleusercontent.com</code> to harvest Microsoft credentials. This follows a broader trend of exploiting trusted enterprise infrastructure. <a href="https://hackread.com/google-phishing-3000-global-organisations/" target="_blank">More info</a></li>
+    <li><strong>RondoDox exploits React2Shell (CVSS 10.0)</strong>: The botnet is targeting CVE-2025-55182, a critical RCE in React Server Components (Next.js). The flaw involves insecure deserialization in the Flight protocol. CISA mandates immediate patching to React 19.0.1+ as over 90,000 systems are being scanned. <a href="https://hackread.com/rondodox-botnet-react2shell-hijack-unpatched-devices/" target="_blank">More info</a></li>
 
-    <li><strong>Crypto-Phishing Surge in 2025</strong>: Cryptocurrency-related phishing detections rose by 83.4% this year, with social engineering driving 40% of cases. Prevalent tactics include "approval phishing" (malicious smart contracts) and "address poisoning." CISA KEV additions like the Outlook MonikerLink flaw (CVE-2024-21413) demonstrate how attackers are now chaining zero-interaction vulnerabilities to steal NTLM credentials for crypto-theft. <a href="https://hackread.com/how-to-spot-crypto-phishing-scams/" target="_blank">More info</a></li>
+    <li><strong>Adobe ColdFusion hit by holiday exploit wave</strong>: During Christmas 2025, GreyNoise detected massive exploitation of over ten ColdFusion vulnerabilities, including CVE-2023-26359 and CVE-2024-20767. A single Japan-based actor generated 98% of the traffic, targeting government and corporate servers globally. <a href="https://securityaffairs.com/186450/hacking/thousands-of-coldfusion-exploit-attempts-spotted-during-christmas-holiday.html" target="_blank">More info</a></li>
+
+    <li><strong>GlassWorm campaign targets macOS developers</strong>: The fourth wave of GlassWorm uses malicious VS Code extensions to target developers. The malware uses the Solana blockchain for C2, steals GitHub and Keychain data, and trojanizes hardware wallet apps like Ledger Live. <a href="https://thehackernews.com/2026/01/transparent-tribe-launches-new-rat.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>💥 Breaches & Leaks</h2>
   <ul>
-    <li><strong>Coupang $1.17B Breach Compensation</strong>: South Korean giant Coupang is paying out over $1 billion to 33.7 million customers after an insider-driven breach. A former IT employee used unrevoked cryptographic keys to access account data over five months. While payment data was safe, hardware recovered from a river confirmed the theft of order histories. The incident underscores the severe risk of "zombie" credentials and poor offboarding procedures. <a href="https://www.bleepingcomputer.com/news/security/coupang-to-split-117-billion-among-337-million-data-breach-victims/" target="_blank">More info</a></li>
+    <li><strong>Tokyo FM investigates 3M record leak</strong>: An actor named "victim" claims to have stolen 3 million records from Tokyo FM during the New Year holiday. The leak allegedly includes personal listener data and employee login IDs. Experts are currently verifying the authenticity of the data. <a href="https://hackread.com/tokyo-fm-data-breach-hacker-3-million-records-stolen/" target="_blank">More info</a></li>
 
-    <li><strong>Romania’s Oltenia Energy Complex Ransomware</strong>: The "Gentlemen" ransomware group hit Romania's critical power utility on Dec 26, disrupting ERP and email systems. While energy production remained stable, the group utilized "Bring Your Own Vulnerable Driver" (BYOVD) tactics to encrypt the domain. The group is known for abusing Group Policy Objects (GPOs) and targeting internet-facing FortiGate VPNs, representing a growing threat to national infrastructure. <a href="https://securityaffairs.com/186290/cyber-crime/romanias-oltenia-energy-complex-suffers-major-ransomware-attack.html" target="_blank">More info</a></li>
+    <li><strong>Pickett and Associates critical infrastructure theft</strong>: A threat actor is ransomning 139 GB of data from the Florida engineering firm for 6.5 BTC. The data includes LiDAR point clouds and substation layouts for major US utilities like Duke Energy and Tampa Electric. <a href="https://www.theregister.com/2026/01/02/critical_utility_files_for_sale/" target="_blank">More info</a></li>
+  </ul>
 
-    <li><strong>Trust Wallet Supply Chain Attack</strong>: A compromised Chrome Web Store API key allowed attackers to push a malicious version (2.68.0) of the Trust Wallet extension. The tampered version exfiltrated $7 million from nearly 3,000 wallets by stealing mnemonic phrases. Trust Wallet has since revoked the keys and urged users to update to version 2.69.0. This highlights the fragility of the browser extension ecosystem and its API security. <a href="https://www.bleepingcomputer.com/news/security/trust-wallet-says-7-million-crypto-theft-attack-drained-2-596-wallets/" target="_blank">More info</a></li>
+  <h2>🔍 Hunting</h2>
+  <ul>
+    <li><strong>VVS Stealer targets Discord and Browsers</strong>: Marketed on Telegram, this Python-based stealer uses Pyarmor obfuscation and BCC Mode to evade detection. It injects JS into Discord to monitor password changes and uses webhooks for exfiltration. It features a self-termination date of Oct 2026. <a href="https://unit42.paloaltonetworks.com/vvs-stealer/" target="_blank">More info</a></li>
+  </ul>
 
-    <li><strong>Korean Air/KC&D Data Theft</strong>: Korean Air confirmed a breach of 30,000 employee records after its catering supplier was hacked. The Clop ransomware group exploited a critical zero-day in Oracle E-Business Suite (CVE-2025-61882) to perform unauthenticated RCE. This vulnerability, added to the CISA KEV Catalog in October, has led to mass data exfiltration of bank account numbers and personal details across several global industries. <a href="https://www.bleepingcomputer.com/news/security/korean-air-data-breach-exposes-data-of-thousands-of-employees/" target="_blank">More info</a></li>
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>Undersea cable sabotage investigation</strong>: Finnish authorities detained a cargo ship after a critical internet cable between Helsinki and Tallinn was severed. Two crew members were arrested for "aggravated sabotage" after the ship was seen dragging its anchor over the site. <a href="https://hackread.com/finnish-detain-crew-undersea-internet-cable/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
