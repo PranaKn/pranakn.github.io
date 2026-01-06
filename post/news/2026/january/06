@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 06/01/26</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 06/01/26</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Critical supply-chain flaw in AI-powered IDEs</strong>: Researchers at Koi Security discovered a critical flaw in AI-driven IDEs like Cursor, Windsurf, Trae, and Google Antigravity. These VSCode forks inherit "recommended" extensions from Microsoft’s Visual Studio Marketplace that may not exist in the OpenVSX registry. Threat actors hijacked these unclaimed namespaces to distribute malicious extensions to developers. Cursor and Google have since mitigated the issue by fixing recommendation paths. <a href="https://www.bleepingcomputer.com/news/security/vscode-ide-forks-expose-users-to-recommended-extension-attacks/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>ClickFix campaign "PHALT#BLYX" targets hospitality</strong>: Securonix identified a campaign targeting the European hospitality sector via Booking.com lures. Attackers use high-fidelity clones to trigger fake Windows "Blue Screen of Death" (BSOD) overlays, tricking victims into executing PowerShell commands via the Run dialog. This deploys the DCRAT Trojan, enabling data exfiltration and bypassing Windows Defender. <a href="https://www.bleepingcomputer.com/news/security/clickfix-attack-uses-fake-windows-bsod-screens-to-push-malware/" target="_blank">More info</a></li>
+
+    <li><strong>UAC-0184 (Hive0156) targets Ukraine via Viber</strong>: The Russia-aligned group UAC-0184 is conducting an espionage campaign against Ukraine’s military and parliament. Using Viber, they deliver ZIP archives with LNK shortcuts disguised as official documents. The chain uses HijackLoader to deploy Remcos RAT within legitimate processes like Chime.exe for remote surveillance and data theft. <a href="https://securityaffairs.com/186571/apt/russia-linked-apt-uac-0184-uses-viber-to-spy-on-ukrainian-military-in-2025.html" target="_blank">More info</a></li>
+
+    <li><strong>Zestix/Sentap IAB auctions enterprise cloud data</strong>: Initial access broker "Zestix" (aka Sentap) is auctioning data from nearly 50 global enterprises. The actor breaches ShareFile, Nextcloud, and OwnCloud instances by using credentials stolen via infostealers (RedLine, Lumma). Access is gained where MFA is absent, leading to the theft of terabytes of defense and aviation records. <a href="https://www.bleepingcomputer.com/news/security/cloud-file-sharing-sites-targeted-for-corporate-data-theft-attacks/" target="_blank">More info</a></li>
+
+    <li><strong>VVS Stealer hits Discord users</strong>: Unit 42 detailed "VVS stealer," a Python-based malware distributed via PyInstaller and obfuscated with Pyarmor. It harvests Discord tokens, cookies, and passwords, exfiltrating data via unauthenticated webhooks. It also injects malicious JavaScript into the Discord client to maintain persistent session hijacking. <a href="https://www.infosecurity-magazine.com/news/vvs-stealer-advanced-obfuscation/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>RondoDox botnet exploits React2Shell (CVE-2025-55182)</strong>: The RondoDox botnet is weaponizing a critical unauthenticated RCE flaw in React Server Components' Flight protocol (affecting Next.js). This "React2Shell" vulnerability allows attackers to deploy Mirai-based botnets and cryptominers into enterprise and IoT networks. <a href="https://www.darkreading.com/vulnerabilities-threats/rondodox-botnet-scope-react2shell-exploitation" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Brightspeed investigates million-customer breach claim</strong>: Broadband provider Brightspeed is investigating claims by the Crimson Collective regarding the theft of data from over one million customers. Stolen data allegedly includes PII, account IDs, and partial payment card info. The group previously gained notoriety for breaching Red Hat’s GitLab instance. <a href="https://www.bleepingcomputer.com/news/security/us-broadband-provider-brightspeed-investigates-breach-claims/" target="_blank">More info</a></li>
+
+    <li><strong>Ledger customer data exposed via Global-e breach</strong>: Ledger confirmed customer contact info was exposed following a breach at third-party processor Global-e. The incident affected order data for brands including Adidas, Disney, and Netflix. Ledger emphasized that hardware wallets and seed phrases remain secure. <a href="https://www.bleepingcomputer.com/news/security/ledger-customers-impacted-by-third-party-global-e-data-breach/" target="_blank">More info</a></li>
+
+    <li><strong>NordVPN denies breach, cites third-party "dummy data"</strong>: NordVPN denied claims that its internal Salesforce servers were breached. They clarified that leaked databases containing API keys and tokens originated from a third-party automated testing trial and contained only "dummy data" used for functionality checks in an isolated environment. <a href="https://www.bleepingcomputer.com/news/security/nordvpn-denies-breach-claims-says-attackers-have-dummy-data/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>Telegram darknet market analysis 2026</strong>: Elliptic's analysis reveals that Telegram now hosts a massive Chinese-language darknet ecosystem. Marketplaces facilitate nearly $2 billion in monthly transactions using USDT, serving as hubs for money laundering and "pig butchering" scams after reconstituting from previous bans. <a href="https://www.schneier.com/blog/archives/2026/01/telegram-hosting-worlds-largest-darknet-market.html" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
