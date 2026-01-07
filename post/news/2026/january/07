@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 07/01/26</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 07/01/26</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Critical Zero-Click Dolby Bug in Android (CVE-2025-54957)</strong>: Google’s January 2026 update fixes a critical flaw in the Dolby Digital Plus (DD+) decoder. The integer overflow allows remote code execution via malicious audio attachments. Since Android automatically decodes audio for RCS transcriptions, this can be exploited without user interaction. <a href="https://securityaffairs.com/186591/security/google-fixes-critical-dolby-decoder-bug-in-android-january-update.html" target="_blank">More info</a></li>
+
+    <li><strong>Unpatched Root Shell in TOTOLINK EX200 (CVE-2025-65606)</strong>: A flaw in the firmware-upload logic of the EX200 wireless extender allows attackers to trigger an "abnormal state" that launches an unauthenticated root-level telnet service, granting complete system control. <a href="https://thehackernews.com/2026/01/unpatched-firmware-flaw-exposes.html" target="_blank">More info</a></li>
+
+    <li><strong>N8scape: Critical n8n Sandbox Bypass (CVE-2025-68668)</strong>: With a CVSS of 9.9, this vulnerability in n8n’s Python Code Node allows authenticated users to break isolation and execute arbitrary commands on the host server. Version 2.0.0 addresses this by making a secure task runner the default. <a href="https://thehackernews.com/2026/01/new-n8n-vulnerability-99-cvss-lets.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Kimwolf Botnet Hits 2M Devices</strong>: This evolution of the Aisuru malware targets low-cost Android TV boxes in Brazil and Vietnam. By abusing unauthenticated ADB services, it enlists devices into a massive botnet capable of launching record-breaking 29.7 Tbps DDoS attacks. <a href="https://www.bleepingcomputer.com/news/security/kimwolf-android-botnet-abuses-residential-proxies-to-infect-internal-devices/" target="_blank">More info</a></li>
+
+    <li><strong>Prompt Poaching via Chrome Extensions</strong>: Two malicious extensions impersonating "AITOPIA" were found stealing ChatGPT and DeepSeek conversation logs from 900,000 users. The extensions use DOM scraping to exfiltrate chat history and URLs to attacker servers every 30 minutes. <a href="https://thehackernews.com/2026/01/two-chrome-extensions-caught-stealing.html" target="_blank">More info</a></li>
+    
+    <li><strong>PHALT#BLYX Targets Hospitality Sector</strong>: Russian-linked actors are targeting European hotels with fake Booking.com cancellation alerts. Victims are led to a site displaying a fake BSOD, where they are tricked into running a PowerShell command that deploys the DCRat trojan. <a href="https://www.theregister.com/2026/01/06/russia_hackers_hotel_bsods/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>Exploitation of Legacy D-Link Gateways (CVE-2026-0625)</strong>: Attackers are actively targeting EoL D-Link DSL routers (DSL-2640B, DSL-2740R) via a command injection flaw in the <code>dnscfg.cgi</code> endpoint. As these devices no longer receive patches, CISA recommends immediate retirement. <a href="https://www.bleepingcomputer.com/news/security/new-d-link-flaw-in-legacy-dsl-routers-actively-exploited-in-attacks/" target="_blank">More info</a></li>
+
+    <li><strong>Sophisticated Phishing via Mail Routing Misconfigs</strong>: Microsoft warns of campaigns exploiting environments where MX records point to third-party gateways. Attackers use the Tycoon2FA platform to conduct AiTM attacks that bypass MFA protections by exploiting these complex routing setups. <a href="https://www.microsoft.com/en-us/security/blog/2026/01/06/phishing-actors-exploit-complex-routing-and-misconfigurations-to-spoof-domains/" target="_blank">More info</a></li>
+    
+    <li><strong>1,000% Surge in Attacks on Taiwan Energy</strong>: Taiwan's National Security Bureau reports a massive increase in Chinese cyberattacks. Groups like Mustang Panda and APT41 are targeting critical infrastructure, averaging 2.63 million daily intrusion attempts. <a href="https://www.bleepingcomputer.com/news/security/taiwan-says-chinas-attacks-on-its-energy-sector-increased-tenfold/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🛠️ Tools</h2>
+  <ul>
+    <li><strong>Tailsnitch for Tailscale Security</strong>: A new open-source audit tool for "tailnets" helps administrators identify hidden vulnerabilities, such as non-expiring keys and outdated software, ensuring WireGuard-based overlay networks are properly hardened. <a href="https://isc.sans.edu/diary/32602" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
