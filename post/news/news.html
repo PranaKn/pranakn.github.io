@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 07/01/26</title>
+  <title>📰 Cybersecurity Newsfeed - 08/01/26</title>
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
   <style>
     body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
@@ -17,38 +17,40 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 07/01/26</h2>
+  <h2>📅 08/01/26</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>Critical Zero-Click Dolby Bug in Android (CVE-2025-54957)</strong>: Google’s January 2026 update fixes a critical flaw in the Dolby Digital Plus (DD+) decoder. The integer overflow allows remote code execution via malicious audio attachments. Since Android automatically decodes audio for RCS transcriptions, this can be exploited without user interaction. <a href="https://securityaffairs.com/186591/security/google-fixes-critical-dolby-decoder-bug-in-android-january-update.html" target="_blank">More info</a></li>
+    <li><strong>Critical jsPDF flaw lets hackers steal secrets (CVE-2025-68428)</strong>: A critical vulnerability with a CVSS score of 9.2 has been discovered in the jsPDF library, affecting Node.js builds prior to version 4.0.0. The flaw involves local file inclusion and path traversal within the <code>loadFile</code> function, which unsafely handles user-controlled input. Attackers can exploit this to embed sensitive local files directly into generated PDFs via methods like <code>addImage</code> or <code>html</code>. Users should upgrade to jsPDF 4.0.0 and utilize Node.js versions 22.13.0 or higher. <a href="https://www.bleepingcomputer.com/news/security/critical-jspdf-flaw-lets-hackers-steal-secrets-via-generated-pdfs/" target="_blank">More info</a></li>
 
-    <li><strong>Unpatched Root Shell in TOTOLINK EX200 (CVE-2025-65606)</strong>: A flaw in the firmware-upload logic of the EX200 wireless extender allows attackers to trigger an "abnormal state" that launches an unauthenticated root-level telnet service, granting complete system control. <a href="https://thehackernews.com/2026/01/unpatched-firmware-flaw-exposes.html" target="_blank">More info</a></li>
+    <li><strong>"Ni8mare" flaw allows full n8n server hijack (CVE-2026-21858)</strong>: A maximum-severity vulnerability (CVSS 10.0) allows unauthenticated attackers to gain full control of n8n servers. The flaw stems from a content-type confusion in the <code>formWebhook()</code> function. By spoofing an <code>application/json</code> header, attackers bypass the secure multipart upload parser to read arbitrary files, exposing database credentials and session cookies used to achieve remote code execution. This is critical for AI and RAG pipelines. Administrators should update to version 1.121.0 immediately. <a href="https://thehackernews.com/2026/01/critical-n8n-vulnerability-cvss-100.html" target="_blank">More info</a></li>
 
-    <li><strong>N8scape: Critical n8n Sandbox Bypass (CVE-2025-68668)</strong>: With a CVSS of 9.9, this vulnerability in n8n’s Python Code Node allows authenticated users to break isolation and execute arbitrary commands on the host server. Version 2.0.0 addresses this by making a secure task runner the default. <a href="https://thehackernews.com/2026/01/new-n8n-vulnerability-99-cvss-lets.html" target="_blank">More info</a></li>
+    <li><strong>Veeam patches critical RCE (CVE-2025-59470)</strong>: Veeam has fixed a critical remote code execution vulnerability in its Backup & Replication version 13 software. With a CVSS score of 9.0, the flaw allows users with "Backup Operator" or "Tape Operator" roles to execute arbitrary commands as the "postgres" user. While privileges are required, these roles are powerful in enterprise environments. The update, version 13.0.1.1071, also addresses several other high-severity flaws. <a href="https://cyberscoop.com/veeam-backup-replication-security-flaw-remote-code-execution-fix/" target="_blank">More info</a></li>
+
+    <li><strong>Unpatched Totolink EX200 flaw enables root access (CVE-2025-65606)</strong>: A critical vulnerability exists in the discontinued Totolink EX200 wireless range extender. Malformed firmware uploads trigger an error state that launches an unauthenticated Telnet service with root privileges. As the device is end-of-life (EoL), no patches will be released. Administrators are advised to restrict management access or replace the hardware. <a href="https://www.scworld.com/brief/unpatched-flaw-in-totolink-ex200-extender-allows-remote-control" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>Kimwolf Botnet Hits 2M Devices</strong>: This evolution of the Aisuru malware targets low-cost Android TV boxes in Brazil and Vietnam. By abusing unauthenticated ADB services, it enlists devices into a massive botnet capable of launching record-breaking 29.7 Tbps DDoS attacks. <a href="https://www.bleepingcomputer.com/news/security/kimwolf-android-botnet-abuses-residential-proxies-to-infect-internal-devices/" target="_blank">More info</a></li>
+    <li><strong>GoBruteforcer targets databases and blockchain</strong>: Researchers identified a resurgence of the GoBruteforcer botnet targeting exposed databases (FTP, MySQL, PostgreSQL). The botnet exploits weak credentials, often found in AI-generated configuration snippets. Once access is gained, attackers deploy web shells or IRC bots to scan for and drain TRON and Binance Smart Chain (BSC) wallets. <a href="https://research.checkpoint.com/2026/inside-gobruteforcer-ai-generated-server-defaults-weak-passwords-and-crypto-focused-campaigns/" target="_blank">More info</a></li>
 
-    <li><strong>Prompt Poaching via Chrome Extensions</strong>: Two malicious extensions impersonating "AITOPIA" were found stealing ChatGPT and DeepSeek conversation logs from 900,000 users. The extensions use DOM scraping to exfiltrate chat history and URLs to attacker servers every 30 minutes. <a href="https://thehackernews.com/2026/01/two-chrome-extensions-caught-stealing.html" target="_blank">More info</a></li>
-    
-    <li><strong>PHALT#BLYX Targets Hospitality Sector</strong>: Russian-linked actors are targeting European hotels with fake Booking.com cancellation alerts. Victims are led to a site displaying a fake BSOD, where they are tricked into running a PowerShell command that deploys the DCRat trojan. <a href="https://www.theregister.com/2026/01/06/russia_hackers_hotel_bsods/" target="_blank">More info</a></li>
+    <li><strong>Black Cat group weaponizes SEO poisoning</strong>: A large-scale campaign is targeting Chinese users of software like Notepad++ and Google Chrome. Attackers manipulate search rankings on Bing to direct victims to fraudulent sites. The infection side-loads a malicious DLL via a desktop shortcut, allowing for comprehensive theft of browser credentials and keystrokes. Over 277,000 hosts were reportedly compromised in late 2025. <a href="https://thehackernews.com/2026/01/black-cat-behind-seo-poisoning-malware.html" target="_blank">More info</a></li>
+
+    <li><strong>pkr_mtsi loader fuels malvertising campaigns</strong>: ReversingLabs identified "pkr_mtsi," a sophisticated Windows packer active since April 2025. Disguised as installers for PuTTY or Microsoft Teams, it serves as a flexible loader for payloads like Oyster, Vidar, and Vanguard Stealer. It uses staged architecture and anti-analysis techniques, but exhibits a durable fingerprint via repeated invalid <code>NtProtectVirtualMemory</code> calls. <a href="https://www.reversinglabs.com/blog" target="_blank">More info</a></li>
+
+    <li><strong>"Ghost Tap" malware enables remote NFC fraud</strong>: Group-IB detailed a surge in Android malware that captures NFC data from bank cards and relays it to an attacker-controlled device. This allows criminals to perform "tap-to-pay" transactions at physical terminals or ATMs without the physical card. The malware is sold as a service on Telegram, with "reader" and "tapper" app pairs being used by mule networks. <a href="https://www.group-ib.com/blog/ghost-tapped-chinese-malware/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>Exploitation of Legacy D-Link Gateways (CVE-2026-0625)</strong>: Attackers are actively targeting EoL D-Link DSL routers (DSL-2640B, DSL-2740R) via a command injection flaw in the <code>dnscfg.cgi</code> endpoint. As these devices no longer receive patches, CISA recommends immediate retirement. <a href="https://www.bleepingcomputer.com/news/security/new-d-link-flaw-in-legacy-dsl-routers-actively-exploited-in-attacks/" target="_blank">More info</a></li>
-
-    <li><strong>Sophisticated Phishing via Mail Routing Misconfigs</strong>: Microsoft warns of campaigns exploiting environments where MX records point to third-party gateways. Attackers use the Tycoon2FA platform to conduct AiTM attacks that bypass MFA protections by exploiting these complex routing setups. <a href="https://www.microsoft.com/en-us/security/blog/2026/01/06/phishing-actors-exploit-complex-routing-and-misconfigurations-to-spoof-domains/" target="_blank">More info</a></li>
-    
-    <li><strong>1,000% Surge in Attacks on Taiwan Energy</strong>: Taiwan's National Security Bureau reports a massive increase in Chinese cyberattacks. Groups like Mustang Panda and APT41 are targeting critical infrastructure, averaging 2.63 million daily intrusion attempts. <a href="https://www.bleepingcomputer.com/news/security/taiwan-says-chinas-attacks-on-its-energy-sector-increased-tenfold/" target="_blank">More info</a></li>
+    <li><strong>Malicious AI extensions harvest ChatGPT data</strong>: Two Chrome extensions, "Chat GPT for Chrome with GPT-5" and "AI Sidebar," reached 900,000 downloads before removal. These tools exfiltrated browser data and complete AI conversations under the guise of analytics. This highlights the growing risk of "shadow AI" tools harvesting sensitive corporate intellectual property directly from browser sessions. <a href="https://www.reco.ai/blog/chrome-extensions-stole-900k-ai-conversations-is-your-saas-environment-next" target="_blank">More info</a></li>
   </ul>
 
-  <h2>🛠️ Tools</h2>
+  <h2>💥 Breaches & Leaks</h2>
   <ul>
-    <li><strong>Tailsnitch for Tailscale Security</strong>: A new open-source audit tool for "tailnets" helps administrators identify hidden vulnerabilities, such as non-expiring keys and outdated software, ensuring WireGuard-based overlay networks are properly hardened. <a href="https://isc.sans.edu/diary/32602" target="_blank">More info</a></li>
+    <li><strong>Hacker "Zestix" breaches 50 firms via infostealers</strong>: An Iranian attacker has reportedly breached global companies, including Iberia Airlines, by exploiting credentials stolen via infostealers like RedLine and Lumma. The breaches targeted corporate cloud portals (ShareFile, Nextcloud) that lacked MFA. Stolen assets include 2.3TB of medical records and military blueprints currently being auctioned online. <a href="https://www.securityweek.com/dozens-of-major-data-breaches-linked-to-single-threat-actor/" target="_blank">More info</a></li>
+
+    <li><strong>Gulshan Management Services (GMS) data breach</strong>: GMS confirmed a breach impacting 377,000 individuals following a phishing attack on September 17, 2025. The attack led to network encryption and the exposure of Social Security numbers, driver’s licenses, and financial details. The company is facing class-action lawsuits due to a delay in notifying consumers until January 2026. <a href="https://classlawdc.com/2026/01/06/gulshan-management-services-data-breach/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
