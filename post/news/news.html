@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 09/01/26</title>
+  <title>📰 Cybersecurity Newsfeed - 12/01/26</title>
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
   <style>
     body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
@@ -17,49 +17,37 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 09/01/26</h2>
+  <h2>📅 12/01/26</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>Chinese actors exploit VMware ESXi zero-days (CVE-2025-22224/5/6)</strong>: Threat actors used the MAESTRO orchestrator and a compromised VPN to achieve full VM escapes for over a year before disclosure. CISA has mandated federal agencies to patch these flaws, which allow code execution as the VMX process. <a href="https://securityaffairs.com/186709/hacking/chinese-speaking-hackers-exploited-esxi-zero-days-long-before-disclosure.html" target="_blank">More info</a></li>
-
-    <li><strong>Maximum-severity HPE OneView flaw (CVE-2025-37164)</strong>: Boasting a CVSS score of 10.0, this code injection vulnerability allows unauthenticated attackers to gain remote code execution on the management platform. HPE urges users to apply the December 17 hotfix to prevent infrastructure compromise. <a href="https://www.darkreading.com/vulnerabilities-threats/maximum-severity-hpe-oneview-flaw-exploited" target="_blank">More info</a></li>
-
-    <li><strong>"ZombieAgent" attack targets ChatGPT</strong>: A new prompt injection technique allows attackers to exfiltrate data from linked accounts like Gmail and GitHub. By using pre-defined static URLs for specific characters, the attacker bypasses OpenAI's filters to "leak" data through server-side link requests. <a href="https://www.infosecurity-magazine.com/news/new-zeroclick-attack-chatgpt/" target="_blank">More info</a></li>
-
-    <li><strong>Cisco ISE XXE vulnerability (CVE-2026-20029)</strong>: Following a public PoC, Cisco addressed an XML External Entity issue in the ISE licensing module. Authenticated admins could potentially read sensitive system data. Upgrades are available for versions 3.2, 3.3, and 3.4. <a href="https://securityaffairs.com/186682/security/public-poc-prompts-cisco-patch-for-ise-ise-pic-vulnerability.html" target="_blank">More info</a></li>
-
-    <li><strong>Trend Micro Apex Central RCE (CVE-2025-69258)</strong>: A critical patch fixes a flaw where unauthenticated attackers can load a malicious DLL into the MsgReceiver.exe process to gain SYSTEM privileges. Technical details and PoCs have been published, making immediate updates vital. <a href="https://www.helpnetsecurity.com/2026/01/08/trend-micro-apex-central-cve-2025-69258-rce-poc/" target="_blank">More info</a></li>
-
-    <li><strong>11 Critical flaws in Coolify self-hosting platform</strong>: Multiple command injection vulnerabilities (CVSS 10.0) could lead to full server compromise. With over 52,000 exposed hosts, users must upgrade to version 4.0.0-beta.451 or later to mitigate root-level exploitation risks. <a href="https://thehackernews.com/2026/01/coolify-discloses-11-critical-flaws.html" target="_blank">More info</a></li>
+    <li><strong>Trend Micro Apex Central Critical RCE (CVE-2025-69258)</strong>: Trend Micro has patched a critical remote code execution (RCE) flaw in its Apex Central on-premise management console. The LoadLibraryEX vulnerability (CVSS 9.8) allows unauthenticated attackers to execute code with SYSTEM privileges by loading malicious DLLs. Additionally, CVE-2025-69259 and CVE-2025-69260 address new denial-of-service (DoS) conditions. Administrators are urged to update to Build 7190 immediately to secure exposed management interfaces. <a href="https://securityaffairs.com/186733/hacking/trend-micro-fixed-a-remote-code-execution-in-apex-central.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>UAT-7290 targets South Asian Telcos</strong>: This China-nexus group compromises edge devices via SSH brute-forcing and one-day exploits. They utilize a Linux-centric arsenal, including the SilentRaid implant, to build Operational Relay Box (ORB) infrastructure for persistent spying. <a href="https://www.bleepingcomputer.com/news/security/new-china-linked-hackers-breach-telcos-using-edge-device-exploits/" target="_blank">More info</a></li>
+    <li><strong>Russian APT28 (BlueDelta) Tailored Credential Theft</strong>: Throughout 2025, the GRU-affiliated group APT28 launched localized phishing campaigns targeting Turkish energy research, European think tanks, and government entities in North Macedonia and Uzbekistan. The attackers used native-language lures and legitimate PDF documents to redirect victims to spoofed Microsoft OWA, Google, and Sophos VPN portals. The campaign utilized disposable infrastructure like Webhook.site and ngrok to maintain deniability. <a href="https://thehackernews.com/2026/01/russian-apt28-runs-credential-stealing.html" target="_blank">More info</a> | <a href="https://www.darkreading.com/cyberattacks-data-breaches/russian-apt-credentials-global-targets" target="_blank">More info</a></li>
 
-    <li><strong>FBI warns of Kimsuky "Quishing" campaigns</strong>: North Korean hackers are using malicious QR codes in spearphishing emails to bypass filters and target U.S. government entities. This move to unmanaged mobile devices helps them harvest credentials and bypass MFA. <a href="https://www.bleepingcomputer.com/news/security/fbi-warns-about-kimsuky-hackers-using-qr-codes-to-phish-us-orgs/" target="_blank">More info</a></li>
-
-    <li><strong>Astaroth Banking Trojan hits Brazil via WhatsApp</strong>: The "Boto Cor-de-Rosa" campaign uses automated Portuguese messages on WhatsApp Web to spread malicious ZIP files. Once executed, the trojan captures financial credentials and uses a Python script to further distribute itself to the victim's contacts. <a href="https://hackread.com/astaroth-banking-trojan-brazil-whatsapp-messages/" target="_blank">More info</a></li>
-
-    <li><strong>NodeCordRAT spread via NPM typosquatting</strong>: Malicious packages mimicking the "bitcoinjs" library have been used to deliver NodeCordRAT. The malware leverages Discord for C2 to steal Chrome passwords, MetaMask seed phrases, and sensitive environment variables from crypto developers. <a href="https://hackread.com/discord-nodecordrat-steal-chrome-data-npm-packages/" target="_blank">More info</a></li>
+    <li><strong>FBI Warns of North Korean "Quishing" Attacks</strong>: The FBI issued an advisory regarding the North Korean group Kimsuky using malicious QR codes to bypass enterprise security. By embedding QR codes in spear-phishing emails, attackers force targets to use unmanaged mobile devices, circumventing traditional email security. Once scanned, victims are led to fraudulent portals (M365, Okta) designed to harvest credentials and session tokens, effectively bypassing multi-factor authentication. <a href="https://www.theregister.com/2026/01/09/pyongyangs_cyberspies_are_turning_qr/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>GoBruteforcer Botnet expands targeting</strong>: This Go-based malware is targeting over 50,000 Linux servers by exploiting weak credentials. Recent variants use heavy obfuscation and now include modules to sweep cryptocurrency tokens from TRON and Binance Smart Chain wallets. <a href="https://www.infosecurity-magazine.com/news/gobruteforcer-botnet-linux-servers/" target="_blank">More info</a></li>
-
-    <li><strong>Winzipper Backdoor hidden in fake WinRAR</strong>: Attackers are using typosquatted domains and trojanized WinRAR installers to deploy the Winzipper backdoor. The malware exfiltrates Windows profile data while running a legitimate installer in the foreground to mask its activity. <a href="https://www.malwarebytes.com/blog/threat-intel/2026/01/fake-winrar-downloads-hide-malware-behind-a-real-installer" target="_blank">More info</a></li>
+    <li><strong>Massive Reconnaissance of LLM & Proxy Endpoints</strong>: GreyNoise reported a massive reconnaissance campaign targeting misconfigured proxy servers and Large Language Model (LLM) endpoints. Over 91,000 attack sessions were recorded, targeting over 70 endpoints (OpenAI, Gemini, Llama) to identify unauthorized access to commercial APIs. A separate campaign exploited SSRF in Ollama deployments. The scale suggests professional actors are mapping AI infrastructure for future high-value intrusions. <a href="https://www.bleepingcomputer.com/news/security/hackers-target-misconfigured-proxies-to-access-paid-llm-services/" target="_blank">More info</a></li>
   </ul>
 
-  <h2>🛠️ Tools</h2>
+  <h2>💥 Breaches & Leaks</h2>
   <ul>
-    <li><strong>StackRox for Kubernetes Security</strong>: An open-source platform that secures container environments throughout their lifecycle. It uses Kubernetes APIs and runtime telemetry to enforce policies, scan for vulnerabilities, and block non-compliant deployments to maintain cluster integrity. <a href="https://github.com/stackrox/stackrox" target="_blank">More info</a></li>
+    <li><strong>Instagram API Leak Exposes 17M Rows</strong>: Threat actors leaked a dataset containing 17 million rows of public Instagram information on a hacking forum. The data, obtained through API scraping, includes usernames, display names, and account IDs, with over 6 million records containing email addresses and phone numbers. While Meta maintains sensitive credentials remain uncompromised, the leak increases risks for phishing and social engineering. <a href="https://haveibeenpwned.com/Breach/Instagram" target="_blank">More info</a></li>
+
+    <li><strong>BreachForums Database Leaked</strong>: Administrators confirmed a data leak of a MyBB user database table containing 323,988 member records. The dataset includes display names, registration dates, PGP private keys, and unique public IP addresses. This exposure follows a pattern of law enforcement pressure and provides researchers with intelligence on the forum’s infrastructure and user base. <a href="https://www.bleepingcomputer.com/news/security/breachforums-hacking-forum-database-leaked-exposing-324-000-accounts/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📚 Others</h2>
   <ul>
-    <li><strong>Texas blocks Samsung TV data collection</strong>: A temporary restraining order was briefly issued against Samsung for capturing screenshots every 500ms via Automated Content Recognition (ACR). While the order was vacated, the state alleges Samsung's "dark patterns" violate consumer protection laws. <a href="https://www.bleepingcomputer.com/news/security/texas-court-blocks-samsung-from-tracking-tv-viewing-then-vacates-order/" target="_blank">More info</a></li>
+    <li><strong>Europol Dismantles Black Axe Cell in Spain</strong>: A joint law enforcement operation led to 34 arrests across Spain, targeting a major cell of the Black Axe criminal syndicate. The organization is responsible for over €6 million in damages through BEC, romance scams, and phishing. Authorities seized €66,000 in cash and frozen over €119,000 in bank accounts, disrupting the group's hierarchical European operations. <a href="https://hackread.com/europol-black-axe-cybercrime-ring-spain/" target="_blank">More info</a></li>
+
+    <li><strong>CISA Retires 10 Historic Emergency Directives</strong>: CISA announced the retirement of 10 Emergency Directives issued between 2019 and 2024, marking the largest bulk closure in the agency's history. The directives, covering major incidents like SolarWinds and Microsoft Exchange, were retired as their requirements are now managed through standard vulnerability patching mandates (BOD 22-01). <a href="https://www.bleepingcomputer.com/news/security/cisa-retires-10-emergency-cyber-orders-in-rare-bulk-closure/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
