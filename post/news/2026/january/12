@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 12/01/26</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 12/01/26</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Trend Micro Apex Central Critical RCE (CVE-2025-69258)</strong>: Trend Micro has patched a critical remote code execution (RCE) flaw in its Apex Central on-premise management console. The LoadLibraryEX vulnerability (CVSS 9.8) allows unauthenticated attackers to execute code with SYSTEM privileges by loading malicious DLLs. Additionally, CVE-2025-69259 and CVE-2025-69260 address new denial-of-service (DoS) conditions. Administrators are urged to update to Build 7190 immediately to secure exposed management interfaces. <a href="https://securityaffairs.com/186733/hacking/trend-micro-fixed-a-remote-code-execution-in-apex-central.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Russian APT28 (BlueDelta) Tailored Credential Theft</strong>: Throughout 2025, the GRU-affiliated group APT28 launched localized phishing campaigns targeting Turkish energy research, European think tanks, and government entities in North Macedonia and Uzbekistan. The attackers used native-language lures and legitimate PDF documents to redirect victims to spoofed Microsoft OWA, Google, and Sophos VPN portals. The campaign utilized disposable infrastructure like Webhook.site and ngrok to maintain deniability. <a href="https://thehackernews.com/2026/01/russian-apt28-runs-credential-stealing.html" target="_blank">More info</a> | <a href="https://www.darkreading.com/cyberattacks-data-breaches/russian-apt-credentials-global-targets" target="_blank">More info</a></li>
+
+    <li><strong>FBI Warns of North Korean "Quishing" Attacks</strong>: The FBI issued an advisory regarding the North Korean group Kimsuky using malicious QR codes to bypass enterprise security. By embedding QR codes in spear-phishing emails, attackers force targets to use unmanaged mobile devices, circumventing traditional email security. Once scanned, victims are led to fraudulent portals (M365, Okta) designed to harvest credentials and session tokens, effectively bypassing multi-factor authentication. <a href="https://www.theregister.com/2026/01/09/pyongyangs_cyberspies_are_turning_qr/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>Massive Reconnaissance of LLM & Proxy Endpoints</strong>: GreyNoise reported a massive reconnaissance campaign targeting misconfigured proxy servers and Large Language Model (LLM) endpoints. Over 91,000 attack sessions were recorded, targeting over 70 endpoints (OpenAI, Gemini, Llama) to identify unauthorized access to commercial APIs. A separate campaign exploited SSRF in Ollama deployments. The scale suggests professional actors are mapping AI infrastructure for future high-value intrusions. <a href="https://www.bleepingcomputer.com/news/security/hackers-target-misconfigured-proxies-to-access-paid-llm-services/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Instagram API Leak Exposes 17M Rows</strong>: Threat actors leaked a dataset containing 17 million rows of public Instagram information on a hacking forum. The data, obtained through API scraping, includes usernames, display names, and account IDs, with over 6 million records containing email addresses and phone numbers. While Meta maintains sensitive credentials remain uncompromised, the leak increases risks for phishing and social engineering. <a href="https://haveibeenpwned.com/Breach/Instagram" target="_blank">More info</a></li>
+
+    <li><strong>BreachForums Database Leaked</strong>: Administrators confirmed a data leak of a MyBB user database table containing 323,988 member records. The dataset includes display names, registration dates, PGP private keys, and unique public IP addresses. This exposure follows a pattern of law enforcement pressure and provides researchers with intelligence on the forum’s infrastructure and user base. <a href="https://www.bleepingcomputer.com/news/security/breachforums-hacking-forum-database-leaked-exposing-324-000-accounts/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>Europol Dismantles Black Axe Cell in Spain</strong>: A joint law enforcement operation led to 34 arrests across Spain, targeting a major cell of the Black Axe criminal syndicate. The organization is responsible for over €6 million in damages through BEC, romance scams, and phishing. Authorities seized €66,000 in cash and frozen over €119,000 in bank accounts, disrupting the group's hierarchical European operations. <a href="https://hackread.com/europol-black-axe-cybercrime-ring-spain/" target="_blank">More info</a></li>
+
+    <li><strong>CISA Retires 10 Historic Emergency Directives</strong>: CISA announced the retirement of 10 Emergency Directives issued between 2019 and 2024, marking the largest bulk closure in the agency's history. The directives, covering major incidents like SolarWinds and Microsoft Exchange, were retired as their requirements are now managed through standard vulnerability patching mandates (BOD 22-01). <a href="https://www.bleepingcomputer.com/news/security/cisa-retires-10-emergency-cyber-orders-in-rare-bulk-closure/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
