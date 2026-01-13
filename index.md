@@ -35,20 +35,20 @@ title: Cybersecurity Knowledge Hub
 
 <ul>
   <li>🟢 Publishing daily threat news (weekdays)</li>
-  <li>🟢 Building malware analysis notes</li>
-  <li>🟡 Expanding detection engineering content</li>
+  <li>🟢 Published Book Summary</li>
+  <li>🟡 Building Blog Post About SOC Fundamentals</li>
 </ul>
 
 ## 📈 Knowledge Build
 
-Malware Analysis  
-<progress value="72" max="100"></progress>
+BTL1  
+<progress value="0" max="100"></progress>
 
-Threat Hunting  
-<progress value="65" max="100"></progress>
+SOC Fundamentals  
+<progress value="0" max="100"></progress>
 
-Detection Engineering  
-<progress value="48" max="100"></progress>
+Book Review  
+<progress value="0" max="100"></progress>
 
 ## 📄 Core Topic Areas
 
