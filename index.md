@@ -11,7 +11,17 @@ title: Cybersecurity Knowledge Hub
   </p>
   <p><i>Updated daily. Built from real SOC experience. No fluff.</i></p>
 </div>
+<h2>📡 Live Updates</h2>
 
+<div style="border-left:3px solid #00ff9c; padding-left:15px; margin-bottom:25px;">
+  <p><b>Last update:</b> 2026-01-12</p>
+
+  <ul>
+    <li>🟢 Published new daily threat newsfeed</li>
+    <li>🟢 Updated malware analysis notes</li>
+    <li>🟡 Expanding threat hunting section</li>
+  </ul>
+</div>
 ## 🚪 Choose Your Path
 
 <table>
