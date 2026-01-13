@@ -18,8 +18,8 @@ title: Cybersecurity Knowledge Hub
 
   <ul>
     <li>🟢 Published new daily threat newsfeed</li>
-    <li>🟢 Updated malware analysis notes</li>
-    <li>🟡 Expanding threat hunting section</li>
+    <li>🟢 Updated book summary</li>
+    <li>🟡 Creating Blue Team SOC Fundamentals</li>
   </ul>
 </div>
 ## 🚪 Choose Your Path
