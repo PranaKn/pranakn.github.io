@@ -4,12 +4,13 @@ title: Cybersecurity Knowledge Hub
 ---
 
 <div style="border:1px solid #00ff9c; padding:18px; margin-bottom:30px; background:rgba(0,0,0,0.4)">
-  <h2>🧠 Think Like an Attacker. Defend Like an Engineer.</h2>
+  <h2>🧠 Learn a little every day</h2>
   <p>
-    A hands-on cybersecurity lab focused on <b>Blue Team operations</b>,
-    <b>malware analysis</b>, <b>threat hunting</b>, and <b>real-world detection</b>.
+    Welcome to my cybersecurity learning journey — a place where I document
+    research, hands-on labs, and real-world insights across networking,
+    Linux security, malware analysis, threat hunting, and incident response.
   </p>
-  <p><i>Updated daily. Built from real SOC experience. No fluff.</i></p>
+  <p><i>Built through practice. Refined through repetition.</i></p>
 </div>
 <h2>📡 Live Updates</h2>
 
