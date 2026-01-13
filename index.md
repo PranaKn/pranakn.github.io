@@ -11,6 +11,7 @@ title: Cybersecurity Knowledge Hub
     Linux security, malware analysis, threat hunting, and incident response.
   </p>
   <p><i>Built through practice. Refined through repetition.</i></p>
+  > _"The best way to learn is to teach."_ – Richard Feynman
 </div>
 <h2>📡 Live Updates</h2>
 
