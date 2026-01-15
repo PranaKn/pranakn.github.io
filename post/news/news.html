@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 15/01/26</title>
+  <title>📰 Cybersecurity Newsfeed - 16/01/26</title>
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
   <style>
     body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
@@ -17,45 +17,53 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 15/01/26</h2>
+  <h2>📅 16/01/26</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>Fortinet FortiSIEM RCE (CVE-2025-25256)</strong>: Fortinet addressed a critical RCE vulnerability with a CVSS score of 9.8 affecting the phMonitor service (port 7900). Improper sanitization of CLI requests allows unauthenticated attackers to execute arbitrary OS commands. Horizon3.ai researchers noted similarities to previous flaws targeted by groups like Black Basta. Organizations are urged to update or restrict port 7900 access, as legacy versions remain vulnerable. <a href="https://www.bleepingcomputer.com/news/security/exploit-code-public-for-critical-fortisiem-command-injection-flaw/" target="_blank">More info</a></li>
+    <li><strong>Critical Auth Bypass in Modular DS Plugin (CVE-2026-23550)</strong>: Threat actors are actively exploiting a flaw affecting over 40,000 WordPress sites. The vulnerability allows unauthenticated attackers to gain full administrative access via a "direct request" mode that fails origin verification. Exploitation began Jan 13, 2026. Users must update to v2.5.2 immediately. <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-modular-ds-wordpress-plugin-flaw-for-admin-access/" target="_blank">More info</a></li>
 
-    <li><strong>"ConsentFix" OAuth Hijacking</strong>: Push Security identified a novel technique linked to APT29 that blends social engineering with OAuth phishing to bypass MFA and passkeys. Victims are tricked into pasting authorization codes into malicious pages, allowing attackers to hijack sessions for pre-consented first-party apps like Azure CLI. This bypasses standard Conditional Access policies. <a href="https://www.bleepingcomputer.com/news/security/consentfix-debrief-insights-from-the-new-oauth-phishing-attack/" target="_blank">More info</a></li>
+    <li><strong>StackWarp Vulnerability (CVE-2025-29943) in AMD CPUs</strong>: Researchers disclosed a flaw in AMD Zen 1 through Zen 5 processors targeting the CPU Stack Engine. By manipulating an undocumented control bit, attackers can bypass OpenSSH/Sudo authentication and recover RSA keys within confidential VMs. AMD released microcode patches in July 2025. <a href="https://www.theregister.com/2026/01/15/stackwarp_bug_amd_cpus/" target="_blank">More info</a></li>
 
-    <li><strong>Microsoft Copilot "Reprompt" Exploit</strong>: Varonis researchers discovered a critical exploit in Copilot Personal allowing invisible data exfiltration via a single malicious link. Using Parameter-to-Prompt injection and a "double-request" technique, attackers can harvest conversation histories and personal data. Microsoft patched the flaw in the January 2026 update; enterprise versions were not affected. <a href="https://www.bleepingcomputer.com/news/security/reprompt-attack-let-hackers-hijack-microsoft-copilot-sessions/" target="_blank">More info</a></li>
+    <li><strong>WhisperPair (CVE-2025-36911) Hits Bluetooth Devices</strong>: A critical flaw in Google’s Fast Pair protocol impacts millions of audio devices (Sony, Jabra, JBL). Attackers within 14 meters can hijack devices to eavesdrop or blast audio. Users must manually install firmware updates via manufacturer apps. <a href="https://www.bleepingcomputer.com/news/security/critical-flaw-lets-hackers-track-eavesdrop-via-bluetooth-audio-devices/" target="_blank">More info</a></li>
+
+    <li><strong>Palo Alto Networks Warns of PAN-OS DoS</strong>: A high-severity vulnerability (CVE-2026-0227) in GlobalProtect gateways allows unauthenticated attackers to crash firewalls into a persistent maintenance mode. Admins are urged to upgrade to the latest versions of PAN-OS 10.2, 11.1, 11.2, or 12.1. <a href="https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-dos-bug-letting-hackers-disable-firewalls/" target="_blank">More info</a></li>
+
+    <li><strong>AWS CodeBuild "CodeBreach" Misconfiguration</strong>: A flaw in webhook filters threatened core AWS GitHub repositories. Attackers could have exfiltrated administrative tokens to inject code into the AWS Console. AWS remediated the issue in September 2025; no active exploitation was detected. <a href="https://thehackernews.com/2026/01/aws-codebuild-misconfiguration-exposed.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>DeadLock Ransomware "EtherHiding"</strong>: The group is abusing Polygon smart contracts to rotate proxy server addresses. This resilient C2 strategy uses a malicious HTML wrapper to query the blockchain for dynamic IPs, facilitating encrypted communications via the Session platform. DeadLock also utilizes "Bring Your Own Vulnerable Driver" (BYOVD) tactics for persistence. <a href="https://www.theregister.com/2026/01/14/deadlock_ransomware_smart_contracts/" target="_blank">More info</a></li>
+    <li><strong>Gootloader Weaponizes 1,000-Part ZIP Archives</strong>: New anti-analysis techniques use "ZIP bombs" to crash forensic tools like 7-Zip while allowing Windows to extract malicious JScript. The archives use randomized metadata and truncated records to evade detection. <a href="https://www.bleepingcomputer.com/news/security/gootloader-now-uses-1-000-part-zip-archives-for-stealthy-delivery/" target="_blank">More info</a></li>
 
-    <li><strong>VoidLink Linux Malware Framework</strong>: Check Point Research identified this advanced framework written in Zig, targeting cloud environments (AWS, Azure, GCP, Alibaba). Likely Chinese-affiliated, it features 30+ plugins for container abuse and credential theft. It uses kernel-level rootkits and anti-forensics modules to wipe its presence if analysis is detected. <a href="https://www.theregister.com/2026/01/14/voidlink_linux_malware/" target="_blank">More info</a></li>
+    <li><strong>Mustang Panda Exploits Maduro Capture</strong>: The China-linked group used phishing lures regarding "US plans for Venezuela" to deliver the Lotuslite backdoor. Simultaneously, actor UAT-8837 exploited a SiteCore zero-day (CVE-2025-53690) against critical infrastructure. <a href="https://www.theregister.com/2026/01/15/chinese_spies_used_maduros_capture/" target="_blank">More info</a></li>
 
-    <li><strong>Predator Spyware Anti-Analysis Features</strong>: Jamf Threat Labs identified new capabilities in Intellexa’s spyware, including a diagnostic system that alerts operators (e.g., "error code 304") if security tools like Frida are detected. It also monitors network activity via netstat and suppresses crash logs to stay stealthy, turning failed deployments into intelligence. <a href="https://cyberscoop.com/predator-spyware-demonstrates-troubleshooting-researcher-dodging-capabilities/" target="_blank">More info</a></li>
+    <li><strong>Predator Spyware Diagnostic Error Codes</strong>: Research shows Intellexa’s Predator spyware reports granular error codes to C2 servers when security tools are detected. It also features anti-forensics that delete iOS crash logs and hide recording indicators. <a href="https://www.darkreading.com/mobile-security/predator-spyware-sample-vendor-controlled-c2" target="_blank">More info</a></li>
 
-    <li><strong>Void Blizzard (UAC-0190) Targets Ukraine</strong>: Russian threat actors used Signal and WhatsApp to deliver the PLUGGYAPE backdoor via password-protected archives. The malware uses WebSockets and MQTT for communication, retrieving C2 info from paste services. Other clusters used VHD files and phishing to deploy the FILEMESS stealer and GAMYBEAR backdoor. <a href="https://thehackernews.com/2026/01/pluggyape-malware-uses-signal-and.html" target="_blank">More info</a></li>
+    <li><strong>Microsoft Disrupts RedVDS Cybercrime Platform</strong>: Law enforcement seized servers for RedVDS, a MaaS platform that facilitated $40M in losses. The platform provided anonymous VMs for phishing and BEC scams, identified by a unique "WIN-BUNS25TD77J" fingerprint. <a href="https://www.bleepingcomputer.com/news/security/microsoft-seizes-servers-disrupts-massive-redvds-cybercrime-platform/" target="_blank">More info</a></li>
+
+    <li><strong>CastleLoader MaaS Targets High-Security Sectors</strong>: Operated by GrayBravo, this loader uses "ClickFix" social engineering to trick users into running PowerShell commands. Recent Python-based variants have been spotted targeting government agencies and critical infrastructure. <a href="https://hackread.com/castleloader-variant-infections-critical-sectors/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>Fake PayPal Alerts Deploying RMMs</strong>: A new phishing campaign documented by CyberProof leverages fake payment alerts to trick victims into installing legitimate RMM tools like LogMeIn Rescue and AnyDesk. These "backdoors" often bypass EDR alerts and provide long-term access that can be sold to ransomware or APT actors. <a href="https://www.infosecurity-magazine.com/news/hackers-fake-paypal-notices-deploy/" target="_blank">More info</a></li>
+    <li><strong>PayPal "Call-Back" Phishing via Legitimate Invoices</strong>: Scammers are using PayPal's Money Request system to send verified emails that bypass filters. The emails include a fake support number to trick users into granting remote access. <a href="https://hackread.com/paypal-scam-verified-invoices-fake-support-numbers/" target="_blank">More info</a></li>
+
+    <li><strong>GhostPoster Browser Extension Campaign</strong>: Over 840,000 users were affected by 18 malicious extensions that hid payloads in PNG images. While removed from official stores, the malware remains active on previously infected systems. <a href="https://hackread.com/ghostposter-browser-malware-840000-installs/" target="_blank">More info</a></li>
+
+    <li><strong>China Bans Western Cybersecurity Software</strong>: Beijing has ordered domestic firms to stop using U.S. and Israeli security providers like CrowdStrike and Palo Alto Networks, citing national security concerns and mirroring Western bans on Kaspersky. <a href="https://securityaffairs.com/186920/intelligence/china-bans-u-s-and-israeli-cybersecurity-software-over-security-concerns.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>💥 Breaches & Leaks</h2>
   <ul>
-    <li><strong>Kyowon Group Ransomware Attack</strong>: The South Korean conglomerate confirmed an attack affecting 600 of its 800 servers, disrupting education and hospitality sectors. While data exfiltration is confirmed, investigators are verifying if 5.5 million customer records were leaked. System restoration is nearing completion; no group has claimed credit yet. <a href="https://www.bleepingcomputer.com/news/security/south-korean-giant-kyowon-confirms-data-theft-in-ransomware-attack/" target="_blank">More info</a></li>
+    <li><strong>Grubhub Confirms Breach via ShinyHunters</strong>: Hackers accessed internal systems using credentials from previous Salesloft/Drift attacks. The group claims to hold support transcripts and legacy Salesforce data, demanding a Bitcoin ransom. <a href="https://www.bleepingcomputer.com/news/security/grubhub-confirms-hackers-stole-data-in-recent-security-breach/" target="_blank">More info</a></li>
+
+    <li><strong>DDoS Attack Hits ICE Agent Doxxing Site</strong>: The "ICE List" website, which intended to expose identities of 4,500 U.S. immigration officials, was forced offline by a massive DDoS attack allegedly originating from Russian botnets. <a href="https://www.infosecurity-magazine.com/news/ice-agent-doxxing-site-ddosed/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📚 Others</h2>
   <ul>
-    <li><strong>Windows WinSqlite3.dll False Positives</strong>: Microsoft resolved an issue where security software incorrectly flagged a core Windows component as vulnerable to CVE-2025-6965. The high-severity memory corruption flaw was discovered via Google’s Big Sleep AI. Updates released Jan 13, 2026, rectified the detection errors. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-updates-windows-dll-that-triggered-security-alerts/" target="_blank">More info</a></li>
-
-    <li><strong>AISURU/Kimwolf Botnet Disrupted</strong>: Black Lotus Labs null-routed traffic to over 550 C2 nodes of a botnet that infected 2 million Android TV devices. By deploying the ByteConnect SDK, attackers turned these devices into residential proxy nodes for DDoS attacks and traffic relaying. <a href="https://thehackernews.com/2026/01/kimwolf-botnet-infected-over-2-million.html" target="_blank">More info</a></li>
-
-    <li><strong>Google Gemini 3 "Personal Intelligence"</strong>: Google launched a beta feature allowing Gemini to reason across Gmail, Photos, YouTube, and Search. The opt-in feature uses user data context to provide proactive insights while maintaining privacy controls to prevent direct training on sensitive personal files. <a href="https://www.zdnet.com/article/google-gemini-personal-intelligence/" target="_blank">More info</a></li>
+    <li><strong>BreachLock Enhances Autonomous Red Teaming</strong>: The firm updated its AEV solution with an AI engine to emulate complex attacker behaviors, targeting OWASP Top 10 vulnerabilities with real-time attack path visualizations. <a href="https://hackread.com/breachlock-expands-adversarial-exposure-validation-aev-to-web-applications/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
