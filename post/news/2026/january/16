@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 16/01/26</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 16/01/26</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Critical Auth Bypass in Modular DS Plugin (CVE-2026-23550)</strong>: Threat actors are actively exploiting a flaw affecting over 40,000 WordPress sites. The vulnerability allows unauthenticated attackers to gain full administrative access via a "direct request" mode that fails origin verification. Exploitation began Jan 13, 2026. Users must update to v2.5.2 immediately. <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-modular-ds-wordpress-plugin-flaw-for-admin-access/" target="_blank">More info</a></li>
+
+    <li><strong>StackWarp Vulnerability (CVE-2025-29943) in AMD CPUs</strong>: Researchers disclosed a flaw in AMD Zen 1 through Zen 5 processors targeting the CPU Stack Engine. By manipulating an undocumented control bit, attackers can bypass OpenSSH/Sudo authentication and recover RSA keys within confidential VMs. AMD released microcode patches in July 2025. <a href="https://www.theregister.com/2026/01/15/stackwarp_bug_amd_cpus/" target="_blank">More info</a></li>
+
+    <li><strong>WhisperPair (CVE-2025-36911) Hits Bluetooth Devices</strong>: A critical flaw in Google’s Fast Pair protocol impacts millions of audio devices (Sony, Jabra, JBL). Attackers within 14 meters can hijack devices to eavesdrop or blast audio. Users must manually install firmware updates via manufacturer apps. <a href="https://www.bleepingcomputer.com/news/security/critical-flaw-lets-hackers-track-eavesdrop-via-bluetooth-audio-devices/" target="_blank">More info</a></li>
+
+    <li><strong>Palo Alto Networks Warns of PAN-OS DoS</strong>: A high-severity vulnerability (CVE-2026-0227) in GlobalProtect gateways allows unauthenticated attackers to crash firewalls into a persistent maintenance mode. Admins are urged to upgrade to the latest versions of PAN-OS 10.2, 11.1, 11.2, or 12.1. <a href="https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-dos-bug-letting-hackers-disable-firewalls/" target="_blank">More info</a></li>
+
+    <li><strong>AWS CodeBuild "CodeBreach" Misconfiguration</strong>: A flaw in webhook filters threatened core AWS GitHub repositories. Attackers could have exfiltrated administrative tokens to inject code into the AWS Console. AWS remediated the issue in September 2025; no active exploitation was detected. <a href="https://thehackernews.com/2026/01/aws-codebuild-misconfiguration-exposed.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Gootloader Weaponizes 1,000-Part ZIP Archives</strong>: New anti-analysis techniques use "ZIP bombs" to crash forensic tools like 7-Zip while allowing Windows to extract malicious JScript. The archives use randomized metadata and truncated records to evade detection. <a href="https://www.bleepingcomputer.com/news/security/gootloader-now-uses-1-000-part-zip-archives-for-stealthy-delivery/" target="_blank">More info</a></li>
+
+    <li><strong>Mustang Panda Exploits Maduro Capture</strong>: The China-linked group used phishing lures regarding "US plans for Venezuela" to deliver the Lotuslite backdoor. Simultaneously, actor UAT-8837 exploited a SiteCore zero-day (CVE-2025-53690) against critical infrastructure. <a href="https://www.theregister.com/2026/01/15/chinese_spies_used_maduros_capture/" target="_blank">More info</a></li>
+
+    <li><strong>Predator Spyware Diagnostic Error Codes</strong>: Research shows Intellexa’s Predator spyware reports granular error codes to C2 servers when security tools are detected. It also features anti-forensics that delete iOS crash logs and hide recording indicators. <a href="https://www.darkreading.com/mobile-security/predator-spyware-sample-vendor-controlled-c2" target="_blank">More info</a></li>
+
+    <li><strong>Microsoft Disrupts RedVDS Cybercrime Platform</strong>: Law enforcement seized servers for RedVDS, a MaaS platform that facilitated $40M in losses. The platform provided anonymous VMs for phishing and BEC scams, identified by a unique "WIN-BUNS25TD77J" fingerprint. <a href="https://www.bleepingcomputer.com/news/security/microsoft-seizes-servers-disrupts-massive-redvds-cybercrime-platform/" target="_blank">More info</a></li>
+
+    <li><strong>CastleLoader MaaS Targets High-Security Sectors</strong>: Operated by GrayBravo, this loader uses "ClickFix" social engineering to trick users into running PowerShell commands. Recent Python-based variants have been spotted targeting government agencies and critical infrastructure. <a href="https://hackread.com/castleloader-variant-infections-critical-sectors/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>PayPal "Call-Back" Phishing via Legitimate Invoices</strong>: Scammers are using PayPal's Money Request system to send verified emails that bypass filters. The emails include a fake support number to trick users into granting remote access. <a href="https://hackread.com/paypal-scam-verified-invoices-fake-support-numbers/" target="_blank">More info</a></li>
+
+    <li><strong>GhostPoster Browser Extension Campaign</strong>: Over 840,000 users were affected by 18 malicious extensions that hid payloads in PNG images. While removed from official stores, the malware remains active on previously infected systems. <a href="https://hackread.com/ghostposter-browser-malware-840000-installs/" target="_blank">More info</a></li>
+
+    <li><strong>China Bans Western Cybersecurity Software</strong>: Beijing has ordered domestic firms to stop using U.S. and Israeli security providers like CrowdStrike and Palo Alto Networks, citing national security concerns and mirroring Western bans on Kaspersky. <a href="https://securityaffairs.com/186920/intelligence/china-bans-u-s-and-israeli-cybersecurity-software-over-security-concerns.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Grubhub Confirms Breach via ShinyHunters</strong>: Hackers accessed internal systems using credentials from previous Salesloft/Drift attacks. The group claims to hold support transcripts and legacy Salesforce data, demanding a Bitcoin ransom. <a href="https://www.bleepingcomputer.com/news/security/grubhub-confirms-hackers-stole-data-in-recent-security-breach/" target="_blank">More info</a></li>
+
+    <li><strong>DDoS Attack Hits ICE Agent Doxxing Site</strong>: The "ICE List" website, which intended to expose identities of 4,500 U.S. immigration officials, was forced offline by a massive DDoS attack allegedly originating from Russian botnets. <a href="https://www.infosecurity-magazine.com/news/ice-agent-doxxing-site-ddosed/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>BreachLock Enhances Autonomous Red Teaming</strong>: The firm updated its AEV solution with an AI engine to emulate complex attacker behaviors, targeting OWASP Top 10 vulnerabilities with real-time attack path visualizations. <a href="https://hackread.com/breachlock-expands-adversarial-exposure-validation-aev-to-web-applications/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
