@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 16/01/26</title>
+  <title>📰 Cybersecurity Newsfeed - 18/01/26</title>
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
   <style>
     body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
@@ -17,53 +17,39 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 16/01/26</h2>
+  <h2>📅 18/01/26</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>Critical Auth Bypass in Modular DS Plugin (CVE-2026-23550)</strong>: Threat actors are actively exploiting a flaw affecting over 40,000 WordPress sites. The vulnerability allows unauthenticated attackers to gain full administrative access via a "direct request" mode that fails origin verification. Exploitation began Jan 13, 2026. Users must update to v2.5.2 immediately. <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-modular-ds-wordpress-plugin-flaw-for-admin-access/" target="_blank">More info</a></li>
-
-    <li><strong>StackWarp Vulnerability (CVE-2025-29943) in AMD CPUs</strong>: Researchers disclosed a flaw in AMD Zen 1 through Zen 5 processors targeting the CPU Stack Engine. By manipulating an undocumented control bit, attackers can bypass OpenSSH/Sudo authentication and recover RSA keys within confidential VMs. AMD released microcode patches in July 2025. <a href="https://www.theregister.com/2026/01/15/stackwarp_bug_amd_cpus/" target="_blank">More info</a></li>
-
-    <li><strong>WhisperPair (CVE-2025-36911) Hits Bluetooth Devices</strong>: A critical flaw in Google’s Fast Pair protocol impacts millions of audio devices (Sony, Jabra, JBL). Attackers within 14 meters can hijack devices to eavesdrop or blast audio. Users must manually install firmware updates via manufacturer apps. <a href="https://www.bleepingcomputer.com/news/security/critical-flaw-lets-hackers-track-eavesdrop-via-bluetooth-audio-devices/" target="_blank">More info</a></li>
-
-    <li><strong>Palo Alto Networks Warns of PAN-OS DoS</strong>: A high-severity vulnerability (CVE-2026-0227) in GlobalProtect gateways allows unauthenticated attackers to crash firewalls into a persistent maintenance mode. Admins are urged to upgrade to the latest versions of PAN-OS 10.2, 11.1, 11.2, or 12.1. <a href="https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-dos-bug-letting-hackers-disable-firewalls/" target="_blank">More info</a></li>
-
-    <li><strong>AWS CodeBuild "CodeBreach" Misconfiguration</strong>: A flaw in webhook filters threatened core AWS GitHub repositories. Attackers could have exfiltrated administrative tokens to inject code into the AWS Console. AWS remediated the issue in September 2025; no active exploitation was detected. <a href="https://thehackernews.com/2026/01/aws-codebuild-misconfiguration-exposed.html" target="_blank">More info</a></li>
+    <li><strong>Cisco fixes critical AsyncOS zero-day (CVE-2025-20393)</strong>: Cisco released critical updates for Email Security Gateway and Secure Email Manager to address a CVSS 10.0 vulnerability. Attributed to China-linked actor UAT-9686, the exploit allowed unauthenticated remote root-level command execution. Attackers deployed the "Aqua" malware suite for persistence. Cisco warns that administrators must rebuild compromised appliances from clean images to ensure full eradication. <a href="https://www.helpnetsecurity.com/2026/01/16/cisco-fixes-asyncos-vulnerability-exploited-in-zero-day-attacks-cve-2025-20393/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>Gootloader Weaponizes 1,000-Part ZIP Archives</strong>: New anti-analysis techniques use "ZIP bombs" to crash forensic tools like 7-Zip while allowing Windows to extract malicious JScript. The archives use randomized metadata and truncated records to evade detection. <a href="https://www.bleepingcomputer.com/news/security/gootloader-now-uses-1-000-part-zip-archives-for-stealthy-delivery/" target="_blank">More info</a></li>
+    <li><strong>GhostPoster campaign hits 840,000 installs</strong>: Researchers identified 17 malicious browser extensions using advanced steganography (hiding code in PNG files) to bypass security analysis. Linked to the "DarkSpectre" actor, the malware performs ad fraud and hijacks affiliate links. The campaign used delayed execution to remain undetected across major browser stores for years. <a href="https://www.bleepingcomputer.com/news/security/malicious-ghostposter-browser-extensions-found-with-840-000-installs/" target="_blank">More info</a></li>
 
-    <li><strong>Mustang Panda Exploits Maduro Capture</strong>: The China-linked group used phishing lures regarding "US plans for Venezuela" to deliver the Lotuslite backdoor. Simultaneously, actor UAT-8837 exploited a SiteCore zero-day (CVE-2025-53690) against critical infrastructure. <a href="https://www.theregister.com/2026/01/15/chinese_spies_used_maduros_capture/" target="_blank">More info</a></li>
+    <li><strong>UAT-8837 targets North American Critical Infrastructure</strong>: A China-nexus group has been exploiting a zero-day (CVE-2025-53690) in Sitecore products. Using tools like Earthworm and Certipy, the group escalates privileges and maps Active Directory environments. Their focus on exfiltrating product-related DLLs suggests preparation for future supply-chain attacks. <a href="https://securityaffairs.com/186999/breaking-news/china-linked-apt-uat-8837-targets-north-american-critical-infrastructure.html" target="_blank">More info</a></li>
 
-    <li><strong>Predator Spyware Diagnostic Error Codes</strong>: Research shows Intellexa’s Predator spyware reports granular error codes to C2 servers when security tools are detected. It also features anti-forensics that delete iOS crash logs and hide recording indicators. <a href="https://www.darkreading.com/mobile-security/predator-spyware-sample-vendor-controlled-c2" target="_blank">More info</a></li>
-
-    <li><strong>Microsoft Disrupts RedVDS Cybercrime Platform</strong>: Law enforcement seized servers for RedVDS, a MaaS platform that facilitated $40M in losses. The platform provided anonymous VMs for phishing and BEC scams, identified by a unique "WIN-BUNS25TD77J" fingerprint. <a href="https://www.bleepingcomputer.com/news/security/microsoft-seizes-servers-disrupts-massive-redvds-cybercrime-platform/" target="_blank">More info</a></li>
-
-    <li><strong>CastleLoader MaaS Targets High-Security Sectors</strong>: Operated by GrayBravo, this loader uses "ClickFix" social engineering to trick users into running PowerShell commands. Recent Python-based variants have been spotted targeting government agencies and critical infrastructure. <a href="https://hackread.com/castleloader-variant-infections-critical-sectors/" target="_blank">More info</a></li>
+    <li><strong>StealC malware panels hijacked by researchers</strong>: CyberArk exploited an XSS vulnerability in the StealC info-stealer admin panel to monitor attackers. They identified a Russian-speaking operator in Ukraine, "YouTubeTA," who compromised 5,000 victims and stole 390,000 passwords via cracked software lures on YouTube. <a href="https://www.bleepingcomputer.com/news/security/stealc-hackers-hacked-as-researchers-hijack-malware-control-panels/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>PayPal "Call-Back" Phishing via Legitimate Invoices</strong>: Scammers are using PayPal's Money Request system to send verified emails that bypass filters. The emails include a fake support number to trick users into granting remote access. <a href="https://hackread.com/paypal-scam-verified-invoices-fake-support-numbers/" target="_blank">More info</a></li>
-
-    <li><strong>GhostPoster Browser Extension Campaign</strong>: Over 840,000 users were affected by 18 malicious extensions that hid payloads in PNG images. While removed from official stores, the malware remains active on previously infected systems. <a href="https://hackread.com/ghostposter-browser-malware-840000-installs/" target="_blank">More info</a></li>
-
-    <li><strong>China Bans Western Cybersecurity Software</strong>: Beijing has ordered domestic firms to stop using U.S. and Israeli security providers like CrowdStrike and Palo Alto Networks, citing national security concerns and mirroring Western bans on Kaspersky. <a href="https://securityaffairs.com/186920/intelligence/china-bans-u-s-and-israeli-cybersecurity-software-over-security-concerns.html" target="_blank">More info</a></li>
+    <li><strong>Enterprise HR platforms targeted by Chrome extensions</strong>: Malicious extensions masquerading as productivity tools targeted Workday, NetSuite, and SAP SuccessFactors. By stealing session tokens every 60 seconds, attackers bypassed MFA. The malware also hid security administration pages from legitimate admins to prevent incident response. <a href="https://www.bleepingcomputer.com/news/security/credential-stealing-chrome-extensions-target-enterprise-hr-platforms/" target="_blank">More info</a></li>
   </ul>
 
   <h2>💥 Breaches & Leaks</h2>
   <ul>
-    <li><strong>Grubhub Confirms Breach via ShinyHunters</strong>: Hackers accessed internal systems using credentials from previous Salesloft/Drift attacks. The group claims to hold support transcripts and legacy Salesforce data, demanding a Bitcoin ransom. <a href="https://www.bleepingcomputer.com/news/security/grubhub-confirms-hackers-stole-data-in-recent-security-breach/" target="_blank">More info</a></li>
+    <li><strong>Activists hijack Iran’s Badr satellite</strong>: Anti-regime groups interrupted Iranian state TV for ten minutes on January 18, broadcasting protest messages and calls for military defection from Crown Prince Reza Pahlavi. The breach coincided with significant internet disruptions across the country reported by NetBlocks. <a href="https://securityaffairs.com/187055/hacktivism/hacktivists-hijacked-iran-state-tv-to-broadcast-anti-regime-messages-and-reza-pahlavis-protest-appeal.html" target="_blank">More info</a></li>
 
-    <li><strong>DDoS Attack Hits ICE Agent Doxxing Site</strong>: The "ICE List" website, which intended to expose identities of 4,500 U.S. immigration officials, was forced offline by a massive DDoS attack allegedly originating from Russian botnets. <a href="https://www.infosecurity-magazine.com/news/ice-agent-doxxing-site-ddosed/" target="_blank">More info</a></li>
+    <li><strong>CIRO breach exposes 750,000 Canadian investors</strong>: The Canadian Investment Regulatory Organization confirmed that a long-term forensic investigation into a 2023 breach revealed the theft of SINs and government IDs. While login credentials were safe, it remains one of Canada’s most significant financial regulatory data compromises. <a href="https://www.bleepingcomputer.com/news/security/ciro-data-breach-last-year-exposed-info-on-750-000-canadian-investors/" target="_blank">More info</a></li>
+
+    <li><strong>"ICE List" site targeted by DDoS</strong>: A website planning to dox 4,500 federal agents following a fatal shooting in Minneapolis was taken offline by a sophisticated DDoS attack. Founder Dominick Skinner attributed the traffic to a Russian bot farm. The site is currently attempting to stay online via Dutch servers. <a href="https://hackread.com/ice-agent-doxxing-platform-ddos-attack/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📚 Others</h2>
   <ul>
-    <li><strong>BreachLock Enhances Autonomous Red Teaming</strong>: The firm updated its AEV solution with an AI engine to emulate complex attacker behaviors, targeting OWASP Top 10 vulnerabilities with real-time attack path visualizations. <a href="https://hackread.com/breachlock-expands-adversarial-exposure-validation-aev-to-web-applications/" target="_blank">More info</a></li>
+    <li><strong>Black Basta ransomware cell dismantled</strong>: Ukrainian and German authorities arrested two key suspects in Ivano-Frankivsk and Lviv who served as "hash crackers" for the group. An international warrant has been issued for the group's alleged Russian leader, Oleg Nefedov, who is accused of orchestrating attacks on 700+ organizations. <a href="https://securityaffairs.com/187008/cyber-crime/ukraine-germany-operation-targets-black-basta-russian-leader-wanted.html" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
