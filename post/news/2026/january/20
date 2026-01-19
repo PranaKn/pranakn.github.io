@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 20/01/26</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 20/01/26</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Google Gemini prompt injection via Calendar</strong>: Researchers at Miggo Security disclosed a critical vulnerability where dormant natural language payloads in Google Calendar descriptions allow attackers to bypass privacy guardrails. By asking Gemini about their schedule, victims unknowingly trigger an exploit that exfiltrates private meeting data to attacker-visible events. This "zero-click" language-based vulnerability has since been mitigated by Google. <a href="https://thehackernews.com/2026/01/google-gemini-prompt-injection-flaw.html" target="_blank">More info</a></li>
+
+    <li><strong>TP-Link VIGI cameras authentication bypass (CVE-2026-0629)</strong>: A high-severity flaw (CVSS 8.7) affecting over 32 models in the VIGI C and InSight series allows LAN-based attackers to bypass password recovery checks. By manipulating client-side state, attackers can reset admin passwords and gain full device control, including live video access. Over 2,500 cameras are estimated to be exposed globally; users should update to firmware 3.1.0 or 2.1.0 immediately. <a href="https://www.securityweek.com/tp-link-patches-vulnerability-exposing-vigi-cameras-to-hacking/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>PDFSider backdoor hits Fortune 100 firm</strong>: A sophisticated campaign linked to Qilin ransomware used PDFSider to target a major financial firm. Attackers used social engineering and Microsoft Quick Assist to deploy a ZIP containing a signed PDF24 executable and a malicious cryptbase.dll. The malware uses DLL side-loading, DNS-based exfiltration, and AES-256-GCM encryption for covert long-term espionage. <a href="https://www.bleepingcomputer.com/news/security/new-pdfsider-windows-malware-deployed-on-fortune-100-firms-network/" target="_blank">More info</a></li>
+
+    <li><strong>Mustang Panda deploys LOTUSLITE via political bait</strong>: The China-linked group is targeting U.S. government officials using U.S.-Venezuela tensions as bait. The campaign uses DLL side-loading via a renamed Tencent music player to drop the LOTUSLITE backdoor. It maintains stealth by impersonating Googlebot traffic while granting attackers remote control to steal files and monitor screens. <a href="https://hackread.com/mastang-panda-venezuela-news-lotuslite-malware/" target="_blank">More info</a></li>
+
+    <li><strong>Malicious Chrome extensions sabotage remediation</strong>: Researchers discovered extensions like DataByCloud and Software Access targeting HR/ERP platforms (Workday, SAP). Beyond stealing session tokens every 60 seconds, these extensions actively blocked password changes and created redirect loops on admin pages to prevent security teams from locking compromised accounts. <a href="https://www.infosecurity-magazine.com/news/malicious-google-chrome-extension/" target="_blank">More info</a></li>
+
+    <li><strong>Evelyn Stealer targets developers via VSC</strong>: A supply-chain attack uses weaponized Visual Studio Code extensions like "Bitcoin Black" to deliver Evelyn Stealer. The malware uses process hollowing and extensive anti-analysis checks to evade sandboxes. Once active, it harvests browser credentials, crypto wallets, and Wi-Fi data, exfiltrating the haul to an attacker-controlled FTP server. <a href="https://www.trendmicro.com/en_us/research/26/a/analysis-of-the-evelyn-stealer-campaign.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>DarkSpectre "Sleeper" extensions hit 8.8M users</strong>: The Chinese actor DarkSpectre utilized steganography to hide JavaScript payloads inside extension logos, allowing them to pass security reviews and remain benign for years. Strains like ShadyPanda and Zoom Stealer were eventually updated to enable real-time corporate espionage via WebSockets across Chrome, Edge, and Firefox. <a href="https://www.malwarebytes.com/blog/news/2026/01/firefox-joins-chrome-and-edge-as-sleeper-extensions-spy-on-users" target="_blank">More info</a></li>
+
+    <li><strong>UK NCSC warns of pro-Russian DDoS surge</strong>: A high-priority alert highlights renewed activity from NoName057(16) using the gamified "DDoSia" platform. Targeting local government and critical infrastructure, these attacks are increasingly focused on OT environments. The NCSC recommends upstream defenses and cloud-native scaling to mitigate the disruption. <a href="https://www.bleepingcomputer.com/news/security/uk-govt-warns-about-ongoing-russian-hacktivist-group-attacks/" target="_blank">More info</a></li>
+
+    <li><strong>NexShield & KongTuke browser freezing tactics</strong>: A new campaign uses the "NexShield" extension to intentionally freeze browsers via resource exhaustion. Victims are then prompted with a fake security alert to run a PowerShell "repair" command, which actually installs the ModeloRAT backdoor for lateral movement within domain-joined environments. <a href="https://www.helpnetsecurity.com/2026/01/19/fake-browser-crash-alert-chrome-edge-extension/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Ingram Micro ransomware breach affects 42k</strong>: The IT distributor confirmed a July 2025 attack by the SafePay ransomware group. Approximately 3.5TB of data was stolen, including Social Security numbers and passport details. The breach caused significant outages and highlights SafePay's expansion following the decline of other major ransomware syndicates. <a href="https://www.bleepingcomputer.com/news/security/ingram-micro-says-ransomware-attack-affected-42-000-people/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>Jordanian access broker "r1z" pleads guilty</strong>: Feras Khalil Ahmad Albashiti admitted to selling stolen credentials for over 50 corporate networks. Operating as an initial access broker, he sold data to undercover officers for cryptocurrency. He faces up to 10 years in prison for access device fraud. <a href="https://hackread.com/jordanian-man-pleads-guilty-sell-companies-stolen-logins/" target="_blank">More info</a></li>
+
+    <li><strong>Instagram hacker admits to Supreme Court breach</strong>: 24-year-old Nicholas Moore pleaded guilty to hacking U.S. government systems, including the Supreme Court's filing system. Moore posted stolen veteran health records and personal data on his Instagram account, "@ihackedthegovernment." He faces up to one year in prison at his April sentencing. <a href="https://www.bleepingcomputer.com/news/security/hacker-admits-to-leaking-stolen-supreme-court-data-on-instagram/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
