@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 21/01/26</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 21/01/26</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Cloudflare remediates critical WAF logic flaw</strong>: Cloudflare patched a vulnerability in its Web Application Firewall (WAF) related to the ACME HTTP-01 challenge. The system automatically disabled security features for the <code>/.well-known/acme-challenge/</code> path but failed to verify if requested tokens matched active challenges for specific hostnames. This allowed unauthorized traffic to bypass security controls and reach origin servers, potentially enabling data exfiltration. <a href="https://www.theregister.com/2026/01/20/cloudflare_fixes_acme_validation/" target="_blank">More info</a></li>
+
+    <li><strong>WordPress ACF Extended plugin privilege escalation (CVE-2025-14533)</strong>: A critical flaw in Advanced Custom Fields: Extended (versions 0.9.2.1 and earlier) allows unauthenticated attackers to gain administrative rights. The bug stems from a logic error in user form actions that fails to enforce role restrictions. Roughly 50,000 sites are potentially exposed amid a surge in automated plugin reconnaissance. <a href="https://www.bleepingcomputer.com/news/security/acf-plugin-bug-gives-hackers-admin-on-50-000-wordpress-sites/" target="_blank">More info</a></li>
+
+    <li><strong>Anthropic patches RCE flaws in Git MCP server</strong>: Three vulnerabilities (CVE-2025-68143/44/45) were fixed in the <code>mcp-server-git</code> tool. These flaws enabled unauthenticated remote code execution and arbitrary file deletion via prompt injection. Attackers could weaponize README files to trick AI assistants into executing malicious Git commands. Anthropic addressed this by removing the <code>git_init</code> tool and sanitizing arguments. <a href="https://thehackernews.com/2026/01/three-flaws-in-anthropic-mcp-git-server.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Massive Zendesk relay spam campaign</strong>: Attackers are exploiting Zendesk help desk instances belonging to major firms like Live Nation, Capcom, and Tinder. By abusing misconfigured anonymous ticket submissions, attackers trigger automated email confirmations that carry fraudulent legal notices and phishing links. These emails bypass spam filters because they originate from trusted domains. <a href="https://www.darkreading.com/threat-intelligence/mass-spam-attacks-zendesk-instances" target="_blank">More info</a></li>
+
+    <li><strong>VoidLink: First AI-authored malware framework</strong>: Check Point Research identified "VoidLink," a cloud-native Linux toolkit developed almost entirely by AI using the TRAE IDE. The developer used AI to generate 88,000 lines of code and a 30-week roadmap in just seven days. The toolkit features eBPF rootkits and Zig-based implants for credential harvesting, marking a shift toward AI-accelerated high-complexity threats. <a href="https://www.bleepingcomputer.com/news/security/voidlink-cloud-malware-shows-clear-signs-of-being-ai-generated/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>North Korea targets engineers via VS Code</strong>: The "Contagious Interview" campaign has evolved to weaponize VS Code <code>tasks.json</code> files. Disguised as technical assessments, malicious Git repos execute commands when "folder trust" is granted, delivering the BeaverTail stealer and InvisibleFerret backdoor to target crypto wallets and developer credentials. <a href="https://thehackernews.com/2026/01/north-korea-linked-hackers-target.html" target="_blank">More info</a></li>
+
+    <li><strong>LinkedIn phishing uses DLL side-loading</strong>: A sophisticated campaign on LinkedIn targets corporate employees with WinRAR archives. Execution triggers a DLL side-loading chain where a legitimate PDF reader loads a rogue DLL. This executes a Python shellcode in memory to establish a persistent RAT for lateral movement within corporate networks. <a href="https://thehackernews.com/2026/01/hackers-use-linkedin-messages-to-spread.html" target="_blank">More info</a></li>
+
+    <li><strong>Evelyn Stealer hits VS Code Marketplace</strong>: Attackers published malicious extensions like "Codo AI" to deliver a multi-stage infection. A downloader DLL uses PowerShell to fetch a payload that harvests credentials and browser cookies. The malware uses anti-sandbox checks and headless browser modes to exfiltrate data silently via FTP. <a href="https://thehackernews.com/2026/01/evelyn-stealer-malware-abuses-vs-code.html" target="_blank">More info</a></li>
+
+    <li><strong>The "Fifth Wave" of AI-Weaponized Cybercrime</strong>: Group-IB reports a transition to industrialized AI attacks. This includes "Deepfake-as-a-Service," $5 synthetic identity kits, and "Dark LLMs" like Nytheon AI. These tools automate malware development and "Agentic Phishing," collapsing the cost and skill required for high-level intrusions. <a href="https://www.infosecurity-magazine.com/news/ai-supercharges-attacks-cybercrime/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Everest ransomware claims McDonald’s India breach</strong>: The group allegedly exfiltrated 861 GB of data, including financial reports (2023–2026), ERP migration files, and investor databases. The leak purportedly includes manager credentials and customer data. Everest has issued a 48-hour ultimatum for negotiations. <a href="https://hackread.com/everest-ransomware-mcdonalds-india-breach-customer-data/" target="_blank">More info</a></li>
+
+    <li><strong>Luxshare Precision hit by RansomHouse</strong>: A major Apple, Nvidia, and Meta partner, Luxshare, has been listed by RansomHouse. The group claims to have stolen 3D CAD models and PCB designs. While evidence links were posted, the domains are currently inactive, leaving the full extent of the supply chain theft unverified. <a href="https://hackread.com/ransomhouse-data-breach-apple-contractor-luxshare/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>EU proposes ban on "High-Risk" 5G suppliers</strong>: The European Commission moved to mandate the removal of vendors like Huawei and ZTE from critical telecom infrastructure within three years. This package expands ENISA's authority and centralizes incident reporting to bolster technological sovereignty across 18 critical sectors. <a href="https://www.bleepingcomputer.com/news/security/eu-plans-cybersecurity-overhaul-to-block-foreign-high-risk-suppliers/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🛠️ Tools</h2>
+  <ul>
+    <li><strong>Radware launches lifecycle API Security Service</strong>: A new service designed to identify shadow APIs and business logic flaws using real-time traffic analysis. It offers automated discovery and protection against OWASP Top 10 API risks and Layer 7 HTTPS DDoS attacks using AI-driven detection. <a href="https://www.helpnetsecurity.com/2026/01/20/radware-api-security-service/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
