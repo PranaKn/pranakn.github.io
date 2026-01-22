@@ -33,14 +33,6 @@ title: Cybersecurity Knowledge Hub
 <tr><td>📊 <b>Blue Team Ops</b></td><td>SIEM, alert triage, false positives, escalation, and incident response reality.</td></tr>
 </table>
 
-## 📡 Live Status
-
-<ul>
-  <li>🟢 Publishing daily threat news (weekdays)</li>
-  <li>🟢 Published Book Summary</li>
-  <li>🟡 Building Blog Post About SOC Fundamentals</li>
-</ul>
-
 ## 📈 Knowledge Build
 
 BTL1  
