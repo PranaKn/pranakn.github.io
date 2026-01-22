@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 22/01/26</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 22/01/26</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Pwn2Own Automotive 2026: 37 Zero-Days Exposed</strong>: Researchers earned over $516,000 on day one in Tokyo. Highlights include the Synacktiv Team gaining root access to a Tesla Infotainment System via USB. Exploits also hit EV chargers (Alpitronic, Autel, ChargePoint) and navigation systems. Vendors now have 90 days to patch before technical details go public. <a href="https://www.bleepingcomputer.com/news/security/tesla-hacked-37-zero-days-demoed-at-pwn2own-automotive-2026/" target="_blank">More info</a></li>
+
+    <li><strong>ChainLeak: Critical Flaws in Chainlit AI</strong>: Zafran Labs discovered CVE-2026-22218 (arbitrary file read) and CVE-2026-22219 (SSRF) in the Chainlit framework. When chained, these allow attackers to exfiltrate API keys and achieve full-system compromise in cloud environments. Upgrade to version 2.9.4 immediately. <a href="https://www.bleepingcomputer.com/news/security/chainlit-ai-framework-bugs-let-hackers-breach-cloud-environments/" target="_blank">More info</a></li>
+
+    <li><strong>Cisco Unified Communications Zero-Day (CVE-2026-20045)</strong>: A critical code-injection flaw allows remote attackers to gain root access via crafted HTTP requests. CISA has added this to the KEV catalog, mandating federal agencies to patch or migrate by February 11, 2026. <a href="https://www.bleepingcomputer.com/news/security/cisco-fixes-unified-communications-rce-zero-day-exploited-in-attacks/" target="_blank">More info</a></li>
+
+    <li><strong>Fortinet Auth Bypass (CVE-2025-59718) Persistence</strong>: Despite recent patches, researchers report that unauthorized logins continue in "fixed" versions (v7.4.9). Attackers are bypassing SAML checks to create rogue helpdesk accounts. Admins are urged to disable FortiCloud SSO administrative logins until a permanent fix is released. <a href="https://www.helpnetsecurity.com/2026/01/21/patched-fortigate-compromised-via-cve-2025-59718/" target="_blank">More info</a></li>
+
+    <li><strong>Zoom Node Multimedia Routers RCE (CVE-2026-22844)</strong>: A near-perfect 9.9 CVSS score vulnerability allows meeting participants to achieve remote code execution in on-premises or hybrid deployments. No active exploitation is reported yet, but immediate upgrades to version 5.2.1716.0 are required. <a href="https://securityaffairs.com/187165/security/zoom-fixed-critical-node-multimedia-routers-flaw.html" target="_blank">More info</a></li>
+
+    <li><strong>GitLab 2FA Bypass and DoS Patches</strong>: CVE-2026-0723 allows attackers to bypass two-factor authentication due to unchecked return values. GitLab also patched two high-severity DoS flaws. Self-managed admins should update to 18.8.2, 18.7.2, or 18.6.4 to secure their supply chains. <a href="https://www.bleepingcomputer.com/news/security/gitlab-warns-of-high-severity-2fa-bypass-denial-of-service-flaws/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>North Korean "PurpleBravo" Campaign</strong>: Threat actors are using fake LinkedIn recruiters to lure developers into running trojanized VS Code projects. This delivers BeaverTail and GolangGhost malware, leading to credential theft and persistent network access on corporate devices. <a href="https://thehackernews.com/2026/01/north-korean-purplebravo-campaign.html" target="_blank">More info</a></li>
+
+    <li><strong>Sophisticated Peruvian Loan Phishing</strong>: A large-scale operation uses over 370 domains to harvest high-quality financial data. The scam includes real-time Luhn algorithm validation for credit cards and a fake "facial recognition" step to trick users into providing their 6-digit PINs. <a href="https://www.infosecurity-magazine.com/news/loan-scam-harvests-cards-pins/" target="_blank">More info</a></li>
+
+    <li><strong>VoidLink: AI-Orchestrated Linux Malware</strong>: Check Point Research reports that a new Linux malware family was almost entirely planned and structured by AI agents. This automation reduced a 30-week development cycle to just four weeks, marking a new era of AI-driven offensive capabilities. <a href="https://www.infosecurity-magazine.com/news/voidlink-linux-malware-built-using/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>Android Click-Fraud Trojans Use TensorFlow.js</strong>: New mobile malware uses visual machine learning to detect and click on hidden browser ads. By mimicking human-like navigation rather than static scripts, the trojans effectively evade traditional bot detection while causing battery and data drain. <a href="https://www.bleepingcomputer.com/news/security/new-android-malware-uses-ai-to-click-on-hidden-browser-ads/" target="_blank">More info</a></li>
+
+    <li><strong>LastPass Customers Targeted in Holiday Phishing</strong>: A campaign launched over the MLK Day holiday uses AI-enhanced emails claiming "scheduled maintenance." Users are directed to a malicious S3-hosted page to harvest master passwords. LastPass reminds users they never ask for passwords via email. <a href="https://www.darkreading.com/application-security/phishing-campaign-zeroes-lastpass-customers" target="_blank">More info</a></li>
+
+    <li><strong>Hackers Exploiting Security Training Apps (DVWA/Juice Shop)</strong>: Pentera Labs identified thousands of exposed instances of vulnerable training apps used to breach Fortune 500 cloud environments. Overly privileged IAM roles allow attackers to move from web exploits to full cloud takeover. <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-security-testing-apps-to-breach-fortune-500-firms/" target="_blank">More info</a></li>
+
+    <li><strong>NCSC Warns of Russian Hacktivist DDoS</strong>: Pro-Russian groups like NoName057(16) are increasingly targeting UK critical infrastructure (energy, water, food) with DDoS attacks. While the technical sophistication is relatively low, the volume and ideological motivation pose a significant resilience risk. <a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/pro-russian-denial-of-service-attacks-target-uk-ncsc-warns" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Iranian State TV Hijacked by Hacktivists</strong>: Protesters breached the Badr satellite system to broadcast anti-government messages and a speech by the exiled Crown Prince. The 10-minute disruption occurred amidst economic crisis and severe internet blackouts in Iran. <a href="https://hackread.com/iranian-tv-transmission-hacked-exiled-prince-message/" target="_blank">More info</a></li>
+
+    <li><strong>Under Armour Data Breach Leaked via HIBP</strong>: 72.7 million records from a November 2025 intrusion by the Everest ransomware group have been added to Have I Been Pwned. The leak includes names, DOBs, and purchase history. A class-action lawsuit is currently underway. <a href="https://www.theregister.com/2026/01/21/under_armour_everest/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🛠️ Tools</h2>
+  <ul>
+    <li><strong>Bandit: Static Analysis for Python Security</strong>: This open-source tool scans Python source code for security vulnerabilities by parsing it into an abstract syntax tree. It identifies patterns like hard-coded passwords or weak crypto, making it a staple for automated security linting in CI/CD. <a href="https://www.helpnetsecurity.com/2026/01/21/bandit-open-source-tool-find-security-issues-python-code/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
