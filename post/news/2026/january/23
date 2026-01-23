@@ -1,0 +1,78 @@
+# 23/01/2026
+
+**VULNERABILITIES**
+
+Several critical vulnerabilities have been disclosed across diverse enterprise and development platforms. Versa Concerto (CVE-2025-34026) suffers from improper authentication in its Traefik reverse proxy, exposing administrative endpoints and heap dumps. Synacor Zimbra Collaboration Suite (CVE-2025-68645) is vulnerable to PHP remote file inclusion, enabling arbitrary file inclusion via crafted requests. In development tools, Vite (CVE-2025-31125) allows unauthorized file access through specific query parameters when the dev server is exposed. Furthermore, the `eslint-config-prettier` package (CVE-2025-54313) was found to contain malicious code that executes the `node-gyp.dll` malware on Windows systems during installation, highlighting persistent software supply chain risks.
+
+- https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-54313
+- https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-31125
+- https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-68645
+- https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-34026
+
+Threat actors are actively exploiting a critical authentication bypass in SmarterTools SmarterMail (CVE-2026-23760) to hijack administrator accounts. The vulnerability resides in the `force-reset-password` API endpoint, which allows unauthenticated users to reset the system administrator password by submitting a crafted JSON request with the `IsSysAdmin` flag set to true. Attackers have already successfully leveraged this flaw to gain SYSTEM-level access and execute remote commands via malicious system events. This exploitation follows a recent wave of attacks targeting another critical RCE flaw (CVE-2025-52691). Organizations must immediately upgrade to SmarterMail Build 9511 to mitigate these risks.
+
+- https://www.bleepingcomputer.com/news/security/smartermail-auth-bypass-flaw-now-exploited-to-hijack-admin-accounts/
+
+A critical authentication bypass vulnerability, CVE-2026-24061 (CVSS 9.8), has been identified in the GNU InetUtils telnet daemon (`telnetd`). Existing in the codebase since 2015, the flaw affects versions 1.9.3 through 2.7. Attackers can gain root access by supplying a crafted `USER` environment variable, specifically `-f root`, which the daemon passes unsanitized to the `/bin/login` command. This exploits the `-f` flag in the login utility to skip authentication. GreyNoise has already detected active exploitation from global IP addresses. Administrators should immediately disable `telnetd`, restrict network access, or upgrade to a patched version beyond 2.7 once available.
+
+- https://thehackernews.com/2026/01/critical-gnu-inetutils-telnetd-flaw.html
+
+Security researchers have identified a critical account takeover vulnerability, CVE-2026-22794 (CVSS 9.6), in the Appsmith low-code platform. The flaw involves "password reset poisoning," where the application blindly trusts the client-provided `Origin` HTTP header to construct password reset URLs. An attacker can trigger a reset for a victim’s email while injecting a malicious domain into the header. If the victim clicks the resulting link in the legitimate Appsmith email, their unique reset token is leaked to the attacker's server. This enables full account compromise, potentially exposing sensitive internal databases and APIs. Affected users should immediately upgrade to Appsmith version 1.93.
+
+- https://www.infosecurity-magazine.com/news/appsmith-flaw-account-takeovers/
+
+On the second day of Pwn2Own Automotive 2026 in Tokyo, security researchers earned $439,250 by exploiting 29 unique zero-day vulnerabilities. Targeting electric vehicle chargers, infotainment systems, and automotive operating systems, the total prize pool has reached $955,750 after 66 successful exploits. [Fuzzware.io](http://fuzzware.io/) leads the competition, while teams like Synacktiv and Summoning Team demonstrated high-impact chains against Tesla and Kenwood systems. Notable targets included the Phoenix Contact and ChargePoint EV chargers. Vendors now have a 90-day window to patch these vulnerabilities before public disclosure by Trend Micro’s Zero Day Initiative.
+
+- https://www.bleepingcomputer.com/news/security/hackers-exploit-29-zero-day-vulnerabilities-on-second-day-of-pwn2own-automotive/
+
+**ADVERSARIES**
+
+Arctic Wolf has identified an automated campaign targeting Fortinet FortiGate devices, exploiting a suspected patch bypass related to CVE-2025-59718. Starting January 15, 2026, attackers utilized a vulnerability in the FortiCloud Single Sign-On (SSO) feature to rapidly create rogue VPN accounts and export sensitive firewall configurations. Despite previous patches in FortiOS 7.4.9, reports suggest the flaw remains exploitable in version 7.4.10. While awaiting further updates like FortiOS 7.4.11, administrators are urged to disable FortiCloud SSO administrative logins. Currently, nearly 11,000 exposed devices remain at risk, and CISA has mandated federal agencies to prioritize remediation of this critical authentication bypass.
+
+- https://www.bleepingcomputer.com/news/security/hackers-breach-fortinet-fortigate-devices-steal-firewall-configs/
+
+Researchers have identified Osiris, a novel ransomware strain that targeted a Southeast Asian food service operator in November 2025. This malware is distinct from the 2016 Locky variant, utilizing a hybrid ECC and AES-128-CTR encryption scheme. The attack employed the POORTRY driver in a "bring your own vulnerable driver" (BYOVD) maneuver to disable security software. Evidence, including specific Mimikatz builds and Rclone exfiltration to Wasabi buckets, suggests links to the INC ransomware group. Osiris features modular capabilities to terminate critical services, such as Microsoft Exchange and Veeam, and utilizes RDP for initial access and lateral movement.
+
+- https://thehackernews.com/2026/01/new-osiris-ransomware-emerges-as-new.html
+
+Palo Alto Networks Unit 42 has detailed a novel "LLM-Augmented Runtime Assembly" attack that leverages generative AI to dynamically build phishing pages. In this scenario, a seemingly benign webpage makes client-side API calls to trusted services like Google Gemini or DeepSeek at runtime. By using engineered prompts to bypass safety guardrails, attackers force the LLM to return malicious JavaScript snippets. These are then assembled and executed in the victim’s browser, creating a unique, polymorphic phishing interface for every visit. Because the code is generated in real-time and delivered via trusted domains, it effectively evades traditional network-based security analysis.
+
+- https://unit42.paloaltonetworks.com/real-time-malicious-javascript-through-llms/
+
+Security researchers have identified a malicious PyPI package, `sympy-dev`, designed to impersonate the popular symbolic mathematics library **SymPy**. Published on January 17, 2026, the package replicates SymPy's project description to deceive developers into installing a fake "development version." Once active, the malware specifically triggers during polynomial routine calls to evade detection. It functions as a downloader, fetching a remote JSON configuration and ELF payload from `63.250.56[.]54` to deploy an **XMRig cryptocurrency miner**. To minimize on-disk artifacts, the miner executes directly in memory using `memfd_create`. Although currently used for cryptojacking, the implant is a general-purpose loader capable of executing arbitrary code.
+
+- https://thehackernews.com/2026/01/malicious-pypi-package-impersonates.html
+
+**TRENDS**
+
+Okta Threat Intelligence has identified a surge in "impersonation-as-a-service" via custom voice-phishing (vishing) kits targeting Google, Microsoft, and Okta accounts. These sophisticated kits enable attackers to synchronize fraudulent browser pages in real-time with verbal instructions provided during a call. By mimicking legitimate authentication flows, threat actors convince victims to disclose credentials and approve multi-factor authentication (MFA) challenges, including push notifications and number-matching. This evolution, increasingly observed since late 2025, often utilizes native English speakers posing as IT support. To mitigate these high-fidelity social engineering attacks, Okta recommends transitioning to phishing-resistant authenticators like FIDO2 security keys or Okta FastPass.
+
+- https://www.theregister.com/2026/01/22/crims_sell_voice_phishing_kits/
+
+ReliaQuest researchers have uncovered a sophisticated LinkedIn phishing campaign targeting corporate executives with DLL side-loading attacks. Threat actors establish trust through professional dialogue before delivering a malicious WinRAR self-extracting archive disguised as routine documentation. Upon execution, the archive extracts a legitimate PDF reader that unknowingly loads a rogue DLL. This library then launches a portable Python interpreter to execute a base64-encoded, open-source penetration testing script in memory. This multi-stage chain bypasses traditional endpoint security to deploy a Remote Access Trojan (RAT), granting attackers persistent access, data exfiltration capabilities, and a foothold for lateral movement.
+
+- https://hackread.com/hackers-linkedin-dms-pdf-tools-trojan/
+
+LastPass has issued a critical alert regarding an active phishing campaign launched on January 19, 2026, coinciding with the Martin Luther King Jr. Day holiday. Attackers are sending deceptive "Scheduled Maintenance" emails that pressure users to create a vault backup within a 24-hour window. These messages lead to a sophisticated credential-harvesting site designed to steal master passwords. The primary redirection chain involves an Amazon S3 bucket leading to the domain mail-lastpass[.]com. LastPass emphasizes that it never requests master passwords or emergency backups via email. Users should treat any high-pressure security notification as suspicious and report incidents to [abuse@lastpass.com](mailto:abuse@lastpass.com).
+
+- https://www.malwarebytes.com/blog/news/2026/01/fake-lastpass-maintenance-emails-target-users
+
+A sophisticated adversary-in-the-middle (AiTM) phishing campaign is currently targeting the energy sector, utilizing compromised accounts to distribute malicious SharePoint links. Attackers intercept session cookies to bypass multi-factor authentication, subsequently automating inbox rules to hide their activity by deleting incoming messages and out-of-office replies. The campaign spreads laterally by responding to inquisitive contacts to build trust. Microsoft researchers emphasize that password resets are insufficient for remediation; organizations must also revoke active session cookies, remove unauthorized inbox rules, and verify MFA configurations. Implementing phishing-resistant authenticators like FIDO2 security keys remains the most effective defense against these session-theft techniques.
+
+- https://www.helpnetsecurity.com/2026/01/22/energy-sector-aitm-phishing-sharepoint-misuse/
+
+**BREACH/LEAKS**
+
+Cyber Centaurs has recovered exfiltrated data belonging to 12 U.S. organizations after an operational security failure by the INC ransomware group. During a forensic investigation into a production SQL Server hit by a RainINC payload, researchers discovered unused artifacts from the legitimate backup tool Restic. This led to the discovery of a long-lived attacker infrastructure containing renamed binaries like `winupdate.exe` and PowerShell scripts with hardcoded S3 storage credentials. By performing a non-destructive enumeration of these repositories, investigators retrieved stolen data from the healthcare, manufacturing, and technology sectors. To prevent future incidents, the team has released YARA and Sigma rules designed to detect Restic-based staging activity.
+
+- https://www.bleepingcomputer.com/news/security/inc-ransomware-opsec-fail-allowed-data-recovery-for-12-us-orgs/
+
+TrendAI Research has detailed a supply chain compromise of the EmEditor text editor occurring in late December 2025. Attackers tampered with official MSI installers to execute obfuscated PowerShell commands upon installation. This multistage malware disables Event Tracing for Windows (ETW) to evade detection, performs system fingerprinting, and steals credentials. Geofencing logic suggests the threat actors may be of Russian or CIS origin, as the malware excludes those regions. The campaign utilizes specific command-and-control infrastructure, including "cachingdrive[.]com," for data exfiltration. Organizations are advised to validate installer integrity and monitor for unauthorized PowerShell activity to mitigate such supply chain risks.
+
+- https://www.trendmicro.com/en_us/research/26/a/watering-hole-attack-targets-emeditor-users.html
+
+**OTHERS**
+
+A joint investigation by Citizen Lab and the OCCRP reveals that Jordanian authorities utilized Cellebrite forensic technology to extract data from the devices of activists and human rights defenders between 2023 and 2025. Forensic analysis of seized iPhones and Android devices confirmed "high confidence" of unauthorized physical extraction, often following arrests under Jordan's 2023 Cybercrime Law. The report indicates that such surveillance has been prevalent since at least 2020, frequently targeting student organizers and researchers during political protests. While Cellebrite maintains its tools are for lawful investigations, Citizen Lab argues these actions violate international human rights treaties, prompting calls for an immediate probe into Jordanian client usage
+
+- https://citizenlab.ca/research/from-protest-to-peril-cellebrite-used-against-jordanian-civil-society/
