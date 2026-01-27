@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 26/01/26</title>
-  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
+  <title>📰 Cybersecurity Newsfeed - 27/01/26</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/">
   <style>
     body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
     h1 { text-align: center; color: #c9a227; }
@@ -17,49 +17,38 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 26/01/26</h2>
+  <h2>📅 27/01/26</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>Pwn2Own Automotive 2026 uncovers 76 zero-days</strong>: The Tokyo competition concluded with researchers earning over $1 million in total payouts. Fuzzware.io took the "Master of Pwn" title by exploiting an Alpitronic EV charger. Other notable hacks included running Doom on a charger screen and compromising Tesla’s infotainment system. <a href="https://www.theregister.com/2026/01/25/pwn2own_automotive_2026_identifies_76_0days/" target="_blank">More info</a></li>
+    <li><strong>Microsoft Office Zero-Day (CVE-2026-21509)</strong>: Microsoft issued emergency updates for a high-severity security feature bypass. The flaw involves improper handling of untrusted inputs, allowing attackers to bypass OLE mitigations via malicious files. While Microsoft 365 and Office 2021/2024 received service-side protection, Office 2016/2019 users must apply manual registry modifications to disable vulnerable COM/OLE controls. Exploitation has been detected in the wild. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-actively-exploited-office-zero-day-vulnerability/" target="_blank">More info</a></li>
 
-    <li><strong>CISA warns of exploited VMware vCenter flaw (CVE-2024-37079)</strong>: A critical heap-overflow vulnerability in the DCERPC protocol is being actively exploited. It allows unauthenticated attackers to execute arbitrary code. Federal agencies must patch by February 13, 2026, as no manual workarounds exist. <a href="https://securityaffairs.com/187267/security-u-s-cisa-adds-a-flaw-in-broadcom-vmware-vcenter-server-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank">More info</a></li>
+    <li><strong>CISA Adds Three Exploited Flaws to KEV</strong>: CISA expanded its catalog to include CVE-2018-14634 (Linux kernel privilege escalation), CVE-2025-52691 (SmarterMail arbitrary file upload), and CVE-2026-23760 (SmarterMail admin password reset bypass). The SmarterMail flaws allow unauthenticated RCE or full account takeover. Users are urged to patch Linux kernels and upgrade SmarterMail to Build 9511 or later. <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
 
-    <li><strong>11-Year-Old Telnetd flaw grants root access (CVE-2026-24061)</strong>: A failure to sanitize the USER environment variable in GNU InetUtils telnetd allows attackers to bypass authentication using a crafted "-f root" value. The flaw has existed since 2015. Users are urged to update to version 2.7-2 or switch to SSH. <a href="https://securityaffairs.com/187255/security/11-year-old-critical-telnetd-flaw-found-in-gnu-inetutils-cve-2026-24061.html" target="_blank">More info</a></li>
+    <li><strong>800,000 Telnet Servers Exposed (CVE-2026-24061)</strong>: A critical 11-year-old authentication bypass in the GNU InetUtils telnetd server allows remote root access. By passing a crafted "-f root" value during negotiation, attackers skip password verification. GreyNoise confirmed active exploitation immediately following the patch. Admins should upgrade to version 2.8 or disable Telnet. <a href="https://www.bleepingcomputer.com/news/security/nearly-800-000-telnet-servers-exposed-to-remote-attacks/" target="_blank">More info</a></li>
 
-    <li><strong>Cisco issues emergency patches for UC suite zero-day</strong>: CVE-2026-20045 involves improper input validation in HTTP requests for Cisco’s Unified Communications suite. Unauthenticated attackers can gain root control. CISA has mandated federal remediation by February 11, 2026, due to active mass scanning. <a href="https://www.darkreading.com/endpoint-security/exploited-zero-day-flaw-cisco-uc-affect-millions" target="_blank">More info</a></li>
+    <li><strong>"PackageGate" Bypasses JS Security</strong>: Researchers identified flaws in npm, pnpm, Bun, and vlt that bypass <code>--ignore-scripts</code> protections. By using Git-based dependencies and malicious .npmrc files, attackers can execute arbitrary code during installation. While most managers issued patches, npm maintains the behavior is intentional, leaving developers at risk of supply-chain RCE. <a href="https://www.bleepingcomputer.com/news/security/hackers-can-bypass-npms-shai-hulud-defenses-via-git-dependencies/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>Sandworm targets Polish power grid with DynoWiper</strong>: The Russian state-sponsored group used new data-wiping malware to hit two heat and power plants in Poland. Detected as Win32/KillFiles.NMO, the malware renders OSs unusable. This mirrors Sandworm's previous destructive attacks on energy infrastructure. <a href="https://www.bleepingcomputer.com/news/security/sandworm-hackers-linked-to-failed-wiper-attack-on-polands-energy-systems/" target="_blank">More info</a></li>
+    <li><strong>'Stanley' MaaS Targets Chrome Extensions</strong>: A new malware-as-a-service lets attackers deploy malicious extensions that bypass Google’s Web Store review. Using full-screen iframes, the extensions overlay phishing content while maintaining a legitimate URL in the address bar. The service includes geographic targeting and C2 tracking for a fee of $2,000–$6,000. <a href="https://www.bleepingcomputer.com/news/security/new-malware-service-guarantees-phishing-extensions-on-chrome-web-store/" target="_blank">More info</a></li>
 
-    <li><strong>Osiris ransomware uses BYOVD to disable security</strong>: A new strain named Osiris (distinct from the 2016 Locky variant) targeted a SE Asian food franchise. It uses the POORTRY driver to kill EDR tools and features advanced Hyper-V handling. Researchers link it to the INC ransomware group. <a href="https://securityaffairs.com/187279/security/osiris-ransomware-emerges-leveraging-byovd-technique-to-kill-security-tools.html" target="_blank">More info</a></li>
+    <li><strong>ShinyHunters Targets Okta SSO</strong>: A large-scale vishing campaign has targeted over 100 high-value organizations, including Atlassian and Canva. Attackers use social engineering to compromise credentials and enroll their own devices into MFA. Breaches of Crunchbase and Betterment have been claimed, resulting in millions of leaked records. Experts recommend FIDO2 security keys to combat these techniques. <a href="https://www.theregister.com/2026/01/26/shinyhunters_okta_sso_campaign/" target="_blank">More info</a></li>
 
-    <li><strong>Konni Group uses AI-generated malware for APAC devs</strong>: The North Korean actor Opal Sleet is targeting blockchain engineers with PowerShell backdoors containing LLM-style comments and documentation. The malware targets crypto wallets and bypasses UAC for persistent access. <a href="https://www.bleepingcomputer.com/news/security/konni-hackers-target-blockchain-engineers-with-ai-built-malware/" target="_blank">More info</a></li>
-
-    <li><strong>Skeleton Key campaign weaponizes GoTo Resolve</strong>: Attackers are using phishing emails impersonating Greenvelope to harvest credentials, which are then used to register legitimate LogMeIn/GoTo instances. By using signed, trusted RMM software, they establish backdoors that bypass traditional defenses. <a href="https://thehackernews.com/2026/01/phishing-attack-uses-stolen-credentials.html" target="_blank">More info</a></li>
+    <li><strong>KONNI Group Adopts AI for Malware</strong>: The North Korea-linked KONNI group is targeting blockchain developers with AI-generated PowerShell backdoors. The malware features modular code and verbose documentation typical of AI outputs. The campaign uses Discord-hosted ZIPs and LNK files to deploy RMM tools, signaling a shift toward AI-assisted development to increase operational speed. <a href="https://securityaffairs.com/187317/apt/north-korea-linked-konni-uses-ai-to-build-stealthy-malware-tooling.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>ShinyHunters launch vishing campaign against SSO</strong>: The group is using real-time phishing kits and voice social engineering to trick employees at Okta, Microsoft, and Google. By synchronizing fake pages with verbal instructions, they bypass number-matching MFA to target connected SaaS platforms. <a href="https://www.bleepingcomputer.com/news/security/shinyhunters-claim-to-be-behind-sso-account-data-theft-attacks/" target="_blank">More info</a></li>
-    
-    <li><strong>1Password adds anti-phishing warnings for manual pastes</strong>: To combat AI-driven typosquatting, 1Password now triggers a warning when users attempt to manually paste credentials into a site that doesn't match the stored URL. This aims to stop users from bypassing the lack of autofill on suspicious domains. <a href="https://www.bleepingcomputer.com/news/security/1password-adds-pop-up-warnings-for-suspected-phishing-sites/" target="_blank">More info</a></li>
+    <li><strong>ClickFix Abuses Windows App-V Scripts</strong>: A new campaign uses fake CAPTCHAs to trick users into running commands that leverage <code>SyncAppvPublishingServer.vbs</code>, a signed Windows LOLBIN. This method proxies PowerShell execution to deliver the Amatera infostealer. The chain uses Google Calendar for C2 configuration and steganography to hide its final payload. <a href="https://www.bleepingcomputer.com/news/security/new-clickfix-attacks-abuse-windows-app-v-scripts-to-push-malware/" target="_blank">More info</a></li>
+
+    <li><strong>MS Teams Guest Invites for Vishing</strong>: Attackers are leveraging legitimate Microsoft Teams group invitations, like "Subscription Auto-Pay Notice," to bypass email filters. Instead of links, the alerts contain fraudulent support numbers to initiate voice-based social engineering. Over 6,000 users have been targeted, primarily in the manufacturing and tech sectors. <a href="https://hackread.com/fake-microsoft-teams-billing-phishing-alerts-emails/" target="_blank">More info</a></li>
   </ul>
 
   <h2>💥 Breaches & Leaks</h2>
   <ul>
-    <li><strong>Nike investigating 1.4TB data theft claim</strong>: The extortion group WorldLeaks (formerly Hunters International) claims to have stolen 188,000 files from Nike. The group has moved toward pure data theft/extortion rather than encryption to evade law enforcement. <a href="https://securityaffairs.com/187303/data-breach/nike-is-investigating-a-possible-data-breach-after-worldleaks-claims.html" target="_blank">More info</a></li>
-
-    <li><strong>149 million credentials exposed in 96GB database</strong>: Researcher Jeremiah Fowler discovered an open database containing logins for Netflix, Binance, Facebook, and various .gov domains. The data was likely harvested via infostealers and was growing in real-time during the investigation. <a href="https://hackread.com/logins-roblox-tiktok-netflix-crypto-wallets-found/" target="_blank">More info</a></li>
-  </ul>
-
-  <h2>📚 Others</h2>
-  <ul>
-    <li><strong>Microsoft confirms BitLocker key sharing with FBI</strong>: Following a fraud investigation, Microsoft confirmed it provides cloud-stored BitLocker recovery keys to law enforcement upon valid legal request. This highlights the privacy trade-off of Windows 11’s default cloud backup of encryption keys. <a href="https://hackread.com/fbi-windows-laptops-microsoft-bitlocker-recovery-keys/" target="_blank">More info</a></li>
-
-    <li><strong>Venezuelan nationals sentenced for ATM jackpotting</strong>: Two individuals were sentenced for a multi-state spree using Ploutus malware to force ATMs to dispense cash. The investigation also led to a broader indictment of members of the Tren de Aragua criminal organization. <a href="https://hackread.com/venezuelan-nationals-face-deportation-atm-jackpotting/" target="_blank">More info</a></li>
+    <li><strong>Cloudflare BGP Route Leak</strong>: Cloudflare detailed a 25-minute incident on January 22 that caused 12 Gbps of data loss for IPv6 traffic. The leak resulted from a misconfigured routing policy in Miami that accidentally exported internal iBGP routes to external providers. Cloudflare is now implementing stricter export safeguards and accelerating RPKI ASPA adoption. <a href="https://www.bleepingcomputer.com/news/security/cloudflare-misconfiguration-behind-recent-bgp-route-leak/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
