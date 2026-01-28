@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 28/01/26</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 28/01/26</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Microsoft Office Zero-Day (CVE-2026-21509)</strong>: Microsoft released out-of-band patches for a high-severity security feature bypass (7.8 CVSS) exploited in the wild. The flaw allows attackers to bypass OLE mitigations via crafted files. CISA has added it to the KEV catalog, mandating federal patches by Feb 16, 2026. <a href="https://thehackernews.com/2026/01/microsoft-issues-emergency-patch-for.html" target="_blank">More info</a></li>
+
+    <li><strong>Fortinet FortiCloud SSO Bypass (CVE-2026-24858)</strong>: A critical 9.4 CVSS zero-day in FortiOS and FortiManager allows attackers with valid FortiCloud accounts to hijack admin sessions on other devices. Fortinet mandates upgrades to FortiOS 7.4.11+ as older versions no longer support the re-enabled auth protocol. <a href="https://www.helpnetsecurity.com/2026/01/28/fortinet-forticloud-sso-zero-day-vulnerability-cve-2026-24858/" target="_blank">More info</a></li>
+
+    <li><strong>"Cellbreak" Sandbox Escape in Grist-Core (CVE-2026-24002)</strong>: Cyera disclosed a 9.1 CVSS RCE flaw in the Grist-Core database. Attackers can use Python formulas to bypass the Pyodide WebAssembly sandbox and execute host-level commands. Patched in version 1.7.9 using a Deno-based isolation layer. <a href="https://www.infosecurity-magazine.com/news/pyodide-sandbox-escape-rce-grist/" target="_blank">More info</a></li>
+
+    <li><strong>vm2 Node.js Critical Sandbox Escape (CVE-2026-22709)</strong>: Despite being discontinued, the vm2 library remains widely used and was hit by a new RCE flaw stemming from improper sanitization of asynchronous Promise objects. Users are urgently advised to upgrade to version 3.10.3. <a href="https://www.bleepingcomputer.com/news/security/critical-sandbox-escape-flaw-discovered-in-popular-vm2-nodejs-library/" target="_blank">More info</a></li>
+
+    <li><strong>SmarterMail Admin Bypass (CVE-2026-23760)</strong>: Over 6,000 internet-exposed SmarterMail servers are vulnerable to a 9.3 CVSS flaw in the force-reset-password API. Attackers are using it to gain full admin control. CISA has mandated federal patching by Feb 16. <a href="https://securityaffairs.com/187394/hacking/shadowserver-finds-6000-likely-vulnerable-smartermail-servers-exposed-online.html" target="_blank">More info</a></li>
+
+    <li><strong>"PackageGate" Supply Chain Flaws</strong>: Six vulnerabilities across NPM, PNPM, Bun, and VLT allow RCE by bypassing --ignore-scripts and integrity checks. While PNPM and Bun issued patches, GitHub dismissed the NPM findings as "intended design." <a href="https://www.securityweek.com/packagegate-flaws-open-javascript-ecosystem-to-supply-chain-attacks/" target="_blank">More info</a></li>
+
+    <li><strong>Dormakaba exos 9300 Vulnerabilities</strong>: Over 20 flaws, including hardcoded credentials and unauthenticated APIs, allow "hands-free lockpicking" of physical access systems at airports and energy firms. Users must upgrade to version 4.4.0+ and restrict port 8002. <a href="https://securityaffairs.com/187354/hacking/dormakaba-flaws-allow-to-access-major-organizations-doors.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Mustang Panda Updates CoolClient Backdoor</strong>: The China-linked group is targeting Myanmar, Mongolia, and Russia with a new variant featuring clipboard monitoring and browser stealers. It utilizes Google Drive API tokens for exfiltration and a kernel-mode rootkit for stealth. <a href="https://www.bleepingcomputer.com/news/security/chinese-mustang-panda-hackers-deploy-infostealers-via-coolclient-backdoor/" target="_blank">More info</a></li>
+
+    <li><strong>Pakistan-linked "Gopher Strike" & "Sheet Attack"</strong>: New campaigns targeting Indian government entities use Geo-IP filtering to ensure only Indian Windows systems are hit. The attackers abuse Google Sheets and Firebase for C2, with evidence of generative AI used in malware development. <a href="https://thehackernews.com/2026/01/experts-detect-pakistan-linked-cyber.html" target="_blank">More info</a></li>
+
+    <li><strong>"PeckBirdy" JScript C2 Framework</strong>: A versatile framework tied to China-aligned groups has been active since 2023. It facilitates campaigns like SHADOW-VOID-044 (gambling sites) and SHADOW-EARTH-045 (Asian governments) using modular backdoors that disable AMSI. <a href="https://www.infosecurity-magazine.com/news/peckbirdy-framework-tied-china/" target="_blank">More info</a></li>
+
+    <li><strong>App-V LOLBIN Abused for Amatera Infostealer</strong>: Attackers are using "ClickFix" social engineering to trick users into running commands that proxy PowerShell through the trusted SyncAppvPublishingServer.vbs script. The fileless chain uses Google Calendar files for C2 configuration. <a href="https://www.helpnetsecurity.com/2026/01/27/malware-delivery-via-windows-app-v-lolbin/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>WinRAR Path Traversal (CVE-2025-8088) Exploitation</strong>: Both state-sponsored (RomCom, APT44) and criminal actors are weaponizing this flaw to plant payloads in the Windows Startup folder via NTFS Alternate Data Streams. Underground sales have commoditized the exploit for mass distribution. <a href="https://www.bleepingcomputer.com/news/security/winrar-path-traversal-flaw-still-exploited-by-numerous-hackers/" target="_blank">More info</a></li>
+
+    <li><strong>Fake ChatGPT Extensions Hijack Sessions</strong>: 16 malicious browser extensions were found stealing ChatGPT session tokens. These "mods" hook into the JS runtime to intercept authorization headers, granting attackers access to chat histories and integrated apps like GitHub. <a href="https://hackread.com/fake-chatgpt-extensions-hijack-user-accounts/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>SoundCloud Data Breach Impacts 29.8M Users</strong>: ShinyHunters leaked a dataset containing names and emails of roughly 20% of SoundCloud's user base after a breach of an ancillary dashboard. While passwords were not taken, the data has been indexed by Have I Been Pwned. <a href="https://www.bleepingcomputer.com/news/security/have-i-been-pwned-soundcloud-data-breach-impacts-298-million-accounts/" target="_blank">More info</a></li>
+
+    <li><strong>Massive 149M Credential Database Exposed</strong>: A 96GB unencrypted repository containing credentials for Gmail, Facebook, and Binance was found online. The data was likely harvested via infostealers like keyloggers rather than a single site breach, highlighting a growing identity crisis. <a href="https://www.itsecurityguru.org/2026/01/27/149-million-compromised-credentials-expose-growing-infostealer-malware-crisis/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>Broken Sicarii Ransomware Prevents Decryption</strong>: A new RaaS, likely built with AI "vibe-coding" tools, features a fatal flaw where it discards the private key immediately after encryption. Paying the ransom is useless as recovery is technically impossible. <a href="https://www.darkreading.com/endpoint-security/vibe-coded-sicarii-ransomware-decrypted" target="_blank">More info</a></li>
+
+    <li><strong>CISA Releases Post-Quantum Cryptography List</strong>: CISA has categorized PQC-capable products into tiers to help federal agencies transition to quantum-resistant encryption. Tier 1 (priority) includes cloud services and browsers, aligning with new NIST standards. <a href="https://www.cisa.gov/resources-tools/resources/product-categories-technologies-use-post-quantum-cryptography-standards" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
