@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 29/01/26</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 29/01/26</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Widespread Moltbot AI exposures</strong>: Researchers warn that hundreds of Moltbot (formerly Clawdbot) admin interfaces are exposed online due to proxy misconfigurations. This allows unauthenticated access to conversation histories, plaintext API keys, and OAuth tokens. Risks include "GhostPairing" via Signal and supply-chain attacks via malicious "Skills." 22% of enterprises report unauthorized usage, and the lack of sandboxing enables prompt injection and arbitrary command execution. <a href="https://www.bleepingcomputer.com/news/security/viral-moltbot-ai-assistant-raises-concerns-over-data-security/" target="_blank">More info</a></li>
+
+    <li><strong>OpenSSL patches 12 flaws found by AI</strong>: OpenSSL released updates for 12 vulnerabilities discovered by the AI-driven analysis tool AISLE. Key among them is a high-severity stack buffer overflow (CVE-2025-15467) in the CMS subsystem that could lead to RCE. Other fixes address memory corruption in PKCS#12 and QUIC. Some bugs dated back to 1998, showcasing AI's ability to find defects that escaped decades of manual review. <a href="https://www.infosecurity-magazine.com/news/12-openssl-flaws/" target="_blank">More info</a></li>
+
+    <li><strong>Critical SolarWinds Web Help Desk RCEs</strong>: SolarWinds patched six vulnerabilities in Web Help Desk, including four maximum-severity flaws (CVE-2025-40551 through 40554). These allow unauthenticated RCE and auth bypass via deserialization. High-severity issues involving hardcoded credentials and access control were also fixed. Users are urged to upgrade to version 2026.1 immediately to prevent complete system compromise. <a href="https://www.bleepingcomputer.com/news/security/solarwinds-warns-of-critical-web-help-desk-rce-auth-bypass-flaws/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>TA584 escalates with Tsundere Bot</strong>: Initial access broker TA584 has tripled its campaign volume, using "ClickFix" social engineering to deliver the Node.js-based Tsundere Bot and XWorm RAT. Tsundere Bot utilizes Ethereum smart contracts for resilient C2 infrastructure. Experts warn these infections are often precursors to high-impact ransomware attacks involving Cobalt Strike. <a href="https://www.bleepingcomputer.com/news/security/initial-access-hackers-switch-to-tsundere-bot-for-ransomware-attacks/" target="_blank">More info</a></li>
+
+    <li><strong>Operation Bizarre Bazaar targets LLMs</strong>: Researchers uncovered a large-scale campaign targeting exposed LLM and Model Context Protocol (MCP) endpoints. Attackers use automated bots to find unauthenticated Ollama or vLLM instances and resell access on a marketplace called "SilverInc." Beyond compute theft, attackers use MCP servers to pivot into internal file systems and databases. <a href="https://www.bleepingcomputer.com/news/security/hackers-hijack-exposed-llm-endpoints-in-bizarre-bazaar-operation/" target="_blank">More info</a></li>
+
+    <li><strong>Android.Phantom malware mimics humans</strong>: A new trojan distributed via modified games and Xiaomi’s GetApps uses the TensorFlow.js framework to mimic human behavior (scrolling/tapping) for ad-click fraud. It features a "phantom" mode for automation and a "signaling" mode for remote control via WebRTC, affecting over 155,000 devices and causing significant battery/data drain. <a href="https://hackread.com/phantom-malware-android-game-mods-ad-fraud/" target="_blank">More info</a></li>
+
+    <li><strong>PureRAT potentially authored by AI</strong>: A phishing campaign linked to Vietnamese actors is delivering PureRAT, an infostealer showing signs of generative AI development. The code contains emojis (common in social media-trained models) and leftover instructional phrases. The malware enables full system control, keylogging, and webcam access to target job seekers. <a href="https://www.infosecurity-magazine.com/news/emojis-in-purerats-code/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>GhostChat romance scams target Pakistan</strong>: An Android spyware campaign disguised as dating apps lures victims into WhatsApp chats to exfiltrate device data. The operation involves "GhostPairing" QR schemes and ClickFix attacks, maintaining persistent access to sensitive communications across mobile and desktop platforms by impersonating government entities. <a href="https://www.helpnetsecurity.com/2026/01/29/ghostchat-android-romance-spyware/" target="_blank">More info</a></li>
+
+    <li><strong>Open-source ecosystem labeled "structural risk"</strong>: Sonatype’s 2026 report found over 454,000 new malicious packages last year. Threats have shifted to industrialized state-sponsored campaigns targeting CI/CD pipelines. AI agents are exacerbating risks by recommending "hallucinated" non-existent packages 28% of the time, while 65% of open-source CVEs lack NVD scores. <a href="https://www.infosecurity-magazine.com/news/454000-malicious-open-source/" target="_blank">More info</a></li>
+
+    <li><strong>PyPI fake spellcheckers and "slopsquatting"</strong>: Malicious packages <code>spellcheckerpy</code> and <code>spellcheckpy</code> delivered RATs hidden within Basque dictionary files. Additionally, a "slopsquatting" trend is emerging where attackers register non-existent packages hallucinated by AI agents (like <code>react-codeshift</code>), which then spread to hundreds of GitHub repositories. <a href="https://thehackernews.com/2026/01/fake-python-spellchecker-packages-on.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>MicroWorld (eScan) update server breach</strong>: Attackers compromised a regional update server to distribute a trojanized "Reload.exe" component signed with an invalid certificate. The backdoor (CONSCTLX.exe) modifies hosts files and registry settings to block security updates. Compromised systems require manual intervention as auto-update functionality is hindered. <a href="https://www.bleepingcomputer.com/news/security/escan-confirms-update-server-breached-to-push-malicious-update/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>FBI seizes RAMP cybercrime forum</strong>: Law enforcement seized the Tor and clearnet domains of RAMP, a major hub for ransomware recruitment and malware sales. The seizure likely provides authorities with database info, including user IPs and private messages. RAMP was a critical ecosystem supporting gangs like LockBit and Hive. <a href="https://www.bleepingcomputer.com/news/security/fbi-seizes-ramp-cybercrime-forum-used-by-ransomware-gangs/" target="_blank">More info</a></li>
+
+    <li><strong>Empire Market co-creator pleads guilty</strong>: Raheim Hamilton admitted to drug conspiracy charges related to Empire Market, which facilitated $430 million in illicit transactions. Hamilton will forfeit 1,230 bitcoin and faces at least 10 years in prison. Sentencing is set for June 2026. <a href="https://www.bleepingcomputer.com/news/security/empire-cybercrime-market-owner-pleads-guilty-to-drug-conspiracy/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
