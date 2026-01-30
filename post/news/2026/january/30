@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 30/01/26</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 30/01/26</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Ivanti EPMM Zero-Days (CVE-2026-1281 & CVE-2026-1340)</strong>: Ivanti disclosed two critical unauthenticated code-injection vulnerabilities in Endpoint Manager Mobile with a CVSS score of 9.8. Attackers can execute arbitrary commands to compromise PII, device IDs, and GPS data. CISA has mandated federal mitigations by Feb 1, 2026, while a permanent fix is expected later in Q1. <a href="https://www.bleepingcomputer.com/news/security/ivanti-warns-of-two-epmm-flaws-exploited-in-zero-day-attacks/" target="_blank">More info</a></li>
+
+    <li><strong>175,000 Exposed Ollama AI Hosts</strong>: Researchers found a massive layer of unmanaged AI infrastructure with public-facing Ollama hosts, primarily in China and the U.S. Nearly half enable tool-calling, allowing LLMs to execute code. Threat actor "Hecker" is already hijacking these via "Operation Bizarre Bazaar" to resell access. <a href="https://thehackernews.com/2026/01/researchers-find-175000-publicly.html" target="_blank">More info</a></li>
+
+    <li><strong>Semantic Chaining Jailbreak</strong>: NeuralTrust detailed a novel exploit bypassing safety filters in multimodal models like Grok 4 and Gemini Nano Banana Pro. By using a four-step narrative substitution, attackers can force models to render prohibited visual content (like drug guides) that standard text filters would normally block. <a href="https://www.darkreading.com/vulnerabilities-threats/semantic-chaining-jailbreak-gemini-nano-banana-grok-4" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Hugging Face Abused for Android RATs</strong>: Over 6,000 unique Android malware variants were found hosted on Hugging Face. Using server-side polymorphism to generate new builds every 15 minutes, the "TrustBastion" dropper delivers RATs that abuse Accessibility Services to steal credentials for Alipay and WeChat. <a href="https://www.bleepingcomputer.com/news/security/hugging-face-abused-to-spread-thousands-of-android-malware-variants/" target="_blank">More info</a></li>
+
+    <li><strong>Google Disrupts IPIDEA Proxy Network</strong>: A massive legal and technical intervention disrupted the IPIDEA network, which hijacked 6.7 million consumer devices via trojanized SDKs. The infrastructure was utilized by over 550 threat groups, including state-sponsored actors from Russia and North Korea, for DDoS and account takeovers. <a href="https://www.bleepingcomputer.com/news/security/google-disrupts-ipidea-residential-proxy-networks-fueled-by-malware/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>Gaming Mods Fueling Enterprise Breaches</strong>: Research shows over 41% of infostealer infections in 2026 stem from gaming files like Roblox or Fortnite mods. Families like Lumma and RedLine harvest session tokens from personal devices, allowing attackers to bypass MFA and access corporate SSO/VPN environments. <a href="https://www.bleepingcomputer.com/news/security/not-a-kids-game-from-roblox-mod-to-compromising-your-company/" target="_blank">More info</a></li>
+
+    <li><strong>Record-Breaking 31.4 Tbps DDoS Attack</strong>: The Aisuru/Kimwolf botnet launched a historic attack peaking at 31.4 Tbps on Dec 19, 2025. Powered by millions of compromised Android TV devices, the "Night Before Christmas" campaign highlights a 121% surge in global DDoS incidents leveraging consumer IoT. <a href="https://www.bleepingcomputer.com/news/security/aisuru-botnet-sets-new-record-with-314-tbps-ddos-attack/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Match Group Vishing Breach</strong>: Parent company of Tinder and Hinge confirmed a 1.7 GB data leak after a vishing attack compromised an employee's Okta account. While financial data is safe, the "ShinyHunters" group exfiltrated metadata for 10 million users, including subscription and tracking details. <a href="https://www.bleepingcomputer.com/news/security/match-group-breach-exposes-data-from-hinge-tinder-okcupid-and-match/" target="_blank">More info</a></li>
+
+    <li><strong>SonicWall Cloud Backup Hack Impacts Banks</strong>: Marquis Software Solutions linked a massive breach affecting 74 financial institutions to a state-sponsored API-based compromise of SonicWall’s cloud backup service. Attackers used stolen configuration data from the MySonicWall portal to circumvent security. <a href="https://www.bleepingcomputer.com/news/security/marquis-blames-ransomware-breach-on-sonicwall-cloud-backup-hack/" target="_blank">More info</a></li>
+
+    <li><strong>eScan Antivirus Supply Chain Compromise</strong>: Threat actors breached a regional update server for eScan, distributing a trojanized "Reload.exe" component. The malware bricks the software's ability to self-patch by blocking update server connections via the Windows hosts file. <a href="https://www.helpnetsecurity.com/2026/01/29/escan-antivirus-update-supply-chain-compromised/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🔍 Hunting</h2>
+  <ul>
+    <li><strong>UAT-8099 Targets SE Asia IIS Servers</strong>: Cisco Talos identified a new campaign targeting IIS servers in Thailand and Vietnam. The threat actor uses web shells and hidden "admin$" accounts for persistence, employing advanced "BadIIS" variants for SEO fraud and remote access. <a href="https://blog.talosintelligence.com/uat-8099-new-persistence-mechanisms-and-regional-focus/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
