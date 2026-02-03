@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 03/02/26</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 03/02/26</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Ivanti EPMM critical zero-day vulnerabilities (CVE-2026-1281/1340)</strong>: Researchers from watchTowr detailed two critical unauthenticated code injection flaws with CVSS scores of 9.8. Affecting EPMM's application distribution and Android file transfer features, attackers are actively bypassing Bash scripts to execute remote code. While emergency RPM patches exist for version 12.7.0.0 and earlier, they do not persist through upgrades; organizations are advised to consider exposed instances compromised and perform full infrastructure rebuilds. <a href="https://hackread.com/ivanti-urgent-fix-critical-zero-day-vulnerabilities/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Violet Typhoon hijacks Notepad++ update mechanism</strong>: Developer Don Ho confirmed that China-linked actors compromised the utility's hosting provider between June and December 2025. By intercepting WinGUp updater traffic, attackers delivered poisoned executables to telecom and financial sectors in East Asia. The breach exploited an integrity verification flaw, leading Notepad++ to migrate to a new hosting environment with hardened cryptographic guardrails. <a href="https://thehackernews.com/2026/02/notepad-official-update-mechanism.html" target="_blank">More info</a></li>
+
+    <li><strong>Supply-chain campaign hits AI assistant registries</strong>: Over 400 malicious "skills" were uploaded to ClawHub and GitHub targeting OpenClaw and Claude Code. Disguised as crypto tools, these skills trick users into installing "AuthTools" info-stealers for Windows and macOS. Despite reports, the ClawHub registry lacks vetting, leaving many active packages that exfiltrate keys and passwords to a central C2. <a href="https://securityaffairs.com/187562/malware/moltbot-skills-exploited-to-distribute-400-malware-packages-in-days.html" target="_blank">More info</a></li>
+
+    <li><strong>GlassWorm targets macOS via OpenVSX</strong>: Threat actors hijacked the 'oorzc' publisher account to push malicious updates to established extensions like ssh-tools. The malware profiles hosts (excluding Russian locales) and uses Solana blockchain transaction memos for C2 instructions. It harvests Keychain passwords, Apple Notes, and developer secrets (AWS/SSH) via a persistent LaunchAgent. <a href="https://www.bleepingcomputer.com/news/security/new-glassworm-attack-targets-macos-via-compromised-openvsx-extensions/" target="_blank">More info</a></li>
+
+    <li><strong>APT28 exploits new MS Office bug (CVE-2026-21509)</strong>: Russian-linked Fancy Bear is utilizing a high-severity vulnerability just days after its emergency patch. Using EU-Ukraine themed spear-phishing, the campaign deploys the COVENANT framework via COM hijacking and WebDAV. The attacks target Ukrainian government and EU-based organizations, utilizing Filen cloud storage for C2 operations. <a href="https://www.bleepingcomputer.com/news/security/russian-hackers-exploit-recently-patched-microsoft-office-bug-in-attacks/" target="_blank">More info</a></li>
+
+    <li><strong>ClawHavoc campaign targets OpenClaw skills</strong>: An audit of 2,857 skills revealed 341 malicious packages. Attackers use social engineering in documentation to prompt macOS and Windows users to execute scripts or download ZIPs that deploy Atomic Stealer (AMOS) and keyloggers. In response, OpenClaw has introduced a community reporting feature to hide flagged skills. <a href="https://thehackernews.com/2026/02/researchers-find-341-malicious-clawhub.html" target="_blank">More info</a></li>
+
+    <li><strong>Aisuru botnet sets 31.4 Tbps DDoS record</strong>: Also known as Kimwolf, the botnet launched a hyper-volumetric attack on December 19, 2025, using 1 to 4 million compromised IoT devices, including Android TVs. The campaign targeted telecom and IT infra with UDP carpet-bombing. Functioning as a DDoS-for-hire service and proxy network, it highlights the risk of unpatched consumer hardware to global network stability. <a href="https://www.zdnet.com/article/what-is-aisuru-botnet-ddos-assault/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>Multistage Dropbox credential harvesting</strong>: Forcepoint X-Labs identified a campaign using procurement-themed emails with clean PDF attachments to bypass scanners. These PDFs lead to documents on Vercel which then link to a fraudulent Dropbox login on the tovz.life domain. Stolen credentials and geolocation data are sent to a Telegram bot, with the site using a 5-second delay to mimic realism. <a href="https://www.darkreading.com/cloud-security/attackers-harvest-dropbox-logins-fake-pdf-lures" target="_blank">More info</a></li>
+
+    <li><strong>Global surge in High-Yield Investment (HYIP) scams</strong>: CTM360 detected over 4,200 fraudulent websites averaging 15 new incidents daily. These Ponzi schemes promise returns of 40% in 72 hours, targeting crypto and Forex enthusiasts via polished templates and social media ads in 20 languages. The platforms use fake KYC delays to trap funds before disappearing. <a href="https://www.bleepingcomputer.com/news/security/ctm360-report-warns-of-global-surge-in-fake-high-yield-investment-scams/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>NationStates confirms data breach via RCE</strong>: A bug hunter exceeded authorized boundaries to exploit an RCE in the "Dispatch Search" feature on January 27, 2026. The breach resulted in the theft of application code and user data, including email addresses and MD5-hashed passwords. Administrators are rebuilding on new hardware and upgrading password hashing standards. <a href="https://www.bleepingcomputer.com/news/security/nationstates-confirms-data-breach-shuts-down-game-site/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>Mozilla adds "AI Controls" to Firefox 148</strong>: Launching February 24, the browser will include a dedicated section to disable generative features like ChatGPT/Claude integrations and AI-powered tab grouping. This opt-in approach aims to provide greater agency over telemetry and automated tools, responding to community feedback regarding data sovereignty. <a href="https://www.bleepingcomputer.com/news/software/mozilla-will-let-you-turn-off-all-firefox-ai-features/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
