@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 02/02/26</title>
-  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
+  <title>📰 Cybersecurity Newsfeed - 03/02/26</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
     h1 { text-align: center; color: #c9a227; }
@@ -17,57 +16,43 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 02/02/26</h2>
+  <h2>📅 03/02/26</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>eScan Antivirus supply chain attack</strong>: Cybersecurity firm Morphisec reports that eScan users suffered a supply chain attack after hackers compromised a regional update server. Malicious updates distributed "Reload.exe," which disabled automatic updates via HOSTS file modification and established persistence. Because the malware severs connections to legitimate infrastructure, automated remediation is impossible; users must manually obtain a specialized utility from eScan support. <a href="https://www.securityweek.com/escan-antivirus-delivers-malware-in-supply-chain-attack/" target="_blank">More info</a></li>
-
-    <li><strong>Instagram private profile data leak</strong>: Researcher Jatin Banga exposed a server-side authorization vulnerability in Instagram that leaked private account content to unauthenticated visitors. By analyzing HTML on mobile user-agents, the "polaris_timeline_connection" object was found to contain encoded CDN links to private photos and captions. Meta quietly patched the flaw shortly after disclosure. <a href="https://www.bleepingcomputer.com/news/security/researcher-reveals-evidence-of-private-instagram-profiles-leaking-photos/" target="_blank">More info</a></li>
-
-    <li><strong>Ivanti EPMM critical zero-days (CVE-2026-1281/1340)</strong>: Ivanti released emergency updates for two critical flaws (CVSS 9.8) in Endpoint Manager Mobile allowing unauthenticated RCE via specialized HTTP GET requests. CISA has added CVE-2026-1281 to its KEV catalog, mandating remediation by February 1, 2026. Attackers are already deploying web shells for persistence. <a href="https://thehackernews.com/2026/01/two-ivanti-epmm-zero-day-rce-flaws.html" target="_blank">More info</a></li>
+    <li><strong>Ivanti EPMM critical zero-day vulnerabilities (CVE-2026-1281/1340)</strong>: Researchers from watchTowr detailed two critical unauthenticated code injection flaws with CVSS scores of 9.8. Affecting EPMM's application distribution and Android file transfer features, attackers are actively bypassing Bash scripts to execute remote code. While emergency RPM patches exist for version 12.7.0.0 and earlier, they do not persist through upgrades; organizations are advised to consider exposed instances compromised and perform full infrastructure rebuilds. <a href="https://hackread.com/ivanti-urgent-fix-critical-zero-day-vulnerabilities/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>Pulsar RAT interactive malware</strong>: A new campaign utilizes the Pulsar RAT and Stealerv37 to facilitate real-time interactions with victims. Executed via in-memory PowerShell, the malware allows attackers to engage victims through a live chat window while harvesting credentials and crypto wallets. It exfiltrates data via Discord and Telegram and actively disables security prompts and Task Manager. <a href="https://hackread.com/windows-malware-pulsar-rat-live-chats-steal-data/" target="_blank">More info</a></li>
+    <li><strong>Violet Typhoon hijacks Notepad++ update mechanism</strong>: Developer Don Ho confirmed that China-linked actors compromised the utility's hosting provider between June and December 2025. By intercepting WinGUp updater traffic, attackers delivered poisoned executables to telecom and financial sectors in East Asia. The breach exploited an integrity verification flaw, leading Notepad++ to migrate to a new hosting environment with hardened cryptographic guardrails. <a href="https://thehackernews.com/2026/02/notepad-official-update-mechanism.html" target="_blank">More info</a></li>
 
-    <li><strong>ShinyHunters vishing-fueled SaaS theft</strong>: Mandiant reports that ShinyHunters (and clusters UNC6661/6671) are executing data-theft attacks using sophisticated vishing. Attackers impersonate IT helpdesks to capture SSO credentials and MFA codes, allowing them to enroll their own devices and exfiltrate data from Salesforce, SharePoint, and Google Workspace. <a href="https://www.bleepingcomputer.com/news/security/mandiant-details-how-shinyhunters-abuse-sso-to-steal-cloud-data/" target="_blank">More info</a></li>
+    <li><strong>Supply-chain campaign hits AI assistant registries</strong>: Over 400 malicious "skills" were uploaded to ClawHub and GitHub targeting OpenClaw and Claude Code. Disguised as crypto tools, these skills trick users into installing "AuthTools" info-stealers for Windows and macOS. Despite reports, the ClawHub registry lacks vetting, leaving many active packages that exfiltrate keys and passwords to a central C2. <a href="https://securityaffairs.com/187562/malware/moltbot-skills-exploited-to-distribute-400-malware-packages-in-days.html" target="_blank">More info</a></li>
 
-    <li><strong>RedKitten targets NGOs with AI-generated malware</strong>: Iranian state-sponsored actor RedKitten is using AI-generated malware to target human rights groups. The campaign uses macro-laced Excel files to deploy the SloppyMIO backdoor, which leverages GitHub and Google Drive for configuration. C2 is managed via the Telegram Bot API alongside fake WhatsApp and Gmail phishing pages. <a href="https://thehackernews.com/2026/01/iran-linked-redkitten-cyber-campaign.html" target="_blank">More info</a></li>
+    <li><strong>GlassWorm targets macOS via OpenVSX</strong>: Threat actors hijacked the 'oorzc' publisher account to push malicious updates to established extensions like ssh-tools. The malware profiles hosts (excluding Russian locales) and uses Solana blockchain transaction memos for C2 instructions. It harvests Keychain passwords, Apple Notes, and developer secrets (AWS/SSH) via a persistent LaunchAgent. <a href="https://www.bleepingcomputer.com/news/security/new-glassworm-attack-targets-macos-via-compromised-openvsx-extensions/" target="_blank">More info</a></li>
 
-    <li><strong>Static Tundra attacks Polish energy infrastructure</strong>: Russian-linked group Static Tundra (FSB Center 16) launched destructive attacks against Poland’s energy grid. Using vulnerable Fortinet devices, they deployed "DynoWiper" and the LLM-developed "LazyWiper" malware. While communications were disrupted, electricity production remained stable. The group targeted OT and SCADA documentation for long-term sabotage. <a href="https://thehackernews.com/2026/01/poland-attributes-december-cyber.html" target="_blank">More info</a></li>
+    <li><strong>APT28 exploits new MS Office bug (CVE-2026-21509)</strong>: Russian-linked Fancy Bear is utilizing a high-severity vulnerability just days after its emergency patch. Using EU-Ukraine themed spear-phishing, the campaign deploys the COVENANT framework via COM hijacking and WebDAV. The attacks target Ukrainian government and EU-based organizations, utilizing Filen cloud storage for C2 operations. <a href="https://www.bleepingcomputer.com/news/security/russian-hackers-exploit-recently-patched-microsoft-office-bug-in-attacks/" target="_blank">More info</a></li>
 
-    <li><strong>Labyrinth Chollima fragmentation</strong>: CrowdStrike has reclassified North Korean threat group Labyrinth Chollima into three entities: Golden Chollima (crypto theft/recruitment fraud), Pressure Chollima (high-value opportunistic heists via "MataNet"), and Labyrinth Chollima (industrial/defense espionage). This reflects a maturing, specialized bureaucratic structure within the DPRK cyber ecosystem. <a href="https://www.infosecurity-magazine.com/news/labyrinth-chollima-dprk-three/" target="_blank">More info</a></li>
+    <li><strong>ClawHavoc campaign targets OpenClaw skills</strong>: An audit of 2,857 skills revealed 341 malicious packages. Attackers use social engineering in documentation to prompt macOS and Windows users to execute scripts or download ZIPs that deploy Atomic Stealer (AMOS) and keyloggers. In response, OpenClaw has introduced a community reporting feature to hide flagged skills. <a href="https://thehackernews.com/2026/02/researchers-find-341-malicious-clawhub.html" target="_blank">More info</a></li>
 
-    <li><strong>UAT-8099 targets IIS servers in SE Asia</strong>: China-linked actor UAT-8099 is targeting IIS servers in Thailand and Vietnam for black-hat SEO fraud. Using variants like BadIIS IISHijack, the actor intercepts HTTP requests to inject malicious JS or redirect search crawlers to gambling sites, maintaining persistence via hidden admin accounts. <a href="https://thehackernews.com/2026/01/china-linked-uat-8099-targets-iis.html" target="_blank">More info</a></li>
+    <li><strong>Aisuru botnet sets 31.4 Tbps DDoS record</strong>: Also known as Kimwolf, the botnet launched a hyper-volumetric attack on December 19, 2025, using 1 to 4 million compromised IoT devices, including Android TVs. The campaign targeted telecom and IT infra with UDP carpet-bombing. Functioning as a DDoS-for-hire service and proxy network, it highlights the risk of unpatched consumer hardware to global network stability. <a href="https://www.zdnet.com/article/what-is-aisuru-botnet-ddos-assault/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>Automated MongoDB extortion</strong>: Flare reveals a campaign targeting misconfigured MongoDB instances, compromising roughly 1,400 servers. Attackers wipe database contents and demand a 0.005 BTC ransom for restoration. Approximately 95,000 instances remain exposed or running outdated, vulnerable software. <a href="https://www.bleepingcomputer.com/news/security/exposed-mongodb-instances-still-targeted-in-data-extortion-attacks/" target="_blank">More info</a></li>
+    <li><strong>Multistage Dropbox credential harvesting</strong>: Forcepoint X-Labs identified a campaign using procurement-themed emails with clean PDF attachments to bypass scanners. These PDFs lead to documents on Vercel which then link to a fraudulent Dropbox login on the tovz.life domain. Stolen credentials and geolocation data are sent to a Telegram bot, with the site using a 5-second delay to mimic realism. <a href="https://www.darkreading.com/cloud-security/attackers-harvest-dropbox-logins-fake-pdf-lures" target="_blank">More info</a></li>
 
-    <li><strong>Cloud storage payment phishing</strong>: A global campaign is using Google Cloud Storage links to bypass filters, claiming immediate data deletion due to payment failures. Victims are redirected to fake "loyalty" discount pages and eventually funneled into credit card harvesting forms or affiliate marketing scams. <a href="https://www.bleepingcomputer.com/news/security/cloud-storage-payment-scam-floods-inboxes-with-fake-renewals/" target="_blank">More info</a></li>
+    <li><strong>Global surge in High-Yield Investment (HYIP) scams</strong>: CTM360 detected over 4,200 fraudulent websites averaging 15 new incidents daily. These Ponzi schemes promise returns of 40% in 72 hours, targeting crypto and Forex enthusiasts via polished templates and social media ads in 20 languages. The platforms use fake KYC delays to trap funds before disappearing. <a href="https://www.bleepingcomputer.com/news/security/ctm360-report-warns-of-global-surge-in-fake-high-yield-investment-scams/" target="_blank">More info</a></li>
+  </ul>
 
-    <li><strong>Arsink Android RAT active in 143 countries</strong>: Zimperium zLabs uncovered "Arsink," a sophisticated RAT masquerading as "Pro" or "Mod" versions of apps like TikTok and WhatsApp. With 45,000 compromises, the malware allows audio/video recording and SMS harvesting, utilizing Firebase and Google Drive for C2. <a href="https://hackread.com/arsink-spyware-whatsapp-youtube-instagram-tiktok/" target="_blank">More info</a></li>
-    
-    <li><strong>Illicit Crypto flows surge</strong>: Illicit cryptocurrency flows hit a record $158 billion in 2025, driven largely by sanctions-linked activity (Russia, Iran, Venezuela). While ransomware incidents hit record highs, actual payment rates slowed as victims increasingly refused to pay. <a href="https://www.bleepingcomputer.com/news/security/crypto-wallets-received-a-record-158-billion-in-illicit-funds-last-year/" target="_blank">More info</a></li>
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>NationStates confirms data breach via RCE</strong>: A bug hunter exceeded authorized boundaries to exploit an RCE in the "Dispatch Search" feature on January 27, 2026. The breach resulted in the theft of application code and user data, including email addresses and MD5-hashed passwords. Administrators are rebuilding on new hardware and upgrading password hashing standards. <a href="https://www.bleepingcomputer.com/news/security/nationstates-confirms-data-breach-shuts-down-game-site/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📚 Others</h2>
   <ul>
-    <li><strong>$400M Helix crypto mixer forfeiture</strong>: The US DOJ finalized the forfeiture of assets linked to the defunct mixer Helix, which laundered over 354,000 bitcoins. The recovery includes cryptocurrencies, real estate, and cash formerly belonging to operator Larry Dean Harmon. <a href="https://hackread.com/us-seizes-400m-helix-dark-web-crypto-mixer/" target="_blank">More info</a></li>
-
-    <li><strong>Epstein Files reference "personal hacker"</strong>: Redacted DOJ documents suggest Jeffrey Epstein utilized a "personal hacker," allegedly an Italo-Calabrian expert whose firm was later acquired by a major security company. The claims include development of iOS zero-days and Saudi surveillance programs, though they remain unverified informant tips. <a href="https://securityaffairs.com/187515/laws-and-regulations/doj-releases-details-alleged-talented-hacker-working-for-jeffrey-epstein.html" target="_blank">More info</a></li>
-
-    <li><strong>Ex-Google engineer convicted of AI espionage</strong>: Linwei Ding was convicted on 14 counts of economic espionage and trade secret theft for exfiltrating 2,000+ pages of Google’s AI supercomputing data while secretly serving as CTO for a Chinese startup. This marks the first conviction for AI-related economic espionage. <a href="https://www.bleepingcomputer.com/news/security/us-convicts-ex-google-engineer-for-sending-ai-tech-data-to-china/" target="_blank">More info</a></li>
-
-    <li><strong>Microsoft roadmap to disable NTLM</strong>: Microsoft announced a three-phase plan to disable the 30-year-old NTLM protocol by default in Windows. The transition focuses on enhancing Kerberos to handle local accounts and "no line-of-sight" scenarios to prevent relay and pass-the-hash attacks. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-to-disable-ntlm-by-default-in-future-windows-releases/" target="_blank">More info</a></li>
-  </ul>
-
-  <h2>🛠️ Tools</h2>
-  <ul>
-    <li><strong>Torq achieves Unicorn status</strong>: Security hyperautomation startup Torq raised $140M in Series D funding, valuing the company at $1.2B. The funds will accelerate their AI-native HyperSOC platform, which uses multi-agent AI to autonomously resolve 95% of Tier-1 security alerts. <a href="https://www.darkreading.com/remote-workforce/torq-moves-socs-soar-ai-powered-hyper-automation" target="_blank">More info</a></li>
+    <li><strong>Mozilla adds "AI Controls" to Firefox 148</strong>: Launching February 24, the browser will include a dedicated section to disable generative features like ChatGPT/Claude integrations and AI-powered tab grouping. This opt-in approach aims to provide greater agency over telemetry and automated tools, responding to community feedback regarding data sovereignty. <a href="https://www.bleepingcomputer.com/news/software/mozilla-will-let-you-turn-off-all-firefox-ai-features/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
