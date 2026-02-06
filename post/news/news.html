@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 05/02/26</title>
+  <title>📰 Cybersecurity Newsfeed - 06/02/26</title>
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
   <style>
     body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
@@ -17,63 +17,53 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 05/02/26</h2>
+  <h2>📅 06/02/26</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>Critical n8n RCE Flaws (CVE-2026-25049)</strong>: Researchers identified flaws in the n8n workflow platform allowing authenticated users to bypass JavaScript sanitization and escape the sandbox. This follows the "Ni8mare" flaw (CVE-2026-21858) currently seeing massive scanning activity. Exploitation enables theft of API keys and database credentials. n8n released versions 2.5.2 and 1.123.17 to address the issues. <a href="https://www.bleepingcomputer.com/news/security/critical-n8n-flaws-disclosed-along-with-public-exploits/" target="_blank">More info</a></li>
+    <li><strong>OpenClaw AI platform leaks credentials</strong>: Security researchers identified critical vulnerabilities in OpenClaw, an open-source AI agent platform. Snyk revealed that over 7% of the ClawHub marketplace contains skills that leak sensitive credentials like API keys and credit cards in plaintext via LLM logs. Additionally, Zenity demonstrated indirect prompt injection attacks where malicious documents force unauthorized integrations, allowing adversaries to exfiltrate files or execute Sliver beacons across Slack and Google Workspace. <a href="https://www.theregister.com/2026/02/05/openclaw_skills_marketplace_leaky_security/" target="_blank">More info</a></li>
 
-    <li><strong>VMware ESXi Sandbox Escape (CVE-2025-22225)</strong>: CISA confirmed ransomware gangs are actively exploiting this high-severity flaw. Originally used by Chinese-speaking actors as a zero-day in 2024, it allows arbitrary kernel writes to escape a VM to the host. CISA has added it to the KEV catalog, urging immediate patching of affected ESXi environments. <a href="https://www.bleepingcomputer.com/news/security/cisa-vmware-esxi-flaw-now-exploited-in-ransomware-attacks/" target="_blank">More info</a></li>
+    <li><strong>CISA adds Metro4Shell and SmarterMail to KEV</strong>: CISA added two critical flaws to its Known Exploited Vulnerabilities catalog. CVE-2025-11953 ("Metro4Shell") is an OS command injection in React Native Community CLI’s Metro server, enabling RCE on developer workstations. CVE-2026-24423 impacts SmarterTools SmarterMail, where missing auth in the ConnectToHub API allows attackers to force arbitrary command execution. Federal agencies are urged to patch immediately to mitigate high-impact compromises. <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-11953" target="_blank">More info (Metro4Shell)</a> | <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-24423" target="_blank">More info (SmarterMail)</a></li>
 
-    <li><strong>Orchid Security tackles "Identity Dark Matter"</strong>: Orchid introduced an Identity Control Plane to find unmanaged authentication logic and embedded credentials within application code. Using LLM-driven observability rather than simple configuration audits, the tool extracts "identity as coded" to provide real-time governance of both managed and unmanaged environments. <a href="https://thehackernews.com/2026/02/orchid-security-introduces-continuous.html" target="_blank">More info</a></li>
-
-    <li><strong>Google Looker "LookOut" Vulnerabilities</strong>: Tenable disclosed critical bugs in self-hosted Looker deployments. The "LookOut" chain allows for RCE and full server control, while a second flaw enables extraction of internal management databases and secrets. Managed cloud services are secured, but self-hosted admins must update to 25.12.30+ or 24.18.209+ immediately. <a href="https://www.helpnetsecurity.com/2026/02/04/google-looker-vulnerabilities-cve-2025-12743/" target="_blank">More info</a></li>
+    <li><strong>Zendesk support systems abused for relay spam</strong>: A global spam wave is abusing unsecured Zendesk instances to flood inboxes. Attackers exploit misconfigured ticket forms by entering a target’s email as the requester, triggering legitimate "Activate your account" notifications that bypass spam filters. Despite previous monitoring enhancements, "open" instances continue to echo user-supplied content through placeholders like {{ticket.title}}. <a href="https://www.bleepingcomputer.com/news/security/zendesk-spam-wave-returns-floods-users-with-activate-account-emails/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>LLMjacking in AWS Intrusion</strong>: Sysdig detailed a cloud breach where an attacker gained admin control in under 10 minutes. The actor used LLMs to automate reconnaissance and privilege escalation via Lambda code injection. Evidence of AI assistance included "LLMjacking" of Amazon Bedrock to generate scripts with Serbian-coded comments and hallucinations of non-existent repositories. <a href="https://www.theregister.com/2026/02/04/aws_cloud_breakin_ai_assist/" target="_blank">More info</a></li>
+    <li><strong>AISURU/Kimwolf botnet sets 31.4 Tbps DDoS record</strong>: In late 2025, this botnet launched the largest publicly disclosed DDoS attack, peaking at 31.4 Tbps. Leveraging over 2 million compromised Android devices (primarily off-brand smart TVs) and residential proxy networks, it generates bursts exceeding 200 million requests per second. While Google and Cloudflare disrupted C2 domains in early 2026, the botnet remains a massive threat. <a href="https://thehackernews.com/2026/02/aisurukimwolf-botnet-launches-record.html" target="_blank">More info</a></li>
 
-    <li><strong>Global SystemBC Botnet Expansion</strong>: Silent Push uncovered a SystemBC operation with over 10,000 infected IPs, including government infra in Vietnam. A novel Perl-based Linux variant with zero AV detection was identified. The botnet serves as a precursor to ransomware, acting as a SOCKS5 proxy relay to mask malicious traffic. <a href="https://www.infosecurity-magazine.com/news/global-systembc-botnet-10000/" target="_blank">More info</a></li>
+    <li><strong>NoName057(16) targets 2026 Winter Olympics</strong>: Pro-Russian hacktivists launched DDoS attacks against the Milan-Cortina Winter Olympics and Italian diplomatic missions. Approximately 120 sites were targeted, including Foreign Ministry offices in Washington and Paris, in retaliation for Italy’s support of Ukraine. Italy has deployed 6,000 security officers and cyber units to defend the Games against potential hyper-volumetric escalations. <a href="https://securityaffairs.com/187654/hacktivism/pro-russian-group-noname05716-launched-ddos-attacks-on-milano-cortina-2026-winter-olympics.html" target="_blank">More info</a></li>
 
-    <li><strong>Mustang Panda targets Diplomats</strong>: The China-linked group used fake U.S. diplomatic briefings to target government officials in Asia and Eastern Europe. Utilizing DLL search-order hijacking, they deployed DOPLUGS (a PlugX downloader) for quiet, persistent data collection during sensitive international coordination periods. <a href="https://hackread.com/chinese-mustang-panda-briefing-spy-diplomat/" target="_blank">More info</a></li>
+    <li><strong>Python infostealers targeting macOS</strong>: Microsoft Defender uncovered three aggressive campaigns—DigitStealer, MacSync, and Atomic Stealer—using "ClickFix" lures to target macOS users. Fake Google ads for AI tools trick users into running Terminal commands that bypass system protections. These stealers harvest browser credentials, crypto wallets, and AWS/SSH keys before self-deleting to complicate forensics. <a href="https://hackread.com/macos-users-python-infostealers-posing-ai-installers/" target="_blank">More info</a></li>
 
-    <li><strong>ShadowSyndicate Infrastructure Growth</strong>: Group-IB linked dozens of servers through reused SSH fingerprints, identifying a cluster supporting major ransomware groups like Cl0p and Black Basta. ShadowSyndicate appears to function as an Initial Access Broker or bulletproof host, transferring servers between internal clusters to hide ownership. <a href="https://www.infosecurity-magazine.com/news/shadowsyndicate/" target="_blank">More info</a></li>
+    <li><strong>React2Shell exploits hijack NGINX traffic</strong>: Threat actors are exploiting CVE-2025-55182 to inject malicious NGINX configurations via an automated toolkit. The campaign uses the proxy_pass directive to reroute legitimate traffic through attacker-controlled servers, facilitating session hijacking. Targeting government and education sectors in Asia, the attackers prioritize configuration persistence over traditional malware. <a href="https://thehackernews.com/2026/02/hackers-exploit-react2shell-to-hijack.html" target="_blank">More info</a></li>
+
+    <li><strong>DragonForce ransomware shifts to "Cartel" model</strong>: DragonForce has evolved into a RaaS cartel, providing affiliates with professional "Company Data Audits" and intelligence-driven extortion strategies. Using leaked Conti source code, the group has proposed a unified front with rivals like LockBit to standardize ransom market conditions, specifically targeting manufacturing and tech sectors in the West. <a href="https://www.darkreading.com/cyber-risk/ransomware-gang-full-godfather-cartel" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>Spear-Phishing via .scr Files</strong>: ReliaQuest identified a trend of using Windows screensaver files to bypass execution controls. These Portable Executables are being used to deploy JWrapper (an RMM tool) for persistent remote access, often disguised as business invoices or project summaries hosted on public clouds. <a href="https://www.darkreading.com/application-security/attackers-use-screensavers-drop-malware-rmm-tools" target="_blank">More info</a></li>
+    <li><strong>Ransomware gangs abuse VMmanager templates</strong>: Groups like LockBit and BlackCat are using ISPsystem’s VMmanager to host C2 infrastructure. By leveraging default Windows templates that reuse identical hostnames and identifiers, attackers mask their traffic within legitimate cloud environments. Sophos identified that 95% of internet-facing ISPsystem VMs linked to criminal activity share just four specific hostnames. <a href="https://www.bleepingcomputer.com/news/security/ransomware-gang-uses-ispsystem-vms-for-stealthy-payload-delivery/" target="_blank">More info</a></li>
 
-    <li><strong>AI Chrome Extensions Privacy Risks</strong>: A study by Incogni found that 52% of AI-powered Chrome extensions collect user data, with 42% utilizing "scripting" permissions that allow them to read and modify browser content. Tools for programming and transcription were flagged as the most invasive, potentially exposing PII for millions of users. <a href="https://www.zdnet.com/article/ai-chrome-extensions-data-harvesting-privacy/" target="_blank">More info</a></li>
-
-    <li><strong>Broken Nitrogen Ransomware Decryptor</strong>: Coveware identified a programming flaw in Nitrogen's VMware ESXi encryptor that makes data recovery impossible. The malware incorrectly loads a QWORD variable into memory, overwriting the first four bytes of the public key. Victims are warned that paying the ransom is entirely futile. <a href="https://www.theregister.com/2026/02/04/nitrogen_ransomware_broken_decryptor/" target="_blank">More info</a></li>
+    <li><strong>"CrashFix" variant deploys ModeloRAT</strong>: A new evolution of the ClickFix campaign uses fake "uBlock Origin Lite" extensions to crash victim browsers. After a 60-minute dormancy, the browser loop triggers a "repair" prompt that leads users to execute a clipboard-copied command. This abuses finger.exe to deploy ModeloRAT, a Python Trojan targeting domain-joined corporate systems. <a href="https://www.microsoft.com/en-us/security/blog/2026/02/05/clickfix-variant-crashfix-deploying-python-rat-trojan/" target="_blank">More info</a></li>
   </ul>
 
   <h2>💥 Breaches & Leaks</h2>
   <ul>
-    <li><strong>Coinbase Insider Breach</strong>: Coinbase confirmed a December 2025 breach where a contractor accessed the personal data of ~30 customers. While independent of other incidents, it follows screenshots posted by "Scattered Lapsus Hunters." The case underscores the risk of threat actors targeting BPO firms through social engineering. <a href="https://www.bleepingcomputer.com/news/security/coinbase-confirms-insider-breach-linked-to-leaked-support-tool-screenshots/" target="_blank">More info</a></li>
+    <li><strong>Spain’s Ministry of Science hit by IDOR breach</strong>: A threat actor named "GordonFreeman" claimed responsibility for breaching Spain’s Ministry of Science, Innovation and Universities. Exploiting a critical IDOR vulnerability to gain admin credentials, the attacker leaked personal records and official enrollment data. The Ministry has suspended IT systems and extended administrative deadlines for affected citizens. <a href="https://www.bleepingcomputer.com/news/security/spains-ministry-of-science-shuts-down-systems-after-breach-claims/" target="_blank">More info</a></li>
+
+    <li><strong>Substack confirms data breach of 700k users</strong>: Substack disclosed a breach after a threat actor leaked records on a cybercrime forum. While passwords and financial data are reportedly safe, the exposed info includes names, emails, and phone numbers for 700,000 users. The unauthorized access occurred in October 2025 via a scraping method targeting a system vulnerability. <a href="https://securityaffairs.com/187659/uncategorized/hacker-claims-theft-of-data-from-700000-substack-users-company-confirms-breach.html" target="_blank">More info</a></li>
+
+    <li><strong>Sapienza University crippled by "BabLock" ransomware</strong>: Europe’s largest university is battling a severe attack by pro-Russian actor "Femwar02." The breach, achieved via a compromised admin account, deployed BabLock (Rorschach) ransomware. Essential digital services like the Infostud booking platform are offline, while the university ignores a 72-hour ransom ultimatum to focus on restoration. <a href="https://www.bleepingcomputer.com/news/security/italian-university-la-sapienza-goes-offline-after-cyberattack/" target="_blank">More info</a></li>
+
+    <li><strong>Romanian oil pipeline operator Conpet hit by Qilin</strong>: Conpet S.A. confirmed a cyberattack that disrupted corporate IT and its official website. The Qilin ransomware gang claimed credit, alleging the theft of 1TB of data including financial records. Crucially, the company’s Operational Technology (OT) and SCADA systems remain unaffected, preventing disruptions to oil transport. <a href="https://www.bleepingcomputer.com/news/security/romanian-oil-pipeline-operator-conpet-discloses-cyberattack-qilin-ransomware/" target="_blank">More info</a></li>
   </ul>
 
-  <h2>🛠️ Tools & Hunting</h2>
+  <h2>🔍 Hunting</h2>
   <ul>
-    
-    <li><strong>Amaranth-Dragon Espionage in SE Asia</strong>: Check Point identified a Chinese-linked cluster targeting government agencies using WinRAR exploits (CVE-2025-8088). The group uses the Amaranth Loader to deploy the Havoc framework or a specialized Telegram-based RAT (TGAmaranth) for data exfiltration. <a href="https://research.checkpoint.com/2026/amaranth-dragon-weaponizes-cve-2025-8088-for-targeted-espionage/" target="_blank">More info</a></li>
-
-    <li><strong>EnCase BYOVD EDR Killer</strong>: Huntress identified a custom "EDR killer" abusing a long-revoked EnCase kernel driver to disable 59 security tools. By exploiting a loophole in Windows driver signing, the malware gains kernel-level access to terminate processes from vendors like CrowdStrike and SentinelOne. <a href="https://www.huntress.com/blog/encase-byovd-edr-killer" target="_blank">More info</a></li>
+    <li><strong>Global espionage group TGR-STA-1030 exposed</strong>: Unit 42 detailed an Asia-based espionage group that compromised 70 organizations across 37 countries in the last year. The group targets government ministries and law enforcement using a custom Linux rootkit called "ShadowGuard." They maintain persistence via VPS infrastructure in the U.S. and Singapore combined with frameworks like Cobalt Strike. <a href="https://unit42.paloaltonetworks.com/shadow-campaigns-uncovering-global-espionage/" target="_blank">More info</a></li>
   </ul>
 
-  <h2>📚 Others</h2>
-  <ul>
-    <li><strong>Firefox 148 "AI Kill Switch"</strong>: Mozilla will introduce centralized AI controls, allowing users to globally disable generative AI features like chatbots and link previews. This differentiates Firefox from Edge by making AI features strictly opt-in, prioritizing user agency and privacy. <a href="https://www.malwarebytes.com/blog/news/2026/02/firefox-is-giving-users-the-ai-off-switch" target="_blank">More info</a></li>
-
-    <li><strong>Microsoft's AI "Sleeper Agent" Scanner</strong>: A new tool identifies backdoors in open-weight language models. It detects technical signatures like "double triangle" attention patterns and output entropy collapse, helping secure the AI supply chain against poisoned models. <a href="https://www.microsoft.com/en-us/security/blog/2026/02/04/detecting-backdoored-language-models-at-scale/" target="_blank">More info</a></li>
-  </ul>
-
-  <h2>🛠️ Tools </h2>
-    <li><strong>Native Sysmon in Windows 11</strong>: Microsoft has integrated Sysmon functionality natively into Windows 11 Insider builds. This allows enterprise admins to enable granular system monitoring (process creation, clipboard changes) via optional features without manual installation, simplifying threat hunting deployments. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-rolls-out-native-windows-11-sysmon-security-monitoring/" target="_blank">More info</a></li>
-
-    
   <p style="text-align:center;">
     <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
   </p>
