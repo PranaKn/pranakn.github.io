@@ -1,0 +1,51 @@
+# 09/02/2026
+
+**VULNERABILITIES**
+
+CISA has added CVE-2026-24423, a critical remote code execution (RCE) flaw in SmarterTools SmarterMail, to its Known Exploited Vulnerabilities catalog following its use in ransomware campaigns. The vulnerability, which carries a CVSS score of 9.3, stems from missing authentication in the ConnectToHub API. Attackers exploit this by directing instances to malicious HTTP servers that deliver arbitrary OS commands. This issue was patched in Build 9511 alongside a critical admin password bypass (CVE-2026-23760). Federal agencies must update to the latest version—currently Build 9526—by February 26, 2026, or discontinue use of the product to mitigate significant exploitation risks.
+
+- https://www.bleepingcomputer.com/news/security/cisa-warns-of-smartermail-rce-flaw-used-in-ransomware-attacks/
+
+**ADVERSARIES**
+
+Cisco Talos has uncovered DKnife, a sophisticated China-nexus gateway-monitoring and adversary-in-the-middle framework active since 2019. Comprising seven Linux-based implants, the toolkit targets routers and edge devices to perform deep packet inspection and traffic manipulation. DKnife specialized in hijacking Android app updates and Windows binary downloads to deliver ShadowPad and DarkNimbus backdoors. Primarily targeting Chinese-speaking users, it monitors messaging platforms like WeChat and disrupts security software traffic using TCP RST packets. With sub-millisecond overhead, the modular framework creates bridged interfaces for malicious traffic and establishes P2P VPN tunnels, highlighting an evolving operational lineage shared with the WizardNet and Spellbinder campaigns.
+
+- https://securityaffairs.com/187716/malware/dknife-toolkit-abuses-routers-to-spy-and-deliver-malware-since-2019.html
+
+Palo Alto Networks’ Unit 42 has detailed "Shadow Campaigns," a global espionage operation by the Asian state-sponsored actor TGR-STA-1030 (aka UNC6619). Active since January 2024, the group has compromised 70 organizations across 37 countries, primarily targeting government ministries and critical infrastructure. Initial access is achieved via spear-phishing with the "Diaoyu" loader or exploiting N-day vulnerabilities in SAP and Microsoft Exchange. Notably, the group utilizes "ShadowGuard," a custom eBPF Linux rootkit that evades detection by intercepting syscalls to hide processes and files at the kernel level. These campaigns prioritize strategic intelligence, specifically targeting regions involved in significant geopolitical or economic shifts.
+
+- https://www.bleepingcomputer.com/news/security/state-actor-targets-155-countries-in-shadow-campaigns-espionage-op/
+
+**TRENDS**
+
+Germany's BfV and BSI have issued a joint advisory regarding a likely state-sponsored phishing campaign targeting high-ranking political, military, and diplomatic figures via Signal. The attackers masquerade as "Signal Support" or security chatbots to trick victims into sharing SMS verification codes or scanning malicious QR codes. These social engineering tactics allow actors to register accounts on their own devices or link them via legitimate features, granting access to contact lists and incoming messages. While no malware is used, the campaign risks compromising entire networks through group chats and sensitive professional mappings, with authorities warning that WhatsApp remains similarly vulnerable.
+
+- https://thehackernews.com/2026/02/german-agencies-warn-of-signal-phishing.html
+
+Malwarebytes researchers have identified a sophisticated Apple Pay phishing campaign that leverages fake fraud alerts and "live" support calls to hijack accounts. The attack begins with highly polished emails—mimicking Apple’s branding—claiming that a high-value transaction (such as a $1,157 MacBook or a $279 Gift Card) was "partially blocked" at an Apple Store. Unlike typical phishing, which relies on malicious links, this campaign uses social engineering to trick victims into calling a fake "Apple Billing & Fraud Prevention" number.
+
+Once on the call, scammers impersonating fraud agents establish trust through scripted technical checks before initiating a real Apple ID login attempt. They pressure the victim to provide a two-factor authentication (2FA) code received via SMS, which the attackers use to bypass security and seize the account in real-time. This campaign is particularly effective because it weaponizes Apple's actual security features (2FA codes) against the user. Malwarebytes notes that Apple never schedules fraud appointments via email or asks for verification codes over the phone.
+
+- https://www.malwarebytes.com/blog/news/2026/02/apple-pay-phish-uses-fake-support-calls-to-steal-payment-details
+
+**BREACH/LEAKS**
+
+U.S. payment provider BridgePay Network Solutions confirmed a ransomware attack on February 6, 2026, causing a nationwide outage of its core processing systems. The disruption, which began with performance degradation early Friday, escalated into a full shutdown of APIs, virtual terminals, and hosted payment pages. Consequently, merchants and municipal entities, including the City of Palm Bay, have reverted to cash-only transactions. BridgePay has engaged the FBI and U.S. Secret Service to investigate. While internal files were encrypted, initial forensics suggest no payment card data was compromised, though restoration is expected to be a prolonged process.
+
+- https://www.bleepingcomputer.com/news/security/payments-platform-bridgepay-confirms-ransomware-attack-behind-outage/
+
+Flickr, operated by SmugMug, issued a security notice on February 5, 2026, regarding a data exposure incident involving an unnamed third-party email service provider. The vulnerability potentially allowed unauthorized access to sensitive metadata for a portion of its 35 million monthly users. Exposed data included real names, email addresses, Flickr usernames, account types, IP addresses, and general geographic locations. Crucially, Flickr confirmed that encrypted passwords and payment information remained secure. The platform disabled the compromised system within hours and notified data protection authorities, while advising users to remain vigilant against phishing campaigns leveraging the leaked account details.
+
+- https://hackread.com/flickr-data-breach-external-partner-security-flaw/
+
+**OTHERS**
+
+The Electronic Frontier Foundation (EFF) has launched "Encrypt It Already," a 2026 campaign holding tech giants accountable for unfulfilled end-to-end encryption (E2EE) promises. Categorized into three pillars—"Keep Your Promises," "Defaults Matter," and "Protect Our Data"—the initiative targets companies like Meta, Apple, Google, and Bluesky. Key demands include Apple and Google finalizing interoperable E2EE for RCS messaging—currently appearing in iOS 26.3 betas—and Bluesky implementing long-delayed encryption for direct messages. Additionally, the EFF urges Ring and Telegram to enable E2EE by default to eliminate complex "opt-in" processes. Amid the AI boom, the campaign also calls for per-app permissions to block AI assistants from scanning secure communications, framing encryption as a vital defense against automated surveillance.
+
+- https://www.darkreading.com/cloud-security/encrypt-it-already-pushes-big-tech-e2e-encryption
+
+**TOOLS**
+
+Tirith, a new open-source, cross-platform security tool, mitigates homoglyph and terminal injection attacks by intercepting shell commands in real-time. Developed by Sheeki, the tool hooks into shells like zsh, bash, and PowerShell to inspect pasted URLs for Unicode lookalikes, ANSI escapes, and invisible characters that bypass human detection. Beyond blocking deceptive domains, Tirith identifies pipe-to-shell patterns, dotfile hijacking, and supply-chain risks with sub-millisecond overhead. Operating entirely locally without telemetry or background processes, it provides a vital defense layer for terminals—which remain more vulnerable than modern browsers—while supporting comprehensive byte-level Unicode inspection and local audit logging.
+
+- https://www.bleepingcomputer.com/news/security/new-tool-blocks-imposter-attacks-disguised-as-safe-commands/
