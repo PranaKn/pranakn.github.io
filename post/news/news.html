@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 09/02/26</title>
+  <title>📰 Cybersecurity Newsfeed - 10/02/26</title>
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
   <style>
     body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
@@ -17,42 +17,44 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 09/02/26</h2>
+  <h2>📅 10/02/26</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>CISA warns of SmarterMail RCE (CVE-2026-24423)</strong>: CISA added a critical RCE flaw in SmarterTools SmarterMail to its KEV catalog following active exploitation in ransomware campaigns. The vulnerability (CVSS 9.3) stems from missing authentication in the ConnectToHub API, allowing attackers to point instances to malicious servers to execute OS commands. Patched in Build 9511 alongside an admin password bypass, federal agencies must update by Feb 26, 2026. <a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-smartermail-rce-flaw-used-in-ransomware-attacks/" target="_blank">More info</a></li>
+    <li><strong>135,000+ OpenClaw instances exposed via "vibe-code" failures</strong>: SecurityScorecard identified massive exposure of the open-source AI assistant (formerly Clawdbot). Systemic failures include a default network binding to <code>0.0.0.0:18789</code>, which worsens CVE-2026-25253—a one-click RCE via WebSocket hijacking. Attackers can exfiltrate tokens and bypass sandboxes for host-level compromise. Over 50,000 instances are currently vulnerable to RCE. <a href="https://www.theregister.com/2026/02/09/openclaw_instances_exposed_vibe_code/" target="_blank">More info</a></li>
+
+    <li><strong>Zero-click RCE in Claude Desktop Extensions (DXT)</strong>: Researchers at LayerX disclosed a CVSS 10.0 flaw impacting 10,000+ users where malicious Google Calendar events can trigger RCE. Since Claude DXTs operate unsandboxed, the Model Context Protocol (MCP) can be tricked into executing local commands. Anthropic has declined a fix, stating local configurations fall under user control. <a href="https://www.infosecurity-magazine.com/news/zeroclick-flaw-claude-dxt/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>DKnife toolkit targets edge devices</strong>: Cisco Talos uncovered DKnife, a China-nexus AitM framework active since 2019. Using seven Linux implants, it performs deep packet inspection on routers to hijack app updates and deliver ShadowPad/DarkNimbus backdoors. It specifically targets Chinese-speaking users, disrupts security traffic with TCP RST packets, and shares infrastructure with WizardNet campaigns. <a href="https://securityaffairs.com/187716/malware/dknife-toolkit-abuses-routers-to-spy-and-deliver-malware-since-2019.html" target="_blank">More info</a></li>
+    <li><strong>Global Group ransomware utilizes "mute" offline encryption</strong>: Delivered via the Phorpiex botnet, this Mamona successor uses deceptive double-extension shortcut files (.lnk). It features an offline mode using ChaCha20-Poly1305 to lock files without an internet connection, deletes Volume Shadow Copies, and uses self-deletion routines to scrub forensic evidence. <a href="https://hackread.com/hackers-global-group-ransomware-offline-phishing-emails/" target="_blank">More info</a></li>
 
-    <li><strong>Global "Shadow Campaigns" by TGR-STA-1030</strong>: Unit 42 detailed a massive espionage operation (aka UNC6619) that compromised 70 organizations across 37 countries. Using the "Diaoyu" loader and a custom eBPF rootkit called "ShadowGuard," the group hides kernel-level processes to maintain long-term access. The actor focuses on government ministries and regions experiencing significant geopolitical shifts. <a href="https://www.bleepingcomputer.com/news/security/state-actor-targets-155-countries-in-shadow-campaigns-espionage-op/" target="_blank">More info</a></li>
+    <li><strong>Black Basta bundles BYOVD drivers in primary payload</strong>: Shifting from standalone tools, the gang now embeds the vulnerable NsecSoft NSecKrnl driver (CVE-2025-68947) directly into its malware. This "Bring Your Own Vulnerable Driver" approach allows them to terminate EDR and security processes with kernel privileges more efficiently, signaling an industrialization of kernel exploitation. <a href="https://www.darkreading.com/threat-intelligence/black-basta-bundles-byovd-ransomware-payload" target="_blank">More info</a></li>
 
-    <li><strong>Signal phishing targeting high-ranking officials</strong>: German agencies (BfV and BSI) issued a joint advisory regarding state-sponsored phishing on Signal. Attackers impersonate "Signal Support" to trick political and military figures into sharing SMS verification codes or scanning malicious QR codes to hijack accounts. While no malware is used, the campaign risks compromising sensitive professional networks. <a href="https://thehackernews.com/2026/02/german-agencies-warn-of-signal-phishing.html" target="_blank">More info</a></li>
+    <li><strong>VoidLink modular Linux C2 targets multi-cloud environments</strong>: This framework fingerprints AWS, Azure, GCP, and others to adapt persistence techniques. It enables container escapes and Kubernetes privilege escalation. Artifacts suggest the malware was developed using LLM-assisted coding agents, lowering the bar for complex, cloud-native espionage. <a href="https://www.infosecurity-magazine.com/news/voidlink-malware-multi-cloud-ai/" target="_blank">More info</a></li>
   </ul>
+
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>Apple Pay phish uses "Live" support calls</strong>: Malwarebytes identified a sophisticated campaign using fake fraud alerts to initiate social engineering calls. Scammers posing as "Apple Billing & Fraud Prevention" establish trust before requesting real-time 2FA codes to seize Apple IDs. The attack is highly effective as it weaponizes legitimate security features against users during high-pressure scenarios. <a href="https://www.malwarebytes.com/blog/news/2026/02/apple-pay-phish-uses-fake-support-calls-to-steal-payment-details" target="_blank">More info</a></li>
+    <li><strong>TeamPCP industrializes cloud orchestration compromise</strong>: Also known as ShellForce, this group has compromised 60,000+ servers by targeting Docker APIs, Kubernetes, and the React2Shell flaw (CVE-2025-29927). Using automated scripts like <code>kube.py</code>, they convert hijacked clusters into scanning fabrics for cryptomining and data extortion. <a href="https://www.darkreading.com/cloud-security/teampcp-cloud-infrastructure-crime-bots" target="_blank">More info</a></li>
+
+    <li><strong>SolarWinds Web Help Desk flaws exploited for multi-stage intrusions</strong>: Attackers are weaponizing CVE-2025-40551 and CVE-2025-26399 to deploy Zoho ManageEngine, Cloudflare tunnels, and the Velociraptor DFIR tool as C2 frameworks. SolarWinds has released version 2026.1 to mitigate these "living-off-the-land" attacks. <a href="https://www.bleepingcomputer.com/news/security/threat-actors-exploit-solarwinds-wdh-flaws-to-deploy-velociraptor/" target="_blank">More info</a></li>
+
+    <li><strong>Proxyware campaign uses 7zip[.]com lookalike domain</strong>: A large-scale operation is distributing trojanized 7-Zip installers signed with revoked certificates. The malware converts host machines into residential proxy nodes for the "upStage Proxy" network, modifying firewall rules and establishing SYSTEM-level persistence. <a href="https://www.malwarebytes.com/blog/threat-intel/2026/02/fake-7-zip-downloads-are-turning-home-pcs-into-proxy-nodes" target="_blank">More info</a></li>
+  </ul>
+
+  <li><strong>Ongoing Ivanti EPMM Zero-Day campaign</strong>: Organizations using Ivanti Endpoint Manager Mobile are urged to apply emergency RPM patches as mass exploitation continues. The campaign targets unauthenticated RCE vulnerabilities to gain access to central mobile management systems. <a href="https://www.bleepingcomputer.com/news/security/european-commission-discloses-breach-that-exposed-staff-data/" target="_blank">More info</a></li>
   </ul>
 
   <h2>💥 Breaches & Leaks</h2>
   <ul>
-    <li><strong>BridgePay ransomware causes nationwide outage</strong>: U.S. payment provider BridgePay confirmed a ransomware attack that knocked its core processing systems offline. The outage forced many merchants and municipal entities to revert to cash-only transactions. While forensics suggest no payment card data was stolen, the recovery of APIs and virtual terminals is expected to be a prolonged process. <a href="https://www.bleepingcomputer.com/news/security/payments-platform-bridgepay-confirms-ransomware-attack-behind-outage/" target="_blank">More info</a></li>
+    <li><strong>UNC3886 targets Singapore’s major telcos</strong>: Throughout 2024, Chinese spies breached Singtel, StarHub, M1, and Simba using zero-day exploits and rootkits. While critical systems were accessed, "Operation Cyber Guardian" contained the breach, preventing service disruption or the theft of sensitive customer data. <a href="https://www.bleepingcomputer.com/news/security/chinese-cyberspies-breach-singapores-four-largest-telcos/" target="_blank">More info</a></li>
 
-    <li><strong>Flickr data exposure via third-party email provider</strong>: Flickr notified users of a security incident involving an external partner that exposed metadata for a portion of its 35 million users. Leaked data includes real names, IP addresses, and geographic locations, though passwords and payment info remained secure. The platform disabled the vulnerable system and warned users of potential follow-on phishing. <a href="https://hackread.com/flickr-data-breach-external-partner-security-flaw/" target="_blank">More info</a></li>
-  </ul>
+    <li><strong>Warlock ransomware breaches SmarterTools via SmarterMail bugs</strong>: Exploiting RCE (CVE-2026-24423) and auth bypass (CVE-2026-23760), the China-linked group compromised 12 Windows servers. SentinelOne blocked the encryption phase. SmarterTools has since decommissioned Active Directory and is migrating to Linux infrastructure. <a href="https://www.darkreading.com/application-security/warlock-gang-breaches-smartertools-smartermail-bugs" target="_blank">More info</a></li>
 
-  <h2>🛠️ Tools & Tech</h2>
-  <ul>
-    <li><strong>Tirith: New defense against terminal injection</strong>: A new open-source tool, Tirith, blocks homoglyph and terminal injection attacks by intercepting shell commands in real-time. It inspects pasted URLs for Unicode lookalikes and ANSI escapes that bypass human detection, providing a sub-millisecond security layer for developers using shells like zsh, bash, and PowerShell. <a href="https://www.bleepingcomputer.com/news/security/new-tool-blocks-imposter-attacks-disguised-as-safe-commands/" target="_blank">More info</a></li>
-  </ul>
-
-  <h2>📚 Others</h2>
-  <ul>
-    <li><strong>EFF launches "Encrypt It Already" campaign</strong>: The EFF is holding tech giants accountable for unfulfilled encryption promises. The 2026 initiative targets Meta, Apple, Google, and Bluesky, demanding E2EE by default and protections against AI assistants scanning secure communications. The campaign frames encryption as a vital defense against both automated and state surveillance. <a href="https://www.darkreading.com/cloud-security/encrypt-it-already-pushes-big-tech-e2e-encryption" target="_blank">More info</a></li>
+    <li><strong>European Commission MDM infrastructure compromised</strong>: A January 30th breach linked to Ivanti EPMM vulnerabilities (CVE-2026-1281/1340) potentially exposed staff names and phone numbers. CERT-EU contained the incident within nine hours. Similar zero-day campaigns have hit government agencies in the Netherlands and Finland. <a href="https://hackread.com/cyber-attack-european-commission-staff-mobile-systems/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
