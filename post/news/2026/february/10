@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 10/02/26</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 10/02/26</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>135,000+ OpenClaw instances exposed via "vibe-code" failures</strong>: SecurityScorecard identified massive exposure of the open-source AI assistant (formerly Clawdbot). Systemic failures include a default network binding to <code>0.0.0.0:18789</code>, which worsens CVE-2026-25253—a one-click RCE via WebSocket hijacking. Attackers can exfiltrate tokens and bypass sandboxes for host-level compromise. Over 50,000 instances are currently vulnerable to RCE. <a href="https://www.theregister.com/2026/02/09/openclaw_instances_exposed_vibe_code/" target="_blank">More info</a></li>
+
+    <li><strong>Zero-click RCE in Claude Desktop Extensions (DXT)</strong>: Researchers at LayerX disclosed a CVSS 10.0 flaw impacting 10,000+ users where malicious Google Calendar events can trigger RCE. Since Claude DXTs operate unsandboxed, the Model Context Protocol (MCP) can be tricked into executing local commands. Anthropic has declined a fix, stating local configurations fall under user control. <a href="https://www.infosecurity-magazine.com/news/zeroclick-flaw-claude-dxt/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Global Group ransomware utilizes "mute" offline encryption</strong>: Delivered via the Phorpiex botnet, this Mamona successor uses deceptive double-extension shortcut files (.lnk). It features an offline mode using ChaCha20-Poly1305 to lock files without an internet connection, deletes Volume Shadow Copies, and uses self-deletion routines to scrub forensic evidence. <a href="https://hackread.com/hackers-global-group-ransomware-offline-phishing-emails/" target="_blank">More info</a></li>
+
+    <li><strong>Black Basta bundles BYOVD drivers in primary payload</strong>: Shifting from standalone tools, the gang now embeds the vulnerable NsecSoft NSecKrnl driver (CVE-2025-68947) directly into its malware. This "Bring Your Own Vulnerable Driver" approach allows them to terminate EDR and security processes with kernel privileges more efficiently, signaling an industrialization of kernel exploitation. <a href="https://www.darkreading.com/threat-intelligence/black-basta-bundles-byovd-ransomware-payload" target="_blank">More info</a></li>
+
+    <li><strong>VoidLink modular Linux C2 targets multi-cloud environments</strong>: This framework fingerprints AWS, Azure, GCP, and others to adapt persistence techniques. It enables container escapes and Kubernetes privilege escalation. Artifacts suggest the malware was developed using LLM-assisted coding agents, lowering the bar for complex, cloud-native espionage. <a href="https://www.infosecurity-magazine.com/news/voidlink-malware-multi-cloud-ai/" target="_blank">More info</a></li>
+  </ul>
+
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>TeamPCP industrializes cloud orchestration compromise</strong>: Also known as ShellForce, this group has compromised 60,000+ servers by targeting Docker APIs, Kubernetes, and the React2Shell flaw (CVE-2025-29927). Using automated scripts like <code>kube.py</code>, they convert hijacked clusters into scanning fabrics for cryptomining and data extortion. <a href="https://www.darkreading.com/cloud-security/teampcp-cloud-infrastructure-crime-bots" target="_blank">More info</a></li>
+
+    <li><strong>SolarWinds Web Help Desk flaws exploited for multi-stage intrusions</strong>: Attackers are weaponizing CVE-2025-40551 and CVE-2025-26399 to deploy Zoho ManageEngine, Cloudflare tunnels, and the Velociraptor DFIR tool as C2 frameworks. SolarWinds has released version 2026.1 to mitigate these "living-off-the-land" attacks. <a href="https://www.bleepingcomputer.com/news/security/threat-actors-exploit-solarwinds-wdh-flaws-to-deploy-velociraptor/" target="_blank">More info</a></li>
+
+    <li><strong>Proxyware campaign uses 7zip[.]com lookalike domain</strong>: A large-scale operation is distributing trojanized 7-Zip installers signed with revoked certificates. The malware converts host machines into residential proxy nodes for the "upStage Proxy" network, modifying firewall rules and establishing SYSTEM-level persistence. <a href="https://www.malwarebytes.com/blog/threat-intel/2026/02/fake-7-zip-downloads-are-turning-home-pcs-into-proxy-nodes" target="_blank">More info</a></li>
+  </ul>
+
+  <li><strong>Ongoing Ivanti EPMM Zero-Day campaign</strong>: Organizations using Ivanti Endpoint Manager Mobile are urged to apply emergency RPM patches as mass exploitation continues. The campaign targets unauthenticated RCE vulnerabilities to gain access to central mobile management systems. <a href="https://www.bleepingcomputer.com/news/security/european-commission-discloses-breach-that-exposed-staff-data/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>UNC3886 targets Singapore’s major telcos</strong>: Throughout 2024, Chinese spies breached Singtel, StarHub, M1, and Simba using zero-day exploits and rootkits. While critical systems were accessed, "Operation Cyber Guardian" contained the breach, preventing service disruption or the theft of sensitive customer data. <a href="https://www.bleepingcomputer.com/news/security/chinese-cyberspies-breach-singapores-four-largest-telcos/" target="_blank">More info</a></li>
+
+    <li><strong>Warlock ransomware breaches SmarterTools via SmarterMail bugs</strong>: Exploiting RCE (CVE-2026-24423) and auth bypass (CVE-2026-23760), the China-linked group compromised 12 Windows servers. SentinelOne blocked the encryption phase. SmarterTools has since decommissioned Active Directory and is migrating to Linux infrastructure. <a href="https://www.darkreading.com/application-security/warlock-gang-breaches-smartertools-smartermail-bugs" target="_blank">More info</a></li>
+
+    <li><strong>European Commission MDM infrastructure compromised</strong>: A January 30th breach linked to Ivanti EPMM vulnerabilities (CVE-2026-1281/1340) potentially exposed staff names and phone numbers. CERT-EU contained the incident within nine hours. Similar zero-day campaigns have hit government agencies in the Netherlands and Finland. <a href="https://hackread.com/cyber-attack-european-commission-staff-mobile-systems/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
