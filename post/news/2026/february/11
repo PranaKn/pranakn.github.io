@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 11/02/26</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 11/02/26</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Microsoft February Patch Tuesday addresses 59 flaws</strong>: This update includes six actively exploited zero-days. Three critical security feature bypass bugs (CVE-2026-21510, CVE-2026-21513, and CVE-2026-21514) target Windows Shell, MSHTML, and Microsoft Word, allowing attackers to circumvent SmartScreen. Additionally, elevation-of-privilege flaws in Desktop Windows Manager and Remote Desktop Services grant administrative access. <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+
+    <li><strong>SAP patches critical CRM and S/4HANA flaws</strong>: SAP’s February Security Patch Day addresses 27 notes. The most severe, CVE-2026-0488 (CVSS 9.9), is a code injection flaw in the Scripting Editor of SAP CRM and S/4HANA, allowing full database compromise. Another critical fix, CVE-2026-0509 (CVSS 9.6), resolves a missing authorization check in NetWeaver AS ABAP that enables low-privileged users to execute remote function calls (RFCs). <a href="https://www.securityweek.com/sap-patches-critical-crm-s-4hana-netweaver-vulnerabilities/" target="_blank">More info</a></li>
+
+    <li><strong>Fortinet fixes critical SQLi in FortiClientEMS</strong>: CVE-2026-21643 (CVSS 9.1) is a pre-authenticated SQL injection vulnerability in FortiClientEMS 7.4.4. The flaw allows unauthenticated remote attackers to execute arbitrary SQL commands and potentially achieve RCE. This follows the discovery of CVE-2026-24858, an SSO bypass already under active exploitation. <a href="https://thehackernews.com/2026/02/fortinet-patches-critical-sqli-flaw.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Muddled Libra’s VM-based playbook</strong>: Unit 42 detailed how Muddled Libra uses rogue virtual machines in vSphere environments to bypass EDR/XDR. The group establishes persistence via Chisel SSH tunnels and extracts NTDS.dit databases by mounting domain controller VMDKs. They have also been seen targeting Snowflake databases and using "living off the land" tools like PsExec. <a href="https://unit42.paloaltonetworks.com/muddled-libra-ops-playbook/" target="_blank">More info</a></li>
+
+    <li><strong>SSHStalker Linux botnet uses IRC for C2</strong>: A new botnet compromises cloud infrastructure (notably Oracle Cloud) via SSH brute-forcing. It utilizes 15-year-old kernel exploits for privilege escalation and communicates via the vintage IRC protocol. While currently idle, it has built-in modules for AWS credential harvesting and DDoS. <a href="https://www.bleepingcomputer.com/news/security/new-linux-botnet-sshstalker-uses-old-school-irc-for-c2-comms/" target="_blank">More info</a></li>
+
+    <li><strong>North Korean UNC1069 targets crypto with deepfakes</strong>: Attackers use AI-generated deepfakes to impersonate executives in fake Zoom meetings. Victims are lured to "troubleshooting" pages that deliver malware families like WAVESHAPER, SILENCELIFT, and DEEPBREATH for macOS and Windows to exfiltrate keychain and Telegram data. <a href="https://www.bleepingcomputer.com/news/security/north-korean-hackers-use-new-macos-malware-in-crypto-theft-attacks/" target="_blank">More info</a></li>
+
+    <li><strong>ZeroDayRAT commercial spyware hits Android and iOS</strong>: Sold on Telegram for $2,000, this toolkit provides live camera/microphone streaming, screen recording, and keylogging. It is capable of intercepting SMS to bypass MFA and features dedicated modules for stealing banking and cryptocurrency credentials. <a href="https://www.darkreading.com/threat-intelligence/zerodayrat-brings-commercial-spyware-to-mass-market" target="_blank">More info</a></li>
+
+    <li><strong>Operation Cyber Guardian counters UNC3886 in Singapore</strong>: Singapore authorities disclosed an 11-month action protecting four major telcos from China-linked espionage. Attackers used zero-day firewall exploits and custom rootkits to maintain long-term persistence. No service disruptions occurred and no customer data was stolen. <a href="https://www.helpnetsecurity.com/2026/02/10/singapore-telecommunications-unc3886-cyber-espionage/" target="_blank">More info</a></li>
+
+    <li><strong>Reynolds ransomware embeds BYOVD driver</strong>: This new ransomware family bundles a vulnerable NsecSoft driver (CVE-2025-68947) directly within its payload. This allows the malware to terminate security processes from vendors like CrowdStrike and Sophos from within the kernel. <a href="https://thehackernews.com/2026/02/reynolds-ransomware-embeds-byovd-driver.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>0APT Syndicate unmasked as "fabulist" scam</strong>: Researchers identified 0APT as a scam-as-a-service operation that fakes data breaches to extort companies. They use technical tricks, such as streaming /dev/random noise, to simulate massive file downloads and leverage psychological warfare to force companies onto a "Wall of Shame." <a href="https://hackread.com/cybercrime-group-0apt-faking-breach-claims/" target="_blank">More info</a></li>
+
+    <li><strong>Phorpiex botnet delivers offline ransomware</strong>: A new campaign uses weaponized .lnk files to deliver Global Group ransomware. The payload operates entirely offline, generating encryption keys locally to evade network-based detection, specifically targeting isolated or air-gapped environments. <a href="https://www.infosecurity-magazine.com/news/phorpiex-phishing-global-group/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Volvo Group data exposed via Conduent hack</strong>: A breach at BPO giant Conduent by the SafePay ransomware group led to the exposure of 17,000 Volvo customers' and staff's PII. Stolen data includes Social Security numbers, medical info, and health insurance details. <a href="https://www.bleepingcomputer.com/news/security/volvo-group-north-america-customer-data-exposed-in-conduent-hack/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>Microsoft rolls out new Secure Boot certificates</strong>: To replace 2011 credentials expiring in June 2026, Microsoft is updating UEFI firmware via monthly updates. Systems failing to update will enter a "degraded security state." Windows 10 is notably excluded from this update path. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-rolls-out-new-secure-boot-certificates-before-june-expiration/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
