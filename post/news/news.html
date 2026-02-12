@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 12/02/26</title>
+  <title>📰 Cybersecurity Newsfeed - 13/02/26</title>
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
   <style>
     body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
@@ -17,36 +17,42 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 12/02/26</h2>
+  <h2>📅 13/02/26</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>Microsoft Store Outlook add-in hijacked</strong>: The AgreeTo Outlook add-in, a legitimate tool since 2022, was weaponized after its developer abandoned its Vercel-hosted URL. Attackers claimed the orphaned domain to bypass Microsoft’s manifest verification, serving a fake login prompt that exfiltrated over 4,000 credentials and credit card details via Telegram. This is the first recorded instance of malware hosted directly on the official Microsoft Marketplace via an abandoned third-party domain. <a href="https://www.bleepingcomputer.com/news/security/microsoft-store-outlook-add-in-hijacked-to-steal-4-000-microsoft-accounts/" target="_blank">More info</a></li>
+    <li><strong>BeyondTrust RCE exploitation (CVE-2026-1731)</strong>: BeyondTrust confirmed active exploitation of a 9.9 CVSS flaw in its Remote Support and Privileged Remote Access appliances. The pre-auth RCE allows attackers to execute OS commands via the <code>/get_portal_info</code> endpoint. While SaaS instances were patched on Feb 2, about 8,500 on-prem deployments remain at risk. Organizations are urged to upgrade to Remote Support 25.3.2 or PRA 25.1.1 immediately. <a href="https://www.bleepingcomputer.com/news/security/critical-beyondtrust-rce-flaw-now-exploited-in-attacks-patch-now/" target="_blank">More info</a></li>
 
-    <li><strong>Apple patches first 2026 zero-day (CVE-2026-20700)</strong>: Apple addressed a memory corruption flaw in the dyld dynamic link editor. Exploited as part of a sophisticated chain alongside WebKit vulnerabilities (CVE-2025-14174 and CVE-2025-43529), it allowed arbitrary code execution to target specific individuals. Updates are available for iOS 18.7.5 and macOS Tahoe 26.3. <a href="https://www.bleepingcomputer.com/news/security/apple-fixes-zero-day-flaw-used-in-extremely-sophisticated-attacks/" target="_blank">More info</a></li>
+    <li><strong>Windows LNK spoofing techniques</strong>: Researcher Wietze Beukema unveiled four ways to manipulate LNK files to hide malicious payloads. By exploiting how Windows Explorer parses data blocks, attackers can show a "clean" path (like a PDF) while executing PowerShell. Despite similar flaws (CVE-2025-9491) being used by state actors for PlugX malware, Microsoft declined to classify these as vulnerabilities due to required user interaction. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-lnk-spoofing-issues-arent-vulnerabilities/" target="_blank">More info</a></li>
 
-    <li><strong>Windows 11 Notepad Markdown RCE (CVE-2026-20841)</strong>: A high-severity flaw in Notepad’s Markdown implementation allowed attackers to execute silent payloads. By embedding non-standard protocols like <code>file://</code> or <code>ms-appinstaller://</code> in .md files, attackers could bypass security warnings. Microsoft mitigated this in version 11.2510 by enforcing warnings for any non-HTTP/HTTPS URIs. <a href="https://www.bleepingcomputer.com/news/microsoft/windows-11-notepad-flaw-let-files-execute-silently-via-markdown-links/" target="_blank">More info</a></li>
+    <li><strong>CISA adds four flaws to KEV Catalog</strong>: CISA expanded its KEV list with critical vulnerabilities including a Microsoft Config Manager SQL injection (CVE-2024-43468), a Notepad++ MiTM flaw (CVE-2025-15556), a SolarWinds Web Help Desk bypass (CVE-2025-40536), and a sophisticated Apple zero-day (CVE-2026-20700). Federal agencies must remediate these immediately to close entry points for state and criminal actors. <a href="https://www.cisa.gov/news-events/alerts/2026/02/12/cisa-adds-four-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+
+    <li><strong>Critical RCE in WPvivid Backup (CVE-2026-1357)</strong>: A 9.8 CVSS flaw impacts over 900,000 WordPress sites using the WPvivid plugin. Improper RSA error handling and lack of sanitization allow unauthenticated RCE via directory traversal and file uploads. Exploitation requires the "receive backup" feature to be active. Admins should upgrade to version 0.9.124. <a href="https://www.bleepingcomputer.com/news/security/wordpress-plugin-with-900k-installs-vulnerable-to-critical-rce-flaw/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>0APT Syndicate suspected of massive hoax</strong>: The emerging ransomware group 0APT claimed nearly 200 victims in its first week, but researchers found no evidence of real breaches. Most "proof" samples were zero-byte files or LLM-generated data. While currently appearing as a "scam-as-a-service" operation to attract affiliates, the group possesses a functional Rust-based encryptor and remains a genuine future threat. <a href="https://cyberscoop.com/0apt-ransomware-group-hoax-technical-capabilities/" target="_blank">More info</a></li>
+    <li><strong>Odido/Ben data breach hits 6.2M users</strong>: Dutch provider Odido confirmed a breach where hackers accessed names, addresses, IBANs, and ID numbers for 6.2 million customers. The infiltration occurred via a contact system over the weekend of Feb 7. While PII was taken, core credentials like passwords and billing data remained secure. External experts have been engaged for defense. <a href="https://securityaffairs.com/187927/uncategorized/odido-confirms-massive-breach-6-2-million-customers-impacted.html" target="_blank">More info</a></li>
 
-    <li><strong>North Korean UNC1069 targets Crypto/Web3</strong>: Mandiant detailed a campaign where attackers use deepfake videos of executives to simulate audio issues during spoofed Zoom meetings. Victims are tricked into a "ClickFix" social engineering tactic, running malicious commands that install backdoors like WAVESHAPER and HYPERCALL to steal keychain credentials and browser data. <a href="https://www.darkreading.com/threat-intelligence/north-koreas-unc1069-hammers-crypto-firms" target="_blank">More info</a></li>
+    <li><strong>Atomic macOS Stealer (AMOS) evolution</strong>: AMOS has moved to a multi-stage MaaS model ($1,000/mo). Recent "ClawHavoc" campaigns poisoned AI assistant ecosystems (OpenClaw/ClawHub), while "ClickFix" attacks used poisoned ChatGPT chats to trick users into running Terminal commands. AMOS targets Keychain passwords, cookies, and crypto wallets. <a href="https://www.bleepingcomputer.com/news/security/amos-infostealer-targets-macos-through-a-popular-ai-app/" target="_blank">More info</a></li>
 
-    <li><strong>SideCopy and Transparent Tribe target India</strong>: Pakistan-linked clusters are deploying a refined toolkit (Geta RAT, Ares RAT, and DeskRAT) against Indian defense sectors. These campaigns use multi-stage infection chains, including memory-resident techniques and malicious PowerPoint Add-Ins, to facilitate long-term intelligence gathering and USB data harvesting. <a href="https://thehackernews.com/2026/02/apt36-and-sidecopy-launch-cross.html" target="_blank">More info</a></li>
+    <li><strong>AiFrame campaign hides in 30+ Chrome extensions</strong>: Over 300,000 users were impacted by malicious extensions like "Gemini AI Sidebar." Using the backend <code>tapnetic[.]pro</code>, these extensions bypass Google's review process by loading remote iframes. They can extract page content, capture Gmail messages, and use the Web Speech API for unauthorized voice transcriptions. <a href="https://www.bleepingcomputer.com/news/security/fake-ai-chrome-extensions-with-300k-users-steal-credentials-emails/" target="_blank">More info</a></li>
+
+    <li><strong>World Leaks uses RustyRocket for stealth persistence</strong>: World Leaks (formerly Hunters International) is using a new Rust-based tool called RustyRocket for high-performance exfiltration. The tool uses encrypted tunnels and "execution guardrails" to evade detection. The group recently leaked 1.4TB of data from Nike, prioritizing extortion over encryption. <a href="https://www.infosecurity-magazine.com/news/world-leaks-ransomware-rustyrocket/" target="_blank">More info</a></li>
+
+    <li><strong>Stanley MaaS bypasses Chrome Web Store reviews</strong>: A new toolkit named Stanley is being sold for up to $6,000, promising to bypass Google’s security reviews. It uses iframe overlays to phish credentials while keeping the legitimate URL in the address bar. The extension "Notely" was identified as a PoC for this service. <a href="https://www.cysecurity.news/2026/02/stanley-malware-service-bypasses-chrome.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>Rise of AI Recommendation Poisoning</strong>: Attackers are embedding hidden instructions in "Summarize with AI" buttons to bias chatbot outputs. By injecting persistence commands into an AI’s long-term memory, they can manipulate future recommendations for specific brands or spread misleading facts, bypassing traditional security boundaries. <a href="https://www.theregister.com/2026/02/12/microsoft_ai_recommendation_poisoning/" target="_blank">More info</a></li>
+    <li><strong>State-sponsored abuse of Gemini AI</strong>: Google GTIG reports that actors from China, Iran, North Korea, and Russia are using Gemini AI for reconnaissance, phishing lures, and C2 development. Notable activity includes the "HonestCue" framework using AI for C# code generation. While not yet a "breakthrough" capability, it is accelerating attack lifecycles. <a href="https://www.bleepingcomputer.com/news/security/google-says-hackers-are-abusing-gemini-ai-for-all-attacks-stages/" target="_blank">More info</a></li>
 
-    <li><strong>LummaStealer surges with CastleLoader</strong>: LummaC2 has seen a significant activity spike using CastleLoader, a heavily obfuscated script-based loader. The campaign utilizes "ClickFix" fake CAPTCHA pages to trick users into executing PowerShell commands, targeting browser credentials and 2FA tokens. <a href="https://www.bleepingcomputer.com/news/security/lummastealer-infections-surge-after-castleloader-malware-campaigns/" target="_blank">More info</a></li>
+    <li><strong>Lazarus Group "fake recruiter" campaign</strong>: Since May 2025, Lazarus has targeted JS/Python devs using the persona of "Veltrix Capital." Candidates are lured into GitHub coding assessments containing malicious npm/PyPI dependencies (like <code>bigmathutils</code>) that deploy RATs or steal Discord/2FA data. <a href="https://thehackernews.com/2026/02/lazarus-campaign-plants-malicious.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>💥 Breaches & Leaks</h2>
   <ul>
-    <li><strong>SSHStalker botnet hits 7,000 Linux systems</strong>: A new botnet is compromising legacy environments—specifically abandoned cloud instances—by combining 2009-era kernel exploits with modern SSH brute-forcing. The malware uses IRC-based C2 and aggressive cron jobs for persistence. Evidence suggests the operators may have Romanian origins. <a href="https://securityaffairs.com/187833/malware/sshstalker-botnet-targets-linux-servers-with-legacy-exploits-and-ssh-scanning.html" target="_blank">More info</a></li>
+    <li><strong>Qilin ransomware hits Conpet S.A.</strong>: Romania’s national oil pipeline operator suffered a 1TB data theft by the Qilin gang. Administrative systems were paralyzed, and employee passport scans were leaked. Core oil transport operations remain functional, but the DNSC has warned of potential fraud using the stolen PII. <a href="https://www.bleepingcomputer.com/news/security/romanias-oil-pipeline-operator-conpet-confirms-data-stolen-in-attack/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
