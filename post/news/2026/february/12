@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 12/02/26</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 12/02/26</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Microsoft Store Outlook add-in hijacked</strong>: The AgreeTo Outlook add-in, a legitimate tool since 2022, was weaponized after its developer abandoned its Vercel-hosted URL. Attackers claimed the orphaned domain to bypass Microsoft’s manifest verification, serving a fake login prompt that exfiltrated over 4,000 credentials and credit card details via Telegram. This is the first recorded instance of malware hosted directly on the official Microsoft Marketplace via an abandoned third-party domain. <a href="https://www.bleepingcomputer.com/news/security/microsoft-store-outlook-add-in-hijacked-to-steal-4-000-microsoft-accounts/" target="_blank">More info</a></li>
+
+    <li><strong>Apple patches first 2026 zero-day (CVE-2026-20700)</strong>: Apple addressed a memory corruption flaw in the dyld dynamic link editor. Exploited as part of a sophisticated chain alongside WebKit vulnerabilities (CVE-2025-14174 and CVE-2025-43529), it allowed arbitrary code execution to target specific individuals. Updates are available for iOS 18.7.5 and macOS Tahoe 26.3. <a href="https://www.bleepingcomputer.com/news/security/apple-fixes-zero-day-flaw-used-in-extremely-sophisticated-attacks/" target="_blank">More info</a></li>
+
+    <li><strong>Windows 11 Notepad Markdown RCE (CVE-2026-20841)</strong>: A high-severity flaw in Notepad’s Markdown implementation allowed attackers to execute silent payloads. By embedding non-standard protocols like <code>file://</code> or <code>ms-appinstaller://</code> in .md files, attackers could bypass security warnings. Microsoft mitigated this in version 11.2510 by enforcing warnings for any non-HTTP/HTTPS URIs. <a href="https://www.bleepingcomputer.com/news/microsoft/windows-11-notepad-flaw-let-files-execute-silently-via-markdown-links/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>0APT Syndicate suspected of massive hoax</strong>: The emerging ransomware group 0APT claimed nearly 200 victims in its first week, but researchers found no evidence of real breaches. Most "proof" samples were zero-byte files or LLM-generated data. While currently appearing as a "scam-as-a-service" operation to attract affiliates, the group possesses a functional Rust-based encryptor and remains a genuine future threat. <a href="https://cyberscoop.com/0apt-ransomware-group-hoax-technical-capabilities/" target="_blank">More info</a></li>
+
+    <li><strong>North Korean UNC1069 targets Crypto/Web3</strong>: Mandiant detailed a campaign where attackers use deepfake videos of executives to simulate audio issues during spoofed Zoom meetings. Victims are tricked into a "ClickFix" social engineering tactic, running malicious commands that install backdoors like WAVESHAPER and HYPERCALL to steal keychain credentials and browser data. <a href="https://www.darkreading.com/threat-intelligence/north-koreas-unc1069-hammers-crypto-firms" target="_blank">More info</a></li>
+
+    <li><strong>SideCopy and Transparent Tribe target India</strong>: Pakistan-linked clusters are deploying a refined toolkit (Geta RAT, Ares RAT, and DeskRAT) against Indian defense sectors. These campaigns use multi-stage infection chains, including memory-resident techniques and malicious PowerPoint Add-Ins, to facilitate long-term intelligence gathering and USB data harvesting. <a href="https://thehackernews.com/2026/02/apt36-and-sidecopy-launch-cross.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>Rise of AI Recommendation Poisoning</strong>: Attackers are embedding hidden instructions in "Summarize with AI" buttons to bias chatbot outputs. By injecting persistence commands into an AI’s long-term memory, they can manipulate future recommendations for specific brands or spread misleading facts, bypassing traditional security boundaries. <a href="https://www.theregister.com/2026/02/12/microsoft_ai_recommendation_poisoning/" target="_blank">More info</a></li>
+
+    <li><strong>LummaStealer surges with CastleLoader</strong>: LummaC2 has seen a significant activity spike using CastleLoader, a heavily obfuscated script-based loader. The campaign utilizes "ClickFix" fake CAPTCHA pages to trick users into executing PowerShell commands, targeting browser credentials and 2FA tokens. <a href="https://www.bleepingcomputer.com/news/security/lummastealer-infections-surge-after-castleloader-malware-campaigns/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>SSHStalker botnet hits 7,000 Linux systems</strong>: A new botnet is compromising legacy environments—specifically abandoned cloud instances—by combining 2009-era kernel exploits with modern SSH brute-forcing. The malware uses IRC-based C2 and aggressive cron jobs for persistence. Evidence suggests the operators may have Romanian origins. <a href="https://securityaffairs.com/187833/malware/sshstalker-botnet-targets-linux-servers-with-legacy-exploits-and-ssh-scanning.html" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
