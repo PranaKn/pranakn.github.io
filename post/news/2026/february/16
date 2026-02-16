@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 16/02/26</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 16/02/26</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Ivanti EPMM targeted by single actor for 83% of attacks</strong>: GreyNoise identified one actor (IP 193.24.123[.]42) behind the majority of exploitation for CVE-2026-1281 and CVE-2026-1340. The actor uses automated tooling and DNS callbacks to achieve unauthenticated RCE. While RPM hotfixes exist, a permanent patch isn't expected until version 12.8.0.0. <a href="https://www.bleepingcomputer.com/news/security/one-threat-actor-responsible-for-83-percent-of-recent-ivanti-rce-attacks/" target="_blank">More info</a></li>
+
+    <li><strong>CISA adds BeyondTrust RCE (CVE-2026-1731) to KEV</strong>: This critical OS command injection flaw (CVSS 9.9) in Remote Support and Privileged Remote Access allows unauthenticated attackers to execute commands via WebSocket requests. Exploitation began within 24 hours of PoC. Self-hosted customers must manually patch or upgrade immediately. <a href="https://www.cisa.gov/news-events/alerts/2026/02/13/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">More info</a></li>
+
+    <li><strong>Chrome 145 patches high-severity CSS bug</strong>: Google resolved 11 vulnerabilities, including CVE-2026-2313, a use-after-free in CSS. The update also fixes heap buffer overflows in Codecs and WebGPU issues. Users are urged to update to version 145.0.7632.45/46 across all platforms. <a href="https://www.securityweek.com/chrome-145-patches-11-vulnerabilities/" target="_blank">More info</a></li>
+
+    <li><strong>Ubuntu 24.04.4 LTS brings security and hardware boosts</strong>: The fourth point release for Noble Numbat includes Linux kernel 6.17 and Mesa 25.2.7. It provides cumulative security patches and support for Intel Lunar Lake and RDNA 4 GPUs, targeting production environments. <a href="https://www.helpnetsecurity.com/2026/02/13/ubuntu-24-04-4-lts-released-security-bug-fixes/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Russian "CANFAIL" malware targets Ukraine</strong>: Linked to the PhantomCaptcha campaign, this group uses LLMs for reconnaissance and phishing. CANFAIL is an obfuscated JavaScript strain delivered via Google Drive, leading to memory-only PowerShell droppers that evade disk-based detection. <a href="https://www.cysecurity.news/2026/02/google-links-canfail-malware-attacks-to.html" target="_blank">More info</a></li>
+
+    <li><strong>ClickFix crypto-swap hijack via Pastebin</strong>: Attackers use Pastebin comments and the `javascript:` URI scheme to trick users into executing code that modifies the Swapzone.io interface. Legitimate deposit addresses are replaced with attacker Bitcoin wallets in real-time. <a href="https://www.bleepingcomputer.com/news/security/pastebin-comments-push-clickfix-javascript-attack-to-hijack-crypto-swaps/" target="_blank">More info</a></li>
+
+    <li><strong>37M users affected by data-harvesting Chrome extensions</strong>: Researcher "Q Continuum" found 287 extensions harvesting browsing history for firms like Similarweb and Alibaba. Tools like "Stylish" and "Stands AdBlocker" exfiltrate data, exposing corporate domains and session tokens. <a href="https://hackread.com/chrome-extensions-harvest-browsing-data-37m-users/" target="_blank">More info</a></li>
+
+    <li><strong>Lazarus Group's "Graphalgo" fake recruiter campaign</strong>: Targeting JS/Python developers on LinkedIn, this campaign uses 192 modular packages on npm/PyPI. Coding tests deploy a RAT that checks for MetaMask extensions to facilitate cryptocurrency theft. <a href="https://www.bleepingcomputer.com/news/security/fake-job-recruiters-hide-malware-in-developer-coding-challenges/" target="_blank">More info</a></li>
+
+    <li><strong>China-nexus UAT-9921 deploys "VoidLink"</strong>: This modular, AI-enabled framework targets tech and finance sectors. Written in Zig, C, and Go, it features mesh P2P design and eBPF rootkits for stealth. It is cloud-native and capable of escaping containers. <a href="https://securityaffairs.com/187969/ai/new-threat-actor-uat-9921-deploys-voidlink-against-enterprise-sectors.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>ClickFix evolves to use DNS (nslookup) delivery</strong>: Attackers trick victims into running `nslookup` commands where the DNS server returns a malicious PowerShell script in the "NAME:" field. This installs ModeloRAT while bypassing standard HTTP security filters. <a href="https://www.bleepingcomputer.com/news/security/new-clickfix-attack-abuses-nslookup-to-retrieve-powershell-payload-via-dns/" target="_blank">More info</a></li>
+
+    <li><strong>Weaponizing Google Groups for Lumma Stealer</strong>: CTM360 uncovered a campaign using 3,500 Google-hosted URLs to distribute Lumma Stealer (Windows) and a trojanized "Ninja Browser" (Linux). The trusted infrastructure helps bypass traditional security filters. <a href="https://www.bleepingcomputer.com/news/security/ctm360-lumma-stealer-and-ninja-browser-malware-campaign-abusing-google-groups/" target="_blank">More info</a></li>
+
+    <li><strong>Physical mail phishing targets Trezor/Ledger users</strong>: Attackers are sending physical letters with QR codes to crypto users using data from historical breaches. The sites lead to phishing pages demanding recovery phrases under the guise of an "Authentication Check." <a href="https://www.bleepingcomputer.com/news/security/snail-mail-letters-target-trezor-and-ledger-users-in-crypto-theft-attacks/" target="_blank">More info</a></li>
+
+    <li><strong>Claude AI artifacts abused for macOS infostealers</strong>: Attackers use Google Ads to lead victims to public Claude.ai artifact pages. These pages instruct users to run Terminal commands that install the MacSync infostealer to exfiltrate Keychains and wallets. <a href="https://www.bleepingcomputer.com/news/security/claude-llm-artifacts-abused-to-push-mac-infostealers-in-clickfix-attack/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>Ex-L3Harris exec faces prison for 0-day sales</strong>: Peter Williams sold eight exploit kits to a Russian broker for $35M. In other news, "0APT" ransomware claims were debunked as fake, while BridgePay suffered a genuine attack affecting municipal systems. <a href="https://www.theregister.com/2026/02/15/exl3harris_exec_sold_8_zeroday/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🛠️ Tools</h2>
+  <ul>
+    <li><strong>Brutus: Modern credential testing in Go</strong>: Praetorian released Brutus, an open-source tool designed to replace THC Hydra. It is a zero-dependency binary that integrates with JSON-based reconnaissance pipelines like naabu and fingerprintx. <a href="https://github.com/praetorian-inc/brutus" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
