@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 17/02/26</title>
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
+  <title>📰 Cybersecurity Newsfeed - 18/02/26</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
     h1 { text-align: center; color: #c9a227; }
@@ -17,41 +17,49 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 17/02/26</h2>
+  <h2>📅 18/02/26</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>27 Vulnerabilities in Cloud Password Managers</strong>: Researchers from ETH Zurich and USI identified flaws in Bitwarden, LastPass, Dashlane, and 1Password, challenging "zero-knowledge" claims. Exploits include key escrow flaws and vault integrity issues that allow compromised servers to bypass E2EE. Bitwarden faced 12 successful attacks, while 1Password’s architecture was the most resilient. Most vendors are currently patching these design anti-patterns. <a href="https://www.infosecurity-magazine.com/news/vulnerabilities-password-managers/" target="_blank">More info</a></li>
+    <li><strong>Popular VS Code Extensions Expose 128M Users</strong>: Ox Security identified high-severity and critical flaws in extensions like Live Server (CVE-2025-65717), Code Runner (CVE-2025-65715), and Markdown Preview Enhanced (CVE-2025-65716). These enable RCE and file exfiltration via malicious webpages or crafted Markdown files. While Microsoft patched Live Preview (v0.4.16), other maintainers have been unresponsive. These risks extend to IDEs like Cursor and Windsurf. <a href="https://www.bleepingcomputer.com/news/security/flaws-in-popular-vscode-extensions-expose-developers-to-attacks/" target="_blank">More info</a></li>
 
-    <li><strong>Google Patches First Chrome Zero-Day of 2026 (CVE-2026-2441)</strong>: A high-severity use-after-free flaw in CSSFontFeatureValuesMap is being exploited in the wild. The bug, caused by iterator invalidation during font processing, can lead to crashes or arbitrary code execution. Emergency patches are available for Windows, macOS, and Linux (versions 145.0.7632.75/76 and 144.0.7559.75). <a href="https://www.bleepingcomputer.com/news/security/google-patches-first-chrome-zero-day-exploited-in-attacks-this-year/" target="_blank">More info</a></li>
+    <li><strong>CISA Adds Four to KEV Catalog</strong>: CISA urged remediation for a high-severity Chrome CSS engine zero-day (CVE-2026-2441) allowing RCE. Also added: TeamT5 ThreatSonar file upload (CVE-2024-7694), Zimbra SSRF (CVE-2020-7796), and a legacy Windows Video ActiveX flaw (CVE-2008-0015) still used by persistent actors. <a href="https://www.cisa.gov/news-events/alerts/2026/02/17/cisa-adds-four-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>Vidar Variant Targets "AI Souls"</strong>: A new variant of the Vidar infostealer is exfiltrating OpenClaw AI agent configurations, including tokens and behavioral guidelines (soul.md). This allows attackers to hijack local AI instances or impersonate users. OpenClaw has responded by integrating VirusTotal scanning and joining OpenAI as an open-source project to bolster security. <a href="https://thehackernews.com/2026/02/infostealer-steals-openclaw-ai-agent.html" target="_blank">More info</a></li>
+    <li><strong>SmartLoader Targets AI Developer Supply Chain</strong>: STAR Labs uncovered a campaign cloning the Oura MCP server to distribute StealC malware. Attackers used AI-generated GitHub personas to infiltrate public MCP registries, targeting developer credentials and API keys through trojanized servers using LuaJIT obfuscation. <a href="https://securityaffairs.com/188135/ai/smartloader-hackers-clone-oura-mcp-project-to-spread-stealc-malware.html" target="_blank">More info</a></li>
 
-    <li><strong>OysterLoader Evolves for Rhysida Ransomware</strong>: Distributed via fake PuTTY and WinSCP sites, this C++ loader now uses a four-stage chain including steganography and custom LZMA decompression. The malware evades static analysis via non-standard Base64 and dynamic API resolution, facilitating persistent access for ransomware deployment. <a href="https://www.infosecurity-magazine.com/news/oysterloader-new-c2-infrastructure/" target="_blank">More info</a></li>
+    <li><strong>Keenadu Android Firmware Trojan</strong>: Kaspersky identified a Trojan infecting 13,000 devices via compromised supply chains. Targeting the "Zygote" process, it injects code into all apps for ad fraud and remote access. It is distributed via pre-loaded firmware and is linked to the BADBOX and Triada botnets. <a href="https://www.darkreading.com/mobile-security/supply-chain-attack-embeds-malware-android-devices" target="_blank">More info</a></li>
 
-    <li><strong>LockBit 5.0 Targets Enterprise Infrastructure</strong>: The latest RaaS evolution features cross-platform builds for Windows, Linux, and VMware ESXi. It utilizes ChaCha20 encryption, ETW patching, and DLL reflection. The ESXi variant is specifically designed to paralyze entire datastores from a single hypervisor foothold, signaling a shift toward high-impact infrastructure targets. <a href="https://www.helpnetsecurity.com/2026/02/16/lockbit-5-0-ransomware-windows-linux-esxi/" target="_blank">More info</a></li>
+    <li><strong>Chinese UNC6201 Exploits Dell Zero-Day</strong>: Since mid-2024, attackers exploited CVE-2026-22769 (hardcoded credentials) in Dell RecoverPoint for root access. They deployed the "Grimbolt" backdoor and used "Ghost NICs" on ESXi servers for stealthy lateral movement. Dell urges an immediate upgrade to 6.0.3.1 HF1. <a href="https://www.bleepingcomputer.com/news/security/chinese-hackers-exploiting-dell-zero-day-flaw-since-mid-2024/" target="_blank">More info</a></li>
 
-    <li><strong>ZeroDayRAT Mobile Spyware on Telegram</strong>: A new commercial spyware platform targets Android (v5–16) and iOS (up to v26). It offers real-time camera/mic feeds and specialized modules for stealing Apple Pay, PayPal, and crypto credentials. Distributed via social engineering, it effectively bypasses 2FA by harvesting OTPs. <a href="https://thehackernews.com/2026/02/new-zerodayrat-mobile-spyware-enables.html" target="_blank">More info</a></li>
+    <li><strong>Fake SSA Emails Deploy ScreenConnect</strong>: A campaign targeting the UK, US, and Canada uses a malicious .cmd script from "SSA.COM" to disable SmartScreen and install a trojanized ScreenConnect (v25.2.4.9229). It uses a revoked certificate and connects to C2 infrastructure in Iran for persistent access. <a href="https://hackread.com/hackers-screenconnect-hijack-pcs-fake-social-security-emails/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>The "Promptware Kill Chain" for LLMs</strong>: Researchers have defined a seven-stage lifecycle for malware targeting Large Language Models. This framework moves beyond simple prompt injection to describe how attackers maintain persistence in AI memory and move laterally through connected services like email and calendars. <a href="https://www.schneier.com/blog/archives/2026/02/the-promptware-kill-chain.html" target="_blank">More info</a></li>
+    <li><strong>Rise of "AI-Stealer" Malware</strong>: Hudson Rock noted a shift where malware now harvests "soul" files—AI behavioral contexts and gateway tokens. By stealing OpenClaw configurations, attackers can impersonate digital identities and access local AI instances, marking a transition toward specialized AI-context theft. <a href="https://securityaffairs.com/188097/malware/hackers-steal-openclaw-configuration-in-emerging-ai-agent-threat.html" target="_blank">More info</a></li>
+
+    <li><strong>API Threats Surge via MCP</strong>: Wallarm’s 2026 report found that 43% of CISA KEV additions are API-related. MCP vulnerabilities jumped 270% due to over-permissioned tools. Attackers are prioritizing logic abuse and trust failures over traditional code defects in AI infrastructure. <a href="https://www.securityweek.com/api-threats-grow-in-scale-as-ai-expands-the-blast-radius/" target="_blank">More info</a></li>
+
+    <li><strong>Atlassian Jira Infrastructure Abused for Spam</strong>: Between Dec 2025 and Jan 2026, actors used legitimate atlassian.net domains to launch automated phishing. By bypassing filters with valid SPF/DKIM via Jira Automation rules, they redirected victims through the Keitaro TDS to malicious sites. <a href="https://www.trendmicro.com/en_us/research/26/b/spam-campaign-abuses-atlassian-jira.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>💥 Breaches & Leaks</h2>
   <ul>
-    <li><strong>Washington Hotel Ransomware Attack</strong>: Fujita Kanko Inc. confirmed a breach of its Japanese business infrastructure. While internal business data was accessed and some credit card terminals were disabled, customer data stored on separate third-party servers reportedly remains secure. <a href="https://www.bleepingcomputer.com/news/security/washington-hotel-in-japan-discloses-ransomware-infection-incident/" target="_blank">More info</a></li>
-
-    <li><strong>Eurail Data Auctioned on Dark Web</strong>: Stolen data from the Netherlands-based railway operator, including passport details, IBANs, and health info, is being sold online. Millions of Eurail and Interrail pass holders are advised to reset Rail Planner credentials and monitor for identity theft. <a href="https://www.bleepingcomputer.com/news/security/eurail-says-stolen-traveler-data-now-up-for-sale-on-dark-web/" target="_blank">More info</a></li>
+    <li><strong>Polish Energy Sector Hit by Destructive Attack</strong>: The Russian-aligned Electrum group (Sandworm) targeted over 30 decentralized energy sites (wind/solar) using wiper malware and firmware corruption. While power generation continued, remote monitoring was disabled, marking a major offensive against distributed grid edges. <a href="https://www.darkreading.com/threat-intelligence/poland-energy-attack-wind-solar-infrastructure" target="_blank">More info</a></li>
   </ul>
 
   <h2>📚 Others</h2>
   <ul>
-    <li><strong>ISO 27001 Compliance in the Passkey Era</strong>: The transition to FIDO2/WebAuthn passkeys is significantly reducing credential-based incidents. This shift updates key ISO/IEC 27001 controls, offering a 30% improvement in authentication success while eliminating automated credential stuffing. <a href="https://www.bleepingcomputer.com/news/security/passwords-to-passkeys-staying-iso-27001-compliant-in-a-passwordless-era/" target="_blank">More info</a></li>
+    <li><strong>Spain Orders VPNs to Block Piracy Sites</strong>: A Córdoba court ordered NordVPN and ProtonVPN to block 16 piracy domains. This classifies VPNs as "technological intermediaries" under EU law. Providers question the procedural validity, as they claim they were not formally notified to defend themselves. <a href="https://www.bleepingcomputer.com/news/legal/spain-orders-nordvpn-protonvpn-to-block-laliga-piracy-sites/" target="_blank">More info</a></li>
+
+    <li><strong>Notepad++ Hardens Update Security</strong>: Following a six-month supply-chain breach by APT31, Notepad++ v8.9.2 introduced a "double-lock" mechanism. It mandates validation of a signed XML manifest and a signed installer from GitHub, while removing vulnerable cURL options to prevent side-loading. <a href="https://www.bleepingcomputer.com/news/security/notepad-plus-plus-boosts-update-security-with-double-lock-mechanism/" target="_blank">More info</a></li>
+
+    <li><strong>Microsoft Teams Outage Resolved</strong>: A configuration change on Feb 17, 2026, caused an hour-long disruption for Teams users in the US and Europe. Reverting to the last healthy configuration fixed the login and chat delays, which followed similar infrastructure-linked outages in January. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-outage-affects-users-in-united-states-europe/" target="_blank">More info</a></li>
+
+    <li><strong>Cellebrite Used Against Kenyan Activist</strong>: Citizen Lab confirmed that Kenyan authorities used Cellebrite technology to compromise the phone of activist Boniface Mwangi. Forensic traces of extraction apps were found on the device, exposing personal and political data following his 2025 arrest. <a href="https://cyberscoop.com/citizen-lab-kenya-cellebrite-phone-cracking-boniface-mwangi-forensic-evidence/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
