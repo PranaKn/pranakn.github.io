@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 19/02/26</title>
+  <title>📰 Cybersecurity Newsfeed - 20/02/26</title>
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
   <style>
     body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
@@ -17,36 +17,56 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 19/02/26</h2>
+  <h2>📅 20/02/26</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>Microsoft 365 Copilot leaks confidential emails</strong>: Microsoft confirmed a flaw (CW1226324) in the Copilot "work tab" where the AI incorrectly summarized emails from Sent Items and Drafts, bypassing DLP policies and sensitivity labels. The issue stemmed from a code error ignoring confidentiality protections. A server-side fix began rolling out in early February 2026, though the total number of affected enterprise organizations remains undisclosed. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-says-bug-causes-copilot-to-summarize-confidential-emails/" target="_blank">More info</a></li>
+    <li><strong>Windows Admin Center Privilege Escalation (CVE-2026-26119)</strong>: Microsoft disclosed a high-severity flaw (CVSS 8.8) in its WAC management suite caused by improper authentication. An authorized network attacker can elevate permissions to match the WAC application user, potentially leading to full domain compromise and lateral movement. Microsoft has flagged this with an "Exploitation More Likely" assessment and urges immediate updates for self-hosted instances. <a href="https://thehackernews.com/2026/02/microsoft-patches-cve-2026-26119.html" target="_blank">More info</a></li>
 
-    <li><strong>Grandstream GXP1600 RCE (CVE-2026-2329)</strong>: A critical buffer-overflow with a CVSS of 9.3 affects Grandstream VoIP phones. The flaw in the unauthenticated web API allows root-level remote code execution, enabling attackers to steal SIP credentials and intercept calls. Rapid7 warns of significant risks to unmonitored voice infra. A firmware patch was released on Feb 2, 2026; users should update and isolate these devices via VLANs. <a href="https://www.darkreading.com/threat-intelligence/grandstream-bug-voip-security-blind-spot" target="_blank">More info</a></li>
-
-    <li><strong>Honeywell CCTV Auth Bypass (CVE-2026-1670)</strong>: CISA issued an advisory for Honeywell CCTV models carrying a CVSS score of 9.8. An unauthenticated API endpoint allows attackers to modify the password recovery email, leading to full account takeover and live feed access. Affected models include I-HIB2PI-UL and PTZ WDR 2MP series. Honeywell recommends immediate patching and firewall isolation. <a href="https://www.bleepingcomputer.com/news/security/critical-infra-honeywell-cctvs-vulnerable-to-auth-bypass-flaw/" target="_blank">More info</a></li>
-
-    <li><strong>CISA adds GitLab and Dell to KEV</strong>: Two high-impact flaws joined the KEV catalog. CVE-2021-22175 is a critical SSRF in GitLab allowing internal network requests. CVE-2026-22769 is a CVSS 10.0 hard-coded credential flaw in Dell RecoverPoint, currently exploited by China-linked UNC6201 for root-level persistence. Federal agencies must remediate these by March 11, 2026. <a href="https://www.cisa.gov/news-events/alerts/2026/02/18/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
-
-    <li><strong>Rapid weaponization of SmarterMail (CVE-2026-24423)</strong>: Threat actors, including the China-linked "Warlock" group, are exploiting SmarterMail flaws for RCE and auth bypass. Attackers are abusing the "Volume Mount" feature for system persistence to stage ransomware. SmarterTools itself was reportedly breached via an unpatched VM. CISA has added these to the KEV catalog. <a href="https://www.bleepingcomputer.com/news/security/telegram-channels-expose-rapid-weaponization-of-smartermail-flaws/" target="_blank">More info</a></li>
+    <li><strong>Grandstream VoIP Stack Overflow (CVE-2026-2329)</strong>: Rapid7 identified a critical (CVSS 9.3) unauthenticated buffer overflow in Grandstream GXP1600 series phones. Attackers can exploit the <code>/cgi-bin/api.values.get</code> endpoint to gain root privileges, enabling remote code execution, eavesdropping, and credential theft. Users should update to firmware 1.0.7.81 or later immediately. <a href="https://www.bleepingcomputer.com/news/security/flaw-in-grandstream-voip-phones-allows-stealthy-eavesdropping/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>Ransomware groups abuse ISPsystem VM templates</strong>: Groups like LockBit and Qilin are using standardized VMmanager templates to hide malicious infrastructure. By using default Windows images, they generate thousands of identical nodes that blend into legitimate traffic. 95% of these malicious VMs originate from four default hostnames, primarily hosted on sanctioned providers like Stark Industries Solutions. <a href="https://www.cysecurity.news/2026/02/ispsystem-vms-hijacked-for-silent.html" target="_blank">More info</a></li>
+    <li><strong>SmartLoader targets AI Developers</strong>: Researchers found a campaign using the SmartLoader framework to deploy StealC malware via a counterfeit Oura Model Context Protocol (MCP) server. By faking GitHub activity and listing on the MCP Market, attackers aim to harvest API keys and crypto wallets from developers rather than general consumers. <a href="https://www.cysecurity.news/2026/02/hackers-use-fake-oura-ai-server-to.html" target="_blank">More info</a></li>
 
-    <li><strong>Searchlight Cyber: Ransomware victims up 30%</strong>: A 2025 annual report shows a massive surge in dark web leak site listings, totaling 7,458 organizations. The ecosystem has fragmented into 124 active groups. AI is cited as a major force multiplier for malware development and social engineering, while groups are shifting toward exfiltration-only extortion to bypass improved backup defenses. <a href="https://www.infosecurity-magazine.com/news/record-number-ransomware-victims/" target="_blank">More info</a></li>
+    <li><strong>TrustConnect RAT-as-a-Service</strong>: Proofpoint uncovered a fraudulent RMM vendor, TrustConnect, offering full remote access for $300/month. Using AI-generated websites and legitimate EV certificates to appear authentic, the operators (formerly Redline customers) use phishing lures like tax docs to deploy the malware. They are currently rebranding as "DocConnect" to evade disruptions. <a href="https://www.theregister.com/2026/02/19/rmm_rat_trustconnect/" target="_blank">More info</a></li>
+
+    <li><strong>PromptSpy: AI-Driven Android Malware</strong>: ESET identified the first Android malware to use Google’s Gemini model at runtime. PromptSpy processes UI XML dumps to dynamically adapt persistence mechanisms, such as "pinning" itself in the Recent Apps list. It includes VNC remote control and invisible overlays to prevent uninstallation. <a href="https://www.bleepingcomputer.com/news/security/promptspy-is-the-first-known-android-malware-to-use-generative-ai-at-runtime/" target="_blank">More info</a></li>
+
+    <li><strong>ShinyHunters OAuth Vishing</strong>: Attackers are targeting Microsoft Entra accounts by abusing the Device Authorization flow. By posing as IT support and tricking users into entering codes on legitimate Microsoft pages, they bypass MFA to secure persistent refresh tokens for corporate SaaS apps without needing their own phishing infra. <a href="https://www.bleepingcomputer.com/news/security/hackers-target-microsoft-entra-accounts-in-device-code-vishing-attacks/" target="_blank">More info</a></li>
+
+    <li><strong>Venice Security Platform Launch</strong>: Emerging from stealth with $33M, Venice Security (formerly Valkyrie) launched a platform focused on a zero-standing-access model. It provides just-in-time access across hybrid environments to reduce the attack surface created by permanent administrative privileges. <a href="https://www.securityweek.com/venice-security-emerges-from-stealth-with-33m-funding-for-privileged-access-management/" target="_blank">More info</a></li>
+
+    <li><strong>Predator Spyware targets Angolan Press</strong>: Amnesty International confirmed that journalist Teixeira Cândido was infected with Intellexa’s Predator spyware. The attack used a malicious WhatsApp link and targeted an outdated iOS device, masking itself as "iconservicesagent" to grant total access to the victim's data and hardware. <a href="https://securityaffairs.com/188215/malware/intellexas-predator-spyware-infected-angolan-journalists-device-amnesty-reports.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>Anime-themed Cryptojacker uses BYOVD</strong>: Trellix uncovered a campaign distributing an XMRig miner using anime-themed CLI arguments like "Re:0" and "barusu". It uses the "Bring Your Own Vulnerable Driver" technique (CVE-2020-14979) to disable hardware prefetchers, increasing hashrates by 50%. Persistence is maintained via watchdog processes disguised as system binaries. <a href="https://www.infosecurity-magazine.com/news/cryptojacking-driver-boost-monero/" target="_blank">More info</a></li>
+    <li><strong>Cline AI Supply Chain Attack</strong>: The npm package for Cline, an AI coding tool, was compromised via a prompt injection vulnerability in its GitHub workflow. Attackers released a poisoned version (2.3.0) containing the OpenClaw framework, which establishes a persistent WebSocket gateway. Users are urged to move to version 2.4.0. <a href="https://www.darkreading.com/application-security/supply-chain-attack-openclaw-cline-users" target="_blank">More info</a></li>
+
+    <li><strong>Starkiller Phishing-as-a-Service</strong>: A new platform, Starkiller, uses Docker and headless Chrome to proxy actual websites in real-time. This bypasses static detection and "template drift," allowing attackers to capture MFA session tokens easily via a user-friendly dashboard. <a href="https://www.darkreading.com/threat-intelligence/starkiller-phishing-kit-mfa" target="_blank">More info</a></li>
+
+    <li><strong>Infostealers targeting AI Identity Files</strong>: Hudson Rock reported an infection targeting the OpenClaw AI framework. The malware exfiltrated <code>.openclaw</code> directories, containing "digital blueprints" like context logs and gateway tokens, allowing attackers to bypass safety checks and impersonate victims' AI identities. <a href="https://hackread.com/infostealer-steal-openclaw-ai-identity-memory-files/" target="_blank">More info</a></li>
+
+    <li><strong>Massiv Android Banking Malware</strong>: Posing as IPTV apps, "Massiv" uses Accessibility Services and MediaProjection to perform screen overlays and keylogging. It has been used in Portugal to bypass KYC checks and open fraudulent bank accounts in victims' names. <a href="https://www.bleepingcomputer.com/news/security/new-massiv-android-banking-malware-poses-as-an-iptv-app/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Flickr Third-Party Email Breach</strong>: Flickr disclosed a breach involving a third-party email provider that potentially exposed PII for some of its 35 million monthly users. Exposed data includes names, emails, and IP addresses, though passwords and financial data remain secure. <a href="https://www.cysecurity.news/2026/02/flickr-discloses-third-party-breach.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🔍 Hunting</h2>
+  <ul>
+    <li><strong>Arkanix Stealer MaaS</strong>: Kaspersky identified "Arkanix," a new MaaS info-stealer targeting 22 browsers, crypto wallets, and VPN accounts. Developed with suspected AI assistance, it features both Python and C++ versions and was distributed via phishing campaigns before being taken down in late 2025. <a href="https://securelist.com/arkanix-stealer/119006/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📚 Others</h2>
   <ul>
-    <li><strong>OpenClaw "Agentic AI" security concerns</strong>: The open-source platform OpenClaw, which reached 179k GitHub stars, is being criticized as a "security nightmare." Experts found 12% of its "skills" marketplace contained malware. The platform's ability to take real-world actions combined with "vibe-coded" logic makes it highly susceptible to indirect prompt injection. Creator Peter Steinberger has since joined OpenAI to lead agent initiatives. <a href="https://blog.gdatasoftware.com/2026/02/38368-open-claw-risks" target="_blank">More info</a></li>
+    <li><strong>INTERPOL Operation Red Card 2.0</strong>: An eight-week operation across 16 African nations led to 651 arrests and the recovery of $4.3 million. The initiative targeted mobile money fraud and investment scams, dismantling over 1,400 malicious servers. <a href="https://thehackernews.com/2026/02/interpol-operation-red-card-20-arrests.html" target="_blank">More info</a></li>
+
+    <li><strong>Microsoft Exposure Management Guide</strong>: Microsoft released a new strategic guide for proactive defense, moving from reactive patching to risk-driven visibility. The framework, featuring five maturity levels, will be a primary focus at the upcoming RSAC 2026. <a href="https://www.microsoft.com/en-us/security/blog/2026/02/19/new-e-book-establishing-a-proactive-defense-with-microsoft-security-exposure-management/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
