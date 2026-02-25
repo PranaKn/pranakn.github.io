@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 25/02/26</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 25/02/26</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>SolarWinds Serv-U Critical RCE (CVE-2025-40538+)</strong>: SolarWinds released critical updates for Serv-U addressing four flaws (CVE-2025-40538/40/39/41) with CVSS scores of 9.1. These vulnerabilities, including broken access control and type confusion, allow attackers to execute native code and gain root/admin access. This follows a major patching cycle from late 2025, signaling persistent risks in the Serv-U environment. <a href="https://securityaffairs.com/188454/hacking/solarwinds-patches-four-critical-serv-u-flaws-enabling-root-access.html" target="_blank">More info</a></li>
+
+    <li><strong>GitHub Codespaces "RoguePilot" AI Supply Chain Flaw</strong>: Orca Security disclosed a critical vulnerability where attackers could hijack repositories by embedding malicious instructions in GitHub issue descriptions. Using hidden HTML tags, they triggered passive prompt injections in GitHub Copilot to exfiltrate GITHUB_TOKENs via malicious JSON schemas. Microsoft has patched the flaw, which was part of a broader study on AI safety guardrail bypasses. <a href="https://thehackernews.com/2026/02/roguepilot-flaw-in-github-codespaces.html" target="_blank">More info</a></li>
+
+    <li><strong>CISA KEV Addition: Soliton FileZen (CVE-2026-25108)</strong>: CISA added an OS command injection flaw in Soliton Systems FileZen to its KEV catalog. The 8.8 CVSS vulnerability is triggered when the Antivirus Check Option is enabled, allowing authenticated attackers to execute arbitrary commands. Active exploitation has been reported, and users are urged to update to firmware V5.0.11 immediately. <a href="https://www.cisa.gov/news-events/alerts/2026/02/24/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Lazarus Group Deploys Medusa Ransomware</strong>: North Korean state-sponsored actors have pivoted to commercial cybercrime, targeting healthcare and education with Medusa ransomware. Using a criminal persona to obscure state ties, they utilize backdoors like Blindingcan and tools like Mimikatz for data exfiltration. This shift reflects a strategy of leveraging national resources for direct financial gain via high-leverage extortion. <a href="https://hackread.com/north-korean-lazarus-group-medusa-ransomware/" target="_blank">More info</a></li>
+
+    <li><strong>1Campaign Cloaking Service Evades Google Ad Scanners</strong>: Varonis uncovered a service managed by "DuppyMeister" that allows threat actors to run malicious Google Ads by serving benign content to security researchers while redirecting victims to phishing sites. Using real-time ISP and device filtering, the platform mimics human behavior to keep fraudulent campaigns active longer than traditional methods. <a href="https://www.bleepingcomputer.com/news/security/1campaign-platform-helps-malicious-google-ads-evade-detection/" target="_blank">More info</a></li>
+
+    <li><strong>Arkanix Stealer’s Brief AI-Assisted Campaign</strong>: Kaspersky identified Arkanix Stealer as a short-lived MaaS operation that utilized "ChromElevator" to bypass Google’s App-Bound Encryption. The malware targeted 22 browsers, Discord APIs, and crypto wallets before disappearing in December 2025. Its rapid development suggests the use of AI assistance for a quick-strike financial experiment. <a href="https://www.securityweek.com/arkanix-stealer-malware-disappears-shortly-after-debut/" target="_blank">More info</a></li>
+
+    <li><strong>APT28 "Operation MacroMaze" Targets Europe</strong>: The GRU-linked group APT28 targeted European entities using weaponized documents with "INCLUDEPICTURE" fields as tracking pixels. The campaign evolved from headless browser execution to keyboard simulation (SendKeys) to bypass security prompts, leveraging legitimate webhook services for stealthy reconnaissance and data exfiltration. <a href="https://securityaffairs.com/188421/apt/operation-macromaze-apt28-exploits-webhooks-for-covert-data-exfiltration.html" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>ZeroDayRAT Mobile MaaS Platform Emerges</strong>: A new surveillance and financial theft platform targeting Android and iOS is being marketed on Telegram. ZeroDayRAT offers live GPS tracking, camera/mic activation, and crypto-stealing modules. While its capabilities are extensive, researchers note some interface elements may be AI-generated or staged, questioning its full authenticity. <a href="https://hackread.com/zerodayrat-malware-monitoring-android-ios-devices/" target="_blank">More info</a></li>
+
+    <li><strong>Chinese Firms Conduct Model Distillation Attacks on Claude</strong>: Anthropic disclosed that DeepSeek, Moonshot AI, and MiniMax used 24,000 accounts to generate 16 million queries to "distill" Claude’s reasoning and coding capabilities. These industrial-scale attacks used proxy clusters to bypass regional limits, raising concerns about safety guardrail bypasses in the resulting models. <a href="https://www.infosecurity-magazine.com/news/chinese-ai-claude-distillation/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Diesel Vortex Targets Freight & Logistics</strong>: A Russian-Armenian group has compromised over 1,600 credentials from U.S. and European freight operators. Using the "Global Profit" phishing kit, they facilitate double-brokering and cargo diversion. The group utilizes a nine-stage cloaking process and dedicated call centers to reroute high-value shipments. <a href="https://www.bleepingcomputer.com/news/security/phishing-campaign-targets-freight-and-logistics-orgs-in-the-us-europe/" target="_blank">More info</a></li>
+
+    <li><strong>Wynn Resorts Targeted by ShinyHunters</strong>: Wynn Resorts confirmed a data breach involving 800,000 employee records, including SSNs, following an extortion threat. Attackers reportedly accessed an Oracle PeopleSoft environment. This incident is part of a larger ShinyHunters campaign using voice phishing and vishing to hijack SSO accounts across various enterprise SaaS apps. <a href="https://www.bleepingcomputer.com/news/security/wynn-resorts-confirms-employee-data-breach-after-extortion-threat/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🔍 Hunting</h2>
+  <ul>
+    <li><strong>Lazarus Group Targets Developers via Next.js Projects</strong>: Microsoft uncovered a campaign where North Korean actors use job-themed lures to trick developers into executing malicious code in VS Code workspaces and trojanized libraries. The infection chain converges on a backdoor that exfiltrates cloud keys and API tokens from development environments. <a href="https://www.microsoft.com/en-us/security/blog/2026/02/24/c2-developer-targeting-campaign/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
