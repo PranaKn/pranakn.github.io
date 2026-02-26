@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 25/02/26</title>
+  <title>📰 Cybersecurity Newsfeed - 26/02/26</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
   <style>
-    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
     h1 { text-align: center; color: #c9a227; }
     h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
     a { color: #c9a227; text-decoration: none; }
@@ -16,45 +17,36 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 25/02/26</h2>
+  <h2>📅 26/02/26</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>SolarWinds Serv-U Critical RCE (CVE-2025-40538+)</strong>: SolarWinds released critical updates for Serv-U addressing four flaws (CVE-2025-40538/40/39/41) with CVSS scores of 9.1. These vulnerabilities, including broken access control and type confusion, allow attackers to execute native code and gain root/admin access. This follows a major patching cycle from late 2025, signaling persistent risks in the Serv-U environment. <a href="https://securityaffairs.com/188454/hacking/solarwinds-patches-four-critical-serv-u-flaws-enabling-root-access.html" target="_blank">More info</a></li>
+    <li><strong>Critical Zyxel Router Flaw (CVE-2025-13942)</strong>: Zyxel released patches for a critical RCE vulnerability (CVSS 9.8) in the UPnP function of various 4G LTE/5G NR, DSL, and Fiber ONT models. Unauthenticated attackers can send crafted SOAP requests to execute arbitrary OS commands. While WAN access is disabled by default, enabled UPnP services pose a significant risk. Additional fixes address post-auth injection and DoS flaws. <a href="https://securityaffairs.com/188501/security/critical-zyxel-router-flaw-exposed-devices-to-remote-attacks.html" target="_blank">More info</a></li>
 
-    <li><strong>GitHub Codespaces "RoguePilot" AI Supply Chain Flaw</strong>: Orca Security disclosed a critical vulnerability where attackers could hijack repositories by embedding malicious instructions in GitHub issue descriptions. Using hidden HTML tags, they triggered passive prompt injections in GitHub Copilot to exfiltrate GITHUB_TOKENs via malicious JSON schemas. Microsoft has patched the flaw, which was part of a broader study on AI safety guardrail bypasses. <a href="https://thehackernews.com/2026/02/roguepilot-flaw-in-github-codespaces.html" target="_blank">More info</a></li>
+    <li><strong>Cisco Catalyst SD-WAN Exploited in the Wild</strong>: CISA added two Cisco vulnerabilities to its KEV catalog following active exploitation by threat actor UAT-8616 since 2023. CVE-2026-20127 (CVSS 10.0) allows unauthenticated administrative access to SD-WAN Controllers. Attackers then downgrade software to exploit CVE-2022-20775 for root privilege escalation. Federal agencies must patch by Feb 27, 2026. <a href="https://www.cisa.gov/news-events/alerts/2026/02/25/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
 
-    <li><strong>CISA KEV Addition: Soliton FileZen (CVE-2026-25108)</strong>: CISA added an OS command injection flaw in Soliton Systems FileZen to its KEV catalog. The 8.8 CVSS vulnerability is triggered when the Antivirus Check Option is enabled, allowing authenticated attackers to execute arbitrary commands. Active exploitation has been reported, and users are urged to update to firmware V5.0.11 immediately. <a href="https://www.cisa.gov/news-events/alerts/2026/02/24/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank">More info</a></li>
+    <li><strong>Soliton FileZen Command Injection (CVE-2026-25108)</strong>: CISA warns of active exploitation against FileZen secure file transfer appliances. This OS command injection flaw (CVSS 8.7) allows low-privileged authenticated attackers to execute arbitrary commands, provided the Antivirus Check Option is enabled. Users are urged to upgrade to v5.0.11+ and reset all user passwords. <a href="https://www.helpnetsecurity.com/2026/02/25/cve-2026-25108-filezen-vulnerability-exploited/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>Lazarus Group Deploys Medusa Ransomware</strong>: North Korean state-sponsored actors have pivoted to commercial cybercrime, targeting healthcare and education with Medusa ransomware. Using a criminal persona to obscure state ties, they utilize backdoors like Blindingcan and tools like Mimikatz for data exfiltration. This shift reflects a strategy of leveraging national resources for direct financial gain via high-leverage extortion. <a href="https://hackread.com/north-korean-lazarus-group-medusa-ransomware/" target="_blank">More info</a></li>
+    <li><strong>Google Disrupts Chinese UNC2814 Campaign</strong>: Google Threat Intelligence disrupted a global espionage campaign targeting 53 organizations in 42 countries. The group used a C-based backdoor called "Gridtide," which abused the Google Sheets API for C2 communication to hide in plain sight. Targeting focused on telecoms and government PII, likely for surveillance of persons of interest. <a href="https://www.theregister.com/2026/02/25/google_and_friends_disrupt_unc2814/" target="_blank">More info</a></li>
 
-    <li><strong>1Campaign Cloaking Service Evades Google Ad Scanners</strong>: Varonis uncovered a service managed by "DuppyMeister" that allows threat actors to run malicious Google Ads by serving benign content to security researchers while redirecting victims to phishing sites. Using real-time ISP and device filtering, the platform mimics human behavior to keep fraudulent campaigns active longer than traditional methods. <a href="https://www.bleepingcomputer.com/news/security/1campaign-platform-helps-malicious-google-ads-evade-detection/" target="_blank">More info</a></li>
-
-    <li><strong>Arkanix Stealer’s Brief AI-Assisted Campaign</strong>: Kaspersky identified Arkanix Stealer as a short-lived MaaS operation that utilized "ChromElevator" to bypass Google’s App-Bound Encryption. The malware targeted 22 browsers, Discord APIs, and crypto wallets before disappearing in December 2025. Its rapid development suggests the use of AI assistance for a quick-strike financial experiment. <a href="https://www.securityweek.com/arkanix-stealer-malware-disappears-shortly-after-debut/" target="_blank">More info</a></li>
-
-    <li><strong>APT28 "Operation MacroMaze" Targets Europe</strong>: The GRU-linked group APT28 targeted European entities using weaponized documents with "INCLUDEPICTURE" fields as tracking pixels. The campaign evolved from headless browser execution to keyboard simulation (SendKeys) to bypass security prompts, leveraging legitimate webhook services for stealthy reconnaissance and data exfiltration. <a href="https://securityaffairs.com/188421/apt/operation-macromaze-apt28-exploits-webhooks-for-covert-data-exfiltration.html" target="_blank">More info</a></li>
+    <li><strong>Oblivion Android RAT Bypasses Security Layers</strong>: Researchers identified "Oblivion," a sophisticated Android RAT sold for $300/month. Distributed via fake system updates, it abuses Accessibility Services to bypass protections on Samsung and Xiaomi devices. It features a "hidden mode" that displays fake animations while attackers stream the screen, log keys, and steal 2FA codes. <a href="https://hackread.com/android-malware-oblivion-fake-updates-hijack-phones/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>ZeroDayRAT Mobile MaaS Platform Emerges</strong>: A new surveillance and financial theft platform targeting Android and iOS is being marketed on Telegram. ZeroDayRAT offers live GPS tracking, camera/mic activation, and crypto-stealing modules. While its capabilities are extensive, researchers note some interface elements may be AI-generated or staged, questioning its full authenticity. <a href="https://hackread.com/zerodayrat-malware-monitoring-android-ios-devices/" target="_blank">More info</a></li>
+    <li><strong>Malicious Next.js Repos Target Developers</strong>: Microsoft Defender uncovered a campaign by North Korean-linked actors targeting developers with fake job-themed technical assessments. Malicious Next.js repositories trigger RCE when a dev opens the project in VS Code or starts a local server, leading to data exfiltration and persistent C2 access. <a href="https://www.bleepingcomputer.com/news/security/fake-nextjs-job-interview-tests-backdoor-developers-devices/" target="_blank">More info</a></li>
 
-    <li><strong>Chinese Firms Conduct Model Distillation Attacks on Claude</strong>: Anthropic disclosed that DeepSeek, Moonshot AI, and MiniMax used 24,000 accounts to generate 16 million queries to "distill" Claude’s reasoning and coding capabilities. These industrial-scale attacks used proxy clusters to bypass regional limits, raising concerns about safety guardrail bypasses in the resulting models. <a href="https://www.infosecurity-magazine.com/news/chinese-ai-claude-distillation/" target="_blank">More info</a></li>
+    <li><strong>Stripe.net Typosquatting on NuGet</strong>: A malicious package named "StripeApi.Net" mimicked the official Stripe library to steal API tokens and machine identifiers. The package artificially inflated its download count to 180,000 to gain trust. Though removed in mid-February, it highlights a shift in supply chain attacks toward financial service integrations. <a href="https://www.infosecurity-magazine.com/news/malicious-nuget-package-stripe-devs/" target="_blank">More info</a></li>
   </ul>
 
-  <h2>💥 Breaches & Leaks</h2>
+  <h2>📚 Others</h2>
   <ul>
-    <li><strong>Diesel Vortex Targets Freight & Logistics</strong>: A Russian-Armenian group has compromised over 1,600 credentials from U.S. and European freight operators. Using the "Global Profit" phishing kit, they facilitate double-brokering and cargo diversion. The group utilizes a nine-stage cloaking process and dedicated call centers to reroute high-value shipments. <a href="https://www.bleepingcomputer.com/news/security/phishing-campaign-targets-freight-and-logistics-orgs-in-the-us-europe/" target="_blank">More info</a></li>
+    <li><strong>RAMP Forum Seizure Fractures Ecosystem</strong>: Following the FBI's seizure of the RAMP ransomware forum on Jan 28, 2026, the ecosystem has fragmented. Rapid7 notes threat actors are migrating to gated platforms like T1erOne and open forums like Rehub. This shift complicates law enforcement visibility and forces defenders to monitor smaller, diverse clusters. <a href="https://www.darkreading.com/threat-intelligence/ramp-forum-seizure-fractures-ransomware-ecosystem" target="_blank">More info</a></li>
 
-    <li><strong>Wynn Resorts Targeted by ShinyHunters</strong>: Wynn Resorts confirmed a data breach involving 800,000 employee records, including SSNs, following an extortion threat. Attackers reportedly accessed an Oracle PeopleSoft environment. This incident is part of a larger ShinyHunters campaign using voice phishing and vishing to hijack SSO accounts across various enterprise SaaS apps. <a href="https://www.bleepingcomputer.com/news/security/wynn-resorts-confirms-employee-data-breach-after-extortion-threat/" target="_blank">More info</a></li>
-  </ul>
-
-  <h2>🔍 Hunting</h2>
-  <ul>
-    <li><strong>Lazarus Group Targets Developers via Next.js Projects</strong>: Microsoft uncovered a campaign where North Korean actors use job-themed lures to trick developers into executing malicious code in VS Code workspaces and trojanized libraries. The infection chain converges on a backdoor that exfiltrates cloud keys and API tokens from development environments. <a href="https://www.microsoft.com/en-us/security/blog/2026/02/24/c2-developer-targeting-campaign/" target="_blank">More info</a></li>
+    <li><strong>US Sanctions Exploit Broker Operation Zero</strong>: The Treasury sanctioned Sergey Zelenyuk and his firm, Operation Zero, for trafficking stolen government cyber tools. The action follows the sentencing of a former L3Harris executive who sold zero-day exploits to the firm for $1.3M in crypto. These are the first sanctions issued under the Protecting American Intellectual Property Act. <a href="https://hackread.com/us-sanctions-russian-exploit-broker-us-cyber-tools/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
