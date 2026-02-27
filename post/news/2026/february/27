@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 27/02/26</title>
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; }
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 27/02/26</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Trend Micro patches critical Apex One flaws</strong>: Trend Micro released urgent patches for CVE-2026-25080 and CVE-2026-25081, impacting Apex One and Worry-Free Business Security. These SSRF and command injection vulnerabilities allow unauthenticated attackers to execute arbitrary code with elevated privileges. While no active exploitation is reported, the flaws could compromise central security management consoles. <a href="https://securityaffairs.com/188572/security/trend-micro-fixes-two-critical-flaws-in-apex-one.html" target="_blank">More info</a></li>
+
+    <li><strong>Google API keys expose Gemini AI data</strong>: Previously low-risk Google API keys (like those for Maps) are now a major liability due to updated backend integrations. Researchers found these keys can grant unauthorized access to generative AI prompts and proprietary model responses, allowing attackers to siphon confidential organizational data. <a href="https://www.bleepingcomputer.com/news/security/previously-harmless-google-api-keys-now-expose-gemini-ai-data/" target="_blank">More info</a></li>
+
+    <li><strong>Critical Juniper Networks PTX Series flaw (CVE-2024-21633)</strong>: A flaw in the Junos OS Evolved routing engine allows unauthenticated, network-based attackers to gain full administrative control over PTX Series routers. By sending crafted packets, attackers can execute remote code or trigger a permanent DoS. Given their role in core infrastructure, the risk of widespread disruption is high. <a href="https://www.bleepingcomputer.com/news/security/critical-juniper-networks-ptx-flaw-allows-full-router-takeover/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Aeternum botnet uses Polygon blockchain</strong>: A novel botnet is leveraging the Polygon blockchain for decentralized C2 operations. Using smart contracts to distribute instructions makes the infrastructure "bulletproof" against traditional IP-based takedowns. Aeternum primarily targets IoT devices and Windows systems, reflecting a trend of using Web3 to bypass perimeter defenses. <a href="https://hackread.com/aeternum-c2-botnet-polygon-blockchain/" target="_blank">More info</a></li>
+
+    <li><strong>DoHDoor malware masks traffic via HTTPS</strong>: Cisco Talos identified a campaign deploying DoHDoor, a backdoor that utilizes DNS-over-HTTPS for C2 communication. By tunneling traffic through public DNS providers like Google and Cloudflare, it masks malicious activity within standard web traffic, effectively bypassing firewalls and DNS monitoring. <a href="https://blog.talosintelligence.com/new-dohdoor-malware-campaign/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>Fraudulent waiting rooms deploy Teramind stalkerware</strong>: Attackers are using fake Zoom and Google Meet waiting rooms to trick victims into installing Teramind, a legitimate monitoring tool. A simulated technical glitch prompts a mandatory "update," installing an MSI that records keystrokes and screenshots in stealth mode while bypassing signature-based detection. <a href="https://www.malwarebytes.com/blog/threat-intel/2026/02/fake-zoom-and-google-meet-scams-install-teramind-a-technical-deep-dive" target="_blank">More info</a></li>
+
+    <li><strong>Fake Avast website orchestrates refund scams</strong>: A high-fidelity clone of the official Avast site is being used to lure victims via SEO poisoning. Once on the site, users are prompted to provide financial info or grant remote desktop access under the guise of processing a refund. This "brand-jacking" leverages trusted security names to facilitate fraud. <a href="https://hackread.com/fake-avast-website-phishing-refund-scam/" target="_blank">More info</a></li>
+
+    <li><strong>Ransomware payment rates hit record low</strong>: Data indicates only 27% of victims paid ransoms in the last quarter, a record low despite surging attack volumes. This shift is attributed to better backup strategies, regulatory pressure, and distrust of threat actors. In response, criminals are shifting toward high-volume data extortion. <a href="https://www.bleepingcomputer.com/news/security/ransomware-payment-rate-drops-to-record-low-as-attacks-surge/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>ManoMano breach affects 3.8M customers</strong>: The European DIY marketplace suffered a data breach after a third-party service provider's credentials were compromised. While financial data remained encrypted, full names, emails, and shipping addresses for 3.8 million users were exposed. Affected users are warned to watch for phishing attempts. <a href="https://www.bleepingcomputer.com/news/security/european-dyi-chain-manomano-data-breach-impacts-38-million-customers/" target="_blank">More info</a></li>
+
+    <li><strong>Olympique de Marseille hit by RansomHub</strong>: The French football club confirmed a cyberattack after RansomHub leaked internal data, including employee contracts and financial docs. While sporting operations are unaffected, the club has launched a forensic investigation into the scope of the exfiltration. <a href="https://www.bleepingcomputer.com/news/security/olympique-marseille-football-club-confirms-cyberattack-after-data-leak/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>"N-day" flaws drive 2025 cyberthreats</strong>: A new report identifies known, unpatched security flaws as the primary driver of enterprise breaches. While zero-days get the headlines, most initial access vectors involve vulnerabilities with available patches. Automation allows threat actors to scan and compromise global infrastructure within hours of disclosure. <a href="https://hackread.com/1-security-flaws-drive-cyberattacks-2025-report/" target="_blank">More info</a></li>
+
+    <li><strong>New York sues Valve over "illegal gambling"</strong>: The State of New York filed a lawsuit alleging Valve promotes illegal gambling through loot boxes in games like Counter-Strike. The suit argues these mechanisms target minors and foster addiction, while third-party "skin gambling" sites create a shadow economy facilitated by Valve's infrastructure. <a href="https://www.bleepingcomputer.com/news/gaming/new-york-sues-valve-for-promoting-illegal-gambling-via-game-loot-boxes/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
