@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 02/03/26</title>
+  <title>📰 Cybersecurity Newsfeed - 03/03/26</title>
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
   <style>
     body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
@@ -17,57 +17,47 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 02/03/26</h2>
+  <h2>📅 03/03/26</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>"ClawJacked" WebSocket flaw in OpenClaw</strong>: A vulnerability in the OpenClaw AI platform allowed malicious websites to compromise local instances via WebSocket connections. By targeting the localhost gateway, attackers bypassed cross-origin policies to execute brute-force attacks on management passwords. OpenClaw v2026.2.26 addresses this by tightening security checks. <a href="https://www.bleepingcomputer.com/news/security/clawjacked-attack-let-malicious-websites-hijack-openclaw-to-steal-data/" target="_blank">More info</a></li>
+    <li><strong>Android March 2026 Security Bulletin</strong>: Google addressed a critical array of vulnerabilities including a high-severity zero-day exploit observed in the wild. The update patches flaws within System and Framework components that could lead to remote code execution without user interaction, alongside fixes for Qualcomm and MediaTek components. <a href="https://cyberscoop.com/android-security-update-march-2026/" target="_blank">More info</a></li>
 
-    <li><strong>Critical RCE in Sangoma FreePBX (CVE-2025-64328)</strong>: Impacting over 900 instances, this flaw allows unauthenticated remote code execution via the web-based management interface. Attackers are scanning for exposed ports to deploy web shells for botnet integration or toll fraud. Urgent patches are available. <a href="https://securityaffairs.com/188679/uncategorized/cve-2025-64328-exploitation-impacts-900-sangoma-freepbx-instances.html" target="_blank">More info</a></li>
+    <li><strong>Chrome V8 Heap Buffer Overflow</strong>: A high-severity vulnerability in the V8 engine allows malicious websites to execute arbitrary code and bypass the browser's sandbox. Google has acknowledged an active exploit in the wild and issued an emergency update. <a href="https://thehackernews.com/2026/03/new-chrome-vulnerability-let-malicious.html" target="_blank">More info</a></li>
 
-    <li><strong>Unrestricted GCP API Keys exposed in public repos</strong>: Thousands of Google Cloud Platform API keys have been found in public repositories without "API restrictions." This allows unauthorized use of paid services like Translate and Maps. Google has accelerated automated scanning to notify affected developers. <a href="https://thehackernews.com/2026/02/thousands-of-public-google-cloud-api.html" target="_blank">More info</a></li>
-
-    <li><strong>Gardyn Smart Garden critical API flaws</strong>: Insecure API implementations and hardcoded credentials in Gardyn indoor gardening systems could allow remote attackers to seize control of cameras and watering systems. While firmware updates are rolling out, manual updates are recommended due to lack of enforcement. <a href="https://www.securityweek.com/critical-flaws-exposed-gardyn-smart-gardens-to-remote-hacking/" target="_blank">More info</a></li>
+    <li><strong>ExifTool Remote Code Execution (CVE-2026-3102)</strong>: A critical flaw in the ExifTool library poses risks to macOS users processing image metadata. The vulnerability allows for RCE when a victim opens a specially crafted image, impacting many macOS applications that use the library for background processing. <a href="https://www.kaspersky.com/blog/exiftool-macos-picture-vulnerability-mitigation-cve-2026-3102/55362/" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>Fake Gaming Utilities deliver Windows RAT</strong>: Microsoft identified a campaign distributing a Java-based Remote Access Trojan disguised as Xeno and Roblox tools. Using LOLBins like <code>cmstp.exe</code> and PowerShell, the malware modifies Windows Defender exclusions to ensure persistence and full system control. <a href="https://hackread.com/microsoft-fake-xeno-roblox-utilities-windows-rat/" target="_blank">More info</a> | <a href="https://securityaffairs.com/188639/malware/microsoft-warns-of-rat-delivered-through-trojanized-gaming-utilities.html" target="_blank">More info</a></li>
-
-    <li><strong>QuickLens extension targets Crypto via "ClickFix"</strong>: This malicious Chrome extension intercepts clipboard activity to swap wallet addresses and uses fake "system error" overlays to steal recovery seeds. Google has removed it from the Web Store, but manual audits of browser extensions are urged. <a href="https://www.bleepingcomputer.com/news/security/quicklens-chrome-extension-steals-crypto-shows-clickfix-attack/" target="_blank">More info</a></li>
-
-    <li><strong>"Steaelite RAT" enables double extortion</strong>: A new variant targeting corporate networks combines data exfiltration with ransomware. Steaelite uses sophisticated obfuscation to bypass EDR solutions and focuses on credential harvesting for lateral movement. <a href="https://www.theregister.com/2026/02/27/double_extortion_whammy_steaelite_rat/" target="_blank">More info</a></li>
-
-    <li><strong>Malicious Go module targets Crypto developers</strong>: A module mimicking popular libraries was found scanning developer environments for private keys and mnemonic phrases. This typosquatting attack highlights the need for verifying checksums and pinning dependencies in open-source repos. <a href="https://thehackernews.com/2026/02/malicious-go-crypto-module-steals.html" target="_blank">More info</a></li>
+    <li><strong>APT28 Exploits MSHTML Zero-Day (CVE-2026-21513)</strong>: Russia-linked threat actor APT28 exploited a high-severity bypass in the Microsoft MSHTML Framework prior to Patch Tuesday. Using weaponized LNK files and embedded HTML, the group bypassed Mark-of-the-Web protections to execute code via ieframe.dll. <a href="https://securityaffairs.com/188782/security/russia-linked-apt28-exploited-mshtml-zero-day-cve-2026-21513-before-patch.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>Aeternum botnet utilizes Polygon Blockchain</strong>: This botnet uses Polygon smart contracts to host C2 instructions, creating a decentralized "dead drop" that is nearly impossible to take down. Defenders are advised to monitor for unusual outbound RPC connections to blockchain endpoints. <a href="https://securityaffairs.com/188627/mobile-2/aeternum-botnet-hides-commands-in-polygon-smart-contracts.html" target="_blank">More info</a></li>
+    <li><strong>PWA Phishing Mimics Google Security</strong>: Sophisticated campaigns are using Progressive Web Apps (PWAs) to mimic legitimate Google security sites. By installing the malicious PWA, attackers bypass browser controls to steal credentials and intercept MFA codes in real-time through a native-looking interface. <a href="https://www.bleepingcomputer.com/news/security/fake-google-security-site-uses-pwa-app-to-steal-credentials-mfa-codes/" target="_blank">More info</a></li>
 
-    <li><strong>APT37 bridges air-gapped networks via USB</strong>: North Korean threat actors are using infected USB drives to bridge physically isolated systems. The malware hides stolen documents in hidden partitions on the drive for later retrieval by the attackers. <a href="https://www.bleepingcomputer.com/news/security/apt37-hackers-use-new-malware-to-breach-air-gapped-networks/" target="_blank">More info</a></li>
+    <li><strong>OAuth Redirection Abuse Surge</strong>: Microsoft researchers identified a rise in phishing exploiting OAuth redirection. Attackers abuse legitimate application consent flows to gain broad cloud permissions, bypassing MFA by using authenticated tokens instead of passwords. <a href="https://www.microsoft.com/en-us/security/blog/2026/03/02/oauth-redirection-abuse-enables-phishing-malware-delivery/" target="_blank">More info</a></li>
 
-    <li><strong>Resurge malware persists on Ivanti devices</strong>: CISA warned of "Resurge" malware that survives factory resets on Ivanti Connect Secure devices by embedding itself in non-volatile storage. Standard remediation is insufficient; manual integrity overhauls are recommended. <a href="https://www.bleepingcomputer.com/news/security/cisa-warns-that-resurge-malware-can-be-dormant-on-ivanti-devices/" target="_blank">More info</a></li>
+    <li><strong>AI Deepfakes Targeting Olympic Athletes</strong>: Experts are tracking a rise in AI-generated content used to spread political propaganda and manipulate public perception of athletes. These highly convincing fabrications are designed to discredit individuals and stir international controversy. <a href="https://cyberscoop.com/ai-deepfakes-olympic-athletes-political-manipulation/" target="_blank">More info</a></li>
 
-    <li><strong>Cloaking techniques bypass Google Ad audits</strong>: A new malvertising campaign serves malicious content only to targeted users while showing benign ads to Google's reviewers. It uses IP filtering and fingerprinting to deliver infostealers to legitimate victims. <a href="https://hackread.com/hackers-1campaign-hide-malicious-ads-google-reviewers/" target="_blank">More info</a></li>
+    <li><strong>DDoS Becomes Constant Threat in Europe</strong>: The Link11 2026 report reveals a significant increase in multi-vector DDoS attacks. These disruptions are increasingly used as smokescreens for data exfiltration or state-sponsored harassment, overwhelming legacy network infrastructures. <a href="https://hackread.com/link11-releases-european-cyber-report-2026-ddos-attacks-become-a-constant-threat/" target="_blank">More info</a></li>
   </ul>
 
   <h2>💥 Breaches & Leaks</h2>
   <ul>
-    <li><strong>ShinyHunters leaks 6.1M Odido customer records</strong>: In the Netherlands' largest breach, attackers leaked data from Dutch telco Odido. Stolen info includes names, addresses, IBANs, and government IDs. Threat actors allege the dump contains plaintext passwords despite company denials. <a href="https://securityaffairs.com/188709/data-breach/shinyhunters-leaked-the-full-odido-dataset.html" target="_blank">More info</a></li>
-
-    <li><strong>Claude Code CLI abused in Mexican agency breach</strong>: Attackers exploited Anthropic’s CLI tool to exfiltrate 150GB of data from Mexican government agencies. The AI agent's autonomous capabilities were weaponized for rapid database discovery and internal mapping. <a href="https://securityaffairs.com/188696/ai/claude-code-abused-to-steal-150gb-in-cyberattack-on-mexican-agencies.html" target="_blank">More info</a></li>
-
-    <li><strong>Korean Tax Agency lapse leads to $48M Crypto theft</strong>: A digital wallet seed phrase was left in a publicly accessible document on a government server. Attackers discovered the file via dorking and drained funds intended for public infrastructure. <a href="https://www.bleepingcomputer.com/news/security/48m-in-crypto-stolen-after-korean-tax-agency-exposes-wallet-seed/" target="_blank">More info</a></li>
+    <li><strong>Iranian App BadeSaba Compromised</strong>: The popular calendar app, with over 10 million downloads, was hijacked to send unauthorized political push notifications. The incident highlights vulnerabilities in widely used regional software and the use of mobile apps for psychological operations. <a href="https://hackread.com/popular-iranian-app-badesaba-hacked-alerts/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📚 Others</h2>
   <ul>
-    <li><strong>Pentagon designates Anthropic as critical provider</strong>: The U.S. DoD has officially partnered with Anthropic to integrate Claude-based models into national security frameworks, focusing on secure AI supply chains and threat intelligence. <a href="https://thehackernews.com/2026/02/pentagon-designates-anthropic-supply.html" target="_blank">More info</a></li>
+    <li><strong>U.S. Cyber Command Targets Iranian Actors</strong>: Military units have intensified "defend forward" operations against groups like MuddyWater and APT42. The proactive strategy aims to neutralize command-and-control nodes following disruptive attacks on critical infrastructure. <a href="https://www.theregister.com/2026/03/02/cyber_warfighters_iran/" target="_blank">More info</a></li>
 
-    <li><strong>Law enforcement operation hits "The Com"</strong>: International authorities arrested 30 members of a notorious cybercrime ecosystem known for violent extortion, SIM swapping, and doxing. Millions in digital assets were seized. <a href="https://www.bleepingcomputer.com/news/security/police-crackdown-on-the-com-cybercrime-gang-leads-to-30-arrests/" target="_blank">More info</a></li>
+    <li><strong>Florida Woman Sentenced for Microsoft License Fraud</strong>: A massive scheme involving the illicit sale of discounted Microsoft software licenses resulted in millions in losses. The case highlights challenges in software supply chain integrity and corporate procurement manipulation. <a href="https://www.bleepingcomputer.com/news/security/florida-woman-imprisoned-for-massive-microsoft-license-fraud-scheme/" target="_blank">More info</a></li>
 
-    <li><strong>Research warns of third-party "Security Debt"</strong>: New studies highlight how delays in patching secondary applications and middleware create a massive attack surface, often exploited by automated scanners to gain initial network access. <a href="https://www.bleepingcomputer.com/news/security/third-party-patching-and-the-business-footprint-we-all-share/" target="_blank">More info</a></li>
+    <li><strong>Google Merkle Tree Security Framework</strong>: Google has developed a new cryptographic framework to enhance software build integrity. Using Merkle Tree structures, the system provides transparent, end-to-end verification of code provenance to mitigate supply chain attacks. <a href="https://thehackernews.com/2026/03/new-chrome-vulnerability-let-malicious.html" target="_blank">More info</a></li>
+
+    <li><strong>Anthropic Claude Worldwide Outage</strong>: Anthropic confirmed a major infrastructure failure affecting the Claude AI platform. The outage disrupted thousands of developers and enterprise users, highlighting the growing dependency on centralized AI services. <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-confirms-claude-is-down-in-a-worldwide-outage/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
