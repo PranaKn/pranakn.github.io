@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 03/03/26</title>
+  <title>📰 Cybersecurity Newsfeed - 04/03/26</title>
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
   <style>
     body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
@@ -17,47 +17,47 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 03/03/26</h2>
+  <h2>📅 04/03/26</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>Android March 2026 Security Bulletin</strong>: Google addressed a critical array of vulnerabilities including a high-severity zero-day exploit observed in the wild. The update patches flaws within System and Framework components that could lead to remote code execution without user interaction, alongside fixes for Qualcomm and MediaTek components. <a href="https://cyberscoop.com/android-security-update-march-2026/" target="_blank">More info</a></li>
+    <li><strong>Qualcomm Zero-Day Exploited in Android Attacks</strong>: A critical zero-day in a low-level Qualcomm chipset component is being used for RCE and privilege escalation. Exploitation is currently limited to high-value targets by APT actors. Because the flaw is at the hardware abstraction layer, detection is difficult, and users must wait for manufacturer-specific OTA firmware patches. <a href="https://www.darkreading.com/threat-intelligence/qualcomm-zero-day-exploited-targeted-android-attacks" target="_blank">More info</a></li>
 
-    <li><strong>Chrome V8 Heap Buffer Overflow</strong>: A high-severity vulnerability in the V8 engine allows malicious websites to execute arbitrary code and bypass the browser's sandbox. Google has acknowledged an active exploit in the wild and issued an emergency update. <a href="https://thehackernews.com/2026/03/new-chrome-vulnerability-let-malicious.html" target="_blank">More info</a></li>
-
-    <li><strong>ExifTool Remote Code Execution (CVE-2026-3102)</strong>: A critical flaw in the ExifTool library poses risks to macOS users processing image metadata. The vulnerability allows for RCE when a victim opens a specially crafted image, impacting many macOS applications that use the library for background processing. <a href="https://www.kaspersky.com/blog/exiftool-macos-picture-vulnerability-mitigation-cve-2026-3102/55362/" target="_blank">More info</a></li>
+    <li><strong>CISA Adds CVE-2026-22719 to KEV Catalog</strong>: CISA has flagged CVE-2026-22719 for active exploitation. The flaw allows unauthorized access and system compromise. Threat actors are currently using it to bypass security controls and establish persistence within target networks, necessitating immediate patching for affected organizations. <a href="https://www.cisa.gov/news-events/alerts/2026/03/03/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>APT28 Exploits MSHTML Zero-Day (CVE-2026-21513)</strong>: Russia-linked threat actor APT28 exploited a high-severity bypass in the Microsoft MSHTML Framework prior to Patch Tuesday. Using weaponized LNK files and embedded HTML, the group bypassed Mark-of-the-Web protections to execute code via ieframe.dll. <a href="https://securityaffairs.com/188782/security/russia-linked-apt28-exploited-mshtml-zero-day-cve-2026-21513-before-patch.html" target="_blank">More info</a></li>
+    <li><strong>Signed Malware Impersonates Workplace Apps</strong>: Microsoft researchers identified a campaign using stolen or fraudulent code-signing certificates to deploy RMM backdoors. By mimicking legitimate tools, the malware bypasses endpoint protections and grants attackers administrative access for lateral movement, complicating detection by blending in with standard IT support activity. <a href="https://www.microsoft.com/en-us/security/blog/2026/03/03/signed-malware-impersonating-workplace-apps-deploys-rmm-backdoors/" target="_blank">More info</a></li>
+
+    <li><strong>OAuth Error Flows Abused for Phishing</strong>: Attackers are manipulating the "error" parameter in Microsoft OAuth requests to redirect users to malicious URLs. Since the initial domain appears legitimate, it bypasses email filters. Victims are led to forged error pages prompting them to download "security updates" that are actually malware. <a href="https://www.bleepingcomputer.com/news/security/microsoft-hackers-abuse-oauth-error-flows-to-spread-malware/" target="_blank">More info</a></li>
+
+    <li><strong>"RedAlert" Spyware Targets Israel</strong>: A malicious version of the RedAlert rocket siren app has been discovered targeting Israeli citizens. The app grants full device access, including camera and microphone. Linked to regional threat actors, the campaign weaponizes geopolitical anxiety for mobile-centric espionage and psychological operations. <a href="https://www.infosecurity-magazine.com/news/redalert-israel-spyware-campaign/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>PWA Phishing Mimics Google Security</strong>: Sophisticated campaigns are using Progressive Web Apps (PWAs) to mimic legitimate Google security sites. By installing the malicious PWA, attackers bypass browser controls to steal credentials and intercept MFA codes in real-time through a native-looking interface. <a href="https://www.bleepingcomputer.com/news/security/fake-google-security-site-uses-pwa-app-to-steal-credentials-mfa-codes/" target="_blank">More info</a></li>
+    <li><strong>Cloudflare 2026 Report: AI-Driven & Hyper-Volumetric Attacks</strong>: Cloudflare notes a surge in automated bots exploiting zero-days and "hyper-volumetric" attacks targeting APIs. AI tools are significantly shortening the window between vulnerability disclosure and exploit, necessitating a shift toward AI-enhanced, automated defensive responses. <a href="https://www.helpnetsecurity.com/2026/03/03/cloudflare-cyber-threat-report-2026/" target="_blank">More info</a></li>
 
-    <li><strong>OAuth Redirection Abuse Surge</strong>: Microsoft researchers identified a rise in phishing exploiting OAuth redirection. Attackers abuse legitimate application consent flows to gain broad cloud permissions, bypassing MFA by using authenticated tokens instead of passwords. <a href="https://www.microsoft.com/en-us/security/blog/2026/03/02/oauth-redirection-abuse-enables-phishing-malware-delivery/" target="_blank">More info</a></li>
-
-    <li><strong>AI Deepfakes Targeting Olympic Athletes</strong>: Experts are tracking a rise in AI-generated content used to spread political propaganda and manipulate public perception of athletes. These highly convincing fabrications are designed to discredit individuals and stir international controversy. <a href="https://cyberscoop.com/ai-deepfakes-olympic-athletes-political-manipulation/" target="_blank">More info</a></li>
-
-    <li><strong>DDoS Becomes Constant Threat in Europe</strong>: The Link11 2026 report reveals a significant increase in multi-vector DDoS attacks. These disruptions are increasingly used as smokescreens for data exfiltration or state-sponsored harassment, overwhelming legacy network infrastructures. <a href="https://hackread.com/link11-releases-european-cyber-report-2026-ddos-attacks-become-a-constant-threat/" target="_blank">More info</a></li>
+    <li><strong>Phishing Scams Weaponize .arpa TLD</strong>: Cybercriminals are using the infrastructure-focused .arpa TLD to mimic administrative services. These convincing URLs target IT professionals with spoofed network notifications. Many security filters fail to flag .arpa domains, allowing attackers to bypass traditional web defenses. <a href="https://hackread.com/hackers-arpa-top-level-domain-phishing-scams/" target="_blank">More info</a></li>
   </ul>
 
   <h2>💥 Breaches & Leaks</h2>
   <ul>
-    <li><strong>Iranian App BadeSaba Compromised</strong>: The popular calendar app, with over 10 million downloads, was hijacked to send unauthorized political push notifications. The incident highlights vulnerabilities in widely used regional software and the use of mobile apps for psychological operations. <a href="https://hackread.com/popular-iranian-app-badesaba-hacked-alerts/" target="_blank">More info</a></li>
+    <li><strong>Coruna iOS Exploit Kit Leaked</strong>: An advanced iOS exploit kit, allegedly linked to the U.S. government, has been leaked online. The framework provides deep system access and surveillance modules, lowering the barrier for less-sophisticated actors to target high-profile individuals like journalists and activists with government-grade spyware. <a href="https://cyberscoop.com/coruna-ios-exploit-kit-leaked-us-framework/" target="_blank">More info</a></li>
+
+    <li><strong>Ariomex Exchange Data Leak</strong>: Iranian crypto exchange Ariomex suffered a breach exposing user IDs, transaction histories, and contact details. This exposure of Digital ID data is highly sensitive, providing a roadmap for attackers to bypass MFA or conduct targeted financial fraud against the exchange's user base. <a href="https://securityaffairs.com/188848/digital-id/ariomex-iran-based-crypto-exchange-suffers-data-leak.html" target="_blank">More info</a></li>
+
+    <li><strong>LexisNexis Confirms Breach After Forum Leak</strong>: Following a claim on a cybercrime forum, LexisNexis confirmed a breach involving internal documents and potentially customer info. The incident underscores the high-value target status of data aggregators, with evidence suggesting attackers maintained long-term network access. <a href="https://www.bleepingcomputer.com/news/security/lexisnexis-confirms-data-breach-as-hackers-leak-stolen-files/" target="_blank">More info</a></li>
+
+    <li><strong>Massive Medical Data Leak in France</strong>: French authorities are investigating a breach affecting millions, involving social security numbers and medical histories. The data was reportedly exfiltrated from a third-party service provider, highlighting the critical security risks inherent in centralized medical databases and vendor ecosystems. <a href="https://www.theregister.com/2026/03/03/french_medical_leak/" target="_blank">More info</a></li>
+
+    <li><strong>Star Citizen (CIG) Discloses Data Breach</strong>: A legacy web service vulnerability at Cloud Imperium Games exposed account handles, emails, and encrypted passwords. While payment data remains safe, the leak poses a risk for credential stuffing and phishing within the gaming community. <a href="https://www.bleepingcomputer.com/news/security/star-citizen-game-dev-discloses-breach-affecting-user-data/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📚 Others</h2>
   <ul>
-    <li><strong>U.S. Cyber Command Targets Iranian Actors</strong>: Military units have intensified "defend forward" operations against groups like MuddyWater and APT42. The proactive strategy aims to neutralize command-and-control nodes following disruptive attacks on critical infrastructure. <a href="https://www.theregister.com/2026/03/02/cyber_warfighters_iran/" target="_blank">More info</a></li>
-
-    <li><strong>Florida Woman Sentenced for Microsoft License Fraud</strong>: A massive scheme involving the illicit sale of discounted Microsoft software licenses resulted in millions in losses. The case highlights challenges in software supply chain integrity and corporate procurement manipulation. <a href="https://www.bleepingcomputer.com/news/security/florida-woman-imprisoned-for-massive-microsoft-license-fraud-scheme/" target="_blank">More info</a></li>
-
-    <li><strong>Google Merkle Tree Security Framework</strong>: Google has developed a new cryptographic framework to enhance software build integrity. Using Merkle Tree structures, the system provides transparent, end-to-end verification of code provenance to mitigate supply chain attacks. <a href="https://thehackernews.com/2026/03/new-chrome-vulnerability-let-malicious.html" target="_blank">More info</a></li>
-
-    <li><strong>Anthropic Claude Worldwide Outage</strong>: Anthropic confirmed a major infrastructure failure affecting the Claude AI platform. The outage disrupted thousands of developers and enterprise users, highlighting the growing dependency on centralized AI services. <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-confirms-claude-is-down-in-a-worldwide-outage/" target="_blank">More info</a></li>
+    <li><strong>Physical Strikes on Amazon Data Centers</strong>: Iranian kinetic strikes on AWS facilities in the Middle East have highlighted the physical vulnerability of cloud infrastructure. This shift in threat models forces providers to account for traditional warfare and geographic diversification as part of digital supply chain resilience. <a href="https://www.securityweek.com/iranian-strikes-on-amazon-data-centers-highlight-industrys-vulnerability-to-physical-disasters/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
