@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 04/03/26</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 04/03/26</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>Qualcomm Zero-Day Exploited in Android Attacks</strong>: A critical zero-day in a low-level Qualcomm chipset component is being used for RCE and privilege escalation. Exploitation is currently limited to high-value targets by APT actors. Because the flaw is at the hardware abstraction layer, detection is difficult, and users must wait for manufacturer-specific OTA firmware patches. <a href="https://www.darkreading.com/threat-intelligence/qualcomm-zero-day-exploited-targeted-android-attacks" target="_blank">More info</a></li>
+
+    <li><strong>CISA Adds CVE-2026-22719 to KEV Catalog</strong>: CISA has flagged CVE-2026-22719 for active exploitation. The flaw allows unauthorized access and system compromise. Threat actors are currently using it to bypass security controls and establish persistence within target networks, necessitating immediate patching for affected organizations. <a href="https://www.cisa.gov/news-events/alerts/2026/03/03/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Signed Malware Impersonates Workplace Apps</strong>: Microsoft researchers identified a campaign using stolen or fraudulent code-signing certificates to deploy RMM backdoors. By mimicking legitimate tools, the malware bypasses endpoint protections and grants attackers administrative access for lateral movement, complicating detection by blending in with standard IT support activity. <a href="https://www.microsoft.com/en-us/security/blog/2026/03/03/signed-malware-impersonating-workplace-apps-deploys-rmm-backdoors/" target="_blank">More info</a></li>
+
+    <li><strong>OAuth Error Flows Abused for Phishing</strong>: Attackers are manipulating the "error" parameter in Microsoft OAuth requests to redirect users to malicious URLs. Since the initial domain appears legitimate, it bypasses email filters. Victims are led to forged error pages prompting them to download "security updates" that are actually malware. <a href="https://www.bleepingcomputer.com/news/security/microsoft-hackers-abuse-oauth-error-flows-to-spread-malware/" target="_blank">More info</a></li>
+
+    <li><strong>"RedAlert" Spyware Targets Israel</strong>: A malicious version of the RedAlert rocket siren app has been discovered targeting Israeli citizens. The app grants full device access, including camera and microphone. Linked to regional threat actors, the campaign weaponizes geopolitical anxiety for mobile-centric espionage and psychological operations. <a href="https://www.infosecurity-magazine.com/news/redalert-israel-spyware-campaign/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>Cloudflare 2026 Report: AI-Driven & Hyper-Volumetric Attacks</strong>: Cloudflare notes a surge in automated bots exploiting zero-days and "hyper-volumetric" attacks targeting APIs. AI tools are significantly shortening the window between vulnerability disclosure and exploit, necessitating a shift toward AI-enhanced, automated defensive responses. <a href="https://www.helpnetsecurity.com/2026/03/03/cloudflare-cyber-threat-report-2026/" target="_blank">More info</a></li>
+
+    <li><strong>Phishing Scams Weaponize .arpa TLD</strong>: Cybercriminals are using the infrastructure-focused .arpa TLD to mimic administrative services. These convincing URLs target IT professionals with spoofed network notifications. Many security filters fail to flag .arpa domains, allowing attackers to bypass traditional web defenses. <a href="https://hackread.com/hackers-arpa-top-level-domain-phishing-scams/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Coruna iOS Exploit Kit Leaked</strong>: An advanced iOS exploit kit, allegedly linked to the U.S. government, has been leaked online. The framework provides deep system access and surveillance modules, lowering the barrier for less-sophisticated actors to target high-profile individuals like journalists and activists with government-grade spyware. <a href="https://cyberscoop.com/coruna-ios-exploit-kit-leaked-us-framework/" target="_blank">More info</a></li>
+
+    <li><strong>Ariomex Exchange Data Leak</strong>: Iranian crypto exchange Ariomex suffered a breach exposing user IDs, transaction histories, and contact details. This exposure of Digital ID data is highly sensitive, providing a roadmap for attackers to bypass MFA or conduct targeted financial fraud against the exchange's user base. <a href="https://securityaffairs.com/188848/digital-id/ariomex-iran-based-crypto-exchange-suffers-data-leak.html" target="_blank">More info</a></li>
+
+    <li><strong>LexisNexis Confirms Breach After Forum Leak</strong>: Following a claim on a cybercrime forum, LexisNexis confirmed a breach involving internal documents and potentially customer info. The incident underscores the high-value target status of data aggregators, with evidence suggesting attackers maintained long-term network access. <a href="https://www.bleepingcomputer.com/news/security/lexisnexis-confirms-data-breach-as-hackers-leak-stolen-files/" target="_blank">More info</a></li>
+
+    <li><strong>Massive Medical Data Leak in France</strong>: French authorities are investigating a breach affecting millions, involving social security numbers and medical histories. The data was reportedly exfiltrated from a third-party service provider, highlighting the critical security risks inherent in centralized medical databases and vendor ecosystems. <a href="https://www.theregister.com/2026/03/03/french_medical_leak/" target="_blank">More info</a></li>
+
+    <li><strong>Star Citizen (CIG) Discloses Data Breach</strong>: A legacy web service vulnerability at Cloud Imperium Games exposed account handles, emails, and encrypted passwords. While payment data remains safe, the leak poses a risk for credential stuffing and phishing within the gaming community. <a href="https://www.bleepingcomputer.com/news/security/star-citizen-game-dev-discloses-breach-affecting-user-data/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>Physical Strikes on Amazon Data Centers</strong>: Iranian kinetic strikes on AWS facilities in the Middle East have highlighted the physical vulnerability of cloud infrastructure. This shift in threat models forces providers to account for traditional warfare and geographic diversification as part of digital supply chain resilience. <a href="https://www.securityweek.com/iranian-strikes-on-amazon-data-centers-highlight-industrys-vulnerability-to-physical-disasters/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
