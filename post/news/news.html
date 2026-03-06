@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 06/03/26</title>
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
-  <title>📰 Cybersecurity Newsfeed - 05/03/26</title>
   <style>
     body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
     h1 { text-align: center; color: #c9a227; }
@@ -17,62 +17,57 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 05/03/26</h2>
+  <h2>📅 06/03/26</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>"Mail2Shell" Zero-Click RCE in FreeScout (CVE-2026-28289)</strong>: A critical flaw in the FreeScout open-source help desk allows unauthenticated attackers to hijack mail servers via a crafted email. By exploiting a Unicode character (U+200B) to bypass patch logic, attackers can upload and execute malicious dotfiles. Administrators should update to version 1.8.207 immediately. <a href="https://www.bleepingcomputer.com/news/security/mail2shell-zero-click-attack-lets-hackers-hijack-freescout-mail-servers/" target="_blank">More info</a></li>
+    <li><strong>Cisco patches 48 firewall vulnerabilities</strong>: Cisco issued an urgent advisory for 48 flaws, including two critical RCE bugs in the web-based management interface. Unauthenticated attackers could bypass security or gain full admin control. Updates are available for affected firewall products. <a href="https://www.darkreading.com/vulnerabilities-threats/cisco-48-firewall-vulnerabilities-2-critical" target="_blank">More info</a></li>
 
-    <li><strong>VMware Aria Operations Under Active Exploitation (CVE-2026-22719)</strong>: CISA added this high-severity RCE bug to its KEV catalog. The flaw allows unauthenticated command execution during support-assisted migration workflows. It affects Aria Operations, Cloud Foundation, and Telco Cloud platforms, posing a major risk to virtual infrastructures. <a href="https://www.darkreading.com/cloud-security/vmware-aria-operations-bug-exploited-cloud-risk" target="_blank">More info</a></li>
+    <li><strong>WordPress membership plugin exploited</strong>: A critical flaw in a popular plugin allows unauthenticated attackers to bypass registration and create unauthorized admin accounts. Attackers are actively using this access to install malicious plugins and steal data. <a href="https://www.bleepingcomputer.com/news/security/wordpress-membership-plugin-bug-exploited-to-create-admin-accounts/" target="_blank">More info</a></li>
 
-    <li><strong>Critical Root Access Flaws in Cisco Secure FMC</strong>: Cisco issued urgent patches for CVE-2026-20079 and CVE-2026-20131. These vulnerabilities allow unauthenticated remote attackers to gain root OS access via auth bypass or serialized Java objects. No active exploitation is reported yet, but the central role of FMC in policy management makes patching a top priority. <a href="https://www.bleepingcomputer.com/news/security/cisco-warns-of-max-severity-secure-fmc-flaws-giving-root-access/" target="_blank">More info</a></li>
+    <li><strong>Zero-click RCE in FreeScout help desk</strong>: Improper handling of email attachments and webhooks in the open-source FreeScout platform allows remote code execution without any user interaction, posing a severe risk to support teams. <a href="https://www.infosecurity-magazine.com/news/zeroclick-freescout-bug-remote/" target="_blank">More info</a></li>
+
+    <li><strong>CISA KEV update (March 2026)</strong>: CISA added five bugs to its catalog, including a critical VMware Aria Operations RCE (CVE-2026-22719), Cisco Catalyst SD-WAN flaws, and a legacy Apple iOS/iPadOS vulnerability. Federal agencies must patch by March 26. <a href="https://www.cisa.gov/news-events/alerts/2026/03/05/cisa-adds-five-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>"Coruna" iOS Exploit Kit Targets Crypto Sites</strong>: Google Threat Intelligence identified an advanced kit with 23 exploits targeting iOS 13.0 through 17.2.1. Originally used for state-level espionage, it is now deployed in watering hole attacks against crypto users, featuring WebKit RCE and PAC bypasses. <a href="https://www.bleepingcomputer.com/news/security/spyware-grade-coruna-ios-exploit-kit-now-used-in-crypto-theft-attacks/" target="_blank">More info</a></li>
+    <li><strong>RedEyes targets telcos with Noodle RAT</strong>: Chinese state-sponsored actors are using the "Noodle RAT" backdoor and modular plugins to compromise telecommunications edge devices globally, facilitating long-term intelligence gathering and communications interception. <a href="https://www.bleepingcomputer.com/news/security/chinese-state-hackers-target-telcos-with-new-malware-toolkit/" target="_blank">More info</a></li>
 
-    <li><strong>HungerRush POS Customers Hit by Mass Extortion</strong>: Attackers are using compromised Twilio SendGrid infra to threaten patrons of restaurants using the HungerRush platform. The hacker claims to have stolen data for millions of users and is demanding payment from the company. A 2025 infostealer infection of an employee device is the suspected entry point. <a href="https://www.bleepingcomputer.com/news/security/hacker-mass-mails-hungerrush-extortion-emails-to-restaurant-patrons/" target="_blank">More info</a></li>
+    <li><strong>Wikipedia hit by self-propagating JS worm</strong>: A XSS vulnerability was exploited to inject a worm that vandalized high-traffic articles. The script spread by using the credentials of users viewing affected pages to modify other entries. <a href="https://www.bleepingcomputer.com/news/security/wikipedia-hit-by-self-propagating-javascript-worm-that-vandalized-pages/" target="_blank">More info</a></li>
 
-    <li><strong>"BadPaw" Backdoor Targets Ukraine</strong>: A multi-stage campaign using spoofed ukr[.]net emails delivers a deceptive HTA app that executes a backdoor. The malware uses steganography and sandbox evasion. Technical artifacts suggest Russian-speaking actors focused on intelligence gathering. <a href="https://www.infosecurity-magazine.com/news/badpaw-malware-targets-ukraine/" target="_blank">More info</a></li>
+    <li><strong>BoryptGrab stealer abuses GitHub Pages</strong>: Attackers are hosting fake developer tool repositories on GitHub Pages to deliver the BoryptGrab malware, which harvests browser credentials and session cookies from infected systems. <a href="https://www.trendmicro.com/en_us/research/26/c/boryptgrab-stealer-targets-users-via-deceptive-github-pages.html" target="_blank">More info</a></li>
 
-    <li><strong>"Silver Dragon" Espionage in SE Asia and Europe</strong>: This China-linked group targets government orgs using a custom tool called GearDoor, which leverages Google Drive for C2. They maintain persistence by hijacking legitimate Windows services, a hallmark of APT41-style strategic intelligence collection. <a href="https://www.infosecurity-magazine.com/news/badpaw-malware-targets-ukraine/" target="_blank">More info</a></li>
+    <li><strong>Dust Specter targets Iraqi officials</strong>: A focused espionage campaign is using multi-stage malware and tailored spear-phishing to exfiltrate government documents and monitor encrypted communications of high-ranking Iraqi officials. <a href="https://thehackernews.com/2026/03/dust-specter-targets-iraqi-officials.html" target="_blank">More info</a></li>
+
+    <li><strong>New actor UAT-9244 identified by Cisco Talos</strong>: This technically proficient group uses custom-built loaders and targeted phishing to bypass antivirus and maintain persistence within enterprise environments for lateral movement. <a href="https://blog.talosintelligence.com/uat-9244/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>"ClawHavoc" Poisons AI Agent Ecosystem</strong>: Attackers targeted the OpenClaw AI market by distributing malicious "Skills" containing "ClickFix" scripts. These installers trick users into granting system-level privileges, highlighting new supply chain risks in automated AI extension platforms. <a href="https://www.theregister.com/2026/03/04/fake_openclaw_installers_malware/" target="_blank">More info</a></li>
+    <li><strong>Bing AI promotes fake "OpenClaw" repo</strong>: Search engine optimization and AI recommendations were manipulated to promote a fraudulent GitHub repo that delivered info-stealing malware to developers seeking open-source tools. <a href="https://www.bleepingcomputer.com/news/security/bing-ai-promoted-fake-openclaw-github-repo-pushing-info-stealing-malware/" target="_blank">More info</a></li>
 
-    <li><strong>LastPass Phishing Uses Fake Support Threads</strong>: A new campaign uses lookalike domains and spoofed internal email histories to steal master passwords. Attackers build urgency around "unauthorized access" to lure victims to a credential-harvesting site. <a href="https://www.bleepingcomputer.com/news/security/fake-lastpass-support-email-threads-try-to-steal-vault-passwords/" target="_blank">More info</a></li>
+    <li><strong>AI malware assembly lines emerge</strong>: Nation-state actors are integrating LLMs into their workflows to automate code generation and vulnerability identification, leading to an "industrialization" of cyber warfare and faster attack iteration. <a href="https://www.darkreading.com/cyberattacks-data-breaches/nation-state-actor-ai-malware-assembly-line" target="_blank">More info</a></li>
 
-    <li><strong>AI Transformation of the Phishing Landscape</strong>: In 2026, AI is driving hyper-personalized spear phishing and deepfake-assisted BEC attacks. Threat actors are using AI to accelerate zero-day exploitation and deploy malicious chatbots for real-time harvesting. <a href="https://hackread.com/phishing-2026-attack-tactics-beat-enterprise-defenses/" target="_blank">More info</a></li>
+    <li><strong>Malicious AI extensions harvest chat logs</strong>: Security researchers found browser extensions disguised as productivity tools that scrape LLM chat histories, potentially exposing proprietary business data and personal secrets. <a href="https://www.microsoft.com/en-us/security/blog/2026/03/05/malicious-ai-assistant-extensions-harvest-llm-chat-histories/" target="_blank">More info</a></li>
 
-    <li><strong>Telegram's Role in "Stealer Log" Markets</strong>: Researchers found millions of compromised credentials circulating on Telegram, including a massive 22GB collection. The platform's encrypted channels facilitate the rapid monetization of session tokens and browser cookies. <a href="https://hackread.com/telegram-used-sell-access-malware-stolen-logs/" target="_blank">More info</a></li>
+    <li><strong>Google reports record 90 zero-days in 2025</strong>: Google's annual review shows a spike in zero-day exploitation, primarily driven by nation-states and commercial surveillance vendors focusing on mobile and browser vulnerabilities. <a href="https://www.bleepingcomputer.com/news/security/google-says-90-zero-days-were-exploited-in-attacks-last-year/" target="_blank">More info</a></li>
 
-    <li><strong>"CyberStrikeAI" Lowers Barriers for Attacks</strong>: A new open-source platform with ties to China automates the entire attack kill chain. Integrating 100+ utilities with an AI engine, it allows novice actors to launch sophisticated vulnerability discovery and exploitation campaigns. <a href="https://www.bleepingcomputer.com/news/security/cyberstrikeai-tool-adopted-by-hackers-for-ai-powered-attacks/" target="_blank">More info</a></li>
+    <li><strong>Fake FileZilla site bundles malware</strong>: A typosquatting domain mimicking the official FileZilla site is distributing installers bundled with password-stealing payloads, targeting IT professionals and developers. <a href="https://www.cysecurity.news/2026/03/fake-filezilla-website-distributes.html" target="_blank">More info</a></li>
   </ul>
 
   <h2>💥 Breaches & Leaks</h2>
   <ul>
-    <li><strong>LexisNexis AWS Breach via "React2Shell"</strong>: FulcrumSec exfiltrated 2.04 GB of legacy data (pre-2020) by exploiting a React frontend vulnerability. The leak includes info on 100+ government users, though LexisNexis states SSNs and active passwords were not compromised. <a href="https://www.securityweek.com/new-lexisnexis-data-breach-confirmed-after-hackers-leak-files/" target="_blank">More info</a></li>
-
-    <li><strong>AkzoNobel Hit by Anubis Ransomware</strong>: The global paint manufacturer confirmed an attack on a U.S. site. Anubis claims to have stolen 170GB of data, including technical specs and employee passport scans. While operations remain stable, the gang has begun leaking samples. <a href="https://www.bleepingcomputer.com/news/security/paint-maker-giant-akzonobel-confirms-cyberattack-on-us-site/" target="_blank">More info</a></li>
-  </ul>
-
-  <h2>🛠️ Tools</h2>
-  <ul>
-    <li><strong>"mquire" for Dependency-Free Linux Forensics</strong>: Trail of Bits released an open-source tool that extracts kernel info directly from memory dumps using BTF. It eliminates the need for external kernel profiles, significantly streamlining incident response on unknown Linux systems. <a href="https://github.com/trailofbits/mquire" target="_blank">More info</a></li>
+    <li><strong>FBI detects internal network intrusion</strong>: The FBI disclosed suspicious activity on its internal networks. While the full extent is classified, reports suggest investigative data may have been the target. Investigation into the entry vector is ongoing. <a href="https://cyberscoop.com/fbi-targeted-with-suspicious-activity-on-its-networks/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📚 Others</h2>
   <ul>
-    <li><strong>Takedown of Tycoon 2FA PhaaS</strong>: Microsoft and Cloudforce One disrupted the Tycoon 2FA infrastructure. The kit used reverse proxies and Cloudflare Workers to bypass MFA for M365 and Gmail. Defenders are urged to move toward FIDO2-compliant hardware keys. <a href="https://cyberscoop.com/tycoon-2fa-phishing-kit-takedown-microsoft/" target="_blank">More info</a></li>
+    <li><strong>Phobos Ransomware admin pleads guilty</strong>: The operator of the Phobos RaaS model faces up to 20 years in prison for coordinating attacks on hundreds of organizations, including schools and hospitals. <a href="https://securityaffairs.com/188984/security/phobos-ransomware-admin-faces-up-to-20-years-after-guilty-plea.html" target="_blank">More info</a></li>
 
-    <li><strong>Bitwarden Adds Windows 11 Passwordless Support</strong>: Users can now use passkeys stored in Bitwarden to log into Windows 11. This uses the Windows passkey provider API to standardize phishing-resistant authentication across enterprise environments. <a href="https://www.bleepingcomputer.com/news/security/bitwarden-adds-support-for-passkey-login-on-windows-11/" target="_blank">More info</a></li>
+    <li><strong>LeakBase cybercrime forum seized</strong>: International law enforcement took down LeakBase, a hub for selling stolen credentials and exploit kits. The seizure is expected to lead to investigations into the forum's high-profile users. <a href="https://hackread.com/leakbase-cybercrime-hacker-forum-seized/" target="_blank">More info</a></li>
 
-    <li><strong>FBI/Europol Seize LeakBase Database</strong>: Authorities took down the prominent data-selling forum, gaining access to 142,000 member profiles and 215,000 private messages. This major intelligence haul is already being used to de-anonymize top-tier cybercriminals. <a href="https://www.bleepingcomputer.com/news/security/fbi-seizes-leakbase-cybercrime-forum-data-of-142-000-members/" target="_blank">More info</a></li>
-
-    <li><strong>Global 6G Security Guidelines Released</strong>: The GCOT coalition published principles for "security by design" in 6G technology. The focus is on quantum-resistant confidentiality and strict isolation from legacy vulnerabilities. <a href="https://www.infosecurity-magazine.com/news/gcot-6g-cybersecurity-guidelines/" target="_blank">More info</a></li>
+    <li><strong>Ukrainian gambling/trafficking ring dismantled</strong>: Police took down a criminal group that combined illegal online gambling with human trafficking and debt bondage, exploiting vulnerable Ukrainian women through digital recruitment. <a href="https://www.bleepingcomputer.com/news/security/police-dismantles-online-gambling-ring-exploiting-ukrainian-women/" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
