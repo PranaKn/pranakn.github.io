@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 11/03/26</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 11/03/26</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>CISA adds SolarWinds, Ivanti, and Omnissa flaws to KEV</strong>: CISA has added three high-impact vulnerabilities to its Known Exploited Vulnerabilities catalog. The most critical, CVE-2025-26399 in SolarWinds Web Help Desk, is a deserialization flaw allowing unauthenticated RCE, currently used by ransomware groups. Also added were CVE-2026-1603 (Ivanti Endpoint Manager auth bypass) and CVE-2021-22054 (Omnissa Workspace ONE UEM SSRF). Federal agencies must patch these by late March 2026. <a href="https://www.cisa.gov/news-events/alerts/2026/03/09/cisa-adds-three-known-exploited-vulnerabilities-catalog" target="_blank">More info</a></li>
+
+    <li><strong>Overly permissive Salesforce Cloud configs expose data</strong>: Research highlights a growing risk where Salesforce Community and Experience Cloud misconfigurations grant "Guest" users excessive access to internal objects. Attackers are actively scanning for these errors to exfiltrate customer lists and internal communications. Organizations are urged to audit sharing rules as part of the shared responsibility model. <a href="https://www.darkreading.com/application-security/overly-permissive-salesforce-cloud-configs-crosshairs" target="_blank">More info</a></li>
+
+    <li><strong>Zero-click Windows info disclosure bug</strong>: A critical vulnerability in Windows allows remote attackers to leak sensitive memory contents without user interaction. The flaw resides in network packet processing and can be triggered by sending a crafted request over the local network or internet. Microsoft has issued patches and stresses immediate updates. <a href="https://www.theregister.com/2026/03/10/zeroclick_microsoft_info_disclosure_bug/" target="_blank">More info</a></li>
+
+    <li><strong>March 2026 Patch Tuesday fixes 83 flaws</strong>: Microsoft addressed 83 vulnerabilities, including two zero-days exploited in the wild. Fixes include critical RCE bugs in Office and Exchange Server, and an elevation of privilege flaw allowing SYSTEM-level access. Administrators should prioritize these patches to prevent lateral movement. <a href="https://hackread.com/shinyhunters-hackers-threat-stolen-salesforce-data/" target="_blank">More info</a></li>
+
+    <li><strong>Adobe releases massive update for 80 vulnerabilities</strong>: Adobe patched 80 flaws across Acrobat, Reader, and Photoshop. Many are critical memory corruption or out-of-bounds issues that could lead to RCE. While no active exploits are reported, the volume of patches necessitates rapid deployment. <a href="https://blogs.cisco.com/security/social-media-impersonation-the-brand-threat-dmarc-cant-see" target="_blank">More info</a></li>
+
+    <li><strong>Max-severity RCE in PAC4J security library</strong>: A critical flaw in the open-source PAC4J Java library allows remote code execution in specific configurations. Given its integration into numerous enterprise platforms, developers are urged to update immediately to secure the software supply chain. <a href="https://cyberscoop.com/pac4j-open-source-library-vulnerability-max-severity-risk/" target="_blank">More info</a></li>
+
+    <li><strong>SAP patches critical FS-QUO and NetWeaver flaws</strong>: Monthly security notes address high-impact vulnerabilities that could allow administrative access or arbitrary code execution. These updates are vital for protecting core business operations and financial processing environments. <a href="https://www.securityweek.com/sap-patches-critical-fs-quo-netweaver-vulnerabilities/" target="_blank">More info</a></li>
+
+    <li><strong>"Fuzzing" AI judges bypasses LLM filters</strong>: Unit 42 research shows that systematically testing input variations can trick AI content moderators into approving malicious prompts. This reveals a weakness in relying solely on AI for security oversight, necessitating multi-layered defenses. <a href="https://unit42.paloaltonetworks.com/fuzzing-ai-judges-security-bypass/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>BlackSanta malware targets HR with EDR killers</strong>: A new malware family, BlackSanta, targets HR departments via phishing resumes. It features precision-engineered capabilities to disable or bypass EDR solutions, facilitating the deployment of secondary payloads. <a href="https://www.bleepingcomputer.com/news/security/new-blacksanta-edr-killer-spotted-targeting-hr-departments/" target="_blank">More info</a></li>
+
+    <li><strong>BeatBanker Android malware masquerades as Starlink</strong>: Cybercriminals are using a fake Starlink app to deliver BeatBanker malware. It abuses accessibility permissions to steal credentials, intercept SMS, and drain bank accounts, effectively bypassing MFA. <a href="https://www.bleepingcomputer.com/news/security/new-beatbanker-android-malware-poses-as-starlink-app-to-hijack-devices/" target="_blank">More info</a></li>
+
+    <li><strong>Sednit (Fancy Bear) revamps espionage toolkit</strong>: The APT group has surfaced with updated backdoors, Beardshell and Covenant, featuring enhanced anti-analysis routines. The campaign targets government and military networks for long-term intelligence gathering. <a href="https://www.darkreading.com/cyber-risk/sednit-resurfaces-with-sophisticated-new-toolkit" target="_blank">More info</a></li>
+
+    <li><strong>ShinyHunters claims theft of Salesforce customer data</strong>: The group alleges they have accessed a massive cache of records via credential stuffing or third-party integrations. While the platform remains secure, specific organizations are being threatened with data leaks on dark web forums. <a href="https://hackread.com/shinyhunters-hackers-threat-stolen-salesforce-data/" target="_blank">More info</a></li>
+
+    <li><strong>China-linked actors use fake war news to target Qatar</strong>: A sophisticated backdoor campaign uses AI-generated news lures to target Qatari entities. The operation focuses on long-term intelligence collection and remote command execution. <a href="https://hackread.com/china-hackers-qatar-backdoor-fake-war-news/" target="_blank">More info</a></li>
+
+    <li><strong>Kadnap malware infects 14,000 Edge devices</strong>: A massive botnet of routers and IoT gateways has been formed by Kadnap malware. It specializes in traffic redirection and credential theft, residing in device firmware to evade detection. <a href="https://thehackernews.com/2026/03/kadnap-malware-infects-14000-edge.html" target="_blank">More info</a></li>
+
+    <li><strong>SIM swapping exploits identity security flaws</strong>: Attackers continue to hijack phone numbers via social engineering to intercept SMS-based MFA. Experts advocate for a transition toward FIDO2 security keys and biometrics to replace telecom-dependent identity anchors. <a href="https://www.securityweek.com/sim-swaps-expose-a-critical-flaw-in-identity-security/" target="_blank">More info</a></li>
+
+    <li><strong>Fake CleanMyMac site delivers "ClickFix" malware</strong>: A fraudulent site impersonating the utility distributes a payload that captures keystrokes and provides remote access. The campaign uses SEO tactics to lure macOS users into downloading the malicious tool. <a href="https://hackread.com/fake-cleanmymac-site-clickfix-shub-stealer-macos/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>"Zombie ZIP" technique bypasses file scanners</strong>: A new method exploits how different ZIP parsers handle malformed headers, allowing malicious payloads to remain invisible to security gateways while remaining executable by OS tools. <a href="https://www.bleepingcomputer.com/news/security/new-zombie-zip-technique-lets-malware-slip-past-security-tools/" target="_blank">More info</a></li>
+
+    <li><strong>Fortigate devices targeted for network pivoting</strong>: Attackers are exploiting FortiOS vulnerabilities to establish backdoors. Once compromised, these devices are used to move laterally and access sensitive internal network segments. <a href="https://securityaffairs.com/189241/security/attackers-exploit-fortigate-devices-to-access-sensitive-network-information.html" target="_blank">More info</a></li>
+
+    <li><strong>Social media impersonation bypasses DMARC</strong>: Cisco reports a rise in fake executive profiles used for social engineering. These attacks happen outside email infrastructure, rendering traditional DMARC and filters ineffective against credential harvesting. <a href="https://blogs.cisco.com/security/social-media-impersonation-the-brand-threat-dmarc-cant-see" target="_blank">More info</a></li>
+
+    <li><strong>WordPress sites hijacked via unpatched plugins</strong>: Thousands of sites are being compromised to redirect visitors to phishing pages or join DDoS botnets. Administrators are urged to audit and update all active plugins immediately. <a href="https://www.theregister.com/2026/03/10/crooks_hijack_wordpress_sites/" target="_blank">More info</a></li>
+
+    <li><strong>Cloud attackers favor exploits over credential theft</strong>: A shift in strategy shows threat actors targeting unpatched software in cloud-native environments. This highlights the need for automated patching and robust vulnerability management in the cloud. <a href="https://www.infosecurity-magazine.com/news/cloud-attackers-prefer-exploits/" target="_blank">More info</a></li>
+
+    <li><strong>Lazarus Group targets executives via LinkedIn</strong>: Fake job interview offers are being used to deliver malware to CEOs in the crypto and finance sectors. The campaign involves downloading malicious "interview materials" to breach corporate networks. <a href="https://hackread.com/fake-linkedin-interview-lazarus-hackers-allsecure-ceo/" target="_blank">More info</a></li>
+
+    <li><strong>Surge in resume-themed malware targeting recruiters</strong>: HR staff are seeing a spike in malicious attachments disguised as resumes. These payloads often include info-stealers, necessitating the use of sandboxing for all external documents. <a href="https://www.helpnetsecurity.com/2026/03/10/hr-recruiters-malware-resume/" target="_blank">More info</a></li>
+
+    <li><strong>AiTM phishing targets AWS sessions</strong>: A sophisticated campaign uses proxy servers to intercept AWS credentials and session cookies in real-time, bypassing traditional MFA. Hardware-based security keys are recommended as a defense. <a href="https://www.helpnetsecurity.com/2026/03/10/aitm-phishing-aws-accounts/" target="_blank">More info</a></li>
+
+    <li><strong>FBI warns of fraudulent zoning permit fee scams</strong>: Scammers are sending emails appearing to be from local governments demanding immediate payment for permit fees. These lead to fraudulent portals designed to steal credit card data. <a href="https://www.helpnetsecurity.com/2026/03/10/fbi-phishing-scheme-planning-zoning-permit-fees/" target="_blank">More info</a></li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Ericsson breach affects thousands via third-party</strong>: A breach at a third-party service provider has exposed sensitive employee and partner information at Ericsson. The company is working with law enforcement to mitigate risks associated with the supply chain compromise. <a href="https://www.securityweek.com/thousands-affected-by-ericsson-data-breach/" target="_blank">More info</a></li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
