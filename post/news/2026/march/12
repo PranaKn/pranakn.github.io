@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📰 Cybersecurity Newsfeed - 12/03/26</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
+  <style>
+    body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
+    h1 { text-align: center; color: #c9a227; }
+    h2 { text-align: center; color: #c9a227; border-bottom: 2px solid #444; padding-bottom: 5px; }
+    a { color: #c9a227; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    li { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Cybersecurity Newsfeed</h1>
+  <h2>📅 12/03/26</h2>
+
+  <h2>🛡️ Vulnerabilities</h2>
+  <ul>
+    <li><strong>CNCERT issues critical alert for OpenClaw AI</strong>: China’s National Computer Network Emergency Response Technical Team identified severe risks in the OpenClaw autonomous AI agent, including prompt injection vulnerabilities that leak system keys and malicious plugins capable of deploying backdoors. Users are urged to restrict management port access and disable automatic updates.</li>
+
+    <li><strong>Critical SQL Injection in WordPress Ally Plugin (CVE-2026-2413)</strong>: Impacting over 250,000 installations, a flaw in the Ally – Web Accessibility & Usability plugin allows unauthenticated attackers to extract database information, including password hashes, via blind injection. Elementor has released version 4.1.0 to address the issue.</li>
+
+    <li><strong>CISA adds n8n RCE (CVE-2026-21858) to KEV Catalog</strong>: A critical vulnerability in the n8n workflow automation platform allows unauthenticated command execution on underlying servers. Federal agencies are mandated to patch by upgrading to version 1.121.0 or later to mitigate active exploitation risks.</li>
+
+    <li><strong>Zero-click prompt injection in Perplexity Comet AI</strong>: Researchers demonstrated how embedding hidden instructions in common files like calendar invites can trick the AI into exfiltrating local files and passwords without user interaction, highlighting systemic risks in agentic AI systems.</li>
+
+    <li><strong>HPE patches critical Aruba AOS-CX auth bypass</strong>: Hewlett Packard Enterprise released patches for an authentication bypass vulnerability that allows unauthenticated remote attackers to reset administrative passwords and gain full control over network switches.</li>
+  </ul>
+
+  <h2>🎯 Adversaries</h2>
+  <ul>
+    <li><strong>Handala group claims Stryker and Verifone breaches</strong>: The Iran-linked group Handala alleges it exfiltrated 50TB of data and deployed the "GhostClaw" wiper malware against medical tech giant Stryker, paralyzing global operations. The group cited retribution for military strikes as the motive for targeting Stryker and Verifone.</li>
+
+    <li><strong>North Korean "Contagious Interview" targeting developers</strong>: Threat actors are impersonating recruiters from crypto or AI firms to engage developers in technical interviews. Victims are persuaded to execute malicious packages on GitHub or Bitbucket, delivering the FlexibleFerret backdoor to steal corporate secrets and private keys.</li>
+
+    <li><strong>PhantomRaven campaign hits npm ecosystem</strong>: Attackers used 88 malicious packages, employing "slopsquatting" to mimic legitimate tools, to steal developer credentials and CI/CD secrets. Notable packages like @openclaw-ai/openclawai were used to deploy multi-stage infostealers.</li>
+
+    <li><strong>Houken intrusion set targets French infrastructure</strong>: Linked to Chinese state-sponsored actors, this group utilized zero-day exploits in Ivanti CSA devices to gain access to governmental and telecom sectors. They deployed kernel-mode rootkits and custom PHP webshells to maintain long-term persistence.</li>
+
+    <li><strong>Silver Dragon shifts focus to Gulf Region</strong>: Chinese-nexus threat actors have pivoted toward Qatar and Iranian-related entities, using conflict-related lures in spearphishing campaigns to collect sensitive geopolitical data amid rising regional tensions.</li>
+
+    <li><strong>BlackSanta targets HR with resume-themed ISOs</strong>: Russian-speaking attackers are distributing ISO files that contain modules designed to terminate AV and EDR software upon mounting. Once the security perimeter is neutralized, the malware exfiltrates sensitive employee data.</li>
+  </ul>
+
+  <h2>📈 Trends</h2>
+  <ul>
+    <li><strong>Military conflict drives retaliatory cyber risks</strong>: Fitch Ratings and security analysts warn that the ongoing campaign against Iran has escalated risks for U.S. public entities. State-sponsored actors are increasingly targeting critical infrastructure, including power and water utilities, with destructive malware.</li>
+
+    <li><strong>IPv6 obfuscation used in "Free Toothbrush" scams</strong>: Phishers are using hexadecimal IPv6 representations in hostnames to bypass reputation-based filters. This technique successfully evades many automated scanners that primarily inspect traditional URLs or IPv4 patterns.</li>
+
+    <li><strong>Looker Studio exploited for phishing and filter bypass</strong>: Attackers are using Google Looker Studio to host phishing pages, leveraging the trusted Google domain to evade security scanners. Reports show the "vulnerability-to-exploitation" window is shrinking to just a few days.</li>
+
+    <li><strong>ClickFix social engineering hits 250+ WordPress sites</strong>: A campaign using fraudulent Cloudflare Captchas or browser error messages tricks users into running malicious commands via the Windows Run box, delivering payloads like Vidar or Double Donut stealers.</li>
+
+    <li><strong>AI-driven social engineering in Rust crates</strong>: Five malicious crates on Crates.io were found using AI bots to interact with developers via GitHub issues, encouraging the execution of malicious scripts to exfiltrate SSH keys and source code.</li>
+  </ul>
+
+  <h2>💥 Breaches & Leaks</h2>
+  <ul>
+    <li><strong>Xygeni-action GitHub Action supply chain compromise</strong>: The Xygeni Scanner suffered a "tag poisoning" attack where the v5 tag was moved to a malicious commit. Workflows referencing @v5 between March 3–10, 2026, may have executed a C2 implant on CI runners.</li>
+
+    <li><strong>BeatBanker trojan targets Brazilian Android users</strong>: Distributed via fake Google Play sites, this malware uses an inaudible audio loop for persistence and leverages accessibility permissions to overlay banking apps with fraudulent screens to steal credentials.</li>
+
+    <li><strong>Michelin data leaked by Cl0p ransomware group</strong>: Attackers exploited a zero-day in Oracle’s E-Business Suite to steal 315GB of files from the tire manufacturer. While Michelin states systems remain intact, leaked archives contain sensitive internal data.</li>
+
+    <li><strong>Enterprise vendors release massive security updates</strong>: Microsoft, SAP, Fortinet, and Ivanti released critical patches this month. Notable fixes include an SAP deserialization flaw (CVSS 9.1) and multiple zero-days in Windows and Office components.</li>
+  </ul>
+
+  <h2>📚 Others</h2>
+  <ul>
+    <li><strong>Fake Claude Code installers deliver malware</strong>: Attackers are using malicious ads to direct developers to cloned websites for Anthropic’s "Claude Code." One-line terminal commands download infostealers instead of the legitimate AI assistant.</li>
+
+    <li><strong>Technical deep dive into BeatBanker distribution</strong>: Kaspersky researchers detailed how the malware uses fake "Starlink" apps and Google's Firebase Cloud Messaging for C2, utilizing fixed foreground notifications to hinder removal efforts.</li>
+  </ul>
+
+  <p style="text-align:center;">
+    <a href="https://pranakn.github.io" target="_blank">⬅ Back to Archive</a>
+  </p>
+</body>
+</html>
