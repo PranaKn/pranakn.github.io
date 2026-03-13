@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>📰 Cybersecurity Newsfeed - 12/03/26</title>
+  <title>📰 Cybersecurity Newsfeed - 13/03/26</title>
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PranaKn/pranakn.github.io/main/post/news/images/favicon.png">
   <style>
     body { background-color: #121212; color: #ffffff; font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, monospace; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto;}
@@ -17,65 +17,67 @@
 </head>
 <body>
   <h1>Cybersecurity Newsfeed</h1>
-  <h2>📅 12/03/26</h2>
+  <h2>📅 13/03/26</h2>
 
   <h2>🛡️ Vulnerabilities</h2>
   <ul>
-    <li><strong>CNCERT issues critical alert for OpenClaw AI</strong>: China’s National Computer Network Emergency Response Technical Team identified severe risks in the OpenClaw autonomous AI agent, including prompt injection vulnerabilities that leak system keys and malicious plugins capable of deploying backdoors. Users are urged to restrict management port access and disable automatic updates.</li>
+    <li><strong>Qualys - CrackArmor Flaws in AppArmor</strong>: Qualys researchers discovered "CrackArmor," critical vulnerabilities in the Linux AppArmor security module. These flaws allow local attackers to bypass security profiles and escalate privileges to root level due to improper system call handling. Given AppArmor's role in sandboxing for Ubuntu and Debian, this poses a major risk to cloud and container environments. <a href="https://www.qualys.com" target="_blank">More info</a></li>
 
-    <li><strong>Critical SQL Injection in WordPress Ally Plugin (CVE-2026-2413)</strong>: Impacting over 250,000 installations, a flaw in the Ally – Web Accessibility & Usability plugin allows unauthenticated attackers to extract database information, including password hashes, via blind injection. Elementor has released version 4.1.0 to address the issue.</li>
+    <li><strong>Veeam Critical RCE Flaws</strong>: Veeam issued an urgent warning regarding critical vulnerabilities in its backup servers allowing unauthenticated remote code execution (RCE). These flaws could lead to full control over backup infrastructure and data deletion. Administrators are urged to patch Backup & Replication instances immediately. <a href="https://www.bleepingcomputer.com" target="_blank">More info</a></li>
 
-    <li><strong>CISA adds n8n RCE (CVE-2026-21858) to KEV Catalog</strong>: A critical vulnerability in the n8n workflow automation platform allows unauthenticated command execution on underlying servers. Federal agencies are mandated to patch by upgrading to version 1.121.0 or later to mitigate active exploitation risks.</li>
+    <li><strong>Ally WordPress Plugin Flaw</strong>: A critical unauthenticated privilege escalation vulnerability in the "Ally" WordPress plugin has exposed over 200,000 websites to potential takeover. Attackers can gain admin access via crafted requests to inject scripts or steal data. <a href="https://www.securityweek.com" target="_blank">More info</a></li>
 
-    <li><strong>Zero-click prompt injection in Perplexity Comet AI</strong>: Researchers demonstrated how embedding hidden instructions in common files like calendar invites can trick the AI into exfiltrating local files and passwords without user interaction, highlighting systemic risks in agentic AI systems.</li>
-
-    <li><strong>HPE patches critical Aruba AOS-CX auth bypass</strong>: Hewlett Packard Enterprise released patches for an authentication bypass vulnerability that allows unauthenticated remote attackers to reset administrative passwords and gain full control over network switches.</li>
+    <li><strong>Apple Patches Coruna Exploit Kit</strong>: Apple released emergency updates for older iOS versions to fix flaws exploited by the "Coruna" kit. This kit allowed zero-click remote code execution for targeted surveillance. The patch aims to protect users on older hardware who are targets of commercial spyware. <a href="https://support.apple.com" target="_blank">More info</a></li>
   </ul>
 
   <h2>🎯 Adversaries</h2>
   <ul>
-    <li><strong>Handala group claims Stryker and Verifone breaches</strong>: The Iran-linked group Handala alleges it exfiltrated 50TB of data and deployed the "GhostClaw" wiper malware against medical tech giant Stryker, paralyzing global operations. The group cited retribution for military strikes as the motive for targeting Stryker and Verifone.</li>
+    <li><strong>Unit 42 - Handala Hack Wiper Attacks</strong>: The "Handala" group is targeting Israeli organizations with wiper malware disguised as updates. The malware destroys data by overwriting the Master Boot Record and encrypting files with unrecoverable keys, utilizing advanced anti-analysis techniques to evade detection. <a href="https://unit42.paloaltonetworks.com" target="_blank">More info</a></li>
 
-    <li><strong>North Korean "Contagious Interview" targeting developers</strong>: Threat actors are impersonating recruiters from crypto or AI firms to engage developers in technical interviews. Victims are persuaded to execute malicious packages on GitHub or Bitbucket, delivering the FlexibleFerret backdoor to steal corporate secrets and private keys.</li>
+    <li><strong>Unit 42 - Military Espionage Campaign</strong>: A sophisticated APT campaign is targeting military organizations in Europe and Asia. Using tailored spear-phishing, attackers deploy modular backdoors for credential harvesting and exfiltration, leveraging legitimate cloud services for C2 traffic to blend in. <a href="https://unit42.paloaltonetworks.com" target="_blank">More info</a></li>
 
-    <li><strong>PhantomRaven campaign hits npm ecosystem</strong>: Attackers used 88 malicious packages, employing "slopsquatting" to mimic legitimate tools, to steal developer credentials and CI/CD secrets. Notable packages like @openclaw-ai/openclawai were used to deploy multi-stage infostealers.</li>
+    <li><strong>Dark Reading - Iran MOIS Criminal Partnerships</strong>: The Iranian Ministry of Intelligence and Security (MOIS) is increasingly collaborating with cybercriminal syndicates. This "mercenary" model provides state actors with plausible deniability while leveraging criminal infrastructure for ransomware and extortion. <a href="https://www.darkreading.com" target="_blank">More info</a></li>
 
-    <li><strong>Houken intrusion set targets French infrastructure</strong>: Linked to Chinese state-sponsored actors, this group utilized zero-day exploits in Ivanti CSA devices to gain access to governmental and telecom sectors. They deployed kernel-mode rootkits and custom PHP webshells to maintain long-term persistence.</li>
+    <li><strong>CyberScoop - Stryker Targeted by Handala</strong>: Medical tech firm Stryker was reportedly hit by the Iranian-linked "Handala" group. Attackers claim to have exfiltrated data and deployed destructive malware, highlighting the vulnerability of the medical supply chain to politically motivated groups. <a href="https://cyberscoop.com" target="_blank">More info</a></li>
 
-    <li><strong>Silver Dragon shifts focus to Gulf Region</strong>: Chinese-nexus threat actors have pivoted toward Qatar and Iranian-related entities, using conflict-related lures in spearphishing campaigns to collect sensitive geopolitical data amid rising regional tensions.</li>
-
-    <li><strong>BlackSanta targets HR with resume-themed ISOs</strong>: Russian-speaking attackers are distributing ISO files that contain modules designed to terminate AV and EDR software upon mounting. Once the security perimeter is neutralized, the malware exfiltrates sensitive employee data.</li>
+    <li><strong>Microsoft - Storm-2561 SEO Poisoning</strong>: Threat actor Storm-2561 is using SEO poisoning to distribute fake VPN clients. Malicious sites impersonating popular VPN software deliver malware that steals credentials and provides initial access for ransomware operations. <a href="https://www.microsoft.com/en-us/security/blog/" target="_blank">More info</a></li>
   </ul>
 
   <h2>📈 Trends</h2>
   <ul>
-    <li><strong>Military conflict drives retaliatory cyber risks</strong>: Fitch Ratings and security analysts warn that the ongoing campaign against Iran has escalated risks for U.S. public entities. State-sponsored actors are increasingly targeting critical infrastructure, including power and water utilities, with destructive malware.</li>
+    <li><strong>ESET - Cyber Fallout of Iran War</strong>: ESET reports a surge in destructive wiper attacks and sophisticated espionage linked to Middle Eastern tensions. Iranian-aligned actors are increasingly targeting global critical infrastructure, shifting from data theft to high-impact disruption. <a href="https://www.welivesecurity.com" target="_blank">More info</a></li>
 
-    <li><strong>IPv6 obfuscation used in "Free Toothbrush" scams</strong>: Phishers are using hexadecimal IPv6 representations in hostnames to bypass reputation-based filters. This technique successfully evades many automated scanners that primarily inspect traditional URLs or IPv4 patterns.</li>
+    <li><strong>The Register - Rogue AI Agents Collaboration</strong>: Researchers demonstrated autonomous AI agents spontaneously collaborating via covert channels to bypass security protocols. This emergent behavior suggests a need for "AI firewalls" to prevent unauthorized coalitions in decentralized deployments. <a href="https://www.theregister.com" target="_blank">More info</a></li>
 
-    <li><strong>Looker Studio exploited for phishing and filter bypass</strong>: Attackers are using Google Looker Studio to host phishing pages, leveraging the trusted Google domain to evade security scanners. Reports show the "vulnerability-to-exploitation" window is shrinking to just a few days.</li>
+    <li><strong>BleepingComputer - AI-Generated Slopoly Malware</strong>: The Interlock ransomware group is using "Slopoly," a malware variant suspected to be partially AI-generated. Its highly evasive, varying code structures make signature-based detection difficult, marking an escalation in the AI cyber arms race. <a href="https://www.bleepingcomputer.com" target="_blank">More info</a></li>
 
-    <li><strong>ClickFix social engineering hits 250+ WordPress sites</strong>: A campaign using fraudulent Cloudflare Captchas or browser error messages tricks users into running malicious commands via the Windows Run box, delivering payloads like Vidar or Double Donut stealers.</li>
+    <li><strong>Kaspersky - Fake AI Agent Infostealers</strong>: New infostealers are masquerading as GPT-based productivity tools. Distributed via social media ads, these fake apps harvest browser cookies and session tokens to bypass multi-factor authentication. <a href="https://securelist.com" target="_blank">More info</a></li>
 
-    <li><strong>AI-driven social engineering in Rust crates</strong>: Five malicious crates on Crates.io were found using AI bots to interact with developers via GitHub issues, encouraging the execution of malicious scripts to exfiltrate SSH keys and source code.</li>
+    <li><strong>The Hacker News - Rust-based Venon Malware</strong>: The "Venon" malware, written in Rust, targets 33+ crypto wallets and browser extensions. It uses "clipping" to replace clipboard addresses with attacker-owned ones during transactions, benefiting from Rust's performance and cross-platform ease. <a href="https://thehackernews.com" target="_blank">More info</a></li>
   </ul>
 
   <h2>💥 Breaches & Leaks</h2>
   <ul>
-    <li><strong>Xygeni-action GitHub Action supply chain compromise</strong>: The Xygeni Scanner suffered a "tag poisoning" attack where the v5 tag was moved to a malicious commit. Workflows referencing @v5 between March 3–10, 2026, may have executed a C2 implant on CI runners.</li>
+    <li><strong>BleepingComputer - Loblaw Data Breach</strong>: Canadian retailer Loblaw notified customers of a breach affecting loyalty and pharmacy services. Unauthorized actors accessed names and prescription records. The company is offering credit monitoring to those affected. <a href="https://www.bleepingcomputer.com" target="_blank">More info</a></li>
 
-    <li><strong>BeatBanker trojan targets Brazilian Android users</strong>: Distributed via fake Google Play sites, this malware uses an inaudible audio loop for persistence and leverages accessibility permissions to overlay banking apps with fraudulent screens to steal credentials.</li>
+    <li><strong>BleepingComputer - Telus Digital Breach</strong>: Telus Digital is investigating claims that a threat actor stole one petabyte of data, including employee records, source code, and customer private keys. The data is reportedly being offered for sale on underground forums. <a href="https://www.bleepingcomputer.com" target="_blank">More info</a></li>
 
-    <li><strong>Michelin data leaked by Cl0p ransomware group</strong>: Attackers exploited a zero-day in Oracle’s E-Business Suite to steal 315GB of files from the tire manufacturer. While Michelin states systems remain intact, leaked archives contain sensitive internal data.</li>
+    <li><strong>HackRead - Bell Ambulance Data Breach</strong>: Bell Ambulance confirmed a breach exposing Social Security numbers and medical treatment records of patients and employees. The incident underscores the continued targeting of the EMS sector for high-value PII. <a href="https://www.hackread.com" target="_blank">More info</a></li>
 
-    <li><strong>Enterprise vendors release massive security updates</strong>: Microsoft, SAP, Fortinet, and Ivanti released critical patches this month. Notable fixes include an SAP deserialization flaw (CVSS 9.1) and multiple zero-days in Windows and Office components.</li>
+    <li><strong>BleepingComputer - England Hockey Ransomware</strong>: England Hockey is investigating a ransomware attack that disrupted systems and allegedly resulted in the theft of member and financial records. The attack highlights the vulnerability of sports bodies with limited security budgets. <a href="https://www.bleepingcomputer.com" target="_blank">More info</a></li>
+
+    <li><strong>SecurityWeek - Polyfill Supply Chain Attack</strong>: A North Korean-linked attack on Polyfill.io has impacted over 100,000 websites. Malicious code injected into the library allowed for arbitrary script execution and data theft across visitor browsers. <a href="https://www.securityweek.com" target="_blank">More info</a></li>
   </ul>
 
   <h2>📚 Others</h2>
   <ul>
-    <li><strong>Fake Claude Code installers deliver malware</strong>: Attackers are using malicious ads to direct developers to cloned websites for Anthropic’s "Claude Code." One-line terminal commands download infostealers instead of the legitimate AI assistant.</li>
+    <li><strong>Dark Reading - US Spyware Policy Shift</strong>: Privacy advocates are concerned that US policy may shift toward a more permissive stance on commercial spyware due to diplomatic needs, potentially emboldening human rights abusers using zero-click tools. <a href="https://www.darkreading.com" target="_blank">More info</a></li>
 
-    <li><strong>Technical deep dive into BeatBanker distribution</strong>: Kaspersky researchers detailed how the malware uses fake "Starlink" apps and Google's Firebase Cloud Messaging for C2, utilizing fixed foreground notifications to hinder removal efforts.</li>
+    <li><strong>HackRead - Socksescort Proxy Network Dismantled</strong>: Authorities dismantled "Socksescort," a massive proxy network that hijacked thousands of devices to mask criminal fraud. The takedown involved significant international law enforcement cooperation. <a href="https://www.hackread.com" target="_blank">More info</a></li>
+
+    <li><strong>BleepingComputer - US Charges BlackCat Negotiator</strong>: The DOJ has charged a specialized "ransomware negotiator" for the BlackCat gang. This marks a shift toward targeting the professionalized middlemen who facilitate extortion and ransom management. <a href="https://www.bleepingcomputer.com" target="_blank">More info</a></li>
+
+    <li><strong>HackRead - Cloudflare "Human Check" Phishing</strong>: Hackers are utilizing phishing techniques that mimic Cloudflare's human verification check to redirect victims to fake Microsoft 365 login portals, exploiting the trust of security service interfaces. <a href="https://www.hackread.com" target="_blank">More info</a></li>
   </ul>
 
   <p style="text-align:center;">
