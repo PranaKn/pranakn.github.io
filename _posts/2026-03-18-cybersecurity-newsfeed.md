@@ -1,6 +1,6 @@
 ---
 title: "Cybersecurity Newsfeed - 18/03/26"
-date: 2026-03-18 09:00:00 -0300
+date: 2026-03-17 09:00:00 -0300
 categories: [News]
 tags: [cybersecurity, vulnerabilities, threat-intelligence, breaches, malware]
 pin: false
