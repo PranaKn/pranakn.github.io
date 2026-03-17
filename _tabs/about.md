@@ -5,8 +5,6 @@ icon: fas fa-info-circle
 order: 1
 ---
 
-## 🛡️ About
-
 Welcome to the **Cybersecurity Knowledge Hub**.
 
 This site is a collection of notes, research, and observations about the evolving world of cybersecurity. It focuses primarily on **defensive security**, exploring how attacks happen, how they are detected, and how defenders can better understand the behavior of adversaries.
