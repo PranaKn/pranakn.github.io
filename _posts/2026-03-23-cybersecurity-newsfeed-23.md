@@ -43,7 +43,7 @@ image:
 
 - **VoidStealer Targets Chrome via Debugger Trick**: A new malware variant, VoidStealer, attaches a debugger to the Chrome process to exfiltrate the browser's master key. This allows attackers to decrypt saved passwords, cookies, and autofill data by bypassing standard security protections. [More info](https://www.bleepingcomputer.com/news/security/voidstealer-malware-steals-chrome-master-key-via-debugger-trick/)
 
-- **Android "Advanced Flow" for Sideloading**: Google has introduced a new security workflow for Android to mitigate risks from APK sideloading. It adds additional verification steps and warnings when users install apps from third-party sources. [More info](https://www.bleepingcomputer.com/news/security/google-adds-advanced-flow-for-safe-apk-sideloading-on-android/) | [More info](https://www.helpnetsecurity.com/2026/03/20/android-advanced-flow-sideloading-steps/)
+- **Android "Advanced Flow" for Sideloading**: Google has introduced a new security workflow for Android to mitigate risks from APK sideloading. It adds additional verification steps and warnings when users install apps from third-party sources. [More info](https://www.bleepingcomputer.com/news/security/google-adds-advanced-flow-for-safe-apk-sideloading-on-android/)
 
 - **Azure Monitor Alerts Abused in Callback Phishing**: Cybercriminals are abusing Microsoft Azure Monitor alerts in callback phishing campaigns. Attackers send fraudulent notifications that prompt users to call a fake support number to "resolve" system issues. [More info](https://www.bleepingcomputer.com/news/security/microsoft-azure-monitor-alerts-abused-in-callback-phishing-campaigns/)
 
