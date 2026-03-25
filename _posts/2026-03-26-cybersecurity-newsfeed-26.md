@@ -1,6 +1,6 @@
 ---
 title: "Cybersecurity Newsfeed - 26/03/26"
-date: 2026-03-26 09:00:00 -0300
+date: 2026-03-25 09:00:00 -0300
 categories: [News]
 permalink: /posts/news-26-03/
 tags: [cybersecurity, vulnerabilities, threat-intelligence, breaches, malware, AI-security]
