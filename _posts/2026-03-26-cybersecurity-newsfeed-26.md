@@ -31,7 +31,7 @@ image:
 
 - **PolyShell Targets Magento Stores**: Over 56% of vulnerable Magento e-commerce stores are being targeted in a campaign to inject scripts that steal customer payment info and admin credentials. [More info](https://www.bleepingcomputer.com/news/security/polyshell-attacks-target-56-percent-of-all-vulnerable-magento-stores/)
 
-- **Russian Botnet Operator Convicted**: A Russian national was convicted and sentenced in the U.S. for operating a sophisticated botnet that facilitated large-scale ransomware and DDoS attacks against U.S. corporations. [More info](https://securityaffairs.com/189987/cyber-crime/russian-national-convicted-for-running-botnet-used-in-attacks-on-u-s-firms.html) | [More info](https://www.bleepingcomputer.com/news/security/russian-man-sentenced-for-operating-botnet-used-in-attacks-on-u-s-firms/)
+- **Russian Botnet Operator Convicted**: A Russian national was convicted and sentenced in the U.S. for operating a sophisticated botnet that facilitated large-scale ransomware and DDoS attacks against U.S. corporations. [More info](https://securityaffairs.com/189987/cyber-crime/russian-national-convicted-for-running-botnet-used-in-attacks-on-u-s-firms.html)
 
 - **Mirai Malware Fueling IoT Botnet Growth**: New variants of Mirai are targeting modern smart devices and industrial controllers to expand botnets used for massive DDoS attacks. [More info](https://hackread.com/mirai-malware-variants-botnet-growth/)
 
