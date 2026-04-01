@@ -9,7 +9,7 @@ toc: true
 comments: true
 description: "Daily cybersecurity news covering vulnerabilities, adversaries, trends, breaches, and other notable security developments."
 image:
-  path: assets/img/posts/newsfeed-2026-04-01.png
+  path: assets/img/posts/newsfeed-2026-04-02.png
   alt: Cybersecurity Newsfeed - 01/04/26
 ---
 
