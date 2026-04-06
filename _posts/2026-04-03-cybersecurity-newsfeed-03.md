@@ -2,6 +2,7 @@
 title: "Cybersecurity Newsfeed - 03/04/26"
 date: 2026-04-02 09:00:00 -0300
 categories: [News]
+permalink: /posts/news-03-04/
 tags: [cybersecurity, vulnerabilities, threat-intelligence, breaches, malware]
 pin: false
 toc: true
