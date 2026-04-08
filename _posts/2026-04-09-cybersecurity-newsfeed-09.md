@@ -29,16 +29,16 @@ image:
 
 ## 🎯 Adversaries
 
-- **APT28 Deploys PrismEx Malware**: The Russia-linked group is targeting Ukraine, Eastern Europe, and allied infrastructure with "PrismEx," a modular toolkit designed for long-term espionage and persistent network access. [More info](https://securityaffairs.com/190510/apt/russia-linked-apt28-uses-prismex-to-infiltrate-ukraine-and-allied-infrastructure-with-advanced-tactics.html) | [More info](https://thehackernews.com/2026/04/apt28-deploys-prismex-malware-in.html)
+- **APT28 Deploys PrismEx Malware**: The Russia-linked group is targeting Ukraine, Eastern Europe, and allied infrastructure with "PrismEx," a modular toolkit designed for long-term espionage and persistent network access. [More info](https://securityaffairs.com/190510/apt/russia-linked-apt28-uses-prismex-to-infiltrate-ukraine-and-allied-infrastructure-with-advanced-tactics.html)
 
 - **UNC6783 Targets Zendesk Instances**: Mandiant identified a new actor harvesting corporate support tickets by leveraging compromised credentials to gain deep insights into internal corporate communications. [More info](https://www.bleepingcomputer.com/news/security/google-new-unc6783-hackers-steal-corporate-zendesk-support-tickets/)
 
-- **Iranian Actors Target U.S. PLCs**: Threat actors are hijacking exposed Programmable Logic Controllers (PLCs) in U.S. critical infrastructure, specifically targeting utility sectors and water treatment facilities. [More info](https://www.darkreading.com/ics-ot-security/iranian-threat-actors-us-critical-infrastructure-exposed-plcs) | [More info](https://thehackernews.com/2026/04/iran-linked-hackers-disrupt-us-critical.html)
+- **Iranian Actors Target U.S. PLCs**: Threat actors are hijacking exposed Programmable Logic Controllers (PLCs) in U.S. critical infrastructure, specifically targeting utility sectors and water treatment facilities. [More info](https://www.darkreading.com/ics-ot-security/iranian-threat-actors-us-critical-infrastructure-exposed-plcs)
 
-- **"ClickFix" macOS and Node.js Campaigns**: New social engineering attacks are tricking users into running malicious scripts via Script Editor or Node.js to steal cryptocurrency and browser cookies. [More info](https://www.bleepingcomputer.com/news/security/new-macos-stealer-campaign-uses-script-editor-in-clickfix-attack/) | [More info](https://hackread.com/clickfix-attack-node-js-malware-tor-steal-crypto/)
+- **"ClickFix" macOS and Node.js Campaigns**: New social engineering attacks are tricking users into running malicious scripts via Script Editor or Node.js to steal cryptocurrency and browser cookies. [More info](https://www.bleepingcomputer.com/news/security/new-macos-stealer-campaign-uses-script-editor-in-clickfix-attack/)
 
-- **Masjesu Botnet Emerges**: A new DDoS-for-hire service is enlisting thousands of IoT devices by exploiting weak credentials and unpatched firmware to launch massive coordinated attacks. [More info](https://thehackernews.com/2026/04/masjesu-botnet-emerges-as-ddos-for-hire.html) | [More info](https://www.securityweek.com/evasive-masjesu-ddos-botnet-targets-iot-devices/)
-
+- **Masjesu Botnet Emerges**: A new DDoS-for-hire service is enlisting thousands of IoT devices by exploiting weak credentials and unpatched firmware to launch massive coordinated attacks. [More info](https://thehackernews.com/2026/04/masjesu-botnet-emerges-as-ddos-for-hire.html)
+  
 ## 📈 Trends
 
 - **Emoji-Based C2 Communication**: Researchers discovered a sophisticated campaign using emoji sequences to hide command-and-control traffic, bypassing traditional string-based detection tools. [More info](https://www.darkreading.com/cyber-risk/emojis-power-covert-threat-actor-communications)
