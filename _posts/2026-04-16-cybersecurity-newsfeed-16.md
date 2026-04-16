@@ -1,6 +1,6 @@
 ---
 title: "Cybersecurity Newsfeed - 16/04/26"
-date: 2026-04-16 09:00:00 -0300
+date: 2026-04-15 09:00:00 -0300
 categories: [News]
 permalink: /posts/news-16-04/
 tags: [cybersecurity, vulnerabilities, threat-intelligence, breaches, malware]
