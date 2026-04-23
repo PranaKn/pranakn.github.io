@@ -47,13 +47,13 @@ Integrity focuses on maintaining the accuracy, reliability and consistency of da
 
 Finally, availability ensures that data and resources are accessible when needed. In other words, authorized users can get their pizza slice whenever they are hungry.
 
+![CIATriad.png](assets/img/posts/CIATriad.png)
+
 ### Enforcing CIA Triad
 
 Now that we understand the core concepts that information security uses to protect a business, let’s dwell into a way to actually enforce it. That’s where AAA framework comes in: Authentication, Authorization and Accounting.
 
 Authentication verifies who you are (are you allowed to have a pizza slice ?), Authorization determines what you can do (can you take a slice or just look at it?), and Accounting tracks what happened (who ate how many slices and when). AAA turns the goals of confidentiality, integrity, and availability into something we can actually control and monitor in practice.
-
-![CIATriad.png](assets/img/posts/CIATriad.png)
 
 ### What are we protecting against?
 
