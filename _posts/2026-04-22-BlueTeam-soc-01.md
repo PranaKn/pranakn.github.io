@@ -251,6 +251,7 @@ Responsible for analyzing malicious programs, files and the awkward looking oliv
 They don’t just see the pizza stolen - they figure out how the thief picked the locked, what tools were used and how to stop it next time.
 
 **Threat Intel Analyst**
+
 Focuses on studying the external threat landscape to track adversaries, campaigns, tools, and techniques, providing context that helps the SOC anticipate attacks.
 
 They are the ones reading about types of pizza thefts across the campus and warn the security teams before it happens here.
