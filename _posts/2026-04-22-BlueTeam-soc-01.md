@@ -237,8 +237,9 @@ At this level, the approach shifts from reactive to proactive. Tier 3 analyst ar
 
 Think of them as detectives who start asking questions before a compromise happens. They investigate behaviors, track patterns, and study attacker techniques - essentially watching the suspicious person outside the pizza room before they even try the door.
 
-**SPECIALIZED ROLES
-Incident Responder**
+**SPECIALIZED ROLES**
+
+**Incident Responder**
 
 The specialist who knows the environment inside out - and the pizza… I mean, the systems and devices. 
 They operate in the middle of chaos and are responsible for containing, eradicating, and recovering from incidents. They understand the tools, the processes, and how everything connects, helping improve defenses and response capabilities over time.
