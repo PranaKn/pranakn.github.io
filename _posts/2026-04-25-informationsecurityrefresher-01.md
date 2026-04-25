@@ -183,7 +183,7 @@ Finally, while not an access control model itself, the principle of Least Privil
 
 **Privilege Creep:** the gradual accumulation of unnecessary access over time (and something we want to avoid).
 
-After this refresher and reviewing the basics of information security, feel free to check out SOC Anatomy here = )
+After this refresher and reviewing the basics of information security, feel free to check out SOC Anatomy [HERE](https://pranakn.github.io/posts/soc-anatomy) = )
 
 ### References
 
