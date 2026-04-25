@@ -187,7 +187,10 @@ After this refresher and reviewing the basics of information security, feel free
 
 ### References
 
-**TCM SOC101** - https://tcm-sec.com/academy/security-operations-soc-101/
+**TCM SOC101** - https://tcm-sec.com/academy/security-operations-soc-101
+
 **HTB - SOC PATH** - https://academy.hackthebox.com/app/paths/390/details
+
 **LetsDefend - SOC rooms** - https://app.letsdefend.io/path/soc-analyst-learning-path
-**Blue Team Handbook** - https://www.amazon.com.br/Blue-Team-Handbook-Condensed-Operations/
+
+**Blue Team Handbook** - https://www.amazon.com.br/Blue-Team-Handbook-Condensed-Operations
