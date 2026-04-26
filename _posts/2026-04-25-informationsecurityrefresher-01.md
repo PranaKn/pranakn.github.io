@@ -95,7 +95,13 @@ Risk is defined as the combination of probability (likelihood) and the impact, o
 
 To illustrate, imagine a web server with a moderate probability (likelihood) of compromise  due to its technologies and patch management practices. If the impact is minor (low) - because it does not represent significant loss to the company - then, based on the above risk matrix, the overall risk would be classified as moderate. 
 
-This process is applied across the organization’s entire attack surface, assigning different risk levels to systems and assets, which helps prioritize security efforts and resource allocation. 
+A common approach is to assign numerical values to both likelihood and impact, and multiply them to calculate the overall risk score. For example, likelyhood values are very Low (1), Low (2), Moderate (3), High (4), Very High (5). And, impact: Negligible (1), Minor (2), Moderate (3), Major (4), Severe (5).
+
+This results in a risk score ranging from 1 to 25, which can be categorized as 1–4: Acceptable, 5–9: Adequate, 10–16: Tolerable, 17–25: Intolerable.
+
+Using the previous example, Likelihood = Moderate (3) and Impact = Minor (2). The resulting risk score is 6, which falls into the adequate category.
+
+This process is applied across the organization’s entire attack surface, assigning risk levels to systems and assets. This enables better prioritization of security efforts and more effective allocation of resources.
 
 This leads us to risk treatment strategies. Based on the calculated risk, we can choose one of the following approaches:
 
@@ -116,6 +122,10 @@ We eliminate the risk by removing the vulnerable element. For instance, replacin
 We reduce the risk to an acceptable level. For example, replacing password-based authentication with SAML - both carry risk, but at different levels.
 
 A dedicated section on risk will be covered later, but for a SOC-focused context, this level of understanding is sufficient. 
+
+There are other ways to calculate risk and use those results to support cybersecurity decisions. FAIR (Factor Analysis of Information Risk) is one of them.
+
+I’ll cover risk in more depth, and provide a broader view of information security in a future post. For now, we’ll stick with this simplified approach.
 
 Now, let’s move on to **Security Policies**.
 
