@@ -1,6 +1,6 @@
 ---
 title: "Cybersecurity Newsfeed - 04/05/26"
-date: 2026-04-03 18:18:00 -0300
+date: 2026-05-03 09:18:00 -0300
 categories: [News]
 permalink: /posts/news-05-04/
 tags: [cybersecurity, vulnerabilities, threat-intelligence, breaches, malware, AI-security]
