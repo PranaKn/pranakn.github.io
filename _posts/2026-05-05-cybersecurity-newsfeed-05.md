@@ -2,6 +2,7 @@
 title: "Cybersecurity Newsfeed - 05/05/26"
 date: 2026-05-04 17:00:00 -0300
 categories: [News]
+permalink: /posts/news-05-05/
 tags: [cybersecurity, vulnerabilities, threat-intelligence, breaches, malware]
 pin: false
 toc: true
