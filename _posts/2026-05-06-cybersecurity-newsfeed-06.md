@@ -1,6 +1,6 @@
 ---
 title: "Cybersecurity Newsfeed - 06/05/26"
-date: 2026-05-06 18:00:00 -0300
+date: 2026-05-05 18:00:00 -0300
 categories: [News]
 permalink: /posts/news-05-06/
 tags: [cybersecurity, vulnerabilities, threat-intelligence, breaches, malware]
