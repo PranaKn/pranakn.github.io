@@ -2,7 +2,7 @@
 title: "Cybersecurity Newsfeed - 24/06/26"
 date: 2026-06-23 09:00:00 -0300
 categories: [News]
-permalink: /posts/news-26-06-26/
+permalink: /posts/news-24-06-26/
 tags: [cybersecurity, vulnerabilities, threat-intelligence, breaches, malware]
 pin: false
 toc: true
