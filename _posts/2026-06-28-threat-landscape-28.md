@@ -39,21 +39,21 @@ June’s story is simple: attackers are no longer just breaking into companies; 
 
 - **Russian Messaging Account Compromise**: The FBI warned that Russian intelligence-linked actors (**UNC5792** and **UNC4221**) compromised individual commercial messaging accounts. They tracked targets directly through account hijacking without breaking the underlying encryption of the apps. [More info](https://www.fbi.gov/investigate/cyber/alerts/2026/russian-intelligence-services-continue-to-target-commercial-messaging-applications)
 
-- **Turla Deploys StockStay Malware**: Google researchers identified "StockStay," a Turla-linked malware family primarily targeting Ukrainian government and defense organizations, with early samples also observed in several European nations. [learn more](https://cloud.google.com/blog/topics/threat-intelligence/stockstay-turla-intelligence-gathering)
+- **Turla Deploys StockStay Malware**: Google researchers identified "StockStay," a Turla-linked malware family primarily targeting Ukrainian government and defense organizations, with early samples also observed in several European nations. [More info](https://cloud.google.com/blog/topics/threat-intelligence/stockstay-turla-intelligence-gathering)
 
-- **China-Nexus AI & Tech Espionage**: According to a CrowdStrike report, China-linked adversaries accounted for over **58%** of state-sponsored targeted intrusions against the technology sector, heavily prioritizing AI capabilities and intellectual property. [learn more](https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-technology-threat-landscape-report/)
+- **China-Nexus AI & Tech Espionage**: According to a CrowdStrike report, China-linked adversaries accounted for over **58%** of state-sponsored targeted intrusions against the technology sector, heavily prioritizing AI capabilities and intellectual property. [More info](https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-technology-threat-landscape-report/)
 
-- **North Korean Target Alignments**: North Korean threat operations remained strongly aligned with developer targeting, macOS malware, crypto-currency theft, and credential-harvesting campaigns. [More info]()
+- **North Korean Target Alignments**: North Korean threat operations remained strongly aligned with developer targeting, macOS malware, crypto-currency theft, and credential-harvesting campaigns. [More info](https://www.proofpoint.com/us/blog/threat-insight/dont-fear-repo-unkdeaddrop-phishing-campaign-targets-developers-steal)[learn more](https://www.proofpoint.com/us/blog/threat-insight/dont-fear-repo-unkdeaddrop-phishing-campaign-targets-developers-steal)
 
 ## 📈 Trends & Emergent Risks
 
-- **AI Security & Development Risks**: AI shifted from theoretical risk to live operational exposure. **CVE-2026-5027** (a path traversal flaw in the Langflow AI building platform) saw active exploitation leading to remote code execution. Separately, an Amazon Q Developer VS Code extension flaw allowed malicious repositories to abuse MCP auto-execution to steal cloud credentials. [More info](https://www.google.com)
+- **AI Security & Development Risks**: AI shifted from theoretical risk to live operational exposure. **CVE-2026-5027** (a path traversal flaw in the Langflow AI building platform) saw active exploitation leading to remote code execution. Separately, an Amazon Q Developer VS Code extension flaw allowed malicious repositories to abuse MCP auto-execution to steal cloud credentials. [More info](https://thehackernews.com/2026/06/unpatched-langflow-flaw-cve-2026-5027.html)
 
-- **Software Supply Chain Pressure**: Attacks focusing on Amazon Q, malicious repositories, AI coding assistants, npm-style impersonation, and CI/CD secrets point to a unified strategy: compromise the developer to inherit access to production cloud environments. [learn more](https://thehackernews.com/2026/06/amazon-q-developer-flaw-could-let.html)
+- **Software Supply Chain Pressure**: Attacks focusing on Amazon Q, malicious repositories, AI coding assistants, npm-style impersonation, and CI/CD secrets point to a unified strategy: compromise the developer to inherit access to production cloud environments. [More info](https://thehackernews.com/2026/06/amazon-q-developer-flaw-could-let.html)
 
 ## 💥 Law Enforcement & Disruptions
 
-- **Operation Endgame Crushes Malware Infinites**: Europol announced a major coordinated cybercrime disruption targeting **SocGholish**, **Amadey**, and **StealC** infrastructure. The operations seized over **€41 million** in criminal crypto assets used for malware delivery and ransomware enablement. Microsoft noted that AI-assisted analysis was instrumental in mapping out these supply chains. [learn more](https://www.europol.europa.eu/media-press/newsroom/news/global-cyber-strike-disrupts-socgholish-amadey-and-stealc-malware-networks)
+- **Operation Endgame Crushes Malware Infinites**: Europol announced a major coordinated cybercrime disruption targeting **SocGholish**, **Amadey**, and **StealC** infrastructure. The operations seized over **€41 million** in criminal crypto assets used for malware delivery and ransomware enablement. Microsoft noted that AI-assisted analysis was instrumental in mapping out these supply chains. [More info]https://www.europol.europa.eu/media-press/newsroom/news/global-cyber-strike-disrupts-socgholish-amadey-and-stealc-malware-networks)
 
 ## 📜 Policy & Governance
 
@@ -64,6 +64,7 @@ June’s story is simple: attackers are no longer just breaking into companies; 
 ## 🔮 Assessment & Outlook
 
 ### June Assessment
+
 June was a month of **control-plane warfare**. Attackers focused on systems that sit above ordinary endpoints: SD-WAN managers, VPNs, firewalls, backup servers, AI development platforms, browser/dev extensions, and identity flows.
 
 The geopolitical pattern is clear. Russia’s cyber operations continue to support wartime intelligence collection against Ukraine and Western-linked targets. China-linked actors are prioritizing AI and technology-sector espionage. North Korea remains strongly aligned with developer, macOS, crypto, and credential-theft operations. Cybercrime groups continue to industrialize stolen credentials into ransomware, fraud, and initial access.
