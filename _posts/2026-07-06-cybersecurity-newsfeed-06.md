@@ -1,21 +1,21 @@
 ---
-title: "Cybersecurity Newsfeed - 07/07/26"
-date: 2026-07-06 19:00:00 -0300
+title: "Cybersecurity Newsfeed - 06/07/26"
+date: 2026-07-05 19:00:00 -0300
 categories: [News]
-permalink: /posts/news-07-07-26/
+permalink: /posts/news-06-07-26/
 tags: [cybersecurity, vulnerabilities, threat-intelligence, breaches, malware]
 pin: false
 toc: true
 comments: true
 description: "Daily cybersecurity news covering vulnerabilities, adversaries, trends, breaches, and other notable security developments."
 image:
-  path: assets/img/posts/newsfeed-2026-07-07.png
-  alt: Cybersecurity Newsfeed - 07/07/26
+  path: assets/img/posts/newsfeed-2026-07-06.png
+  alt: Cybersecurity Newsfeed - 06/07/26
 ---
 
 # Cybersecurity Newsfeed
 
-## 📅 07/07/26
+## 📅 06/07/26
 
 ## 🛡️ Vulnerabilities
 
