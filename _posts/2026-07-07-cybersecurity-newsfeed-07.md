@@ -2,6 +2,7 @@
 title: "Cybersecurity Newsfeed - 07/07/26"
 date: 2026-07-06 19:00:00 -0300
 categories: [News]
+permalink: /posts/news-07-07-26/
 tags: [cybersecurity, vulnerabilities, threat-intelligence, breaches, malware]
 pin: false
 toc: true
