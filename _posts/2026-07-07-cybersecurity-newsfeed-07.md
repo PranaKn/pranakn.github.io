@@ -1,6 +1,6 @@
 ---
 title: "Cybersecurity Newsfeed - 07/07/26"
-date: 2026-07-06 19:00:00 -0300
+date: 2026-07-06 11:00:00 -0300
 categories: [News]
 permalink: /posts/news-07-07-26/
 tags: [cybersecurity, vulnerabilities, threat-intelligence, breaches, malware]
@@ -23,7 +23,7 @@ image:
 
 - **Adobe ColdFusion Exploited in the Wild (CVE-2026-48282)**: CISA warned that a severe improper access control flaw in Adobe ColdFusion is actively being weaponized. Remote, unauthenticated attackers are leveraging the exploit to execute arbitrary code and gain administrative control over enterprise systems. [More info](https://securityaffairs.com/194837/hacking/adobe-coldfusion-flaw-cve-2026-48282-now-exploited-in-the-wild.html)
 
-- **Threat Actors Probe Gitea Docker Flaw**: Security researchers have detected an uptick in scanning activity targeting an authentication bypass vulnerability within Gitea Docker deployments. Misconfigured environments risk source code theft, API key exposure, and supply chain backdoors. [More info](https://thehackernews.com/2026/07/threat-actors-probe-gitea-docker-flaw.html)
+- **Threat Actors Probe Gitea Docker Flaw**: Security researchers have detected an uptick in scanning activity targeting an authentication bypass vulnerability within Gitea Docker deployments. Misconfigured environments risk source code theft, API key exposure, and supply chain backdoors.. [More info](https://thehackernews.com/2026/07/threat-actors-probe-gitea-docker-flaw.html)
 
 - **Linux Kernel bad-epoll Root Privilege Escalation**: A critical memory management vulnerability within the Linux kernel's epoll subsystem grants local attackers full root access across both Linux and Android operating systems. Public proof-of-concept (PoC) exploit code has been released, elevating the risk of immediate exploitation. [More info](https://www.securityweek.com/proof-of-concept-exploit-released-for-linux-bad-epoll-root-access-vulnerability/) | [More info](https://securityaffairs.com/194795/hacking/bad-epoll-flaw-gives-attackers-root-access-on-linux-and-android.html)
 
