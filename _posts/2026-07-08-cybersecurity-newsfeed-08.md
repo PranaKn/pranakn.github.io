@@ -19,7 +19,7 @@ image:
 
 ## 🛡️ Vulnerabilities
 
-- **Critical Gitea Docker Exploitation**: A severe vulnerability affecting Gitea Docker deployments is under active exploitation. The flaw bypasses authentication, allowing remote attackers to steal proprietary source code and secrets. Administrators must update to the latest patched version immediately. [More info](https://securityaffairs.com/194902/hacking/critical-gitea-docker-bug-under-active-exploitation-exposes-repositories-and-secrets.html)
+- **Critical Gitea Docker Exploitation**: A severe vulnerability affecting Gitea Docker deployments is under active exploitation. The flaw bypasses authentication, allowing remote attackers to steal proprietary source code and secrets. Administrators must update to the latest patched version immediately [More info](https://securityaffairs.com/194902/hacking/critical-gitea-docker-bug-under-active-exploitation-exposes-repositories-and-secrets.html)
 
 - **Dialogflow CX Rogue Agent Flaw**: A critical flaw in Google's Dialogflow CX enterprise platform allows malicious actors to manipulate chatbot parameters, bypassing guardrails to extract sensitive customer data and session tokens. Strict input validation is required to prevent data exfiltration. [More info](https://www.darkreading.com/application-security/dialogflow-cx-rogue-agent-flaw-enabled-ai-chatbot-data-theft)
 
