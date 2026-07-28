@@ -25,9 +25,9 @@ July’s defining cybersecurity story was **acceleration**. Attackers continued 
 
 - **JADEPUFFER Campaign Automates Intrusion via AI Agents**: Attackers exploited the previously patched Langflow vulnerability (**CVE-2025-3248**) and deployed an AI agent to automate the intrusion sequence—including reconnaissance, credential discovery, database access, encryption, and data destruction. The campaign demonstrates how exposed AI platforms holding cloud credentials can turn into autonomous attack vectors. [More info](https://www.bleepingcomputer.com/news/security/jadepuffer-ransomware-used-ai-agent-to-automate-entire-attack)
 
-- **Sophos AI Security Report (July 2026)**: Sophos confirmed attackers are operationalizing AI primarily to compress attack timelines rather than invent entirely new techniques. Emerging primary entry points include OAuth tokens, AI-service credentials, developer tools, and exposed AI infrastructure. [More info](https://www.google.com)
+- **Sophos AI Security Report (July 2026)**: Sophos confirmed attackers are operationalizing AI primarily to compress attack timelines rather than invent entirely new techniques. Emerging primary entry points include OAuth tokens, AI-service credentials, developer tools, and exposed AI infrastructure. [More info](https://www.sophos.com/en-us/press/press-releases/2026/07/ai-security-report-cyberattack-timelines-ai-identities)
 
-- **U.S. AI Infrastructure & Defense Initiative**: A new policy initiative was launched to bring AI developers and critical-infrastructure operators together to share vulnerabilities discovered by advanced AI systems and coordinate rapid defensive actions. [More info](https://www.sophos.com/en-us/press/press-releases/2026/07/ai-security-report-cyberattack-timelines-ai-identities)
+- **U.S. AI Infrastructure & Defense Initiative**: A new policy initiative was launched to bring AI developers and critical-infrastructure operators together to share vulnerabilities discovered by advanced AI systems and coordinate rapid defensive actions. [More info](https://thehackernews.com/2026/06/unpatched-langflow-flaw-cve-2026-5027.html)
 
 ---
 
@@ -59,9 +59,9 @@ July’s defining cybersecurity story was **acceleration**. Attackers continued 
 
 ## 🎯 State-Backed Espionage Campaigns
 
-- **China-Nexus GRIDTIDE Campaign (UNC2814)**: Google Threat Intelligence Group and Mandiant disrupted a massive campaign targeting telecommunications and government entities across dozens of countries on four continents. [More info](https://www.google.com)
+- **China-Nexus GRIDTIDE Campaign (UNC2814)**: Google Threat Intelligence Group and Mandiant disrupted a massive campaign targeting telecommunications and government entities across dozens of countries on four continents. [More info](https://cloud.google.com/blog/topics/threat-intelligence/prc-targets-us-medical-research)
 
-- **Strategic Targeting of AI, Medical & Defense Research**: China-nexus groups focused heavily on public and private medical and academic institutions to exfiltrate strategic research intersecting AI, cybersecurity, and national defense. [More info](https://www.google.com)
+- **Strategic Targeting of AI, Medical & Defense Research**: China-nexus groups focused heavily on public and private medical and academic institutions to exfiltrate strategic research intersecting AI, cybersecurity, and national defense. [More info](https://www.crowdstrike.com/en-us/press-releases/crowdstrike-2026-technology-threat-report-china-targets-ai/)
 
 - **Google Unified Threat Actor Naming System**: Google introduced a single unified taxonomy across its threat intelligence operations to align campaign tracking across Mandiant and Google identifiers. [More info](https://cloud.google.com/blog/topics/threat-intelligence/disrupting-gridtide-global-espionage-campaign)
 
