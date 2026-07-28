@@ -2,7 +2,7 @@
 title: "Cybersecurity Threat Landscape — July 2026"
 date: 2026-07-28 09:00:00 -0300
 categories: [Threat Intelligence]
-permalink: /posts/threat-landscape-july-28-06-26/
+permalink: /posts/threat-landscape-july-28-07-26/
 tags: [cybersecurity, threat-landscape, ransomware, espionage, vulnerabilities, ai-security, supply-chain]
 pin: false
 toc: true
