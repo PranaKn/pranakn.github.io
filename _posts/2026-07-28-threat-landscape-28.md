@@ -27,7 +27,7 @@ July’s defining cybersecurity story was **acceleration**. Attackers continued 
 
 - **Sophos AI Security Report (July 2026)**: Sophos confirmed attackers are operationalizing AI primarily to compress attack timelines rather than invent entirely new techniques. Emerging primary entry points include OAuth tokens, AI-service credentials, developer tools, and exposed AI infrastructure. [More info](https://www.sophos.com/en-us/press/press-releases/2026/07/ai-security-report-cyberattack-timelines-ai-identities)
 
-- **U.S. AI Infrastructure & Defense Initiative**: A new policy initiative was launched to bring AI developers and critical-infrastructure operators together to share vulnerabilities discovered by advanced AI systems and coordinate rapid defensive actions. [More info](https://thehackernews.com/2026/06/unpatched-langflow-flaw-cve-2026-5027.html)
+- **U.S. AI Infrastructure & Defense Initiative**: A new policy initiative was launched to bring AI developers and critical-infrastructure operators together to share vulnerabilities discovered by advanced AI systems and coordinate rapid defensive actions. [More info](https://www.reuters.com/legal/government/us-companies-face-rise-cyber-attacks-2026-07-27/)
 
 ---
 
