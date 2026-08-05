@@ -54,10 +54,6 @@ image:
 
 - **Firebase Misconfiguration in AI Notetaker tl;dv Exposed Corporate Calls**: Unisolated Cloud Firestore database containers in the AI meeting assistant tl;dv allowed authenticated users to view global conference metadata and enter private calls. Over 180,000 call records across 23 national governments, corporations, and academic institutions were exposed. [More info](https://www.darkreading.com/application-security/ai-notetaker-spy-government-corporate-video-calls)
 
-## 📚 Others
-
-- **Ninja Slushi Frozen Drink Machine Discounted to $260**: Retailers Amazon and Walmart dropped the price of the 88-ounce Ninja Slushi countertop machine by 26 percent. The unit transforms beverages into frozen treats using five preset operational modes, requiring minimum 4% sugar content and maximum 20% ABV to slush properly. [More info](https://www.zdnet.com/home-and-office/kitchen-household/ninja-slushi-88-deal/)
-
 ---
 
 [⬅ Back to Archive](https://pranakn.github.io)
