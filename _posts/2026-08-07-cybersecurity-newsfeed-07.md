@@ -7,7 +7,7 @@ tags: [cybersecurity, vulnerabilities, threat-intelligence, breaches, malware]
 pin: false
 toc: true
 comments: true
-description: "Daily cybersecurity news covering vulnerabilities, adversaries, trends, breaches, and other notable security developments."
+description: "Daily cybersecurity news covering vulnerabilities, adversaries, trends, breaches, and other notable security developments"
 image:
   path: assets/img/posts/newsfeed-2026-08-07.png
   alt: Cybersecurity Newsfeed - 07/08/26
