@@ -2,6 +2,7 @@
 title: "Cybersecurity Newsfeed - 20/08/26"
 date: 2026-08-19 09:00:00 -0300
 categories: [News]
+permalink: /posts/news-20-08-26/
 tags: [cybersecurity, vulnerabilities, threat-intelligence, breaches, malware]
 pin: false
 toc: true
