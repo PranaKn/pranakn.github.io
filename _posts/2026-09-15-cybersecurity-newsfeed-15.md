@@ -2,6 +2,7 @@
 title: "Cybersecurity Newsfeed - 15/09/26"
 date: 2026-09-14 09:00:00 -0300
 categories: [News]
+permalink: /posts/news-15-09-26/
 tags: [cybersecurity, vulnerabilities, threat-intelligence, breaches, malware]
 pin: false
 toc: true
