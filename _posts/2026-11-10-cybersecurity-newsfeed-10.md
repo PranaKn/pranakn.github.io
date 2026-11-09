@@ -65,6 +65,6 @@ image:
 
 - **Technical Overview of JADX Android Decompiler**: A technical guide covers JADX, an open-source Android decompiler operating on Java 11+ used by malware analysts to decode Dalvik bytecode, AndroidManifest files, and app resources from APK, DEX, and AAB packages into readable Java code. [More info](https://www.darknet.org.uk/2026/11/jadx-decompile-android-apk-to-java/)
 
----
+--
 
 [⬅ Back to Archive](https://pranakn.github.io)
